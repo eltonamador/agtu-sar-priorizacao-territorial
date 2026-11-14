@@ -1,0 +1,145 @@
+{
+  "buffer_count": 90,
+  "decision_count": 90,
+  "elapsed_seconds": 18.999,
+  "engine_version": "1.1.0",
+  "execution_classification": "DESENVOLVIMENTO_NAO_CONFIRMATORIO",
+  "execution_phase": "DEV-S",
+  "files": [
+    {
+      "bytes": 153995,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/results/buffer_results_dev.json",
+      "role": "input_buffer_json",
+      "sha256": "9110c3318f76e55bc616d6a0be3b7c36a3a9231231d5ff10189b8ddaf73f36f3"
+    },
+    {
+      "bytes": 738030,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/results/buffer_polygons_dev.geojson",
+      "role": "input_buffer_geojson",
+      "sha256": "8817eb10c3f94d340a2785806fc9c478a1db8c31c9bd15a146da80164847e2a1"
+    },
+    {
+      "bytes": 1649,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/results/manifest_execucao_dev.json",
+      "role": "input_buffer_manifest",
+      "sha256": "fb45718de9d46e1395687aa63573b0533ed9351459670110f34165dc67380db2"
+    },
+    {
+      "bytes": 17629,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+      "role": "config",
+      "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+    },
+    {
+      "bytes": 77111,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "engine",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 6198892,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "source_geo02_osm",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "source_geo03_osm",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 5074951,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "7a1f4475279ab70e7b8080445fb02f80357fa08c5e7f18db1980651d01bdc206"
+    },
+    {
+      "bytes": 10237499,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "bytes": 5709363,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "0c1ad94bf58bbee81a65c1f904818d3cca704b360ce84ede36f527d966a0c380"
+    },
+    {
+      "bytes": 7081961,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 23653990,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "df31ae2b362b033d1e1d31e683a484133e277727482412b14b743cbc59b12930"
+    },
+    {
+      "bytes": 8977040,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "bytes": 38592452,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "f064257364593b7145ae7a964151d6f6a80cc99a85672c1041e446bf0c5e1b89"
+    },
+    {
+      "bytes": 29215289,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 8496131,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/sector_polygons_dev.geojson",
+      "role": "output",
+      "sha256": "6116655a994af186b6e9b205f2079b9d7cfe65aede9f55148dc175c6d261babf"
+    },
+    {
+      "bytes": 2089037,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/sector_features_dev.csv",
+      "role": "output",
+      "sha256": "348b6a8fcd840844171de28b49efee6f08abb74e41581d6ea65cff7752dce948"
+    },
+    {
+      "bytes": 4927572,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/sector_ranking_dev.csv",
+      "role": "output",
+      "sha256": "47e721b341ab4999a6c058332d5f2244a33b5bdc967872cc8641fe169eda1df5"
+    },
+    {
+      "bytes": 57918,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/buffer_decisions_dev.csv",
+      "role": "output",
+      "sha256": "8f66d7f907a8f7fd08e73a9de15c904b46ab4e5cfd5e034ebd582554972e0886"
+    },
+    {
+      "bytes": 12791092,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/sector_results_dev.json",
+      "role": "output",
+      "sha256": "59f73e8233dc3df8bee2e269ea4f31275d34394da27af6cbc25487e21b7d6d2b"
+    },
+    {
+      "bytes": 5540,
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/warnings_dev.log",
+      "role": "output",
+      "sha256": "36c9e55a12245a5dab84ce7bb9f953655fcb595eda1caf3b67cf1b79ec6e94b5"
+    }
+  ],
+  "firewall": "GROUND_TRUTH_PROHIBITED_AND_NOT_USED",
+  "generated_at_utc": "2026-10-15T00:16:35+00:00",
+  "ground_truth_used": false,
+  "protocol_id": "EXT-ESP-SET-v1.1",
+  "python_version": "3.12.14",
+  "scientific_bundle_sha256": "0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837",
+  "scientific_projection_sha256": "bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc",
+  "sector_count": 2160,
+  "sectors_per_buffer": 24
+}

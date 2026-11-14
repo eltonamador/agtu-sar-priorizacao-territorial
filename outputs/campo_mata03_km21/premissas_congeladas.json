@@ -1,0 +1,79 @@
+{
+  "case_id": "MATA-03",
+  "revision": 1,
+  "frozen_at": "2026-10-31T15:32:54.164996+00:00",
+  "nature": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+  "coordinates": {
+    "lat": 0.21833333333333335,
+    "lon": -51.13305555555556,
+    "source": "Captura KM21.PNG, bússola do iPhone",
+    "elevation_displayed_m": 27,
+    "capture_clock_display": "08:28",
+    "capture_date_source": "Cronologia fornecida pelo pesquisador, não demonstrada pela tela",
+    "role": "Ponto inicial de planejamento; não é posição confirmada do contato das 12h"
+  },
+  "chronology": {
+    "arrival": "2026-10-22T08:28:00-03:00",
+    "walk_start": "2026-10-22T09:00:00-03:00",
+    "last_contact": "2026-10-22T12:00:00-03:00",
+    "expected_return": "2026-10-22T17:30:00-03:00",
+    "search_start": "2026-10-23T07:30:00-03:00",
+    "since_contact_h": 19.5,
+    "since_walk_start_h": 22.5,
+    "since_E0_h": 23.033333333333335,
+    "overdue_h": 14,
+    "continuous_walking_assumed": false
+  },
+  "domain": {
+    "radius_m": 7000.0,
+    "ideal_circle_area_km2": 153.93804002589985,
+    "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+    "meaning": "Domínio operacional de ensaio, não erro de GPS, distribuição de presença ou alcance validado"
+  },
+  "direction": {
+    "azimuth_deg": 285,
+    "label": "ONO",
+    "reference": "A partir do norte, sentido horário",
+    "nature": "RELATADO",
+    "confidence": "NAO_AVALIADA",
+    "angular_tolerance_deg": null,
+    "north_true_or_magnetic": "NAO_INFORMADO",
+    "origin": "E0 como convenção analítica, não percurso comprovado",
+    "phone_heading_223_is_clue": false
+  },
+  "person": {
+    "age": 43,
+    "occupation": "Trabalhador rural e pequeno produtor",
+    "experience_years": 15,
+    "physical_condition": "Boa, sem limitações conhecidas no cenário",
+    "mobility": "A pé",
+    "familiarity": "Moderada a elevada nos acessos habituais",
+    "clothing": [
+      "calça comprida",
+      "camisa de manga longa",
+      "botas",
+      "boné"
+    ],
+    "equipment": [
+      "facão",
+      "mochila pequena",
+      "garrafa de água",
+      "telefone celular"
+    ],
+    "activity": "Inspeção de propriedade, cercas e áreas de trabalho",
+    "last_contact_condition": "Consciente, orientado, sem relato de lesão"
+  },
+  "environment": "Cerrado amazônico, fragmentos florestais e ocupação semirrural; não floresta contínua",
+  "environmental_temperature_humidity": "Hipóteses do cenário, não medições extraídas das fotografias",
+  "ground_truth_absent": true,
+  "evaluation": "Demonstração de processamento, coerência e rastreabilidade; não eficácia operacional",
+  "excluded": [
+    "KM21SoloVit.HEIC (conteúdo e metadados não acessados)",
+    "Coordenada de encontro de MATA-02",
+    "Orientação 223° da tela como direção da pessoa"
+  ],
+  "sampling": "60 x 60 pontos estratificados por setor; não censo de todos os pixels",
+  "direction_used_in_BASE": false,
+  "photo_pixels_used_in_ranking": false,
+  "field_obstacles_not_measured": "Emaranhamento, cercas, travessias, passagem sob dossel e umidade atual não inferidos quantitativamente"
+}

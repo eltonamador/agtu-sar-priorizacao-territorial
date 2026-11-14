@@ -1,0 +1,58 @@
+{
+  "protocol_id": "RURAL01-BLIND-SET-v1.0",
+  "protocol_name": "Processamento territorial cego diagnóstico do cenário RURAL-01",
+  "version": "1.0",
+  "status": "CONGELADO_ANTES_DA_ABERTURA_DA_POSICAO_DE_AVALIACAO",
+  "upstream": {
+    "protocol_id": "RURAL01-SOURCE-RADIUS-v1.0",
+    "scenario_id": "RURAL-01",
+    "candidate_id": "RURAL-01-E0",
+    "estimated_lat": 0.188611,
+    "estimated_lon": -51.155556,
+    "source_radius_m": 1500.0,
+    "source_timestamp_local": "2026-10-21T14:20:00-03:00",
+    "source_record_origin": "FICHA_RURAL01_DECLARADA_PELO_PESQUISADOR",
+    "source_metadata_verification": "COORDENADA_E_RAIO_NAO_VERIFICADOS_EM_ARTEFATO_EXTERNO",
+    "radius_origin": "INFORMADO_PELA_FONTE",
+    "radius_method": "RAIO_DIRETO_SEM_BUFFER_ADAPTATIVO",
+    "r0_semantics": "source_adjusted_final",
+    "additional_factors_applied_by_engine": false,
+    "radius_rationale": "RAIO_FINAL_DECLARADO_PELA_FONTE; A DISTANCIA DE 850_M_DA_ERB_E_RELATO_CONTEXTUAL_E_NAO_DERIVACAO_MATEMATICA_REPRODUZIDA_PELO_MOTOR",
+    "review_status": "REVISAR",
+    "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  },
+  "sectorization": {
+    "rings": 3,
+    "directions": 8,
+    "sectors_per_buffer": 24,
+    "directional_preference_applied": false,
+    "ring_penalty_applied": false,
+    "ranking_scope": "WITHIN_RECEIVED_SOURCE_RADIUS_ONLY"
+  },
+  "ranking": {
+    "name": "BASE_ORIGINAL",
+    "weights": {
+      "GEO02": 0.30,
+      "GEO03": 0.25,
+      "GEO04": 0.20,
+      "GEO05": 0.25
+    },
+    "implementation": "Funcao rank_sector_records do motor EXT-ESP-SET-v1.1, sem alteracao"
+  },
+  "context_boundary": {
+    "profile_used_in_quantitative_ranking": false,
+    "probable_north_direction_used_in_quantitative_ranking": false,
+    "photographs_used_in_quantitative_ranking": false,
+    "reason": "As pistas declaradas permanecem contextuais e nao foram espacializadas com azimute, tolerancia e proveniencia suficientes para alterar o ranking territorial congelado."
+  },
+  "interpretation": {
+    "score_meaning": "PRIORIDADE_ANALITICA_TERRITORIAL_NAO_PROBABILIDADE_DE_PRESENCA",
+    "top3_label_meaning": "AREAS_ANALITICAS_PARA_REVISAO_HUMANA",
+    "operational_command": false,
+    "field_confirmation_required": true,
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  }
+}

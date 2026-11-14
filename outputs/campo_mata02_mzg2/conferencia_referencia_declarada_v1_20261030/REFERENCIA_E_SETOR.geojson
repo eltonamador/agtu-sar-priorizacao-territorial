@@ -1,0 +1,249 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "REFERENCIA_DECLARADA_NAO_PREVISAO",
+        "case_id": "MATA-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -51.429583,
+          -0.17225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MATA-02::MATA-02-E0::R02::W",
+      "properties": {
+        "protocol_id": "MATA02-COMPLEMENTAR-BASE-v2.0",
+        "engine_version": "EXT-ESP-SET-v1.1; configuracao_de_entrada_auditada_v2",
+        "scenario_id": "MATA-02",
+        "candidate_id": "MATA-02-E0",
+        "sector_id": "MATA-02::MATA-02-E0::R02::W",
+        "ring_id": "R02",
+        "ring_index": 2,
+        "direction": "W",
+        "direction_label": "W",
+        "direction_index": 7,
+        "sector_index": 15,
+        "azimuth_center_deg": 270.0,
+        "azimuth_start_deg": 247.5,
+        "azimuth_end_deg": 292.5,
+        "inner_radius_m": 3464.101615,
+        "outer_radius_m": 4898.979486,
+        "sector_area_m2": 4710893.840181,
+        "polygon_planar_area_m2": 4710893.840181,
+        "expected_authoritative_sector_area_m2": 4710893.832664,
+        "theoretical_circular_sector_area_m2": 4712388.980385,
+        "authoritative_buffer_planar_area_m2": 113061451.983934,
+        "area_relative_error": 1.596e-09,
+        "representative_lat": -0.1591666314,
+        "representative_lon": -51.4331550789,
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "source_buffer_geometry_sha256": "51310cdf93de16d457aa0d8e1d87e0eaf26e2a8679c21d39f764d570d1d44350",
+        "source_buffer_review_status": "REVISAR",
+        "source_execution_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+        "source_confirmatory_eligible": false,
+        "source_row_hash": "281fb3d614604fd2566d73ace9468a66f0c3ebc8431464d26006e037e63fb96d",
+        "ground_truth_used": false,
+        "geo02_score": 0.130212583,
+        "geo03_score": 0.996283422,
+        "geo04_score": 0.660365639,
+        "geo05_score": 0.329694444,
+        "score_base": 0.502631369,
+        "rank_base_within_buffer": 22,
+        "base_top_member": false,
+        "selected_sector": false,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0,
+        "barrier_flags": "VEGETACAO_DENSA_POTENCIAL",
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -51.4357040326,
+              -0.1760267081
+            ],
+            [
+              -51.4357040326,
+              -0.1760267081
+            ],
+            [
+              -51.4364007172,
+              -0.1742351834
+            ],
+            [
+              -51.4370185937,
+              -0.1724149743
+            ],
+            [
+              -51.4375564845,
+              -0.1705695469
+            ],
+            [
+              -51.4380133675,
+              -0.1687024137
+            ],
+            [
+              -51.4383883715,
+              -0.1668171281
+            ],
+            [
+              -51.4386807827,
+              -0.1649172802
+            ],
+            [
+              -51.4388900452,
+              -0.1630064855
+            ],
+            [
+              -51.4390157613,
+              -0.1610883815
+            ],
+            [
+              -51.4390576901,
+              -0.1591666195
+            ],
+            [
+              -51.4390157525,
+              -0.1572448576
+            ],
+            [
+              -51.4388900292,
+              -0.1553267542
+            ],
+            [
+              -51.4386807588,
+              -0.153415961
+            ],
+            [
+              -51.4383883387,
+              -0.1515161137
+            ],
+            [
+              -51.4380133275,
+              -0.1496308301
+            ],
+            [
+              -51.437556438,
+              -0.1477636981
+            ],
+            [
+              -51.4370185397,
+              -0.1459182735
+            ],
+            [
+              -51.4364006573,
+              -0.1440980671
+            ],
+            [
+              -51.4357039659,
+              -0.1423065451
+            ],
+            [
+              -51.4357039658,
+              -0.142306545
+            ],
+            [
+              -51.4237820567,
+              -0.1472447681
+            ],
+            [
+              -51.4237820568,
+              -0.1472447682
+            ],
+            [
+              -51.4242746915,
+              -0.1485115659
+            ],
+            [
+              -51.4247115997,
+              -0.1497986464
+            ],
+            [
+              -51.4250919505,
+              -0.151103559
+            ],
+            [
+              -51.4254150195,
+              -0.152423821
+            ],
+            [
+              -51.4256801917,
+              -0.153756918
+            ],
+            [
+              -51.4258869632,
+              -0.1551003131
+            ],
+            [
+              -51.426034939,
+              -0.1564514481
+            ],
+            [
+              -51.4261238379,
+              -0.1578077521
+            ],
+            [
+              -51.4261534914,
+              -0.1591666431
+            ],
+            [
+              -51.4261238424,
+              -0.160525534
+            ],
+            [
+              -51.4260349468,
+              -0.1618818384
+            ],
+            [
+              -51.4258869751,
+              -0.1632329743
+            ],
+            [
+              -51.4256802083,
+              -0.1645763695
+            ],
+            [
+              -51.4254150396,
+              -0.1659094676
+            ],
+            [
+              -51.4250919737,
+              -0.1672297301
+            ],
+            [
+              -51.4247116267,
+              -0.1685346441
+            ],
+            [
+              -51.4242747213,
+              -0.1698217261
+            ],
+            [
+              -51.4237820901,
+              -0.1710885251
+            ],
+            [
+              -51.4237820901,
+              -0.1710885251
+            ],
+            [
+              -51.4357040326,
+              -0.1760267081
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

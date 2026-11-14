@@ -1,0 +1,25 @@
+{
+  "additional_factors_applied_by_engine": false,
+  "erb_850_m_role": "RELATO_CONTEXTUAL_SEM_DERIVACAO_MATEMATICA_REPRODUZIDA",
+  "files": [
+    {
+      "bytes": 1730,
+      "path": "entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "1824aa940a03ea7ab985e5dcb06a6047414483050f58846380a6d27115a7f040"
+    },
+    {
+      "bytes": 13059,
+      "path": "entrada_raio_fonte.geojson",
+      "role": "output",
+      "sha256": "c4db552973f9128affe7525350a64e4c1e721b9b5582c749bc2714b927ffa0ab"
+    }
+  ],
+  "ground_truth_used": false,
+  "protocol_id": "RURAL01-SOURCE-RADIUS-v1.0",
+  "r0_semantics": "source_adjusted_final",
+  "radius_m": 1500.0,
+  "radius_origin": "INFORMADO_PELA_FONTE",
+  "radius_review_status": "REVISAR",
+  "record_count": 1
+}

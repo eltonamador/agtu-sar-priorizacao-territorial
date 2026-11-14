@@ -1,0 +1,61 @@
+{
+  "case_id": "MATA-03",
+  "comparison_created_at": "2026-11-03T23:00:35.404280+00:00",
+  "nature": "COMPARACAO_DESCRITIVA_POSTERIOR_DE_ENSAIO_CONTROLADO",
+  "revision": "Compilação atual com marcador A; referência declarada após a saída do modelo.",
+  "reference": {
+    "latitude": 0.255247,
+    "longitude": -51.092333,
+    "source": "Coordenada declarada pelo pesquisador na conversa após a saída congelada",
+    "accuracy_m": null,
+    "label": "A — local de encontro declarado"
+  },
+  "origin": {
+    "latitude": 0.21833333333333335,
+    "longitude": -51.13305555555556
+  },
+  "method": "Geodésica inversa Vincenty / elipsoide WGS84; ponto em polígono sobre os setores congelados",
+  "distance_m": 6099.99817848298,
+  "initial_geographic_bearing_deg": 47.99982727851966,
+  "reported_direction_deg": 285,
+  "angular_difference_deg": 122.99982727851966,
+  "north_reference_caveat": "Norte da direção relatada não especificado; comparação angular pressupõe referências compatíveis.",
+  "domain_radius_m": 7000.0,
+  "inside_domain": true,
+  "radial_margin_m": 900.0018215170203,
+  "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+  "rank_base": 2,
+  "sectors_count": 24,
+  "score_base": 0.736014506,
+  "in_top3": true,
+  "original_status": "REVISAR",
+  "original_profile_status": "ABSTENCAO_PERFIL",
+  "original_top3": [
+    {
+      "sector": "R01-E",
+      "score": 0.737195475
+    },
+    {
+      "sector": "R03-NE",
+      "score": 0.736014506
+    },
+    {
+      "sector": "R01-SE",
+      "score": 0.73568867
+    }
+  ],
+  "original_direction_confidence": "NAO_AVALIADA",
+  "original_ranking_changed": false,
+  "parameters_changed": false,
+  "frozen_files_verified": 42,
+  "frozen_manifest_sha256": "9423af54b37557bf076f928dadc0ebf8b304c3d0ad2bcdf25dd0c3cbdc4318cd",
+  "interpretation": "O ponto A está no setor R03-NE, segundo de 24 no ranking BASE preservado. Comparação descritiva posterior à saída; não é validação prospectiva nem comprovação de eficácia operacional. Sem trajetória observada, a diferença para a pista de 285° não explica o percurso. Escore não é probabilidade.",
+  "reference_sector_rank_by_frozen_weight_set": {
+    "BASE": 2,
+    "IGUAIS": 4,
+    "SEM_BARREIRAS": 1,
+    "APENAS_ACESSO": 1,
+    "ENFASE_BARREIRAS": 4
+  },
+  "compiled_at": "2026-11-03T23:38:21.779902+00:00"
+}

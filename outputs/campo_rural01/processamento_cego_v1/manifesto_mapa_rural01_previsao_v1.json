@@ -1,0 +1,85 @@
+{
+  "artifact_id": "RURAL01-MAPA-PREVISAO-CEGA-v1",
+  "scenario_id": "RURAL-01",
+  "generated_at": "2026-10-22T12:51:30-03:00",
+  "stage": "PRE_REVELACAO",
+  "ground_truth_used": false,
+  "ground_truth_represented": false,
+  "map_semantics": "PRIORIZACAO_ANALITICA_PARA_REVISAO_HUMANA_NAO_PROBABILIDADE",
+  "spatial_input": {
+    "point_lat": 0.188611,
+    "point_lon": -51.155556,
+    "radius_m": 1500.0,
+    "radius_semantics": "RAIO_FINAL_AJUSTADO_INFORMADO_PELA_FONTE",
+    "sector_count": 24
+  },
+  "temporal_context": {
+    "elapsed_hours_reported_by_operator": 14,
+    "reapplied_to_buffer": false,
+    "reason": "O raio recebido ja incorpora o ajuste da fonte; reaplicar o tempo duplicaria o efeito temporal."
+  },
+  "top3": [
+    {
+      "area": "AP1",
+      "sector": "R01-E",
+      "score": 0.658088654
+    },
+    {
+      "area": "AP2",
+      "sector": "R03-SE",
+      "score": 0.644413986
+    },
+    {
+      "area": "AP3",
+      "sector": "R03-E",
+      "score": 0.637312495
+    }
+  ],
+  "profile_spatial_effect": {
+    "status": "ABSTENCAO_PERFIL",
+    "top3_changed": false,
+    "reason": "SEM_HIPOTESE_ESPACIAL_QUANTITATIVA_ELEGIVEL"
+  },
+  "outputs": {
+    "png": {
+      "path": "outputs/campo_rural01/processamento_cego_v1/Mapa_RURAL01_Previsao_Cega_BASE_PERFIL_v1.png",
+      "sha256": "1147cff814a66c86e80b1612fd434dd2e1cc481daa6b58f0fd07c7d04e085fff",
+      "width_px": 4000,
+      "height_px": 2550,
+      "dpi": 300
+    },
+    "pdf": {
+      "path": "outputs/campo_rural01/processamento_cego_v1/Mapa_RURAL01_Previsao_Cega_BASE_PERFIL_v1.pdf",
+      "sha256": "231e30d3c1e6bc9aa9ce4aeb5893eff20d8aba5d959e988e5f862fbf31d7a8f8",
+      "page_count": 1,
+      "page_format": "A3_LANDSCAPE"
+    }
+  },
+  "sources": {
+    "territorial_top3": {
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+      "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268"
+    },
+    "profile_top3": {
+      "path": "outputs/campo_rural01/perfil_v2_v3/top3_perfil_v3_rural01.json",
+      "sha256": "0641ebd0c034880d73d6afc2d7809cf92330e15153f1a3468f62c50e63930a47"
+    },
+    "temporal_addendum": {
+      "path": "outputs/campo_rural01/adendo_temporal_pos_t2_v1/adendo_temporal_pos_t2_rural01_v1.json",
+      "sha256": "c81daba64808028af91e6a4f805e5c8da17976a8e180d357b1e0301daf16f22d"
+    },
+    "cartographic_context": [
+      "OpenStreetMap (© OpenStreetMap contributors, ODbL)",
+      "SRTMGL1/Mapzen",
+      "ESA WorldCover 2021 v200"
+    ]
+  },
+  "quality_assurance": {
+    "png_visually_inspected": true,
+    "pdf_rendered_and_visually_inspected": true,
+    "labels_overlap": false,
+    "position_real_absent": true,
+    "top3_matches_frozen_output": true,
+    "status": "PASS"
+  }
+}

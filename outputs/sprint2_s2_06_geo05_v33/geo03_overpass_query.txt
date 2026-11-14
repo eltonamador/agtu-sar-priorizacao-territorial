@@ -1,0 +1,11 @@
+[out:json][timeout:180];
+(
+  way["waterway"~"^(river|stream|canal|ditch|drain|tidal_channel|riverbank)$"](-0.25,-51.95,0.45,-50.70);
+  way["natural"="water"](-0.25,-51.95,0.45,-50.70);
+  way["natural"="wetland"](-0.25,-51.95,0.45,-50.70);
+  way["landuse"~"^(reservoir|basin)$"](-0.25,-51.95,0.45,-50.70);
+  relation["natural"="water"](-0.25,-51.95,0.45,-50.70);
+  relation["natural"="wetland"](-0.25,-51.95,0.45,-50.70);
+  relation["landuse"~"^(reservoir|basin)$"](-0.25,-51.95,0.45,-50.70);
+);
+out body geom;

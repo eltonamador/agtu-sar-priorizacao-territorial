@@ -1,0 +1,116 @@
+{
+  "protocol_id": "PERFIL-V3-QUANT-v1.0",
+  "engine_id": "PERFIL-V3-QUANT-RANKER-v1.1",
+  "status": "CANDIDATO_A_CONGELAMENTO",
+  "scope": {
+    "ranking_unit": "setor_dentro_de_um_unico_buffer_candidato",
+    "cross_candidate_ranking": false,
+    "score_interpretation": "prioridade_analitica_nao_probabilidade",
+    "ground_truth_dependency": false
+  },
+  "allowed_quantitative_families": [
+    "DIRECAO",
+    "DESTINO"
+  ],
+  "prohibited_quantitative_inputs": [
+    "idade_isolada",
+    "sexo",
+    "condicao_cognitiva_sem_pista_espacial",
+    "personalidade",
+    "desejo_generico_de_isolamento",
+    "historico_de_pesca_sem_local",
+    "urgencia_clinica",
+    "estatistica_externa_convertida_em_peso_ou_distancia"
+  ],
+  "evidence_attenuation": {
+    "formula": "q=min(nature_factor, confidence_factor)",
+    "nature_factor": {
+      "CONFIRMADO": 1.0,
+      "OBSERVADO": 1.0,
+      "RELATADO": 0.6666666666666666,
+      "SUSPEITO": 0.3333333333333333,
+      "INFERIDO": 0.3333333333333333,
+      "NAO_DISPONIVEL": 0.0
+    },
+    "confidence_factor": {
+      "ALTA": 1.0,
+      "MEDIA": 0.6666666666666666,
+      "BAIXA": 0.3333333333333333,
+      "NAO_AVALIADA": 0.0
+    },
+    "source_type_has_numeric_factor": false
+  },
+  "aggregation": {
+    "within_evidence_group": "MAX_UNION",
+    "within_family": "MAX_ATTENUATED_NO_DUPLICATE_STACKING",
+    "between_families": "Q_WEIGHTED_MEAN",
+    "same_evidence_group_must_share_nature_and_confidence": true,
+    "same_evidence_group_across_families_forbidden": true
+  },
+  "spatial_rules": {
+    "direction": "angular_overlap_fraction_between_observed_wedge_and_sector_with_origin_candidate_match",
+    "destination": "binary_uncertainty_circle_intersects_sector_polygon_with_boundary_included",
+    "destination_uncertainty_method": "LOCAL_EQUIRECTANGULAR_BINARY_CIRCLE_POLYGON_INTERSECTION",
+    "earth_radius_m": 6371008.8,
+    "antimeridian_handling": "WRAP_AND_SEQUENTIAL_UNWRAP_RELATIVE_TO_DESTINATION",
+    "destination_uncertainty": "used_only_as_geometric_radius_not_as_decay_or_weight",
+    "destination_outside_domain": "EXCLUDE_AND_WARN_NEVER_PROJECT_TO_EDGE"
+  },
+  "scoring": {
+    "formula": "lambda_eff=lambda*max_f(q_f); S_j=(1-lambda_eff)*T_j+lambda_eff*C_j",
+    "lambda_primary": 0.1,
+    "lambda_operational_ceiling": 0.1,
+    "lambda_sensitivity": [
+      0.0,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "lambda_015_role": "stress_test_outside_operational_ceiling",
+    "abstention_formula": "S_j=T_j_exactly_for_all_lambdas",
+    "score_min": 0.0,
+    "score_max": 1.0
+  },
+  "ranking": {
+    "method": "COMPETITION_RANK",
+    "score_comparison_decimals": 12,
+    "tie_break_is_substantive": false,
+    "low_margin_threshold_diagnostic": 0.05,
+    "low_margin_is_validated": false,
+    "unstable_top_set_status": "REVISAR_INSTABILIDADE",
+    "unstable_top_set_operational_effect": false,
+    "unstable_top_set_operational_rows": "TERRITORIAL_EXACT"
+  },
+  "abstention": {
+    "when_no_eligible_spatial_hypothesis": true,
+    "when_profile_compatibility_is_constant": true,
+    "unknown_values_have_no_effect": true,
+    "return_territorial_exactly": true
+  },
+  "sensitivity_and_ablation": {
+    "lambda_grid_enabled": true,
+    "territorial_ablation_lambda_zero": true,
+    "family_ablation_required_before_field_use": true,
+    "sector_geometry_sensitivity_external_dependency": [
+      "S12",
+      "S24",
+      "S36",
+      "ROTATED_HALF_WEDGE"
+    ],
+    "territorial_weight_sets_external_dependency": true
+  },
+  "guardrails": {
+    "configuration_selected_without_urbe01_ground_truth": true,
+    "configuration_selected_without_three_new_case_ground_truths": true,
+    "lambda_is_heuristic_not_empirically_validated": true,
+    "international_statistics_used_as_weights": false,
+    "international_statistics_used_as_distances": false,
+    "amazon_or_forest_profile_assumed_equivalent_to_foreign_context": false,
+    "profile_may_command_operation": false,
+    "profile_score_may_be_called_probability": false,
+    "ground_truth_open_only_after_output_freeze": true,
+    "source_hash_format_validated": true,
+    "source_artifact_paths_resolved_by_engine": false,
+    "source_artifact_content_hash_recomputed_by_engine": false
+  }
+}

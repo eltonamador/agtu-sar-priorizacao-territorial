@@ -1,0 +1,300 @@
+{
+  "sampling": [
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::N",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::NE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::E",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::S",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::SW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::W",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::NW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::N",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::NE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::E",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::SE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::S",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::SW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::W",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::NW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::N",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::E",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::SE",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::S",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::SW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::W",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::NW",
+      "terrain_valid": 3600,
+      "terrain_expected": 3600,
+      "worldcover_valid": 3600,
+      "worldcover_expected": 3600
+    }
+  ],
+  "weighted_sum_check": [
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::E",
+      "independent_weighted_sum": 0.7371954752000001,
+      "difference": 2.000000165480742e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+      "independent_weighted_sum": 0.73601450625,
+      "difference": 2.5000002068509275e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+      "independent_weighted_sum": 0.73568867035,
+      "difference": 3.499999179368274e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::NE",
+      "independent_weighted_sum": 0.7303202009,
+      "difference": 9.999989725173464e-11
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::S",
+      "independent_weighted_sum": 0.70096872405,
+      "difference": 5.000000413701855e-11
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::NE",
+      "independent_weighted_sum": 0.6743265647,
+      "difference": 3.000000248221113e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::S",
+      "independent_weighted_sum": 0.67138283335,
+      "difference": 3.5000002895912985e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::NW",
+      "independent_weighted_sum": 0.6446683696,
+      "difference": 4.000000330961484e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::N",
+      "independent_weighted_sum": 0.62554686195,
+      "difference": 5.000000413701855e-11
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::E",
+      "independent_weighted_sum": 0.62224130825,
+      "difference": 2.5000002068509275e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::S",
+      "independent_weighted_sum": 0.6208129253,
+      "difference": 3.000000248221113e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::SE",
+      "independent_weighted_sum": 0.57570612315,
+      "difference": 1.5000001241105565e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::W",
+      "independent_weighted_sum": 0.5678307176,
+      "difference": 3.9999992207384594e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::NW",
+      "independent_weighted_sum": 0.5393948741,
+      "difference": 1.000000082740371e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::E",
+      "independent_weighted_sum": 0.5392458481,
+      "difference": 1.000000082740371e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::W",
+      "independent_weighted_sum": 0.5266127239,
+      "difference": 1.000000082740371e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::SE",
+      "independent_weighted_sum": 0.49711437795,
+      "difference": 5.000000413701855e-11
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R01::SW",
+      "independent_weighted_sum": 0.4956928268,
+      "difference": 2.000000165480742e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::W",
+      "independent_weighted_sum": 0.48800439975,
+      "difference": 2.5000002068509275e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::N",
+      "independent_weighted_sum": 0.48732261695,
+      "difference": 5.000000413701855e-11
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::SW",
+      "independent_weighted_sum": 0.46003827565,
+      "difference": 3.5000002895912985e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::N",
+      "independent_weighted_sum": 0.4448445459,
+      "difference": 1.000000082740371e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R02::NW",
+      "independent_weighted_sum": 0.40551913289999997,
+      "difference": 1.000000082740371e-10
+    },
+    {
+      "sector_id": "MATA-03::MATA-03-E0::R03::SW",
+      "independent_weighted_sum": 0.38775330955,
+      "difference": 4.5000003723316695e-10
+    }
+  ],
+  "ranking_repeated_identical": true,
+  "feature_extraction_repeated": false,
+  "full_raster_zonal_census": false,
+  "operational_efficacy_tested": false,
+  "probabilities_calibrated": false,
+  "ground_truth_used": false
+}

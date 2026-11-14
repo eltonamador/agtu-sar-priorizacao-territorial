@@ -1,0 +1,30 @@
+{
+  "confirmatory_eligible": false,
+  "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+  "ground_truth_used": false,
+  "protocol_id": "URBE-SOURCE-RADIUS-v1.0",
+  "protocol_version": "1.0",
+  "record_count": 1,
+  "results": [
+    {
+      "adaptive_radius_m": 2500.0,
+      "buffer_area_m2": 19634954.08493621,
+      "candidate_id": "URBE-01-E0",
+      "confirmatory_eligible": false,
+      "detection_quality": null,
+      "estimated_lat": 0.015833,
+      "estimated_lon": -51.068056,
+      "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+      "ground_truth_used": false,
+      "protocol_id": "URBE-SOURCE-RADIUS-v1.0",
+      "radius_origin": "INFORMADO_PELA_FONTE",
+      "review_status": "REVISAR",
+      "scenario_id": "URBE-01",
+      "source_metadata_verification": "NAO_VERIFICADA_EM_ARTEFATO_EXTERNO",
+      "source_record_origin": "FICHA_3_DECLARADA_PELO_PESQUISADOR",
+      "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+      "source_timestamp_local": "2026-10-20T18:17:00-03:00"
+    }
+  ],
+  "scenario_count": 1
+}

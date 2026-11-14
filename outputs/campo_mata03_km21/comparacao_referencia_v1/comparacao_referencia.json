@@ -1,0 +1,52 @@
+{
+  "case_id": "MATA-03",
+  "comparison_created_at": "2026-11-02T15:37:32.028985+00:00",
+  "nature": "COMPARACAO_DESCRITIVA_POSTERIOR_DE_ENSAIO_CONTROLADO",
+  "reference": {
+    "latitude": 0.230856,
+    "longitude": -51.179478,
+    "source": "Coordenada declarada pelo pesquisador na conversa após a saída congelada",
+    "accuracy_m": null
+  },
+  "origin": {
+    "latitude": 0.21833333333333335,
+    "longitude": -51.13305555555556
+  },
+  "method": "Geodésica inversa Vincenty / elipsoide WGS84; ponto em polígono sobre os setores congelados",
+  "distance_m": 5349.981739238563,
+  "initial_geographic_bearing_deg": 285.0001771387564,
+  "reported_direction_deg": 285,
+  "angular_difference_deg": 0.00017713875638492027,
+  "north_reference_caveat": "Norte da direção relatada não especificado; comparação angular pressupõe referências compatíveis.",
+  "domain_radius_m": 7000.0,
+  "inside_domain": true,
+  "radial_margin_m": 1650.018260761437,
+  "sector_id": "MATA-03::MATA-03-E0::R02::W",
+  "rank_base": 19,
+  "sectors_count": 24,
+  "score_base": 0.4880044,
+  "in_top3": false,
+  "original_status": "REVISAR",
+  "original_profile_status": "ABSTENCAO_PERFIL",
+  "original_top3": [
+    {
+      "sector": "R01-E",
+      "score": 0.737195475
+    },
+    {
+      "sector": "R03-NE",
+      "score": 0.736014506
+    },
+    {
+      "sector": "R01-SE",
+      "score": 0.73568867
+    }
+  ],
+  "original_direction_confidence": "NAO_AVALIADA",
+  "original_ranking_changed": false,
+  "parameters_changed": false,
+  "dissertation_changed": false,
+  "frozen_files_verified": 42,
+  "frozen_manifest_sha256": "9423af54b37557bf076f928dadc0ebf8b304c3d0ad2bcdf25dd0c3cbdc4318cd",
+  "interpretation": "Concordância direcional e inclusão no domínio não equivalem a acerto do ranking: a referência está no setor classificado em 19º de 24, fora do Top-3. Escore não é probabilidade. Não constitui comprovação de eficácia operacional."
+}

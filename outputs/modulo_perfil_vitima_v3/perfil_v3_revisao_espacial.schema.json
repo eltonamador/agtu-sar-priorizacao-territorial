@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:perfil-v3-revisao-espacial:1.0",
+  "title": "Revisao espacial congelada para integracao PERFIL V2 -> V3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version",
+    "scenario_id",
+    "candidate_id",
+    "record_status",
+    "created_at",
+    "ground_truth_absent",
+    "source_profile_file_sha256",
+    "source_territorial_manifest_sha256",
+    "reviewer_code",
+    "entries",
+    "freeze_metadata"
+  ],
+  "properties": {
+    "protocol_version": {"const": "PERFIL-V3-SPATIAL-REVIEW-v1.0"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "candidate_id": {"$ref": "#/$defs/identifier"},
+    "record_status": {"enum": ["RASCUNHO", "CONGELADO"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "ground_truth_absent": {"const": true},
+    "source_profile_file_sha256": {"$ref": "#/$defs/sha256"},
+    "source_territorial_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "reviewer_code": {"$ref": "#/$defs/identifier"},
+    "entries": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "oneOf": [
+          {"$ref": "#/$defs/directionEntry"},
+          {"$ref": "#/$defs/destinationEntry"},
+          {"$ref": "#/$defs/exclusionEntry"}
+        ]
+      }
+    },
+    "freeze_metadata": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/freezeMetadata"}
+      ]
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "common": {
+      "type": "object",
+      "required": ["source_hypothesis_id", "decision", "reviewed_at"],
+      "properties": {
+        "source_hypothesis_id": {"$ref": "#/$defs/identifier"},
+        "decision": {"enum": ["INCLUIR", "EXCLUIR"]},
+        "reviewed_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "directionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_hypothesis_id", "decision", "reviewed_at", "family",
+        "origin_candidate_id", "spatial_source"
+      ],
+      "properties": {
+        "source_hypothesis_id": {"$ref": "#/$defs/identifier"},
+        "decision": {"const": "INCLUIR"},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "family": {"const": "DIRECAO"},
+        "origin_candidate_id": {"$ref": "#/$defs/identifier"},
+        "spatial_source": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "destinationEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_hypothesis_id", "decision", "reviewed_at", "family",
+        "hypothesis_type", "location_uncertainty_m",
+        "spatial_source"
+      ],
+      "properties": {
+        "source_hypothesis_id": {"$ref": "#/$defs/identifier"},
+        "decision": {"const": "INCLUIR"},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "family": {"const": "DESTINO"},
+        "hypothesis_type": {"enum": ["DESTINO_DECLARADO", "LUGAR_FAMILIAR"]},
+        "location_uncertainty_m": {"type": "number", "minimum": 0},
+        "spatial_source": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "exclusionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_hypothesis_id", "decision", "reviewed_at", "reason"],
+      "properties": {
+        "source_hypothesis_id": {"$ref": "#/$defs/identifier"},
+        "decision": {"const": "EXCLUIR"},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "reason": {"type": "string", "minLength": 1, "maxLength": 300}
+      }
+    },
+    "freezeMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frozen_at", "projection_id", "payload_sha256"],
+      "properties": {
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "projection_id": {"const": "PERFIL-V3-SPATIAL-REVIEW-FREEZE-v1"},
+        "payload_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "protocol_id": "EXT-ESP-BUF-v1.0",
+  "engine_version": "1.0.0",
+  "generated_at_utc": "2026-10-14T22:25:21+00:00",
+  "python_version": "3.12.14",
+  "ground_truth_used": false,
+  "record_count": 90,
+  "confirmatory_eligible_records": 0,
+  "coordinate_reference_system": "EPSG:4326",
+  "geometry": {
+    "method": "great_circle_spherical",
+    "vertices": 72,
+    "earth_radius_m": 6371008.8
+  },
+  "files": [
+    {
+      "role": "input",
+      "path": "input_dev_blind.csv",
+      "sha256": "ff1fd5887a418aa765222c50c76676dfd2fd88d6c62e5c573c1309175313ec1b",
+      "bytes": 21817
+    },
+    {
+      "role": "config",
+      "path": "config_buffer_v1.json",
+      "sha256": "7d9a309852f869daf87f0c4693bbb310990b1a4d832841dbaeebf8120bad0f21",
+      "bytes": 8716
+    },
+    {
+      "role": "engine",
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/motor_buffer_adaptativo.py",
+      "sha256": "f45779b905cb6bd28b6bc7c0ee7fd16add9079fa1b20c6727c989f8ae4e41fb4",
+      "bytes": 39878
+    },
+    {
+      "role": "output",
+      "path": "results/buffer_results_dev.csv",
+      "sha256": "072268664ee3c72f458ebe3786a970cff08ea0babf388e5606b6d52d9263c889",
+      "bytes": 58001
+    },
+    {
+      "role": "output",
+      "path": "results/buffer_results_dev.json",
+      "sha256": "9110c3318f76e55bc616d6a0be3b7c36a3a9231231d5ff10189b8ddaf73f36f3",
+      "bytes": 153995
+    },
+    {
+      "role": "output",
+      "path": "results/buffer_polygons_dev.geojson",
+      "sha256": "8817eb10c3f94d340a2785806fc9c478a1db8c31c9bd15a146da80164847e2a1",
+      "bytes": 738030
+    }
+  ]
+}

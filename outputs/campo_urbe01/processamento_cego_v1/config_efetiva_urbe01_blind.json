@@ -1,0 +1,558 @@
+{
+  "acceptance_gates": {
+    "all_required_geo_scores_in_range": true,
+    "all_sector_geometries_valid_and_closed": true,
+    "all_weight_sets_sum_to_one": true,
+    "configuration_parses_as_json": true,
+    "deterministic_repeat_matches": true,
+    "exactly_24_primary_sectors_per_valid_buffer": true,
+    "ground_truth_used_is_exactly_false": true,
+    "manifest_contains_sha256_hashes": true,
+    "no_forbidden_ground_truth_field_or_protected_reference_input": true,
+    "no_overlap_between_primary_sectors_beyond_boundary_tolerance": true,
+    "ranking_is_within_buffer_only": true,
+    "sector_area_sum_matches_authoritative_parent_within_tolerance": true,
+    "sector_areas_equal_within_tolerance": true,
+    "sector_vertices_contained_by_authoritative_parent": true
+  },
+  "dependencies": {
+    "geo_taxonomy": {
+      "GEO-02": "vias_e_trilhas",
+      "GEO-03": "hidrografia",
+      "GEO-04": "relevo_e_declividade",
+      "GEO-05": "cobertura_e_uso_do_solo",
+      "GEO-06": "sintese_territorial"
+    },
+    "ground_truth_dependency": false,
+    "upstream_buffer_protocol": "URBE-SOURCE-RADIUS-v1.0",
+    "upstream_geo_protocols": [
+      "GEO-02-v1",
+      "GEO-03-v1",
+      "GEO-04-v1",
+      "GEO-05-v1",
+      "GEO-06-v1"
+    ]
+  },
+  "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+  "execution_control": {
+    "confirmatory_eligible": false,
+    "directional_preference_applied": false,
+    "ground_truth_used": false,
+    "ring_penalty_applied": false
+  },
+  "feature_extraction": {
+    "field_confirmation": "PENDENTE",
+    "geo02_method": "Distância do ponto representativo e alocação aproximada do comprimento OSM por subsegmentos de 50 m cujo ponto médio pertence ao setor.",
+    "geo03_method": "Distância do ponto representativo, severidade da feição OSM e densidade de subsegmentos hidrográficos no setor.",
+    "geo04_method": "Média de nove amostras estratificadas; em cada amostra, declividade Horn 3 x 3 e amplitude em SRTMGL1/Mapzen.",
+    "geo05_method": "Média ponderada das classes em nove amostras estratificadas do ESA WorldCover 2021 v200.",
+    "limitations": [
+      "A alocação linear por subsegmentos é uma aproximação determinística de desenvolvimento.",
+      "As nove amostras raster representam amostragem areal estratificada, não censo de todos os pixels do setor.",
+      "As fontes públicas não comprovam transitabilidade nem condição territorial atual."
+    ],
+    "line_allocation_is_exact": false,
+    "line_chunk_m": 50.0,
+    "minimum_valid_raster_sample_fraction": 1.0,
+    "nearest_search_limit_m": 10000.0,
+    "raster_aggregation_is_full_census": false,
+    "raster_sampling": {
+      "angular_samples": 3,
+      "method": "STRATIFIED_EQUAL_AREA_POINT_SAMPLE",
+      "radial_samples": 3,
+      "samples_per_sector": 9
+    },
+    "scope": "SECTOR_POLYGON",
+    "spatial_index_cell_deg": 0.02
+  },
+  "geometry": {
+    "area_equality_relative_tolerance": 0.01,
+    "authoritative_parent_geometry": "INPUT_BUFFER_GEOJSON",
+    "boundary_assignment": "LOWEST_SECTOR_INDEX",
+    "boundary_policy_before_ground_truth_opening": "GEOMETRY_ONLY_NO_REFERENCE_ACCESS",
+    "buffers_processed_independently": true,
+    "construction_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+    "coordinate_order": "longitude_latitude",
+    "direction_centers_deg": {
+      "E": 90.0,
+      "N": 0.0,
+      "NE": 45.0,
+      "NW": 315.0,
+      "S": 180.0,
+      "SE": 135.0,
+      "SW": 225.0,
+      "W": 270.0
+    },
+    "direction_width_deg": 45.0,
+    "directions": 8,
+    "expected_sector_area_formula": "authoritative_buffer_planar_area_m2 / 24",
+    "future_evaluation_boundary_rule": "INTERSECTS; multiplos setores contam apenas para cobertura, com criterio conservador pre-especificado para Top-1",
+    "geometry_type": "Polygon",
+    "inner_ring_boundaries": "HOMOTHETIC_SCALES_OF_AUTHORITATIVE_PARENT",
+    "internal_overlap_relative_tolerance": 1e-08,
+    "minimum_unique_vertices": 4,
+    "orientation_offset_deg": -22.5,
+    "outer_boundary_reused_exactly": true,
+    "parent_geometry_must_be_convex_about_candidate": true,
+    "parent_geometry_must_be_star_shaped_about_candidate": true,
+    "partition_area_conservation_relative_tolerance": 1e-06,
+    "ring_boundaries_as_radius_fraction": [
+      0.0,
+      0.5773502692,
+      0.8164965809,
+      1.0
+    ],
+    "ring_boundary_formula": "r_i = R * sqrt(i / 3), i in {0,1,2,3}",
+    "ring_labels": [
+      "R1_INTERNO",
+      "R2_INTERMEDIARIO",
+      "R3_EXTERNO"
+    ],
+    "ring_must_be_closed": true,
+    "rings": 3,
+    "sector_id_template": "{scenario_id}::{candidate_id}::R{ring_index_2d}::{direction_label}",
+    "sectors_per_buffer": 24,
+    "sensitivity_geometries": [
+      {
+        "directions": 4,
+        "label": "S12",
+        "purpose": "sensibilidade_de_resolucao_angular",
+        "rings": 3,
+        "sectors_per_buffer": 12
+      },
+      {
+        "directions": 12,
+        "label": "S36",
+        "purpose": "sensibilidade_de_resolucao_angular",
+        "rings": 3,
+        "sectors_per_buffer": 36
+      },
+      {
+        "label": "ROTATED_HALF_WEDGE",
+        "purpose": "sensibilidade_a_orientacao",
+        "rotation": "half_direction_width"
+      }
+    ],
+    "strategy": "AUTHORITATIVE_BUFFER_HOMOTHETIC_EQUAL_AREA_RADIAL_SECTORS"
+  },
+  "ground_truth_firewall": {
+    "allowed_control_field": {
+      "field": "ground_truth_used",
+      "required_value": false
+    },
+    "case_insensitive": true,
+    "enabled": true,
+    "forbidden_columns_or_fragments": [
+      "ground_truth",
+      "ground_truth_lat",
+      "ground_truth_lon",
+      "ground_truth_longitude",
+      "ground_truth_sector",
+      "truth_",
+      "reference_lat",
+      "reference_lon",
+      "true_lat",
+      "true_lon",
+      "real_lat",
+      "real_lon",
+      "victim_lat",
+      "victim_lon",
+      "target_lat",
+      "target_lon",
+      "base_lat",
+      "base_lon",
+      "generator_distance",
+      "distance_to_truth",
+      "distance_to_ground_truth",
+      "distance_to_reference",
+      "inside_buffer",
+      "sector_contains_truth",
+      "reference_sector",
+      "correct_sector",
+      "relevant_candidate"
+    ],
+    "forbidden_field_policy": "ABORT_EXECUTION",
+    "ground_truth_may_enter_feature_extraction": false,
+    "ground_truth_may_enter_scoring_or_ranking": false,
+    "ground_truth_may_enter_sectorization": false,
+    "ground_truth_used_true_policy": "ABORT_EXECUTION",
+    "match_mode": "NORMALIZED_KEY_SUBSTRING",
+    "open_reference_only_after_output_freeze": true,
+    "recursive": true
+  },
+  "guardrails": {
+    "candidate_and_sector_rankings_must_remain_distinct": true,
+    "configuration_change_policy": "Qualquer alteracao exige novo identificador de versao, justificativa, repeticao integral dos testes e novo congelamento antes de REP-S.",
+    "development_only": true,
+    "photos_used_as_numeric_input": false,
+    "point_level_geo_features_may_be_relabelled_as_sector_features": false,
+    "results_may_be_called_confirmatory": false,
+    "sector_priority_may_be_called_victim_location": false,
+    "sector_priority_may_command_field_operation": false,
+    "weights_may_be_called_validated": false
+  },
+  "input_schema": {
+    "buffer_geometry_required": {
+      "format": "GeoJSON",
+      "geometry_type": "Polygon",
+      "join_key": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "one_geometry_per_join_key": true
+    },
+    "buffer_results_required_fields": [
+      "protocol_id",
+      "scenario_id",
+      "candidate_id",
+      "estimated_lat",
+      "estimated_lon",
+      "adaptive_radius_m",
+      "buffer_area_m2",
+      "review_status",
+      "execution_classification",
+      "confirmatory_eligible",
+      "ground_truth_used",
+      "source_row_hash"
+    ],
+    "identifier_contract": {
+      "buffer_key": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "components_may_contain_separator": false,
+      "components_must_be_nonempty": true,
+      "direction_labels": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ],
+      "sector_id_template": "{scenario_id}::{candidate_id}::R{ring_index_2d}::{direction_label}",
+      "separator": "::"
+    },
+    "score_constraints": {
+      "closed_interval": true,
+      "maximum": 1.0,
+      "minimum": 0.0
+    },
+    "sector_feature_required_fields": [
+      "scenario_id",
+      "candidate_id",
+      "sector_id",
+      "road_trail_access_score",
+      "hydro_access_score",
+      "terrain_access_score",
+      "landcover_access_score",
+      "geo_completeness",
+      "source_provenance"
+    ],
+    "uniqueness_keys": {
+      "buffer": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "sector": [
+        "scenario_id",
+        "candidate_id",
+        "sector_id"
+      ]
+    }
+  },
+  "language": "pt-BR",
+  "limitations": [
+    "A configuracao e destinada exclusivamente ao DEV-S e nao constitui validacao confirmatoria ou operacional.",
+    "Os pesos foram herdados do GEO06-v1 aplicado a candidatos pontuais e sao hipoteses de desenvolvimento; nao foram validados para setores.",
+    "Os atributos GEO precisam ser recalculados sobre cada poligono setorial; atributos pontuais ou de janelas antigas nao podem ser apenas copiados e apresentados como atributos de setor.",
+    "A setorizacao radial regular favorece comparabilidade e reprodutibilidade, mas nao substitui zonas operacionais baseadas em feicoes reais do terreno.",
+    "O ranking e restrito aos 24 setores do mesmo buffer; nao resolve a consolidacao de buffers sobrepostos nem produz ranking territorial global entre candidatos.",
+    "Vias, hidrografia, relevo e cobertura derivados de fontes publicas nao confirmam transitabilidade, barreiras atuais ou condicoes observadas em campo.",
+    "A estabilidade de 0,80 e a margem de 0,05 sao parametros herdados para diagnostico e exigem analise de sensibilidade antes de qualquer uso confirmatorio.",
+    "A posicao real permanece protegida e somente podera ser usada em avaliacao posterior, apos congelamento das saidas.",
+    "O caso URBE-01 utiliza um único ponto e o raio informado pela fonte; não estima a posição da vítima.",
+    "O ranking PERFIL recalcula o componente territorial com pesos 35/20/25/20; somente o componente contextual C tem peso de 10% no escore final.",
+    "Nem o componente territorial do PERFIL nem o componente contextual criam preferência direcional ou penalidade por anel.",
+    "AP1, AP2 e AP3 são áreas analíticas para revisão humana, não probabilidades nem detecções."
+  ],
+  "missing_data_policy": {
+    "incomplete_geo_status": "REVISAR",
+    "invalid_or_out_of_range_score_policy": "REJECT_ROW",
+    "missing_as_favorable_forbidden": true,
+    "missing_optional_context_policy": "KEEP_BLANK_AND_RECORD_WARNING",
+    "missing_required_geo_score": "SET_SCORE_AND_RANK_TO_NULL_AND_MARK_REVISAR",
+    "missing_sector_geometry_policy": "REJECT_BUFFER",
+    "missing_source_provenance_status": "REVISAR",
+    "never_invent": true,
+    "renormalize_weights_when_missing": false,
+    "required_geo_completeness": 1.0
+  },
+  "output_policy": {
+    "deterministic_order": [
+      "scenario_id",
+      "candidate_id",
+      "ring_index",
+      "direction_index"
+    ],
+    "files": [
+      {
+        "name": "sector_polygons_dev.geojson",
+        "role": "geometrias_dos_setores"
+      },
+      {
+        "name": "sector_features_dev.csv",
+        "role": "atributos_GEO_por_setor"
+      },
+      {
+        "name": "sector_ranking_dev.csv",
+        "role": "escores_contribuicoes_rankings_e_status"
+      },
+      {
+        "name": "buffer_decisions_dev.csv",
+        "role": "decisao_supervisionada_por_buffer"
+      },
+      {
+        "name": "sector_results_dev.json",
+        "role": "resultado_estruturado"
+      },
+      {
+        "name": "warnings_dev.log",
+        "role": "alertas_de_revisao"
+      },
+      {
+        "name": "manifest_setorizacao_dev.json",
+        "role": "proveniencia_hashes_e_controles"
+      }
+    ],
+    "include_all_weight_sets": true,
+    "include_ground_truth_control_field": true,
+    "include_ground_truth_payload": false,
+    "include_margin_and_stability": true,
+    "include_normalized_criteria": true,
+    "include_review_status": true,
+    "include_warning_codes": true,
+    "include_weighted_contributions": true,
+    "manifest_filename": "manifest_setorizacao_dev.json",
+    "manifest_sha256_required_for_inputs_config_engine_and_outputs": true
+  },
+  "phase": "CAMPO_URBE01_CEGO",
+  "protocol_id": "URBE-BLIND-SET-v1.0",
+  "protocol_name": "Processamento cego diagnóstico do cenário URBE-01",
+  "ranking": {
+    "base_top_tie_policy": "NO_SELECTION_AND_REVISAR",
+    "cross_buffer_ranking": false,
+    "cross_candidate_ranking": false,
+    "instability_status": "REVISAR",
+    "low_margin_status": "REVISAR",
+    "low_margin_threshold": 0.05,
+    "margin_formula": "top1_score - top2_score",
+    "no_viable_sector_status": "REVISAR",
+    "operational_command_claim_forbidden": true,
+    "output_labels": {
+      "rank_1": "SETOR_PRIORITARIO_ANALITICO",
+      "rank_2": "SETOR_SECUNDARIO_ANALITICO",
+      "rank_3": "SETOR_TERCIARIO_ANALITICO"
+    },
+    "primary_weight_set": "BASE",
+    "rank_method": "COMPETITION_RANK",
+    "robust_stability_minimum_top1_wins": 4,
+    "robust_stability_threshold": 0.8,
+    "scenario_global_sector_ranking": false,
+    "scope": "WITHIN_CANDIDATE_BUFFER_ONLY",
+    "score_comparison_decimals": 9,
+    "sensitivity_top_tie_policy": "FRACTIONAL_SUPPORT_AND_EXPLICIT_FLAG",
+    "sort_order": [
+      "priority_score_desc",
+      "sector_id_asc"
+    ],
+    "tie_break_is_substantive_preference": false,
+    "tie_policy": "SHARED_COMPETITION_RANK_AND_NO_SUBSTANTIVE_ID_PREFERENCE",
+    "top1_stability_formula": "sum_w(I(sector_in_top_set_w)/size(top_set_w))/number_of_weight_sets",
+    "top1_support_formula": "sum_w(I(sector_in_top_set_w)/size(top_set_w))/number_of_weight_sets"
+  },
+  "scope": {
+    "classification": "CASO_UNICO_CEGO_DIAGNOSTICO_NAO_CONFIRMATORIO",
+    "component": "SETORIZACAO_E_PRIORIZACAO_ESPACIAL",
+    "description": "Setorização e priorização intrabuffer do raio de 2.500 m recebido da fonte para URBE-01. Executada antes da abertura da posição de referência e destinada à revisão humana.",
+    "execution_unit": "candidate_buffer",
+    "module": "EXT-ESPACIAL",
+    "ranking_unit": "sector_within_candidate_buffer"
+  },
+  "scoring": {
+    "absolute_veto_from_public_cartography": false,
+    "absolute_veto_policy": "PROIBIDO_NO_DEV_V1_SEM_EVIDENCIA_OPERACIONAL_INDEPENDENTE_E_REGRA_PRE_ESPECIFICADA",
+    "additional_barrier_penalty": 0.0,
+    "additional_barrier_penalty_reason": "GEO-03 e GEO-05 ja transformam barreiras potenciais em escores de acesso; penalizacao adicional produziria dupla contagem.",
+    "confidence_conditioned_weights_enabled": false,
+    "confidence_conditioned_weights_note": "A funcao w_k(C_loc) ainda nao foi congelada; detection_quality nao pode substituir C_loc.",
+    "criteria": [
+      {
+        "field": "road_trail_access_score",
+        "module": "GEO-02",
+        "role": "benefit"
+      },
+      {
+        "field": "hydro_access_score",
+        "module": "GEO-03",
+        "role": "benefit_after_barrier_transformation"
+      },
+      {
+        "field": "terrain_access_score",
+        "module": "GEO-04",
+        "role": "benefit_after_cost_transformation"
+      },
+      {
+        "field": "landcover_access_score",
+        "module": "GEO-05",
+        "role": "benefit_after_cost_transformation"
+      }
+    ],
+    "criterion_direction": "HIGHER_IS_MORE_FAVORABLE",
+    "method": "WEIGHTED_LINEAR_COMBINATION",
+    "score_range": [
+      0.0,
+      1.0
+    ],
+    "symbolic": "P_j = M_j * sum_k(w_k * x_jk) * product_m(1 - p_jm)",
+    "viability_mask_default": 1,
+    "weight_sets": [
+      {
+        "hydro_weight": 0.25,
+        "landcover_weight": 0.25,
+        "purpose": "composicao_principal_de_desenvolvimento",
+        "road_trail_weight": 0.3,
+        "status": "HERDADO_GEO06_DEV",
+        "terrain_weight": 0.2,
+        "weight_set": "BASE"
+      },
+      {
+        "hydro_weight": 0.25,
+        "landcover_weight": 0.25,
+        "purpose": "controle_sem_preferencia_entre_modulos",
+        "road_trail_weight": 0.25,
+        "status": "SENSIBILIDADE",
+        "terrain_weight": 0.25,
+        "weight_set": "IGUAIS"
+      },
+      {
+        "hydro_weight": 0.0,
+        "landcover_weight": 0.0,
+        "purpose": "remove_GEO03_e_GEO05",
+        "road_trail_weight": 0.6,
+        "status": "ABLACAO",
+        "terrain_weight": 0.4,
+        "weight_set": "SEM_BARREIRAS"
+      },
+      {
+        "hydro_weight": 0.0,
+        "landcover_weight": 0.0,
+        "purpose": "mantem_somente_GEO02",
+        "road_trail_weight": 1.0,
+        "status": "ABLACAO",
+        "terrain_weight": 0.0,
+        "weight_set": "APENAS_ACESSO"
+      },
+      {
+        "hydro_weight": 0.35,
+        "landcover_weight": 0.3,
+        "purpose": "aumenta_influencia_de_GEO03_e_GEO05",
+        "road_trail_weight": 0.2,
+        "status": "SENSIBILIDADE",
+        "terrain_weight": 0.15,
+        "weight_set": "ENFASE_BARREIRAS"
+      }
+    ],
+    "weight_sum_required": 1.0,
+    "weight_sum_tolerance": 1e-12
+  },
+  "spatial_reference": {
+    "area_unit": "m2",
+    "bearing_direction": "CLOCKWISE",
+    "bearing_origin": "TRUE_NORTH",
+    "distance_unit": "m",
+    "earth_model": "SPHERE_WITH_WGS84_MEAN_EARTH_RADIUS",
+    "earth_radius_m": 6371008.8,
+    "input_crs": "EPSG:4326",
+    "output_crs": "EPSG:4326",
+    "planar_degrees_for_metric_calculation_forbidden": true
+  },
+  "status": "CONGELADO_PROSPECTIVO_ANTES_DA_ABERTURA_DA_REFERENCIA",
+  "status_taxonomy": {
+    "decision_status": [
+      "PRIORIZADO",
+      "REVISAR"
+    ],
+    "feature_status": [
+      "DISPONIVEL",
+      "PARCIAL",
+      "NAO_DISPONIVEL"
+    ],
+    "processing_error_policy": "ABORT_EXECUTION",
+    "warning_codes": [
+      "UPSTREAM_REVIEW_REQUIRED",
+      "INCOMPLETE_GEO",
+      "NO_COMPLETE_SECTOR",
+      "LOW_MARGIN",
+      "BASE_TOP_TIE",
+      "NO_UNIQUE_TOP1",
+      "SENSITIVITY_TOP_TIE",
+      "RANKING_UNSTABLE",
+      "POTENTIAL_BARRIER",
+      "MISSING_REQUIRED_GEO_SCORE",
+      "MISSING_SOURCE_PROVENANCE"
+    ]
+  },
+  "urbe01_blind_profile": {
+    "base_weights": {
+      "GEO02": 0.35,
+      "GEO03": 0.2,
+      "GEO04": 0.25,
+      "GEO05": 0.2
+    },
+    "context_component_weight_in_final_score": 0.1,
+    "context_weights": {
+      "Aisolation": 0.4,
+      "Awater": 0.6
+    },
+    "directional_preference_applied": false,
+    "dwater_decay_m": 750.0,
+    "final_weights": {
+      "context": 0.1,
+      "profile_base": 0.9
+    },
+    "formulas": {
+      "Aisolation": "GEO02*(1-min(road_density/4,1))",
+      "Awater": "exp(-dwater/750)*GEO03*(1-water_wetland_prop)",
+      "context": "0.60*Awater + 0.40*Aisolation",
+      "final": "0.90*profile_base + 0.10*context",
+      "profile_base": "0.35*GEO02 + 0.20*GEO03 + 0.25*GEO04 + 0.20*GEO05"
+    },
+    "name": "PERFIL_URBE01_v1",
+    "ring_penalty_applied": false,
+    "road_density_saturation_km_km2": 4.0
+  },
+  "urbe01_interpretation": {
+    "confirmatory_eligible": false,
+    "field_confirmation_required": true,
+    "ground_truth_used": false,
+    "operational_command": false,
+    "score_meaning": "PRIORIDADE_ANALITICA_TERRITORIAL_NAO_PROBABILIDADE_DE_PRESENCA",
+    "top3_label_meaning": "AREAS_ANALITICAS_PARA_REVISAO_HUMANA"
+  },
+  "urbe01_profile_facts": {
+    "age_years": 60,
+    "alzheimer_diagnosis_confirmed": false,
+    "fishing_history": true,
+    "islands_fishing_isolation_statement": "PISTA_CONTEXTUAL_NAO_DIRECIONAL",
+    "known_direction": "NAO_DISPONIVEL",
+    "maximum_displacement_time_minutes": 60,
+    "mobility": "a_pe",
+    "possible_disorientation_or_memory_impairment": true,
+    "sex": "masculino",
+    "use_boundary": "O ranking PERFIL recalcula o componente territorial com pesos GEO02/GEO03/GEO04/GEO05 de 35/20/25/20, responsável por 90% do escore final. Somente o componente contextual C, associado às pistas de pesca e isolamento, recebe peso de 10%. Nenhum componente define azimute ou anel preferencial."
+  },
+  "version": "1.0"
+}

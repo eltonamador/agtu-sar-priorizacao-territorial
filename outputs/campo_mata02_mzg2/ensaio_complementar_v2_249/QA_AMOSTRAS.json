@@ -1,0 +1,170 @@
+[
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::N",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::NE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::E",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::SE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::S",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::W",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R01::NW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::N",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::NE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::E",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::SE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::S",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::SW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::W",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R02::NW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::N",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::NE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::E",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::SE",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::S",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::W",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  },
+  {
+    "sector_id": "MATA-02::MATA-02-E0::R03::NW",
+    "terrain_valid": 3600,
+    "terrain_expected": 3600,
+    "worldcover_valid": 3600,
+    "worldcover_expected": 3600
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/campo_mata02_mzg2/entrada_auditada_v2/entrada_raio_fonte_mata02_mzg2.json",
+    "sha256": "a2a42edb90eab2ba3aa0fd0f98afd69058aedcbca99f7e3dc9c1ec53582b2b3a"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/campo_mata02_mzg2/entrada_auditada_v2/entrada_raio_fonte_mata02_mzg2.geojson",
+    "sha256": "3244b5aee803685785d8f9ac8efeaa5db3f15ccefe7c395f01f60793bf11d197"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/campo_mata02_mzg2/entrada_auditada_v2/manifesto_entrada_raio_fonte_mata02_mzg2.json",
+    "sha256": "2c10734be3414bd12e23da475e930b1493d3f9d6af0e98b792123e9251fe5f92"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/campo_mata02_mzg2/entrada_auditada_v2/config_entrada_mata02_v2.json",
+    "sha256": "e7e822dc269961439f28e469e8212393213afe7bf91a678bc8b75df5e2311af8"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/mata02_mzg2_processamento_cego_v1/run_mata02_mzg2_blind.py",
+    "sha256": "fd5cce179145247ba2585b2c9c7b868de56b168c3eaf51d87f78038bc80b1acf"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+    "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/executar_mata02_complementar_v2.py",
+    "sha256": "2120b08c2e12df56039e1da8b72ed7de1feed1a17b1576e273057010112a28af"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/geo02_overpass_query.txt",
+    "sha256": "d73ba33f5b3633f20dc039b2eaa09e26fd4ce2ea95f16364c1284903402c4e79"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/geo03_overpass_query.txt",
+    "sha256": "ae2783270cf0495fe73536447e681c781065e323505ec49d112e737d48369603"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+    "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+    "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+    "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+  },
+  {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+    "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+  }
+]

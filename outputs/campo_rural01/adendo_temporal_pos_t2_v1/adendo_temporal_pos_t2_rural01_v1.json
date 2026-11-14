@@ -1,0 +1,69 @@
+{
+  "addendum_id": "RURAL01-TEMP-ADD-001",
+  "scenario_id": "RURAL-01",
+  "recorded_at": "2026-10-22T12:44:52-03:00",
+  "status": "REGISTRADO_POS_CONGELAMENTO",
+  "source": "OPERADOR",
+  "reported_fact": "O desaparecimento ocorreu 14 horas antes das fotografias.",
+  "elapsed_minutes": 840,
+  "duration_precision": "EXATA_SEGUNDO_RELATO_DO_OPERADOR",
+  "photo_reference": {
+    "declared_sessions": [
+      "2026-10-22T06:10:00-03:00",
+      "2026-10-22T06:22:00-03:00"
+    ],
+    "individual_file_mapping": "NAO_DISPONIVEL"
+  },
+  "derived_disappearance_interval": {
+    "start": "2026-10-21T16:10:00-03:00",
+    "end": "2026-10-21T16:22:00-03:00",
+    "precision": "INTERVALAR_12_MINUTOS",
+    "exact_timestamp_available": false
+  },
+  "planning_point_timestamp": {
+    "value": "2026-10-21T14:20:00-03:00",
+    "correct_semantics": "HORARIO_DO_PONTO_INICIAL_OU_REGISTRO_DE_ERB",
+    "must_not_be_used_as": "HORARIO_DO_DESAPARECIMENTO"
+  },
+  "temporal_metadata_conflict": {
+    "status": "PRESERVADO",
+    "resolved_by_addendum": false,
+    "reason": "Os metadados embutidos indicam 2026-10-21, enquanto as sessoes foram declaradas pelo operador para 2026-10-22; o adendo nao escolhe qual relogio estava correto."
+  },
+  "impact": {
+    "frozen_package_modified": false,
+    "ground_truth_used": false,
+    "loc_ranking_changed": false,
+    "top3_changed": false,
+    "map_prediction_changed": false,
+    "urgency_status_changed": false,
+    "correct_elapsed_minutes_for_future_revision": 840,
+    "profile_temporal_revision_required": true,
+    "reason_ranking_unchanged": "O raio de 1500 m foi recebido como raio final ajustado pela fonte e o tempo nao participou numericamente do ranking espacial congelado."
+  },
+  "supersession": {
+    "field_only": "elapsed_minutes",
+    "previous_value_to_disregard_for_temporal_interpretation": 1333.42,
+    "replacement_value": 840,
+    "scope": "INTERPRETACAO_TEMPORAL_E_FUTURA_REVISAO_DO_PERFIL",
+    "spatial_outputs_superseded": false
+  },
+  "traceability": {
+    "frozen_t2_manifest": {
+      "path": "outputs/campo_rural01/t2_congelado_final/manifesto_t2_rural01.json",
+      "sha256": "15e9961bc585b5a585eae4d48af9a3f5bfc829ca54e42d7c79bdb3e4db6994cf"
+    },
+    "frozen_integrated_protocol": {
+      "path": "outputs/campo_rural01/perfil_v2_v3/protocolo_integrado_rural01_congelado.json",
+      "sha256": "a44fd3aa12844ea786947aa87ebea3e326fca23f839da43df74f1ca57dde0df8"
+    },
+    "visual_metadata_manifest": {
+      "path": "outputs/campo_rural01/entrada_cega_v1/manifesto_metadados_visuais.json",
+      "sha256": "41c7e443f6e89e402506f39736fcf39c328799bfa581cc55250182559d3924c7"
+    },
+    "top3_spatial_output": {
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+      "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "domain_radius_m": 7000.0,
+  "halo_checked_m": 17000,
+  "OSM_bbox_contains_domain_and_nearest_search_halo": true,
+  "road_segments_in_domain": 2159,
+  "hydro_segments_in_domain": 320,
+  "hydro_completeness_on_ground": "NAO_VERIFICADA",
+  "coordinate_system": "EPSG:4326",
+  "sectors": 24,
+  "samples_per_sector": 3600,
+  "sample_total": 86400,
+  "target_reference_not_used": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "MATA02-PISTA-249-v1",
+  "scenario_id": "MATA-02",
+  "source": "Informação do pesquisador nesta conversa",
+  "nature": "Pista do cenário hipotético; não observação extraída das fotografias",
+  "azimuth_deg": 249,
+  "measurement": "A partir do norte, sentido horário por convenção de azimute",
+  "north_reference_declared": null,
+  "mapping_convention": "Norte geográfico apenas para representação; confirmar se a informação original era magnética",
+  "origin": "E0 adotado como origem do desenho; ponto exato da observação não informado",
+  "angular_uncertainty_deg": null,
+  "quality_numeric": null,
+  "witness_location": null,
+  "observation_timestamp": null,
+  "distance_travelled_m": null,
+  "used_in_base_ranking": false,
+  "quantitative_profile_status": "NAO_EXECUTADO_PARAMETROS_INSUFICIENTES",
+  "why": "Não atribuir cone de 45 graus, confiança média, peso ou alcance de 6 km à pista. O traço é apenas referência gráfica."
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "MATA-02",
+  "coordinate_lat_lon": [
+    -0.17225,
+    -51.429583
+  ],
+  "original_message": "-0.172250, -51.429583",
+  "recorded_at_utc": "2026-10-30T19:18:07.847143+00:00",
+  "nature": "REFERENCIA_POSTERIOR_DECLARADA_DE_CENARIO_HIPOTETICO",
+  "source": "Declaração do pesquisador nesta conversa",
+  "accuracy_m": null,
+  "independently_verified": false,
+  "used_in_frozen_ranking": false
+}

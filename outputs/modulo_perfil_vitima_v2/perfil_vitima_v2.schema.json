@@ -1,0 +1,906 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:perfil-vitima:v2-draft-2",
+  "title": "Entrada operacional do módulo de perfil da vítima V2",
+  "description": "Contrato de entrada estruturada, pseudonimizada e sem ground truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scenario_id",
+    "protocol_version",
+    "record_status",
+    "operator_code",
+    "collected_at",
+    "last_planning_point",
+    "search_context",
+    "victim_profile",
+    "clues",
+    "text_fields_sanitized",
+    "ground_truth_absent",
+    "freeze_metadata"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9_-]{2,39}$"
+    },
+    "protocol_version": {
+      "const": "PERFIL-V2-DRAFT.2"
+    },
+    "record_status": {
+      "type": "string",
+      "enum": ["RASCUNHO", "CONGELADO"]
+    },
+    "operator_code": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9_-]{1,39}$"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_planning_point": {
+      "$ref": "#/$defs/planningPoint"
+    },
+    "search_context": {
+      "$ref": "#/$defs/searchContext"
+    },
+    "victim_profile": {
+      "$ref": "#/$defs/victimProfile"
+    },
+    "clues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/clue"
+      },
+      "maxItems": 50
+    },
+    "text_fields_sanitized": {
+      "const": true
+    },
+    "ground_truth_absent": {
+      "const": true
+    },
+    "freeze_metadata": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/freezeMetadata"
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_status": {
+            "const": "CONGELADO"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "freeze_metadata": {
+            "$ref": "#/$defs/freezeMetadata"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "freeze_metadata": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9_-]{2,79}$"
+    },
+    "evidenceNature": {
+      "type": "string",
+      "enum": [
+        "CONFIRMADO",
+        "OBSERVADO",
+        "RELATADO",
+        "SUSPEITO",
+        "INFERIDO",
+        "NAO_DISPONIVEL"
+      ]
+    },
+    "evidenceSource": {
+      "type": "string",
+      "enum": [
+        "VITIMA",
+        "FAMILIAR",
+        "TESTEMUNHA",
+        "REGISTRO",
+        "OPERADOR",
+        "OUTRA",
+        "NAO_DISPONIVEL"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["ALTA", "MEDIA", "BAIXA", "NAO_AVALIADA"]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nature",
+        "source",
+        "source_code",
+        "observed_at",
+        "time_precision",
+        "confidence",
+        "authorized_for_model"
+      ],
+      "properties": {
+        "nature": {
+          "$ref": "#/$defs/evidenceNature"
+        },
+        "source": {
+          "$ref": "#/$defs/evidenceSource"
+        },
+        "source_code": {
+          "type": ["string", "null"],
+          "maxLength": 60,
+          "pattern": "^[A-Z0-9_-]*$"
+        },
+        "observed_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "time_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "authorized_for_model": {
+          "type": "boolean"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "nature": {
+                "const": "NAO_DISPONIVEL"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "source": {
+                "const": "NAO_DISPONIVEL"
+              },
+              "source_code": {
+                "type": "null"
+              },
+              "observed_at": {
+                "type": "null"
+              },
+              "time_precision": {
+                "const": "NAO_DISPONIVEL"
+              },
+              "confidence": {
+                "const": "NAO_AVALIADA"
+              },
+              "authorized_for_model": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "time_precision": {
+                "enum": ["EXATA", "APROXIMADA"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "observed_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "observed_at": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ageGroupFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": "string",
+          "enum": ["CRIANCA", "ADOLESCENTE", "ADULTO", "IDOSO", "NAO_DISPONIVEL"]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "mobilityFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": "string",
+          "enum": ["NORMAL", "REDUZIDA", "ASSISTIDA", "IMOVEL", "NAO_DISPONIVEL"]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "cognitiveFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": "string",
+          "enum": [
+            "SEM_ALTERACAO_RELATADA",
+            "POSSIVEL_DESORIENTACAO",
+            "ALTERACAO_OBSERVADA_NAO_CLASSIFICADA",
+            "COMPROMETIMENTO_DOCUMENTADO",
+            "NAO_DISPONIVEL"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "familiarityFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": "string",
+          "enum": ["NENHUMA", "BAIXA", "MODERADA", "ALTA", "NAO_DISPONIVEL"]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "experienceFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": "string",
+          "enum": ["NENHUMA", "OCASIONAL", "FREQUENTE", "ESPECIALISTA", "NAO_DISPONIVEL"]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "durationFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value_minutes", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value_minutes": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "codedTextFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value_code", "description", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value_code": {
+          "type": "string",
+          "enum": ["PRESENTE", "AUSENTE", "NAO_DISPONIVEL"]
+        },
+        "description": {
+          "type": ["string", "null"],
+          "maxLength": 500
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "booleanFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "value", "evidence"],
+      "properties": {
+        "fact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "value": {
+          "type": ["boolean", "null"]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "planningPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "point_type",
+        "latitude",
+        "longitude",
+        "timestamp",
+        "timestamp_precision",
+        "timezone",
+        "coordinate_source",
+        "uncertainty_m",
+        "uncertainty_status",
+        "uncertainty_source"
+      ],
+      "properties": {
+        "point_type": {
+          "type": "string",
+          "enum": [
+            "ULTIMO_PONTO_VISTO",
+            "ULTIMO_PONTO_CONHECIDO",
+            "PONTO_INICIAL_PLANEJAMENTO",
+            "ESTIMATIVA_SISTEMA_AEROTRANSPORTADO"
+          ]
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "timestamp": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "timestamp_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "timezone": {
+          "type": ["string", "null"],
+          "maxLength": 80
+        },
+        "coordinate_source": {
+          "type": "string",
+          "enum": [
+            "DRONE",
+            "CELULAR",
+            "GPS",
+            "MAPA",
+            "TESTEMUNHA",
+            "SISTEMA_AEROTRANSPORTADO",
+            "OUTRA",
+            "NAO_DISPONIVEL"
+          ]
+        },
+        "uncertainty_m": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0
+        },
+        "uncertainty_status": {
+          "type": "string",
+          "enum": ["INFORMADA", "CALCULADA", "PROTOCOLO", "NAO_DISPONIVEL"]
+        },
+        "uncertainty_source": {
+          "type": ["string", "null"],
+          "maxLength": 300
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "timestamp_precision": {
+                "enum": ["EXATA", "APROXIMADA"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "timezone": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "timestamp": {
+                "type": "null"
+              },
+              "timezone": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "uncertainty_status": {
+                "const": "NAO_DISPONIVEL"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "uncertainty_m": {
+                "type": "null"
+              },
+              "uncertainty_source": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "uncertainty_m": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "uncertainty_source": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "searchContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment",
+        "elapsed_minutes",
+        "elapsed_status",
+        "elapsed_source",
+        "travel_mode"
+      ],
+      "properties": {
+        "environment": {
+          "type": "string",
+          "enum": ["URBANO", "PERIURBANO", "RURAL", "MATA", "MISTO", "NAO_DISPONIVEL"]
+        },
+        "elapsed_minutes": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "elapsed_status": {
+          "type": "string",
+          "enum": ["CALCULADO", "INFORMADO", "APROXIMADO", "NAO_DISPONIVEL"]
+        },
+        "elapsed_source": {
+          "type": ["string", "null"],
+          "maxLength": 300
+        },
+        "travel_mode": {
+          "type": "string",
+          "enum": [
+            "A_PE",
+            "BICICLETA",
+            "VEICULO",
+            "EMBARCACAO",
+            "MISTO",
+            "OUTRO",
+            "NAO_DISPONIVEL"
+          ]
+        },
+        "weather_summary": {
+          "type": ["string", "null"],
+          "maxLength": 500
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "elapsed_status": {
+                "const": "NAO_DISPONIVEL"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "elapsed_minutes": {
+                "type": "null"
+              },
+              "elapsed_source": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "elapsed_minutes": {
+                "type": "number",
+                "minimum": 0
+              },
+              "elapsed_source": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "victimProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "age_group",
+        "mobility",
+        "maximum_plausible_travel_time",
+        "cognitive_condition",
+        "area_familiarity",
+        "environment_experience",
+        "physical_or_sensory_limitations",
+        "relevant_medication_effect",
+        "previous_disappearances"
+      ],
+      "properties": {
+        "age_group": {
+          "$ref": "#/$defs/ageGroupFact"
+        },
+        "mobility": {
+          "$ref": "#/$defs/mobilityFact"
+        },
+        "maximum_plausible_travel_time": {
+          "$ref": "#/$defs/durationFact"
+        },
+        "cognitive_condition": {
+          "$ref": "#/$defs/cognitiveFact"
+        },
+        "area_familiarity": {
+          "$ref": "#/$defs/familiarityFact"
+        },
+        "environment_experience": {
+          "$ref": "#/$defs/experienceFact"
+        },
+        "physical_or_sensory_limitations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/codedTextFact"
+          },
+          "maxItems": 20
+        },
+        "relevant_medication_effect": {
+          "$ref": "#/$defs/codedTextFact"
+        },
+        "previous_disappearances": {
+          "$ref": "#/$defs/booleanFact"
+        }
+      }
+    },
+    "associatedLocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "feature_type", "latitude", "longitude", "geometry_reference"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "feature_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "latitude": {
+          "type": ["number", "null"],
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": ["number", "null"],
+          "minimum": -180,
+          "maximum": 180
+        },
+        "geometry_reference": {
+          "type": ["string", "null"],
+          "maxLength": 300
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "geometry_reference": {
+              "type": "null"
+            }
+          }
+        },
+        {
+          "properties": {
+            "latitude": {
+              "type": "null"
+            },
+            "longitude": {
+              "type": "null"
+            },
+            "geometry_reference": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    },
+    "directionData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin_role", "azimuth_deg", "cardinal_direction", "angular_tolerance_deg", "observation_method"],
+      "properties": {
+        "origin_role": {
+          "type": "string",
+          "enum": ["PONTO_INICIAL", "VESTIGIO_INTERMEDIARIO", "OUTRO_PONTO_DOCUMENTADO"]
+        },
+        "azimuth_deg": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "exclusiveMaximum": 360
+        },
+        "cardinal_direction": {
+          "type": ["string", "null"],
+          "enum": ["N", "NE", "E", "SE", "S", "SW", "W", "NW", null]
+        },
+        "angular_tolerance_deg": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 180
+        },
+        "observation_method": {
+          "type": "string",
+          "enum": ["TESTEMUNHO", "VESTIGIO", "SEQUENCIA_DE_PONTOS", "REGISTRO", "OUTRO"]
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "azimuth_deg": {
+              "type": "number"
+            },
+            "cardinal_direction": {
+              "type": "null"
+            }
+          }
+        },
+        {
+          "properties": {
+            "azimuth_deg": {
+              "type": "null"
+            },
+            "cardinal_direction": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "clue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "clue_id",
+        "clue_type",
+        "literal_description",
+        "evidence",
+        "spatial_status",
+        "associated_location",
+        "direction_data"
+      ],
+      "properties": {
+        "clue_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "clue_type": {
+          "type": "string",
+          "enum": [
+            "DESTINO_DECLARADO",
+            "LUGAR_FAMILIAR",
+            "ATIVIDADE_HABITUAL",
+            "AGUA_PESCA",
+            "ISOLAMENTO",
+            "ABRIGO",
+            "DIRECAO_OBSERVADA",
+            "TRANSPORTE",
+            "VULNERABILIDADE",
+            "OUTRA"
+          ]
+        },
+        "literal_description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "spatial_status": {
+          "type": "string",
+          "enum": [
+            "ESPACIALIZADA",
+            "ESPACIALIZAVEL_PENDENTE",
+            "CONTEXTUAL_NAO_DIRECIONAL",
+            "NAO_ESPACIALIZAVEL"
+          ]
+        },
+        "associated_location": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/associatedLocation"
+            }
+          ]
+        },
+        "direction_data": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/directionData"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "spatial_status": {
+                "const": "ESPACIALIZADA"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "associated_location": {
+                "$ref": "#/$defs/associatedLocation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "clue_type": {
+                "const": "DIRECAO_OBSERVADA"
+              },
+              "spatial_status": {
+                "const": "ESPACIALIZADA"
+              }
+            },
+            "required": ["clue_type", "spatial_status"]
+          },
+          "then": {
+            "properties": {
+              "direction_data": {
+                "$ref": "#/$defs/directionData"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "direction_data": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "spatial_status": {
+                "enum": ["CONTEXTUAL_NAO_DIRECIONAL", "NAO_ESPACIALIZAVEL"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "associated_location": {
+                "type": "null"
+              },
+              "direction_data": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "freezeMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frozen_at", "operator_code", "schema_id", "payload_sha256"],
+      "properties": {
+        "frozen_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "operator_code": {
+          "type": "string",
+          "pattern": "^[A-Z0-9][A-Z0-9_-]{1,39}$"
+        },
+        "schema_id": {
+          "const": "urn:agtu:sar:perfil-vitima:v2-draft-2"
+        },
+        "payload_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "scenario_id": "MATA-02",
+  "version": "2.0",
+  "nature": "Cenário hipotético em território real; ensaio complementar, não ocorrência real nem validação de eficácia",
+  "planning_reference": {
+    "latitude": -0.15916666666666665,
+    "longitude": -51.394999999999996,
+    "crs": "EPSG:4326 adotado no contrato; datum não exibido na tela",
+    "source": "MZG2.png, bússola iPhone",
+    "last_known_person_position": false,
+    "horizontal_accuracy_m": null,
+    "capture_datetime_exif": "2026:10:22 15:59:53",
+    "capture_timezone_offset_exif": null,
+    "display_time": "15:59",
+    "display_elevation_m": 12,
+    "display_heading_deg": 357,
+    "heading_is_person_clue": false
+  },
+  "domain": {
+    "radius_m": 6000,
+    "area_km2": 113.09733552923255,
+    "radius_origin": "Hipótese exploratória informada pelo pesquisador; não estimativa validada de deslocamento"
+  },
+  "hypothetical_clock": {
+    "last_contact": "2026-10-22T15:30:00-03:00",
+    "planning": "2026-10-23T08:30:00-03:00",
+    "timezone_basis": "America/Belem, convenção local do exercício",
+    "elapsed_hours": 17,
+    "real_event_timestamp": null
+  },
+  "hypothetical_profile": {
+    "sex": "masculino",
+    "age": 47,
+    "occupation": "extrativista e pequeno agricultor",
+    "experience_years": 25,
+    "familiarity": "caminhos conhecidos; conhecimento desigual da área",
+    "mobility": "a pé, condicionamento habitual de trabalho rural; mata/encharcamento podem limitar deslocamento; possível pausa noturna",
+    "health_diagnosis": null,
+    "clothing": null,
+    "speed_kmh": null,
+    "night_rest_hours": null
+  },
+  "hypothetical_circumstances": "Saiu para verificar área de coleta próxima a fragmento florestal; teria utilizado trilhas secundárias e vegetação densa; retorno previsto para o fim da tarde não ocorreu.",
+  "clues": [
+    {
+      "description": "Relato de colega sobre direção inicialmente tomada",
+      "bearing_deg": null,
+      "angular_uncertainty_deg": null,
+      "quality_numeric": null,
+      "quantitative_eligible": false
+    },
+    {
+      "description": "Indicação de trilha secundária até área de coleta",
+      "geometry": null,
+      "quantitative_eligible": false
+    },
+    {
+      "description": "Possibilidade de marcas em vegetação/solo",
+      "confirmed": false,
+      "geometry": null,
+      "quantitative_eligible": false
+    },
+    {
+      "description": "Caminhos rurais possivelmente utilizados para retorno",
+      "person_use_confirmed": false,
+      "quantitative_eligible": false
+    }
+  ],
+  "visual_observations": "Fotos terrestres: vegetação, passagem estreita, transição para área aberta e tábuas. Foto aérea 0060: via, floresta, áreas abertas e superfícies claras possivelmente úmidas. Sem inferência de pista da pessoa ou traçado métrico.",
+  "environment_unconfirmed": [
+    "hidrografia local validada",
+    "transitabilidade atual",
+    "altimetria local validada",
+    "geometria das trilhas"
+  ],
+  "cellular_location": null,
+  "target_reference": null,
+  "base_excluded": [
+    "fotografias",
+    "coordenadas de câmera",
+    "perfil",
+    "pistas",
+    "relógio hipotético",
+    "elevação da tela",
+    "orientação 357 graus"
+  ],
+  "prior_record_corrections": [
+    "Saúde e vestuário não fornecidos no cenário atual; não herdados da v1.",
+    "Nenhuma pista Norte ou hábito de buscar água foi declarado neste caso.",
+    "Não transferir classificações de imagens antigas para novas sem inspeção; imagens permanecem fora do BASE."
+  ],
+  "drone_reference": {
+    "file": "MZG2Drone261022155038_0060_V.JPG",
+    "capture_exif": "2026:10:22 15:50:38",
+    "timezone_offset_exif": null,
+    "camera_latitude": -0.15873969444444444,
+    "camera_longitude": -51.39481661111111,
+    "horizontal_distance_to_E0_m": 51.67120691811188,
+    "role": "Posição da câmera, não ponto no terreno nem vítima"
+  },
+  "status": "ENTRADA_PREPARADA; MOTOR_NAO_EXECUTADO"
+}

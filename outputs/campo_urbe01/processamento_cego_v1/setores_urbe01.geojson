@@ -1,0 +1,4949 @@
+{
+  "crs": {
+    "properties": {
+      "name": "EPSG:4326"
+    },
+    "type": "name"
+  },
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0730234502,
+              0.0278254843
+            ],
+            [
+              -51.0724956171,
+              0.0280307473
+            ],
+            [
+              -51.0719593332,
+              0.028212791
+            ],
+            [
+              -51.0714156194,
+              0.0283712691
+            ],
+            [
+              -51.0708655103,
+              0.02850588
+            ],
+            [
+              -51.0703100526,
+              0.0286163675
+            ],
+            [
+              -51.0697503047,
+              0.0287025209
+            ],
+            [
+              -51.0691873316,
+              0.0287641761
+            ],
+            [
+              -51.0686222045,
+              0.0288012166
+            ],
+            [
+              -51.068056,
+              0.0288135713
+            ],
+            [
+              -51.0674897955,
+              0.0288012166
+            ],
+            [
+              -51.0669246684,
+              0.0287641761
+            ],
+            [
+              -51.0663616953,
+              0.0287025209
+            ],
+            [
+              -51.0658019474,
+              0.0286163675
+            ],
+            [
+              -51.0652464897,
+              0.02850588
+            ],
+            [
+              -51.0646963806,
+              0.0283712691
+            ],
+            [
+              -51.0641526668,
+              0.028212791
+            ],
+            [
+              -51.0636163829,
+              0.0280307473
+            ],
+            [
+              -51.0630885498,
+              0.0278254843
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0730234502,
+              0.0278254843
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::N",
+      "properties": {
+        "area_relative_error": 1.495e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.948448803,
+        "geo03_score": 0.297097709,
+        "geo04_score": 0.829402131,
+        "geo05_score": 0.844444444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.512721,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.256424192,
+        "profile_base_score": 0.767616044,
+        "profile_context_score": 0.153854515,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.706239891,
+        "profile_rank_within_buffer": 13,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 13,
+        "representative_lat": 0.02501165,
+        "representative_lon": -51.068056,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.735800605,
+        "sector_area_m2": 817863.512721,
+        "sector_id": "URBE-01::URBE-01-E0::R01::N",
+        "sector_index": 1,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0630885498,
+              0.0278254843
+            ],
+            [
+              -51.0630885497,
+              0.0278254843
+            ],
+            [
+              -51.0625701729,
+              0.0275973929
+            ],
+            [
+              -51.0620622386,
+              0.0273469072
+            ],
+            [
+              -51.0615657139,
+              0.0270745047
+            ],
+            [
+              -51.0610815434,
+              0.0267807027
+            ],
+            [
+              -51.0606106496,
+              0.0264660612
+            ],
+            [
+              -51.060153928,
+              0.0261311796
+            ],
+            [
+              -51.0597122487,
+              0.0257766941
+            ],
+            [
+              -51.0592864523,
+              0.0254032807
+            ],
+            [
+              -51.0588773494,
+              0.0250116496
+            ],
+            [
+              -51.0584857183,
+              0.0246025467
+            ],
+            [
+              -51.0581123048,
+              0.0241767503
+            ],
+            [
+              -51.0577578193,
+              0.023735071
+            ],
+            [
+              -51.0574229376,
+              0.0232783494
+            ],
+            [
+              -51.0571082961,
+              0.0228074556
+            ],
+            [
+              -51.0568144947,
+              0.0223232851
+            ],
+            [
+              -51.0565420915,
+              0.0218267604
+            ],
+            [
+              -51.0562916064,
+              0.0213188261
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0630885498,
+              0.0278254843
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::NE",
+      "properties": {
+        "area_relative_error": 1.456e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.970468324,
+        "geo03_score": 0.473318145,
+        "geo04_score": 0.855448716,
+        "geo05_score": 0.844444444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.510308,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.259468967,
+        "profile_base_score": 0.81707861,
+        "profile_context_score": 0.15568138,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.750938887,
+        "profile_rank_within_buffer": 6,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 7,
+        "representative_lat": 0.0223232854,
+        "representative_lon": -51.061565714,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.791670888,
+        "sector_area_m2": 817863.510308,
+        "sector_id": "URBE-01::URBE-01-E0::R01::NE",
+        "sector_index": 2,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.0558582524,
+              0.0202726166
+            ],
+            [
+              -51.0556762086,
+              0.0197363327
+            ],
+            [
+              -51.05551773,
+              0.0191926189
+            ],
+            [
+              -51.0553831196,
+              0.0186425097
+            ],
+            [
+              -51.055272632,
+              0.018087052
+            ],
+            [
+              -51.0551864786,
+              0.017527304
+            ],
+            [
+              -51.0551248228,
+              0.0169643309
+            ],
+            [
+              -51.0550877829,
+              0.0163992043
+            ],
+            [
+              -51.0550754281,
+              0.0158329997
+            ],
+            [
+              -51.0550877828,
+              0.0152667952
+            ],
+            [
+              -51.0551248233,
+              0.014701668
+            ],
+            [
+              -51.0551864791,
+              0.0141386949
+            ],
+            [
+              -51.0552726324,
+              0.0135789469
+            ],
+            [
+              -51.0553831199,
+              0.0130234897
+            ],
+            [
+              -51.0555177308,
+              0.0124733805
+            ],
+            [
+              -51.0556762089,
+              0.0119296667
+            ],
+            [
+              -51.0558582526,
+              0.0113933827
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::E",
+      "properties": {
+        "area_relative_error": 3.251e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.966796938,
+        "geo03_score": 0.065690851,
+        "geo04_score": 0.839608606,
+        "geo05_score": 0.616666667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.50884,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.043741626,
+        "profile_base_score": 0.684752583,
+        "profile_context_score": 0.026244976,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.618901823,
+        "profile_rank_within_buffer": 20,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 20,
+        "representative_lat": 0.0158329998,
+        "representative_lon": -51.0588773496,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.628550182,
+        "sector_area_m2": 817863.50884,
+        "sector_id": "URBE-01::URBE-01-E0::R01::E",
+        "sector_index": 3,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.0562916071,
+              0.0103471732
+            ],
+            [
+              -51.0565420922,
+              0.0098392389
+            ],
+            [
+              -51.0568144953,
+              0.0093427142
+            ],
+            [
+              -51.0571082973,
+              0.0088585436
+            ],
+            [
+              -51.0574229382,
+              0.0083876498
+            ],
+            [
+              -51.0577578204,
+              0.0079309288
+            ],
+            [
+              -51.0581123054,
+              0.0074892495
+            ],
+            [
+              -51.0584857188,
+              0.0070634531
+            ],
+            [
+              -51.0588773499,
+              0.0066543496
+            ],
+            [
+              -51.0592864528,
+              0.006262719
+            ],
+            [
+              -51.0597122498,
+              0.005889305
+            ],
+            [
+              -51.0601539286,
+              0.00553482
+            ],
+            [
+              -51.0606106502,
+              0.0051999384
+            ],
+            [
+              -51.061081544,
+              0.0048852969
+            ],
+            [
+              -51.0615657145,
+              0.0045914955
+            ],
+            [
+              -51.0620622393,
+              0.0043190924
+            ],
+            [
+              -51.0625701736,
+              0.0040686072
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::SE",
+      "properties": {
+        "area_relative_error": 1.701e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.976858582,
+        "geo03_score": 0.229700257,
+        "geo04_score": 0.806050703,
+        "geo05_score": 0.577777778,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.51289,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.133806356,
+        "profile_base_score": 0.704908786,
+        "profile_context_score": 0.080283814,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.642446289,
+        "profile_rank_within_buffer": 17,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 17,
+        "representative_lat": 0.0093427142,
+        "representative_lon": -51.0615657142,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.656137224,
+        "sector_area_m2": 817863.51289,
+        "sector_id": "URBE-01::URBE-01-E0::R01::SE",
+        "sector_index": 4,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.0636163831,
+              0.0036352527
+            ],
+            [
+              -51.064152667,
+              0.003453209
+            ],
+            [
+              -51.0646963808,
+              0.003294731
+            ],
+            [
+              -51.06524649,
+              0.00316012
+            ],
+            [
+              -51.0658019477,
+              0.0030496325
+            ],
+            [
+              -51.0663616952,
+              0.0029634791
+            ],
+            [
+              -51.0669246689,
+              0.0029018239
+            ],
+            [
+              -51.0674897955,
+              0.0028647834
+            ],
+            [
+              -51.068056,
+              0.0028524287
+            ],
+            [
+              -51.0686222045,
+              0.0028647834
+            ],
+            [
+              -51.0691873311,
+              0.0029018239
+            ],
+            [
+              -51.0697503048,
+              0.0029634791
+            ],
+            [
+              -51.0703100523,
+              0.0030496325
+            ],
+            [
+              -51.07086551,
+              0.00316012
+            ],
+            [
+              -51.0714156192,
+              0.003294731
+            ],
+            [
+              -51.071959333,
+              0.003453209
+            ],
+            [
+              -51.0724956169,
+              0.0036352527
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::S",
+      "properties": {
+        "area_relative_error": 9.295e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.984805096,
+        "geo03_score": 0.326250961,
+        "geo04_score": 0.854257769,
+        "geo05_score": 0.838888889,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.519101,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.246501868,
+        "profile_base_score": 0.791274196,
+        "profile_context_score": 0.147901121,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.726936888,
+        "profile_rank_within_buffer": 11,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 11,
+        "representative_lat": 0.00665435,
+        "representative_lon": -51.068056,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.757578045,
+        "sector_area_m2": 817863.519101,
+        "sector_id": "URBE-01::URBE-01-E0::R01::S",
+        "sector_index": 5,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.0735418264,
+              0.0040686072
+            ],
+            [
+              -51.0740497607,
+              0.0043190924
+            ],
+            [
+              -51.0745462855,
+              0.0045914955
+            ],
+            [
+              -51.075030456,
+              0.0048852969
+            ],
+            [
+              -51.0755013498,
+              0.0051999384
+            ],
+            [
+              -51.0759580714,
+              0.00553482
+            ],
+            [
+              -51.0763997502,
+              0.005889305
+            ],
+            [
+              -51.0768255472,
+              0.006262719
+            ],
+            [
+              -51.0772346501,
+              0.0066543496
+            ],
+            [
+              -51.0776262812,
+              0.0070634531
+            ],
+            [
+              -51.0779996946,
+              0.0074892495
+            ],
+            [
+              -51.0783541796,
+              0.0079309288
+            ],
+            [
+              -51.0786890618,
+              0.0083876498
+            ],
+            [
+              -51.0790037027,
+              0.0088585436
+            ],
+            [
+              -51.0792975047,
+              0.0093427142
+            ],
+            [
+              -51.0795699078,
+              0.0098392389
+            ],
+            [
+              -51.0798203929,
+              0.0103471732
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::SW",
+      "properties": {
+        "area_relative_error": 1.701e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.980749071,
+        "geo03_score": 0.613443161,
+        "geo04_score": 0.851507717,
+        "geo05_score": 0.85,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.51289,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.368452921,
+        "profile_base_score": 0.848827736,
+        "profile_context_score": 0.221071753,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.786052138,
+        "profile_rank_within_buffer": 3,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 5,
+        "representative_lat": 0.0093427142,
+        "representative_lon": -51.0745462858,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.830387055,
+        "sector_area_m2": 817863.51289,
+        "sector_id": "URBE-01::URBE-01-E0::R01::SW",
+        "sector_index": 6,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.0802537474,
+              0.0113933827
+            ],
+            [
+              -51.0804357911,
+              0.0119296667
+            ],
+            [
+              -51.0805942692,
+              0.0124733805
+            ],
+            [
+              -51.0807288801,
+              0.0130234897
+            ],
+            [
+              -51.0808393676,
+              0.0135789469
+            ],
+            [
+              -51.0809255209,
+              0.0141386949
+            ],
+            [
+              -51.0809871767,
+              0.014701668
+            ],
+            [
+              -51.0810242172,
+              0.0152667952
+            ],
+            [
+              -51.0810365719,
+              0.0158329997
+            ],
+            [
+              -51.0810242171,
+              0.0163992043
+            ],
+            [
+              -51.0809871772,
+              0.0169643309
+            ],
+            [
+              -51.0809255214,
+              0.017527304
+            ],
+            [
+              -51.080839368,
+              0.018087052
+            ],
+            [
+              -51.0807288804,
+              0.0186425097
+            ],
+            [
+              -51.08059427,
+              0.0191926189
+            ],
+            [
+              -51.0804357914,
+              0.0197363327
+            ],
+            [
+              -51.0802537476,
+              0.0202726166
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::W",
+      "properties": {
+        "area_relative_error": 3.252e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "NAO_SINALIZADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.97890899,
+        "geo03_score": 0.755809612,
+        "geo04_score": 0.828873265,
+        "geo05_score": 0.738888889,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.508839,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.189635822,
+        "profile_base_score": 0.848776163,
+        "profile_context_score": 0.113781493,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.775276696,
+        "profile_rank_within_buffer": 5,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 4,
+        "representative_lat": 0.0158329998,
+        "representative_lon": -51.0772346504,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.833121975,
+        "sector_area_m2": 817863.508839,
+        "sector_id": "URBE-01::URBE-01-E0::R01::W",
+        "sector_index": 7,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.0798203936,
+              0.0213188261
+            ],
+            [
+              -51.0795699085,
+              0.0218267604
+            ],
+            [
+              -51.0792975053,
+              0.0223232851
+            ],
+            [
+              -51.0790037039,
+              0.0228074556
+            ],
+            [
+              -51.0786890624,
+              0.0232783494
+            ],
+            [
+              -51.0783541807,
+              0.023735071
+            ],
+            [
+              -51.0779996952,
+              0.0241767503
+            ],
+            [
+              -51.0776262817,
+              0.0246025467
+            ],
+            [
+              -51.0772346506,
+              0.0250116496
+            ],
+            [
+              -51.0768255477,
+              0.0254032807
+            ],
+            [
+              -51.0763997513,
+              0.0257766941
+            ],
+            [
+              -51.075958072,
+              0.0261311796
+            ],
+            [
+              -51.0755013504,
+              0.0264660612
+            ],
+            [
+              -51.0750304566,
+              0.0267807027
+            ],
+            [
+              -51.0745462861,
+              0.0270745047
+            ],
+            [
+              -51.0740497614,
+              0.0273469072
+            ],
+            [
+              -51.0735418271,
+              0.0275973929
+            ],
+            [
+              -51.0730234503,
+              0.0278254843
+            ],
+            [
+              -51.0730234502,
+              0.0278254843
+            ],
+            [
+              -51.068056,
+              0.015833
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R01::NW",
+      "properties": {
+        "area_relative_error": 1.456e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.944765283,
+        "geo03_score": 0.701184646,
+        "geo04_score": 0.859505682,
+        "geo05_score": 0.85,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 1443.375673,
+        "polygon_planar_area_m2": 817863.510308,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.26344429,
+        "profile_base_score": 0.855781199,
+        "profile_context_score": 0.158066574,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.786009736,
+        "profile_rank_within_buffer": 4,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 3,
+        "representative_lat": 0.0223232854,
+        "representative_lon": -51.074546286,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "URBE-01",
+        "score_base": 0.843126883,
+        "sector_area_m2": 817863.510308,
+        "sector_id": "URBE-01::URBE-01-E0::R01::NW",
+        "sector_index": 8,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0750810358,
+              0.032792934
+            ],
+            [
+              -51.074334567,
+              0.0330832197
+            ],
+            [
+              -51.073576147,
+              0.0333406684
+            ],
+            [
+              -51.0728072196,
+              0.0335647901
+            ],
+            [
+              -51.0720292478,
+              0.0337551588
+            ],
+            [
+              -51.0712437119,
+              0.0339114117
+            ],
+            [
+              -51.0704521087,
+              0.0340332509
+            ],
+            [
+              -51.0696559446,
+              0.0341204446
+            ],
+            [
+              -51.0688567341,
+              0.0341728278
+            ],
+            [
+              -51.068056,
+              0.0341903
+            ],
+            [
+              -51.0672552659,
+              0.0341728278
+            ],
+            [
+              -51.0664560554,
+              0.0341204446
+            ],
+            [
+              -51.0656598913,
+              0.0340332509
+            ],
+            [
+              -51.0648682881,
+              0.0339114117
+            ],
+            [
+              -51.0640827522,
+              0.0337551588
+            ],
+            [
+              -51.0633047804,
+              0.0335647901
+            ],
+            [
+              -51.062535853,
+              0.0333406684
+            ],
+            [
+              -51.061777433,
+              0.0330832197
+            ],
+            [
+              -51.0610309642,
+              0.032792934
+            ],
+            [
+              -51.0630885498,
+              0.0278254843
+            ],
+            [
+              -51.0636163829,
+              0.0280307473
+            ],
+            [
+              -51.0641526668,
+              0.028212791
+            ],
+            [
+              -51.0646963806,
+              0.0283712691
+            ],
+            [
+              -51.0652464897,
+              0.02850588
+            ],
+            [
+              -51.0658019474,
+              0.0286163675
+            ],
+            [
+              -51.0663616953,
+              0.0287025209
+            ],
+            [
+              -51.0669246684,
+              0.0287641761
+            ],
+            [
+              -51.0674897955,
+              0.0288012166
+            ],
+            [
+              -51.068056,
+              0.0288135713
+            ],
+            [
+              -51.0686222045,
+              0.0288012166
+            ],
+            [
+              -51.0691873316,
+              0.0287641761
+            ],
+            [
+              -51.0697503047,
+              0.0287025209
+            ],
+            [
+              -51.0703100526,
+              0.0286163675
+            ],
+            [
+              -51.0708655103,
+              0.02850588
+            ],
+            [
+              -51.0714156194,
+              0.0283712691
+            ],
+            [
+              -51.0719593332,
+              0.028212791
+            ],
+            [
+              -51.0724956171,
+              0.0280307473
+            ],
+            [
+              -51.0730234502,
+              0.0278254843
+            ],
+            [
+              -51.0750810358,
+              0.032792934
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::N",
+      "properties": {
+        "area_relative_error": 9.059e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.958426877,
+        "geo03_score": 0.479990326,
+        "geo04_score": 0.847880144,
+        "geo05_score": 0.783333333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.518908,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.338547119,
+        "profile_base_score": 0.800084175,
+        "profile_context_score": 0.203128272,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.740388584,
+        "profile_rank_within_buffer": 8,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 9,
+        "representative_lat": 0.0317308881,
+        "representative_lon": -51.068056,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.772935007,
+        "sector_area_m2": 817863.518908,
+        "sector_id": "URBE-01::URBE-01-E0::R02::N",
+        "sector_index": 9,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0610309642,
+              0.032792934
+            ],
+            [
+              -51.0610309641,
+              0.0327929339
+            ],
+            [
+              -51.0602978686,
+              0.0324703639
+            ],
+            [
+              -51.059579541,
+              0.0321161236
+            ],
+            [
+              -51.0588773491,
+              0.0317308882
+            ],
+            [
+              -51.0581926285,
+              0.0313153895
+            ],
+            [
+              -51.0575266841,
+              0.0308704193
+            ],
+            [
+              -51.0568807822,
+              0.0303968251
+            ],
+            [
+              -51.0562561534,
+              0.0298955069
+            ],
+            [
+              -51.0556539863,
+              0.0293674206
+            ],
+            [
+              -51.0550754275,
+              0.0288135705
+            ],
+            [
+              -51.0545215774,
+              0.0282350117
+            ],
+            [
+              -51.0539934911,
+              0.0276328446
+            ],
+            [
+              -51.0534921728,
+              0.0270082158
+            ],
+            [
+              -51.0530185786,
+              0.0263623139
+            ],
+            [
+              -51.0525736084,
+              0.0256963695
+            ],
+            [
+              -51.0521581104,
+              0.025011649
+            ],
+            [
+              -51.0517728743,
+              0.024309457
+            ],
+            [
+              -51.0514186347,
+              0.0235911294
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.0562916064,
+              0.0213188261
+            ],
+            [
+              -51.0565420915,
+              0.0218267604
+            ],
+            [
+              -51.0568144947,
+              0.0223232851
+            ],
+            [
+              -51.0571082961,
+              0.0228074556
+            ],
+            [
+              -51.0574229376,
+              0.0232783494
+            ],
+            [
+              -51.0577578193,
+              0.023735071
+            ],
+            [
+              -51.0581123048,
+              0.0241767503
+            ],
+            [
+              -51.0584857183,
+              0.0246025467
+            ],
+            [
+              -51.0588773494,
+              0.0250116496
+            ],
+            [
+              -51.0592864523,
+              0.0254032807
+            ],
+            [
+              -51.0597122487,
+              0.0257766941
+            ],
+            [
+              -51.060153928,
+              0.0261311796
+            ],
+            [
+              -51.0606106496,
+              0.0264660612
+            ],
+            [
+              -51.0610815434,
+              0.0267807027
+            ],
+            [
+              -51.0615657139,
+              0.0270745047
+            ],
+            [
+              -51.0620622386,
+              0.0273469072
+            ],
+            [
+              -51.0625701729,
+              0.0275973929
+            ],
+            [
+              -51.0630885497,
+              0.0278254843
+            ],
+            [
+              -51.0630885498,
+              0.0278254843
+            ],
+            [
+              -51.0610309642,
+              0.032792934
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::NE",
+      "properties": {
+        "area_relative_error": 1.162e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.959208038,
+        "geo03_score": 0.244088962,
+        "geo04_score": 0.838156277,
+        "geo05_score": 0.672222222,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.510548,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.12238828,
+        "profile_base_score": 0.728524119,
+        "profile_context_score": 0.073432968,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.663015004,
+        "profile_rank_within_buffer": 16,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 16,
+        "representative_lat": 0.0270745039,
+        "representative_lon": -51.0568144946,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.684471463,
+        "sector_area_m2": 817863.510548,
+        "sector_id": "URBE-01::URBE-01-E0::R02::NE",
+        "sector_index": 10,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.0508057797,
+              0.0221115658
+            ],
+            [
+              -51.050548331,
+              0.0213531458
+            ],
+            [
+              -51.0503242084,
+              0.0205842183
+            ],
+            [
+              -51.0501338405,
+              0.0198062465
+            ],
+            [
+              -51.0499775876,
+              0.0190207106
+            ],
+            [
+              -51.0498557483,
+              0.0182291074
+            ],
+            [
+              -51.0497685538,
+              0.0174329432
+            ],
+            [
+              -51.0497161714,
+              0.0166337335
+            ],
+            [
+              -51.0496986992,
+              0.0158329994
+            ],
+            [
+              -51.0497161714,
+              0.0150322652
+            ],
+            [
+              -51.0497685545,
+              0.0142330547
+            ],
+            [
+              -51.049855749,
+              0.0134368905
+            ],
+            [
+              -51.0499775883,
+              0.0126452873
+            ],
+            [
+              -51.0501338412,
+              0.0118597522
+            ],
+            [
+              -51.0503242098,
+              0.0110817804
+            ],
+            [
+              -51.0505483316,
+              0.0103128529
+            ],
+            [
+              -51.0508057803,
+              0.0095544329
+            ],
+            [
+              -51.051096066,
+              0.0088079648
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.0558582526,
+              0.0113933827
+            ],
+            [
+              -51.0556762089,
+              0.0119296667
+            ],
+            [
+              -51.0555177308,
+              0.0124733805
+            ],
+            [
+              -51.0553831199,
+              0.0130234897
+            ],
+            [
+              -51.0552726324,
+              0.0135789469
+            ],
+            [
+              -51.0551864791,
+              0.0141386949
+            ],
+            [
+              -51.0551248233,
+              0.014701668
+            ],
+            [
+              -51.0550877828,
+              0.0152667952
+            ],
+            [
+              -51.0550754281,
+              0.0158329997
+            ],
+            [
+              -51.0550877829,
+              0.0163992043
+            ],
+            [
+              -51.0551248228,
+              0.0169643309
+            ],
+            [
+              -51.0551864786,
+              0.017527304
+            ],
+            [
+              -51.055272632,
+              0.018087052
+            ],
+            [
+              -51.0553831196,
+              0.0186425097
+            ],
+            [
+              -51.05551773,
+              0.0191926189
+            ],
+            [
+              -51.0556762086,
+              0.0197363327
+            ],
+            [
+              -51.0558582524,
+              0.0202726166
+            ],
+            [
+              -51.0560635149,
+              0.0208004493
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::E",
+      "properties": {
+        "area_relative_error": 4.735e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA;COBERTURA_AGUA_UMIDA_POTENCIAL",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.568692849,
+        "geo03_score": 0.460706021,
+        "geo04_score": 0.976235153,
+        "geo05_score": 0.05,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.507626,
+        "profile_aisolation": 0.568692849,
+        "profile_awater": 0.0,
+        "profile_base_score": 0.54524249,
+        "profile_context_score": 0.22747714,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.513465955,
+        "profile_rank_within_buffer": 22,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 22,
+        "representative_lat": 0.0158329994,
+        "representative_lon": -51.0521581112,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.493531391,
+        "sector_area_m2": 817863.507626,
+        "sector_id": "URBE-01::URBE-01-E0::R02::E",
+        "sector_index": 11,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.051096066,
+              0.0088079648
+            ],
+            [
+              -51.0510960661,
+              0.0088079648
+            ],
+            [
+              -51.0514186361,
+              0.0080748692
+            ],
+            [
+              -51.0517728756,
+              0.0073565416
+            ],
+            [
+              -51.0521581117,
+              0.0066543497
+            ],
+            [
+              -51.0525736105,
+              0.0059696291
+            ],
+            [
+              -51.0530185799,
+              0.0053036847
+            ],
+            [
+              -51.0534921749,
+              0.0046577836
+            ],
+            [
+              -51.0539934924,
+              0.0040331548
+            ],
+            [
+              -51.0545215787,
+              0.0034309877
+            ],
+            [
+              -51.0550754287,
+              0.002852428
+            ],
+            [
+              -51.0556539876,
+              0.0022985788
+            ],
+            [
+              -51.0562561555,
+              0.0017704917
+            ],
+            [
+              -51.0568807835,
+              0.0012691742
+            ],
+            [
+              -51.0575266854,
+              0.00079558
+            ],
+            [
+              -51.0581926298,
+              0.0003506098
+            ],
+            [
+              -51.0588773504,
+              -6.48882e-05
+            ],
+            [
+              -51.0595795423,
+              -0.0004501243
+            ],
+            [
+              -51.0602978699,
+              -0.0008043638
+            ],
+            [
+              -51.0610309655,
+              -0.0011269338
+            ],
+            [
+              -51.0610309655,
+              -0.0011269339
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.0625701736,
+              0.0040686072
+            ],
+            [
+              -51.0620622393,
+              0.0043190924
+            ],
+            [
+              -51.0615657145,
+              0.0045914955
+            ],
+            [
+              -51.061081544,
+              0.0048852969
+            ],
+            [
+              -51.0606106502,
+              0.0051999384
+            ],
+            [
+              -51.0601539286,
+              0.00553482
+            ],
+            [
+              -51.0597122498,
+              0.005889305
+            ],
+            [
+              -51.0592864528,
+              0.006262719
+            ],
+            [
+              -51.0588773499,
+              0.0066543496
+            ],
+            [
+              -51.0584857188,
+              0.0070634531
+            ],
+            [
+              -51.0581123054,
+              0.0074892495
+            ],
+            [
+              -51.0577578204,
+              0.0079309288
+            ],
+            [
+              -51.0574229382,
+              0.0083876498
+            ],
+            [
+              -51.0571082973,
+              0.0088585436
+            ],
+            [
+              -51.0568144953,
+              0.0093427142
+            ],
+            [
+              -51.0565420922,
+              0.0098392389
+            ],
+            [
+              -51.0562916071,
+              0.0103471732
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.0560635156,
+              0.0108655501
+            ],
+            [
+              -51.051096066,
+              0.0088079648
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::SE",
+      "properties": {
+        "area_relative_error": 2.273e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA;COBERTURA_AGUA_UMIDA_POTENCIAL",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.881020826,
+        "geo03_score": 0.298092491,
+        "geo04_score": 0.936112988,
+        "geo05_score": 0.222222222,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.513357,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.045489737,
+        "profile_base_score": 0.646448479,
+        "profile_context_score": 0.027293842,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.584533015,
+        "profile_rank_within_buffer": 21,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 21,
+        "representative_lat": 0.0045914951,
+        "representative_lon": -51.0568144953,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.581607524,
+        "sector_area_m2": 817863.513357,
+        "sector_id": "URBE-01::URBE-01-E0::R02::SE",
+        "sector_index": 12,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0610309655,
+              -0.0011269339
+            ],
+            [
+              -51.0617774336,
+              -0.0014172196
+            ],
+            [
+              -51.0625358536,
+              -0.0016746683
+            ],
+            [
+              -51.0633047811,
+              -0.0018987901
+            ],
+            [
+              -51.0640827529,
+              -0.0020891587
+            ],
+            [
+              -51.0648682887,
+              -0.0022454117
+            ],
+            [
+              -51.0656598912,
+              -0.0023672509
+            ],
+            [
+              -51.0664560562,
+              -0.0024544446
+            ],
+            [
+              -51.0672552659,
+              -0.0025068278
+            ],
+            [
+              -51.068056,
+              -0.0025243
+            ],
+            [
+              -51.0688567341,
+              -0.0025068278
+            ],
+            [
+              -51.0696559438,
+              -0.0024544446
+            ],
+            [
+              -51.0704521088,
+              -0.0023672509
+            ],
+            [
+              -51.0712437113,
+              -0.0022454117
+            ],
+            [
+              -51.0720292471,
+              -0.0020891587
+            ],
+            [
+              -51.0728072189,
+              -0.0018987901
+            ],
+            [
+              -51.0735761464,
+              -0.0016746683
+            ],
+            [
+              -51.0743345664,
+              -0.0014172196
+            ],
+            [
+              -51.0750810345,
+              -0.0011269339
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.0724956169,
+              0.0036352527
+            ],
+            [
+              -51.071959333,
+              0.003453209
+            ],
+            [
+              -51.0714156192,
+              0.003294731
+            ],
+            [
+              -51.07086551,
+              0.00316012
+            ],
+            [
+              -51.0703100523,
+              0.0030496325
+            ],
+            [
+              -51.0697503048,
+              0.0029634791
+            ],
+            [
+              -51.0691873311,
+              0.0029018239
+            ],
+            [
+              -51.0686222045,
+              0.0028647834
+            ],
+            [
+              -51.068056,
+              0.0028524287
+            ],
+            [
+              -51.0674897955,
+              0.0028647834
+            ],
+            [
+              -51.0669246689,
+              0.0029018239
+            ],
+            [
+              -51.0663616952,
+              0.0029634791
+            ],
+            [
+              -51.0658019477,
+              0.0030496325
+            ],
+            [
+              -51.06524649,
+              0.00316012
+            ],
+            [
+              -51.0646963808,
+              0.003294731
+            ],
+            [
+              -51.064152667,
+              0.003453209
+            ],
+            [
+              -51.0636163831,
+              0.0036352527
+            ],
+            [
+              -51.0630885504,
+              0.0038405158
+            ],
+            [
+              -51.0610309655,
+              -0.0011269339
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::S",
+      "properties": {
+        "area_relative_error": 1.23e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.946207773,
+        "geo03_score": 0.035359136,
+        "geo04_score": 0.811021776,
+        "geo05_score": 0.794444444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.510493,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.032103663,
+        "profile_base_score": 0.699888881,
+        "profile_context_score": 0.019262198,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.631826212,
+        "profile_rank_within_buffer": 19,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 18,
+        "representative_lat": -6.48881e-05,
+        "representative_lon": -51.068056,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.653517582,
+        "sector_area_m2": 817863.510493,
+        "sector_id": "URBE-01::URBE-01-E0::R02::S",
+        "sector_index": 13,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0750810345,
+              -0.0011269339
+            ],
+            [
+              -51.0750810345,
+              -0.0011269338
+            ],
+            [
+              -51.0758141301,
+              -0.0008043638
+            ],
+            [
+              -51.0765324577,
+              -0.0004501243
+            ],
+            [
+              -51.0772346496,
+              -6.48882e-05
+            ],
+            [
+              -51.0779193702,
+              0.0003506098
+            ],
+            [
+              -51.0785853146,
+              0.00079558
+            ],
+            [
+              -51.0792312165,
+              0.0012691742
+            ],
+            [
+              -51.0798558445,
+              0.0017704917
+            ],
+            [
+              -51.0804580124,
+              0.0022985788
+            ],
+            [
+              -51.0810365713,
+              0.002852428
+            ],
+            [
+              -51.0815904213,
+              0.0034309877
+            ],
+            [
+              -51.0821185076,
+              0.0040331548
+            ],
+            [
+              -51.0826198251,
+              0.0046577836
+            ],
+            [
+              -51.0830934201,
+              0.0053036847
+            ],
+            [
+              -51.0835383895,
+              0.0059696291
+            ],
+            [
+              -51.0839538883,
+              0.0066543497
+            ],
+            [
+              -51.0843391244,
+              0.0073565416
+            ],
+            [
+              -51.0846933639,
+              0.0080748692
+            ],
+            [
+              -51.0850159339,
+              0.0088079648
+            ],
+            [
+              -51.085015934,
+              0.0088079648
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.0798203929,
+              0.0103471732
+            ],
+            [
+              -51.0795699078,
+              0.0098392389
+            ],
+            [
+              -51.0792975047,
+              0.0093427142
+            ],
+            [
+              -51.0790037027,
+              0.0088585436
+            ],
+            [
+              -51.0786890618,
+              0.0083876498
+            ],
+            [
+              -51.0783541796,
+              0.0079309288
+            ],
+            [
+              -51.0779996946,
+              0.0074892495
+            ],
+            [
+              -51.0776262812,
+              0.0070634531
+            ],
+            [
+              -51.0772346501,
+              0.0066543496
+            ],
+            [
+              -51.0768255472,
+              0.006262719
+            ],
+            [
+              -51.0763997502,
+              0.005889305
+            ],
+            [
+              -51.0759580714,
+              0.00553482
+            ],
+            [
+              -51.0755013498,
+              0.0051999384
+            ],
+            [
+              -51.075030456,
+              0.0048852969
+            ],
+            [
+              -51.0745462855,
+              0.0045914955
+            ],
+            [
+              -51.0740497607,
+              0.0043190924
+            ],
+            [
+              -51.0735418264,
+              0.0040686072
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.0730234496,
+              0.0038405158
+            ],
+            [
+              -51.0750810345,
+              -0.0011269339
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::SW",
+      "properties": {
+        "area_relative_error": 2.272e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "NAO_SINALIZADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.953341703,
+        "geo03_score": 0.719738755,
+        "geo04_score": 0.880022944,
+        "geo05_score": 0.85,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.513357,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.23787666,
+        "profile_base_score": 0.867623083,
+        "profile_context_score": 0.142725996,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.795133374,
+        "profile_rank_within_buffer": 2,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 2,
+        "representative_lat": 0.0045914951,
+        "representative_lon": -51.0792975047,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.854441788,
+        "sector_area_m2": 817863.513357,
+        "sector_id": "URBE-01::URBE-01-E0::R02::SW",
+        "sector_index": 14,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.4,
+        "top1_unique_win_count": 2
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.085015934,
+              0.0088079648
+            ],
+            [
+              -51.0853062197,
+              0.0095544329
+            ],
+            [
+              -51.0855636684,
+              0.0103128529
+            ],
+            [
+              -51.0857877902,
+              0.0110817804
+            ],
+            [
+              -51.0859781588,
+              0.0118597522
+            ],
+            [
+              -51.0861344117,
+              0.0126452873
+            ],
+            [
+              -51.086256251,
+              0.0134368905
+            ],
+            [
+              -51.0863434455,
+              0.0142330547
+            ],
+            [
+              -51.0863958286,
+              0.0150322652
+            ],
+            [
+              -51.0864133008,
+              0.0158329994
+            ],
+            [
+              -51.0863958286,
+              0.0166337335
+            ],
+            [
+              -51.0863434462,
+              0.0174329432
+            ],
+            [
+              -51.0862562517,
+              0.0182291074
+            ],
+            [
+              -51.0861344124,
+              0.0190207106
+            ],
+            [
+              -51.0859781595,
+              0.0198062465
+            ],
+            [
+              -51.0857877916,
+              0.0205842183
+            ],
+            [
+              -51.085563669,
+              0.0213531458
+            ],
+            [
+              -51.0853062203,
+              0.0221115658
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.0802537476,
+              0.0202726166
+            ],
+            [
+              -51.0804357914,
+              0.0197363327
+            ],
+            [
+              -51.08059427,
+              0.0191926189
+            ],
+            [
+              -51.0807288804,
+              0.0186425097
+            ],
+            [
+              -51.080839368,
+              0.018087052
+            ],
+            [
+              -51.0809255214,
+              0.017527304
+            ],
+            [
+              -51.0809871772,
+              0.0169643309
+            ],
+            [
+              -51.0810242171,
+              0.0163992043
+            ],
+            [
+              -51.0810365719,
+              0.0158329997
+            ],
+            [
+              -51.0810242172,
+              0.0152667952
+            ],
+            [
+              -51.0809871767,
+              0.014701668
+            ],
+            [
+              -51.0809255209,
+              0.0141386949
+            ],
+            [
+              -51.0808393676,
+              0.0135789469
+            ],
+            [
+              -51.0807288801,
+              0.0130234897
+            ],
+            [
+              -51.0805942692,
+              0.0124733805
+            ],
+            [
+              -51.0804357911,
+              0.0119296667
+            ],
+            [
+              -51.0802537474,
+              0.0113933827
+            ],
+            [
+              -51.0800484844,
+              0.0108655501
+            ],
+            [
+              -51.085015934,
+              0.0088079648
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::W",
+      "properties": {
+        "area_relative_error": 4.735e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.93044668,
+        "geo03_score": 0.529347473,
+        "geo04_score": 0.874401638,
+        "geo05_score": 0.838888889,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.507626,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.20845817,
+        "profile_base_score": 0.81790402,
+        "profile_context_score": 0.125074902,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.748621108,
+        "profile_rank_within_buffer": 7,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 6,
+        "representative_lat": 0.0158329994,
+        "representative_lon": -51.0839538888,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.796073422,
+        "sector_area_m2": 817863.507626,
+        "sector_id": "URBE-01::URBE-01-E0::R02::W",
+        "sector_index": 15,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.0846933653,
+              0.0235911294
+            ],
+            [
+              -51.0843391257,
+              0.024309457
+            ],
+            [
+              -51.0839538896,
+              0.025011649
+            ],
+            [
+              -51.0835383916,
+              0.0256963695
+            ],
+            [
+              -51.0830934214,
+              0.0263623139
+            ],
+            [
+              -51.0826198272,
+              0.0270082158
+            ],
+            [
+              -51.0821185089,
+              0.0276328446
+            ],
+            [
+              -51.0815904226,
+              0.0282350117
+            ],
+            [
+              -51.0810365725,
+              0.0288135705
+            ],
+            [
+              -51.0804580137,
+              0.0293674206
+            ],
+            [
+              -51.0798558466,
+              0.0298955069
+            ],
+            [
+              -51.0792312178,
+              0.0303968251
+            ],
+            [
+              -51.0785853159,
+              0.0308704193
+            ],
+            [
+              -51.0779193715,
+              0.0313153895
+            ],
+            [
+              -51.0772346509,
+              0.0317308882
+            ],
+            [
+              -51.076532459,
+              0.0321161236
+            ],
+            [
+              -51.0758141314,
+              0.0324703639
+            ],
+            [
+              -51.0750810359,
+              0.0327929339
+            ],
+            [
+              -51.0750810358,
+              0.032792934
+            ],
+            [
+              -51.0730234502,
+              0.0278254843
+            ],
+            [
+              -51.0730234503,
+              0.0278254843
+            ],
+            [
+              -51.0735418271,
+              0.0275973929
+            ],
+            [
+              -51.0740497614,
+              0.0273469072
+            ],
+            [
+              -51.0745462861,
+              0.0270745047
+            ],
+            [
+              -51.0750304566,
+              0.0267807027
+            ],
+            [
+              -51.0755013504,
+              0.0264660612
+            ],
+            [
+              -51.075958072,
+              0.0261311796
+            ],
+            [
+              -51.0763997513,
+              0.0257766941
+            ],
+            [
+              -51.0768255477,
+              0.0254032807
+            ],
+            [
+              -51.0772346506,
+              0.0250116496
+            ],
+            [
+              -51.0776262817,
+              0.0246025467
+            ],
+            [
+              -51.0779996952,
+              0.0241767503
+            ],
+            [
+              -51.0783541807,
+              0.023735071
+            ],
+            [
+              -51.0786890624,
+              0.0232783494
+            ],
+            [
+              -51.0790037039,
+              0.0228074556
+            ],
+            [
+              -51.0792975053,
+              0.0223232851
+            ],
+            [
+              -51.0795699085,
+              0.0218267604
+            ],
+            [
+              -51.0798203936,
+              0.0213188261
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.0800484851,
+              0.0208004493
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R02::NW",
+      "properties": {
+        "area_relative_error": 1.161e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.96440185,
+        "geo03_score": 0.333380086,
+        "geo04_score": 0.831954788,
+        "geo05_score": 0.844444444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 1443.375673,
+        "outer_radius_m": 2041.241452,
+        "polygon_planar_area_m2": 817863.510549,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.293425734,
+        "profile_base_score": 0.78109425,
+        "profile_context_score": 0.17605544,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.720590369,
+        "profile_rank_within_buffer": 12,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 12,
+        "representative_lat": 0.0270745039,
+        "representative_lon": -51.0792975054,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "URBE-01",
+        "score_base": 0.750167645,
+        "sector_area_m2": 817863.510549,
+        "sector_id": "URBE-01::URBE-01-E0::R02::NW",
+        "sector_index": 16,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0766598768,
+              0.0366045921
+            ],
+            [
+              -51.075745643,
+              0.036960118
+            ],
+            [
+              -51.074816772,
+              0.037275427
+            ],
+            [
+              -51.073875032,
+              0.037549919
+            ],
+            [
+              -51.072922215,
+              0.037783072
+            ],
+            [
+              -51.071960134,
+              0.037974442
+            ],
+            [
+              -51.070990622,
+              0.038123664
+            ],
+            [
+              -51.070015524,
+              0.038230454
+            ],
+            [
+              -51.069036695,
+              0.03829461
+            ],
+            [
+              -51.068056,
+              0.038316009
+            ],
+            [
+              -51.067075305,
+              0.03829461
+            ],
+            [
+              -51.066096476,
+              0.038230454
+            ],
+            [
+              -51.065121378,
+              0.038123664
+            ],
+            [
+              -51.064151866,
+              0.037974442
+            ],
+            [
+              -51.063189785,
+              0.037783072
+            ],
+            [
+              -51.062236968,
+              0.037549919
+            ],
+            [
+              -51.061295228,
+              0.037275427
+            ],
+            [
+              -51.060366357,
+              0.036960118
+            ],
+            [
+              -51.0594521232,
+              0.0366045921
+            ],
+            [
+              -51.0610309642,
+              0.032792934
+            ],
+            [
+              -51.061777433,
+              0.0330832197
+            ],
+            [
+              -51.062535853,
+              0.0333406684
+            ],
+            [
+              -51.0633047804,
+              0.0335647901
+            ],
+            [
+              -51.0640827522,
+              0.0337551588
+            ],
+            [
+              -51.0648682881,
+              0.0339114117
+            ],
+            [
+              -51.0656598913,
+              0.0340332509
+            ],
+            [
+              -51.0664560554,
+              0.0341204446
+            ],
+            [
+              -51.0672552659,
+              0.0341728278
+            ],
+            [
+              -51.068056,
+              0.0341903
+            ],
+            [
+              -51.0688567341,
+              0.0341728278
+            ],
+            [
+              -51.0696559446,
+              0.0341204446
+            ],
+            [
+              -51.0704521087,
+              0.0340332509
+            ],
+            [
+              -51.0712437119,
+              0.0339114117
+            ],
+            [
+              -51.0720292478,
+              0.0337551588
+            ],
+            [
+              -51.0728072196,
+              0.0335647901
+            ],
+            [
+              -51.073576147,
+              0.0333406684
+            ],
+            [
+              -51.074334567,
+              0.0330832197
+            ],
+            [
+              -51.0750810358,
+              0.032792934
+            ],
+            [
+              -51.0766598768,
+              0.0366045921
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::N",
+      "properties": {
+        "area_relative_error": 3.458e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": true,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.988566286,
+        "geo03_score": 0.679977759,
+        "geo04_score": 0.879309189,
+        "geo05_score": 0.85,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.514327,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.293025633,
+        "profile_base_score": 0.871821049,
+        "profile_context_score": 0.17581538,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.802220482,
+        "profile_rank_within_buffer": 1,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": true,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 1,
+        "representative_lat": 0.0363570853,
+        "representative_lon": -51.068056,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.854926163,
+        "sector_area_m2": 817863.514327,
+        "sector_id": "URBE-01::URBE-01-E0::R03::N",
+        "sector_index": 17,
+        "selected_sector": true,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.2,
+        "top1_unique_win_count": 1
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0594521232,
+              0.0366045921
+            ],
+            [
+              -51.059452123,
+              0.036604592
+            ],
+            [
+              -51.058554268,
+              0.036209526
+            ],
+            [
+              -51.0576745,
+              0.035775672
+            ],
+            [
+              -51.056814494,
+              0.035303857
+            ],
+            [
+              -51.055975886,
+              0.034794977
+            ],
+            [
+              -51.055160274,
+              0.034250002
+            ],
+            [
+              -51.054369209,
+              0.03366997
+            ],
+            [
+              -51.053604198,
+              0.033055983
+            ],
+            [
+              -51.052866697,
+              0.032409212
+            ],
+            [
+              -51.05215811,
+              0.031730887
+            ],
+            [
+              -51.051479785,
+              0.0310223
+            ],
+            [
+              -51.050833014,
+              0.030284799
+            ],
+            [
+              -51.050219027,
+              0.029519788
+            ],
+            [
+              -51.049638995,
+              0.028728723
+            ],
+            [
+              -51.04909402,
+              0.027913111
+            ],
+            [
+              -51.048585141,
+              0.027074503
+            ],
+            [
+              -51.048113325,
+              0.026214497
+            ],
+            [
+              -51.047679472,
+              0.025334729
+            ],
+            [
+              -51.047284406,
+              0.024436874
+            ],
+            [
+              -51.047284406,
+              0.024436874
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.0514186347,
+              0.0235911294
+            ],
+            [
+              -51.0517728743,
+              0.024309457
+            ],
+            [
+              -51.0521581104,
+              0.025011649
+            ],
+            [
+              -51.0525736084,
+              0.0256963695
+            ],
+            [
+              -51.0530185786,
+              0.0263623139
+            ],
+            [
+              -51.0534921728,
+              0.0270082158
+            ],
+            [
+              -51.0539934911,
+              0.0276328446
+            ],
+            [
+              -51.0545215774,
+              0.0282350117
+            ],
+            [
+              -51.0550754275,
+              0.0288135705
+            ],
+            [
+              -51.0556539863,
+              0.0293674206
+            ],
+            [
+              -51.0562561534,
+              0.0298955069
+            ],
+            [
+              -51.0568807822,
+              0.0303968251
+            ],
+            [
+              -51.0575266841,
+              0.0308704193
+            ],
+            [
+              -51.0581926285,
+              0.0313153895
+            ],
+            [
+              -51.0588773491,
+              0.0317308882
+            ],
+            [
+              -51.059579541,
+              0.0321161236
+            ],
+            [
+              -51.0602978686,
+              0.0324703639
+            ],
+            [
+              -51.0610309641,
+              0.0327929339
+            ],
+            [
+              -51.0610309642,
+              0.032792934
+            ],
+            [
+              -51.0594521232,
+              0.0366045921
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::NE",
+      "properties": {
+        "area_relative_error": 3.039e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA;COBERTURA_AGUA_UMIDA_POTENCIAL",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.978989566,
+        "geo03_score": 0.303202677,
+        "geo04_score": 0.875988491,
+        "geo05_score": 0.583333333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.509013,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.16979065,
+        "profile_base_score": 0.738950673,
+        "profile_context_score": 0.10187439,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.675243045,
+        "profile_rank_within_buffer": 15,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 15,
+        "representative_lat": 0.0303457189,
+        "representative_lon": -51.0535432785,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.69052857,
+        "sector_area_m2": 817863.509013,
+        "sector_id": "URBE-01::URBE-01-E0::R03::NE",
+        "sector_index": 18,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.047284406,
+              0.024436874
+            ],
+            [
+              -51.046928881,
+              0.023522641
+            ],
+            [
+              -51.046613572,
+              0.02259377
+            ],
+            [
+              -51.046339079,
+              0.02165203
+            ],
+            [
+              -51.046105927,
+              0.020699213
+            ],
+            [
+              -51.045914557,
+              0.019737132
+            ],
+            [
+              -51.045765335,
+              0.01876762
+            ],
+            [
+              -51.045658544,
+              0.017792522
+            ],
+            [
+              -51.045594389,
+              0.016813694
+            ],
+            [
+              -51.04557299,
+              0.015832999
+            ],
+            [
+              -51.045594389,
+              0.014852304
+            ],
+            [
+              -51.045658545,
+              0.013873475
+            ],
+            [
+              -51.045765336,
+              0.012898377
+            ],
+            [
+              -51.045914558,
+              0.011928865
+            ],
+            [
+              -51.046105928,
+              0.010966785
+            ],
+            [
+              -51.046339081,
+              0.010013968
+            ],
+            [
+              -51.046613573,
+              0.009072228
+            ],
+            [
+              -51.046928882,
+              0.008143357
+            ],
+            [
+              -51.047284408,
+              0.0072291241
+            ],
+            [
+              -51.051096066,
+              0.0088079648
+            ],
+            [
+              -51.0508057803,
+              0.0095544329
+            ],
+            [
+              -51.0505483316,
+              0.0103128529
+            ],
+            [
+              -51.0503242098,
+              0.0110817804
+            ],
+            [
+              -51.0501338412,
+              0.0118597522
+            ],
+            [
+              -51.0499775883,
+              0.0126452873
+            ],
+            [
+              -51.049855749,
+              0.0134368905
+            ],
+            [
+              -51.0497685545,
+              0.0142330547
+            ],
+            [
+              -51.0497161714,
+              0.0150322652
+            ],
+            [
+              -51.0496986992,
+              0.0158329994
+            ],
+            [
+              -51.0497161714,
+              0.0166337335
+            ],
+            [
+              -51.0497685538,
+              0.0174329432
+            ],
+            [
+              -51.0498557483,
+              0.0182291074
+            ],
+            [
+              -51.0499775876,
+              0.0190207106
+            ],
+            [
+              -51.0501338405,
+              0.0198062465
+            ],
+            [
+              -51.0503242084,
+              0.0205842183
+            ],
+            [
+              -51.050548331,
+              0.0213531458
+            ],
+            [
+              -51.0508057797,
+              0.0221115658
+            ],
+            [
+              -51.0510960647,
+              0.0228580339
+            ],
+            [
+              -51.047284406,
+              0.024436874
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::E",
+      "properties": {
+        "area_relative_error": 6.05e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "COBERTURA_AGUA_UMIDA_POTENCIAL",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.428418855,
+        "geo03_score": 0.61712175,
+        "geo04_score": 0.978807888,
+        "geo05_score": 0.05,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.506551,
+        "profile_aisolation": 0.428418855,
+        "profile_awater": 0.0,
+        "profile_base_score": 0.528072921,
+        "profile_context_score": 0.171367542,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.492402383,
+        "profile_rank_within_buffer": 24,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 23,
+        "representative_lat": 0.015832999,
+        "representative_lon": -51.0475319138,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.491067672,
+        "sector_area_m2": 817863.506551,
+        "sector_id": "URBE-01::URBE-01-E0::R03::E",
+        "sector_index": 19,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.047284408,
+              0.0072291241
+            ],
+            [
+              -51.047284408,
+              0.007229124
+            ],
+            [
+              -51.047679474,
+              0.006331269
+            ],
+            [
+              -51.048113327,
+              0.005451501
+            ],
+            [
+              -51.048585143,
+              0.004591495
+            ],
+            [
+              -51.049094023,
+              0.003752887
+            ],
+            [
+              -51.049638997,
+              0.002937275
+            ],
+            [
+              -51.05021903,
+              0.002146211
+            ],
+            [
+              -51.050833016,
+              0.0013812
+            ],
+            [
+              -51.051479787,
+              0.000643699
+            ],
+            [
+              -51.052158112,
+              -6.4889e-05
+            ],
+            [
+              -51.052866699,
+              -0.000743213
+            ],
+            [
+              -51.053604201,
+              -0.001389985
+            ],
+            [
+              -51.054369211,
+              -0.002003971
+            ],
+            [
+              -51.055160276,
+              -0.002584003
+            ],
+            [
+              -51.055975888,
+              -0.003128978
+            ],
+            [
+              -51.056814496,
+              -0.003637857
+            ],
+            [
+              -51.057674502,
+              -0.004109673
+            ],
+            [
+              -51.05855427,
+              -0.004543526
+            ],
+            [
+              -51.059452125,
+              -0.004938592
+            ],
+            [
+              -51.0594521251,
+              -0.004938592
+            ],
+            [
+              -51.0610309655,
+              -0.0011269339
+            ],
+            [
+              -51.0610309655,
+              -0.0011269338
+            ],
+            [
+              -51.0602978699,
+              -0.0008043638
+            ],
+            [
+              -51.0595795423,
+              -0.0004501243
+            ],
+            [
+              -51.0588773504,
+              -6.48882e-05
+            ],
+            [
+              -51.0581926298,
+              0.0003506098
+            ],
+            [
+              -51.0575266854,
+              0.00079558
+            ],
+            [
+              -51.0568807835,
+              0.0012691742
+            ],
+            [
+              -51.0562561555,
+              0.0017704917
+            ],
+            [
+              -51.0556539876,
+              0.0022985788
+            ],
+            [
+              -51.0550754287,
+              0.002852428
+            ],
+            [
+              -51.0545215787,
+              0.0034309877
+            ],
+            [
+              -51.0539934924,
+              0.0040331548
+            ],
+            [
+              -51.0534921749,
+              0.0046577836
+            ],
+            [
+              -51.0530185799,
+              0.0053036847
+            ],
+            [
+              -51.0525736105,
+              0.0059696291
+            ],
+            [
+              -51.0521581117,
+              0.0066543497
+            ],
+            [
+              -51.0517728756,
+              0.0073565416
+            ],
+            [
+              -51.0514186361,
+              0.0080748692
+            ],
+            [
+              -51.0510960661,
+              0.0088079648
+            ],
+            [
+              -51.051096066,
+              0.0088079648
+            ],
+            [
+              -51.047284408,
+              0.0072291241
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::SE",
+      "properties": {
+        "area_relative_error": 4.241e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA;COBERTURA_AGUA_UMIDA_POTENCIAL",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.490716537,
+        "geo03_score": 0.520845751,
+        "geo04_score": 0.985862872,
+        "geo05_score": 0.05,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.514967,
+        "profile_aisolation": 0.490716537,
+        "profile_awater": 0.0,
+        "profile_base_score": 0.532385656,
+        "profile_context_score": 0.196286615,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.498775752,
+        "profile_rank_within_buffer": 23,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 24,
+        "representative_lat": 0.0013202795,
+        "representative_lon": -51.05354328,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.487098973,
+        "sector_area_m2": 817863.514967,
+        "sector_id": "URBE-01::URBE-01-E0::R03::SE",
+        "sector_index": 20,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0594521251,
+              -0.004938592
+            ],
+            [
+              -51.060366358,
+              -0.005294118
+            ],
+            [
+              -51.061295229,
+              -0.005609427
+            ],
+            [
+              -51.062236969,
+              -0.005883919
+            ],
+            [
+              -51.063189786,
+              -0.006117072
+            ],
+            [
+              -51.064151867,
+              -0.006308442
+            ],
+            [
+              -51.065121378,
+              -0.006457664
+            ],
+            [
+              -51.066096477,
+              -0.006564454
+            ],
+            [
+              -51.067075305,
+              -0.00662861
+            ],
+            [
+              -51.068056,
+              -0.006650009
+            ],
+            [
+              -51.069036695,
+              -0.00662861
+            ],
+            [
+              -51.070015523,
+              -0.006564454
+            ],
+            [
+              -51.070990622,
+              -0.006457664
+            ],
+            [
+              -51.071960133,
+              -0.006308442
+            ],
+            [
+              -51.072922214,
+              -0.006117072
+            ],
+            [
+              -51.073875031,
+              -0.005883919
+            ],
+            [
+              -51.074816771,
+              -0.005609427
+            ],
+            [
+              -51.075745642,
+              -0.005294118
+            ],
+            [
+              -51.0766598749,
+              -0.004938592
+            ],
+            [
+              -51.0750810345,
+              -0.0011269339
+            ],
+            [
+              -51.0743345664,
+              -0.0014172196
+            ],
+            [
+              -51.0735761464,
+              -0.0016746683
+            ],
+            [
+              -51.0728072189,
+              -0.0018987901
+            ],
+            [
+              -51.0720292471,
+              -0.0020891587
+            ],
+            [
+              -51.0712437113,
+              -0.0022454117
+            ],
+            [
+              -51.0704521088,
+              -0.0023672509
+            ],
+            [
+              -51.0696559438,
+              -0.0024544446
+            ],
+            [
+              -51.0688567341,
+              -0.0025068278
+            ],
+            [
+              -51.068056,
+              -0.0025243
+            ],
+            [
+              -51.0672552659,
+              -0.0025068278
+            ],
+            [
+              -51.0664560562,
+              -0.0024544446
+            ],
+            [
+              -51.0656598912,
+              -0.0023672509
+            ],
+            [
+              -51.0648682887,
+              -0.0022454117
+            ],
+            [
+              -51.0640827529,
+              -0.0020891587
+            ],
+            [
+              -51.0633047811,
+              -0.0018987901
+            ],
+            [
+              -51.0625358536,
+              -0.0016746683
+            ],
+            [
+              -51.0617774336,
+              -0.0014172196
+            ],
+            [
+              -51.0610309655,
+              -0.0011269339
+            ],
+            [
+              -51.0594521251,
+              -0.004938592
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::S",
+      "properties": {
+        "area_relative_error": 1.11e-10,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_MODERADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.868890518,
+        "geo03_score": 0.342952897,
+        "geo04_score": 0.846530398,
+        "geo05_score": 0.516666667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.511589,
+        "profile_aisolation": 0.128295161,
+        "profile_awater": 0.185964594,
+        "profile_base_score": 0.687668194,
+        "profile_context_score": 0.162896821,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.635191056,
+        "profile_rank_within_buffer": 18,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 19,
+        "representative_lat": -0.0046910853,
+        "representative_lon": -51.068056,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.644878126,
+        "sector_area_m2": 817863.511589,
+        "sector_id": "URBE-01::URBE-01-E0::R03::S",
+        "sector_index": 21,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.0766598749,
+              -0.004938592
+            ],
+            [
+              -51.076659875,
+              -0.004938592
+            ],
+            [
+              -51.07755773,
+              -0.004543526
+            ],
+            [
+              -51.078437498,
+              -0.004109673
+            ],
+            [
+              -51.079297504,
+              -0.003637857
+            ],
+            [
+              -51.080136112,
+              -0.003128978
+            ],
+            [
+              -51.080951724,
+              -0.002584003
+            ],
+            [
+              -51.081742789,
+              -0.002003971
+            ],
+            [
+              -51.082507799,
+              -0.001389985
+            ],
+            [
+              -51.083245301,
+              -0.000743213
+            ],
+            [
+              -51.083953888,
+              -6.4889e-05
+            ],
+            [
+              -51.084632213,
+              0.000643699
+            ],
+            [
+              -51.085278984,
+              0.0013812
+            ],
+            [
+              -51.08589297,
+              0.002146211
+            ],
+            [
+              -51.086473003,
+              0.002937275
+            ],
+            [
+              -51.087017977,
+              0.003752887
+            ],
+            [
+              -51.087526857,
+              0.004591495
+            ],
+            [
+              -51.087998673,
+              0.005451501
+            ],
+            [
+              -51.088432526,
+              0.006331269
+            ],
+            [
+              -51.088827592,
+              0.007229124
+            ],
+            [
+              -51.088827592,
+              0.0072291241
+            ],
+            [
+              -51.085015934,
+              0.0088079648
+            ],
+            [
+              -51.0850159339,
+              0.0088079648
+            ],
+            [
+              -51.0846933639,
+              0.0080748692
+            ],
+            [
+              -51.0843391244,
+              0.0073565416
+            ],
+            [
+              -51.0839538883,
+              0.0066543497
+            ],
+            [
+              -51.0835383895,
+              0.0059696291
+            ],
+            [
+              -51.0830934201,
+              0.0053036847
+            ],
+            [
+              -51.0826198251,
+              0.0046577836
+            ],
+            [
+              -51.0821185076,
+              0.0040331548
+            ],
+            [
+              -51.0815904213,
+              0.0034309877
+            ],
+            [
+              -51.0810365713,
+              0.002852428
+            ],
+            [
+              -51.0804580124,
+              0.0022985788
+            ],
+            [
+              -51.0798558445,
+              0.0017704917
+            ],
+            [
+              -51.0792312165,
+              0.0012691742
+            ],
+            [
+              -51.0785853146,
+              0.00079558
+            ],
+            [
+              -51.0779193702,
+              0.0003506098
+            ],
+            [
+              -51.0772346496,
+              -6.48882e-05
+            ],
+            [
+              -51.0765324577,
+              -0.0004501243
+            ],
+            [
+              -51.0758141301,
+              -0.0008043638
+            ],
+            [
+              -51.0750810345,
+              -0.0011269338
+            ],
+            [
+              -51.0750810345,
+              -0.0011269339
+            ],
+            [
+              -51.0766598749,
+              -0.004938592
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::SW",
+      "properties": {
+        "area_relative_error": 4.241e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "NAO_SINALIZADA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.964944444,
+        "geo03_score": 0.600033231,
+        "geo04_score": 0.824717367,
+        "geo05_score": 0.733333333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.514968,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.170647673,
+        "profile_base_score": 0.81058321,
+        "profile_context_score": 0.102388604,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.739763749,
+        "profile_rank_within_buffer": 9,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 8,
+        "representative_lat": 0.0013202795,
+        "representative_lon": -51.08256872,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.787768448,
+        "sector_area_m2": 817863.514968,
+        "sector_id": "URBE-01::URBE-01-E0::R03::SW",
+        "sector_index": 22,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.088827592,
+              0.0072291241
+            ],
+            [
+              -51.089183118,
+              0.008143357
+            ],
+            [
+              -51.089498427,
+              0.009072228
+            ],
+            [
+              -51.089772919,
+              0.010013968
+            ],
+            [
+              -51.090006072,
+              0.010966785
+            ],
+            [
+              -51.090197442,
+              0.011928865
+            ],
+            [
+              -51.090346664,
+              0.012898377
+            ],
+            [
+              -51.090453455,
+              0.013873475
+            ],
+            [
+              -51.090517611,
+              0.014852304
+            ],
+            [
+              -51.09053901,
+              0.015832999
+            ],
+            [
+              -51.090517611,
+              0.016813694
+            ],
+            [
+              -51.090453456,
+              0.017792522
+            ],
+            [
+              -51.090346665,
+              0.01876762
+            ],
+            [
+              -51.090197443,
+              0.019737132
+            ],
+            [
+              -51.090006073,
+              0.020699213
+            ],
+            [
+              -51.089772921,
+              0.02165203
+            ],
+            [
+              -51.089498428,
+              0.02259377
+            ],
+            [
+              -51.089183119,
+              0.023522641
+            ],
+            [
+              -51.088827594,
+              0.024436874
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.0853062203,
+              0.0221115658
+            ],
+            [
+              -51.085563669,
+              0.0213531458
+            ],
+            [
+              -51.0857877916,
+              0.0205842183
+            ],
+            [
+              -51.0859781595,
+              0.0198062465
+            ],
+            [
+              -51.0861344124,
+              0.0190207106
+            ],
+            [
+              -51.0862562517,
+              0.0182291074
+            ],
+            [
+              -51.0863434462,
+              0.0174329432
+            ],
+            [
+              -51.0863958286,
+              0.0166337335
+            ],
+            [
+              -51.0864133008,
+              0.0158329994
+            ],
+            [
+              -51.0863958286,
+              0.0150322652
+            ],
+            [
+              -51.0863434455,
+              0.0142330547
+            ],
+            [
+              -51.086256251,
+              0.0134368905
+            ],
+            [
+              -51.0861344117,
+              0.0126452873
+            ],
+            [
+              -51.0859781588,
+              0.0118597522
+            ],
+            [
+              -51.0857877902,
+              0.0110817804
+            ],
+            [
+              -51.0855636684,
+              0.0103128529
+            ],
+            [
+              -51.0853062197,
+              0.0095544329
+            ],
+            [
+              -51.085015934,
+              0.0088079648
+            ],
+            [
+              -51.088827592,
+              0.0072291241
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::W",
+      "properties": {
+        "area_relative_error": 6.05e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.993292522,
+        "geo03_score": 0.332767088,
+        "geo04_score": 0.873179002,
+        "geo05_score": 0.844444444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.506551,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.254056024,
+        "profile_base_score": 0.80138944,
+        "profile_context_score": 0.152433614,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.736493857,
+        "profile_rank_within_buffer": 10,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 10,
+        "representative_lat": 0.015832999,
+        "representative_lon": -51.0885800862,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.76692644,
+        "sector_area_m2": 817863.506551,
+        "sector_id": "URBE-01::URBE-01-E0::R03::W",
+        "sector_index": 23,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.4,
+        "top1_unique_win_count": 2
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.088827594,
+              0.024436874
+            ],
+            [
+              -51.088827594,
+              0.024436874
+            ],
+            [
+              -51.088432528,
+              0.025334729
+            ],
+            [
+              -51.087998675,
+              0.026214497
+            ],
+            [
+              -51.087526859,
+              0.027074503
+            ],
+            [
+              -51.08701798,
+              0.027913111
+            ],
+            [
+              -51.086473005,
+              0.028728723
+            ],
+            [
+              -51.085892973,
+              0.029519788
+            ],
+            [
+              -51.085278986,
+              0.030284799
+            ],
+            [
+              -51.084632215,
+              0.0310223
+            ],
+            [
+              -51.08395389,
+              0.031730887
+            ],
+            [
+              -51.083245303,
+              0.032409212
+            ],
+            [
+              -51.082507802,
+              0.033055983
+            ],
+            [
+              -51.081742791,
+              0.03366997
+            ],
+            [
+              -51.080951726,
+              0.034250002
+            ],
+            [
+              -51.080136114,
+              0.034794977
+            ],
+            [
+              -51.079297506,
+              0.035303857
+            ],
+            [
+              -51.0784375,
+              0.035775672
+            ],
+            [
+              -51.077557732,
+              0.036209526
+            ],
+            [
+              -51.076659877,
+              0.036604592
+            ],
+            [
+              -51.0766598768,
+              0.0366045921
+            ],
+            [
+              -51.0750810358,
+              0.032792934
+            ],
+            [
+              -51.0750810359,
+              0.0327929339
+            ],
+            [
+              -51.0758141314,
+              0.0324703639
+            ],
+            [
+              -51.076532459,
+              0.0321161236
+            ],
+            [
+              -51.0772346509,
+              0.0317308882
+            ],
+            [
+              -51.0779193715,
+              0.0313153895
+            ],
+            [
+              -51.0785853159,
+              0.0308704193
+            ],
+            [
+              -51.0792312178,
+              0.0303968251
+            ],
+            [
+              -51.0798558466,
+              0.0298955069
+            ],
+            [
+              -51.0804580137,
+              0.0293674206
+            ],
+            [
+              -51.0810365725,
+              0.0288135705
+            ],
+            [
+              -51.0815904226,
+              0.0282350117
+            ],
+            [
+              -51.0821185089,
+              0.0276328446
+            ],
+            [
+              -51.0826198272,
+              0.0270082158
+            ],
+            [
+              -51.0830934214,
+              0.0263623139
+            ],
+            [
+              -51.0835383916,
+              0.0256963695
+            ],
+            [
+              -51.0839538896,
+              0.025011649
+            ],
+            [
+              -51.0843391257,
+              0.024309457
+            ],
+            [
+              -51.0846933653,
+              0.0235911294
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.0850159353,
+              0.0228580339
+            ],
+            [
+              -51.088827594,
+              0.024436874
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "URBE-01::URBE-01-E0::R03::NW",
+      "properties": {
+        "area_relative_error": 3.038e-09,
+        "authoritative_buffer_planar_area_m2": 19628724.275969,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+        "candidate_id": "URBE-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+        "expected_authoritative_sector_area_m2": 817863.511499,
+        "geo02_score": 0.961263184,
+        "geo03_score": 0.518717829,
+        "geo04_score": 0.742006943,
+        "geo05_score": 0.616666667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2041.241452,
+        "outer_radius_m": 2500.0,
+        "polygon_planar_area_m2": 817863.509014,
+        "profile_aisolation": 0.0,
+        "profile_awater": 0.384050244,
+        "profile_base_score": 0.749020749,
+        "profile_context_score": 0.230430146,
+        "profile_directional_preference_applied": false,
+        "profile_final_score": 0.697161689,
+        "profile_rank_within_buffer": 14,
+        "profile_ring_penalty_applied": false,
+        "profile_selected_sector": false,
+        "protocol_id": "URBE-BLIND-SET-v1.0",
+        "rank_base_within_buffer": 14,
+        "representative_lat": 0.0303457189,
+        "representative_lon": -51.0825687215,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "URBE-01",
+        "score_base": 0.720626468,
+        "sector_area_m2": 817863.509014,
+        "sector_id": "URBE-01::URBE-01-E0::R03::NW",
+        "sector_index": 24,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "ef61769682ce5f57025cd7191e7c708ae87c54b058a13a284fe642dbd6465f40",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+        "source_row_hash": "3dff05c0a3fd730d0fec5131dfd9db6c45bafce94bab8ced9175b65d88727baa",
+        "theoretical_circular_sector_area_m2": 818123.086872,
+        "top1_stability": 0.0,
+        "top1_unique_win_count": 0
+      },
+      "type": "Feature"
+    }
+  ],
+  "ground_truth_used": false,
+  "name": "URBE-BLIND-SET-v1.0",
+  "type": "FeatureCollection"
+}

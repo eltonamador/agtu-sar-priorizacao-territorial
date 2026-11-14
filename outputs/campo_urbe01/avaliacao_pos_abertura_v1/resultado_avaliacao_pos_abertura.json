@@ -1,0 +1,187 @@
+{
+  "case_conclusion": {
+    "classification": "NAO_COBERTO_NO_TOP3_BASE_NEM_PERFIL",
+    "general_efficiency_claim_allowed": false,
+    "scope": "RESULTADO_DE_UM_CASO_UNICO_DIAGNOSTICO",
+    "top1_any_mode": false,
+    "top3_any_mode": false
+  },
+  "distances_to_top3": [
+    {
+      "analytical_rank": 1,
+      "area_label": "AP1",
+      "contains_reference": false,
+      "ranking_mode": "BASE",
+      "reference_to_representative_m": 3780.365,
+      "reference_to_sector_polygon_m": 3402.049,
+      "representative_lat": 0.0363570853,
+      "representative_lon": -51.068056,
+      "sector_id": "URBE-01::URBE-01-E0::R03::N"
+    },
+    {
+      "analytical_rank": 2,
+      "area_label": "AP2",
+      "contains_reference": false,
+      "ranking_mode": "BASE",
+      "reference_to_representative_m": 959.892,
+      "reference_to_sector_polygon_m": 273.225,
+      "representative_lat": 0.0045914951,
+      "representative_lon": -51.0792975047,
+      "sector_id": "URBE-01::URBE-01-E0::R02::SW"
+    },
+    {
+      "analytical_rank": 3,
+      "area_label": "AP3",
+      "contains_reference": false,
+      "ranking_mode": "BASE",
+      "reference_to_representative_m": 2242.775,
+      "reference_to_sector_polygon_m": 1518.618,
+      "representative_lat": 0.0223232854,
+      "representative_lon": -51.074546286,
+      "sector_id": "URBE-01::URBE-01-E0::R01::NW"
+    },
+    {
+      "analytical_rank": 1,
+      "area_label": "AP1",
+      "contains_reference": false,
+      "ranking_mode": "PERFIL",
+      "reference_to_representative_m": 3780.365,
+      "reference_to_sector_polygon_m": 3402.049,
+      "representative_lat": 0.0363570853,
+      "representative_lon": -51.068056,
+      "sector_id": "URBE-01::URBE-01-E0::R03::N"
+    },
+    {
+      "analytical_rank": 2,
+      "area_label": "AP2",
+      "contains_reference": false,
+      "ranking_mode": "PERFIL",
+      "reference_to_representative_m": 959.892,
+      "reference_to_sector_polygon_m": 273.225,
+      "representative_lat": 0.0045914951,
+      "representative_lon": -51.0792975047,
+      "sector_id": "URBE-01::URBE-01-E0::R02::SW"
+    },
+    {
+      "analytical_rank": 3,
+      "area_label": "AP3",
+      "contains_reference": false,
+      "ranking_mode": "PERFIL",
+      "reference_to_representative_m": 862.628,
+      "reference_to_sector_polygon_m": 277.846,
+      "representative_lat": 0.0093427142,
+      "representative_lon": -51.0745462858,
+      "sector_id": "URBE-01::URBE-01-E0::R01::SW"
+    }
+  ],
+  "frozen_inputs": {
+    "frozen_manifest_sha256": "7cf0a17486c869b0b1bb9af98cc43f911166b75f1486ec2e06c08f3baef6bdad",
+    "ground_truth_used_in_frozen_processing": false,
+    "package_path": "outputs/campo_urbe01/processamento_cego_v1",
+    "rankings_recomputed": false,
+    "scientific_projection_sha256": "490663d2459b1aa5fac151b425ff474c0dacdb44891ee8530b2dd9960dbdcb23",
+    "sectors_recomputed": false,
+    "weights_recomputed": false
+  },
+  "initial_point": {
+    "bearing_to_reference_deg": 192.13507,
+    "distance_to_reference_m": 1518.618,
+    "latitude": 0.015833,
+    "longitude": -51.068056,
+    "reference_inside_source_radius": true,
+    "source_radius_m": 2500.0
+  },
+  "opened_at_local": "2026-10-21T14:07:14-03:00",
+  "phase": "T3_T4_POS_ABERTURA",
+  "profile_incremental_comparison": {
+    "base_reference_rank": 18,
+    "interpretation": "O ranking PERFIL não melhorou a posição da referência neste caso.",
+    "profile_reference_rank": 19,
+    "rank_change_profile_minus_base": 1
+  },
+  "protocol_id": "URBE-POSTOPEN-EVAL-v1.0",
+  "ranking_evaluation": [
+    {
+      "outcome": "NAO_COBERTO_TOP3",
+      "primary_reference_sector_id": "URBE-01::URBE-01-E0::R02::S",
+      "ranking_mode": "BASE",
+      "reference_rank_best": 18,
+      "reference_rank_conservative": 18,
+      "reference_score": 0.653517582,
+      "reference_sector_ids": [
+        "URBE-01::URBE-01-E0::R02::S"
+      ],
+      "top1_covered": false,
+      "top3_area_fraction": 0.125,
+      "top3_area_km2": 2.453591,
+      "top3_area_m2": 2453590.538,
+      "top3_covered": false,
+      "total_sectorized_area_m2": 19628724.275
+    },
+    {
+      "outcome": "NAO_COBERTO_TOP3",
+      "primary_reference_sector_id": "URBE-01::URBE-01-E0::R02::S",
+      "ranking_mode": "PERFIL",
+      "reference_rank_best": 19,
+      "reference_rank_conservative": 19,
+      "reference_score": 0.631826212,
+      "reference_sector_ids": [
+        "URBE-01::URBE-01-E0::R02::S"
+      ],
+      "top1_covered": false,
+      "top3_area_fraction": 0.125,
+      "top3_area_km2": 2.453591,
+      "top3_area_m2": 2453590.541,
+      "top3_covered": false,
+      "total_sectorized_area_m2": 19628724.275
+    }
+  ],
+  "reference": {
+    "coordinate_sha256": "c3fa784096eb4cdcbb82aa25df864c6a8efd5fd6df11cff2b09ba78b48731b63",
+    "horizontal_precision_m": null,
+    "horizontal_precision_status": "NAO_INFORMADA",
+    "independent_gnss_or_exif_verification": false,
+    "latitude": 0.0024809355844815323,
+    "latitude_text_as_received": "0.0024809355844815323",
+    "longitude": -51.07092698392779,
+    "longitude_text_as_received": "-51.07092698392779",
+    "source": "DECLARADA_PELO_USUARIO_APOS_CONGELAMENTO_DAS_SAIDAS",
+    "verification_status": "DECLARADA_NAO_VERIFICADA_INDEPENDENTEMENTE"
+  },
+  "scenario_id": "URBE-01",
+  "sector_identification": {
+    "analytic_check": {
+      "bearing_e0_reference_deg": 192.13507,
+      "distance_e0_reference_m": 1518.618,
+      "method": "HAVERSINE_DISTANCE_PLUS_INITIAL_BEARING_AND_FROZEN_RING_LIMITS",
+      "sector_id": "URBE-01::URBE-01-E0::R02::S"
+    },
+    "boundary_case": false,
+    "boundary_rule": "Todos os setores tocados contam para cobertura; o rank principal usa o pior posto (critério conservador).",
+    "checks_agree": true,
+    "geometry_check": {
+      "distance_to_nearest_sector_boundary_m": 75.404,
+      "matched_sectors": [
+        {
+          "relation": "INSIDE",
+          "sector_id": "URBE-01::URBE-01-E0::R02::S"
+        }
+      ],
+      "method": "LOCAL_EQUIRECTANGULAR_POINT_IN_POLYGON_WITH_0_05_M_BOUNDARY_TOLERANCE",
+      "primary_sector_conservative": "URBE-01::URBE-01-E0::R02::S"
+    },
+    "precision_sensitivity_note": "A pertença vale para a coordenada declarada. Sem precisão horizontal, não se pode excluir mudança de setor caso o erro real exceda a distância registrada até a borda mais próxima.",
+    "precision_sensitivity_status": "NAO_AVALIAVEL_SEM_PRECISAO_HORIZONTAL_DA_REFERENCIA"
+  },
+  "timezone": "America/Belem",
+  "true_sector_diagnostics_from_frozen_outputs": {
+    "barrier_flags": "BARREIRA_HIDRICA_POTENCIAL_ALTA",
+    "geo02_road_trail_access_score": 0.946207773,
+    "geo03_hydro_access_score": 0.035359136,
+    "geo04_terrain_access_score": 0.811021776,
+    "geo05_landcover_access_score": 0.794444444,
+    "interpretation": "A boa acessibilidade viária coexistiu com forte penalização hidrográfica; o perfil comportamental não compensou essa combinação no ranking congelado.",
+    "profile_awater": 0.032103663,
+    "sector_id": "URBE-01::URBE-01-E0::R02::S"
+  }
+}

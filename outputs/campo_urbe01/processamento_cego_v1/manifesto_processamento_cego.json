@@ -1,0 +1,228 @@
+{
+  "confirmatory_eligible": false,
+  "determinism_compared_file_count": 15,
+  "determinism_run1_hashes_match_published_outputs": true,
+  "elapsed_seconds_two_runs_and_qa": 15.841,
+  "engine_version": "1.0.0-urbe-blind-wrapper+EXT-ESP-SET-v1.1",
+  "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+  "files": [
+    {
+      "bytes": 77111,
+      "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "engine_imported_unchanged",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 17629,
+      "path": "work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+      "role": "base_config_source",
+      "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+    },
+    {
+      "bytes": 3161,
+      "path": "work/urbe01_processamento_cego_v1/config_urbe01_blind_v1.json",
+      "role": "urbe01_config_source",
+      "sha256": "75950a7e5affde3d2072e2546e5cd8e7d09f1e7413b65aa67016be19980d10cb"
+    },
+    {
+      "bytes": 3579,
+      "path": "work/urbe01_processamento_cego_v1/PROTOCOLO_URBE01_CEGO_v1.md",
+      "role": "protocol_source",
+      "sha256": "447ede48c83acd88d448dc50ead292ac40090c01a66c237e3e72c5419bedfd9d"
+    },
+    {
+      "bytes": 6198892,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "source_geo02_osm",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "source_geo03_osm",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 5074951,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "7a1f4475279ab70e7b8080445fb02f80357fa08c5e7f18db1980651d01bdc206"
+    },
+    {
+      "bytes": 10237499,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "bytes": 5709363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "0c1ad94bf58bbee81a65c1f904818d3cca704b360ce84ede36f527d966a0c380"
+    },
+    {
+      "bytes": 7081961,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 23653990,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "df31ae2b362b033d1e1d31e683a484133e277727482412b14b743cbc59b12930"
+    },
+    {
+      "bytes": 8977040,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "bytes": 38592452,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "f064257364593b7145ae7a964151d6f6a80cc99a85672c1041e446bf0c5e1b89"
+    },
+    {
+      "bytes": 29215289,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 488036,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/Mapa_URBE01_Processamento_Cego_BASE_PERFIL_v1.pdf",
+      "role": "output",
+      "sha256": "0e7830e3d2a08ed7b8f8536b3cee5005ebc3a66d26df547c0bdc9034c78e1e7d"
+    },
+    {
+      "bytes": 364937,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/Mapa_URBE01_Processamento_Cego_BASE_PERFIL_v1.png",
+      "role": "output",
+      "sha256": "d2956f0f746f118ce7cf8803fab4437c3740190e2b390098b21fbee27e092919"
+    },
+    {
+      "bytes": 1275,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/README_MAPA_URBE01_CEGO_v1.md",
+      "role": "output",
+      "sha256": "b8885982ce5e10c79216f6e218ea9641dcda270a622510f691aa3cab72b3cc93"
+    },
+    {
+      "bytes": 26853,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/atributos_geo_setores.csv",
+      "role": "output",
+      "sha256": "f442ce5862ee64929240e2950f51081dbf46c2d6c08537a92062b742c9f22651"
+    },
+    {
+      "bytes": 328,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/avisos_revisao.log",
+      "role": "output",
+      "sha256": "afeefc6f54eb5b0437708bc8de77b4b0a9a44f66128a7340081285ed0a30fcc3"
+    },
+    {
+      "bytes": 20182,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/config_efetiva_urbe01_blind.json",
+      "role": "output",
+      "sha256": "1a72a9be2b5bc997e801f9b6dc8811d900d6819207ddbd3a3fd6a78cd5dfb0fc"
+    },
+    {
+      "bytes": 12872,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/entrada_raio_fonte.geojson",
+      "role": "output",
+      "sha256": "48e0b440210e8c7acd28cddd19891b0bdbae3e801adf86e727743972567d4621"
+    },
+    {
+      "bytes": 1105,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "9b9e16ecfa79c5e65c1594f125ce237d3048d074ed4c07fc614abe706d7447bd"
+    },
+    {
+      "bytes": 483,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/manifesto_entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "cfe1e197d916268dace7a06ee740916be2a252194cae169e0ccc238315136f97"
+    },
+    {
+      "bytes": 3579,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/protocolo_urbe01_cego_v1.md",
+      "role": "output",
+      "sha256": "447ede48c83acd88d448dc50ead292ac40090c01a66c237e3e72c5419bedfd9d"
+    },
+    {
+      "bytes": 57819,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/ranking_base_original.csv",
+      "role": "output",
+      "sha256": "4ef60de6de63168d15b580463ef2b07e0069b04e679c1ff2195caa44d816eb1e"
+    },
+    {
+      "bytes": 63938,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/ranking_perfil_urbe01.csv",
+      "role": "output",
+      "sha256": "561a406a7f77c4c098bd3213be0bd6011ac5ca57cd97be85f18d91f85181d08c"
+    },
+    {
+      "bytes": 4002,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/relatorio_determinismo.json",
+      "role": "output",
+      "sha256": "34bcbaa0fd7e90d9e1eee64b04eb89f02abfe652e6de150a8cd9afc1927c54ea"
+    },
+    {
+      "bytes": 1374,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/relatorio_execucao_urbe01.md",
+      "role": "output",
+      "sha256": "4b20b6950c52413bdc3505b89f0eaece1eee3e619bd1e2317630ed653ed82abd"
+    },
+    {
+      "bytes": 622,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/relatorio_qa.json",
+      "role": "output",
+      "sha256": "8bc89fa03f48e954fbea6c35e9360e9fbe1b9a9c1568ad58eb6bc39b25ac4306"
+    },
+    {
+      "bytes": 309973,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/resultado_urbe01_cego.json",
+      "role": "output",
+      "sha256": "89b0daff242036c90123e8d326807505b5af363ded616c05c34c8c3d42c7caa2"
+    },
+    {
+      "bytes": 136448,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/setores_urbe01.geojson",
+      "role": "output",
+      "sha256": "f27e10dbd9e319603fc3d16a9495cef468166bab147904b9031722814f9c515f"
+    },
+    {
+      "bytes": 1178,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/top3_base_original.csv",
+      "role": "output",
+      "sha256": "64f445147059ea27ac5447ac53e00d026ec6c37645b68db45d06e276dd4af619"
+    },
+    {
+      "bytes": 2780,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/top3_base_original.json",
+      "role": "output",
+      "sha256": "23d52c6b7438292f8491da85cfadaff215108be6fd7ef7138e8915cd093a343c"
+    },
+    {
+      "bytes": 1185,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/top3_perfil_urbe01.csv",
+      "role": "output",
+      "sha256": "f4ca72ca0b4d42e85a415f11ec591f067424fcb72b814ae3eba83bb6f4c04b95"
+    },
+    {
+      "bytes": 2789,
+      "path": "outputs/campo_urbe01/processamento_cego_v1/top3_perfil_urbe01.json",
+      "role": "output",
+      "sha256": "1a8f0efce5c416aaf0b7ac301c6cf827fdba5b108b2982416825b94e83fa892c"
+    }
+  ],
+  "generated_at_utc": "2026-10-21T00:55:08+00:00",
+  "ground_truth_used": false,
+  "protocol_id": "URBE-BLIND-SET-v1.0",
+  "python_version": "3.12.14",
+  "review_status": "REVISAR",
+  "scientific_projection_sha256": "490663d2459b1aa5fac151b425ff474c0dacdb44891ee8530b2dd9960dbdcb23",
+  "sector_count": 24,
+  "upstream_protocol_id": "URBE-SOURCE-RADIUS-v1.0"
+}

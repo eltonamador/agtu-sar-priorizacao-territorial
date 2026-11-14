@@ -1,0 +1,33 @@
+{
+  "reported_azimuth_deg": 249,
+  "reported_confidence": null,
+  "reported_tolerance_deg": null,
+  "north_reference_reported": null,
+  "assumed_for_cartography": "NORTE_GEOGRAFICO; ORIGEM_E0",
+  "execution": "SENSIBILIDADE_EXPLORATORIA_NAO_EVIDENCIA_NOVA",
+  "tolerance_tests_deg": [
+    5,
+    22.5,
+    45
+  ],
+  "confidence_tests": [
+    "BAIXA",
+    "MEDIA",
+    "ALTA"
+  ],
+  "no_primary_scenario_selected": true,
+  "original_BASE_status": "REVISAR",
+  "warning": "Resultados internos do ranker não constituem liberação operacional; parâmetros faltantes não foram confirmados.",
+  "case_id": "MATA-02",
+  "package_version": "DIRECAO-249-v2",
+  "recorded_at_utc": "2026-10-30T15:21:53.833163+00:00",
+  "user_statement": "a referência é azimute de 249° a partir do norte, foi o informação de direção do desaparecido",
+  "confirmed_meaning": "DIRECAO_INFORMADA_DO_DESAPARECIDO",
+  "evidence_nature": "RELATADO",
+  "direction_origin_confirmed": false,
+  "repeated_prompts_treated_as_one_case": true,
+  "confidence_and_tolerance_are_sensitivity_assumptions": true,
+  "original_outputs_preserved": true,
+  "no_new_ground_truth": true,
+  "limited_scope": "Reexecução somente do PERFIL com BASE congelado e atualização de proveniência; não reexecuta geodados ou MOV."
+}

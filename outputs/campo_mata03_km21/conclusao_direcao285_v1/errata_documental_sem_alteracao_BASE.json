@@ -1,0 +1,6 @@
+[
+  "O campo top3 vazio de resultado_BASE.json decorre da serialização. O Top-3 desta conclusão é lido diretamente de ranking_BASE.json.",
+  "A descrição antiga de nove amostras por setor não representa esta execução: foram 3.600 amostras estratificadas por setor, não estatística zonal de todos os pixels.",
+  "A área nominal de amostragem em config_execucao.json conserva valores de raio 6 km. Para 7 km, a área ideal por amostra é 1.781,690278 m² e a escala linear nominal 42,210073 m. Essa informação descritiva não participa da soma ponderada conferida.",
+  "manifesto_BASE.json precede resultado_BASE.json. Este fechamento registra os hashes de todos os 15 arquivos BASE sem reescrevê-los."
+]

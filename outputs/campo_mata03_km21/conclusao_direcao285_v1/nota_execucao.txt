@@ -1,0 +1,53 @@
+MATA-03 / KM21 — conclusão da execução com direção relatada de 285° (ONO)
+
+1. Resultado principal
+Estado territorial: REVISAR. O escore é um índice multicritério territorial, não uma probabilidade de presença.
+1. R01-E: 0.737195475
+2. R03-NE: 0.736014506
+3. R01-SE: 0.735688670
+Margem entre os dois primeiros: 0,001180969. O primeiro colocado vence em 3 dos 5 conjuntos de pesos (estabilidade 0,60).
+Os motivos de revisão são UPSTREAM_REVIEW_REQUIRED, LOW_MARGIN e RANKING_UNSTABLE.
+
+2. Tratamento da direção
+A informação recebida é 285° (ONO) a partir do norte, de natureza RELATADO. Não foram informadas confiança, tolerância angular ou referência norte verdadeiro/magnético.
+Os 223° da captura de bússola são orientação do telefone e não foram tratados como direção de deslocamento.
+O motor PERFIL V3 retornou ABSTENCAO_PERFIL; abstenção do perfil: True.
+NAO_AVALIADA recebe qualidade zero pela regra vigente: a direção fica visível e registrada, mas não altera o ranking principal. Isso não contradiz o relato e não demonstra que ONO seja uma direção errada.
+A tolerância de 22,5° no arquivo principal é apenas requisito do esquema do motor; é uma premissa de engenharia não confirmada e não tem efeito com qualidade zero.
+Foram executadas nove combinações auxiliares de confiança BAIXA/MEDIA/ALTA e tolerância ±5°/±22,5°/±45°. São análises condicionais de sensibilidade, não novos casos nem calibração.
+  BAIXA, ±5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  BAIXA, ±22.5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  BAIXA, ±45°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  MEDIA, ±5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  MEDIA, ±22.5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  MEDIA, ±45°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  ALTA, ±5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  ALTA, ±22.5°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+  ALTA, ±45°: R01-E, R03-NE, R01-SE; estado PERFIL EFEITO_PERFIL_APLICADO; efeito aplicado: True.
+
+3. Por que esses escores aparecem
+O BASE pondera acesso (0,30), hidrografia (0,25), relevo (0,20) e cobertura (0,25). As três primeiras áreas combinam valores elevados do componente hidrográfico e relevo com valores intermediários de acesso e cobertura.
+R01-E: componentes GEO-02 a GEO-05 = 0,554997901; 0,945008047; 0,787706577; 0,707611111. A decomposição é 0,166499370 + 0,236252012 + 0,157541315 + 0,176902778 ≈ 0,737195475.
+Essa decomposição explica a aritmética, não valida a plausibilidade de presença. O ranking não incorporou automaticamente personalidade, tempo de caminhada, detecção de pessoa em imagens, cercas ou condições do sub-bosque.
+
+4. Procedência e limites
+Raio informado: 7 km; área circular ideal: 153,938040 km²; área poligonal: 153,889199 km². Cada uma das 24 unidades analíticas tem aproximadamente 6,4 km².
+E0: 0,2183333333; -51,1330555556. A referência espacial de chegada não é uma confirmação da posição às 12h00.
+Cronologia simulada: 19h30 desde o último contato; 22h30 desde o início do deslocamento; 23h02 desde a referência de chegada. Esses intervalos não significam caminhada contínua.
+Ambiente: cerrado amazônico, fragmentos florestais e ocupação semi-rural. Não representa floresta contínua.
+Amostragem territorial: 3.600 pontos estratificados por setor, 86.400 válidos; não se afirma que todos os pixels foram amostrados.
+As fotografias são contexto visual de campo, não ortomosaico ou detector automático de vítimas. Os arquivos HEIC não receberam inspeção visual/extração completa de EXIF neste fechamento.
+O inventário distingue os 12 arquivos explicitamente relacionados pelo usuário dos arquivos adicionais encontrados na pasta. A descrição de 16 imagens de referência não equivale a 16 imagens contextuais verificadas.
+A imagem identificada como SoloVit foi mantida fora do processamento. Não foram lidos seus conteúdos nem seus metadados neste fechamento. Não foi utilizada a localização revelada do MATA-02.
+O fundo Sentinel-2 é de 2021 e serve apenas à leitura do mapa. Não é imagem Google Earth nem levantamento contemporâneo de 2026. Fonte e URL constam em proveniencia_fundo.json.
+MOV, URG e DET não foram executados para este fechamento. Não houve validação de eficácia operacional, navegação móvel, GeoPDF ou missão de drone.
+
+5. Erratas documentais preservando a versão BASE
+O campo top3 vazio de resultado_BASE.json decorre da serialização. O Top-3 desta conclusão é lido diretamente de ranking_BASE.json.
+A descrição antiga de nove amostras por setor não representa esta execução: foram 3.600 amostras estratificadas por setor, não estatística zonal de todos os pixels.
+A área nominal de amostragem em config_execucao.json conserva valores de raio 6 km. Para 7 km, a área ideal por amostra é 1.781,690278 m² e a escala linear nominal 42,210073 m. Essa informação descritiva não participa da soma ponderada conferida.
+manifesto_BASE.json precede resultado_BASE.json. Este fechamento registra os hashes de todos os 15 arquivos BASE sem reescrevê-los.
+
+6. Preservação
+Os 15 arquivos BASE, os ensaios anteriores e a dissertação permanecem inalterados. Os hashes antes/depois estão no manifesto deste fechamento.
+Este pacote documenta uma execução do modelo e suas limitações; não é uma ordem de busca. A decisão permanece com o profissional responsável.

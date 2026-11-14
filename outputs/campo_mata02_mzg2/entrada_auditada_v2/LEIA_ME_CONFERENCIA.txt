@@ -1,0 +1,45 @@
+MATA-02 / MZG2 — conferência de arquivos e preparação da entrada v2
+Data da auditoria: 29/10/2026
+
+ESCOPO E RESULTADO
+Foram lidos os 71 JPG da pasta Drone, as três fotografias terrestres explicitamente indicadas e MZG2.png: 75 arquivos, sem duplicações por SHA256. Todos passaram pela verificação de contêiner do Pillow; isso não é certificação de autenticidade nem revisão visual de todas as imagens. As 71 fotografias do drone possuem GPS EXIF e horários entre 22/10/2026 15:37:50 e 15:54:15. Os 22 arquivos também presentes no inventário anterior mantêm os mesmos hashes.
+
+FOTOGRAFIA DE REFERÊNCIA
+Arquivo: MZG2Drone261022155038_0060_V.JPG.
+EXIF: DJI M3T, 4000 × 3000, 22/10/2026 15:50:38; fuso não registrado.
+Posição da câmera: latitude -0,1587396944; longitude -51,3948166111.
+Distância horizontal a E0: 51,67 m (haversine, raio terrestre médio 6.371.008,8 m). Confirma a aproximação declarada de 52 m, não a distância da pessoa nem do centro da cena.
+Altitude EXIF e XMP AbsoluteAltitude: 140,692 m. RelativeAltitude: 141,145 m; AltitudeType: GpsFusionAlt. Não interpretar esses valores como altura validada acima do terreno ou compará-los diretamente aos 12 m da tela.
+XMP registra ImageSource=ZoomCamera, GimbalPitch=-22,50° e GimbalYaw=-120,70°. A imagem é oblíqua e não foi ortorretificada. As coordenadas da câmera não georreferenciam automaticamente as feições no solo. Não foi analisada termografia.
+Inspeção visual da foto 0060 confirma via de acesso, áreas abertas, fragmentos florestais e superfícies possivelmente úmidas. Isso não delimita hidrografia nem fornece pista de deslocamento da pessoa.
+
+REGISTROS TERRESTRES
+MZG2Solo_0403.jpeg: 22/10/2026 15:58:57, fuso EXIF -03:00; distância horizontal a E0 23,95 m.
+MZG2Solo_0407.jpeg: 22/10/2026 15:59:07, fuso EXIF -03:00; distância horizontal a E0 20,73 m.
+MZG2Solo_0428.jpeg: 22/10/2026 16:02:52, fuso EXIF -03:00; distância horizontal a E0 15,74 m.
+Os três arquivos indicam iPhone 16, 5712 × 4284 pixels. O EXIF contém estimativas de erro horizontal próprias dessas fotografias; elas não foram transferidas para E0 ou para a captura de tela.
+MZG2.png: EXIF DateTimeOriginal=22/10/2026 15:59:53, sem fuso; não possui GPS EXIF. Coordenadas, elevação 12 m e orientação 357° foram lidas na imagem. A data antes desconhecida agora está documentada como metadado do arquivo, não verificada externamente. Os 357° não são direção da pessoa.
+
+ENTRADA E SEPARAÇÃO DAS EVIDÊNCIAS
+E0: -0,15916666666666668; -51,395, conversão do DMS da tela. EPSG:4326 é a convenção do contrato; o datum não aparece na captura.
+Raio informado: 6000 m. Área nominal: 113,0973 km². Não se aplicou buffer adaptativo.
+Relógio hipotético: último contato 22/10/2026 15:30; planejamento 23/10/2026 08:30; 17 h. Foi adotada a convenção local America/Belem (-03:00) exclusivamente para o exercício. Evento real: inexistente/nulo.
+O JSON e GeoJSON de entrada passaram por validate_buffer_contract do motor EXT-ESP-SET-v1.1, com manifesto e configuração. O nome legado adaptive_radius_m é exigido pelo contrato, mas representa aqui o raio diretamente informado, não um cálculo adaptativo.
+Perfil, fotografias, coordenadas de câmera, relógio hipotético, elevação e direção do telefone estão segregados do BASE. A ficha contextual conserva o perfil simulado do extrativista e as pistas declaradas, sem geometrias ou pesos inventados.
+Faltam azimute do relato, tolerância angular, geometria da trilha, confirmação das marcas e qualidade mensurada das pistas. Saúde, vestuário, velocidade, pausa noturna e localização celular não foram especificados. Essas ausências não impedem a futura execução territorial BASE, mas impedem usá-las como pistas quantitativas neste pacote.
+
+PREPARAÇÃO ANTERIOR PRESERVADA
+Já existiam ficha, inventário parcial de 34 imagens, configuração e executor MATA-02 em work/. Não foram sobrescritos. A ficha anterior afirmava saúde/vestuário fornecidos; o executor continha descrições de 5 km e pista Norte/hábito de buscar água herdadas do MATA-01. A saída v2 remove essas referências, mantém 6 km e não altera pesos nem parâmetros do motor. A v1 não deve ser usada automaticamente para este novo cenário.
+O inventário anterior também marcava algumas imagens como potencialmente reveladoras. Não foi inferida qualquer posição de alvo a partir delas. A inspeção de metadados não autoriza declarar cegamento integral do pesquisador; somente a separação das entradas do BASE é verificável nesta preparação.
+
+ARQUIVOS E USO FUTURO
+entrada_raio_fonte_mata02_mzg2.json e .geojson: entrada espacial compatível com o contrato.
+manifesto_entrada_raio_fonte_mata02_mzg2.json: hashes dos dois arquivos de entrada.
+config_entrada_mata02_v2.json e overlay_entrada_mata02_v2.json: configuração preparada, derivada da anterior sem mudar pesos ou amostragem.
+FICHA_CENARIO_MATA02_v2.json: contexto hipotético e ausências; não alimentar o BASE com esse arquivo.
+INVENTARIO_METADADOS.json/.csv: auditoria contextual; não alimentar o BASE.
+QA_PREPARACAO.json e PROVENIENCIA_CODIGO.json: verificações realizadas e funções utilizadas.
+
+ESTADO E PRÓXIMO PASSO
+Entrada preparada e validada estruturalmente. Não houve execução de ranking, carregamento/extração GEO-02 a GEO-05, teste de eficácia ou geração de mapa de prioridades. O processamento futuro deve usar explicitamente esta entrada v2, verificar cobertura das camadas para os 6 km, registrar fontes/hashes e tratar a disponibilidade de hidrografia conforme o protocolo já existente. O executor v1 usa caminhos/configurações antigos por padrão: deverá ser adaptado explicitamente antes do processamento; não basta executá-lo sem argumentos.
+As fotografias originais, a dissertação, o motor e os arquivos anteriores permaneceram intactos. Este caso continua sendo ensaio complementar separado.

@@ -1,0 +1,50 @@
+{
+  "errata_id": "RURAL01-T6-ERRATA-INTERPRETATIVA-v1.0",
+  "created_at_local": "2026-10-23T14:33:44-03:00",
+  "scenario_id": "RURAL-01",
+  "status": "PUBLICADA_SEM_RECALCULO",
+  "scope": [
+    "SEMANTICA_GRADE_NAO_AVALIAVEL",
+    "DENOMINADOR_SENSIBILIDADE_NAO_AVALIAVEL"
+  ],
+  "forbidden_changes_confirmed": {
+    "domain_radius_changed": false,
+    "coordinates_changed": false,
+    "cost_surfaces_changed": false,
+    "sectors_changed": false,
+    "candidates_changed": false,
+    "rankings_changed": false,
+    "corridors_changed": false,
+    "hypotheses_changed_or_selected": false,
+    "original_t6_overwritten": false
+  },
+  "source_files": [
+    {
+      "path": "outputs/campo_rural01/avaliacao_pos_abertura_v1/manifesto_avaliacao_t5_t6.json",
+      "sha256": "05bba785481fa094aafa8e99971824c8d178fd72cd8e31970c6520475b30d7a2"
+    },
+    {
+      "path": "outputs/campo_rural01/avaliacao_pos_abertura_v1/resultado_avaliacao_t5_t6.json",
+      "sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705"
+    },
+    {
+      "path": "outputs/campo_rural01/avaliacao_pos_abertura_v1/RELATORIO_AVALIACAO_RURAL01_T6.md",
+      "sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273"
+    },
+    {
+      "path": "outputs/campo_rural01/referencia_t5_rural01_v1/registro_referencia_t5_rural01.json",
+      "sha256": "f7aaa204e24c48ed343c769e924f01883f6405d05cb740cc82fe64841e491a15"
+    },
+    {
+      "path": "outputs/campo_rural01/referencia_t5_rural01_v1/KM14.png",
+      "sha256": "dc7c8e19eeb85dd0ebdba9f2189ca38622b8bea7cef4698301ace3b956c43761"
+    }
+  ],
+  "output_files": [
+    {
+      "path": "outputs/campo_rural01/errata_interpretativa_t6_v1/NOTA_INTERPRETATIVA_RURAL01_T6_v1.md",
+      "sha256": "084f99a7a327d5dd9e2dcf59db3a73b9c21fbea13e782753b7f2222a44661063"
+    }
+  ],
+  "payload_sha256": "bc63b684f6edf508d131c418631aa0a8a4b3aac3a2c1105a15e3914ac9f52853"
+}

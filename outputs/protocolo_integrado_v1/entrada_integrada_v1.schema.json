@@ -1,0 +1,547 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:protocolo-integrado-prospectivo:v1.0",
+  "title": "Entrada prospectiva integrada LOC/URG/DET",
+  "description": "Contrato sem ground truth para os novos cenários. LOC, URG e DET permanecem funcionalmente separados.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version",
+    "scenario_id",
+    "case_revision",
+    "parent_payload_sha256",
+    "study_mode",
+    "record_status",
+    "created_at",
+    "operator_code",
+    "pseudonymized",
+    "text_fields_sanitized",
+    "blind_processing",
+    "storage_segregated",
+    "ground_truth_absent",
+    "person_location_status",
+    "planning_point",
+    "search_context",
+    "profile_facts",
+    "visual_evidence",
+    "urgency_observations",
+    "detectability_assessments",
+    "source_artifacts",
+    "search_event_hashes",
+    "freeze_metadata"
+  ],
+  "properties": {
+    "protocol_version": {"const": "PROTOCOLO-INTEGRADO-PROSPECTIVO-v1.0"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "case_revision": {"type": "integer", "minimum": 1},
+    "parent_payload_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+    "study_mode": {"const": "PROSPECTIVO_CEGO"},
+    "record_status": {"type": "string", "enum": ["RASCUNHO", "CONGELADO"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "operator_code": {"$ref": "#/$defs/identifier"},
+    "pseudonymized": {"const": true},
+    "text_fields_sanitized": {"const": true},
+    "blind_processing": {"const": true},
+    "storage_segregated": {"const": true},
+    "ground_truth_absent": {"const": true},
+    "person_location_status": {
+      "type": "string",
+      "enum": ["DESCONHECIDA", "CONHECIDA_OPERACIONALMENTE"]
+    },
+    "planning_point": {"$ref": "#/$defs/planningPoint"},
+    "search_context": {"$ref": "#/$defs/searchContext"},
+    "profile_facts": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/profileFact"}
+    },
+    "visual_evidence": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/visualEvidence"}
+    },
+    "urgency_observations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/urgencyObservation"}
+    },
+    "detectability_assessments": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {"$ref": "#/$defs/detectabilityAssessment"}
+    },
+    "source_artifacts": {"$ref": "#/$defs/sourceArtifacts"},
+    "search_event_hashes": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {"$ref": "#/$defs/sha256"}
+    },
+    "freeze_metadata": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/freezeMetadata"}]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"record_status": {"const": "CONGELADO"}}},
+      "then": {"properties": {"freeze_metadata": {"$ref": "#/$defs/freezeMetadata"}}},
+      "else": {"properties": {"freeze_metadata": {"type": "null"}}}
+    }
+  ],
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "availability": {
+      "type": "string",
+      "enum": ["PRESENTE", "AUSENTE", "NAO_DISPONIVEL", "CONTRADITORIO"]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id", "source_type", "source_code", "nature", "confidence",
+        "observed_at", "time_precision", "valid_until", "authorized_for_model"
+      ],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/identifier"},
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "VITIMA", "FAMILIAR", "TESTEMUNHA", "OPERADOR", "REGISTRO",
+            "FOTO_SOLO", "IMAGEM_DRONE", "CAMADA_PUBLICA", "SENSOR",
+            "DOCUMENTO_OPERACIONAL", "OUTRA", "NAO_DISPONIVEL"
+          ]
+        },
+        "source_code": {"type": ["string", "null"], "maxLength": 128},
+        "nature": {
+          "type": "string",
+          "enum": ["CONFIRMADO", "OBSERVADO", "RELATADO", "SUSPEITO", "INFERIDO", "NAO_DISPONIVEL"]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["ALTA", "MEDIA", "BAIXA", "NAO_AVALIADA"]
+        },
+        "observed_at": {"type": ["string", "null"], "format": "date-time"},
+        "time_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "valid_until": {"type": ["string", "null"], "format": "date-time"},
+        "authorized_for_model": {"type": "boolean"}
+      }
+    },
+    "planningPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "point_id", "point_role", "point_semantics", "coordinate_source",
+        "latitude", "longitude", "position_observed_at", "current_presence_assertion",
+        "horizontal_accuracy_m", "horizontal_accuracy_status", "horizontal_accuracy_source",
+        "uncertainty_radius_m", "uncertainty_source", "evidence"
+      ],
+      "properties": {
+        "point_id": {"$ref": "#/$defs/identifier"},
+        "point_role": {
+          "type": "string",
+          "enum": [
+            "ULTIMO_PONTO_VISTO", "ULTIMO_PONTO_CONHECIDO",
+            "PONTO_INICIAL_PLANEJAMENTO", "ESTIMATIVA_SISTEMA_AEROTRANSPORTADO"
+          ]
+        },
+        "point_semantics": {
+          "type": "string",
+          "enum": ["OBSERVACAO_DIRETA", "REGISTRO_INDIRETO", "REFERENCIA_DE_PLANEJAMENTO", "ESTIMATIVA_TECNICA"]
+        },
+        "coordinate_source": {
+          "type": "string",
+          "enum": ["OBSERVACAO_DIRETA", "REGISTRO_OPERACIONAL", "INFORMADO_PELA_FONTE", "SISTEMA_AEROTRANSPORTADO"]
+        },
+        "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+        "longitude": {"type": "number", "minimum": -180, "maximum": 180},
+        "position_observed_at": {"type": ["string", "null"], "format": "date-time"},
+        "current_presence_assertion": {"const": false},
+        "horizontal_accuracy_m": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "horizontal_accuracy_status": {
+          "type": "string",
+          "enum": ["INFORMADA", "CALCULADA_DOCUMENTADA", "NAO_DISPONIVEL"]
+        },
+        "horizontal_accuracy_source": {"type": ["string", "null"], "maxLength": 160},
+        "uncertainty_radius_m": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "uncertainty_source": {
+          "type": "string",
+          "enum": ["INFORMADO_PELA_FONTE", "CALCULADO_DOCUMENTADO", "NAO_DISPONIVEL"]
+        },
+        "evidence": {
+          "allOf": [
+            {"$ref": "#/$defs/evidence"},
+            {
+              "properties": {
+                "authorized_for_model": {"const": true},
+                "nature": {"enum": ["CONFIRMADO", "OBSERVADO", "RELATADO"]},
+                "source_code": {"type": "string", "minLength": 1, "maxLength": 128}
+              }
+            }
+          ],
+          "description": "A evidência do ponto deve estar autorizada e identificada. Horário ausente é preservado como não disponível e causa abstenção de LOC; nunca deve ser inventado. A aplicação também rejeita horário futuro."
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"point_role": {"const": "ULTIMO_PONTO_VISTO"}}, "required": ["point_role"]},
+          "then": {"properties": {
+            "point_semantics": {"const": "OBSERVACAO_DIRETA"},
+            "coordinate_source": {"const": "OBSERVACAO_DIRETA"},
+            "position_observed_at": {"type": "string", "format": "date-time"},
+            "evidence": {"allOf": [
+              {"$ref": "#/$defs/evidence"},
+              {"properties": {"nature": {"enum": ["CONFIRMADO", "OBSERVADO"]}}}
+            ]}
+          }}
+        },
+        {
+          "if": {"properties": {"point_role": {"const": "ULTIMO_PONTO_CONHECIDO"}}, "required": ["point_role"]},
+          "then": {"properties": {
+            "point_semantics": {"const": "REGISTRO_INDIRETO"},
+            "coordinate_source": {"const": "REGISTRO_OPERACIONAL"}
+          }}
+        },
+        {
+          "if": {"properties": {"point_role": {"const": "PONTO_INICIAL_PLANEJAMENTO"}}, "required": ["point_role"]},
+          "then": {"properties": {"point_semantics": {"const": "REFERENCIA_DE_PLANEJAMENTO"}}}
+        },
+        {
+          "if": {"properties": {"point_role": {"const": "ESTIMATIVA_SISTEMA_AEROTRANSPORTADO"}}, "required": ["point_role"]},
+          "then": {"properties": {
+            "point_semantics": {"const": "ESTIMATIVA_TECNICA"},
+            "coordinate_source": {"const": "SISTEMA_AEROTRANSPORTADO"}
+          }}
+        }
+      ]
+    },
+    "environmentObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "domain", "availability", "value", "unit", "evidence"],
+      "properties": {
+        "observation_id": {"$ref": "#/$defs/identifier"},
+        "domain": {
+          "type": "string",
+          "enum": [
+            "CLIMA", "ILUMINACAO", "RELEVO", "VEGETACAO", "HIDROGRAFIA",
+            "VIAS_TRILHAS", "BARREIRA", "ACESSO", "SOLO", "RISCO_AMBIENTAL"
+          ]
+        },
+        "availability": {"$ref": "#/$defs/availability"},
+        "value": {"type": ["string", "number", "boolean", "null"], "maxLength": 1000},
+        "unit": {"type": ["string", "null"], "maxLength": 40},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "searchContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assessment_at", "disappearance_at", "elapsed_minutes", "elapsed_precision",
+        "environment_type", "travel_mode", "maximum_plausible_travel_minutes",
+        "environment_observations"
+      ],
+      "properties": {
+        "assessment_at": {"type": "string", "format": "date-time"},
+        "disappearance_at": {"type": ["string", "null"], "format": "date-time"},
+        "elapsed_minutes": {"type": ["number", "null"], "minimum": 0},
+        "elapsed_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "environment_type": {
+          "type": "string",
+          "enum": ["URBANO", "PERIURBANO", "RURAL", "MATA", "MISTO", "NAO_DISPONIVEL"]
+        },
+        "travel_mode": {
+          "type": "string",
+          "enum": ["A_PE", "VEICULO", "EMBARCACAO", "MISTO", "DESCONHECIDO"]
+        },
+        "maximum_plausible_travel_minutes": {"type": ["number", "null"], "minimum": 0},
+        "environment_observations": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {"$ref": "#/$defs/environmentObservation"}
+        }
+      }
+    },
+    "profileFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id", "domain", "availability", "value", "evidence"],
+      "properties": {
+        "fact_id": {"$ref": "#/$defs/identifier"},
+        "domain": {
+          "type": "string",
+          "enum": [
+            "FAIXA_ETARIA", "MOBILIDADE", "COGNICAO_ORIENTACAO", "CONDICAO_CLINICA",
+            "MEDICACAO", "EXPERIENCIA_AMBIENTE", "FAMILIARIDADE_LOCAL", "COMPORTAMENTO",
+            "DESTINO_DECLARADO", "DIRECAO_OBSERVADA", "ATIVIDADE_HABITUAL",
+            "VESTUARIO", "CALCADO", "CARGA_EQUIPAMENTO", "AGUA_ALIMENTO_ABRIGO",
+            "SINALIZACAO", "COMUNICACAO_BATERIA", "OUTRO"
+          ]
+        },
+        "availability": {"$ref": "#/$defs/availability"},
+        "value": {"type": ["string", "number", "boolean", "null"], "maxLength": 1000},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "visualAnnotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "category", "evidence_nature"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "enum": [
+            "VEGETACAO", "OBSTRUCAO_VISUAL", "VIAS_ACESSOS", "BARREIRAS",
+            "ILUMINACAO", "TERRENO", "RECURSO_OPERACIONAL", "QUALIDADE_IMAGEM",
+            "ATUALIDADE_FONTE", "OUTRO"
+          ]
+        },
+        "category": {"type": "string", "minLength": 1, "maxLength": 160},
+        "evidence_nature": {"const": "OBSERVADO"}
+      }
+    },
+    "visualEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_id", "file_sha256", "media_type", "platform", "capture_at",
+        "capture_time_precision", "capture_time_source",
+        "camera_position_relative_to_point", "lens_aim_direction_cardinal",
+        "lens_aim_azimuth_deg", "altitude_agl_m", "altitude_agl_source",
+        "target_visible", "incidental_people_present", "authorized_for_context",
+        "numeric_model_input", "annotations"
+      ],
+      "properties": {
+        "visual_id": {"$ref": "#/$defs/identifier"},
+        "file_sha256": {"$ref": "#/$defs/sha256"},
+        "media_type": {"type": "string", "enum": ["IMAGE_JPEG", "IMAGE_HEIC", "IMAGE_PNG", "VIDEO"]},
+        "platform": {"type": "string", "enum": ["SOLO", "DRONE_RGB", "DRONE_TERMICO", "OUTRA"]},
+        "capture_at": {"type": ["string", "null"], "format": "date-time"},
+        "capture_time_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "capture_time_source": {
+          "type": "string",
+          "enum": ["METADADO_ARQUIVO", "REGISTRO_OPERADOR", "ESTIMATIVA_OPERADOR", "NAO_DISPONIVEL"]
+        },
+        "camera_position_relative_to_point": {
+          "type": "string",
+          "enum": ["NO_PONTO", "NORTE", "LESTE", "SUL", "OESTE", "NAO_DISPONIVEL", "OUTRA"]
+        },
+        "lens_aim_direction_cardinal": {
+          "type": "string",
+          "enum": ["NADIR", "N", "NE", "E", "SE", "S", "SW", "W", "NW", "NAO_DISPONIVEL", "OUTRA"]
+        },
+        "lens_aim_azimuth_deg": {"type": ["number", "null"], "minimum": 0, "exclusiveMaximum": 360},
+        "altitude_agl_m": {"type": ["number", "null"], "minimum": 0},
+        "altitude_agl_source": {
+          "type": "string",
+          "enum": ["TELEMETRIA", "INFORMADO_PELO_OPERADOR", "ESTIMATIVA_OPERADOR", "NAO_DISPONIVEL"]
+        },
+        "target_visible": {
+          "const": false,
+          "description": "Confirmação humana de que a vítima-alvo não integra o Conjunto A; não significa ausência de outras pessoas na imagem."
+        },
+        "incidental_people_present": {
+          "type": ["boolean", "null"],
+          "description": "Registra presença incidental de outras pessoas para privacidade; null significa que a imagem ainda não foi revisada para esse fim."
+        },
+        "authorized_for_context": {
+          "type": "boolean",
+          "description": "Somente true pode sustentar avaliação DET; o motor também exige captura não futura, anotação e verificação do arquivo."
+        },
+        "numeric_model_input": {"const": false},
+        "annotations": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {"$ref": "#/$defs/visualAnnotation"},
+          "description": "Pode estar vazia no acervo contextual, mas uma imagem sem anotação não pode sustentar saída DET apta."
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"capture_at": {"type": "null"}}},
+          "then": {"properties": {
+            "capture_time_precision": {"const": "NAO_DISPONIVEL"},
+            "capture_time_source": {"const": "NAO_DISPONIVEL"}
+          }}
+        },
+        {
+          "if": {"properties": {"capture_time_precision": {"const": "NAO_DISPONIVEL"}}},
+          "then": {"properties": {
+            "capture_at": {"type": "null"},
+            "capture_time_source": {"const": "NAO_DISPONIVEL"}
+          }}
+        },
+        {
+          "if": {"properties": {"capture_time_source": {"const": "NAO_DISPONIVEL"}}},
+          "then": {"properties": {
+            "capture_at": {"type": "null"},
+            "capture_time_precision": {"const": "NAO_DISPONIVEL"}
+          }}
+        },
+        {
+          "if": {"properties": {"altitude_agl_m": {"type": "null"}}},
+          "then": {"properties": {"altitude_agl_source": {"const": "NAO_DISPONIVEL"}}}
+        },
+        {
+          "if": {"properties": {"altitude_agl_source": {"const": "NAO_DISPONIVEL"}}},
+          "then": {"properties": {"altitude_agl_m": {"type": "null"}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"enum": ["NADIR", "NAO_DISPONIVEL"]}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"type": "null"}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "N"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 0, "maximum": 22.5}, {"type": "number", "minimum": 337.5, "exclusiveMaximum": 360}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "NE"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 22.5, "maximum": 67.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "E"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 67.5, "maximum": 112.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "SE"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 112.5, "maximum": 157.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "S"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 157.5, "maximum": 202.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "SW"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 202.5, "maximum": 247.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "W"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 247.5, "maximum": 292.5}]}}}
+        },
+        {
+          "if": {"properties": {"lens_aim_direction_cardinal": {"const": "NW"}}},
+          "then": {"properties": {"lens_aim_azimuth_deg": {"anyOf": [{"type": "null"}, {"type": "number", "minimum": 292.5, "maximum": 337.5}]}}}
+        }
+      ]
+    },
+    "urgencyObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "domain", "availability", "operational_significance", "evidence"],
+      "properties": {
+        "observation_id": {"$ref": "#/$defs/identifier"},
+        "domain": {
+          "type": "string",
+          "enum": [
+            "TEMPO", "CONDICAO_CLINICA", "COGNICAO_ORIENTACAO", "MOBILIDADE",
+            "MEDICACAO", "EXPOSICAO", "COMUNICACAO", "SUPRIMENTOS",
+            "VESTUARIO_CALCADO", "PERIGO_AMBIENTAL"
+          ]
+        },
+        "availability": {"$ref": "#/$defs/availability"},
+        "operational_significance": {
+          "type": "string",
+          "enum": ["DIRETA_A_VIDA", "AUMENTA_VULNERABILIDADE", "CONTEXTUAL", "NAO_AVALIADA"]
+        },
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "detectabilityDimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dimension", "category", "source_type", "evidence_id"],
+      "properties": {
+        "dimension": {
+          "type": "string",
+          "enum": ["VISIBILIDADE", "ACESSIBILIDADE", "COMPATIBILIDADE_RECURSO", "CONDICAO_AMBIENTAL", "ATUALIDADE_QUALIDADE"]
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "FAVORAVEL_OBSERVADO", "RESTRITO_OBSERVADO", "POTENCIAL_CAMADA_PUBLICA",
+            "INDETERMINADO", "CONTRADITORIO"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "enum": ["CAMPO", "FOTO_SOLO", "IMAGEM_DRONE", "CAMADA_PUBLICA", "REGISTRO_OPERACIONAL", "NAO_DISPONIVEL"]
+        },
+        "evidence_id": {"$ref": "#/$defs/identifier"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"source_type": {"const": "CAMADA_PUBLICA"}}, "required": ["source_type"]},
+          "then": {
+            "properties": {
+              "category": {
+                "enum": ["POTENCIAL_CAMADA_PUBLICA", "INDETERMINADO", "CONTRADITORIO"]
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"source_type": {"const": "NAO_DISPONIVEL"}}, "required": ["source_type"]},
+          "then": {"properties": {"category": {"const": "INDETERMINADO"}}}
+        }
+      ],
+      "description": "A aplicação só admite APTO quando todas as referências estão autorizadas, atuais e, no caso de imagens, anotadas e verificadas contra os bytes declarados."
+    },
+    "detectabilityAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sector_id", "modality", "assessed_at", "dimensions"],
+      "properties": {
+        "sector_id": {"$ref": "#/$defs/identifier"},
+        "modality": {
+          "type": "string",
+          "enum": ["BUSCA_TERRESTRE", "OBSERVACAO_AEREA_RGB", "CAMERA_TERMICA", "BUSCA_FLUVIAL"]
+        },
+        "assessed_at": {"type": "string", "format": "date-time"},
+        "dimensions": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {"$ref": "#/$defs/detectabilityDimension"}
+        }
+      }
+    },
+    "sourceArtifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_v2_compiled_sha256", "territorial_manifest_sha256",
+        "spatial_review_manifest_sha256", "visual_manifest_sha256", "loc_result_sha256"
+      ],
+      "properties": {
+        "profile_v2_compiled_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "territorial_manifest_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "spatial_review_manifest_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "visual_manifest_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "loc_result_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]}
+      }
+    },
+    "freezeMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frozen_at", "projection_id", "payload_sha256"],
+      "properties": {
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "projection_id": {"const": "PROTOCOLO-INTEGRADO-FREEZE-PROJECTION-v1"},
+        "payload_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

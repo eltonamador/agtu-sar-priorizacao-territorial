@@ -1,0 +1,11 @@
+{
+  "contract": "PASS",
+  "sector_count_24": "PASS",
+  "raster_valid_samples_each_sector_3600": "PASS",
+  "weighted_score_independent_recalculation": "PASS",
+  "deterministic_reranking_same_features": "PASS",
+  "ground_truth_absent_from_base": "PASS",
+  "direction_clue_segregated": "PASS",
+  "extraction_independently_repeated": false,
+  "efficacy_validated": false
+}

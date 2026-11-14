@@ -1,0 +1,281 @@
+[
+  {
+    "confidence_assumed": "BAIXA",
+    "tolerance_deg_assumed": 5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.7126222925000001,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.7114806891333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.7111657143333334,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "BAIXA",
+    "tolerance_deg_assumed": 22.5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.7126222925000001,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.7114806891333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.7111657143333334,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "BAIXA",
+    "tolerance_deg_assumed": 45,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.7126222925000001,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.7114806891333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.7111657143333334,
+        "effective_lambda": 0.03333333333333333,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "MEDIA",
+    "tolerance_deg_assumed": 5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "MEDIA",
+    "tolerance_deg_assumed": 22.5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "MEDIA",
+    "tolerance_deg_assumed": 45,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "ALTA",
+    "tolerance_deg_assumed": 5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "ALTA",
+    "tolerance_deg_assumed": 22.5,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  },
+  {
+    "confidence_assumed": "ALTA",
+    "tolerance_deg_assumed": 45,
+    "operational_status": "EFEITO_PERFIL_APLICADO",
+    "operational_effect_applied": true,
+    "primary_top3": [
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::E",
+        "profile_score": 0.68804911,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R03::NE",
+        "profile_score": 0.6869468722666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-03::MATA-03-E0::R01::SE",
+        "profile_score": 0.6866427586666667,
+        "effective_lambda": 0.06666666666666667,
+        "profile_rank": 3
+      }
+    ],
+    "operational_top3": [
+      "MATA-03::MATA-03-E0::R01::E",
+      "MATA-03::MATA-03-E0::R03::NE",
+      "MATA-03::MATA-03-E0::R01::SE"
+    ]
+  }
+]

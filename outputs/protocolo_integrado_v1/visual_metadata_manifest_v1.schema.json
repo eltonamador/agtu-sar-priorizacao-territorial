@@ -1,0 +1,257 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agtupesquisa.local/schemas/visual_metadata_manifest_v1.schema.json",
+  "title": "Manifesto determinístico de metadados visuais v1",
+  "description": "Contrato externo ao caso congelado. Registra somente metadados técnicos em lista branca, mantém separados os dados informados pelo operador e não admite ground truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_contract_version",
+    "extractor_id",
+    "policy_id",
+    "policy_sha256",
+    "scenario_id",
+    "case_revision",
+    "source_case_payload_sha256",
+    "ground_truth_used",
+    "records",
+    "output_sha256"
+  ],
+  "properties": {
+    "manifest_contract_version": {"const": "VISUAL-METADATA-MANIFEST-v1"},
+    "extractor_id": {"const": "IMAGEIO-WHITELIST-v1"},
+    "policy_id": {"const": "VISUAL-SPATIAL-POLICY-v1"},
+    "policy_sha256": {"$ref": "#/$defs/sha256"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "case_revision": {"type": "integer", "minimum": 1},
+    "source_case_payload_sha256": {"$ref": "#/$defs/sha256"},
+    "ground_truth_used": {"const": false},
+    "records": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/metadataRecord"}
+    },
+    "output_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "jsonScalar": {"type": ["string", "number", "boolean", "null"]},
+    "mediaType": {
+      "type": "string",
+      "enum": ["IMAGE_JPEG", "IMAGE_HEIC", "IMAGE_PNG", "VIDEO"]
+    },
+    "operatorRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "platform",
+        "capture_at",
+        "capture_time_precision",
+        "capture_time_source",
+        "camera_position_relative_to_point",
+        "lens_aim_direction_cardinal",
+        "lens_aim_azimuth_deg",
+        "altitude_agl_m",
+        "altitude_agl_source",
+        "authorized_for_context"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["SOLO", "DRONE_RGB", "DRONE_TERMICO", "OUTRA"]
+        },
+        "capture_at": {"type": ["string", "null"], "format": "date-time"},
+        "capture_time_precision": {
+          "type": "string",
+          "enum": ["EXATA", "APROXIMADA", "NAO_DISPONIVEL"]
+        },
+        "capture_time_source": {
+          "type": "string",
+          "enum": ["METADADO_ARQUIVO", "REGISTRO_OPERADOR", "ESTIMATIVA_OPERADOR", "NAO_DISPONIVEL"]
+        },
+        "camera_position_relative_to_point": {
+          "type": "string",
+          "enum": ["NO_PONTO", "NORTE", "LESTE", "SUL", "OESTE", "NAO_DISPONIVEL", "OUTRA"]
+        },
+        "lens_aim_direction_cardinal": {
+          "type": "string",
+          "enum": ["NADIR", "N", "NE", "E", "SE", "S", "SW", "W", "NW", "NAO_DISPONIVEL", "OUTRA"]
+        },
+        "lens_aim_azimuth_deg": {"type": ["number", "null"], "minimum": 0, "exclusiveMaximum": 360},
+        "altitude_agl_m": {"type": ["number", "null"], "minimum": 0},
+        "altitude_agl_source": {
+          "type": "string",
+          "enum": ["TELEMETRIA", "INFORMADO_PELO_OPERADOR", "ESTIMATIVA_OPERADOR", "NAO_DISPONIVEL"]
+        },
+        "authorized_for_context": {"type": "boolean"}
+      }
+    },
+    "cameraMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "make": {"type": "string", "maxLength": 256},
+        "model": {"type": "string", "maxLength": 256},
+        "software": {"type": "string", "maxLength": 256}
+      }
+    },
+    "timestampMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "datetime_original": {"type": "string", "maxLength": 64},
+        "datetime_digitized": {"type": "string", "maxLength": 64},
+        "datetime_tiff": {"type": "string", "maxLength": 64},
+        "offset_time_original": {"type": "string", "maxLength": 16},
+        "subsec_time_original": {"type": "string", "maxLength": 32}
+      }
+    },
+    "gpsMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+        "latitude_ref": {"type": "string", "enum": ["N", "S"]},
+        "longitude": {"type": "number", "minimum": -180, "maximum": 180},
+        "longitude_ref": {"type": "string", "enum": ["E", "W"]},
+        "altitude_m": {"type": "number"},
+        "altitude_ref": {"type": ["integer", "number", "string"], "maxLength": 32},
+        "date_stamp": {"type": "string", "maxLength": 32},
+        "time_stamp": {"type": "string", "maxLength": 64},
+        "image_direction_deg": {"type": "number", "minimum": 0, "exclusiveMaximum": 360},
+        "image_direction_ref": {"type": "string", "maxLength": 16},
+        "horizontal_positioning_error_m": {"type": "number", "minimum": 0}
+      }
+    },
+    "orientationMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "exif_orientation": {"type": "integer", "minimum": 1, "maximum": 8}
+      }
+    },
+    "opticsMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "focal_length_mm": {"type": "number", "exclusiveMinimum": 0},
+        "focal_length_35mm": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "djiXmpMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "absolute_altitude_m": {"type": "number"},
+        "relative_altitude_m": {"type": "number"},
+        "gimbal_pitch_deg": {"type": "number", "minimum": -180, "maximum": 180},
+        "gimbal_yaw_deg": {"type": "number", "minimum": -360, "maximum": 360},
+        "gimbal_roll_deg": {"type": "number", "minimum": -180, "maximum": 180},
+        "flight_pitch_deg": {"type": "number", "minimum": -180, "maximum": 180},
+        "flight_yaw_deg": {"type": "number", "minimum": -360, "maximum": 360},
+        "flight_roll_deg": {"type": "number", "minimum": -180, "maximum": 180},
+        "gps_latitude": {"type": "number", "minimum": -90, "maximum": 90},
+        "gps_longitude": {"type": "number", "minimum": -180, "maximum": 180}
+      }
+    },
+    "technicalMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "camera": {"$ref": "#/$defs/cameraMetadata"},
+        "timestamps": {"$ref": "#/$defs/timestampMetadata"},
+        "gps": {"$ref": "#/$defs/gpsMetadata"},
+        "orientation": {"$ref": "#/$defs/orientationMetadata"},
+        "optics": {"$ref": "#/$defs/opticsMetadata"},
+        "dji_xmp": {"$ref": "#/$defs/djiXmpMetadata"}
+      }
+    },
+    "inspection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inspection_version",
+        "decode_status",
+        "pixel_width",
+        "pixel_height",
+        "metadata",
+        "inspection_error"
+      ],
+      "properties": {
+        "inspection_version": {"const": "VISUAL-FILE-INSPECTION-v1"},
+        "decode_status": {
+          "type": "string",
+          "enum": [
+            "PIXELS_DECODED_AND_DIMENSIONS_VALIDATED",
+            "CONTAINER_STRUCTURE_ONLY",
+            "PIXELS_NOT_DECODED"
+          ]
+        },
+        "pixel_width": {"type": ["integer", "null"], "minimum": 1},
+        "pixel_height": {"type": ["integer", "null"], "minimum": 1},
+        "metadata": {"$ref": "#/$defs/technicalMetadata"},
+        "inspection_error": {"type": ["string", "null"], "maxLength": 512}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"decode_status": {"const": "PIXELS_DECODED_AND_DIMENSIONS_VALIDATED"}}, "required": ["decode_status"]},
+          "then": {"properties": {"pixel_width": {"type": "integer", "minimum": 1}, "pixel_height": {"type": "integer", "minimum": 1}, "inspection_error": {"type": "null"}}}
+        },
+        {
+          "if": {"properties": {"decode_status": {"enum": ["CONTAINER_STRUCTURE_ONLY", "PIXELS_NOT_DECODED"]}}, "required": ["decode_status"]},
+          "then": {"properties": {"pixel_width": {"type": "null"}, "pixel_height": {"type": "null"}, "inspection_error": {"type": "string", "minLength": 1, "maxLength": 512}}}
+        }
+      ]
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "field", "operator_value", "metadata_value"],
+      "properties": {
+        "code": {"$ref": "#/$defs/identifier"},
+        "field": {"type": "string", "minLength": 1, "maxLength": 128},
+        "operator_value": {"$ref": "#/$defs/jsonScalar"},
+        "metadata_value": {"$ref": "#/$defs/jsonScalar"}
+      }
+    },
+    "metadataRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_id",
+        "file_sha256",
+        "media_type",
+        "operator_record",
+        "inspection",
+        "conflicts",
+        "warnings",
+        "record_sha256"
+      ],
+      "properties": {
+        "visual_id": {"$ref": "#/$defs/identifier"},
+        "file_sha256": {"$ref": "#/$defs/sha256"},
+        "media_type": {"$ref": "#/$defs/mediaType"},
+        "operator_record": {"$ref": "#/$defs/operatorRecord"},
+        "inspection": {"$ref": "#/$defs/inspection"},
+        "conflicts": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {"$ref": "#/$defs/conflict"}
+        },
+        "warnings": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {"$ref": "#/$defs/identifier"},
+          "uniqueItems": true
+        },
+        "record_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

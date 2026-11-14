@@ -1,0 +1,236 @@
+{
+  "freeze_stage": "T4_OUTPUT_AND_MANIFEST_FREEZE",
+  "full_pipeline_repeat": {
+    "byte_identical_core_outputs": true,
+    "core_output_count": 8,
+    "executions_compared": 2,
+    "files": {
+      "areas_alcancaveis_mov_v2.geojson": {
+        "byte_identical": true,
+        "published_sha256": "28a137600e83737094b122c97d2c151a585dcb5a5354000a2f986a5e696e1281",
+        "repeated_sha256": "28a137600e83737094b122c97d2c151a585dcb5a5354000a2f986a5e696e1281"
+      },
+      "corredores_mov_v2.geojson": {
+        "byte_identical": true,
+        "published_sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e",
+        "repeated_sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e"
+      },
+      "grade_resistencia.csv": {
+        "byte_identical": true,
+        "published_sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481",
+        "repeated_sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481"
+      },
+      "relatorio_qa_mov_v2.json": {
+        "byte_identical": true,
+        "published_sha256": "8e332816ce79e9f8db21f92c2b35dbb4f10672e5c7ba62216bf7abb8c22bad78",
+        "repeated_sha256": "8e332816ce79e9f8db21f92c2b35dbb4f10672e5c7ba62216bf7abb8c22bad78"
+      },
+      "resultado_mov_v2.json": {
+        "byte_identical": true,
+        "published_sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e",
+        "repeated_sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e"
+      },
+      "setores_mov_v2.csv": {
+        "byte_identical": true,
+        "published_sha256": "3f55eb36e4e98b59f71fd9e0468fcf9051658b0a493e2791388aa10451ec1d97",
+        "repeated_sha256": "3f55eb36e4e98b59f71fd9e0468fcf9051658b0a493e2791388aa10451ec1d97"
+      },
+      "superficie_custo_H_FORA_REDE.geojson": {
+        "byte_identical": true,
+        "published_sha256": "37732dcee42aa469582ee6bf515e4bf0618e2652c807044426ca13942009041a",
+        "repeated_sha256": "37732dcee42aa469582ee6bf515e4bf0618e2652c807044426ca13942009041a"
+      },
+      "superficie_custo_H_REDE_DISPONIVEL.geojson": {
+        "byte_identical": true,
+        "published_sha256": "2e8687636e50fcabb543a8758f164645b346cc8211ba3367e0a17e13215deb19",
+        "repeated_sha256": "2e8687636e50fcabb543a8758f164645b346cc8211ba3367e0a17e13215deb19"
+      }
+    },
+    "manifest_excluded_from_byte_comparison_reason": "O caminho do diretório de saída difere entre a execução publicada e a repetição temporária."
+  },
+  "ground_truth_used": false,
+  "interpretation": "A repetição integral produziu os mesmos oito arquivos nucleares; os 29 arquivos selados da v1 permaneceram íntegros. O resultado continua cego, diagnóstico e não confirmatório.",
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "status": "PASS",
+  "v1_preservation_check": {
+    "files": [
+      {
+        "exists": true,
+        "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "work/rural01_processamento_cego_v1/config_rural01_blind_v1.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "work/rural01_processamento_cego_v1/PROTOCOLO_RURAL01_CEGO_v1.md",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/atributos_geo_setores.csv",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/avisos_revisao.log",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/config_efetiva_rural01_blind.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.geojson",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/manifesto_entrada_raio_fonte.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/protocolo_rural01_cego_v1.md",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/ranking_base_rural01.csv",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_determinismo.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_execucao_rural01.md",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_qa.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/resultado_rural01_cego.json",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.csv",
+        "sha256_match": true,
+        "size_match": true
+      },
+      {
+        "exists": true,
+        "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+        "sha256_match": true,
+        "size_match": true
+      }
+    ],
+    "manifest": "outputs/campo_rural01/processamento_cego_v1/manifesto_processamento_cego.json",
+    "unchanged": true,
+    "verified_file_count": 29
+  }
+}

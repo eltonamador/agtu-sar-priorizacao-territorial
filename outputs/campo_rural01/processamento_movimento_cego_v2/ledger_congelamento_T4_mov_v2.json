@@ -1,0 +1,184 @@
+{
+  "check_count": 12,
+  "checks": {
+    "blind_controls_closed": true,
+    "cartographic_manifest_integrity": true,
+    "configuration_frozen_t4": true,
+    "determinism_and_v1_preservation": true,
+    "engine_manifest_integrity": true,
+    "map_pdf_valid": true,
+    "map_png_valid": true,
+    "no_hypothesis_selected": true,
+    "qa_passed": true,
+    "result_blind": true,
+    "test_suite_passed": true,
+    "time_not_converted": true
+  },
+  "created_at_local": "2026-10-22T21:35:06.362866-03:00",
+  "engine_version": "2.0.3-rural01-mov-v-t4",
+  "file_count": 29,
+  "files": [
+    {
+      "bytes": 21471,
+      "path": "work/rural01_mov_v2/AUDITORIA_PARAMETROS_E_SOBREPOSICAO_v2.md",
+      "sha256": "3d6943b4b87d30a002a883a9d98ba9913ea3b9c6abbd11f01115bafa2d5d7475"
+    },
+    {
+      "bytes": 18747,
+      "path": "work/rural01_mov_v2/INVENTARIO_FONTES_RURAL01_MOB_v2.md",
+      "sha256": "4c35d7835b3b27fc58735141041540324b21f5599cb954d08323207404afc6f4"
+    },
+    {
+      "bytes": 2348,
+      "path": "work/rural01_mov_v2/PARECER_REAUDITORIA_T4.md",
+      "sha256": "cce3f6997ee504bf949286cae37803091ad2320572d647723858225ebe244643"
+    },
+    {
+      "bytes": 27641,
+      "path": "work/rural01_mov_v2/PROTOCOLO_RURAL01_MOVIMENTO_CEGO_v2_CONGELADO.md",
+      "sha256": "b0bd9a7b849ea575b1bafe41e2ee7a341db8fd9a15668faf0e758e13f77a4993"
+    },
+    {
+      "bytes": 2822,
+      "path": "work/rural01_mov_v2/README.md",
+      "sha256": "486081d9bbf86c8b489250535308a9ced5e31d6636100ff91117dfd8f9fba901"
+    },
+    {
+      "bytes": 14744,
+      "path": "work/rural01_mov_v2/config_mov_v2.json",
+      "sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27"
+    },
+    {
+      "bytes": 7838,
+      "path": "work/rural01_mov_v2/criar_ledger_t4.py",
+      "sha256": "fb39cdef57a9760d044d5b460508c4143fa838e152089dfecb070eb7c1f73748"
+    },
+    {
+      "bytes": 37292,
+      "path": "work/rural01_mov_v2/gerar_mapa_mov_v2.py",
+      "sha256": "23105d22c46cb496d94deec251f4e1cb0655694d8cc2512da69835908c4e5941"
+    },
+    {
+      "bytes": 1135,
+      "path": "work/rural01_mov_v2/gerar_pdf_mapa_mov_v2.py",
+      "sha256": "8e4adf31af1cfd95768a7ad938baf2ba56b8d24765b595b550197bce8f8f75ff"
+    },
+    {
+      "bytes": 89740,
+      "path": "work/rural01_mov_v2/motor_movimento_v2.py",
+      "sha256": "5cc0606afe345d77373dc40f657d0e89173f4c32bfe5176e4b2baa7241676b40"
+    },
+    {
+      "bytes": 2888,
+      "path": "work/rural01_mov_v2/run_tests_with_receipt.py",
+      "sha256": "ccbdc3764336be876c9f4aa79857cd25733cf96c94c1559257be360ba0316b04"
+    },
+    {
+      "bytes": 17101,
+      "path": "work/rural01_mov_v2/test_motor_movimento_v2.py",
+      "sha256": "2c1a5f151754c51a03732a25341e79a628744341ca00db0ba08faec2316979ae"
+    },
+    {
+      "bytes": 4378,
+      "path": "work/rural01_mov_v2/verificar_determinismo_e_preservacao.py",
+      "sha256": "cfc93dffd432ef5f616005d49c0180dae8ab2d719355c92aa19846f75f0184f1"
+    },
+    {
+      "bytes": 5802499,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/Mapa_RURAL01_Resistencia_Corredores_MOV_V_v2.pdf",
+      "sha256": "bd9e422eef938122602e02891288ed8221fbb49ea81ce3b59b8d8d4ed5e75580"
+    },
+    {
+      "bytes": 2921666,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/Mapa_RURAL01_Resistencia_Corredores_MOV_V_v2.png",
+      "sha256": "190bc9534e7600850c96b9bc1d9bb117f41dfaf0f5ec38c24e9166dbcd96f5b4"
+    },
+    {
+      "bytes": 3139,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/README_MAPA_RURAL01_MOV_V_v2.md",
+      "sha256": "d803da0f1db257d9a3784960967f5d5d628dc74b07debe7e620116478e9c1bdc"
+    },
+    {
+      "bytes": 3863,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/RELATORIO_FECHAMENTO_T4_RURAL01_MOV_V2.md",
+      "sha256": "acb8ba24f743969ce56c42738957951f94aa418a58c7ec5c8355cdef391fdd64"
+    },
+    {
+      "bytes": 1267715,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/areas_alcancaveis_mov_v2.geojson",
+      "sha256": "28a137600e83737094b122c97d2c151a585dcb5a5354000a2f986a5e696e1281"
+    },
+    {
+      "bytes": 182906,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/corredores_mov_v2.geojson",
+      "sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e"
+    },
+    {
+      "bytes": 8271509,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/grade_resistencia.csv",
+      "sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481"
+    },
+    {
+      "bytes": 7579,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/manifesto_cartografico_mov_v2.json",
+      "sha256": "632768b444490bf033950f3addf0437bafe813ba7ff15397df551bb0b953d434"
+    },
+    {
+      "bytes": 7275,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/manifesto_mov_v2.json",
+      "sha256": "683175cf8e5f4b000c6b1270976c7b0283d137887fe09134e626af993ed06190"
+    },
+    {
+      "bytes": 8403,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_determinismo_e_preservacao_v2.json",
+      "sha256": "f51df1ffd0ac94dc6d9100ed99b67f4d9663c361213c77ae21e2fece8cd19b64"
+    },
+    {
+      "bytes": 2970,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_qa_mov_v2.json",
+      "sha256": "8e332816ce79e9f8db21f92c2b35dbb4f10672e5c7ba62216bf7abb8c22bad78"
+    },
+    {
+      "bytes": 628,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_testes_mov_v2.json",
+      "sha256": "f570df590ece41fc0d0014f0dbd52ff33fa8e49d563cf2af6cbbad75ccec4591"
+    },
+    {
+      "bytes": 11754,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/resultado_mov_v2.json",
+      "sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e"
+    },
+    {
+      "bytes": 87705,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/setores_mov_v2.csv",
+      "sha256": "3f55eb36e4e98b59f71fd9e0468fcf9051658b0a493e2791388aa10451ec1d97"
+    },
+    {
+      "bytes": 14755044,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/superficie_custo_H_FORA_REDE.geojson",
+      "sha256": "37732dcee42aa469582ee6bf515e4bf0618e2652c807044426ca13942009041a"
+    },
+    {
+      "bytes": 15178027,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/superficie_custo_H_REDE_DISPONIVEL.geojson",
+      "sha256": "2e8687636e50fcabb543a8758f164645b346cc8211ba3367e0a17e13215deb19"
+    }
+  ],
+  "freeze_stage": "T4_OUTPUT_AND_MANIFEST_FREEZE",
+  "ground_truth_used": false,
+  "hypothesis_selection_status": "NENHUMA_HIPOTESE_SELECIONADA_REGIME_DESCONHECIDO",
+  "interpretation": "T0–T4 foram selados antes da abertura da posição verdadeira. REVISAR permanece como estado interpretativo do resultado e não invalida o congelamento; ele impede uso confirmatório ou comando operacional.",
+  "linked_receipts": {
+    "cartographic_png_sha256": "190bc9534e7600850c96b9bc1d9bb117f41dfaf0f5ec38c24e9166dbcd96f5b4",
+    "determinism_report_sha256": "f51df1ffd0ac94dc6d9100ed99b67f4d9663c361213c77ae21e2fece8cd19b64",
+    "engine_manifest_payload_sha256": "d6bf1c063bcb5e36ca346084e81caee965844ae00b3eada147b38fd7e65cb744",
+    "test_suite_payload_sha256": "e387670d50f059f5ea05fec0b1335d0fb228f767395e40a831835845e691ad8d"
+  },
+  "passed_check_count": 12,
+  "payload_sha256": "6c478f41dcfa9de363619e2d4c31dd2103510c5b418d548917609aff6b8e0e0d",
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "reference_package_accessible_to_engine": false,
+  "retuning_after_reference_opening": false,
+  "review_status": "REVISAR",
+  "status": "CONGELADO_ANTES_DA_REVELACAO"
+}

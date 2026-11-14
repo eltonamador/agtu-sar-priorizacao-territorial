@@ -1,0 +1,41 @@
+{
+  "protocol_id": "MATA02-COMPLEMENTAR-BASE-v2.0",
+  "case": "MATA-02",
+  "scope": "Ensaio complementar em território real com ocorrência hipotética",
+  "decision": [
+    {
+      "protocol_id": "MATA02-COMPLEMENTAR-BASE-v2.0",
+      "scenario_id": "MATA-02",
+      "candidate_id": "MATA-02-E0",
+      "top1_sector_id": "MATA-02::MATA-02-E0::R01::SW",
+      "top1_sector_ids_base": "[\"MATA-02::MATA-02-E0::R01::SW\"]",
+      "top1_unique": true,
+      "top1_score_base": 0.644159158,
+      "base_margin": 0.009811586,
+      "top1_stability": 0.6,
+      "top1_unique_win_count": 3,
+      "top1_membership_count": 3,
+      "top1_support_points": 3.0,
+      "top1_by_weight_set": "{\"APENAS_ACESSO\": [\"MATA-02::MATA-02-E0::R03::SE\"], \"BASE\": [\"MATA-02::MATA-02-E0::R01::SW\"], \"ENFASE_BARREIRAS\": [\"MATA-02::MATA-02-E0::R01::SW\"], \"IGUAIS\": [\"MATA-02::MATA-02-E0::R01::SW\"], \"SEM_BARREIRAS\": [\"MATA-02::MATA-02-E0::R03::SE\"]}",
+      "weight_sets_with_top_tie": "[]",
+      "decision_status": "REVISAR",
+      "warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE;POTENTIAL_BARRIER",
+      "source_execution_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+      "confirmatory_eligible": false,
+      "supervision_required": true,
+      "ground_truth_used": false
+    }
+  ],
+  "hydro_branch": "BASE_COMPLETO",
+  "diagnostic_generated": false,
+  "direction_249_used_in_base": false,
+  "profile_executed": false,
+  "sector_count": 24,
+  "samples_per_sector": 3600,
+  "full_raster_census": false,
+  "ranking_repeat_identical_on_same_features": true,
+  "extraction_repeated": false,
+  "operational_validation": false,
+  "probability_of_presence": false,
+  "reference_target_used": false
+}

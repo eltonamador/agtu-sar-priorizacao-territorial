@@ -1,0 +1,252 @@
+{
+  "determinism": {
+    "all_equal": true,
+    "file_count": 9,
+    "files": [
+      {
+        "equal": true,
+        "file": "registro_abertura_referencia.json",
+        "run1_sha256": "4c114128b2a855ad699be6017acca3f8b1020657b0adef8d2fd5e9595b94ddeb",
+        "run2_sha256": "4c114128b2a855ad699be6017acca3f8b1020657b0adef8d2fd5e9595b94ddeb"
+      },
+      {
+        "equal": true,
+        "file": "resultado_avaliacao_pos_abertura.json",
+        "run1_sha256": "b1e32e186adc84154166aecec5f55858664906961f14497b08a946b6d89516cb",
+        "run2_sha256": "b1e32e186adc84154166aecec5f55858664906961f14497b08a946b6d89516cb"
+      },
+      {
+        "equal": true,
+        "file": "avaliacao_rankings.csv",
+        "run1_sha256": "0a2fe735bb1c995547718572d93a4c99bd84a4ebb17acc3a16b4e6f951b7c1f6",
+        "run2_sha256": "0a2fe735bb1c995547718572d93a4c99bd84a4ebb17acc3a16b4e6f951b7c1f6"
+      },
+      {
+        "equal": true,
+        "file": "distancias_top3.csv",
+        "run1_sha256": "116d5c495407c36c29225f87f1ee7dda6028db08555e2d522d08f0aded493797",
+        "run2_sha256": "116d5c495407c36c29225f87f1ee7dda6028db08555e2d522d08f0aded493797"
+      },
+      {
+        "equal": true,
+        "file": "referencia_setores_e_top3.geojson",
+        "run1_sha256": "429b465e055a4bb89bb500daf9c41edd7aef41a803d591dd6a8e146ab43999a6",
+        "run2_sha256": "429b465e055a4bb89bb500daf9c41edd7aef41a803d591dd6a8e146ab43999a6"
+      },
+      {
+        "equal": true,
+        "file": "verificacao_independente.json",
+        "run1_sha256": "be61b3e3e7e7cca3302dbc296914fa5b4b6534c44a2bf959ed0bb677435149c9",
+        "run2_sha256": "be61b3e3e7e7cca3302dbc296914fa5b4b6534c44a2bf959ed0bb677435149c9"
+      },
+      {
+        "equal": true,
+        "file": "relatorio_avaliacao_pos_abertura.md",
+        "run1_sha256": "41e2149f64c4e8c7d6d9d7d6c20733e79a1a9f25fe1de334d70b19fb529f4645",
+        "run2_sha256": "41e2149f64c4e8c7d6d9d7d6c20733e79a1a9f25fe1de334d70b19fb529f4645"
+      },
+      {
+        "equal": true,
+        "file": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.png",
+        "run1_sha256": "31ced4dbb75264d65382c606291e46cb3377fa2d0dff8ce274f4327eed1d151d",
+        "run2_sha256": "31ced4dbb75264d65382c606291e46cb3377fa2d0dff8ce274f4327eed1d151d"
+      },
+      {
+        "equal": true,
+        "file": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.pdf",
+        "run1_sha256": "1a4e1c5dd377060c38ad039bbd8e94bd087df98e5b3d879dff11bc11fd78767e",
+        "run2_sha256": "1a4e1c5dd377060c38ad039bbd8e94bd087df98e5b3d879dff11bc11fd78767e"
+      }
+    ],
+    "status": "PASS"
+  },
+  "frozen_package_after_tree_sha256": "1087b65e1f11a5d3eabb6399b43054432a7d41f35106b13c6ec55db107a052d1",
+  "frozen_package_before": {
+    "file_count": 22,
+    "files": [
+      {
+        "bytes": 488036,
+        "path": "Mapa_URBE01_Processamento_Cego_BASE_PERFIL_v1.pdf",
+        "sha256": "0e7830e3d2a08ed7b8f8536b3cee5005ebc3a66d26df547c0bdc9034c78e1e7d"
+      },
+      {
+        "bytes": 364937,
+        "path": "Mapa_URBE01_Processamento_Cego_BASE_PERFIL_v1.png",
+        "sha256": "d2956f0f746f118ce7cf8803fab4437c3740190e2b390098b21fbee27e092919"
+      },
+      {
+        "bytes": 1275,
+        "path": "README_MAPA_URBE01_CEGO_v1.md",
+        "sha256": "b8885982ce5e10c79216f6e218ea9641dcda270a622510f691aa3cab72b3cc93"
+      },
+      {
+        "bytes": 26853,
+        "path": "atributos_geo_setores.csv",
+        "sha256": "f442ce5862ee64929240e2950f51081dbf46c2d6c08537a92062b742c9f22651"
+      },
+      {
+        "bytes": 328,
+        "path": "avisos_revisao.log",
+        "sha256": "afeefc6f54eb5b0437708bc8de77b4b0a9a44f66128a7340081285ed0a30fcc3"
+      },
+      {
+        "bytes": 20182,
+        "path": "config_efetiva_urbe01_blind.json",
+        "sha256": "1a72a9be2b5bc997e801f9b6dc8811d900d6819207ddbd3a3fd6a78cd5dfb0fc"
+      },
+      {
+        "bytes": 12872,
+        "path": "entrada_raio_fonte.geojson",
+        "sha256": "48e0b440210e8c7acd28cddd19891b0bdbae3e801adf86e727743972567d4621"
+      },
+      {
+        "bytes": 1105,
+        "path": "entrada_raio_fonte.json",
+        "sha256": "9b9e16ecfa79c5e65c1594f125ce237d3048d074ed4c07fc614abe706d7447bd"
+      },
+      {
+        "bytes": 483,
+        "path": "manifesto_entrada_raio_fonte.json",
+        "sha256": "cfe1e197d916268dace7a06ee740916be2a252194cae169e0ccc238315136f97"
+      },
+      {
+        "bytes": 8881,
+        "path": "manifesto_processamento_cego.json",
+        "sha256": "7cf0a17486c869b0b1bb9af98cc43f911166b75f1486ec2e06c08f3baef6bdad"
+      },
+      {
+        "bytes": 3579,
+        "path": "protocolo_urbe01_cego_v1.md",
+        "sha256": "447ede48c83acd88d448dc50ead292ac40090c01a66c237e3e72c5419bedfd9d"
+      },
+      {
+        "bytes": 57819,
+        "path": "ranking_base_original.csv",
+        "sha256": "4ef60de6de63168d15b580463ef2b07e0069b04e679c1ff2195caa44d816eb1e"
+      },
+      {
+        "bytes": 63938,
+        "path": "ranking_perfil_urbe01.csv",
+        "sha256": "561a406a7f77c4c098bd3213be0bd6011ac5ca57cd97be85f18d91f85181d08c"
+      },
+      {
+        "bytes": 4002,
+        "path": "relatorio_determinismo.json",
+        "sha256": "34bcbaa0fd7e90d9e1eee64b04eb89f02abfe652e6de150a8cd9afc1927c54ea"
+      },
+      {
+        "bytes": 1374,
+        "path": "relatorio_execucao_urbe01.md",
+        "sha256": "4b20b6950c52413bdc3505b89f0eaece1eee3e619bd1e2317630ed653ed82abd"
+      },
+      {
+        "bytes": 622,
+        "path": "relatorio_qa.json",
+        "sha256": "8bc89fa03f48e954fbea6c35e9360e9fbe1b9a9c1568ad58eb6bc39b25ac4306"
+      },
+      {
+        "bytes": 309973,
+        "path": "resultado_urbe01_cego.json",
+        "sha256": "89b0daff242036c90123e8d326807505b5af363ded616c05c34c8c3d42c7caa2"
+      },
+      {
+        "bytes": 136448,
+        "path": "setores_urbe01.geojson",
+        "sha256": "f27e10dbd9e319603fc3d16a9495cef468166bab147904b9031722814f9c515f"
+      },
+      {
+        "bytes": 1178,
+        "path": "top3_base_original.csv",
+        "sha256": "64f445147059ea27ac5447ac53e00d026ec6c37645b68db45d06e276dd4af619"
+      },
+      {
+        "bytes": 2780,
+        "path": "top3_base_original.json",
+        "sha256": "23d52c6b7438292f8491da85cfadaff215108be6fd7ef7138e8915cd093a343c"
+      },
+      {
+        "bytes": 1185,
+        "path": "top3_perfil_urbe01.csv",
+        "sha256": "f4ca72ca0b4d42e85a415f11ec591f067424fcb72b814ae3eba83bb6f4c04b95"
+      },
+      {
+        "bytes": 2789,
+        "path": "top3_perfil_urbe01.json",
+        "sha256": "1a8f0efce5c416aaf0b7ac301c6cf827fdba5b108b2982416825b94e83fa892c"
+      }
+    ],
+    "root": "outputs/campo_urbe01/processamento_cego_v1",
+    "tree_sha256": "1087b65e1f11a5d3eabb6399b43054432a7d41f35106b13c6ec55db107a052d1"
+  },
+  "frozen_package_unchanged": true,
+  "opened_at_local": "2026-10-21T14:07:14-03:00",
+  "output_files": [
+    {
+      "bytes": 498726,
+      "path": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.pdf",
+      "role": "output",
+      "sha256": "1a4e1c5dd377060c38ad039bbd8e94bd087df98e5b3d879dff11bc11fd78767e"
+    },
+    {
+      "bytes": 378558,
+      "path": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.png",
+      "role": "output",
+      "sha256": "31ced4dbb75264d65382c606291e46cb3377fa2d0dff8ce274f4327eed1d151d"
+    },
+    {
+      "bytes": 540,
+      "path": "avaliacao_rankings.csv",
+      "role": "output",
+      "sha256": "0a2fe735bb1c995547718572d93a4c99bd84a4ebb17acc3a16b4e6f951b7c1f6"
+    },
+    {
+      "bytes": 715,
+      "path": "distancias_top3.csv",
+      "role": "output",
+      "sha256": "116d5c495407c36c29225f87f1ee7dda6028db08555e2d522d08f0aded493797"
+    },
+    {
+      "bytes": 16858,
+      "path": "referencia_setores_e_top3.geojson",
+      "role": "output",
+      "sha256": "429b465e055a4bb89bb500daf9c41edd7aef41a803d591dd6a8e146ab43999a6"
+    },
+    {
+      "bytes": 634,
+      "path": "registro_abertura_referencia.json",
+      "role": "output",
+      "sha256": "4c114128b2a855ad699be6017acca3f8b1020657b0adef8d2fd5e9595b94ddeb"
+    },
+    {
+      "bytes": 2520,
+      "path": "relatorio_avaliacao_pos_abertura.md",
+      "role": "output",
+      "sha256": "41e2149f64c4e8c7d6d9d7d6c20733e79a1a9f25fe1de334d70b19fb529f4645"
+    },
+    {
+      "bytes": 2431,
+      "path": "relatorio_determinismo.json",
+      "role": "output",
+      "sha256": "d3d098b9b506376d4389fbfde5c59ae7d1cb5ce2cb370441f8c1a3855a605868"
+    },
+    {
+      "bytes": 7028,
+      "path": "resultado_avaliacao_pos_abertura.json",
+      "role": "output",
+      "sha256": "b1e32e186adc84154166aecec5f55858664906961f14497b08a946b6d89516cb"
+    },
+    {
+      "bytes": 751,
+      "path": "verificacao_independente.json",
+      "role": "output",
+      "sha256": "be61b3e3e7e7cca3302dbc296914fa5b4b6534c44a2bf959ed0bb677435149c9"
+    }
+  ],
+  "protocol_id": "URBE-POSTOPEN-EVAL-v1.0",
+  "rankings_recomputed": false,
+  "reference_coordinate_sha256": "c3fa784096eb4cdcbb82aa25df864c6a8efd5fd6df11cff2b09ba78b48731b63",
+  "scenario_id": "URBE-01",
+  "sectors_recomputed": false,
+  "timezone": "America/Belem",
+  "weights_recomputed": false
+}

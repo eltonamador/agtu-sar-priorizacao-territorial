@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "cobertura_raster",
+    "custos_finitos_seis_cenarios",
+    "repeticao_deterministica_BASE",
+    "48_corredores",
+    "destinos_nos_setores_BASE"
+  ],
+  "cells": 125577,
+  "excluded_centers_outside_BASE_polygon": 52,
+  "network_cells": 1674,
+  "operational_validation": false,
+  "original_MATA01_test_receipt_reused": false
+}

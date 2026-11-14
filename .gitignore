@@ -1,0 +1,16 @@
+/_arquivo/
+**/fotos/originais/
+**/fotos_indice.csv
+**/reservado_originais/
+**/registro_operador_visual_urbe01_v1.json
+/outputs/campo_rural01/referencia_t5_rural01_v1/KM14.png
+**/__pycache__/
+*.pyc
+.DS_Store
+.venv/
+*.docx
+*.heic
+*.jpeg
+*.jpg
+!**/fontes_autorizadas/**
+**/.env*

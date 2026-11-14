@@ -1,0 +1,86 @@
+{
+  "status": "VERIFICACOES_NUMERICAS_E_INSPECAO_VISUAL_CONCLUIDAS",
+  "visual_review": {
+    "method": "PNG final aberto e inspecionado com view_image",
+    "checked": ["E0 central", "AP1 e AP2 a sudoeste; AP3 a leste", "linha contextual 249 separada do ranking", "escala e norte presentes", "legendas e fontes legíveis, sem cortes observados", "base histórica de 2021 e estado REVISAR explícitos"],
+    "limits": "Inspeção visual cartográfica; não valida eficácia operacional nem atualização do terreno em 2026."
+  },
+  "source_hashes": {
+    "outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/ranking_BASE_completo.json": "8236e5244a8f6fef501d4aea9492c56bf75d34a87109eecfc94da03e681f31fb",
+    "outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/setores_BASE.geojson": "8b54646f352c2b2118dd2475fa88a528fc494b7ace43a96581263f82a27aab0a",
+    "outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/referencia_249_contextual.geojson": "159a1f848a1a2af61b8e3b016ac1b30190a378489d54edc624a31dfcdd697edf",
+    "outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/RESULTADO_ENSAIO.json": "cbd9fe033c2b433b13ecd8ed813b10ed585034773dff6d090101f031018dda7a"
+  },
+  "frozen_sources_unchanged": true,
+  "top3": [
+    {
+      "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+      "score_base": 0.644159158,
+      "representative_lon": -51.4105767578,
+      "representative_lat": -0.1747433461,
+      "inner_radius_m": 0.0,
+      "outer_radius_m": 3464.101615
+    },
+    {
+      "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+      "score_base": 0.634347572,
+      "representative_lon": -51.4298307253,
+      "representative_lat": -0.1939971629,
+      "inner_radius_m": 4898.979486,
+      "outer_radius_m": 6000.0
+    },
+    {
+      "sector_id": "MATA-02::MATA-02-E0::R03::E",
+      "score_base": 0.630079426,
+      "representative_lon": -51.345742005,
+      "representative_lat": -0.1591666078,
+      "inner_radius_m": 4898.979486,
+      "outer_radius_m": 6000.0
+    }
+  ],
+  "map_bounds_lon_lat": [
+    -51.45570435878468,
+    -0.219870791218073,
+    -51.33429564121533,
+    -0.09846254211526037
+  ],
+  "dimensions": [
+    2380,
+    1985
+  ],
+  "sector_count": 24,
+  "direction_included_in_BASE": false,
+  "direction_graphic_only": true,
+  "angle_from_geographic_north_for_display": 249,
+  "image_sha256": "c6de72b43a89028769ab11554807fb4c564d8bbd2af75467288c8d6f2ff9980a",
+  "satellite_metadata": {
+    "provider": "ESA WorldCover / Terrascope (VITO)",
+    "request_url": "https://titiler.terrascope.be/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=esa-worldcover-s2rgbnir-10m-2021-v2_tcc&STYLES=&CRS=EPSG%3A4326&BBOX=-0.219870791218073%2C-51.45570435878468%2C-0.09846254211526037%2C-51.33429564121533&WIDTH=2048&HEIGHT=2048&FORMAT=image%2Fpng&TRANSPARENT=FALSE&TIME=2021-01-01",
+    "bounds_lon_lat": [
+      -51.45570435878468,
+      -0.219870791218073,
+      -51.33429564121533,
+      -0.09846254211526037
+    ],
+    "crs": "EPSG:4326",
+    "wms_axis_order": "latitude,longitude",
+    "retrieved_at_utc": "2026-10-29T15:54:02.862636+00:00",
+    "http_status": 200,
+    "response_headers": {
+      "Cache-Control": "public, max-age=3600",
+      "Content-Bbox": "-51.45570435878468,-0.21987079121807296,-51.33429564121533,-0.09846254211526036",
+      "Content-Crs": "<http://www.opengis.net/def/crs/EPSG/0/4326>",
+      "Content-Length": "3405947",
+      "Content-Type": "image/png",
+      "Date": "Thu, 29 Oct 2026 15:53:17 GMT",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+      "Connection": "close"
+    },
+    "sha256": "3741190f3185e004e38cffd8b2798368730042e0d0a71c49de916336547f88ae",
+    "source_period": 2021,
+    "purpose": "Contexto cartográfico; não usado para recalcular o ranking",
+    "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium"
+  },
+  "renderer": "work/gerar_mapa_mata02_base_v1.py",
+  "reused_geometry_render_helpers": "work/mata01_figura_multipainel_cega_v3/gerar_figura_mata01_cega_v3.py"
+}

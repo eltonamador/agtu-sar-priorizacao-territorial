@@ -1,0 +1,3 @@
+ranking_mode,reference_sector_ids,primary_reference_sector_id,reference_rank_best,reference_rank_conservative,reference_score,top1_covered,top3_covered,top3_area_m2,top3_area_km2,total_sectorized_area_m2,top3_area_fraction,outcome
+BASE,['URBE-01::URBE-01-E0::R02::S'],URBE-01::URBE-01-E0::R02::S,18,18,0.653517582,False,False,2453590.538,2.453591,19628724.275,0.125,NAO_COBERTO_TOP3
+PERFIL,['URBE-01::URBE-01-E0::R02::S'],URBE-01::URBE-01-E0::R02::S,19,19,0.631826212,False,False,2453590.541,2.453591,19628724.275,0.125,NAO_COBERTO_TOP3

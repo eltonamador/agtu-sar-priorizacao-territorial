@@ -1,0 +1,209 @@
+{
+  "adaptive_buffer_status": "NAO_EXECUTADO_ENTRADA_INSUFICIENTE",
+  "additional_factors_applied_by_engine": false,
+  "confirmatory_eligible": false,
+  "detection_quality_imputed": false,
+  "determinism_compared_file_count": 13,
+  "determinism_run1_hashes_match_published_outputs": true,
+  "elapsed_seconds_two_runs_and_qa": 8.242,
+  "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+  "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+  "files": [
+    {
+      "bytes": 77111,
+      "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "engine_imported_unchanged",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 17629,
+      "path": "work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+      "role": "base_config_source",
+      "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+    },
+    {
+      "bytes": 3966,
+      "path": "work/mata01_processamento_cego_v1/config_mata01_blind_v1.json",
+      "role": "mata01_config_source",
+      "sha256": "43cc12c072ebd174e01408905c185cdb7977013ae7082dc8cd9782a471314a1e"
+    },
+    {
+      "bytes": 4379,
+      "path": "work/mata01_processamento_cego_v1/PROTOCOLO_MATA01_CEGO_v1.md",
+      "role": "protocol_source",
+      "sha256": "b566b8cfd84f2f43b4a19616574815c794963dd7e75f199fe3aba1c99b25233c"
+    },
+    {
+      "bytes": 6198892,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "source_geo02_osm",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "source_geo03_osm",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 5074951,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "7a1f4475279ab70e7b8080445fb02f80357fa08c5e7f18db1980651d01bdc206"
+    },
+    {
+      "bytes": 10237499,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "bytes": 5709363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "0c1ad94bf58bbee81a65c1f904818d3cca704b360ce84ede36f527d966a0c380"
+    },
+    {
+      "bytes": 7081961,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 23653990,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "df31ae2b362b033d1e1d31e683a484133e277727482412b14b743cbc59b12930"
+    },
+    {
+      "bytes": 8977040,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "bytes": 38592452,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "f064257364593b7145ae7a964151d6f6a80cc99a85672c1041e446bf0c5e1b89"
+    },
+    {
+      "bytes": 29215289,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 31413,
+      "path": "outputs/campo_mata01/processamento_cego_v1/atributos_geo_setores_mata01.csv",
+      "role": "output",
+      "sha256": "b4f126f30923b55f0bf4b1cd773c4626c1668019a69d8971428349ec8345ffcc"
+    },
+    {
+      "bytes": 881,
+      "path": "outputs/campo_mata01/processamento_cego_v1/avisos_revisao.log",
+      "role": "output",
+      "sha256": "ae7df9c3dfe5861e6615a813cef1e8ea3634bc4dfbbd65f611e373ec6a54d7db"
+    },
+    {
+      "bytes": 21162,
+      "path": "outputs/campo_mata01/processamento_cego_v1/config_efetiva_mata01_blind.json",
+      "role": "output",
+      "sha256": "e91d4ff5ee2f58a91d069becdb3157e8a9840ee6f6ac4c16ca5770bef7b0328e"
+    },
+    {
+      "bytes": 13222,
+      "path": "outputs/campo_mata01/processamento_cego_v1/entrada_raio_fonte_mata01.geojson",
+      "role": "output",
+      "sha256": "333024419d08a1e0e0ecf4ea392399ad3a8901e785f657db23befb8e0a62cc8d"
+    },
+    {
+      "bytes": 2160,
+      "path": "outputs/campo_mata01/processamento_cego_v1/entrada_raio_fonte_mata01.json",
+      "role": "output",
+      "sha256": "aa309fb3c0a4c7d7c5d5d91ec04dfe83d2204d9674b69aded163c6a62ed5ce0d"
+    },
+    {
+      "bytes": 887,
+      "path": "outputs/campo_mata01/processamento_cego_v1/manifesto_entrada_raio_fonte_mata01.json",
+      "role": "output",
+      "sha256": "e78ac60e580a9b959ae28ab057222824e84d88280116e08bf4f125c4d9587cd0"
+    },
+    {
+      "bytes": 4379,
+      "path": "outputs/campo_mata01/processamento_cego_v1/protocolo_mata01_cego_v1.md",
+      "role": "output",
+      "sha256": "b566b8cfd84f2f43b4a19616574815c794963dd7e75f199fe3aba1c99b25233c"
+    },
+    {
+      "bytes": 39525,
+      "path": "outputs/campo_mata01/processamento_cego_v1/ranking_base_disponiveis_mata01.csv",
+      "role": "output",
+      "sha256": "e06c6873fe068b79446849cd1a1a102ecb74daa0ccf72a19c2cdc20698109428"
+    },
+    {
+      "bytes": 35817,
+      "path": "outputs/campo_mata01/processamento_cego_v1/ranking_base_original_abstido_mata01.csv",
+      "role": "output",
+      "sha256": "6766224001405cb68e8b863fb10d2e61e62ac0b1cf46cb0425d4e262d85d32de"
+    },
+    {
+      "bytes": 3572,
+      "path": "outputs/campo_mata01/processamento_cego_v1/relatorio_determinismo.json",
+      "role": "output",
+      "sha256": "c62580efe1eac449a2f046937f4c185d81ebed85de4b71741b57c03fa6db6865"
+    },
+    {
+      "bytes": 2310,
+      "path": "outputs/campo_mata01/processamento_cego_v1/relatorio_execucao_mata01.md",
+      "role": "output",
+      "sha256": "c16249c31429c39a5794cef3888950bb122bb6bf9229bd72e1642a592c0f073f"
+    },
+    {
+      "bytes": 1191,
+      "path": "outputs/campo_mata01/processamento_cego_v1/relatorio_qa.json",
+      "role": "output",
+      "sha256": "d828ccfeac1278245d02ea6df10f7f0199227fbbe7ae532b7aa86fdf1052f847"
+    },
+    {
+      "bytes": 230553,
+      "path": "outputs/campo_mata01/processamento_cego_v1/resultado_mata01_cego.json",
+      "role": "output",
+      "sha256": "231acd46259d27975b981c945020afe543215f8d1912f49ac4c45647ed75e0a5"
+    },
+    {
+      "bytes": 137728,
+      "path": "outputs/campo_mata01/processamento_cego_v1/setores_mata01.geojson",
+      "role": "output",
+      "sha256": "addbd86272547d875e65ba91118eae3e66b5bc97710b451b767afbe9cc3c13f9"
+    },
+    {
+      "bytes": 1730,
+      "path": "outputs/campo_mata01/processamento_cego_v1/top3_base_disponiveis_mata01.csv",
+      "role": "output",
+      "sha256": "362bfe2dc1ad5c2cbc38a22bea986464317e2b1c5bd2c98121368fed6fcf3abd"
+    },
+    {
+      "bytes": 4269,
+      "path": "outputs/campo_mata01/processamento_cego_v1/top3_base_disponiveis_mata01.json",
+      "role": "output",
+      "sha256": "56a5c93f06454afe4bd2b9359b52214bdc10d5466fd947ece4a31d9b0cacfa03"
+    }
+  ],
+  "generated_at_utc": "2026-10-23T19:39:54+00:00",
+  "ground_truth_used": false,
+  "protocol_id": "MATA01-BLIND-SET-v1.0",
+  "python_version": "3.12.14",
+  "r0_semantics": "source_declared_operational_domain",
+  "radius_m": 5000.0,
+  "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+  "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+  "review_status": "REVISAR",
+  "scientific_projection_sha256": "7ba1186d90aaf5ef6b92dd7095727e151c948880163b3c81d0c4cd7ff02df29b",
+  "sector_count": 24,
+  "upstream_protocol_id": "MATA01-SOURCE-RADIUS-v1.0",
+  "used_spatial_tiles": {
+    "dem": "S01W052.hgt.gz",
+    "worldcover": "ESA_WorldCover_10m_2021_v200_S03W054_Map.tif"
+  }
+}

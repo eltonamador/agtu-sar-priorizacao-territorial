@@ -1,0 +1,96 @@
+{
+  "created_at_local": "2026-10-23T12:58:35-03:00",
+  "file_count": 10,
+  "files": [
+    {
+      "bytes": 847,
+      "path": "work/rural01_avaliacao_t5_t6_v1/MODELO_REGISTRO_T5_SEM_COORDENADA.json",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "84c89f9b08c598a025009cce6b75508d2c1003f999867161edde3c0b0e9e4e9f"
+    },
+    {
+      "bytes": 18245,
+      "path": "work/rural01_avaliacao_t5_t6_v1/PROTOCOLO_AVALIACAO_RURAL01_T45_T6_v1_CONGELADO.md",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "e370cdc0ca740b30dbe19ac64b393f04d35a7c6c8dd39ffce826ea5b81ba88cc"
+    },
+    {
+      "bytes": 13445,
+      "path": "work/rural01_avaliacao_t5_t6_v1/config_avaliacao_t5_t6_v1.json",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "60f9d4613cfd6dbc32c4d615461366d9c7765abc5791b2bd6c37a13c8489dc79"
+    },
+    {
+      "bytes": 28113,
+      "path": "work/rural01_avaliacao_t5_t6_v1/congelar_avaliador_t45.py",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "94a0650c91a64be1e31c8153396b6eb3d80dddb302cf1e241dfa317ecb34800f"
+    },
+    {
+      "bytes": 82236,
+      "path": "work/rural01_avaliacao_t5_t6_v1/evaluate_rural01_reference.py",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "fd985937b0ee8b362c9a3e4247d5040ce3fd8f5eeb7f0e0eb50d7642853dacdf"
+    },
+    {
+      "bytes": 5951,
+      "path": "work/rural01_avaliacao_t5_t6_v1/schema_referencia_t5_v1.json",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "ca09d62402cbc8cf79125e2e61e89f13941d0457e1b8948f952b6071de7a104f"
+    },
+    {
+      "bytes": 29196,
+      "path": "work/rural01_avaliacao_t5_t6_v1/test_evaluate_rural01_reference.py",
+      "role": "T45_EVALUATOR_PACKAGE",
+      "sha256": "5c5601747da24702f3530ca79611026f5be401d1bbda7d7d83fab6cd0930e991"
+    },
+    {
+      "bytes": 800,
+      "path": "outputs/campo_rural01/avaliador_t45_congelado_v1/RESUMO_CONGELAMENTO_T45.md",
+      "role": "T45_FREEZE_RECEIPT",
+      "sha256": "255268149acc64f17d8ffbfd22c555e4fd2b7be77e91d9771b54abd7683ad2b7"
+    },
+    {
+      "bytes": 32789,
+      "path": "outputs/campo_rural01/avaliador_t45_congelado_v1/relatorio_qa_avaliador_t45_v1.json",
+      "role": "T45_FREEZE_RECEIPT",
+      "sha256": "410f9e51c2ee4230bf4c273753969b118ca6435deaeb96d5cd0498a4703dc0e4"
+    },
+    {
+      "bytes": 5425,
+      "path": "outputs/campo_rural01/avaliador_t45_congelado_v1/relatorio_testes_avaliador_t45_v1.json",
+      "role": "T45_FREEZE_RECEIPT",
+      "sha256": "f2e5ee8b318a24bc8b85bfe06ce423bd42a5b4765eb1aa51869937449c8f5a32"
+    }
+  ],
+  "global_pass_fail_forbidden": true,
+  "ground_truth_received": false,
+  "hypothesis_selection_after_opening": false,
+  "interpretation": "O avaliador, suas convenções e seus testes foram selados antes de T5. O selo não contém a posição reservada e não produz resultado T6.",
+  "payload_sha256": "53713b402ca59d5feaedc5de572e5da25a256125aefde5229f725708b2810023",
+  "protocol_id": "RURAL01-EVAL-T45-T6-v1.0",
+  "qa": {
+    "check_count": 29,
+    "passed_check_count": 29,
+    "receipt_sha256": "410f9e51c2ee4230bf4c273753969b118ca6435deaeb96d5cd0498a4703dc0e4",
+    "status": "PASS"
+  },
+  "reference_coordinates_present": false,
+  "reference_opening_allowed_after_this_ledger": true,
+  "retuning_after_reference_opening": false,
+  "scenario_id": "RURAL-01",
+  "stage": "T4_5_PRE_REVEAL_EVALUATOR_FREEZE",
+  "status": "CONGELADO_ANTES_DA_REVELACAO",
+  "tests": {
+    "receipt_sha256": "f2e5ee8b318a24bc8b85bfe06ce423bd42a5b4765eb1aa51869937449c8f5a32",
+    "status": "PASS",
+    "tests_run": 32
+  },
+  "timezone": "America/Belem",
+  "upstream": {
+    "t2_manifest_sha256": "15e9961bc585b5a585eae4d48af9a3f5bfc829ca54e42d7c79bdb3e4db6994cf",
+    "t4_ledger_sha256": "dd0a3e3d21583d2cf1bfade7a9d97df7a2f10b1959cef45ec61524adec80d3f6",
+    "t4_payload_sha256": "6c478f41dcfa9de363619e2d4c31dd2103510c5b418d548917609aff6b8e0e0d",
+    "v1_manifest_sha256": "54ffe7ea99a235d9d6f7c486b9d1b5b45e575912aa8f90aed5507b1000fa2e6f"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "protocol_id": "EXT-ESP-SET-v1.0",
+  "tests_run": 25,
+  "passed": 25,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "records": [
+    {
+      "test": "__main__.BufferContractTestCase.test_duplicate_candidate_key_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_forbidden_ground_truth_or_derived_fields_are_rejected_recursively",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_invalid_coordinates_radius_hash_and_numbers_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_load_json_and_sha256_file",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_nondeterministic_input_order_is_normalized_without_content_change",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_record_count_mismatch_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_record_ground_truth_flag_must_be_boolean_false",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_root_ground_truth_flag_must_be_boolean_false",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferContractTestCase.test_valid_contract_preserves_deterministic_order",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_destination_uses_meters_and_returns_lat_lon",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_exactly_24_sectors_are_created_per_candidate",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_sector_areas_are_equal_and_sum_to_buffer_area",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_sector_geometry_is_closed_finite_polygon_in_lon_lat_order",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_sector_ids_are_unique_stable_and_ordered",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_sector_outputs_preserve_firewall_and_lineage",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorGeometryTestCase.test_three_equal_area_radial_bands_and_eight_directions",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_all_frozen_weight_sets_sum_to_one",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_instability_across_weight_sets_forces_review",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_invalid_geo_score_or_completeness_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_margin_is_top_minus_second_and_controls_review",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_missing_criterion_never_creates_silent_automatic_priority",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_ranking_is_deterministic_and_preserves_firewall",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_tie_break_is_sector_id_and_zero_margin_forces_review",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_upstream_review_status_forces_downstream_review",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.SectorRankingTestCase.test_weighted_score_rank_and_selected_sector",
+      "status": "PASS"
+    }
+  ]
+}

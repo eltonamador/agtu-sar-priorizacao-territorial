@@ -1,0 +1,120 @@
+{
+  "case": "MATA-03",
+  "created_at": "2026-10-31T15:32:54.164996+00:00",
+  "ground_truth_used": false,
+  "sources": [
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "bytes": 77111,
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/executar_mata03_km21.py",
+      "bytes": 14227,
+      "sha256": "72ee1c1199eda76278ada6a9dc0a64d97b46987d7e9e1d168b1a08a6a3019ce5"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/mata02_mzg2_processamento_cego_v1/run_mata02_mzg2_blind.py",
+      "bytes": 49438,
+      "sha256": "fd5cce179145247ba2585b2c9c7b868de56b168c3eaf51d87f78038bc80b1acf"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "bytes": 10237499,
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "bytes": 8977040,
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "bytes": 6198892,
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "bytes": 5748363,
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/geo02_overpass_query.txt",
+      "bytes": 82,
+      "sha256": "d73ba33f5b3633f20dc039b2eaa09e26fd4ce2ea95f16364c1284903402c4e79"
+    },
+    {
+      "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_06_geo05_v33/geo03_overpass_query.txt",
+      "bytes": 510,
+      "sha256": "ae2783270cf0495fe73536447e681c781065e323505ec49d112e737d48369603"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "atributos_setores.csv",
+      "bytes": 28605,
+      "sha256": "cf7c8987ab5df78cbb411876cfb5597a27e9564d254c5e1c407d31e674748e6b"
+    },
+    {
+      "path": "config_execucao.json",
+      "bytes": 21622,
+      "sha256": "7260503d3814bb0d757f96ff7cc2cd258d75811d4a20f3ed5058457f4f588b9c"
+    },
+    {
+      "path": "decisoes_BASE.json",
+      "bytes": 1095,
+      "sha256": "317ffb5f170ba3c8cf0f1800db4a0f8ecba91e92f51ca7a1b05a8e62d1f45d75"
+    },
+    {
+      "path": "entrada_raio_fonte_mata03_km21.geojson",
+      "bytes": 13872,
+      "sha256": "6d4e2c52399fb950bddb83a069368009341a56131591ed559175cca428c1d89d"
+    },
+    {
+      "path": "entrada_raio_fonte_mata03_km21.json",
+      "bytes": 2110,
+      "sha256": "67a8880674db7cb7b5a437d196faf3bb2fb73d02866b523214164ea02649e633"
+    },
+    {
+      "path": "inventario_imagens.json",
+      "bytes": 4828,
+      "sha256": "4ec7812497e79af60035bc599bed17c4c19a58e9878d377b8286ce10e5724118"
+    },
+    {
+      "path": "manifesto_entrada.json",
+      "bytes": 1114,
+      "sha256": "9f4a0a8cef22ecc5b69f747fb3dbd64a8abc7b723ed14b037d77da9953993b45"
+    },
+    {
+      "path": "premissas_congeladas.json",
+      "bytes": 3132,
+      "sha256": "54e87f2619cc72cd05ca2263a639ee3cf6a297bcc60073a980533a8bb90831c7"
+    },
+    {
+      "path": "qa_calculos.json",
+      "bytes": 8564,
+      "sha256": "6f50e56a253b6788a03e2d9e0f8182444ffdba0c279947649f4a71619796fae9"
+    },
+    {
+      "path": "ranking_BASE.csv",
+      "bytes": 58808,
+      "sha256": "9fd6508cb886ddb79e150f8f8836eb89de3793e85335d8bf9630d0cbc57a1830"
+    },
+    {
+      "path": "ranking_BASE.json",
+      "bytes": 134280,
+      "sha256": "1ba965b3d69f07e06607771036d8246dc6023886929d2a6ca3c6340d5094e11a"
+    },
+    {
+      "path": "setores_BASE.geojson",
+      "bytes": 127443,
+      "sha256": "d35bdb85443737fea39ed210c8972eaf94e6d7f57f50b123ad007af113e36ef8"
+    },
+    {
+      "path": "verificacao_espacial.json",
+      "bytes": 386,
+      "sha256": "d0fc4c0c5b36aab052eeb278074168dfa1fff23aad18a47d846ab7a26bbfd18b"
+    }
+  ],
+  "old_case_files_modified": false
+}

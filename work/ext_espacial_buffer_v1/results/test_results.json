@@ -1,0 +1,123 @@
+{
+  "protocol_id": "EXT-ESP-BUF-v1.0",
+  "tests_run": 28,
+  "passed": 28,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "records": [
+    {
+      "test": "__main__.BufferEngineTestCase.test_age_monotonicity_and_saturation",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_analytical_buffer_area_and_four_factor_case",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_circle_ring_is_closed_and_has_72_segments",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_circle_ring_supports_southern_hemisphere",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_diagnostic_legacy_applies_all_factors_and_is_not_confirmatory",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_dispersion_monotonicity_and_saturation",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_duplicate_candidate_key_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_environment_aliases_are_normalized",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_environment_factors",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_explicit_unknown_environment_forces_review",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_geojson_contains_safe_closed_polygons",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_ground_truth_and_derived_fields_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_input_and_output_paths_must_be_distinct",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_maximum_clamp",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_minimum_clamp",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_missing_optional_values_use_frozen_policies",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_nominal_formula_exact",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_nominal_semantics_require_frozen_radius_and_no_prior_factors",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_numeric_domains_are_enforced",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_pipeline_writes_hashes_and_no_ground_truth",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_processing_order_and_content_are_deterministic",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_quality_is_mandatory",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_quality_monotonicity",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_repeat_pipeline_has_identical_data_outputs",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_rich_normative_config_loads_and_tampering_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_source_adjusted_neutralizes_only_declared_factors",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_source_adjusted_without_factors_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "__main__.BufferEngineTestCase.test_unrecognized_environment_is_rejected",
+      "status": "PASS"
+    }
+  ]
+}

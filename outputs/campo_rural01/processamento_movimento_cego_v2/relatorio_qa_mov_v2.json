@@ -1,0 +1,80 @@
+{
+  "diagnostics": {
+    "base_hypothesis_cost_ranges_m_equivalent": {
+      "H_FORA_REDE__BASE": {
+        "maximum": 5460.587343,
+        "minimum": 0.0
+      },
+      "H_REDE_DISPONIVEL__BASE": {
+        "maximum": 5111.888318,
+        "minimum": 0.0
+      }
+    },
+    "cell_count": 7845,
+    "cost_scenario_count": 11,
+    "directional_anisotropy_effective": false,
+    "hydro_landcover_overlap_cell_count": 132,
+    "network_landcover_scale_conflict_cell_count": 87,
+    "reference_cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+    "reference_maximum_cost_m_equivalent": 5111.888318,
+    "reference_minimum_cost_m_equivalent": 0.0
+  },
+  "firewall_receipt": {
+    "forbidden_alias_count": 22,
+    "rules_sha256": "9d835ea2f7d90bacbdbb224c711c6faaf742ba2c4ffcea1d404676cf50791156",
+    "scan_batch_count": 15,
+    "scanned_key_count": 2158463,
+    "scanned_path_count": 14,
+    "scanned_string_count": 469752,
+    "status": "PASS"
+  },
+  "gate_count": 37,
+  "gates": {
+    "all_cells_have_raster_samples": true,
+    "all_cells_have_sector": true,
+    "all_costs_are_finite_nonnegative": true,
+    "all_scenarios_have_24_sector_rows": true,
+    "blind_control_is_false": true,
+    "component_ablations_not_more_costly": true,
+    "configuration_valid": true,
+    "corridor_count_is_prespecified_48": true,
+    "corridor_metadata_complete": true,
+    "corridors_cover_all_24_sectors_per_base_hypothesis": true,
+    "crs_metric_and_manifested": true,
+    "diagonal_distance_correct": true,
+    "directional_anisotropy_not_claimed": true,
+    "elapsed_14h_is_context_only": true,
+    "field_review_is_required": true,
+    "firewall_scan_passed": true,
+    "grid_aligned_and_unique": true,
+    "grid_has_origin": true,
+    "hydro_duplication_counterfactual_not_promoted": true,
+    "hydro_landcover_deduplication_enabled": true,
+    "mov_v_not_additive_to_geo02_05": true,
+    "mov_v_separate_from_mov_e_and_det": true,
+    "network_and_off_network_base_exist": true,
+    "network_discount_never_zero": true,
+    "network_hypothesis_never_worsens_cost": true,
+    "network_landcover_scale_conflict_exposed": true,
+    "predecessors_complete_and_monotonic": true,
+    "reference_scenario_is_explicit_and_not_selected": true,
+    "repeated_cost_run_deterministic": true,
+    "some_cells_exceed_budget_in_each_base_hypothesis": true,
+    "some_non_origin_cells_are_reachable_in_each_base_hypothesis": true,
+    "source_accumulated_cost_zero": true,
+    "source_radius_preserved": true,
+    "strong_profile_not_cheaper_than_soft": true,
+    "test_suite_receipt_passed_and_bound_to_current_files": true,
+    "time_conversion_disabled": true,
+    "understory_limitation_exposed": true
+  },
+  "ground_truth_used": false,
+  "passed_gate_count": 37,
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "status": "PASS",
+  "test_suite_receipt": {
+    "payload_sha256": "e387670d50f059f5ea05fec0b1335d0fb228f767395e40a831835845e691ad8d",
+    "status": "PASS",
+    "tests_run": 21
+  }
+}

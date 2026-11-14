@@ -1,0 +1,41 @@
+{
+  "event": "T5_REFERENCE_OPENING",
+  "protocol_id": "RURAL01-EVAL-T45-T6-v1.0",
+  "reference": {
+    "collection_method": null,
+    "equipment": null,
+    "horizontal_accuracy_m": null,
+    "input_contract": "STRUCTURED_T5_SCHEMA",
+    "latitude": 0.15333333333333332,
+    "latitude_text_as_received": "0.15333333333333332",
+    "longitude": -51.14888888888889,
+    "longitude_text_as_received": "-51.14888888888889",
+    "normalized_reference_sha256": "50a750795a3167ffbfce5f313be995387f19a4d3414433dfb6901e7f4a977622",
+    "observed_at": null,
+    "opening_record": {
+      "evaluator_freeze_manifest_sha256": "d8bd572ed4a36916182566ce688ecf65cb44a391d602135d992fe6be3a74e8a4",
+      "opened_at": "2026-10-23T14:27:14-03:00",
+      "opened_by": "Pesquisador responsável via conversa do projeto",
+      "opening_method": "Revelação explícita da posição declarada do alvo simulado por imagem anexada, após o selo T4.5"
+    },
+    "reference_id": "RURAL-01-T5-20261023T142714-0300",
+    "reference_role": "POSICAO_DECLARADA_ALVO_SIMULADO",
+    "revealed_at_local": "2026-10-23T14:27:14-03:00",
+    "scenario_id": "RURAL-01",
+    "source_note": "Posição declarada pelo pesquisador após o congelamento T4.5, documentada pela captura de tela KM14.png. A imagem mostra 0°9′12″ N, 51°8′56″ O e elevação exibida de 28 m; não comprova data, precisão, equipamento, método de posicionamento ou datum geodésico.",
+    "source_record": {
+      "collection_method": null,
+      "equipment": null,
+      "horizontal_accuracy_m": null,
+      "position_observed_at": null,
+      "provenance_note": "Posição declarada pelo pesquisador após o congelamento T4.5, documentada pela captura de tela KM14.png. A imagem mostra 0°9′12″ N, 51°8′56″ O e elevação exibida de 28 m; não comprova data, precisão, equipamento, método de posicionamento ou datum geodésico.",
+      "source_artifact": "outputs/campo_rural01/referencia_t5_rural01_v1/KM14.png",
+      "source_artifact_sha256": "dc7c8e19eeb85dd0ebdba9f2189ca38622b8bea7cef4698301ace3b956c43761"
+    },
+    "verification_status": "DECLARADA_NAO_AFERIDA_INDEPENDENTEMENTE"
+  },
+  "reference_file_sha256": "f7aaa204e24c48ed343c769e924f01883f6405d05cb740cc82fe64841e491a15",
+  "scenario_id": "RURAL-01",
+  "t4_artifacts_changed": false,
+  "timestamp_policy": "ONLY_USER_SUPPLIED_REVEALED_AT_LOCAL_IS_RECORDED"
+}

@@ -1,0 +1,40 @@
+{
+  "additional_factors_applied_by_engine": false,
+  "confirmatory_eligible": false,
+  "erb_850_m_role": "RELATO_CONTEXTUAL_SEM_DERIVACAO_MATEMATICA_REPRODUZIDA",
+  "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+  "ground_truth_used": false,
+  "protocol_id": "RURAL01-SOURCE-RADIUS-v1.0",
+  "protocol_version": "1.0",
+  "r0_semantics": "source_adjusted_final",
+  "radius_m": 1500.0,
+  "radius_origin": "INFORMADO_PELA_FONTE",
+  "radius_review_status": "REVISAR",
+  "record_count": 1,
+  "results": [
+    {
+      "adaptive_radius_m": 1500.0,
+      "additional_factors_applied_by_engine": false,
+      "buffer_area_m2": 7068583.470577034,
+      "candidate_id": "RURAL-01-E0",
+      "confirmatory_eligible": false,
+      "detection_quality": null,
+      "estimated_lat": 0.188611,
+      "estimated_lon": -51.155556,
+      "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+      "ground_truth_used": false,
+      "protocol_id": "RURAL01-SOURCE-RADIUS-v1.0",
+      "r0_semantics": "source_adjusted_final",
+      "radius_method": "RAIO_DIRETO_SEM_BUFFER_ADAPTATIVO",
+      "radius_origin": "INFORMADO_PELA_FONTE",
+      "radius_rationale": "RAIO_FINAL_DECLARADO_PELA_FONTE; A DISTANCIA DE 850_M_DA_ERB_E_RELATO_CONTEXTUAL_E_NAO_DERIVACAO_MATEMATICA_REPRODUZIDA_PELO_MOTOR",
+      "review_status": "REVISAR",
+      "scenario_id": "RURAL-01",
+      "source_metadata_verification": "COORDENADA_E_RAIO_NAO_VERIFICADOS_EM_ARTEFATO_EXTERNO",
+      "source_record_origin": "FICHA_RURAL01_DECLARADA_PELO_PESQUISADOR",
+      "source_row_hash": "ac675917d3c1e6f5368ee970adc8f1f8ab8c7e54c9cf56710b2cb607fe7633d5",
+      "source_timestamp_local": "2026-10-21T14:20:00-03:00"
+    }
+  ],
+  "scenario_count": 1
+}

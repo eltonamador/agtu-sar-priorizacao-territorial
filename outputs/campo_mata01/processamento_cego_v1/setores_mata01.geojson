@@ -1,0 +1,4901 @@
+{
+  "crs": {
+    "properties": {
+      "name": "EPSG:4326"
+    },
+    "type": "name"
+  },
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4402129321,
+              -0.1482370292
+            ],
+            [
+              -51.4402129319,
+              -0.1482370291
+            ],
+            [
+              -51.4391572629,
+              -0.1478265039
+            ],
+            [
+              -51.438084692,
+              -0.1474624167
+            ],
+            [
+              -51.43699726,
+              -0.1471454604
+            ],
+            [
+              -51.4358970379,
+              -0.1468762394
+            ],
+            [
+              -51.4347861199,
+              -0.1466552648
+            ],
+            [
+              -51.43366662,
+              -0.1464829585
+            ],
+            [
+              -51.43254067,
+              -0.1463596473
+            ],
+            [
+              -51.4314104129,
+              -0.1462855663
+            ],
+            [
+              -51.430278,
+              -0.1462608574
+            ],
+            [
+              -51.4291455871,
+              -0.1462855663
+            ],
+            [
+              -51.42801533,
+              -0.1463596473
+            ],
+            [
+              -51.42688938,
+              -0.1464829585
+            ],
+            [
+              -51.4257698801,
+              -0.1466552648
+            ],
+            [
+              -51.4246589621,
+              -0.1468762394
+            ],
+            [
+              -51.42355874,
+              -0.1471454604
+            ],
+            [
+              -51.422471308,
+              -0.1474624167
+            ],
+            [
+              -51.4213987371,
+              -0.1478265039
+            ],
+            [
+              -51.4203430681,
+              -0.1482370291
+            ],
+            [
+              -51.4203430679,
+              -0.1482370292
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4402129321,
+              -0.1482370292
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::N",
+      "properties": {
+        "area_relative_error": 4.01e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.110787879,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.642531783,
+        "geo05_score": 0.344277778,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.033027,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 22,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1538647,
+        "representative_lon": -51.430278,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.33041622,
+        "sector_area_m2": 3271454.033027,
+        "sector_id": "MATA-01::MATA-01-E0::R01::N",
+        "sector_index": 1,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4203430679,
+              -0.1482370292
+            ],
+            [
+              -51.4193063103,
+              -0.1486932113
+            ],
+            [
+              -51.4182904382,
+              -0.1491941814
+            ],
+            [
+              -51.4172973848,
+              -0.1497389869
+            ],
+            [
+              -51.4163290403,
+              -0.1503265896
+            ],
+            [
+              -51.4153872488,
+              -0.1509558713
+            ],
+            [
+              -51.4144738029,
+              -0.1516256344
+            ],
+            [
+              -51.4135904406,
+              -0.1523346038
+            ],
+            [
+              -51.4127388441,
+              -0.15308143
+            ],
+            [
+              -51.4119206342,
+              -0.1538646916
+            ],
+            [
+              -51.4111373685,
+              -0.1546828968
+            ],
+            [
+              -51.4103905377,
+              -0.1555344889
+            ],
+            [
+              -51.4096815644,
+              -0.1564178469
+            ],
+            [
+              -51.4090117968,
+              -0.1573312889
+            ],
+            [
+              -51.4083825108,
+              -0.1582730759
+            ],
+            [
+              -51.4077949043,
+              -0.1592414158
+            ],
+            [
+              -51.4072500951,
+              -0.1602344645
+            ],
+            [
+              -51.4067491214,
+              -0.161250333
+            ],
+            [
+              -51.4062929357,
+              -0.162287086
+            ],
+            [
+              -51.4062929357,
+              -0.1622870861
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4203430679,
+              -0.1482370292
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::NE",
+      "properties": {
+        "area_relative_error": 2.913e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "COBERTURA_AGUA_UMIDA_POTENCIAL;GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.207857028,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.711395637,
+        "geo05_score": 0.359875,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.055675,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 15,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1592414244,
+        "representative_lon": -51.4172973787,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.392806648,
+        "sector_area_m2": 3271454.055675,
+        "sector_id": "MATA-01::MATA-01-E0::R01::NE",
+        "sector_index": 2,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4062929357,
+              -0.1622870861
+            ],
+            [
+              -51.4058824069,
+              -0.1633427512
+            ],
+            [
+              -51.4055183162,
+              -0.1644153182
+            ],
+            [
+              -51.405201357,
+              -0.1655027457
+            ],
+            [
+              -51.4049321331,
+              -0.1666029638
+            ],
+            [
+              -51.4047111556,
+              -0.1677138778
+            ],
+            [
+              -51.404538847,
+              -0.1688333734
+            ],
+            [
+              -51.4044155336,
+              -0.1699593198
+            ],
+            [
+              -51.4043414508,
+              -0.1710895732
+            ],
+            [
+              -51.4043167402,
+              -0.1722219823
+            ],
+            [
+              -51.4043414479,
+              -0.1733543914
+            ],
+            [
+              -51.4044155271,
+              -0.1744846452
+            ],
+            [
+              -51.4045388376,
+              -0.1756105914
+            ],
+            [
+              -51.4047111437,
+              -0.1767300879
+            ],
+            [
+              -51.4049321181,
+              -0.1778410026
+            ],
+            [
+              -51.4052013393,
+              -0.1789412213
+            ],
+            [
+              -51.4055182958,
+              -0.1800286499
+            ],
+            [
+              -51.4058823843,
+              -0.181101218
+            ],
+            [
+              -51.4062929107,
+              -0.1821568836
+            ],
+            [
+              -51.4062929107,
+              -0.1821568837
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4062929357,
+              -0.1622870861
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::E",
+      "properties": {
+        "area_relative_error": 2.366e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.469476942,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.684818841,
+        "geo05_score": 0.405319444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.038404,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 3,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219912,
+        "representative_lon": -51.4119206171,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.505515616,
+        "sector_area_m2": 3271454.038404,
+        "sector_id": "MATA-01::MATA-01-E0::R01::E",
+        "sector_index": 3,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4062929107,
+              -0.1821568837
+            ],
+            [
+              -51.4067490939,
+              -0.183193638
+            ],
+            [
+              -51.4072500661,
+              -0.1842095073
+            ],
+            [
+              -51.4077948736,
+              -0.185202558
+            ],
+            [
+              -51.4083824788,
+              -0.1861708986
+            ],
+            [
+              -51.409011764,
+              -0.1871126875
+            ],
+            [
+              -51.40968153,
+              -0.1880261307
+            ],
+            [
+              -51.4103905032,
+              -0.1889094899
+            ],
+            [
+              -51.4111373331,
+              -0.1897610838
+            ],
+            [
+              -51.4119205989,
+              -0.1905792908
+            ],
+            [
+              -51.4127388087,
+              -0.1913625536
+            ],
+            [
+              -51.4135904055,
+              -0.1921093815
+            ],
+            [
+              -51.4144737685,
+              -0.1928183526
+            ],
+            [
+              -51.4153872159,
+              -0.193488117
+            ],
+            [
+              -51.4163290083,
+              -0.1941174006
+            ],
+            [
+              -51.4172973541,
+              -0.1947050046
+            ],
+            [
+              -51.4182904092,
+              -0.1952498108
+            ],
+            [
+              -51.4193062833,
+              -0.1957507824
+            ],
+            [
+              -51.420343043,
+              -0.1962069654
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4062929107,
+              -0.1821568837
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::SE",
+      "properties": {
+        "area_relative_error": 3.639e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.385601371,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.675643895,
+        "geo05_score": 0.373402778,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.058052,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 9,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1852025667,
+        "representative_lon": -51.4172973611,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.458879846,
+        "sector_area_m2": 3271454.058052,
+        "sector_id": "MATA-01::MATA-01-E0::R01::SE",
+        "sector_index": 4,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.420343043,
+              -0.1962069654
+            ],
+            [
+              -51.4203430431,
+              -0.1962069654
+            ],
+            [
+              -51.4213987144,
+              -0.1966174922
+            ],
+            [
+              -51.4224712882,
+              -0.1969815804
+            ],
+            [
+              -51.4235587223,
+              -0.1972985367
+            ],
+            [
+              -51.424658947,
+              -0.1975677589
+            ],
+            [
+              -51.4257698682,
+              -0.1977887343
+            ],
+            [
+              -51.4268893705,
+              -0.1979610414
+            ],
+            [
+              -51.4280153241,
+              -0.1980843523
+            ],
+            [
+              -51.4291455842,
+              -0.1981584332
+            ],
+            [
+              -51.430278,
+              -0.1981831426
+            ],
+            [
+              -51.4314104158,
+              -0.1981584332
+            ],
+            [
+              -51.4325406759,
+              -0.1980843523
+            ],
+            [
+              -51.4336666295,
+              -0.1979610414
+            ],
+            [
+              -51.4347861318,
+              -0.1977887343
+            ],
+            [
+              -51.435897053,
+              -0.1975677589
+            ],
+            [
+              -51.4369972777,
+              -0.1972985367
+            ],
+            [
+              -51.4380847118,
+              -0.1969815804
+            ],
+            [
+              -51.4391572856,
+              -0.1966174922
+            ],
+            [
+              -51.4402129569,
+              -0.1962069654
+            ],
+            [
+              -51.440212957,
+              -0.1962069654
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.420343043,
+              -0.1962069654
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::S",
+      "properties": {
+        "area_relative_error": 6.955e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": true,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.551161142,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.668220855,
+        "geo05_score": 0.398277778,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.023392,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 1,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1905793,
+        "representative_lon": -51.430278,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.531415944,
+        "sector_area_m2": 3271454.023392,
+        "sector_id": "MATA-01::MATA-01-E0::R01::S",
+        "sector_index": 5,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.440212957,
+              -0.1962069654
+            ],
+            [
+              -51.4412497167,
+              -0.1957507824
+            ],
+            [
+              -51.4422655908,
+              -0.1952498108
+            ],
+            [
+              -51.4432586459,
+              -0.1947050046
+            ],
+            [
+              -51.4442269917,
+              -0.1941174006
+            ],
+            [
+              -51.4451687841,
+              -0.193488117
+            ],
+            [
+              -51.4460822315,
+              -0.1928183526
+            ],
+            [
+              -51.4469655945,
+              -0.1921093815
+            ],
+            [
+              -51.4478171913,
+              -0.1913625536
+            ],
+            [
+              -51.4486354011,
+              -0.1905792908
+            ],
+            [
+              -51.4494186669,
+              -0.1897610838
+            ],
+            [
+              -51.4501654968,
+              -0.1889094899
+            ],
+            [
+              -51.45087447,
+              -0.1880261307
+            ],
+            [
+              -51.451544236,
+              -0.1871126875
+            ],
+            [
+              -51.4521735212,
+              -0.1861708986
+            ],
+            [
+              -51.4527611264,
+              -0.185202558
+            ],
+            [
+              -51.4533059339,
+              -0.1842095073
+            ],
+            [
+              -51.4538069061,
+              -0.183193638
+            ],
+            [
+              -51.4542630893,
+              -0.1821568837
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.440212957,
+              -0.1962069654
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::SW",
+      "properties": {
+        "area_relative_error": 3.639e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.261206705,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.66799638,
+        "geo05_score": 0.354208333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.058052,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 14,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1852025667,
+        "representative_lon": -51.4432586389,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.400684494,
+        "sector_area_m2": 3271454.058052,
+        "sector_id": "MATA-01::MATA-01-E0::R01::SW",
+        "sector_index": 6,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4542630893,
+              -0.1821568837
+            ],
+            [
+              -51.4542630893,
+              -0.1821568836
+            ],
+            [
+              -51.4546736157,
+              -0.181101218
+            ],
+            [
+              -51.4550377042,
+              -0.1800286499
+            ],
+            [
+              -51.4553546607,
+              -0.1789412213
+            ],
+            [
+              -51.4556238819,
+              -0.1778410026
+            ],
+            [
+              -51.4558448563,
+              -0.1767300879
+            ],
+            [
+              -51.4560171624,
+              -0.1756105914
+            ],
+            [
+              -51.4561404729,
+              -0.1744846452
+            ],
+            [
+              -51.4562145521,
+              -0.1733543914
+            ],
+            [
+              -51.4562392598,
+              -0.1722219823
+            ],
+            [
+              -51.4562145492,
+              -0.1710895732
+            ],
+            [
+              -51.4561404664,
+              -0.1699593198
+            ],
+            [
+              -51.456017153,
+              -0.1688333734
+            ],
+            [
+              -51.4558448444,
+              -0.1677138778
+            ],
+            [
+              -51.4556238669,
+              -0.1666029638
+            ],
+            [
+              -51.455354643,
+              -0.1655027457
+            ],
+            [
+              -51.4550376838,
+              -0.1644153182
+            ],
+            [
+              -51.4546735931,
+              -0.1633427512
+            ],
+            [
+              -51.4542630643,
+              -0.1622870861
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4542630893,
+              -0.1821568837
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::W",
+      "properties": {
+        "area_relative_error": 2.367e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.195413598,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.677023998,
+        "geo05_score": 0.340541667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.038403,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 16,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219912,
+        "representative_lon": -51.4486353829,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.372219061,
+        "sector_area_m2": 3271454.038403,
+        "sector_id": "MATA-01::MATA-01-E0::R01::W",
+        "sector_index": 7,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4542630643,
+              -0.1622870861
+            ],
+            [
+              -51.4542630643,
+              -0.162287086
+            ],
+            [
+              -51.4538068786,
+              -0.161250333
+            ],
+            [
+              -51.4533059049,
+              -0.1602344645
+            ],
+            [
+              -51.4527610957,
+              -0.1592414158
+            ],
+            [
+              -51.4521734892,
+              -0.1582730759
+            ],
+            [
+              -51.4515442032,
+              -0.1573312889
+            ],
+            [
+              -51.4508744356,
+              -0.1564178469
+            ],
+            [
+              -51.4501654623,
+              -0.1555344889
+            ],
+            [
+              -51.4494186315,
+              -0.1546828968
+            ],
+            [
+              -51.4486353658,
+              -0.1538646916
+            ],
+            [
+              -51.4478171559,
+              -0.15308143
+            ],
+            [
+              -51.4469655594,
+              -0.1523346038
+            ],
+            [
+              -51.4460821971,
+              -0.1516256344
+            ],
+            [
+              -51.4451687512,
+              -0.1509558713
+            ],
+            [
+              -51.4442269597,
+              -0.1503265896
+            ],
+            [
+              -51.4432586152,
+              -0.1497389869
+            ],
+            [
+              -51.4422655618,
+              -0.1491941814
+            ],
+            [
+              -51.4412496897,
+              -0.1486932113
+            ],
+            [
+              -51.4402129321,
+              -0.1482370292
+            ],
+            [
+              -51.430278,
+              -0.172222
+            ],
+            [
+              -51.4542630643,
+              -0.1622870861
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R01::NW",
+      "properties": {
+        "area_relative_error": 2.914e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.099769724,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.678359712,
+        "geo05_score": 0.35325,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 0.0,
+        "outer_radius_m": 2886.751346,
+        "polygon_planar_area_m2": 3271454.055677,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 21,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1592414244,
+        "representative_lon": -51.4432586213,
+        "ring_id": "R01",
+        "ring_index": 1,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.338553813,
+        "sector_area_m2": 3271454.055677,
+        "sector_id": "MATA-01::MATA-01-E0::R01::NW",
+        "sector_index": 8,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4443281092,
+              -0.1383021277
+            ],
+            [
+              -51.4443281089,
+              -0.1383021276
+            ],
+            [
+              -51.4428351682,
+              -0.1377215575
+            ],
+            [
+              -51.4413183244,
+              -0.1372066607
+            ],
+            [
+              -51.4397804641,
+              -0.136758417
+            ],
+            [
+              -51.4382245158,
+              -0.1363776812
+            ],
+            [
+              -51.4366534411,
+              -0.136065176
+            ],
+            [
+              -51.43507023,
+              -0.1358214982
+            ],
+            [
+              -51.433477897,
+              -0.13564711
+            ],
+            [
+              -51.4318794729,
+              -0.1355423437
+            ],
+            [
+              -51.430278,
+              -0.1355074
+            ],
+            [
+              -51.4286765271,
+              -0.1355423437
+            ],
+            [
+              -51.427078103,
+              -0.13564711
+            ],
+            [
+              -51.42548577,
+              -0.1358214982
+            ],
+            [
+              -51.4239025589,
+              -0.136065176
+            ],
+            [
+              -51.4223314842,
+              -0.1363776812
+            ],
+            [
+              -51.4207755359,
+              -0.136758417
+            ],
+            [
+              -51.4192376756,
+              -0.1372066607
+            ],
+            [
+              -51.4177208318,
+              -0.1377215575
+            ],
+            [
+              -51.4162278911,
+              -0.1383021276
+            ],
+            [
+              -51.4162278908,
+              -0.1383021277
+            ],
+            [
+              -51.4203430679,
+              -0.1482370292
+            ],
+            [
+              -51.4203430681,
+              -0.1482370291
+            ],
+            [
+              -51.4213987371,
+              -0.1478265039
+            ],
+            [
+              -51.422471308,
+              -0.1474624167
+            ],
+            [
+              -51.42355874,
+              -0.1471454604
+            ],
+            [
+              -51.4246589621,
+              -0.1468762394
+            ],
+            [
+              -51.4257698801,
+              -0.1466552648
+            ],
+            [
+              -51.42688938,
+              -0.1464829585
+            ],
+            [
+              -51.42801533,
+              -0.1463596473
+            ],
+            [
+              -51.4291455871,
+              -0.1462855663
+            ],
+            [
+              -51.430278,
+              -0.1462608574
+            ],
+            [
+              -51.4314104129,
+              -0.1462855663
+            ],
+            [
+              -51.43254067,
+              -0.1463596473
+            ],
+            [
+              -51.43366662,
+              -0.1464829585
+            ],
+            [
+              -51.4347861199,
+              -0.1466552648
+            ],
+            [
+              -51.4358970379,
+              -0.1468762394
+            ],
+            [
+              -51.43699726,
+              -0.1471454604
+            ],
+            [
+              -51.438084692,
+              -0.1474624167
+            ],
+            [
+              -51.4391572629,
+              -0.1478265039
+            ],
+            [
+              -51.4402129319,
+              -0.1482370291
+            ],
+            [
+              -51.4402129321,
+              -0.1482370292
+            ],
+            [
+              -51.4443281092,
+              -0.1383021277
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::N",
+      "properties": {
+        "area_relative_error": 3.579e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "COBERTURA_AGUA_UMIDA_POTENCIAL;GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.061006429,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.724742143,
+        "geo05_score": 0.296541667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.034437,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 24,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1404262237,
+        "representative_lon": -51.430278,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.316514365,
+        "sector_area_m2": 3271454.034437,
+        "sector_id": "MATA-01::MATA-01-E0::R02::N",
+        "sector_index": 9,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4162278908,
+              -0.1383021277
+            ],
+            [
+              -51.4147616947,
+              -0.1389472662
+            ],
+            [
+              -51.4133250351,
+              -0.1396557447
+            ],
+            [
+              -51.4119206459,
+              -0.1404262156
+            ],
+            [
+              -51.4105512004,
+              -0.141257211
+            ],
+            [
+              -51.4092193064,
+              -0.1421471493
+            ],
+            [
+              -51.4079274992,
+              -0.143094337
+            ],
+            [
+              -51.4066782364,
+              -0.1440969706
+            ],
+            [
+              -51.4054738973,
+              -0.1451531419
+            ],
+            [
+              -51.4043167738,
+              -0.1462608407
+            ],
+            [
+              -51.4032090688,
+              -0.1474179571
+            ],
+            [
+              -51.4021528905,
+              -0.1486222899
+            ],
+            [
+              -51.4011502508,
+              -0.1498715464
+            ],
+            [
+              -51.4002030561,
+              -0.151163348
+            ],
+            [
+              -51.3993131109,
+              -0.1524952355
+            ],
+            [
+              -51.3984821095,
+              -0.1538646745
+            ],
+            [
+              -51.3977116327,
+              -0.1552690571
+            ],
+            [
+              -51.3970031483,
+              -0.1567057117
+            ],
+            [
+              -51.3963580037,
+              -0.1581719014
+            ],
+            [
+              -51.3963580037,
+              -0.1581719015
+            ],
+            [
+              -51.4062929357,
+              -0.1622870861
+            ],
+            [
+              -51.4062929357,
+              -0.162287086
+            ],
+            [
+              -51.4067491214,
+              -0.161250333
+            ],
+            [
+              -51.4072500951,
+              -0.1602344645
+            ],
+            [
+              -51.4077949043,
+              -0.1592414158
+            ],
+            [
+              -51.4083825108,
+              -0.1582730759
+            ],
+            [
+              -51.4090117968,
+              -0.1573312889
+            ],
+            [
+              -51.4096815644,
+              -0.1564178469
+            ],
+            [
+              -51.4103905377,
+              -0.1555344889
+            ],
+            [
+              -51.4111373685,
+              -0.1546828968
+            ],
+            [
+              -51.4119206342,
+              -0.1538646916
+            ],
+            [
+              -51.4127388441,
+              -0.15308143
+            ],
+            [
+              -51.4135904406,
+              -0.1523346038
+            ],
+            [
+              -51.4144738029,
+              -0.1516256344
+            ],
+            [
+              -51.4153872488,
+              -0.1509558713
+            ],
+            [
+              -51.4163290403,
+              -0.1503265896
+            ],
+            [
+              -51.4172973848,
+              -0.1497389869
+            ],
+            [
+              -51.4182904382,
+              -0.1491941814
+            ],
+            [
+              -51.4193063103,
+              -0.1486932113
+            ],
+            [
+              -51.4203430679,
+              -0.1482370292
+            ],
+            [
+              -51.4162278908,
+              -0.1383021277
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::NE",
+      "properties": {
+        "area_relative_error": 1.931e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "COBERTURA_AGUA_UMIDA_POTENCIAL;GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.202505689,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.672566459,
+        "geo05_score": 0.313333333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.052461,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 17,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1497389784,
+        "representative_lon": -51.4077949149,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.364797776,
+        "sector_area_m2": 3271454.052461,
+        "sector_id": "MATA-01::MATA-01-E0::R02::NE",
+        "sector_index": 10,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.3963580037,
+              -0.1581719015
+            ],
+            [
+              -51.3957774278,
+              -0.1596648371
+            ],
+            [
+              -51.3952625251,
+              -0.1611816757
+            ],
+            [
+              -51.3948142763,
+              -0.1627195301
+            ],
+            [
+              -51.3944335356,
+              -0.1642754731
+            ],
+            [
+              -51.3941210254,
+              -0.1658465425
+            ],
+            [
+              -51.3938773434,
+              -0.1674297484
+            ],
+            [
+              -51.393702951,
+              -0.1690220768
+            ],
+            [
+              -51.3935981813,
+              -0.1706204964
+            ],
+            [
+              -51.3935632343,
+              -0.1722219647
+            ],
+            [
+              -51.3935981753,
+              -0.1738234329
+            ],
+            [
+              -51.3937029383,
+              -0.1754218532
+            ],
+            [
+              -51.3938773247,
+              -0.1770141815
+            ],
+            [
+              -51.3941210014,
+              -0.1785973888
+            ],
+            [
+              -51.3944335055,
+              -0.1801684596
+            ],
+            [
+              -51.394814241,
+              -0.1817244039
+            ],
+            [
+              -51.3952624844,
+              -0.1832622604
+            ],
+            [
+              -51.3957773824,
+              -0.184779101
+            ],
+            [
+              -51.3963579537,
+              -0.1862720379
+            ],
+            [
+              -51.3963579538,
+              -0.1862720381
+            ],
+            [
+              -51.4062929107,
+              -0.1821568837
+            ],
+            [
+              -51.4062929107,
+              -0.1821568836
+            ],
+            [
+              -51.4058823843,
+              -0.181101218
+            ],
+            [
+              -51.4055182958,
+              -0.1800286499
+            ],
+            [
+              -51.4052013393,
+              -0.1789412213
+            ],
+            [
+              -51.4049321181,
+              -0.1778410026
+            ],
+            [
+              -51.4047111437,
+              -0.1767300879
+            ],
+            [
+              -51.4045388376,
+              -0.1756105914
+            ],
+            [
+              -51.4044155271,
+              -0.1744846452
+            ],
+            [
+              -51.4043414479,
+              -0.1733543914
+            ],
+            [
+              -51.4043167402,
+              -0.1722219823
+            ],
+            [
+              -51.4043414508,
+              -0.1710895732
+            ],
+            [
+              -51.4044155336,
+              -0.1699593198
+            ],
+            [
+              -51.404538847,
+              -0.1688333734
+            ],
+            [
+              -51.4047111556,
+              -0.1677138778
+            ],
+            [
+              -51.4049321331,
+              -0.1666029638
+            ],
+            [
+              -51.405201357,
+              -0.1655027457
+            ],
+            [
+              -51.4055183162,
+              -0.1644153182
+            ],
+            [
+              -51.4058824069,
+              -0.1633427512
+            ],
+            [
+              -51.4062929357,
+              -0.1622870861
+            ],
+            [
+              -51.3963580037,
+              -0.1581719015
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::E",
+      "properties": {
+        "area_relative_error": 2.124e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.38502404,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.696281787,
+        "geo05_score": 0.453569444,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.053094,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 6,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219735,
+        "representative_lon": -51.3984820802,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.490874574,
+        "sector_area_m2": 3271454.053094,
+        "sector_id": "MATA-01::MATA-01-E0::R02::E",
+        "sector_index": 11,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.3963579538,
+              -0.1862720381
+            ],
+            [
+              -51.3970030935,
+              -0.1877382303
+            ],
+            [
+              -51.3977115746,
+              -0.1891748868
+            ],
+            [
+              -51.3984820482,
+              -0.1905792729
+            ],
+            [
+              -51.399313047,
+              -0.1919487138
+            ],
+            [
+              -51.4002029902,
+              -0.1932806047
+            ],
+            [
+              -51.401150182,
+              -0.1945724089
+            ],
+            [
+              -51.4021528212,
+              -0.195821668
+            ],
+            [
+              -51.4032089981,
+              -0.1970260041
+            ],
+            [
+              -51.4043167031,
+              -0.1981831239
+            ],
+            [
+              -51.4054738266,
+              -0.1992908253
+            ],
+            [
+              -51.4066781663,
+              -0.200347
+            ],
+            [
+              -51.4079274305,
+              -0.201349637
+            ],
+            [
+              -51.4092192405,
+              -0.2022968274
+            ],
+            [
+              -51.4105511364,
+              -0.2031867691
+            ],
+            [
+              -51.4119205846,
+              -0.2040177672
+            ],
+            [
+              -51.4133249771,
+              -0.20478824
+            ],
+            [
+              -51.4147616407,
+              -0.2054967211
+            ],
+            [
+              -51.4162278409,
+              -0.2061418616
+            ],
+            [
+              -51.420343043,
+              -0.1962069654
+            ],
+            [
+              -51.4193062833,
+              -0.1957507824
+            ],
+            [
+              -51.4182904092,
+              -0.1952498108
+            ],
+            [
+              -51.4172973541,
+              -0.1947050046
+            ],
+            [
+              -51.4163290083,
+              -0.1941174006
+            ],
+            [
+              -51.4153872159,
+              -0.193488117
+            ],
+            [
+              -51.4144737685,
+              -0.1928183526
+            ],
+            [
+              -51.4135904055,
+              -0.1921093815
+            ],
+            [
+              -51.4127388087,
+              -0.1913625536
+            ],
+            [
+              -51.4119205989,
+              -0.1905792908
+            ],
+            [
+              -51.4111373331,
+              -0.1897610838
+            ],
+            [
+              -51.4103905032,
+              -0.1889094899
+            ],
+            [
+              -51.40968153,
+              -0.1880261307
+            ],
+            [
+              -51.409011764,
+              -0.1871126875
+            ],
+            [
+              -51.4083824788,
+              -0.1861708986
+            ],
+            [
+              -51.4077948736,
+              -0.185202558
+            ],
+            [
+              -51.4072500661,
+              -0.1842095073
+            ],
+            [
+              -51.4067490939,
+              -0.183193638
+            ],
+            [
+              -51.4062929107,
+              -0.1821568837
+            ],
+            [
+              -51.3963579538,
+              -0.1862720381
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::SE",
+      "properties": {
+        "area_relative_error": 1.512e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.329475692,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.701166064,
+        "geo05_score": 0.373083333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.051092,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 11,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1947049951,
+        "representative_lon": -51.4077948619,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.443129005,
+        "sector_area_m2": 3271454.051092,
+        "sector_id": "MATA-01::MATA-01-E0::R02::SE",
+        "sector_index": 12,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4162278409,
+              -0.2061418616
+            ],
+            [
+              -51.4162278411,
+              -0.2061418617
+            ],
+            [
+              -51.4177207865,
+              -0.2067224346
+            ],
+            [
+              -51.4192376357,
+              -0.2072373334
+            ],
+            [
+              -51.4207755006,
+              -0.2076855776
+            ],
+            [
+              -51.4223314542,
+              -0.2080663155
+            ],
+            [
+              -51.4239025349,
+              -0.208378822
+            ],
+            [
+              -51.4254857512,
+              -0.2086225012
+            ],
+            [
+              -51.4270780911,
+              -0.2087968893
+            ],
+            [
+              -51.4286765211,
+              -0.2089016556
+            ],
+            [
+              -51.430278,
+              -0.2089366
+            ],
+            [
+              -51.4318794789,
+              -0.2089016556
+            ],
+            [
+              -51.4334779089,
+              -0.2087968893
+            ],
+            [
+              -51.4350702488,
+              -0.2086225012
+            ],
+            [
+              -51.4366534651,
+              -0.208378822
+            ],
+            [
+              -51.4382245458,
+              -0.2080663155
+            ],
+            [
+              -51.4397804994,
+              -0.2076855776
+            ],
+            [
+              -51.4413183643,
+              -0.2072373334
+            ],
+            [
+              -51.4428352135,
+              -0.2067224346
+            ],
+            [
+              -51.4443281589,
+              -0.2061418617
+            ],
+            [
+              -51.4443281591,
+              -0.2061418616
+            ],
+            [
+              -51.440212957,
+              -0.1962069654
+            ],
+            [
+              -51.4402129569,
+              -0.1962069654
+            ],
+            [
+              -51.4391572856,
+              -0.1966174922
+            ],
+            [
+              -51.4380847118,
+              -0.1969815804
+            ],
+            [
+              -51.4369972777,
+              -0.1972985367
+            ],
+            [
+              -51.435897053,
+              -0.1975677589
+            ],
+            [
+              -51.4347861318,
+              -0.1977887343
+            ],
+            [
+              -51.4336666295,
+              -0.1979610414
+            ],
+            [
+              -51.4325406759,
+              -0.1980843523
+            ],
+            [
+              -51.4314104158,
+              -0.1981584332
+            ],
+            [
+              -51.430278,
+              -0.1981831426
+            ],
+            [
+              -51.4291455842,
+              -0.1981584332
+            ],
+            [
+              -51.4280153241,
+              -0.1980843523
+            ],
+            [
+              -51.4268893705,
+              -0.1979610414
+            ],
+            [
+              -51.4257698682,
+              -0.1977887343
+            ],
+            [
+              -51.424658947,
+              -0.1975677589
+            ],
+            [
+              -51.4235587223,
+              -0.1972985367
+            ],
+            [
+              -51.4224712882,
+              -0.1969815804
+            ],
+            [
+              -51.4213987144,
+              -0.1966174922
+            ],
+            [
+              -51.4203430431,
+              -0.1962069654
+            ],
+            [
+              -51.420343043,
+              -0.1962069654
+            ],
+            [
+              -51.4162278409,
+              -0.2061418616
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::S",
+      "properties": {
+        "area_relative_error": 3.147e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.401954338,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.692138098,
+        "geo05_score": 0.396458333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.035851,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 7,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.2040177763,
+        "representative_lon": -51.430278,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.477504672,
+        "sector_area_m2": 3271454.035851,
+        "sector_id": "MATA-01::MATA-01-E0::R02::S",
+        "sector_index": 13,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4443281591,
+              -0.2061418616
+            ],
+            [
+              -51.4457943593,
+              -0.2054967211
+            ],
+            [
+              -51.4472310229,
+              -0.20478824
+            ],
+            [
+              -51.4486354154,
+              -0.2040177672
+            ],
+            [
+              -51.4500048636,
+              -0.2031867691
+            ],
+            [
+              -51.4513367595,
+              -0.2022968274
+            ],
+            [
+              -51.4526285695,
+              -0.201349637
+            ],
+            [
+              -51.4538778337,
+              -0.200347
+            ],
+            [
+              -51.4550821734,
+              -0.1992908253
+            ],
+            [
+              -51.4562392969,
+              -0.1981831239
+            ],
+            [
+              -51.4573470019,
+              -0.1970260041
+            ],
+            [
+              -51.4584031788,
+              -0.195821668
+            ],
+            [
+              -51.459405818,
+              -0.1945724089
+            ],
+            [
+              -51.4603530098,
+              -0.1932806047
+            ],
+            [
+              -51.461242953,
+              -0.1919487138
+            ],
+            [
+              -51.4620739518,
+              -0.1905792729
+            ],
+            [
+              -51.4628444254,
+              -0.1891748868
+            ],
+            [
+              -51.4635529065,
+              -0.1877382303
+            ],
+            [
+              -51.4641980462,
+              -0.1862720381
+            ],
+            [
+              -51.4542630893,
+              -0.1821568837
+            ],
+            [
+              -51.4538069061,
+              -0.183193638
+            ],
+            [
+              -51.4533059339,
+              -0.1842095073
+            ],
+            [
+              -51.4527611264,
+              -0.185202558
+            ],
+            [
+              -51.4521735212,
+              -0.1861708986
+            ],
+            [
+              -51.451544236,
+              -0.1871126875
+            ],
+            [
+              -51.45087447,
+              -0.1880261307
+            ],
+            [
+              -51.4501654968,
+              -0.1889094899
+            ],
+            [
+              -51.4494186669,
+              -0.1897610838
+            ],
+            [
+              -51.4486354011,
+              -0.1905792908
+            ],
+            [
+              -51.4478171913,
+              -0.1913625536
+            ],
+            [
+              -51.4469655945,
+              -0.1921093815
+            ],
+            [
+              -51.4460822315,
+              -0.1928183526
+            ],
+            [
+              -51.4451687841,
+              -0.193488117
+            ],
+            [
+              -51.4442269917,
+              -0.1941174006
+            ],
+            [
+              -51.4432586459,
+              -0.1947050046
+            ],
+            [
+              -51.4422655908,
+              -0.1952498108
+            ],
+            [
+              -51.4412497167,
+              -0.1957507824
+            ],
+            [
+              -51.440212957,
+              -0.1962069654
+            ],
+            [
+              -51.4443281591,
+              -0.2061418616
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::SW",
+      "properties": {
+        "area_relative_error": 1.512e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.527236914,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.655249024,
+        "geo05_score": 0.367291667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.051093,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 2,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1947049951,
+        "representative_lon": -51.4527611381,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.508058394,
+        "sector_area_m2": 3271454.051093,
+        "sector_id": "MATA-01::MATA-01-E0::R02::SW",
+        "sector_index": 14,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4641980462,
+              -0.1862720381
+            ],
+            [
+              -51.4641980463,
+              -0.1862720379
+            ],
+            [
+              -51.4647786176,
+              -0.184779101
+            ],
+            [
+              -51.4652935156,
+              -0.1832622604
+            ],
+            [
+              -51.465741759,
+              -0.1817244039
+            ],
+            [
+              -51.4661224945,
+              -0.1801684596
+            ],
+            [
+              -51.4664349986,
+              -0.1785973888
+            ],
+            [
+              -51.4666786753,
+              -0.1770141815
+            ],
+            [
+              -51.4668530617,
+              -0.1754218532
+            ],
+            [
+              -51.4669578247,
+              -0.1738234329
+            ],
+            [
+              -51.4669927657,
+              -0.1722219647
+            ],
+            [
+              -51.4669578187,
+              -0.1706204964
+            ],
+            [
+              -51.466853049,
+              -0.1690220768
+            ],
+            [
+              -51.4666786566,
+              -0.1674297484
+            ],
+            [
+              -51.4664349746,
+              -0.1658465425
+            ],
+            [
+              -51.4661224644,
+              -0.1642754731
+            ],
+            [
+              -51.4657417237,
+              -0.1627195301
+            ],
+            [
+              -51.4652934749,
+              -0.1611816757
+            ],
+            [
+              -51.4647785722,
+              -0.1596648371
+            ],
+            [
+              -51.4641979963,
+              -0.1581719015
+            ],
+            [
+              -51.4542630643,
+              -0.1622870861
+            ],
+            [
+              -51.4546735931,
+              -0.1633427512
+            ],
+            [
+              -51.4550376838,
+              -0.1644153182
+            ],
+            [
+              -51.455354643,
+              -0.1655027457
+            ],
+            [
+              -51.4556238669,
+              -0.1666029638
+            ],
+            [
+              -51.4558448444,
+              -0.1677138778
+            ],
+            [
+              -51.456017153,
+              -0.1688333734
+            ],
+            [
+              -51.4561404664,
+              -0.1699593198
+            ],
+            [
+              -51.4562145492,
+              -0.1710895732
+            ],
+            [
+              -51.4562392598,
+              -0.1722219823
+            ],
+            [
+              -51.4562145521,
+              -0.1733543914
+            ],
+            [
+              -51.4561404729,
+              -0.1744846452
+            ],
+            [
+              -51.4560171624,
+              -0.1756105914
+            ],
+            [
+              -51.4558448563,
+              -0.1767300879
+            ],
+            [
+              -51.4556238819,
+              -0.1778410026
+            ],
+            [
+              -51.4553546607,
+              -0.1789412213
+            ],
+            [
+              -51.4550377042,
+              -0.1800286499
+            ],
+            [
+              -51.4546736157,
+              -0.181101218
+            ],
+            [
+              -51.4542630893,
+              -0.1821568836
+            ],
+            [
+              -51.4542630893,
+              -0.1821568837
+            ],
+            [
+              -51.4641980462,
+              -0.1862720381
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::W",
+      "properties": {
+        "area_relative_error": 2.124e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.301108006,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.673224314,
+        "geo05_score": 0.352208333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.053093,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 13,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219735,
+        "representative_lon": -51.4620739198,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.417372464,
+        "sector_area_m2": 3271454.053093,
+        "sector_id": "MATA-01::MATA-01-E0::R02::W",
+        "sector_index": 15,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4641979963,
+              -0.1581719015
+            ],
+            [
+              -51.4641979963,
+              -0.1581719014
+            ],
+            [
+              -51.4635528517,
+              -0.1567057117
+            ],
+            [
+              -51.4628443673,
+              -0.1552690571
+            ],
+            [
+              -51.4620738905,
+              -0.1538646745
+            ],
+            [
+              -51.4612428891,
+              -0.1524952355
+            ],
+            [
+              -51.4603529439,
+              -0.151163348
+            ],
+            [
+              -51.4594057492,
+              -0.1498715464
+            ],
+            [
+              -51.4584031095,
+              -0.1486222899
+            ],
+            [
+              -51.4573469312,
+              -0.1474179571
+            ],
+            [
+              -51.4562392262,
+              -0.1462608407
+            ],
+            [
+              -51.4550821027,
+              -0.1451531419
+            ],
+            [
+              -51.4538777636,
+              -0.1440969706
+            ],
+            [
+              -51.4526285008,
+              -0.143094337
+            ],
+            [
+              -51.4513366936,
+              -0.1421471493
+            ],
+            [
+              -51.4500047996,
+              -0.141257211
+            ],
+            [
+              -51.4486353541,
+              -0.1404262156
+            ],
+            [
+              -51.4472309649,
+              -0.1396557447
+            ],
+            [
+              -51.4457943053,
+              -0.1389472662
+            ],
+            [
+              -51.4443281092,
+              -0.1383021277
+            ],
+            [
+              -51.4402129321,
+              -0.1482370292
+            ],
+            [
+              -51.4412496897,
+              -0.1486932113
+            ],
+            [
+              -51.4422655618,
+              -0.1491941814
+            ],
+            [
+              -51.4432586152,
+              -0.1497389869
+            ],
+            [
+              -51.4442269597,
+              -0.1503265896
+            ],
+            [
+              -51.4451687512,
+              -0.1509558713
+            ],
+            [
+              -51.4460821971,
+              -0.1516256344
+            ],
+            [
+              -51.4469655594,
+              -0.1523346038
+            ],
+            [
+              -51.4478171559,
+              -0.15308143
+            ],
+            [
+              -51.4486353658,
+              -0.1538646916
+            ],
+            [
+              -51.4494186315,
+              -0.1546828968
+            ],
+            [
+              -51.4501654623,
+              -0.1555344889
+            ],
+            [
+              -51.4508744356,
+              -0.1564178469
+            ],
+            [
+              -51.4515442032,
+              -0.1573312889
+            ],
+            [
+              -51.4521734892,
+              -0.1582730759
+            ],
+            [
+              -51.4527610957,
+              -0.1592414158
+            ],
+            [
+              -51.4533059049,
+              -0.1602344645
+            ],
+            [
+              -51.4538068786,
+              -0.161250333
+            ],
+            [
+              -51.4542630643,
+              -0.162287086
+            ],
+            [
+              -51.4542630643,
+              -0.1622870861
+            ],
+            [
+              -51.4641979963,
+              -0.1581719015
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R02::NW",
+      "properties": {
+        "area_relative_error": 1.931e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.12192503,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.664433787,
+        "geo05_score": 0.355125,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 2886.751346,
+        "outer_radius_m": 4082.482905,
+        "polygon_planar_area_m2": 3271454.052461,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 20,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1497389784,
+        "representative_lon": -51.4527610851,
+        "ring_id": "R02",
+        "ring_index": 2,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.344327355,
+        "sector_area_m2": 3271454.052461,
+        "sector_id": "MATA-01::MATA-01-E0::R02::NW",
+        "sector_index": 16,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4474857934,
+              -0.1306788092
+            ],
+            [
+              -51.447485793,
+              -0.130678809
+            ],
+            [
+              -51.445657322,
+              -0.129967759
+            ],
+            [
+              -51.443799576,
+              -0.129337142
+            ],
+            [
+              -51.44191609,
+              -0.128788158
+            ],
+            [
+              -51.440010451,
+              -0.128321854
+            ],
+            [
+              -51.438086286,
+              -0.127939115
+            ],
+            [
+              -51.436147257,
+              -0.127640672
+            ],
+            [
+              -51.434197056,
+              -0.127427091
+            ],
+            [
+              -51.432239395,
+              -0.127298779
+            ],
+            [
+              -51.430278,
+              -0.127255982
+            ],
+            [
+              -51.428316605,
+              -0.127298779
+            ],
+            [
+              -51.426358944,
+              -0.127427091
+            ],
+            [
+              -51.424408743,
+              -0.127640672
+            ],
+            [
+              -51.422469714,
+              -0.127939115
+            ],
+            [
+              -51.420545549,
+              -0.128321854
+            ],
+            [
+              -51.41863991,
+              -0.128788158
+            ],
+            [
+              -51.416756424,
+              -0.129337142
+            ],
+            [
+              -51.414898678,
+              -0.129967759
+            ],
+            [
+              -51.413070207,
+              -0.130678809
+            ],
+            [
+              -51.4130702066,
+              -0.1306788092
+            ],
+            [
+              -51.4162278908,
+              -0.1383021277
+            ],
+            [
+              -51.4162278911,
+              -0.1383021276
+            ],
+            [
+              -51.4177208318,
+              -0.1377215575
+            ],
+            [
+              -51.4192376756,
+              -0.1372066607
+            ],
+            [
+              -51.4207755359,
+              -0.136758417
+            ],
+            [
+              -51.4223314842,
+              -0.1363776812
+            ],
+            [
+              -51.4239025589,
+              -0.136065176
+            ],
+            [
+              -51.42548577,
+              -0.1358214982
+            ],
+            [
+              -51.427078103,
+              -0.13564711
+            ],
+            [
+              -51.4286765271,
+              -0.1355423437
+            ],
+            [
+              -51.430278,
+              -0.1355074
+            ],
+            [
+              -51.4318794729,
+              -0.1355423437
+            ],
+            [
+              -51.433477897,
+              -0.13564711
+            ],
+            [
+              -51.43507023,
+              -0.1358214982
+            ],
+            [
+              -51.4366534411,
+              -0.136065176
+            ],
+            [
+              -51.4382245158,
+              -0.1363776812
+            ],
+            [
+              -51.4397804641,
+              -0.136758417
+            ],
+            [
+              -51.4413183244,
+              -0.1372066607
+            ],
+            [
+              -51.4428351682,
+              -0.1377215575
+            ],
+            [
+              -51.4443281089,
+              -0.1383021276
+            ],
+            [
+              -51.4443281092,
+              -0.1383021277
+            ],
+            [
+              -51.4474857934,
+              -0.1306788092
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::N",
+      "properties": {
+        "area_relative_error": 6.72e-10,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 0.0,
+        "azimuth_end_deg": 22.5,
+        "azimuth_start_deg": 337.5,
+        "barrier_flags": "COBERTURA_AGUA_UMIDA_POTENCIAL;GEO03_OSM_HIDRO_INDISPONIVEL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "N",
+        "direction_index": 1,
+        "direction_label": "N",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.084868267,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.711824267,
+        "geo05_score": 0.307930556,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.048346,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 23,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1311738294,
+        "representative_lon": -51.430278,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.32641063,
+        "sector_area_m2": 3271454.048346,
+        "sector_id": "MATA-01::MATA-01-E0::R03::N",
+        "sector_index": 17,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4130702066,
+              -0.1306788092
+            ],
+            [
+              -51.411274491,
+              -0.131468939
+            ],
+            [
+              -51.40951495,
+              -0.132336644
+            ],
+            [
+              -51.407794932,
+              -0.133280274
+            ],
+            [
+              -51.406117711,
+              -0.134298031
+            ],
+            [
+              -51.404486481,
+              -0.135387978
+            ],
+            [
+              -51.402904347,
+              -0.136548041
+            ],
+            [
+              -51.401374319,
+              -0.137776011
+            ],
+            [
+              -51.399899311,
+              -0.139069551
+            ],
+            [
+              -51.39848213,
+              -0.140426199
+            ],
+            [
+              -51.397125474,
+              -0.141843371
+            ],
+            [
+              -51.395831925,
+              -0.143318371
+            ],
+            [
+              -51.394603947,
+              -0.144848391
+            ],
+            [
+              -51.393443875,
+              -0.146430518
+            ],
+            [
+              -51.392353919,
+              -0.14806174
+            ],
+            [
+              -51.391336154,
+              -0.149738953
+            ],
+            [
+              -51.390392516,
+              -0.151458963
+            ],
+            [
+              -51.389524803,
+              -0.153218498
+            ],
+            [
+              -51.388734665,
+              -0.155014206
+            ],
+            [
+              -51.3887346649,
+              -0.1550142061
+            ],
+            [
+              -51.3963580037,
+              -0.1581719015
+            ],
+            [
+              -51.3963580037,
+              -0.1581719014
+            ],
+            [
+              -51.3970031483,
+              -0.1567057117
+            ],
+            [
+              -51.3977116327,
+              -0.1552690571
+            ],
+            [
+              -51.3984821095,
+              -0.1538646745
+            ],
+            [
+              -51.3993131109,
+              -0.1524952355
+            ],
+            [
+              -51.4002030561,
+              -0.151163348
+            ],
+            [
+              -51.4011502508,
+              -0.1498715464
+            ],
+            [
+              -51.4021528905,
+              -0.1486222899
+            ],
+            [
+              -51.4032090688,
+              -0.1474179571
+            ],
+            [
+              -51.4043167738,
+              -0.1462608407
+            ],
+            [
+              -51.4054738973,
+              -0.1451531419
+            ],
+            [
+              -51.4066782364,
+              -0.1440969706
+            ],
+            [
+              -51.4079274992,
+              -0.143094337
+            ],
+            [
+              -51.4092193064,
+              -0.1421471493
+            ],
+            [
+              -51.4105512004,
+              -0.141257211
+            ],
+            [
+              -51.4119206459,
+              -0.1404262156
+            ],
+            [
+              -51.4133250351,
+              -0.1396557447
+            ],
+            [
+              -51.4147616947,
+              -0.1389472662
+            ],
+            [
+              -51.4162278908,
+              -0.1383021277
+            ],
+            [
+              -51.4130702066,
+              -0.1306788092
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::NE",
+      "properties": {
+        "area_relative_error": 8.95e-10,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 45.0,
+        "azimuth_end_deg": 67.5,
+        "azimuth_start_deg": 22.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NE",
+        "direction_index": 2,
+        "direction_label": "NE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.167769498,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.654276268,
+        "geo05_score": 0.368083333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.043217,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 18,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1431965394,
+        "representative_lon": -51.4012524709,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.364275915,
+        "sector_area_m2": 3271454.043217,
+        "sector_id": "MATA-01::MATA-01-E0::R03::NE",
+        "sector_index": 18,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.3887346649,
+              -0.1550142061
+            ],
+            [
+              -51.388023607,
+              -0.156842671
+            ],
+            [
+              -51.387392982,
+              -0.158700411
+            ],
+            [
+              -51.386843991,
+              -0.16058389
+            ],
+            [
+              -51.38637768,
+              -0.162489523
+            ],
+            [
+              -51.385994934,
+              -0.164413682
+            ],
+            [
+              -51.385696485,
+              -0.166352705
+            ],
+            [
+              -51.385482898,
+              -0.168302901
+            ],
+            [
+              -51.385354581,
+              -0.170260557
+            ],
+            [
+              -51.385311779,
+              -0.172221947
+            ],
+            [
+              -51.385354572,
+              -0.174183337
+            ],
+            [
+              -51.385482879,
+              -0.176140994
+            ],
+            [
+              -51.385696457,
+              -0.17809119
+            ],
+            [
+              -51.385994898,
+              -0.180030215
+            ],
+            [
+              -51.386377635,
+              -0.181954376
+            ],
+            [
+              -51.386843938,
+              -0.183860011
+            ],
+            [
+              -51.387392921,
+              -0.185743493
+            ],
+            [
+              -51.388023539,
+              -0.187601236
+            ],
+            [
+              -51.38873459,
+              -0.189429703
+            ],
+            [
+              -51.3887345901,
+              -0.1894297032
+            ],
+            [
+              -51.3963579538,
+              -0.1862720381
+            ],
+            [
+              -51.3963579537,
+              -0.1862720379
+            ],
+            [
+              -51.3957773824,
+              -0.184779101
+            ],
+            [
+              -51.3952624844,
+              -0.1832622604
+            ],
+            [
+              -51.394814241,
+              -0.1817244039
+            ],
+            [
+              -51.3944335055,
+              -0.1801684596
+            ],
+            [
+              -51.3941210014,
+              -0.1785973888
+            ],
+            [
+              -51.3938773247,
+              -0.1770141815
+            ],
+            [
+              -51.3937029383,
+              -0.1754218532
+            ],
+            [
+              -51.3935981753,
+              -0.1738234329
+            ],
+            [
+              -51.3935632343,
+              -0.1722219647
+            ],
+            [
+              -51.3935981813,
+              -0.1706204964
+            ],
+            [
+              -51.393702951,
+              -0.1690220768
+            ],
+            [
+              -51.3938773434,
+              -0.1674297484
+            ],
+            [
+              -51.3941210254,
+              -0.1658465425
+            ],
+            [
+              -51.3944335356,
+              -0.1642754731
+            ],
+            [
+              -51.3948142763,
+              -0.1627195301
+            ],
+            [
+              -51.3952625251,
+              -0.1611816757
+            ],
+            [
+              -51.3957774278,
+              -0.1596648371
+            ],
+            [
+              -51.3963580037,
+              -0.1581719015
+            ],
+            [
+              -51.3887346649,
+              -0.1550142061
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::E",
+      "properties": {
+        "area_relative_error": 1.799e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 90.0,
+        "azimuth_end_deg": 112.5,
+        "azimuth_start_deg": 67.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "E",
+        "direction_index": 3,
+        "direction_label": "E",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.314331512,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.664383287,
+        "geo05_score": 0.424625,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.052031,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 10,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219558,
+        "representative_lon": -51.3892296441,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.444443148,
+        "sector_area_m2": 3271454.052031,
+        "sector_id": "MATA-01::MATA-01-E0::R03::E",
+        "sector_index": 19,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.3887345901,
+              -0.1894297032
+            ],
+            [
+              -51.389524721,
+              -0.191225415
+            ],
+            [
+              -51.390392429,
+              -0.192984953
+            ],
+            [
+              -51.391336062,
+              -0.194704968
+            ],
+            [
+              -51.392353823,
+              -0.196382184
+            ],
+            [
+              -51.393443776,
+              -0.198013411
+            ],
+            [
+              -51.394603844,
+              -0.199595542
+            ],
+            [
+              -51.395831821,
+              -0.201125566
+            ],
+            [
+              -51.397125368,
+              -0.202600571
+            ],
+            [
+              -51.398482024,
+              -0.204017748
+            ],
+            [
+              -51.399899205,
+              -0.2053744
+            ],
+            [
+              -51.401374214,
+              -0.206667945
+            ],
+            [
+              -51.402904244,
+              -0.20789592
+            ],
+            [
+              -51.404486382,
+              -0.209055987
+            ],
+            [
+              -51.406117615,
+              -0.210145939
+            ],
+            [
+              -51.40779484,
+              -0.2111637
+            ],
+            [
+              -51.409514863,
+              -0.212107333
+            ],
+            [
+              -51.41127441,
+              -0.212975042
+            ],
+            [
+              -51.4130701318,
+              -0.2137651749
+            ],
+            [
+              -51.4162278409,
+              -0.2061418616
+            ],
+            [
+              -51.4147616407,
+              -0.2054967211
+            ],
+            [
+              -51.4133249771,
+              -0.20478824
+            ],
+            [
+              -51.4119205846,
+              -0.2040177672
+            ],
+            [
+              -51.4105511364,
+              -0.2031867691
+            ],
+            [
+              -51.4092192405,
+              -0.2022968274
+            ],
+            [
+              -51.4079274305,
+              -0.201349637
+            ],
+            [
+              -51.4066781663,
+              -0.200347
+            ],
+            [
+              -51.4054738266,
+              -0.1992908253
+            ],
+            [
+              -51.4043167031,
+              -0.1981831239
+            ],
+            [
+              -51.4032089981,
+              -0.1970260041
+            ],
+            [
+              -51.4021528212,
+              -0.195821668
+            ],
+            [
+              -51.401150182,
+              -0.1945724089
+            ],
+            [
+              -51.4002029902,
+              -0.1932806047
+            ],
+            [
+              -51.399313047,
+              -0.1919487138
+            ],
+            [
+              -51.3984820482,
+              -0.1905792729
+            ],
+            [
+              -51.3977115746,
+              -0.1891748868
+            ],
+            [
+              -51.3970030935,
+              -0.1877382303
+            ],
+            [
+              -51.3963579538,
+              -0.1862720381
+            ],
+            [
+              -51.3887345901,
+              -0.1894297032
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::SE",
+      "properties": {
+        "area_relative_error": 2e-11,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 135.0,
+        "azimuth_end_deg": 157.5,
+        "azimuth_start_deg": 112.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SE",
+        "direction_index": 4,
+        "direction_label": "SE",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.37959512,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.71417113,
+        "geo05_score": 0.388666667,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.04621,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 8,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.2012474163,
+        "representative_lon": -51.4012523825,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.471839238,
+        "sector_area_m2": 3271454.04621,
+        "sector_id": "MATA-01::MATA-01-E0::R03::SE",
+        "sector_index": 20,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4130701318,
+              -0.2137651749
+            ],
+            [
+              -51.413070132,
+              -0.213765175
+            ],
+            [
+              -51.41489861,
+              -0.214476229
+            ],
+            [
+              -51.416756364,
+              -0.215106849
+            ],
+            [
+              -51.418639857,
+              -0.215655834
+            ],
+            [
+              -51.420545504,
+              -0.216122141
+            ],
+            [
+              -51.422469678,
+              -0.216504882
+            ],
+            [
+              -51.424408715,
+              -0.216803327
+            ],
+            [
+              -51.426358926,
+              -0.217016908
+            ],
+            [
+              -51.428316596,
+              -0.21714522
+            ],
+            [
+              -51.430278,
+              -0.217188018
+            ],
+            [
+              -51.432239404,
+              -0.21714522
+            ],
+            [
+              -51.434197074,
+              -0.217016908
+            ],
+            [
+              -51.436147285,
+              -0.216803327
+            ],
+            [
+              -51.438086322,
+              -0.216504882
+            ],
+            [
+              -51.440010496,
+              -0.216122141
+            ],
+            [
+              -51.441916143,
+              -0.215655834
+            ],
+            [
+              -51.443799636,
+              -0.215106849
+            ],
+            [
+              -51.44565739,
+              -0.214476229
+            ],
+            [
+              -51.447485868,
+              -0.213765175
+            ],
+            [
+              -51.4474858682,
+              -0.2137651749
+            ],
+            [
+              -51.4443281591,
+              -0.2061418616
+            ],
+            [
+              -51.4443281589,
+              -0.2061418617
+            ],
+            [
+              -51.4428352135,
+              -0.2067224346
+            ],
+            [
+              -51.4413183643,
+              -0.2072373334
+            ],
+            [
+              -51.4397804994,
+              -0.2076855776
+            ],
+            [
+              -51.4382245458,
+              -0.2080663155
+            ],
+            [
+              -51.4366534651,
+              -0.208378822
+            ],
+            [
+              -51.4350702488,
+              -0.2086225012
+            ],
+            [
+              -51.4334779089,
+              -0.2087968893
+            ],
+            [
+              -51.4318794789,
+              -0.2089016556
+            ],
+            [
+              -51.430278,
+              -0.2089366
+            ],
+            [
+              -51.4286765211,
+              -0.2089016556
+            ],
+            [
+              -51.4270780911,
+              -0.2087968893
+            ],
+            [
+              -51.4254857512,
+              -0.2086225012
+            ],
+            [
+              -51.4239025349,
+              -0.208378822
+            ],
+            [
+              -51.4223314542,
+              -0.2080663155
+            ],
+            [
+              -51.4207755006,
+              -0.2076855776
+            ],
+            [
+              -51.4192376357,
+              -0.2072373334
+            ],
+            [
+              -51.4177207865,
+              -0.2067224346
+            ],
+            [
+              -51.4162278411,
+              -0.2061418617
+            ],
+            [
+              -51.4162278409,
+              -0.2061418616
+            ],
+            [
+              -51.4130701318,
+              -0.2137651749
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::S",
+      "properties": {
+        "area_relative_error": 4.238e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 180.0,
+        "azimuth_end_deg": 202.5,
+        "azimuth_start_deg": 157.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "S",
+        "direction_index": 5,
+        "direction_label": "S",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.438949977,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.701119356,
+        "geo05_score": 0.392333333,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.032281,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 5,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.2132701706,
+        "representative_lon": -51.430278,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.49332293,
+        "sector_area_m2": 3271454.032281,
+        "sector_id": "MATA-01::MATA-01-E0::R03::S",
+        "sector_index": 21,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4474858682,
+              -0.2137651749
+            ],
+            [
+              -51.44928159,
+              -0.212975042
+            ],
+            [
+              -51.451041137,
+              -0.212107333
+            ],
+            [
+              -51.45276116,
+              -0.2111637
+            ],
+            [
+              -51.454438385,
+              -0.210145939
+            ],
+            [
+              -51.456069618,
+              -0.209055987
+            ],
+            [
+              -51.457651756,
+              -0.20789592
+            ],
+            [
+              -51.459181786,
+              -0.206667945
+            ],
+            [
+              -51.460656795,
+              -0.2053744
+            ],
+            [
+              -51.462073976,
+              -0.204017748
+            ],
+            [
+              -51.463430632,
+              -0.202600571
+            ],
+            [
+              -51.464724179,
+              -0.201125566
+            ],
+            [
+              -51.465952156,
+              -0.199595542
+            ],
+            [
+              -51.467112224,
+              -0.198013411
+            ],
+            [
+              -51.468202177,
+              -0.196382184
+            ],
+            [
+              -51.469219938,
+              -0.194704968
+            ],
+            [
+              -51.470163571,
+              -0.192984953
+            ],
+            [
+              -51.471031279,
+              -0.191225415
+            ],
+            [
+              -51.4718214099,
+              -0.1894297032
+            ],
+            [
+              -51.4641980462,
+              -0.1862720381
+            ],
+            [
+              -51.4635529065,
+              -0.1877382303
+            ],
+            [
+              -51.4628444254,
+              -0.1891748868
+            ],
+            [
+              -51.4620739518,
+              -0.1905792729
+            ],
+            [
+              -51.461242953,
+              -0.1919487138
+            ],
+            [
+              -51.4603530098,
+              -0.1932806047
+            ],
+            [
+              -51.459405818,
+              -0.1945724089
+            ],
+            [
+              -51.4584031788,
+              -0.195821668
+            ],
+            [
+              -51.4573470019,
+              -0.1970260041
+            ],
+            [
+              -51.4562392969,
+              -0.1981831239
+            ],
+            [
+              -51.4550821734,
+              -0.1992908253
+            ],
+            [
+              -51.4538778337,
+              -0.200347
+            ],
+            [
+              -51.4526285695,
+              -0.201349637
+            ],
+            [
+              -51.4513367595,
+              -0.2022968274
+            ],
+            [
+              -51.4500048636,
+              -0.2031867691
+            ],
+            [
+              -51.4486354154,
+              -0.2040177672
+            ],
+            [
+              -51.4472310229,
+              -0.20478824
+            ],
+            [
+              -51.4457943593,
+              -0.2054967211
+            ],
+            [
+              -51.4443281591,
+              -0.2061418616
+            ],
+            [
+              -51.4474858682,
+              -0.2137651749
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::SW",
+      "properties": {
+        "area_relative_error": 2e-11,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 225.0,
+        "azimuth_end_deg": 247.5,
+        "azimuth_start_deg": 202.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "SW",
+        "direction_index": 6,
+        "direction_label": "SW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.298773766,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.650944423,
+        "geo05_score": 0.38325,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.046212,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 12,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.2012474163,
+        "representative_lon": -51.4593036175,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.420844686,
+        "sector_area_m2": 3271454.046212,
+        "sector_id": "MATA-01::MATA-01-E0::R03::SW",
+        "sector_index": 22,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4718214099,
+              -0.1894297032
+            ],
+            [
+              -51.47182141,
+              -0.189429703
+            ],
+            [
+              -51.472532461,
+              -0.187601236
+            ],
+            [
+              -51.473163079,
+              -0.185743493
+            ],
+            [
+              -51.473712062,
+              -0.183860011
+            ],
+            [
+              -51.474178365,
+              -0.181954376
+            ],
+            [
+              -51.474561102,
+              -0.180030215
+            ],
+            [
+              -51.474859543,
+              -0.17809119
+            ],
+            [
+              -51.475073121,
+              -0.176140994
+            ],
+            [
+              -51.475201428,
+              -0.174183337
+            ],
+            [
+              -51.475244221,
+              -0.172221947
+            ],
+            [
+              -51.475201419,
+              -0.170260557
+            ],
+            [
+              -51.475073102,
+              -0.168302901
+            ],
+            [
+              -51.474859515,
+              -0.166352705
+            ],
+            [
+              -51.474561066,
+              -0.164413682
+            ],
+            [
+              -51.47417832,
+              -0.162489523
+            ],
+            [
+              -51.473712009,
+              -0.16058389
+            ],
+            [
+              -51.473163018,
+              -0.158700411
+            ],
+            [
+              -51.472532393,
+              -0.156842671
+            ],
+            [
+              -51.4718213351,
+              -0.1550142061
+            ],
+            [
+              -51.4641979963,
+              -0.1581719015
+            ],
+            [
+              -51.4647785722,
+              -0.1596648371
+            ],
+            [
+              -51.4652934749,
+              -0.1611816757
+            ],
+            [
+              -51.4657417237,
+              -0.1627195301
+            ],
+            [
+              -51.4661224644,
+              -0.1642754731
+            ],
+            [
+              -51.4664349746,
+              -0.1658465425
+            ],
+            [
+              -51.4666786566,
+              -0.1674297484
+            ],
+            [
+              -51.466853049,
+              -0.1690220768
+            ],
+            [
+              -51.4669578187,
+              -0.1706204964
+            ],
+            [
+              -51.4669927657,
+              -0.1722219647
+            ],
+            [
+              -51.4669578247,
+              -0.1738234329
+            ],
+            [
+              -51.4668530617,
+              -0.1754218532
+            ],
+            [
+              -51.4666786753,
+              -0.1770141815
+            ],
+            [
+              -51.4664349986,
+              -0.1785973888
+            ],
+            [
+              -51.4661224945,
+              -0.1801684596
+            ],
+            [
+              -51.465741759,
+              -0.1817244039
+            ],
+            [
+              -51.4652935156,
+              -0.1832622604
+            ],
+            [
+              -51.4647786176,
+              -0.184779101
+            ],
+            [
+              -51.4641980463,
+              -0.1862720379
+            ],
+            [
+              -51.4641980462,
+              -0.1862720381
+            ],
+            [
+              -51.4718214099,
+              -0.1894297032
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::W",
+      "properties": {
+        "area_relative_error": 1.8e-09,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 270.0,
+        "azimuth_end_deg": 292.5,
+        "azimuth_start_deg": 247.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "W",
+        "direction_index": 7,
+        "direction_label": "W",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.481745351,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.6821591,
+        "geo05_score": 0.3675,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.052033,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 4,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1722219558,
+        "representative_lon": -51.4713263559,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.497107234,
+        "sector_area_m2": 3271454.052033,
+        "sector_id": "MATA-01::MATA-01-E0::R03::W",
+        "sector_index": 23,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -51.4718213351,
+              -0.1550142061
+            ],
+            [
+              -51.471821335,
+              -0.155014206
+            ],
+            [
+              -51.471031197,
+              -0.153218498
+            ],
+            [
+              -51.470163484,
+              -0.151458963
+            ],
+            [
+              -51.469219846,
+              -0.149738953
+            ],
+            [
+              -51.468202081,
+              -0.14806174
+            ],
+            [
+              -51.467112125,
+              -0.146430518
+            ],
+            [
+              -51.465952053,
+              -0.144848391
+            ],
+            [
+              -51.464724075,
+              -0.143318371
+            ],
+            [
+              -51.463430526,
+              -0.141843371
+            ],
+            [
+              -51.46207387,
+              -0.140426199
+            ],
+            [
+              -51.460656689,
+              -0.139069551
+            ],
+            [
+              -51.459181681,
+              -0.137776011
+            ],
+            [
+              -51.457651653,
+              -0.136548041
+            ],
+            [
+              -51.456069519,
+              -0.135387978
+            ],
+            [
+              -51.454438289,
+              -0.134298031
+            ],
+            [
+              -51.452761068,
+              -0.133280274
+            ],
+            [
+              -51.45104105,
+              -0.132336644
+            ],
+            [
+              -51.449281509,
+              -0.131468939
+            ],
+            [
+              -51.4474857934,
+              -0.1306788092
+            ],
+            [
+              -51.4443281092,
+              -0.1383021277
+            ],
+            [
+              -51.4457943053,
+              -0.1389472662
+            ],
+            [
+              -51.4472309649,
+              -0.1396557447
+            ],
+            [
+              -51.4486353541,
+              -0.1404262156
+            ],
+            [
+              -51.4500047996,
+              -0.141257211
+            ],
+            [
+              -51.4513366936,
+              -0.1421471493
+            ],
+            [
+              -51.4526285008,
+              -0.143094337
+            ],
+            [
+              -51.4538777636,
+              -0.1440969706
+            ],
+            [
+              -51.4550821027,
+              -0.1451531419
+            ],
+            [
+              -51.4562392262,
+              -0.1462608407
+            ],
+            [
+              -51.4573469312,
+              -0.1474179571
+            ],
+            [
+              -51.4584031095,
+              -0.1486222899
+            ],
+            [
+              -51.4594057492,
+              -0.1498715464
+            ],
+            [
+              -51.4603529439,
+              -0.151163348
+            ],
+            [
+              -51.4612428891,
+              -0.1524952355
+            ],
+            [
+              -51.4620738905,
+              -0.1538646745
+            ],
+            [
+              -51.4628443673,
+              -0.1552690571
+            ],
+            [
+              -51.4635528517,
+              -0.1567057117
+            ],
+            [
+              -51.4641979963,
+              -0.1581719014
+            ],
+            [
+              -51.4641979963,
+              -0.1581719015
+            ],
+            [
+              -51.4718213351,
+              -0.1550142061
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "MATA-01::MATA-01-E0::R03::NW",
+      "properties": {
+        "area_relative_error": 8.95e-10,
+        "authoritative_buffer_planar_area_m2": 78514897.107495,
+        "azimuth_center_deg": 315.0,
+        "azimuth_end_deg": 337.5,
+        "azimuth_start_deg": 292.5,
+        "barrier_flags": "GEO03_OSM_HIDRO_INDISPONIVEL;VEGETACAO_DENSA_POTENCIAL",
+        "base_available_top_member": false,
+        "base_top_member": false,
+        "buffer_decision_status": "REVISAR",
+        "buffer_warning_codes": "INCOMPLETE_GEO;GEO03_EMPTY_WITHIN_DOMAIN;BASE_ORIGINAL_ABSTAINED",
+        "candidate_id": "MATA-01-E0",
+        "direction": "NW",
+        "direction_index": 8,
+        "direction_label": "NW",
+        "engine_version": "1.0.0-mata01-blind-wrapper+EXT-ESP-SET-v1.1",
+        "equivalent_to_base_original": false,
+        "expected_authoritative_sector_area_m2": 3271454.046146,
+        "geo02_score": 0.153849844,
+        "geo03_availability": "NAO_DISPONIVEL_ZERO_FEICOES_OSM_NO_DOMINIO",
+        "geo03_score": null,
+        "geo04_score": 0.670031411,
+        "geo05_score": 0.36825,
+        "geometry_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+        "geometry_source": "INPUT_BUFFER_GEOJSON",
+        "ground_truth_used": false,
+        "inner_radius_m": 4082.482905,
+        "outer_radius_m": 5000.0,
+        "polygon_planar_area_m2": 3271454.043217,
+        "protocol_id": "MATA01-BLIND-SET-v1.0",
+        "rank_base_available_within_buffer": 19,
+        "rank_base_within_buffer": null,
+        "ranking_mode_available": "BASE_DISPONIVEIS_DIAGNOSTICO",
+        "ranking_protocol_id_available": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+        "representative_lat": -0.1431965394,
+        "representative_lon": -51.4593035291,
+        "ring_id": "R03",
+        "ring_index": 3,
+        "scenario_id": "MATA-01",
+        "score_base": null,
+        "score_base_available": 0.362964981,
+        "sector_area_m2": 3271454.043217,
+        "sector_id": "MATA-01::MATA-01-E0::R03::NW",
+        "sector_index": 24,
+        "selected_sector": false,
+        "source_buffer_geometry_sha256": "b8235f642d868ab794d4a7db211707fadb8a4a8a7d534651323ffa729674f308",
+        "source_buffer_review_status": "REVISAR",
+        "source_confirmatory_eligible": false,
+        "source_execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+        "source_row_hash": "19041293c324d91ab0e010791e3c8330ca35c68de457e21304dc70dc4b77f7d4",
+        "theoretical_circular_sector_area_m2": 3272492.347489,
+        "top1_stability": null,
+        "top1_unique_win_count": null
+      },
+      "type": "Feature"
+    }
+  ],
+  "ground_truth_used": false,
+  "name": "MATA01-BLIND-SET-v1.0",
+  "type": "FeatureCollection"
+}

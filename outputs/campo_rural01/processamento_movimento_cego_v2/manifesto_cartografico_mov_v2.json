@@ -1,0 +1,221 @@
+{
+  "artifact": "Mapa_RURAL01_Resistencia_Corredores_MOV_V_v2",
+  "generated_at_utc": "2026-10-23T00:33:59.095637+00:00",
+  "ground_truth_used": false,
+  "cost_semantics": "METROS_EQUIVALENTES_DE_ESFORCO_NAO_TEMPO_NAO_PROBABILIDADE",
+  "elapsed_14h_role": "CONTEXTO_NAO_CONVERTIDO_AUTOMATICAMENTE_EM_DISTANCIA_OU_TEMPO_ATIVO",
+  "crs": "EPSG:4326 for display; local AEQD centered on E0 for analysis",
+  "bounds": {
+    "min_lon": -51.1712941916385,
+    "min_lat": 0.17287289363482058,
+    "max_lon": -51.13981780836149,
+    "max_lat": 0.20434910636517942
+  },
+  "scenario": {
+    "id": "RURAL-01",
+    "e0_lat": 0.188611,
+    "e0_lon": -51.155556,
+    "source_radius_m": 1500.0,
+    "ground_truth_shown": false
+  },
+  "display": {
+    "panels": 4,
+    "same_extent_all_maps": true,
+    "same_cost_scale_panels_b_c": true,
+    "cost_color_scale_max_m_equivalent_p95_rounded": 4500.0,
+    "corridor_features_generated": 48,
+    "corridor_features_displayed": 6,
+    "only_top3_corridors_displayed_per_hypothesis": true,
+    "rgb_period": 2021,
+    "rgb_is_scene_from_2026": false,
+    "movement_connectivity": "D8_APPROXIMATE_OCTILE_NEIGHBORHOOD",
+    "hydrography_display_semantics": "RASTER_PROXIMITY_OR_ENTRY_PROXY_NOT_GEOMETRIC_CROSSING_INTERSECTION"
+  },
+  "statistics": {
+    "resistance": {
+      "min": 0.4725,
+      "median": 2.8,
+      "p98": 12.0,
+      "max": 16.8
+    },
+    "network_hypothesis": {
+      "hypothesis": "H_REDE_DISPONIVEL",
+      "displayed_corridors": 3,
+      "reachable_fraction": 0.193116635,
+      "median_cost_m_equivalent": 2484.350028,
+      "top3": [
+        "R01-W",
+        "R01-E",
+        "R01-NE"
+      ],
+      "cost_min": 0.0,
+      "cost_p95": 4236.671238799998,
+      "cost_max": 5111.888318
+    },
+    "off_network_hypothesis": {
+      "hypothesis": "H_FORA_REDE",
+      "displayed_corridors": 3,
+      "reachable_fraction": 0.116762269,
+      "median_cost_m_equivalent": 3003.365644,
+      "top3": [
+        "R01-W",
+        "R01-N",
+        "R01-NE"
+      ],
+      "cost_min": 0.0,
+      "cost_p95": 4573.050575,
+      "cost_max": 5460.587343
+    },
+    "comparison": {
+      "top3": {
+        "V1": [
+          "R01-E",
+          "R03-SE",
+          "R03-E"
+        ],
+        "H_REDE_DISPONIVEL": [
+          "R01-W",
+          "R01-E",
+          "R01-NE"
+        ],
+        "H_FORA_REDE": [
+          "R01-W",
+          "R01-N",
+          "R01-NE"
+        ]
+      },
+      "v2_hypothesis_overlap": [
+        "R01-NE",
+        "R01-W"
+      ]
+    }
+  },
+  "limitations_visible_in_figure": [
+    "UNDERSTORY_NOT_SYSTEMATICALLY_OBSERVED",
+    "DEM_30M_MAY_SMOOTH_NARROW_FEATURES",
+    "OSM_MAY_BE_INCOMPLETE_OR_OUTDATED",
+    "FIELD_OBSTACLE_COUNT_ZERO",
+    "14H_CONTEXT_ONLY",
+    "HEURISTIC_NOT_TIME_OR_PROBABILITY",
+    "D8_IS_APPROXIMATE_OCTILE_CONNECTIVITY",
+    "HYDROGRAPHY_IS_RASTER_PROXIMITY_ENTRY_PROXY_NOT_GEOMETRIC_CROSSING"
+  ],
+  "sources": [
+    {
+      "role": "grade de resistência e custos",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/grade_resistencia.csv",
+      "sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481",
+      "bytes": 8271509
+    },
+    {
+      "role": "síntese MOV-V v2",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/resultado_mov_v2.json",
+      "sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e",
+      "bytes": 11754
+    },
+    {
+      "role": "controle de qualidade MOV-V v2",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_qa_mov_v2.json",
+      "sha256": "8e332816ce79e9f8db21f92c2b35dbb4f10672e5c7ba62216bf7abb8c22bad78",
+      "bytes": 2970
+    },
+    {
+      "role": "manifesto do motor MOV-V v2",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/manifesto_mov_v2.json",
+      "sha256": "683175cf8e5f4b000c6b1270976c7b0283d137887fe09134e626af993ed06190",
+      "bytes": 7275
+    },
+    {
+      "role": "48 corredores diagnósticos",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/corredores_mov_v2.geojson",
+      "sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e",
+      "bytes": 182906
+    },
+    {
+      "role": "áreas sob orçamento heurístico",
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/areas_alcancaveis_mov_v2.geojson",
+      "sha256": "28a137600e83737094b122c97d2c151a585dcb5a5354000a2f986a5e696e1281",
+      "bytes": 1267715
+    },
+    {
+      "role": "24 setores da v1",
+      "path": "outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson",
+      "sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc",
+      "bytes": 126728
+    },
+    {
+      "role": "Top-3 territorial v1",
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+      "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268",
+      "bytes": 2943
+    },
+    {
+      "role": "composição anual Sentinel-2 2021",
+      "path": "outputs/campo_rural01/mapa_real_vegetacao_v2/fontes/ESA_WorldCover_S2_TCC_2021_RURAL01.png",
+      "sha256": "cb778a1dfbb189dfaa7a03027af9fd9042dd1388fcb3ccffafe9fea8ac372916",
+      "bytes": 342267
+    },
+    {
+      "role": "metadados da composição orbital",
+      "path": "outputs/campo_rural01/mapa_real_vegetacao_v2/fontes/ESA_WorldCover_S2_TCC_2021_RURAL01.metadata.json",
+      "sha256": "0e0bec26ce6db7c2d592ae048c13a7f208123a706a4fc6028c2fb3a8b3dd0515",
+      "bytes": 2930
+    },
+    {
+      "role": "ESA WorldCover 2021",
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16",
+      "bytes": 8977040
+    },
+    {
+      "role": "SRTM",
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb",
+      "bytes": 10237499
+    },
+    {
+      "role": "vias OSM",
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20",
+      "bytes": 6198892
+    },
+    {
+      "role": "hidrografia OSM",
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346",
+      "bytes": 5748363
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/Mapa_RURAL01_Resistencia_Corredores_MOV_V_v2.png",
+      "sha256": "190bc9534e7600850c96b9bc1d9bb117f41dfaf0f5ec38c24e9166dbcd96f5b4",
+      "bytes": 2921666
+    },
+    {
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/README_MAPA_RURAL01_MOV_V_v2.md",
+      "sha256": "d803da0f1db257d9a3784960967f5d5d628dc74b07debe7e620116478e9c1bdc",
+      "bytes": 3139
+    }
+  ],
+  "qa": {
+    "numeric_engine_status": "PASS",
+    "numeric_engine_gates_passed": 37,
+    "numeric_engine_gates_total": 37,
+    "png_dimensions": [
+      4961,
+      3508
+    ],
+    "png_mode": "RGB",
+    "cost_unit_label_visible": true,
+    "cost_not_labeled_as_time_or_probability": true,
+    "ground_truth_coordinates_absent": true,
+    "source_radius_visible": true,
+    "north_and_scale_visible_all_panels": true,
+    "roads_and_hydrography_visible_all_panels": true,
+    "no_pdf_created_by_script": true,
+    "v1_not_written": true,
+    "numeric_outputs_not_written": true,
+    "visual_inspection_status": "PASS_AFTER_RENDER_REVIEW_AND_REACHABLE_BOUNDARY_REPAIR"
+  }
+}

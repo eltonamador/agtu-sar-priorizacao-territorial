@@ -1,0 +1,106 @@
+{
+  "protocol_id": "REP-S-SPATIAL-EVAL-v1.0",
+  "milestone": "T-1",
+  "state": "PRONTO_AGUARDANDO_VALORES_DE_CAMPO",
+  "frozen_at_utc": "2026-10-16T20:24:45Z",
+  "ground_truth_real_used": false,
+  "real_results_created": false,
+  "validation_modality": "REP-S-FIELD-PILOT",
+  "scientific_scope": "validacao prospectiva do componente espacial e do fluxo com candidatos semissinteticos pre-especificados",
+  "files": [
+    {
+      "role": "normative_config",
+      "path": "config_rep_s_spatial_eval_v1.json",
+      "sha256": "12819b0b7d623d48ef0d6d3955f62f06cccf37b54a01506fe5a0793649e9d4ab",
+      "bytes": 9091
+    },
+    {
+      "role": "shared_runtime",
+      "path": "common.py",
+      "sha256": "42da5f15b37c1529231a7493063243f425faaed93a4a171513fb883b0f1a146b",
+      "bytes": 10992
+    },
+    {
+      "role": "blind_interface",
+      "path": "prepare_and_run_blind.py",
+      "sha256": "c2186107dbc1e0ec21fd01160f926c5c93126c2d3024df36b971ff4828ebbc7f",
+      "bytes": 26951
+    },
+    {
+      "role": "post_t3_evaluator",
+      "path": "evaluate_post_t3.py",
+      "sha256": "6d104f038dde335cee9b9ff231b03a36bc629aef594814a26b2bb1b3df587bbd",
+      "bytes": 31701
+    },
+    {
+      "role": "test_suite",
+      "path": "test_rep_s_spatial_eval.py",
+      "sha256": "63e237d5fadf452733d22bddbfd914edd8b8500023f2a265c97dd16c5f3c0aaf",
+      "bytes": 19147
+    },
+    {
+      "role": "documentation",
+      "path": "README.md",
+      "sha256": "6ff7d1e4718a6e85b71ad2066dfc5b36c4b8fa1ab99c6481a80b7e3a75d5edb8",
+      "bytes": 8430
+    },
+    {
+      "role": "test_evidence",
+      "path": "resultado_testes_rep_s_spatial_v1.json",
+      "sha256": "5c430c0d9979221ac7918bd84374a3c2131c597e8695798160454cc7d1c42ae7",
+      "bytes": 2403
+    },
+    {
+      "role": "fictitious_test_fixture",
+      "path": "test_fixtures/ground_truth_FICTICIO_NAO_USAR.csv",
+      "sha256": "cc152e18acfea96b8980d114314da0d366d8aacaa442812d1b063dfca1a3e0dc",
+      "bytes": 269
+    }
+  ],
+  "pinned_dependencies": [
+    {
+      "role": "field_candidate_config",
+      "sha256": "2e245308bd06b3c9ec89df7630de37b95f0e6e5b351d8bcb9cdb59d0ac19163d"
+    },
+    {
+      "role": "field_candidate_engine",
+      "sha256": "f0607bfeb5a7dee6ef98c90d68757d6ff754bc001beab2cdf3ab4ba6466647cd"
+    },
+    {
+      "role": "buffer_config",
+      "sha256": "7d9a309852f869daf87f0c4693bbb310990b1a4d832841dbaeebf8120bad0f21"
+    },
+    {
+      "role": "buffer_engine",
+      "sha256": "f45779b905cb6bd28b6bc7c0ee7fd16add9079fa1b20c6727c989f8ae4e41fb4"
+    },
+    {
+      "role": "sector_config",
+      "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+    },
+    {
+      "role": "sector_engine",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "role": "rep_s_protocol",
+      "sha256": "b6f5ad4d4ae43ee8089b75040d6947a47276206e71eac9a35d651953ba2cefde"
+    }
+  ],
+  "tests": {
+    "total": 82,
+    "passed": 82,
+    "failed": 0,
+    "full_dry_run_t1_to_t4": "APROVADO",
+    "dry_run_sites": 4,
+    "dry_run_candidate_buffers": 12,
+    "dry_run_sectors": 288,
+    "two_blind_runs_scientifically_identical": true
+  },
+  "awaiting_only": [
+    "quatro registros reais de campo consolidados e lacrados",
+    "fontes GEO que cubram integralmente os quatro locais escolhidos",
+    "execucao formal T0 a T4 sem alteracao das regras congeladas"
+  ],
+  "manifest_payload_sha256_before_this_field": "3128da76d5b4656a030dfdff291eafb64960bc9dddfd97267647365433ab3fd8"
+}

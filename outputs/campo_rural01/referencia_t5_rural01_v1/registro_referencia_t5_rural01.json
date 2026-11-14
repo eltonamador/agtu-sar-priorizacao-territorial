@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../work/rural01_avaliacao_t5_t6_v1/schema_referencia_t5_v1.json",
+  "schema_version": "1.0",
+  "record_id": "RURAL-01-T5-20261023T142714-0300",
+  "scenario_id": "RURAL-01",
+  "stage": "T5_REFERENCE_OPENING",
+  "status": "REVELADO_CONGELADO",
+  "reference_received": true,
+  "reference_role": "POSICAO_DECLARADA_ALVO_SIMULADO",
+  "verification_status": "DECLARADA_NAO_AFERIDA_INDEPENDENTEMENTE",
+  "position": {
+    "latitude": 0.15333333333333332,
+    "longitude": -51.14888888888889,
+    "crs": "EPSG:4326",
+    "coordinate_order": "LONGITUDE_LATITUDE"
+  },
+  "source": {
+    "collection_method": null,
+    "equipment": null,
+    "horizontal_accuracy_m": null,
+    "position_observed_at": null,
+    "source_artifact": "outputs/campo_rural01/referencia_t5_rural01_v1/KM14.png",
+    "source_artifact_sha256": "dc7c8e19eeb85dd0ebdba9f2189ca38622b8bea7cef4698301ace3b956c43761",
+    "provenance_note": "Posição declarada pelo pesquisador após o congelamento T4.5, documentada pela captura de tela KM14.png. A imagem mostra 0°9′12″ N, 51°8′56″ O e elevação exibida de 28 m; não comprova data, precisão, equipamento, método de posicionamento ou datum geodésico."
+  },
+  "opening": {
+    "opened_at": "2026-10-23T14:27:14-03:00",
+    "opened_by": "Pesquisador responsável via conversa do projeto",
+    "opening_method": "Revelação explícita da posição declarada do alvo simulado por imagem anexada, após o selo T4.5",
+    "evaluator_freeze_manifest_sha256": "d8bd572ed4a36916182566ce688ecf65cb44a391d602135d992fe6be3a74e8a4"
+  },
+  "missing_fields": [
+    "collection_method",
+    "equipment",
+    "horizontal_accuracy_m",
+    "position_observed_at"
+  ],
+  "notes": "Conversão literal do DMS exibido: latitude 0.15333333333333332 e longitude -51.14888888888889. O sinal da longitude é negativo por se tratar de Oeste. EPSG:4326 é a codificação operacional exigida pelo protocolo congelado; o datum não aparece na imagem. O relógio 09:03, a orientação 2° N e a elevação exibida de 28 m não foram tratados como horário da posição, direção de deslocamento ou altitude aferida e não entram nas métricas."
+}

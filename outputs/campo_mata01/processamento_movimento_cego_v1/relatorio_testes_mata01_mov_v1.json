@@ -1,0 +1,12 @@
+{
+  "config_sha256": "504c8e5bb62fbe0503384b357f6855d2cfff2526873e457b75bd42352a2ac69a",
+  "engine_sha256": "86c0b6019f2c0e3b1121a01eca71ac297c745f4bcc7e72bb1e78bc348218efb9",
+  "error_count": 0,
+  "failure_count": 0,
+  "payload_sha256": "7e5f40e8a12aeca1bfad45288aa416ddb0843f9298759bd652b92263197782df",
+  "protocol_id": "MATA01-BLIND-MOV-V-v1.0",
+  "runner_sha256": "7ea47c0fec5360f3a82d33d3853187641b98c5daea428cfab139bfde3c5b3b06",
+  "status": "PASS",
+  "test_suite_sha256": "e3de77ed7f3cfa47d138e2dc1e2cf2e4d3861174421c5aa44af6b58228607141",
+  "tests_run": 11
+}

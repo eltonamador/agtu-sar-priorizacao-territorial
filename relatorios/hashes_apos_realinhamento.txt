@@ -1,0 +1,8 @@
+CONFERE | urbe01: 15 arquivos | 490663d2459b1aa5fac151b425ff474c0dacdb44891ee8530b2dd9960dbdcb23
+CONFERE | rural01: 12 arquivos | d51dd9e3252f50bd1d756b4b9ee914aca0b7300eda6e2b2f751e5f6fa587301e
+CONFERE | mata01: 13 arquivos | 7ba1186d90aaf5ef6b92dd7095727e151c948880163b3c81d0c4cd7ff02df29b
+CONFERE | campo_mata02_mzg2/ensaio_complementar_v2_249/ranking_BASE_completo.json | 8236e5244a8f6fef501d4aea9492c56bf75d34a87109eecfc94da03e681f31fb
+CONFERE | campo_mata03_km21/ranking_BASE.json | 1ba965b3d69f07e06607771036d8246dc6023886929d2a6ca3c6340d5094e11a
+CONFERE | DEV-S: projeção de 2160 setores | bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc
+CONFERE | DEV-S: pacote de 6 saídas | 0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837
+7/7 identificadores conferem

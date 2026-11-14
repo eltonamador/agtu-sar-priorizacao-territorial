@@ -1,0 +1,16 @@
+{
+  "input_contract": "PASS usando validate_buffer_contract do motor existente",
+  "image_container_checks": 75,
+  "metadata_extracted": 75,
+  "drone_count": 71,
+  "drone_with_gps": 71,
+  "drone_time_min": "2026:10:22 15:37:50",
+  "drone_time_max": "2026:10:22 15:54:15",
+  "duplicates_by_sha256": 0,
+  "prior_hash_matches": 22,
+  "elapsed_hours_check": "PASS",
+  "ranking_executed": false,
+  "geographic_layers_loaded": false,
+  "visual_inspection": "Fotos terrestres e tela fornecidas; fotografia aérea 0060 inspecionada; demais imagens auditadas por metadados/contêiner, não revisão visual integral",
+  "readiness": "Entrada aceita pelo contrato; execução depende de verificar cobertura e disponibilidade GEO02-GEO05 e adaptar executor à configuração v2."
+}

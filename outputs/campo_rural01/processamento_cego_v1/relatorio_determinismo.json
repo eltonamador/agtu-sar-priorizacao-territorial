@@ -1,0 +1,81 @@
+{
+  "all_scientific_files_equal": true,
+  "compared_file_count": 12,
+  "files": [
+    {
+      "equal": true,
+      "file": "entrada_raio_fonte.json",
+      "run1_sha256": "1824aa940a03ea7ab985e5dcb06a6047414483050f58846380a6d27115a7f040",
+      "run2_sha256": "1824aa940a03ea7ab985e5dcb06a6047414483050f58846380a6d27115a7f040"
+    },
+    {
+      "equal": true,
+      "file": "entrada_raio_fonte.geojson",
+      "run1_sha256": "c4db552973f9128affe7525350a64e4c1e721b9b5582c749bc2714b927ffa0ab",
+      "run2_sha256": "c4db552973f9128affe7525350a64e4c1e721b9b5582c749bc2714b927ffa0ab"
+    },
+    {
+      "equal": true,
+      "file": "manifesto_entrada_raio_fonte.json",
+      "run1_sha256": "0f6d1180243141eafc3742cac335efae51238abbf4bb68da87e6a457a53eff8d",
+      "run2_sha256": "0f6d1180243141eafc3742cac335efae51238abbf4bb68da87e6a457a53eff8d"
+    },
+    {
+      "equal": true,
+      "file": "config_efetiva_rural01_blind.json",
+      "run1_sha256": "a0036a0b0c1bca4c225c993162d77f356eb36ddf6c303757c06d992bac282638",
+      "run2_sha256": "a0036a0b0c1bca4c225c993162d77f356eb36ddf6c303757c06d992bac282638"
+    },
+    {
+      "equal": true,
+      "file": "protocolo_rural01_cego_v1.md",
+      "run1_sha256": "73c07c5dbde81fd6d9861a70c5e2e78333d422cbb1ba6c4f1f7dd69908707743",
+      "run2_sha256": "73c07c5dbde81fd6d9861a70c5e2e78333d422cbb1ba6c4f1f7dd69908707743"
+    },
+    {
+      "equal": true,
+      "file": "atributos_geo_setores.csv",
+      "run1_sha256": "d5011260ad15be8d0ce67ab12cd1a93168e4d88e3e15802108486d9f50680502",
+      "run2_sha256": "d5011260ad15be8d0ce67ab12cd1a93168e4d88e3e15802108486d9f50680502"
+    },
+    {
+      "equal": true,
+      "file": "ranking_base_rural01.csv",
+      "run1_sha256": "095bf8d290d3419824e9b69a84870d59b4d55d93e9a30d5a033796a4e69b22f8",
+      "run2_sha256": "095bf8d290d3419824e9b69a84870d59b4d55d93e9a30d5a033796a4e69b22f8"
+    },
+    {
+      "equal": true,
+      "file": "setores_rural01.geojson",
+      "run1_sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc",
+      "run2_sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc"
+    },
+    {
+      "equal": true,
+      "file": "top3_rural01.csv",
+      "run1_sha256": "f6750793b2940c226240e7c87a9a5e40ebf39e096c735c06bde4bab13f5f37b6",
+      "run2_sha256": "f6750793b2940c226240e7c87a9a5e40ebf39e096c735c06bde4bab13f5f37b6"
+    },
+    {
+      "equal": true,
+      "file": "top3_rural01.json",
+      "run1_sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268",
+      "run2_sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268"
+    },
+    {
+      "equal": true,
+      "file": "resultado_rural01_cego.json",
+      "run1_sha256": "7dbd23a5554315f5df99f395260b4329613b5b6773dce1c8ff11a7c0865897b2",
+      "run2_sha256": "7dbd23a5554315f5df99f395260b4329613b5b6773dce1c8ff11a7c0865897b2"
+    },
+    {
+      "equal": true,
+      "file": "avisos_revisao.log",
+      "run1_sha256": "b1d5fa6ebd91cabcf3b7c4585b473fe16395bb763a74d8abba6037d6ecc92580",
+      "run2_sha256": "b1d5fa6ebd91cabcf3b7c4585b473fe16395bb763a74d8abba6037d6ecc92580"
+    }
+  ],
+  "ground_truth_used": false,
+  "status": "PASS",
+  "test": "DUAS_EXECUCOES_INDEPENDENTES_MESMAS_ENTRADAS"
+}

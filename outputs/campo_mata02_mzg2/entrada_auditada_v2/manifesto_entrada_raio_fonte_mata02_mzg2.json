@@ -1,0 +1,27 @@
+{
+  "adaptive_buffer_status": "NAO_EXECUTADO_ENTRADA_INSUFICIENTE",
+  "additional_factors_applied_by_engine": false,
+  "detection_quality_imputed": false,
+  "files": [
+    {
+      "bytes": 2142,
+      "path": "entrada_raio_fonte_mata02_mzg2.json",
+      "role": "output",
+      "sha256": "a2a42edb90eab2ba3aa0fd0f98afd69058aedcbca99f7e3dc9c1ec53582b2b3a"
+    },
+    {
+      "bytes": 13217,
+      "path": "entrada_raio_fonte_mata02_mzg2.geojson",
+      "role": "output",
+      "sha256": "3244b5aee803685785d8f9ac8efeaa5db3f15ccefe7c395f01f60793bf11d197"
+    }
+  ],
+  "ground_truth_used": false,
+  "protocol_id": "MATA02-MZG2-SOURCE-RADIUS-v2.0",
+  "r0_semantics": "source_declared_operational_domain",
+  "radius_m": 6000.0,
+  "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+  "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+  "radius_review_status": "REVISAR",
+  "record_count": 1
+}

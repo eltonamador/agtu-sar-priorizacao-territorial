@@ -1,0 +1,33 @@
+{
+  "gate_count": 24,
+  "gates": {
+    "adaptive_buffer_not_used": true,
+    "all_available_scores_in_unit_interval": true,
+    "all_control_flags_false": true,
+    "all_geo03_values_are_missing": true,
+    "all_geo_completeness_is_075": true,
+    "all_raster_sample_coverage_is_complete": true,
+    "all_sectors_have_3600_expected_samples": true,
+    "all_worldcover_class_counts_sum_to_3600": true,
+    "available_output_not_labelled_equivalent": true,
+    "available_rank_row_count_is_24": true,
+    "available_weights_sum_to_one": true,
+    "base_original_fully_abstained": true,
+    "declared_radius_is_5000_m": true,
+    "deterministic_repeat_matches": true,
+    "expected_dem_tile_available": true,
+    "expected_worldcover_tile_available": true,
+    "feature_count_is_24": true,
+    "geo03_domain_segment_count_is_zero": true,
+    "missing_detection_quality_not_imputed": true,
+    "no_directional_preference": true,
+    "original_rank_row_count_is_24": true,
+    "scientific_files_present": true,
+    "sector_count_is_24": true,
+    "top3_count_is_3": true
+  },
+  "ground_truth_used": false,
+  "passed_gate_count": 24,
+  "protocol_id": "MATA01-BLIND-SET-v1.0",
+  "status": "PASS"
+}

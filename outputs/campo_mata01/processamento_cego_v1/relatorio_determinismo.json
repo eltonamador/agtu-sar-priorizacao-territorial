@@ -1,0 +1,87 @@
+{
+  "all_scientific_files_equal": true,
+  "compared_file_count": 13,
+  "files": [
+    {
+      "equal": true,
+      "file": "entrada_raio_fonte_mata01.json",
+      "run1_sha256": "aa309fb3c0a4c7d7c5d5d91ec04dfe83d2204d9674b69aded163c6a62ed5ce0d",
+      "run2_sha256": "aa309fb3c0a4c7d7c5d5d91ec04dfe83d2204d9674b69aded163c6a62ed5ce0d"
+    },
+    {
+      "equal": true,
+      "file": "entrada_raio_fonte_mata01.geojson",
+      "run1_sha256": "333024419d08a1e0e0ecf4ea392399ad3a8901e785f657db23befb8e0a62cc8d",
+      "run2_sha256": "333024419d08a1e0e0ecf4ea392399ad3a8901e785f657db23befb8e0a62cc8d"
+    },
+    {
+      "equal": true,
+      "file": "manifesto_entrada_raio_fonte_mata01.json",
+      "run1_sha256": "e78ac60e580a9b959ae28ab057222824e84d88280116e08bf4f125c4d9587cd0",
+      "run2_sha256": "e78ac60e580a9b959ae28ab057222824e84d88280116e08bf4f125c4d9587cd0"
+    },
+    {
+      "equal": true,
+      "file": "config_efetiva_mata01_blind.json",
+      "run1_sha256": "e91d4ff5ee2f58a91d069becdb3157e8a9840ee6f6ac4c16ca5770bef7b0328e",
+      "run2_sha256": "e91d4ff5ee2f58a91d069becdb3157e8a9840ee6f6ac4c16ca5770bef7b0328e"
+    },
+    {
+      "equal": true,
+      "file": "protocolo_mata01_cego_v1.md",
+      "run1_sha256": "b566b8cfd84f2f43b4a19616574815c794963dd7e75f199fe3aba1c99b25233c",
+      "run2_sha256": "b566b8cfd84f2f43b4a19616574815c794963dd7e75f199fe3aba1c99b25233c"
+    },
+    {
+      "equal": true,
+      "file": "atributos_geo_setores_mata01.csv",
+      "run1_sha256": "b4f126f30923b55f0bf4b1cd773c4626c1668019a69d8971428349ec8345ffcc",
+      "run2_sha256": "b4f126f30923b55f0bf4b1cd773c4626c1668019a69d8971428349ec8345ffcc"
+    },
+    {
+      "equal": true,
+      "file": "ranking_base_original_abstido_mata01.csv",
+      "run1_sha256": "6766224001405cb68e8b863fb10d2e61e62ac0b1cf46cb0425d4e262d85d32de",
+      "run2_sha256": "6766224001405cb68e8b863fb10d2e61e62ac0b1cf46cb0425d4e262d85d32de"
+    },
+    {
+      "equal": true,
+      "file": "ranking_base_disponiveis_mata01.csv",
+      "run1_sha256": "e06c6873fe068b79446849cd1a1a102ecb74daa0ccf72a19c2cdc20698109428",
+      "run2_sha256": "e06c6873fe068b79446849cd1a1a102ecb74daa0ccf72a19c2cdc20698109428"
+    },
+    {
+      "equal": true,
+      "file": "setores_mata01.geojson",
+      "run1_sha256": "addbd86272547d875e65ba91118eae3e66b5bc97710b451b767afbe9cc3c13f9",
+      "run2_sha256": "addbd86272547d875e65ba91118eae3e66b5bc97710b451b767afbe9cc3c13f9"
+    },
+    {
+      "equal": true,
+      "file": "top3_base_disponiveis_mata01.csv",
+      "run1_sha256": "362bfe2dc1ad5c2cbc38a22bea986464317e2b1c5bd2c98121368fed6fcf3abd",
+      "run2_sha256": "362bfe2dc1ad5c2cbc38a22bea986464317e2b1c5bd2c98121368fed6fcf3abd"
+    },
+    {
+      "equal": true,
+      "file": "top3_base_disponiveis_mata01.json",
+      "run1_sha256": "56a5c93f06454afe4bd2b9359b52214bdc10d5466fd947ece4a31d9b0cacfa03",
+      "run2_sha256": "56a5c93f06454afe4bd2b9359b52214bdc10d5466fd947ece4a31d9b0cacfa03"
+    },
+    {
+      "equal": true,
+      "file": "resultado_mata01_cego.json",
+      "run1_sha256": "231acd46259d27975b981c945020afe543215f8d1912f49ac4c45647ed75e0a5",
+      "run2_sha256": "231acd46259d27975b981c945020afe543215f8d1912f49ac4c45647ed75e0a5"
+    },
+    {
+      "equal": true,
+      "file": "avisos_revisao.log",
+      "run1_sha256": "ae7df9c3dfe5861e6615a813cef1e8ea3634bc4dfbbd65f611e373ec6a54d7db",
+      "run2_sha256": "ae7df9c3dfe5861e6615a813cef1e8ea3634bc4dfbbd65f611e373ec6a54d7db"
+    }
+  ],
+  "ground_truth_used": false,
+  "status": "PASS",
+  "test": "DUAS_EXECUCOES_INDEPENDENTES_MESMAS_ENTRADAS"
+}

@@ -1,0 +1,142 @@
+{
+  "config_path": "work/rural01_avaliacao_t5_t6_v1/config_avaliacao_t5_t6_v1.json",
+  "config_sha256": "60f9d4613cfd6dbc32c4d615461366d9c7765abc5791b2bd6c37a13c8489dc79",
+  "corridors_recomputed": false,
+  "cost_surfaces_recomputed": false,
+  "determinism": {
+    "all_equal": true,
+    "file_count": 8,
+    "files": [
+      {
+        "equal": true,
+        "path": "registro_abertura_referencia.json",
+        "run1_sha256": "6097bbc86f391ad6f4e0610e2fb86ca87acd15f18e63ac631473a1200b1f3016",
+        "run2_sha256": "6097bbc86f391ad6f4e0610e2fb86ca87acd15f18e63ac631473a1200b1f3016"
+      },
+      {
+        "equal": true,
+        "path": "resultado_avaliacao_t5_t6.json",
+        "run1_sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705",
+        "run2_sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705"
+      },
+      {
+        "equal": true,
+        "path": "metricas_cenarios.csv",
+        "run1_sha256": "6d508d0fb08b31afed9440d47bbb9581468e5d90776bec026d256e4ca746459b",
+        "run2_sha256": "6d508d0fb08b31afed9440d47bbb9581468e5d90776bec026d256e4ca746459b"
+      },
+      {
+        "equal": true,
+        "path": "areas_bandas_custo.csv",
+        "run1_sha256": "f72b4e6e24ee6e17086c01da5eb14997f500347703e7b81f8330b84e73ba7a5d",
+        "run2_sha256": "f72b4e6e24ee6e17086c01da5eb14997f500347703e7b81f8330b84e73ba7a5d"
+      },
+      {
+        "equal": true,
+        "path": "metricas_corredores.csv",
+        "run1_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+        "run2_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+      },
+      {
+        "equal": true,
+        "path": "referencia_avaliacao_t5_t6.geojson",
+        "run1_sha256": "0a103ba57feef36bfd2b5010cbdfe0b4755d5b3eb21f06c8a475964b70ddc508",
+        "run2_sha256": "0a103ba57feef36bfd2b5010cbdfe0b4755d5b3eb21f06c8a475964b70ddc508"
+      },
+      {
+        "equal": true,
+        "path": "relatorio_qa_t5_t6.json",
+        "run1_sha256": "f2a8b210cd31a29293c46aeebad2e84f445212f2e0e3f1fb0a4b9f89aed48754",
+        "run2_sha256": "f2a8b210cd31a29293c46aeebad2e84f445212f2e0e3f1fb0a4b9f89aed48754"
+      },
+      {
+        "equal": true,
+        "path": "RELATORIO_AVALIACAO_RURAL01_T6.md",
+        "run1_sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273",
+        "run2_sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273"
+      }
+    ],
+    "status": "PASS"
+  },
+  "evaluation_version": "1.0",
+  "evaluator_freeze_ledger_path": "outputs/campo_rural01/avaliador_t45_congelado_v1/ledger_congelamento_avaliador_t45_v1.json",
+  "evaluator_freeze_ledger_sha256": "d8bd572ed4a36916182566ce688ecf65cb44a391d602135d992fe6be3a74e8a4",
+  "evaluator_path": "work/rural01_avaliacao_t5_t6_v1/evaluate_rural01_reference.py",
+  "evaluator_sha256": "fd985937b0ee8b362c9a3e4247d5040ce3fd8f5eeb7f0e0eb50d7642853dacdf",
+  "map_generated": false,
+  "normalized_reference_sha256": "50a750795a3167ffbfce5f313be995387f19a4d3414433dfb6901e7f4a977622",
+  "output_files": [
+    {
+      "bytes": 2137,
+      "path": "RELATORIO_AVALIACAO_RURAL01_T6.md",
+      "role": "output",
+      "sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273"
+    },
+    {
+      "bytes": 7868,
+      "path": "areas_bandas_custo.csv",
+      "role": "output",
+      "sha256": "f72b4e6e24ee6e17086c01da5eb14997f500347703e7b81f8330b84e73ba7a5d"
+    },
+    {
+      "bytes": 2100,
+      "path": "metricas_cenarios.csv",
+      "role": "output",
+      "sha256": "6d508d0fb08b31afed9440d47bbb9581468e5d90776bec026d256e4ca746459b"
+    },
+    {
+      "bytes": 2,
+      "path": "metricas_corredores.csv",
+      "role": "output",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "bytes": 893,
+      "path": "referencia_avaliacao_t5_t6.geojson",
+      "role": "output",
+      "sha256": "0a103ba57feef36bfd2b5010cbdfe0b4755d5b3eb21f06c8a475964b70ddc508"
+    },
+    {
+      "bytes": 2385,
+      "path": "registro_abertura_referencia.json",
+      "role": "output",
+      "sha256": "6097bbc86f391ad6f4e0610e2fb86ca87acd15f18e63ac631473a1200b1f3016"
+    },
+    {
+      "bytes": 2131,
+      "path": "relatorio_determinismo_t5_t6.json",
+      "role": "output",
+      "sha256": "b690b27c47cb01af2fafaba11f2cf097057ffa6da384c5d4f00a2e1a8942e4eb"
+    },
+    {
+      "bytes": 921,
+      "path": "relatorio_qa_t5_t6.json",
+      "role": "output",
+      "sha256": "f2a8b210cd31a29293c46aeebad2e84f445212f2e0e3f1fb0a4b9f89aed48754"
+    },
+    {
+      "bytes": 64928,
+      "path": "resultado_avaliacao_t5_t6.json",
+      "role": "output",
+      "sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705"
+    }
+  ],
+  "payload_sha256": "43ae10b8a66363e8f8329c0ef43e451b55383885fc9b6837232993343c377df3",
+  "protocol_id": "RURAL01-EVAL-T45-T6-v1.0",
+  "protocol_path": "work/rural01_avaliacao_t5_t6_v1/PROTOCOLO_AVALIACAO_RURAL01_T45_T6_v1_CONGELADO.md",
+  "protocol_sha256": "e370cdc0ca740b30dbe19ac64b393f04d35a7c6c8dd39ffce826ea5b81ba88cc",
+  "publication_policy": "ATOMIC_CREATE_ONLY_VERSIONED_NO_OVERWRITE",
+  "rankings_recomputed": false,
+  "reference_file_sha256": "f7aaa204e24c48ed343c769e924f01883f6405d05cb740cc82fe64841e491a15",
+  "reference_schema_path": "work/rural01_avaliacao_t5_t6_v1/schema_referencia_t5_v1.json",
+  "reference_schema_sha256": "ca09d62402cbc8cf79125e2e61e89f13941d0457e1b8948f952b6071de7a104f",
+  "scenario_id": "RURAL-01",
+  "sectors_recomputed": false,
+  "t45_evaluator_freeze_after_sha256": "d8bd572ed4a36916182566ce688ecf65cb44a391d602135d992fe6be3a74e8a4",
+  "t45_evaluator_freeze_before_sha256": "d8bd572ed4a36916182566ce688ecf65cb44a391d602135d992fe6be3a74e8a4",
+  "t4_ledger_after_sha256": "dd0a3e3d21583d2cf1bfade7a9d97df7a2f10b1959cef45ec61524adec80d3f6",
+  "t4_ledger_before_sha256": "dd0a3e3d21583d2cf1bfade7a9d97df7a2f10b1959cef45ec61524adec80d3f6",
+  "upstream_unchanged": true,
+  "v1_manifest_after_sha256": "54ffe7ea99a235d9d6f7c486b9d1b5b45e575912aa8f90aed5507b1000fa2e6f",
+  "v1_manifest_before_sha256": "54ffe7ea99a235d9d6f7c486b9d1b5b45e575912aa8f90aed5507b1000fa2e6f"
+}

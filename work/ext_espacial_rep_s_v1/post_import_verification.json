@@ -1,0 +1,21 @@
+{
+  "workbook": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/ext_espacial_s2_validacao_independente_v1/Kit_REP_S_Validacao_Independente_v1.xlsx",
+  "sheets": [
+    "INSTRUCOES",
+    "PLANO_SITES",
+    "ENTRADA_CEGA",
+    "GROUND_TRUTH_LOCKED",
+    "GATES",
+    "FREEZE_LOG",
+    "DICIONARIO"
+  ],
+  "sheet_count": 7,
+  "formula_error_matches": 0,
+  "blind_schema_leaks": [],
+  "ground_truth_schema_leaks": [],
+  "populated_blind_rows": 0,
+  "populated_ground_truth_rows": 0,
+  "canonical_state_rows": 7,
+  "canonical_gate_rows": 10,
+  "status": "PASS"
+}

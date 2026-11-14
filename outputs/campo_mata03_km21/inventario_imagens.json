@@ -1,0 +1,151 @@
+{
+  "files": [
+    {
+      "name": "KM21.PNG",
+      "bytes": 170191,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "e23b44d2e0af5f8a649a4b096a0d2f2c6f11bf098742e722742968cfa5b7542e"
+    },
+    {
+      "name": "KM21Drone0867.JPG",
+      "bytes": 4061688,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "fa8032c55d8785fb4c1006dfa873014f221b9c8fba80bddfe5ab35e5a65fb02c"
+    },
+    {
+      "name": "KM21Drone0868.JPG",
+      "bytes": 4020869,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "9ef4dfb2242d5059ca44d387a644cb8830761b4149255ca3c70aed961a323362"
+    },
+    {
+      "name": "KM21Drone0869.JPG",
+      "bytes": 4017486,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "8316da9f2b5f25e40480902000a475488f4d07d2d6fbabc45e467be2b9ba73de"
+    },
+    {
+      "name": "KM21Drone0870.JPG",
+      "bytes": 4232665,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "2a0820a89f98395fd81163369740ecfc002fe33af0aa50752f3bfa67b2ff4861"
+    },
+    {
+      "name": "KM21Drone0871.JPG",
+      "bytes": 3982026,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "febd4844fe2b7d1c1a4c417289bd6b3059e1a88f798c0f1fd3d01993ca49e64c"
+    },
+    {
+      "name": "KM21Drone0872.JPG",
+      "bytes": 3919982,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "bfd83f807b4096f7e8ca04eb33a59d12f6b75bdb3769dd0892cd1e0228c7830e"
+    },
+    {
+      "name": "KM21Drone0873.JPG",
+      "bytes": 4002560,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "550faef3c52c7f2ab8befdabc86da2918b790e5f4804272b45dce6ad2a5e9116"
+    },
+    {
+      "name": "KM21Drone0874.JPG",
+      "bytes": 3856945,
+      "explicitly_attached": false,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "919dcb887150b53a1995c83114bdcdaec922ddd126a8e1f67e521ac50c761ced"
+    },
+    {
+      "name": "KM21Drone0875.JPG",
+      "bytes": 4102719,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "b092b93abdb06e24e12a7bbafb730c9633c8d2bc5911f03a37e674d304df49bc"
+    },
+    {
+      "name": "KM21Solo0384.HEIC",
+      "bytes": 5592414,
+      "explicitly_attached": false,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "23a91b42bac1b555803d7a163dcf3ebed75b4f7934a62df59204ba7807a1fd84"
+    },
+    {
+      "name": "KM21Solo0385.HEIC",
+      "bytes": 4251214,
+      "explicitly_attached": false,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "acf66f22f32d74595defc7dd3ccfb48e9f229313af9e85899bcd5438bccf9932"
+    },
+    {
+      "name": "KM21Solo0386.HEIC",
+      "bytes": 4239466,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "eb84eb381dde44e0d5e599e4e2bed9d902fc6b792cfed24dc1d42f8fc42d8def"
+    },
+    {
+      "name": "KM21Solo0387.HEIC",
+      "bytes": 4664787,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "d12698dbb8b9b5251fb60cc103abe656574db22957c45c907b9c039755a93af3"
+    },
+    {
+      "name": "KM21Solo0388.HEIC",
+      "bytes": 1490151,
+      "explicitly_attached": true,
+      "excluded_potential_outcome": false,
+      "content_read": false,
+      "used_in_ranking": false,
+      "sha256": "933654ffedb807762767f24c5d790df2af9a1ac5aa29eae21ff7ff20812c4203"
+    },
+    {
+      "name": "KM21SoloVit.HEIC",
+      "bytes": 8921821,
+      "explicitly_attached": false,
+      "excluded_potential_outcome": true,
+      "content_read": false,
+      "used_in_ranking": false
+    }
+  ],
+  "explicit_count": 12,
+  "declared_count": 16,
+  "target_candidate_not_read": true,
+  "note": "Arquivos extras não são novas ocorrências. KM21SoloVit não teve conteúdo nem EXIF acessados."
+}

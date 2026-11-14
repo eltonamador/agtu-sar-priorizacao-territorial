@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:rural01:referencia-t5:1.0",
+  "title": "Registro controlado da referência T5 do RURAL-01",
+  "description": "Admite um estado pré-revelação sem coordenada e um estado revelado congelado. Campos ausentes permanecem explícitos e não podem ser inventados.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "scenario_id",
+    "stage",
+    "status",
+    "reference_received",
+    "missing_fields",
+    "notes"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "scenario_id": {
+      "const": "RURAL-01"
+    },
+    "stage": {
+      "const": "T5_REFERENCE_OPENING"
+    },
+    "status": {
+      "enum": [
+        "AGUARDANDO_REVELACAO",
+        "REVELADO_CONGELADO"
+      ]
+    },
+    "reference_received": {
+      "type": "boolean"
+    },
+    "reference_role": {
+      "enum": [
+        "POSICAO_DECLARADA_ALVO_SIMULADO",
+        "REFERENCIA_CAMPO_COM_PROVENIENCIA"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "DECLARADA_NAO_AFERIDA_INDEPENDENTEMENTE",
+        "CAMPO_COM_PROVENIENCIA",
+        "NAO_DISPONIVEL"
+      ]
+    },
+    "position": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "latitude",
+        "longitude",
+        "crs",
+        "coordinate_order"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "crs": {
+          "const": "EPSG:4326"
+        },
+        "coordinate_order": {
+          "const": "LONGITUDE_LATITUDE"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "collection_method",
+        "equipment",
+        "horizontal_accuracy_m",
+        "position_observed_at",
+        "source_artifact",
+        "source_artifact_sha256",
+        "provenance_note"
+      ],
+      "properties": {
+        "collection_method": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "equipment": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "horizontal_accuracy_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "position_observed_at": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_artifact": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "source_artifact_sha256": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance_note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      }
+    },
+    "opening": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "opened_at",
+        "opened_by",
+        "opening_method",
+        "evaluator_freeze_manifest_sha256"
+      ],
+      "properties": {
+        "opened_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "opened_by": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "opening_method": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "evaluator_freeze_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "missing_fields": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "position",
+          "reference_role",
+          "verification_status",
+          "collection_method",
+          "equipment",
+          "horizontal_accuracy_m",
+          "position_observed_at",
+          "source_artifact",
+          "source_artifact_sha256",
+          "opened_at",
+          "opened_by",
+          "opening_method",
+          "evaluator_freeze_manifest_sha256"
+        ]
+      }
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 4000
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "AGUARDANDO_REVELACAO"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "reference_received": {
+            "const": false
+          }
+        },
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "position"
+              ]
+            },
+            {
+              "required": [
+                "source"
+              ]
+            },
+            {
+              "required": [
+                "opening"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "REVELADO_CONGELADO"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "reference_received": {
+            "const": true
+          }
+        },
+        "required": [
+          "reference_role",
+          "verification_status",
+          "position",
+          "source",
+          "opening"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "additional_factors_applied_by_engine": false,
+  "confirmatory_eligible": false,
+  "determinism_compared_file_count": 12,
+  "determinism_run1_hashes_match_published_outputs": true,
+  "elapsed_seconds_two_runs_and_qa": 3.646,
+  "engine_version": "1.0.0-rural01-blind-wrapper+EXT-ESP-SET-v1.1",
+  "erb_850_m_role": "RELATO_CONTEXTUAL_SEM_DERIVACAO_MATEMATICA_REPRODUZIDA",
+  "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+  "files": [
+    {
+      "bytes": 77111,
+      "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "engine_imported_unchanged",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 17629,
+      "path": "work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+      "role": "base_config_source",
+      "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+    },
+    {
+      "bytes": 2391,
+      "path": "work/rural01_processamento_cego_v1/config_rural01_blind_v1.json",
+      "role": "rural01_config_source",
+      "sha256": "f139de772459fd775b7a8f73b2a225f9f929f14739ec585af859f3092d76f171"
+    },
+    {
+      "bytes": 2309,
+      "path": "work/rural01_processamento_cego_v1/PROTOCOLO_RURAL01_CEGO_v1.md",
+      "role": "protocol_source",
+      "sha256": "73c07c5dbde81fd6d9861a70c5e2e78333d422cbb1ba6c4f1f7dd69908707743"
+    },
+    {
+      "bytes": 6198892,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "source_geo02_osm",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "source_geo03_osm",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 5074951,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "7a1f4475279ab70e7b8080445fb02f80357fa08c5e7f18db1980651d01bdc206"
+    },
+    {
+      "bytes": 10237499,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "bytes": 5709363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "0c1ad94bf58bbee81a65c1f904818d3cca704b360ce84ede36f527d966a0c380"
+    },
+    {
+      "bytes": 7081961,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 23653990,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "df31ae2b362b033d1e1d31e683a484133e277727482412b14b743cbc59b12930"
+    },
+    {
+      "bytes": 8977040,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "bytes": 38592452,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "f064257364593b7145ae7a964151d6f6a80cc99a85672c1041e446bf0c5e1b89"
+    },
+    {
+      "bytes": 29215289,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 26266,
+      "path": "outputs/campo_rural01/processamento_cego_v1/atributos_geo_setores.csv",
+      "role": "output",
+      "sha256": "d5011260ad15be8d0ce67ab12cd1a93168e4d88e3e15802108486d9f50680502"
+    },
+    {
+      "bytes": 453,
+      "path": "outputs/campo_rural01/processamento_cego_v1/avisos_revisao.log",
+      "role": "output",
+      "sha256": "b1d5fa6ebd91cabcf3b7c4585b473fe16395bb763a74d8abba6037d6ecc92580"
+    },
+    {
+      "bytes": 20126,
+      "path": "outputs/campo_rural01/processamento_cego_v1/config_efetiva_rural01_blind.json",
+      "role": "output",
+      "sha256": "a0036a0b0c1bca4c225c993162d77f356eb36ddf6c303757c06d992bac282638"
+    },
+    {
+      "bytes": 13059,
+      "path": "outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.geojson",
+      "role": "output",
+      "sha256": "c4db552973f9128affe7525350a64e4c1e721b9b5582c749bc2714b927ffa0ab"
+    },
+    {
+      "bytes": 1730,
+      "path": "outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "1824aa940a03ea7ab985e5dcb06a6047414483050f58846380a6d27115a7f040"
+    },
+    {
+      "bytes": 758,
+      "path": "outputs/campo_rural01/processamento_cego_v1/manifesto_entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "0f6d1180243141eafc3742cac335efae51238abbf4bb68da87e6a457a53eff8d"
+    },
+    {
+      "bytes": 2309,
+      "path": "outputs/campo_rural01/processamento_cego_v1/protocolo_rural01_cego_v1.md",
+      "role": "output",
+      "sha256": "73c07c5dbde81fd6d9861a70c5e2e78333d422cbb1ba6c4f1f7dd69908707743"
+    },
+    {
+      "bytes": 56358,
+      "path": "outputs/campo_rural01/processamento_cego_v1/ranking_base_rural01.csv",
+      "role": "output",
+      "sha256": "095bf8d290d3419824e9b69a84870d59b4d55d93e9a30d5a033796a4e69b22f8"
+    },
+    {
+      "bytes": 3236,
+      "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_determinismo.json",
+      "role": "output",
+      "sha256": "fc8244b9530ee7f932ded98278fa010a6f340dae72bd1b13e9d9fe9d79e3b107"
+    },
+    {
+      "bytes": 1211,
+      "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_execucao_rural01.md",
+      "role": "output",
+      "sha256": "3661d1efbbfe827590ed16119ae213a335d6aac2b90ecc51226fe9b73e6bcd3b"
+    },
+    {
+      "bytes": 516,
+      "path": "outputs/campo_rural01/processamento_cego_v1/relatorio_qa.json",
+      "role": "output",
+      "sha256": "e590db1f88be3be4cde42b5b25c685bdb59361572c1050cf41be5572735bce67"
+    },
+    {
+      "bytes": 143982,
+      "path": "outputs/campo_rural01/processamento_cego_v1/resultado_rural01_cego.json",
+      "role": "output",
+      "sha256": "7dbd23a5554315f5df99f395260b4329613b5b6773dce1c8ff11a7c0865897b2"
+    },
+    {
+      "bytes": 126728,
+      "path": "outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson",
+      "role": "output",
+      "sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc"
+    },
+    {
+      "bytes": 1189,
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.csv",
+      "role": "output",
+      "sha256": "f6750793b2940c226240e7c87a9a5e40ebf39e096c735c06bde4bab13f5f37b6"
+    },
+    {
+      "bytes": 2943,
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+      "role": "output",
+      "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268"
+    }
+  ],
+  "generated_at_utc": "2026-10-22T15:33:16+00:00",
+  "ground_truth_used": false,
+  "protocol_id": "RURAL01-BLIND-SET-v1.0",
+  "python_version": "3.12.14",
+  "r0_semantics": "source_adjusted_final",
+  "radius_m": 1500.0,
+  "radius_origin": "INFORMADO_PELA_FONTE",
+  "review_status": "REVISAR",
+  "scientific_projection_sha256": "d51dd9e3252f50bd1d756b4b9ee914aca0b7300eda6e2b2f751e5f6fa587301e",
+  "sector_count": 24,
+  "upstream_protocol_id": "RURAL01-SOURCE-RADIUS-v1.0"
+}

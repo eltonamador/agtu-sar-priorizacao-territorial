@@ -1,0 +1,379 @@
+{
+  "protocol_id": "RURAL01-EVAL-T45-T6-v1.0",
+  "version": "1.0",
+  "status": "CONGELADO_ANTES_DA_REVELACAO",
+  "scenario_id": "RURAL-01",
+  "language": "pt-BR",
+  "purpose": "AVALIACAO_DIAGNOSTICA_POS_ABERTURA_SEM_REAJUSTE",
+  "blind_state": {
+    "reference_received": false,
+    "reference_coordinates_present_in_config": false,
+    "reference_opening_allowed_only_after_evaluator_freeze": true,
+    "retuning_after_opening": false,
+    "t0_t4_read_only": true,
+    "global_empirical_pass_fail_forbidden": true,
+    "qa_execution_pass_fail_allowed": true
+  },
+  "upstream": {
+    "territorial_protocol_id": "RURAL01-BLIND-SET-v1.0",
+    "movement_protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+    "movement_configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+    "movement_protocol_sha256": "b0bd9a7b849ea575b1bafe41e2ee7a341db8fd9a15668faf0e758e13f77a4993",
+    "t4_ledger": {
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/ledger_congelamento_T4_mov_v2.json",
+      "sha256": "dd0a3e3d21583d2cf1bfade7a9d97df7a2f10b1959cef45ec61524adec80d3f6",
+      "required_status": "CONGELADO_ANTES_DA_REVELACAO"
+    },
+    "required_files": [
+      {
+        "path": "outputs/campo_rural01/processamento_movimento_cego_v2/grade_resistencia.csv",
+        "sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481",
+        "role": "MOVEMENT_GRID"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_movimento_cego_v2/setores_mov_v2.csv",
+        "sha256": "3f55eb36e4e98b59f71fd9e0468fcf9051658b0a493e2791388aa10451ec1d97",
+        "role": "MOVEMENT_SECTOR_RANKING"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_movimento_cego_v2/corredores_mov_v2.geojson",
+        "sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e",
+        "role": "FROZEN_CORRIDORS"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_movimento_cego_v2/resultado_mov_v2.json",
+        "sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e",
+        "role": "MOVEMENT_RESULT"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson",
+        "sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc",
+        "role": "V1_SECTORS"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_cego_v1/ranking_base_rural01.csv",
+        "sha256": "095bf8d290d3419824e9b69a84870d59b4d55d93e9a30d5a033796a4e69b22f8",
+        "role": "V1_RANKING"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+        "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268",
+        "role": "V1_TOP3"
+      },
+      {
+        "path": "outputs/campo_rural01/processamento_cego_v1/manifesto_processamento_cego.json",
+        "sha256": "54ffe7ea99a235d9d6f7c486b9d1b5b45e575912aa8f90aed5507b1000fa2e6f",
+        "role": "V1_MANIFEST"
+      },
+      {
+        "path": "work/rural01_mov_v2/config_mov_v2.json",
+        "sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "role": "MOVEMENT_CONFIG"
+      }
+    ],
+    "integrity_failure_policy": "NAO_AVALIAVEL_INTEGRIDADE_NO_AUTOREPAIR"
+  },
+  "reference_contract": {
+    "schema_path": "work/rural01_avaliacao_t5_t6_v1/schema_referencia_t5_v1.json",
+    "pre_opening_template_path": "work/rural01_avaliacao_t5_t6_v1/MODELO_REGISTRO_T5_SEM_COORDENADA.json",
+    "accepted_revealed_status": "REVELADO_CONGELADO",
+    "required_scenario_id": "RURAL-01",
+    "allowed_reference_roles": [
+      "POSICAO_DECLARADA_ALVO_SIMULADO",
+      "REFERENCIA_CAMPO_COM_PROVENIENCIA"
+    ],
+    "input_crs": "EPSG:4326",
+    "coordinate_order": "LONGITUDE_LATITUDE",
+    "missing_data_policy": "NULL_OR_NAO_DISPONIVEL_NEVER_INFER",
+    "opening_timestamp_policy": "ACTUAL_T5_EVENT_WITH_EXPLICIT_TIMEZONE",
+    "opening_must_follow_t45_freeze": true
+  },
+  "geometry": {
+    "analysis_crs_method": "LOCAL_AEQD_CENTERED_ON_SOURCE_POINT",
+    "analysis_crs_definition": "+proj=aeqd +lat_0=0.188611 +lon_0=-51.155556 +R=6371008.8 +units=m +no_defs",
+    "source_point": {
+      "latitude": 0.188611,
+      "longitude": -51.155556,
+      "semantic_role": "PONTO_INICIAL_PLANEJAMENTO_NOT_REFERENCE_TARGET"
+    },
+    "domain_radius_m": 1500.0,
+    "domain_boundary_tolerance_m": 0.05,
+    "domain_classes": {
+      "INTERIOR": "distance_m < 1499.95",
+      "BORDA_DOMINIO": "1499.95 <= distance_m <= 1500.05",
+      "EXTERIOR_DOMINIO": "distance_m > 1500.05"
+    },
+    "outside_domain_policy": "NO_GRID_SECTOR_OR_COST_EXTRAPOLATION",
+    "sector_boundary_tolerance_m": 0.05,
+    "sector_boundary_policy": "LIST_ALL_ADJACENT_AND_USE_WORST_NUMERIC_RANK_PER_RANKING",
+    "sector_boundary_tie_break": "SECTOR_ID_ASC",
+    "grid_resolution_m": 30.0,
+    "grid_snap_method": "NEAREST_VALID_CELL_CENTER_IN_AEQD",
+    "grid_snap_tie_break": [
+      "DISTANCE_SQUARED_ASC",
+      "ROW_ASC",
+      "COL_ASC"
+    ],
+    "half_cell_diagonal_m": 21.2132034356,
+    "grid_snap_comparison_epsilon_m": 0.05,
+    "grid_snap_max_distance_m": 21.2132034356,
+    "grid_snap_exceedance_policy": "NAO_AVALIAVEL_SEM_CELULA_ASSOCIAVEL"
+  },
+  "cost_evaluation": {
+    "movement_budget_cost_m_equivalent": 1500.0,
+    "ecdf": {
+      "method": "INCLUSIVE_EMPIRICAL_CDF",
+      "formula": "100 * count(valid_finite_cost <= evaluation_cost) / count(valid_finite_cost)",
+      "universe": "ALL_VALID_FINITE_GRID_CELLS_WITHIN_FROZEN_DOMAIN_PER_COST_SCENARIO",
+      "lower_percentile_means": "LOWER_RELATIVE_ACCUMULATED_COST",
+      "is_probability": false,
+      "tie_policy": "INCLUSIVE"
+    },
+    "bands": [
+      {
+        "id": "B1_ATE_UM_TERCO",
+        "lower": 0.0,
+        "lower_inclusive": true,
+        "upper": 500.0,
+        "upper_inclusive": true
+      },
+      {
+        "id": "B2_ENTRE_UM_E_DOIS_TERCOS",
+        "lower": 500.0,
+        "lower_inclusive": false,
+        "upper": 1000.0,
+        "upper_inclusive": true
+      },
+      {
+        "id": "B3_ENTRE_DOIS_TERCOS_E_ORCAMENTO",
+        "lower": 1000.0,
+        "lower_inclusive": false,
+        "upper": 1500.0,
+        "upper_inclusive": true
+      },
+      {
+        "id": "B4_ACIMA_DO_ORCAMENTO",
+        "lower": 1500.0,
+        "lower_inclusive": false,
+        "upper": null,
+        "upper_inclusive": false
+      }
+    ],
+    "missing_or_nonfinite_band": "NAO_DISPONIVEL",
+    "area_estimation": {
+      "method": "VALID_CELL_CENTER_COUNT_TIMES_CELL_AREA",
+      "cell_area_m2": 900.0,
+      "theoretical_circle_area_formula": "pi * 1500.0^2",
+      "report_denominators": [
+        "ALL_VALID_CELLS",
+        "THEORETICAL_1500M_CIRCLE"
+      ],
+      "is_exact_vector_area": false
+    }
+  },
+  "principal_hypotheses": [
+    {
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "base_cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+      "status": "PARALLEL_EQUAL_STATUS"
+    },
+    {
+      "hypothesis_id": "H_FORA_REDE",
+      "base_cost_scenario_id": "H_FORA_REDE__BASE",
+      "status": "PARALLEL_EQUAL_STATUS"
+    }
+  ],
+  "hypothesis_aggregation": {
+    "average_forbidden": true,
+    "winner_selection_forbidden": true,
+    "post_reveal_promotion_forbidden": true,
+    "presentation": "SIDE_BY_SIDE"
+  },
+  "sector_evaluation": {
+    "top1_rule": "CONSERVATIVE_RANK_EQUALS_1",
+    "top3_rule": "CONSERVATIVE_RANK_LESS_THAN_OR_EQUAL_TO_3",
+    "shared_rank_members_preserved": true,
+    "v1_vs_v2_rank_difference": "MOV_V_RANK_MINUS_V1_RANK_DESCRIPTIVE_ONLY",
+    "improvement_claim_from_rank_difference": false
+  },
+  "corridor_evaluation": {
+    "profile": "BASE",
+    "per_hypothesis": true,
+    "primary_set": {
+      "id": "MOV_V_BASE_TOP3_PER_HYPOTHESIS",
+      "selector": "JOIN_CORRIDOR_TO_SETORES_MOV_V2_BY_HYPOTHESIS_ID_AND_SECTOR_ID_WHERE_SENSITIVITY_PROFILE_BASE_AND_MOBILITY_RANK_LE_3",
+      "expected_nominal_count_per_hypothesis": 3,
+      "preserve_shared_rank_at_cutoff": true,
+      "metrics": [
+        "DISTANCE_TO_EACH_MOV_V_TOP3_CORRIDOR_M",
+        "DISTANCE_TO_NEAREST_MOV_V_TOP3_CORRIDOR_M",
+        "NEAREST_MOV_V_TOP3_CORRIDOR_ID",
+        "WITHIN_DISCRETE_GRID_SUPPORT"
+      ]
+    },
+    "secondary_set": {
+      "id": "V1_TOP3_COMPARATIVE_PER_HYPOTHESIS",
+      "selector": "v1_top3_member == true",
+      "expected_nominal_count_per_hypothesis": 3,
+      "metrics": [
+        "DISTANCE_TO_EACH_V1_TOP3_CORRIDOR_M",
+        "DISTANCE_TO_NEAREST_V1_TOP3_CORRIDOR_M",
+        "NEAREST_V1_TOP3_CORRIDOR_ID",
+        "WITHIN_DISCRETE_GRID_SUPPORT"
+      ],
+      "may_replace_primary_result": false
+    },
+    "diagnostic_any24_set": {
+      "id": "ANY24_DIAGNOSTIC_PER_HYPOTHESIS",
+      "selector": "ALL_24_FROZEN_SECTOR_CORRIDORS",
+      "expected_count_per_hypothesis": 24,
+      "metrics": [
+        "DISTANCE_TO_NEAREST_ANY24_CORRIDOR_M",
+        "NEAREST_ANY24_CORRIDOR_ID"
+      ],
+      "may_count_as_prioritization_hit": false
+    },
+    "discrete_support_threshold_m": 21.2132034356,
+    "comparison_epsilon_m": 0.05,
+    "threshold_semantics": "HALF_DIAGONAL_OF_30M_CELL_NOT_PHYSICAL_WIDTH",
+    "corridor_is_observed_route": false,
+    "corridor_is_predicted_trajectory": false
+  },
+  "sensitivity": {
+    "required_cost_scenarios": [
+      "H_REDE_DISPONIVEL__SUAVE",
+      "H_REDE_DISPONIVEL__BASE",
+      "H_REDE_DISPONIVEL__FORTE",
+      "H_FORA_REDE__SUAVE",
+      "H_FORA_REDE__BASE",
+      "H_FORA_REDE__FORTE"
+    ],
+    "expected_scenario_count": 6,
+    "per_scenario_metrics": [
+      "ACCUMULATED_COST",
+      "INCLUSIVE_ECDF_PERCENTILE",
+      "COST_BAND",
+      "WITHIN_BUDGET",
+      "SECTOR_RANK",
+      "TOP3_MEMBERSHIP"
+    ],
+    "per_hypothesis_metrics": [
+      "BUDGET_MEMBERSHIP_CONCORDANCE_ACROSS_THREE_PROFILES",
+      "TOP3_MEMBERSHIP_CONCORDANCE_ACROSS_THREE_PROFILES",
+      "MIN_RANK",
+      "MAX_RANK",
+      "RANK_SPAN"
+    ],
+    "six_scenario_metrics": [
+      "COUNT_WITHIN_BUDGET_0_TO_6",
+      "COUNT_TOP3_0_TO_6"
+    ],
+    "mean_cost_across_scenarios_forbidden": true,
+    "retrospective_profile_selection_forbidden": true
+  },
+  "ablations": {
+    "role": "SECONDARY_DIAGNOSTIC_ONLY",
+    "cost_scenario_ids": [
+      "ABL__SEM_HIDRO",
+      "ABL__SEM_COBERTURA",
+      "ABL__SEM_RELEVO",
+      "ABL__SEM_DESCONTO_REDE"
+    ],
+    "may_replace_principal_result": false,
+    "may_authorize_retuning": false,
+    "counterfactual_not_promoted": "SENS__COM_DUPLICACAO_HIDRO_COBERTURA"
+  },
+  "profile_v3": {
+    "role": "OPTIONAL_COMPLEMENTARY_CONTEXT",
+    "may_modify_frozen_territorial_results": false,
+    "abstention_operational_status": "ABSTENCAO_PERFIL",
+    "missing_incompatible_or_abstaining_policy": "PRESERVE_TERRITORIAL_RESULTS_AND_RECORD_ABSTENTION",
+    "may_compensate_negative_spatial_result": false,
+    "may_define_reference_sector": false
+  },
+  "result_taxonomy": {
+    "global_empirical_pass_fail": false,
+    "qa_execution_pass_fail_is_not_empirical_result": true,
+    "dimension_states": {
+      "domain": [
+        "DENTRO_DOMINIO",
+        "BORDA_DOMINIO",
+        "FORA_ESCOPO_DOMINIO",
+        "NAO_AVALIAVEL_GEOMETRIA"
+      ],
+      "grid": [
+        "CELULA_ASSOCIADA",
+        "SEM_CELULA_NO_SUPORTE_DISCRETO",
+        "NAO_AVALIAVEL_GRADE"
+      ],
+      "budget": [
+        "DENTRO_ORCAMENTO",
+        "NEGATIVO_ALCANCABILIDADE_ACIMA_ORCAMENTO",
+        "NAO_AVALIAVEL_CUSTO"
+      ],
+      "ranking": [
+        "SETOR_TOP3",
+        "NEGATIVO_PRIORIZACAO_FORA_TOP3",
+        "NAO_AVALIAVEL_SETOR"
+      ],
+      "corridor": [
+        "DENTRO_SUPORTE_DISCRETO_TOP3_MOVV",
+        "NEGATIVO_CORREDOR_TOP3_MOVV_FORA_SUPORTE",
+        "NAO_AVALIAVEL_CORREDOR"
+      ],
+      "sensitivity": [
+        "ESTAVEL_NO_CRITERIO",
+        "NEGATIVO_ROBUSTEZ_INSTAVEL",
+        "NAO_AVALIAVEL_SENSIBILIDADE"
+      ],
+      "hypotheses": [
+        "CONCORDANTES_NO_CRITERIO",
+        "DIVERGENTES_ENTRE_HIPOTESES",
+        "NAO_AVALIAVEL_HIPOTESES"
+      ],
+      "integrity": [
+        "INSUMOS_VERIFICADOS",
+        "NAO_AVALIAVEL_INTEGRIDADE"
+      ]
+    },
+    "negative_result_must_be_preserved": true,
+    "cross_dimension_aggregate_score_forbidden": true
+  },
+  "missing_data": {
+    "invent_values": false,
+    "missing_numeric_representation": null,
+    "missing_text_representation": "NAO_DISPONIVEL",
+    "missing_may_be_interpreted_as_favorable": false,
+    "missing_may_be_imputed_from_filename_or_device_model": false,
+    "conflicting_sources_policy": "PRESERVE_AND_REVIEW"
+  },
+  "outputs": {
+    "directory": "outputs/campo_rural01/avaliacao_pos_abertura_v1",
+    "required_after_t6": [
+      "registro_abertura_referencia.json",
+      "resultado_avaliacao_t5_t6.json",
+      "metricas_cenarios.csv",
+      "areas_bandas_custo.csv",
+      "metricas_corredores.csv",
+      "relatorio_qa_t5_t6.json",
+      "RELATORIO_AVALIACAO_RURAL01_T6.md",
+      "relatorio_determinismo_t5_t6.json",
+      "manifesto_avaliacao_t5_t6.json"
+    ],
+    "canonical_json": true,
+    "sha256_for_inputs_code_config_outputs": true,
+    "include_reference_in_pre_opening_artifacts": false,
+    "map_generated": false,
+    "map_status": "DEFERRED_NOT_REQUIRED_IN_T6_PACKAGE"
+  },
+  "language_guardrails": {
+    "forbidden_claims": [
+      "PROBABILIDADE_DE_PRESENCA",
+      "TRAJETORIA_REAL",
+      "POSICAO_PREVISTA",
+      "ACURACIA_GERAL",
+      "EFICACIA_OPERACIONAL_COMPROVADA"
+    ],
+    "allowed_characterization": "ESTUDO_DE_CASO_PROSPECTIVO_DIAGNOSTICO"
+  }
+}

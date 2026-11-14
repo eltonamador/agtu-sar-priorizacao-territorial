@@ -1,0 +1,19 @@
+{
+  "gate_count": 10,
+  "gates": {
+    "all_base_scores_in_unit_interval": true,
+    "all_control_flags_false": true,
+    "all_geo_complete": true,
+    "deterministic_repeat_matches": true,
+    "feature_count_is_24": true,
+    "no_directional_preference": true,
+    "rank_count_is_24": true,
+    "scientific_files_present": true,
+    "sector_count_is_24": true,
+    "top3_count_is_3": true
+  },
+  "ground_truth_used": false,
+  "passed_gate_count": 10,
+  "protocol_id": "RURAL01-BLIND-SET-v1.0",
+  "status": "PASS"
+}

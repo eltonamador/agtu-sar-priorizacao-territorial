@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agtupesquisa.local/schemas/visual_sector_binding_v1.schema.json",
+  "title": "Vínculo auditável entre evidência visual e setores LOC v1",
+  "description": "Artefato externo que recalcula interseções entre footprints técnicos e setores LOC sem alterar LOC, sem confiar em associações manuais e sem acessar ground truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "binding_contract_version",
+    "engine_id",
+    "policy_id",
+    "policy_sha256",
+    "scenario_id",
+    "case_revision",
+    "source_case_payload_sha256",
+    "loc_input_sha256",
+    "loc_result_sha256",
+    "metadata_manifest_sha256",
+    "ground_truth_used",
+    "affects_loc",
+    "bindings",
+    "output_sha256"
+  ],
+  "properties": {
+    "binding_contract_version": {"const": "VISUAL-SECTOR-BINDING-v1"},
+    "engine_id": {"const": "VISUAL-SPATIAL-BINDER-v1"},
+    "policy_id": {"const": "VISUAL-SPATIAL-POLICY-v1"},
+    "policy_sha256": {"$ref": "#/$defs/sha256"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "case_revision": {"type": "integer", "minimum": 1},
+    "source_case_payload_sha256": {"$ref": "#/$defs/sha256"},
+    "loc_input_sha256": {"$ref": "#/$defs/sha256"},
+    "loc_result_sha256": {"$ref": "#/$defs/sha256"},
+    "metadata_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "ground_truth_used": {"const": false},
+    "affects_loc": {"const": false},
+    "bindings": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/bindingRecord"}
+    },
+    "output_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "quality": {
+      "type": "string",
+      "enum": [
+        "APROXIMADO_METADADOS",
+        "VERIFICADO_CALIBRADO",
+        "CONTEXTUAL_INSUFICIENTE"
+      ]
+    },
+    "coordinate": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "number", "minimum": -180, "maximum": 180},
+        {"type": "number", "minimum": -90, "maximum": 90}
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "polygon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": {"const": "Polygon"},
+        "coordinates": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "items": {"$ref": "#/$defs/coordinate"}
+          }
+        }
+      }
+    },
+    "bindingRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_id",
+        "file_sha256",
+        "metadata_record_sha256",
+        "quality",
+        "method",
+        "spatially_qualified",
+        "footprint_radius_m",
+        "footprint_geojson",
+        "applicable_sector_ids",
+        "reason_codes"
+      ],
+      "properties": {
+        "visual_id": {"$ref": "#/$defs/identifier"},
+        "file_sha256": {"$ref": "#/$defs/sha256"},
+        "metadata_record_sha256": {"$ref": "#/$defs/sha256"},
+        "quality": {"$ref": "#/$defs/quality"},
+        "method": {
+          "type": "string",
+          "enum": [
+            "NADIR_CONSERVATIVE_CIRCULAR_FOOTPRINT-v1",
+            "CONTEXTUAL_NO_AUTOMATIC_FOOTPRINT-v1"
+          ]
+        },
+        "spatially_qualified": {"type": "boolean"},
+        "footprint_radius_m": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "footprint_geojson": {
+          "oneOf": [
+            {"$ref": "#/$defs/polygon"},
+            {"type": "null"}
+          ]
+        },
+        "applicable_sector_ids": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {"$ref": "#/$defs/identifier"},
+          "uniqueItems": true
+        },
+        "reason_codes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
+          "items": {"$ref": "#/$defs/identifier"},
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"quality": {"const": "CONTEXTUAL_INSUFICIENTE"}}, "required": ["quality"]},
+          "then": {
+            "properties": {
+              "method": {"const": "CONTEXTUAL_NO_AUTOMATIC_FOOTPRINT-v1"},
+              "spatially_qualified": {"const": false},
+              "footprint_radius_m": {"type": "null"},
+              "footprint_geojson": {"type": "null"},
+              "applicable_sector_ids": {"maxItems": 0}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"quality": {"enum": ["APROXIMADO_METADADOS", "VERIFICADO_CALIBRADO"]}}, "required": ["quality"]},
+          "then": {
+            "properties": {
+              "method": {"const": "NADIR_CONSERVATIVE_CIRCULAR_FOOTPRINT-v1"},
+              "spatially_qualified": {"const": true},
+              "footprint_radius_m": {"type": "number", "exclusiveMinimum": 0},
+              "footprint_geojson": {"$ref": "#/$defs/polygon"}
+            }
+          }
+        }
+      ]
+    }
+  }
+}

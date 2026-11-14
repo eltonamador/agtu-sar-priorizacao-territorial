@@ -1,0 +1,32 @@
+{
+  "protocol_id": "MATA03-KM21-SOURCE-RADIUS-v1.0",
+  "execution_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+  "ground_truth_used": false,
+  "confirmatory_eligible": false,
+  "r0_semantics": "source_declared_operational_domain",
+  "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+  "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+  "detection_quality_imputed": false,
+  "additional_factors_applied_by_engine": false,
+  "protocol_version": "1.0",
+  "record_count": 1,
+  "scenario_count": 1,
+  "radius_m": 7000.0,
+  "radius_review_status": "REVISAR",
+  "adaptive_buffer_status": "NAO_EXECUTADO_ENTRADA_INSUFICIENTE",
+  "detection_quality_available": false,
+  "files": [
+    {
+      "path": "entrada_raio_fonte_mata03_km21.json",
+      "role": "output",
+      "bytes": 2110,
+      "sha256": "67a8880674db7cb7b5a437d196faf3bb2fb73d02866b523214164ea02649e633"
+    },
+    {
+      "path": "entrada_raio_fonte_mata03_km21.geojson",
+      "role": "output",
+      "bytes": 13872,
+      "sha256": "6d4e2c52399fb950bddb83a069368009341a56131591ed559175cca428c1d89d"
+    }
+  ]
+}

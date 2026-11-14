@@ -1,0 +1,35 @@
+MATA-02 — ensaio complementar territorial v2 e pista contextual 249°
+
+RESULTADO
+Motor EXT-ESP-SET-v1.1 executado sem modificar seu código. Entrada auditada v2: E0 -0,15916666666666668 / -51,395; raio informado 6000 m. Ocorrência hipotética sobre território real. Não representa uma recomendação operacional validada.
+
+BASE completo com GEO-02, GEO-03, GEO-04 e GEO-05. A fonte OSM contém 479 segmentos viários e 28 segmentos hidrográficos que interceptam o domínio (segmentos não equivalem a 479 vias ou 28 rios). Não foi necessário produzir o diagnóstico sem hidrografia.
+
+Primeiros setores, segundo os pesos e critérios já existentes:
+1. R01-SW — anel interno, sudoeste: escore 0,644159158.
+2. R03-SW — anel externo, sudoeste: escore 0,634347572.
+3. R03-E — anel externo, leste: escore 0,630079426.
+
+Estado: REVISAR.
+Margem primeiro–segundo: 0,009811586, inferior ao limiar de 0,05.
+Estabilidade: 0,60 (primeiro em 3 dos 5 conjuntos de pesos), inferior ao limiar 0,80.
+Códigos: UPSTREAM_REVIEW_REQUIRED; LOW_MARGIN; RANKING_UNSTABLE; POTENTIAL_BARRIER.
+O primeiro setor tem sinalização de vegetação densa potencial. A exigência de revisão da entrada também foi preservada. Os números não são probabilidades de encontrar a pessoa; a posição no ranking não é ordem automática de emprego de equipes.
+
+PISTA DE 249°
+Registrada como relato do pesquisador para o cenário simulado, não extraída do drone ou da bússola. O azimute está separado da entrada BASE e não alterou seus escores.
+249° aponta aproximadamente para oeste-sudoeste. Na divisão geométrica de oito direções do motor, pertence ao setor W (247,5° a 292,5°), somente 1,5° depois da fronteira com SW. Logo, não é correto afirmar que coincide exatamente com o setor SW vencedor. Também não se pode descartar SW com base nessa diferença sem conhecer a incerteza angular.
+O arquivo referencia_249_contextual.geojson representa uma linha de E0 até a borda do domínio, usando norte geográfico como convenção gráfica. E0 não foi confirmado como ponto exato do relato. A extensão até 6 km serve somente ao desenho; não é alcance presumido, trilha, rota ou distância percorrida.
+Não foi criado cone preenchido. Não se atribuíram tolerância angular, qualidade, peso, intervalo radial ou grau de confiança. PERFIL V3 não foi executado. Para uma aplicação quantitativa dessa pista faltam: confirmar norte geográfico/magnético, origem espacial do relato e documentar tolerância angular e qualidade da informação. Não é necessário preencher esses campos para conservar o resultado BASE já obtido.
+
+FONTES E VERIFICAÇÕES
+OSM local: instantâneo 17/08/2026 17:01:35 UTC; consulta retangular cobre o domínio e o círculo de 10 km em torno de E0. Cobertura da consulta não significa mapeamento completo.
+Relevo: SRTM local S01W052; cobertura: ESA WorldCover 2021 v200 S03W054.
+24 setores, 3600 amostras por setor: todas as amostras previstas de relevo e cobertura retornaram válidas. São 86400 amostras por camada, não censo de pixels e não verificação de campo.
+Contrato de entrada, geometria de setorização e recalculação independente da soma ponderada verificados. O ranqueamento repetido sobre os mesmos atributos foi idêntico. A extração geográfica não foi submetida a teste independente de repetibilidade; não se afirma validação completa do motor.
+Fontes, scripts e arquivos de entrada/saída possuem hashes nos manifestos. Não houve consulta a referências de encontro/posição de vítima nem ajuste de pesos para alinhar a saída à pista.
+
+PRESERVAÇÃO E LIMITES
+Dissertação, pacote dos especialistas, fotos originais, entrada v2 e preparação v1 permanecem intactos. O novo diretório guarda resultado, atributos, ranking completo, configuração, geometria, pista separada e verificações.
+O executor antigo pressupunha ausência de hidrografia; não foi utilizado como executor. Um novo invólucro utilizou as funções existentes do motor, mantendo a ramificação hidrográfica prevista na configuração e sem forçar ausência de água.
+Não houve avaliação por especialistas nem comprovação de eficácia operacional. Nenhuma conclusão geral da dissertação foi alterada.

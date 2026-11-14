@@ -1,0 +1,244 @@
+{
+  "protocol_id": "REP-S-SPATIAL-EVAL-v1.0",
+  "protocol_name": "Interface cega FIELD-CAND para buffer/setores e avaliacao setorial pos-T3",
+  "version": "1.0",
+  "status": "CONGELADO_ANTES_DA_COLETA",
+  "freeze_date": "2026-10-16",
+  "validation_modality": "REP-S-FIELD-PILOT",
+  "interpretation": "Avaliacao prospectiva do componente espacial e do fluxo com ground truth real de campo e candidatos semissinteticos pre-especificados; nao valida a deteccao aerotransportada operacional.",
+  "cardinality": {
+    "sites": 4,
+    "candidates_per_site": 3,
+    "candidate_buffers": 12,
+    "sectors_per_buffer": 24,
+    "expected_sectors": 288,
+    "planned_environment_classes": [
+      "URBANO",
+      "MISTO",
+      "RURAL/ABERTO",
+      "MATA"
+    ]
+  },
+  "dependencies": {
+    "field_candidate_protocol": "FIELD-CAND-v1.0",
+    "buffer_protocol": "EXT-ESP-BUF-v1.0",
+    "sector_protocol": "EXT-ESP-SET-v1.1",
+    "rep_s_protocol": "EXT-ESP-REP-S-v1.0",
+    "pinned_files": [
+      {
+        "role": "field_candidate_config",
+        "relative_path": "../rep_s_field_pilot_v1/config_field_candidates_v1.json",
+        "sha256": "2e245308bd06b3c9ec89df7630de37b95f0e6e5b351d8bcb9cdb59d0ac19163d"
+      },
+      {
+        "role": "field_candidate_engine",
+        "relative_path": "../rep_s_field_pilot_v1/generate_field_candidates.py",
+        "sha256": "f0607bfeb5a7dee6ef98c90d68757d6ff754bc001beab2cdf3ab4ba6466647cd"
+      },
+      {
+        "role": "buffer_config",
+        "relative_path": "../ext_espacial_buffer_v1/config_buffer_v1.json",
+        "sha256": "7d9a309852f869daf87f0c4693bbb310990b1a4d832841dbaeebf8120bad0f21"
+      },
+      {
+        "role": "buffer_engine",
+        "relative_path": "../ext_espacial_buffer_v1/motor_buffer_adaptativo.py",
+        "sha256": "f45779b905cb6bd28b6bc7c0ee7fd16add9079fa1b20c6727c989f8ae4e41fb4"
+      },
+      {
+        "role": "sector_config",
+        "relative_path": "../ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+        "sha256": "192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6"
+      },
+      {
+        "role": "sector_engine",
+        "relative_path": "../ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+        "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+      },
+      {
+        "role": "rep_s_protocol",
+        "relative_path": "../ext_espacial_rep_s_v1/protocolo_rep_s_v1.json",
+        "sha256": "b6f5ad4d4ae43ee8089b75040d6947a47276206e71eac9a35d651953ba2cefde"
+      }
+    ]
+  },
+  "blind_interface": {
+    "input_protocol": "FIELD-CAND-v1.0",
+    "required_input_columns": [
+      "site_id",
+      "scenario_id",
+      "candidate_id",
+      "candidate_slot",
+      "partition",
+      "estimated_lat",
+      "estimated_lon",
+      "base_radius_m",
+      "r0_semantics",
+      "detection_quality",
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min",
+      "factors_applied",
+      "r0_provenance",
+      "data_origin",
+      "source_row_hash",
+      "execution_phase",
+      "freeze_status",
+      "blind_row_sha256",
+      "protocol_id",
+      "interpretation_boundary"
+    ],
+    "buffer_output_columns": [
+      "scenario_id",
+      "candidate_id",
+      "estimated_lat",
+      "estimated_lon",
+      "base_radius_m",
+      "r0_semantics",
+      "detection_quality",
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min",
+      "factors_applied",
+      "r0_provenance",
+      "data_origin",
+      "source_row_hash",
+      "execution_phase"
+    ],
+    "forbidden_header_fragments": [
+      "ground_truth",
+      "truth",
+      "reference",
+      "anchor",
+      "victim",
+      "target",
+      "actual_lat",
+      "actual_lon",
+      "distance_to",
+      "generator_distance",
+      "bearing",
+      "offset",
+      "range",
+      "band",
+      "faixa",
+      "rank",
+      "relevant_candidate",
+      "inside_buffer",
+      "hit_truth"
+    ],
+    "required_values": {
+      "partition": "REP_S_FIELD_PILOT_BLIND",
+      "freeze_status": "CONGELADO_FIELD_CAND_v1_0",
+      "protocol_id": "FIELD-CAND-v1.0",
+      "r0_semantics": "nominal_base",
+      "base_radius_m": 2000.0,
+      "execution_phase": "REP_S_FIELD_PILOT"
+    }
+  },
+  "state_machine": [
+    {
+      "milestone": "T-1",
+      "state": "PLANO_CONGELADO",
+      "evidence": "protocolo, estratos, cardinalidade, regras e dependencias com hash congelados antes da coleta"
+    },
+    {
+      "milestone": "T0",
+      "state": "GROUND_TRUTH_LACRADO",
+      "evidence": "CSV reservado e evidencias de campo preservados; somente o hash e exposto ao fluxo cego"
+    },
+    {
+      "milestone": "T1",
+      "state": "ENTRADA_CEGA_CONGELADA",
+      "evidence": "FIELD-CAND cego validado, adaptado sem perda semantica e hasheado"
+    },
+    {
+      "milestone": "T1.5",
+      "state": "MOTORES_VERIFICADOS",
+      "evidence": "hashes das dependencias conferidos e suites de teste aprovadas"
+    },
+    {
+      "milestone": "T2",
+      "state": "SAIDAS_CEGAS_CONGELADAS",
+      "evidence": "duas execucoes cientificamente identicas de buffer e setores, com hashes registrados"
+    },
+    {
+      "milestone": "T3",
+      "state": "GROUND_TRUTH_ABERTO_PARA_AVALIACAO",
+      "evidence": "abertura posterior ao T2, registrada no manifesto e vinculada ao hash reservado"
+    },
+    {
+      "milestone": "T4",
+      "state": "AVALIACAO_SETORIAL_CONCLUIDA",
+      "evidence": "metricas pre-especificadas calculadas sem retuning e com manifesto de saida"
+    }
+  ],
+  "ground_truth": {
+    "required_columns": [
+      "site_id",
+      "scenario_id",
+      "ground_truth_lat",
+      "ground_truth_lon",
+      "planned_environment"
+    ],
+    "join_key": [
+      "site_id",
+      "scenario_id"
+    ],
+    "coordinate_reference_system": "EPSG:4326",
+    "pre_t3_access": "PROIBIDO_AOS_MOTORES",
+    "post_t3_use": "SOMENTE_AVALIACAO"
+  },
+  "boundary_rule": {
+    "name": "SET_VALUED_CLOSED_SECTOR_MEMBERSHIP",
+    "boundary_tolerance_m": 0.25,
+    "definition": "O conjunto relevante S* contem todos os setores fechados do mesmo buffer que contem o ponto de ground truth ou cuja borda esteja a no maximo a tolerancia numerica do ponto.",
+    "interior_case": "S* contem exatamente um setor.",
+    "boundary_case": "S* pode conter dois setores em uma fronteira simples, ate quatro setores no encontro entre fronteira radial e anular e, no caso degenerado do centro comum, os oito setores do anel interno; nenhum ID desempata a referencia.",
+    "outside_case": "S* vazio; o buffer nao cobre o ground truth.",
+    "primary_rank": "minimo dos ranks BASE dos setores em S*",
+    "conservative_rank": "maximo dos ranks BASE dos setores em S*",
+    "top_k_primary": "1 se existir setor em S* com rank BASE menor ou igual a k; 0 caso contrario",
+    "top_k_conservative": "1 se todos os setores em S* tiverem rank BASE menor ou igual a k; 0 caso contrario",
+    "mrr_primary": "1/rank_min; zero quando S* for vazio",
+    "mrr_conservative": "1/rank_max; zero quando S* for vazio"
+  },
+  "metrics": {
+    "top_k": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "rank_scope": "WITHIN_CANDIDATE_BUFFER_ONLY",
+    "global_sector_ranking_forbidden": true,
+    "fixed_baseline_radius_m": 2000.0,
+    "accumulated_area": {
+      "primary": "soma das areas de todos os setores com rank BASE menor ou igual ao rank_min, incluindo integralmente o grupo empatado",
+      "conservative": "soma das areas de todos os setores com rank BASE menor ou igual ao rank_max, incluindo integralmente o grupo empatado",
+      "fraction_denominator": "area total dos 24 setores do buffer",
+      "outside_buffer": "area ate o acerto e nula/indisponivel; registra-se separadamente que toda a area do buffer foi insuficiente"
+    },
+    "coverage": {
+      "candidate_adaptive": "ground truth pertence a pelo menos um setor fechado do buffer adaptativo",
+      "candidate_fixed": "distancia geodesica candidato-ground truth menor ou igual a 2000 m",
+      "scenario_any_adaptive": "ao menos um dos tres buffers do cenario cobre o ground truth",
+      "scenario_any_fixed": "ao menos um dos tres circulos fixos cobre o ground truth",
+      "geo_data_sector": "geo_completeness igual a 1,0 e os quatro escores GEO disponiveis",
+      "geo_data_buffer": "24 de 24 setores com cobertura GEO completa"
+    },
+    "proportion_interval": "WILSON_95",
+    "report_both_denominators": [
+      "unconditional_all_candidate_buffers",
+      "conditional_only_covered_candidate_buffers"
+    ]
+  },
+  "freeze_policy": {
+    "retuning_after_t3": false,
+    "overwrite_existing_run": false,
+    "two_blind_runs_required": true,
+    "compare_scientific_files_byte_for_byte": true,
+    "raw_sector_engine_labels": "Preservados como emitidos por EXT-ESP-SET-v1.1; o manifesto externo registra a modalidade REP-S-FIELD-PILOT sem reescrever resultados cientificos.",
+    "allowed_claim": "validacao prospectiva do componente espacial e do fluxo semissintetico",
+    "forbidden_claim": "validacao operacional do sistema aerotransportado ou eficacia em missao real"
+  }
+}

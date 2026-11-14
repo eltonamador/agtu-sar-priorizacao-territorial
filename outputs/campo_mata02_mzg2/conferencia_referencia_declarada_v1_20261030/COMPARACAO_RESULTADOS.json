@@ -1,0 +1,110 @@
+{
+  "case_id": "MATA-02",
+  "initial_lat_lon": [
+    -0.15916666666666668,
+    -51.395
+  ],
+  "reference_lat_lon": [
+    -0.17225,
+    -51.429583
+  ],
+  "method": "WGS84 inverse Vincenty; polygon containment on original GeoJSON",
+  "distance_m": 4112.5937746254285,
+  "initial_true_azimuth_deg": 249.40443857447312,
+  "difference_from_249_deg": 0.4044385744731187,
+  "inside_domain": true,
+  "informed_radius_m": 6000,
+  "radial_margin_m": 1887.4062253745715,
+  "eta": 0.6854322957709048,
+  "sector_id": "MATA-02::MATA-02-E0::R02::W",
+  "base_rank": 22,
+  "base_score": 0.502631369,
+  "in_base_top3": false,
+  "original_base_status": "REVISAR",
+  "profile_comparison": [
+    {
+      "confidence_assumed": "NAO_AVALIADA",
+      "tolerance_assumed_deg": 22.5,
+      "rank": 22,
+      "score": 0.502631369,
+      "effective_lambda": 0.0,
+      "abstained": true
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 5,
+      "rank": 21,
+      "score": 0.4906918048481482,
+      "effective_lambda": 0.03333333333333333,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 22.5,
+      "rank": 19,
+      "score": 0.5036547678111112,
+      "effective_lambda": 0.03333333333333333,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 45,
+      "rank": 17,
+      "score": 0.5192103233666667,
+      "effective_lambda": 0.03333333333333333,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 5,
+      "rank": 20,
+      "score": 0.47875224069629635,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 22.5,
+      "rank": 16,
+      "score": 0.5046781666222222,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 45,
+      "rank": 12,
+      "score": 0.5357892777333334,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 5,
+      "rank": 20,
+      "score": 0.47875224069629635,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 22.5,
+      "rank": 16,
+      "score": 0.5046781666222222,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 45,
+      "rank": 12,
+      "score": 0.5357892777333334,
+      "effective_lambda": 0.06666666666666667,
+      "abstained": false
+    }
+  ],
+  "in_any_frozen_profile_top3": false,
+  "motor_reexecuted": false,
+  "recalibration_performed": false,
+  "effectiveness_validated": false
+}

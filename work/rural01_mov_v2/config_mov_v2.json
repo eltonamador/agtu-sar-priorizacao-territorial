@@ -1,0 +1,442 @@
+{
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "protocol_name": "Superficie cega de resistencia ao movimento da pessoa no RURAL-01",
+  "version": "2.0-frozen-t4",
+  "engine_version": "2.0.3-rural01-mov-v-t4",
+  "status": "CONGELADO_ANTES_DA_REVELACAO",
+  "language": "pt-BR",
+  "phase": "CAMPO_RURAL01_CEGO",
+  "blind_control": {
+    "blind_processing": true,
+    "ground_truth_used": false,
+    "reference_package_accessible_to_engine": false,
+    "reference_opening_allowed_only_after_T4": true
+  },
+  "source": {
+    "scenario_id": "RURAL-01",
+    "candidate_id": "RURAL-01-E0",
+    "point": {
+      "latitude": 0.188611,
+      "longitude": -51.155556,
+      "input_crs": "EPSG:4326",
+      "semantic_role": "PONTO_INICIAL_PLANEJAMENTO",
+      "current_presence_assertion": false,
+      "timestamp_local": "2026-10-21T14:20:00-03:00",
+      "timestamp_interpretation": "REGISTRO_DO_PONTO_OU_ERB_NAO_HORARIO_DO_DESAPARECIMENTO"
+    },
+    "radius_m": 1500.0,
+    "radius_semantics": "DOMINIO_COMPARAVEL_AO_V1_E_ORCAMENTO_DE_CUSTO_METRICO_EQUIVALENTE",
+    "elapsed_hours": 14.0,
+    "elapsed_minutes_context": 840,
+    "elapsed_time_role": "CONTEXTO_SEM_CONVERSAO_AUTOMATICA_EM_DISTANCIA_OU_CUSTO",
+    "temporal_anchor_status": "REVISAR",
+    "ground_truth_available_to_engine": false
+  },
+  "scope": {
+    "module": "MOV-V",
+    "question": "RESISTENCIA_RELATIVA_AO_DESLOCAMENTO_DA_PESSOA",
+    "output_unit": "cost_m_equivalent",
+    "output_is_probability": false,
+    "output_is_elapsed_time": false,
+    "output_is_observed_route": false,
+    "operational_command": false,
+    "comparison_baseline": "RURAL01-BLIND-SET-v1.0",
+    "relationship_to_geo02_05": "ALTERNATIVE_PATH_BASED_REPRESENTATION_NOT_ADDITIVE_FIFTH_COMPONENT"
+  },
+  "separation_contract": {
+    "victim_movement_module": "MOV-V",
+    "team_access_module": "MOV-E_SEPARATE_NOT_IMPLEMENTED_HERE",
+    "detectability_module": "DET_SEPARATE_NOT_IMPLEMENTED_HERE",
+    "aggregate_mov_v_mov_e_det": false,
+    "team_access_may_change_mov_v": false,
+    "detectability_may_change_mov_v": false
+  },
+  "grid": {
+    "resolution_m": 30.0,
+    "analysis_crs_method": "LOCAL_AEQD_CENTERED_ON_SOURCE_POINT",
+    "analysis_crs_definition_must_be_manifested": true,
+    "neighborhood": "D8",
+    "orthogonal_step_multiplier": 1.0,
+    "diagonal_step_multiplier": 1.4142135623730951,
+    "movement_budget_cost_m": 1500.0,
+    "domain_radius_m": 1500.0,
+    "outside_domain_policy": "MASK",
+    "missing_cell_policy": "INVALID_AND_REVIEW",
+    "snap_source_point_policy": "DETERMINISTIC_NEAREST_VALID_CELL"
+  },
+  "hypotheses": [
+    {
+      "id": "H_REDE_DISPONIVEL",
+      "description": "Vias e trilhas podem reduzir a resistencia relativa, sem impor permanencia na rede.",
+      "apply_network_discount": true,
+      "interpretation_status": "HIPOTESE_PARALELA"
+    },
+    {
+      "id": "H_FORA_REDE",
+      "description": "A rede nao reduz o custo MOV-V; permanece disponivel apenas para analise MOV-E separada.",
+      "apply_network_discount": false,
+      "interpretation_status": "HIPOTESE_PARALELA"
+    }
+  ],
+  "route_regime": {
+    "current_value": "DESCONHECIDA",
+    "allowed_values": [
+      "NA_VIA",
+      "SAIDA_CONFIRMADA",
+      "FORA_DA_REDE",
+      "DESCONHECIDA"
+    ],
+    "unknown_policy": "EXECUTE_HYPOTHESES_SEPARATELY",
+    "silent_average_forbidden": true,
+    "confirmed_departure_requires_new_georeferenced_revision": true
+  },
+  "scenario_selection": {
+    "base_profile_id": "BASE",
+    "selected_cost_scenario_id": null,
+    "implicit_selection_forbidden": true,
+    "parallel_base_hypotheses_required": true
+  },
+  "reference_cost_scenario": {
+    "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+    "role": "REFERENCIAL_NAO_SELECIONADO",
+    "selected": false,
+    "purpose": "CONTROLES_DE_DEDUPLICACAO_CONTRAFACTUAL_E_REPETIBILIDADE"
+  },
+  "resistance": {
+    "status": "HEURISTICA_DESENVOLVIMENTO_SUJEITA_A_SENSIBILIDADE",
+    "combination": "MULTIPLICATIVE_EDGE_COST",
+    "formula": "cost_ij = distance_ij * landcover_factor_j * hydro_factor_ij * slope_factor_ij * network_factor_ij * field_factor_ij",
+    "minimum_positive_factor": 0.01,
+    "landcover": {
+      "source": "ESA_WorldCover_2021_v200",
+      "aggregation_to_grid": "MAJORITY_WITH_DETERMINISTIC_TIE_BREAK",
+      "landcover_by_code": {
+        "10": 2.8,
+        "20": 2.4,
+        "30": 1.2,
+        "40": 1.3,
+        "50": 1.1,
+        "60": 1.05,
+        "70": 4.0,
+        "80": 12.0,
+        "90": 5.0,
+        "95": 8.0,
+        "100": 2.0
+      },
+      "missing_or_unknown_policy": "INVALID_AND_REVIEW",
+      "understory_observability": "NAO_DISPONIVEL",
+      "class_is_not_transitability_observation": true
+    },
+    "network": {
+      "source": "OSM_SNAPSHOT_EXISTENTE_NO_PROJETO",
+      "rasterization_tolerance_m": 22.0,
+      "road_factor": 0.45,
+      "trail_factor": 0.65,
+      "landcover_overlap_policy": "MULTIPLICATIVE_DISCOUNT_WITH_SCALE_CONFLICT_DIAGNOSTIC",
+      "diagnostic_conflict_landcover_codes": [
+        10,
+        20,
+        95
+      ],
+      "minimum_factor_greater_than_zero": true,
+      "factor_applies_only_when_hypothesis_enables_network": true,
+      "mapped_feature_is_not_current_transitability_proof": true
+    },
+    "hydro": {
+      "source": "OSM_SNAPSHOT_EXISTENTE_NO_PROJETO",
+      "formula": "1 + severity * (hydro_max_factor - 1)",
+      "base_hydro_max_factor": 6.0,
+      "overlap_policy": "NO_MULTIPLY_OSM_HYDRO_ON_WORLDCOVER_WATER_WETLAND",
+      "deduplicate_with_landcover_codes": [
+        80,
+        90,
+        95
+      ],
+      "public_cartography_absolute_veto": false,
+      "bridge_or_ford_discount_requires_documented_evidence": true,
+      "unmapped_crossing_may_not_be_assumed_absent": true
+    },
+    "slope": {
+      "source": "SRTMGL1_APPROX_30M",
+      "base_formula": "1 + a * abs(grade_signed) + b * grade_signed^2",
+      "base_a": 4.0,
+      "base_b": 8.0,
+      "base_cap": 8.0,
+      "grade_signed_formula": "(elevation_j - elevation_i) / distance_ij",
+      "directional_coefficients_enabled": false,
+      "directional_anisotropy_effective": false,
+      "directional_anisotropy_status": "ARCHITECTURE_READY_BUT_NOT_APPLIED_WITHOUT_AUDITED_CALIBRATION",
+      "diagnostic_slope_thresholds_deg": [
+        20.0,
+        35.0
+      ],
+      "thresholds_are_absolute_barriers": false,
+      "narrow_cliff_or_gully_detection_claim": false
+    },
+    "field_obstacle": {
+      "records_available": false,
+      "default_factor": 1.0,
+      "required_fields": [
+        "obstacle_id",
+        "obstacle_type",
+        "geometry",
+        "observed_at",
+        "source_method",
+        "passage_class",
+        "evidence_sha256",
+        "confidence",
+        "validity_window"
+      ],
+      "absolute_veto_requires_specific_rule_and_review": true
+    }
+  },
+  "sensitivity_profiles": [
+    {
+      "id": "SUAVE",
+      "landcover_exponent": 0.75,
+      "hydro_max_factor": 4.0,
+      "slope_a": 3.0,
+      "slope_b": 5.0,
+      "slope_cap": 6.0,
+      "status": "SENSIBILIDADE_NAO_CALIBRADA"
+    },
+    {
+      "id": "BASE",
+      "landcover_exponent": 1.0,
+      "hydro_max_factor": 6.0,
+      "slope_a": 4.0,
+      "slope_b": 8.0,
+      "slope_cap": 8.0,
+      "status": "PRINCIPAL_DESENVOLVIMENTO_NAO_CALIBRADA"
+    },
+    {
+      "id": "FORTE",
+      "landcover_exponent": 1.25,
+      "hydro_max_factor": 9.0,
+      "slope_a": 6.0,
+      "slope_b": 12.0,
+      "slope_cap": 12.0,
+      "status": "SENSIBILIDADE_NAO_CALIBRADA"
+    }
+  ],
+  "ablation_runs": [
+    "SEM_HIDRO",
+    "SEM_COBERTURA",
+    "SEM_RELEVO",
+    "SEM_DESCONTO_REDE"
+  ],
+  "counterfactual_runs": [
+    "COM_DUPLICACAO_HIDRO_COBERTURA"
+  ],
+  "evidence_policy": {
+    "confidence_classes": [
+      "CAMPO_VERIFICADO",
+      "OPERACIONAL_DOCUMENTADO",
+      "CARTOGRAFIA_PUBLICA",
+      "IMAGEM_CONTEXTUAL",
+      "NAO_DISPONIVEL"
+    ],
+    "public_map_may_create_absolute_barrier": false,
+    "drone_canopy_image_may_prove_understory_transitability": false,
+    "missing_as_favorable_forbidden": true,
+    "conflict_policy": "PRESERVE_AND_REVIEW",
+    "field_evidence_scope": "ONLY_OBSERVED_GEOMETRY_TIME_AND_DOMAIN"
+  },
+  "time_policy": {
+    "elapsed_hours_context": 14.0,
+    "convert_to_minutes_of_active_travel": false,
+    "convert_to_distance": false,
+    "convert_to_isochrone": false,
+    "required_before_future_time_conversion": [
+      "AUDITED_SPEED_FUNCTION",
+      "ACTIVE_TRAVEL_FRACTION",
+      "STOP_AND_REST_MODEL",
+      "CLINICAL_EFFECT_RULE_WITH_PROVENANCE",
+      "AMAZON_CONTEXT_TRANSFERABILITY_OR_FIELD_CALIBRATION"
+    ]
+  },
+  "corridor_rule": {
+    "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+    "profiles_included": [
+      "BASE"
+    ],
+    "hypotheses_included": [
+      "H_REDE_DISPONIVEL",
+      "H_FORA_REDE"
+    ],
+    "destination_rule": "FROZEN_V1_REPRESENTATIVE_POINT_OF_EACH_SECTOR",
+    "expected_sector_count": 24,
+    "expected_path_count": 48,
+    "v1_top3_membership_is_comparative_label_only": true,
+    "path_is_observed_or_predicted_route": false,
+    "post_hoc_visual_selection_forbidden": true
+  },
+  "sector_summary_rule": {
+    "scope": "ALL_VALID_CELLS_WITHIN_EACH_FROZEN_V1_SECTOR",
+    "statistics": [
+      "MIN_COST",
+      "MEDIAN_COST",
+      "P90_COST",
+      "MAX_COST",
+      "FRACTION_WITHIN_1500_COST_M",
+      "VALID_CELL_COVERAGE",
+      "MOVEMENT_ACCESS_INDEX"
+    ],
+    "movement_access_index_formula": "mean(exp(-accumulated_cost_m_equivalent / 1500.0))",
+    "movement_access_index_is_probability": false,
+    "ranking_order": [
+      "movement_access_index_desc",
+      "fraction_within_budget_desc",
+      "sector_id_asc"
+    ],
+    "tie_policy": "SHARED_RANK_AFTER_CONFIGURED_ROUNDING",
+    "ranking_meaning": "DIAGNOSTIC_RELATIVE_MOVEMENT_ACCESS_NOT_VICTIM_LOCATION"
+  },
+  "outputs": {
+    "directory": "outputs/campo_rural01/processamento_movimento_cego_v2",
+    "required": [
+      "grade_resistencia.csv",
+      "superficie_custo_H_REDE_DISPONIVEL.geojson",
+      "superficie_custo_H_FORA_REDE.geojson",
+      "setores_mov_v2.csv",
+      "corredores_mov_v2.geojson",
+      "resultado_mov_v2.json",
+      "relatorio_qa_mov_v2.json",
+      "relatorio_testes_mov_v2.json",
+      "manifesto_mov_v2.json"
+    ],
+    "include_component_factors": true,
+    "include_accumulated_cost": true,
+    "include_predecessor_direction": true,
+    "include_hypothesis_id": true,
+    "include_sensitivity_profile": true,
+    "include_source_provenance": true,
+    "include_ground_truth_payload": false,
+    "canonical_json": true,
+    "sha256_for_inputs_config_code_outputs": true
+  },
+  "qa": {
+    "required_checks": [
+      "CONFIGURATION_VALID",
+      "GROUND_TRUTH_USED_FALSE",
+      "NO_FORBIDDEN_REFERENCE_FIELD",
+      "CRS_METRIC_AND_MANIFESTED",
+      "GRID_ALIGNED_AND_UNIQUE",
+      "SOURCE_CELL_VALID",
+      "ALL_COSTS_FINITE_AND_POSITIVE",
+      "DIAGONAL_DISTANCE_CORRECT",
+      "SOURCE_ACCUMULATED_COST_ZERO",
+      "PREDECESSOR_COST_MONOTONIC",
+      "NO_PREDECESSOR_CYCLE",
+      "STRONG_PROFILE_NOT_CHEAPER_THAN_SOFT_PROFILE",
+      "NETWORK_DISCOUNT_NEVER_ZERO",
+      "REPEATED_RUN_DETERMINISTIC",
+      "MOV_V_SEPARATE_FROM_MOV_E_AND_DET",
+      "TIME_CONVERSION_DISABLED",
+      "UNDERSTORY_LIMITATION_EXPOSED"
+      ,"HYDRO_LANDCOVER_DEDUPLICATION_ENABLED"
+      ,"HYDRO_DUPLICATION_COUNTERFACTUAL_NOT_PROMOTED"
+      ,"NETWORK_LANDCOVER_SCALE_CONFLICT_EXPOSED"
+      ,"MOV_V_NOT_ADDITIVE_TO_GEO02_05"
+    ],
+    "synthetic_tests": [
+      "UNIFORM_SURFACE_DISTANCE_PROPORTIONAL",
+      "BARRIER_WITH_GAP_FORCES_DETOUR",
+      "NETWORK_HYPOTHESIS_DIFFERENCE",
+      "HYDRO_INCREASES_CROSSING_COST_WITHOUT_VETO",
+      "MISSING_CELL_NEVER_FAVORABLE",
+      "DIRECTIONAL_SLOPE_TEST_RESERVED_UNTIL_ENABLED"
+    ],
+    "failure_policy": "ABORT_FREEZE"
+  },
+  "guardrails": {
+    "development_only": true,
+    "confirmatory_eligible": false,
+    "cost_may_be_called_probability": false,
+    "cost_may_be_called_elapsed_time": false,
+    "corridor_may_be_called_predicted_route": false,
+    "result_may_command_field_operation": false,
+    "weights_or_factors_may_be_called_validated": false,
+    "v1_outputs_may_be_overwritten": false,
+    "parameter_change_after_truth_opening": "FORBIDDEN",
+    "single_scenario_may_support_general_effectiveness_claim": false
+  },
+  "firewall": {
+    "enabled": true,
+    "recursive": true,
+    "case_insensitive": true,
+    "ground_truth_used_required_value": false,
+    "allowed_control_field": "blind_control.ground_truth_used",
+    "scan_excludes": [
+      "firewall.forbidden_fragments",
+      "firewall.allowed_control_field",
+      "firewall.scan_excludes",
+      "qa.required_checks",
+      "post_freeze_evaluation.prespecified_metrics"
+    ],
+    "forbidden_fragments": [
+      "ground_truth_lat",
+      "ground_truth_lon",
+      "ground_truth_longitude",
+      "ground_truth_sector",
+      "truth_",
+      "reference_lat",
+      "reference_lon",
+      "true_lat",
+      "true_lon",
+      "real_lat",
+      "real_lon",
+      "victim_lat",
+      "victim_lon",
+      "target_lat",
+      "target_lon",
+      "distance_to_truth",
+      "distance_to_ground_truth",
+      "distance_to_reference",
+      "sector_contains_truth",
+      "correct_sector",
+      "evaluation_latitude",
+      "evaluation_longitude"
+    ],
+    "violation_policy": "ABORT_EXECUTION",
+    "open_reference_only_after_output_freeze": true
+  },
+  "freeze": {
+    "current_stage": "T4_OUTPUT_AND_MANIFEST_FREEZE",
+    "stages": [
+      "T0_INPUT_FREEZE",
+      "T1_ENGINE_AND_CONFIG_FREEZE",
+      "T2_DOUBLE_EXECUTION",
+      "T3_QA_COMPLETE",
+      "T4_OUTPUT_AND_MANIFEST_FREEZE",
+      "T5_REFERENCE_OPENING",
+      "T6_PRESPECIFIED_EVALUATION"
+    ],
+    "freeze_before_ground_truth_opening": true,
+    "configuration_change_requires_new_version": true
+  },
+  "post_freeze_evaluation": {
+    "enabled_before_reference_opening": false,
+    "prespecified_metrics": [
+      "ACCUMULATED_COST_AT_EVALUATION_CELL",
+      "COST_PERCENTILE_AT_EVALUATION_CELL",
+      "COST_BAND_CONTAINING_EVALUATION_CELL",
+      "DISTANCE_FROM_NEAREST_FROZEN_CORRIDOR",
+      "AREA_OF_COST_BANDS_VS_1500M_CIRCLE",
+      "V1_VS_V2_CORRECT_SECTOR_RANK",
+      "SENSITIVITY_STABILITY"
+    ],
+    "retuning_after_reference_opening": false
+  },
+  "known_limitations": [
+    "SEM_OBSERVACAO_SISTEMATICA_DO_SUB_BOSQUE",
+    "DEM_30M_SUAVIZA_FEICOES_ESTREITAS",
+    "WORLD_COVER_NAO_MEDE_TRANSITABILIDADE",
+    "OSM_PODE_SER_INCOMPLETO_OU_DESATUALIZADO",
+    "SEM_MAPA_COMPLETO_DE_CERCAS_LINHAS_BARRANCOS_GROTAS_PONTES_E_VAUS",
+    "MULTIPLICADORES_HEURISTICOS_NAO_CALIBRADOS",
+    "14H_NAO_EQUIVALEM_A_TEMPO_CONTINUO_DE_MARCHA",
+    "CONDICAO_CLINICA_NAO_CONVERTIDA_EM_VELOCIDADE",
+    "ANISOTROPIA_DIRECIONAL_NAO_ATIVADA_SEM_CALIBRACAO_AUDITADA"
+  ]
+}

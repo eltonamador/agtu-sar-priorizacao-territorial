@@ -1,0 +1,10 @@
+item,dimensao,n,nivel_1,nivel_2,nivel_3,nivel_4,nivel_5,mediana,q1,q3,n_4_ou_5,percentual_4_ou_5
+1,Clareza das entradas,13,0,0,3,5,5,4,4,5,10,76.9
+2,Localização das áreas no mapa,13,0,0,2,2,9,5,4,5,11,84.6
+3,Explicação das prioridades,13,0,2,0,4,7,5,4,5,11,84.6
+4,Relevância do terreno,13,0,0,1,6,6,4,4,5,12,92.3
+5,Coerência da ordem,13,0,0,3,4,6,4,4,5,10,76.9
+6,Utilidade para escolher áreas,13,0,0,0,6,7,5,4,5,13,100.0
+7,Explicação à equipe,13,0,0,4,7,2,4,3,4,9,69.2
+8,Clareza dos limites,13,0,0,5,5,3,4,3,4,8,61.5
+9,Clareza das conferências,13,0,0,0,8,5,4,4,5,13,100.0

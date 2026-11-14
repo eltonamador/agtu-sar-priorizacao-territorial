@@ -1,0 +1,182 @@
+{
+  "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+  "confirmatory_eligible": false,
+  "development_status": "HEURISTICA_DESENVOLVIMENTO_SUJEITA_A_SENSIBILIDADE",
+  "engine_version": "2.0.3-rural01-mov-v-t4",
+  "execution_classification": "DESENVOLVIMENTO_CEGO_NAO_CONFIRMATORIO",
+  "files": [
+    {
+      "bytes": 89740,
+      "path": "work/rural01_mov_v2/motor_movimento_v2.py",
+      "role": "engine",
+      "sha256": "5cc0606afe345d77373dc40f657d0e89173f4c32bfe5176e4b2baa7241676b40"
+    },
+    {
+      "bytes": 77111,
+      "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "imported_engine",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 14744,
+      "path": "work/rural01_mov_v2/config_mov_v2.json",
+      "role": "config",
+      "sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27"
+    },
+    {
+      "bytes": 27641,
+      "path": "work/rural01_mov_v2/PROTOCOLO_RURAL01_MOVIMENTO_CEGO_v2_CONGELADO.md",
+      "role": "protocol",
+      "sha256": "b0bd9a7b849ea575b1bafe41e2ee7a341db8fd9a15668faf0e758e13f77a4993"
+    },
+    {
+      "bytes": 126728,
+      "path": "outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson",
+      "role": "v1_sectors",
+      "sha256": "bfa023ec8899bb6f37487cf92a154cee21388fdf67e36ecb34224189a9e042fc"
+    },
+    {
+      "bytes": 56358,
+      "path": "outputs/campo_rural01/processamento_cego_v1/ranking_base_rural01.csv",
+      "role": "v1_ranking",
+      "sha256": "095bf8d290d3419824e9b69a84870d59b4d55d93e9a30d5a033796a4e69b22f8"
+    },
+    {
+      "bytes": 2943,
+      "path": "outputs/campo_rural01/processamento_cego_v1/top3_rural01.json",
+      "role": "v1_top3",
+      "sha256": "887f427d095b4e0a050f813061c67a616e23525f228d8d30e1a1ecfecf4bd268"
+    },
+    {
+      "bytes": 6198892,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "source_geo02_osm",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "source_geo03_osm",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 17101,
+      "path": "work/rural01_mov_v2/test_motor_movimento_v2.py",
+      "role": "test_suite",
+      "sha256": "2c1a5f151754c51a03732a25341e79a628744341ca00db0ba08faec2316979ae"
+    },
+    {
+      "bytes": 2888,
+      "path": "work/rural01_mov_v2/run_tests_with_receipt.py",
+      "role": "test_runner",
+      "sha256": "ccbdc3764336be876c9f4aa79857cd25733cf96c94c1559257be360ba0316b04"
+    },
+    {
+      "bytes": 628,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_testes_mov_v2.json",
+      "role": "test_suite_receipt",
+      "sha256": "f570df590ece41fc0d0014f0dbd52ff33fa8e49d563cf2af6cbbad75ccec4591"
+    },
+    {
+      "bytes": 5074951,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "7a1f4475279ab70e7b8080445fb02f80357fa08c5e7f18db1980651d01bdc206"
+    },
+    {
+      "bytes": 10237499,
+      "path": "outputs/sprint2_s2_06_geo05_v33/N00W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "64fa9dce08cdba5a883b2811c1887c1e055fe878f54d53d0c3431c4bf48ecbeb"
+    },
+    {
+      "bytes": 5709363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W051.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "0c1ad94bf58bbee81a65c1f904818d3cca704b360ce84ede36f527d966a0c380"
+    },
+    {
+      "bytes": 7081961,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "source_geo04_dem",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 23653990,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "df31ae2b362b033d1e1d31e683a484133e277727482412b14b743cbc59b12930"
+    },
+    {
+      "bytes": 8977040,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_N00W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "fc4a381c1734a42e5b52ba797b3dea2da2b06ed0e095f1fa30fbc3ebfe893f16"
+    },
+    {
+      "bytes": 38592452,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W051_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "f064257364593b7145ae7a964151d6f6a80cc99a85672c1041e446bf0c5e1b89"
+    },
+    {
+      "bytes": 29215289,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "source_geo05_worldcover",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 8271509,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/grade_resistencia.csv",
+      "role": "output_grid",
+      "sha256": "b631d318bcb49686efa6988db68d13e46ac5bb0da136a3550c9cc11cb0074481"
+    },
+    {
+      "bytes": 87705,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/setores_mov_v2.csv",
+      "role": "output_sectors",
+      "sha256": "3f55eb36e4e98b59f71fd9e0468fcf9051658b0a493e2791388aa10451ec1d97"
+    },
+    {
+      "bytes": 15178027,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/superficie_custo_H_REDE_DISPONIVEL.geojson",
+      "role": "output_cost_network",
+      "sha256": "2e8687636e50fcabb543a8758f164645b346cc8211ba3367e0a17e13215deb19"
+    },
+    {
+      "bytes": 14755044,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/superficie_custo_H_FORA_REDE.geojson",
+      "role": "output_cost_off_network",
+      "sha256": "37732dcee42aa469582ee6bf515e4bf0618e2652c807044426ca13942009041a"
+    },
+    {
+      "bytes": 1267715,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/areas_alcancaveis_mov_v2.geojson",
+      "role": "output_reachable",
+      "sha256": "28a137600e83737094b122c97d2c151a585dcb5a5354000a2f986a5e696e1281"
+    },
+    {
+      "bytes": 182906,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/corredores_mov_v2.geojson",
+      "role": "output_corridors",
+      "sha256": "8a41156a16960e9f8bd10af3fd4d281845084fa2c5d787145a0a2e671aad547e"
+    },
+    {
+      "bytes": 11754,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/resultado_mov_v2.json",
+      "role": "output_result",
+      "sha256": "49543e937aea8b062f83ab2480211a66fdc215abd86f5b25f3bec48c904a8a8e"
+    },
+    {
+      "bytes": 2970,
+      "path": "outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_qa_mov_v2.json",
+      "role": "output_qa",
+      "sha256": "8e332816ce79e9f8db21f92c2b35dbb4f10672e5c7ba62216bf7abb8c22bad78"
+    }
+  ],
+  "ground_truth_used": false,
+  "payload_sha256": "d6bf1c063bcb5e36ca346084e81caee965844ae00b3eada147b38fd7e65cb744",
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "protocol_sha256": "b0bd9a7b849ea575b1bafe41e2ee7a341db8fd9a15668faf0e758e13f77a4993",
+  "python_version": "3.12.14"
+}

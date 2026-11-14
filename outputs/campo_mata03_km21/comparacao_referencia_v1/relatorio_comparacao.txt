@@ -1,0 +1,40 @@
+MATA-03 — COMPARAÇÃO DESCRITIVA COM A REFERÊNCIA REVELADA
+
+Resultado: a referência está dentro do domínio de 7 km, alinhada praticamente a 285°, mas fora das três primeiras áreas do ranking BASE. Seu setor ficou em 19º entre 24.
+
+REFERÊNCIAS
+E0: 0.218333333, -51.133055556.
+Ponto declarado: 0.230856, -51.179478.
+Fonte do ponto: informação posterior do pesquisador na conversa. Precisão de posicionamento não informada; casas decimais não demonstram acurácia.
+
+COMPARAÇÃO
+Distância geodésica WGS84: 5349.981739 m (aproximadamente 5,35 km).
+Azimute geográfico inicial: 285.000177139°.
+Diferença angular para 285°: 0.000177139°.
+Domínio informado: 7.000 m. Margem radial restante: 1650.018261 m.
+Setor único contendo a referência: MATA-03::MATA-03-E0::R02::W (R02-W).
+Limites radiais do setor: 4041.451884–5715.476066 m.
+Limites angulares do setor: 247.5°–292.5°.
+Posição no ranking BASE: 19 de 24.
+Escore BASE: 0.488004400. Não é probabilidade.
+Top-3 original: R01-E (0,737195475), R03-NE (0,736014506), R01-SE (0,735688670).
+Status original: REVISAR. PERFIL principal: ABSTENCAO_PERFIL.
+
+INTERPRETAÇÃO E LIMITES
+1. A concordância com a direção relatada não é sucesso autônomo do modelo. A pista de 285° tinha confiança não avaliada e não alterou o ranking BASE. A localização agora revelada não autoriza elevar retroativamente essa confiança.
+2. O norte da pista não foi especificado como verdadeiro ou magnético. A concordância angular pressupõe referências compatíveis. A linha no mapa é uma ligação geométrica, não o percurso realizado.
+3. O raio de 7 km é um domínio informado para o ensaio, não uma probabilidade de contenção calibrada. Estar dentro dele não demonstra que a prioridade foi adequada.
+4. Trata-se de território e imagens reais com pessoa e cronologia simuladas. A localização declarada é referência descritiva do ensaio, não prova de resgate real nem base para calcular uma taxa geral de acerto.
+5. O ponto inicial corresponde à referência de chegada; não há posição confirmada do contato das 12h. As 19h30 desde esse contato não representam caminhada contínua.
+6. A coincidência praticamente exata com 285° não permite concluir que a referência foi definida independentemente da pista. Não se pressupõe independência não documentada.
+7. O fundo Sentinel-2/ESA WorldCover é de 2021, apenas contextual. Não representa aquisição de 2026 e não participou do ranking. Não é Google Earth.
+
+PRESERVAÇÃO
+Foram conferidos 42 arquivos contra o manifesto de conclusão antes e depois da geração. Nenhum resultado congelado, parâmetro ou arquivo da dissertação foi alterado.
+O ranking_BASE.json é a fonte da ordenação, conforme a errata documental já existente no pacote; não se utilizou a lista Top-3 vazia do resultado_BASE.json.
+Históricos de ausência da referência permanecem intactos; esta comparação é um registro posterior separado.
+
+FONTES LOCAIS
+premissas_congeladas.json; ranking_BASE.json; setores_BASE.geojson; conclusao_direcao285_v1/resumo_conclusao.json; conclusao_direcao285_v1/manifesto_conclusao.json; conclusao_direcao285_v1/proveniencia_fundo.json.
+
+Registro de geração: 2026-11-02T15:37:32.028985+00:00

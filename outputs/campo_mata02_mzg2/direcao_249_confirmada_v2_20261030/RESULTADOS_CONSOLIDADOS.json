@@ -1,0 +1,302 @@
+{
+  "case_id": "MATA-02",
+  "status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL",
+  "base_status": "REVISAR",
+  "new_primary_profile_ranking_selected": false,
+  "base_top3": [
+    {
+      "sector": "R01-SW",
+      "score": 0.644159158,
+      "inner_radius_m": 0.0,
+      "outer_radius_m": 3464.101615,
+      "area_m2": 4710893.823637
+    },
+    {
+      "sector": "R03-SW",
+      "score": 0.634347572,
+      "inner_radius_m": 4898.979486,
+      "outer_radius_m": 6000.0,
+      "area_m2": 4710893.824153
+    },
+    {
+      "sector": "R03-E",
+      "score": 0.630079426,
+      "inner_radius_m": 4898.979486,
+      "outer_radius_m": 6000.0,
+      "area_m2": 4710893.824827
+    }
+  ],
+  "sensitivity": [
+    {
+      "confidence_assumed": "NAO_AVALIADA",
+      "tolerance_assumed_deg": 22.5,
+      "abstained": true,
+      "engine_operational_status": "ABSTENCAO_PERFIL",
+      "effective_lambda": 0.0,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.644159158,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.634347572,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.630079426,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.03333333333333333,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6252797786592593,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6157952455259259,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.6090767784666666,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 22.5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.03333333333333333,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6382427416222223,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6287582084888889,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.6090767784666666,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "BAIXA",
+      "tolerance_assumed_deg": 45,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.03333333333333333,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.654909408288889,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6454248751555556,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.6090767784666666,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6064003993185185,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.5972429190518519,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.5880741309333334,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 22.5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6323263252444444,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6231688449777778,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.5880741309333334,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "MEDIA",
+      "tolerance_assumed_deg": 45,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6656596585777778,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6565021783111111,
+          "base_rank": 2
+        },
+        {
+          "sector": "R02-SW",
+          "score": 0.619671515911111,
+          "base_rank": 7
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6064003993185185,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.5972429190518519,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.5880741309333334,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 22.5,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6323263252444444,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6231688449777778,
+          "base_rank": 2
+        },
+        {
+          "sector": "R03-E",
+          "score": 0.5880741309333334,
+          "base_rank": 3
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    },
+    {
+      "confidence_assumed": "ALTA",
+      "tolerance_assumed_deg": 45,
+      "abstained": false,
+      "engine_operational_status": "EFEITO_PERFIL_APLICADO",
+      "effective_lambda": 0.06666666666666667,
+      "top3": [
+        {
+          "sector": "R01-SW",
+          "score": 0.6656596585777778,
+          "base_rank": 1
+        },
+        {
+          "sector": "R03-SW",
+          "score": 0.6565021783111111,
+          "base_rank": 2
+        },
+        {
+          "sector": "R02-SW",
+          "score": 0.619671515911111,
+          "base_rank": 7
+        }
+      ],
+      "unchanged_from_previous_sensitivity": true
+    }
+  ],
+  "first_two_stable_in_test_grid": true,
+  "third_sector_counts": {
+    "R03-E": 7,
+    "R02-SW": 2
+  },
+  "counts_are_probabilities": false,
+  "media_alta_not_independent": true,
+  "numerical_results_equal_previous_sensitivity": true,
+  "update_changes_provenance_not_existing_numeric_inputs": true,
+  "movement_geodata_dissertation_not_reexecuted_or_modified": true,
+  "limitations": [
+    "Cenário de desaparecimento hipotético em território real",
+    "Sem referência de encontro usada no cálculo",
+    "Raio de 6 km informado, não calibrado",
+    "Origem E0 e norte geográfico adotados apenas para representação",
+    "Confiabilidade e tolerância angular do relato desconhecidas",
+    "Perfil quantitativo limitado à pista direcional nesta execução",
+    "MOV permanece separado do ranking; não há estimativa de tempo de percurso",
+    "Base orbital de 2021; não comprova condições locais em 2026",
+    "Escores não são probabilidades e não demonstram eficácia operacional"
+  ]
+}

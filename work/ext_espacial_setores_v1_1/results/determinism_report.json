@@ -1,0 +1,19 @@
+{
+  "protocol_id": "EXT-ESP-SET-v1.1",
+  "status": "PASS",
+  "scientific_output_identical": true,
+  "files_compared": 6,
+  "scientific_projection_sha256_run_1": "bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc",
+  "scientific_projection_sha256_run_2": "bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc",
+  "scientific_bundle_sha256_run_1": "0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837",
+  "scientific_bundle_sha256_run_2": "0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837",
+  "file_sha256": {
+    "buffer_decisions_dev.csv": "8f66d7f907a8f7fd08e73a9de15c904b46ab4e5cfd5e034ebd582554972e0886",
+    "sector_features_dev.csv": "348b6a8fcd840844171de28b49efee6f08abb74e41581d6ea65cff7752dce948",
+    "sector_polygons_dev.geojson": "6116655a994af186b6e9b205f2079b9d7cfe65aede9f55148dc175c6d261babf",
+    "sector_ranking_dev.csv": "47e721b341ab4999a6c058332d5f2244a33b5bdc967872cc8641fe169eda1df5",
+    "sector_results_dev.json": "59f73e8233dc3df8bee2e269ea4f31275d34394da27af6cbc25487e21b7d6d2b",
+    "warnings_dev.log": "36c9e55a12245a5dab84ce7bb9f953655fcb595eda1caf3b67cf1b79ec6e94b5"
+  },
+  "note": "Os seis arquivos científicos foram gerados duas vezes em diretórios distintos com conteúdo byte a byte idêntico. Manifestos de execução não são comparados porque contêm horário e duração."
+}

@@ -1,0 +1,88 @@
+{
+  "protocol_id": "MATA01-BLIND-SET-v1.0",
+  "protocol_name": "Processamento territorial cego diagnostico do cenario MATA-01",
+  "version": "1.0",
+  "status": "CONGELADO_ANTES_DE_QUALQUER_POSICAO_DECLARADA_DO_ALVO_SIMULADO",
+  "upstream": {
+    "protocol_id": "MATA01-SOURCE-RADIUS-v1.0",
+    "scenario_id": "MATA-01",
+    "candidate_id": "MATA-01-E0",
+    "estimated_lat": -0.172222,
+    "estimated_lon": -51.430278,
+    "source_radius_m": 5000.0,
+    "event_timestamp_local": "2026-10-21T14:20:00-03:00",
+    "coordinate_capture_timestamp_local": "2026-10-22T16:39:08-03:00",
+    "source_record_origin": "FICHA_MATA01_DECLARADA_PELO_PESQUISADOR",
+    "point_semantics": "PONTO_INICIAL_DE_PLANEJAMENTO_REGISTRADO_APOS_O_EVENTO",
+    "source_metadata_verification": "COORDENADA_DECLARADA_DIVERGE_LEVEMENTE_DO_GPS_DA_FOTOGRAFIA_DE_SOLO; AUDITORIA_DE_METADADOS_EM_ARTEFATO_SEPARADO",
+    "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+    "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+    "r0_semantics": "source_declared_operational_domain",
+    "additional_factors_applied_by_engine": false,
+    "detection_quality_available": false,
+    "radius_rationale": "DOMINIO_DE_5_KM_DECLARADO_PARA_INCERTEZA_ALTA_SEM_PONTO_DE_CONFIRMACAO_ALEM_DA_ROCA; NAO_DERIVADO_NESTA_EXECUCAO",
+    "review_status": "REVISAR",
+    "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_DOMINIO_DA_FONTE",
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  },
+  "sectorization": {
+    "rings": 3,
+    "directions": 8,
+    "sectors_per_buffer": 24,
+    "directional_preference_applied": false,
+    "ring_penalty_applied": false,
+    "ranking_scope": "WITHIN_RECEIVED_SOURCE_RADIUS_ONLY"
+  },
+  "ranking": {
+    "name": "BASE_ORIGINAL_ABSTIDO_E_BASE_DISPONIVEIS_DIAGNOSTICO",
+    "weights": {
+      "GEO02": 0.3,
+      "GEO03": 0.25,
+      "GEO04": 0.2,
+      "GEO05": 0.25
+    },
+    "base_original_policy": "ABSTER_SE_GEO03_INDISPONIVEL",
+    "available_modules_protocol_id": "MATA01-BLIND-SET-AVAILABLE-v1.0",
+    "available_modules_name": "BASE-DISPONIVEIS diagnostico com GEO-03 abstido",
+    "available_modules_weights": {
+      "GEO02": 0.4,
+      "GEO03": 0.0,
+      "GEO04": 0.26666666666666666,
+      "GEO05": 0.3333333333333333
+    },
+    "available_modules_equivalent_to_base_original": false,
+    "implementation": "Extracao pelo motor EXT-ESP-SET-v1.1 sem alteracao; abstencao e ranking diagnostico sobre modulos disponiveis implementados no invólucro"
+  },
+  "context_boundary": {
+    "environment_declared": "MOSAICO_MATA_CAPOEIRA_CAMPO_UMIDO",
+    "profile_used_in_quantitative_ranking": false,
+    "north_clue_used_in_quantitative_ranking": false,
+    "water_habit_used_in_quantitative_ranking": false,
+    "photographs_used_in_quantitative_ranking": false,
+    "reason": "O nucleo territorial v1 usa apenas camadas geograficas locais. Perfil, pistas e imagens permanecem segregados para modulo posterior e revisao humana."
+  },
+  "source_snapshot": {
+    "osm_base_timestamp": "2026-08-17T17:01:35Z",
+    "worldcover_product": "ESA WorldCover 2021 v200",
+    "dem_product": "SRTM HGT local",
+    "temporal_caveat": "As camadas nao comprovam condicoes atuais, transitabilidade sob o dossel nem obstaculos de pequena escala."
+  },
+  "raster_sampling_override": {
+    "method": "DETERMINISTIC_EQUAL_AREA_POLAR_STRATIFIED_APPROX_30M_SUPPORT",
+    "radial_samples": 60,
+    "angular_samples": 60,
+    "samples_per_sector": 3600,
+    "nominal_cell_area_m2": 909.025498,
+    "nominal_linear_support_m": 30.15,
+    "reason": "O esquema padrao de nove amostras por setor e insuficiente para um dominio de 5 km."
+  },
+  "interpretation": {
+    "score_meaning": "PRIORIDADE_ANALITICA_TERRITORIAL_NAO_PROBABILIDADE_DE_PRESENCA",
+    "top3_label_meaning": "AREAS_ANALITICAS_PARA_REVISAO_HUMANA",
+    "operational_command": false,
+    "field_confirmation_required": true,
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  }
+}

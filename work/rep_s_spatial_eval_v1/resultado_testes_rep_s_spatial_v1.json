@@ -1,0 +1,84 @@
+{
+  "protocol_id": "REP-S-SPATIAL-EVAL-v1.0",
+  "executed_at_utc": "2026-10-16T20:24:45Z",
+  "status": "APROVADO",
+  "ground_truth_real_used": false,
+  "suites": [
+    {
+      "component": "REP-S-SPATIAL-EVAL-v1.0",
+      "tests_run": 11,
+      "passed": 11,
+      "failed": 0,
+      "errors": 0,
+      "command": "python3 -m unittest -v test_rep_s_spatial_eval.py"
+    },
+    {
+      "component": "FIELD-CAND-v1.0",
+      "tests_run": 9,
+      "passed": 9,
+      "failed": 0,
+      "errors": 0,
+      "command": "python3 -m unittest discover -s . -p test_*.py -v"
+    },
+    {
+      "component": "EXT-ESP-BUF-v1.0",
+      "tests_run": 28,
+      "passed": 28,
+      "failed": 0,
+      "errors": 0,
+      "command": "python3 test_motor_buffer_adaptativo.py -v"
+    },
+    {
+      "component": "EXT-ESP-SET-v1.1",
+      "tests_run": 34,
+      "passed": 34,
+      "failed": 0,
+      "errors": 0,
+      "command": "python3 -m unittest -v test_motor_setorizacao_priorizacao.py"
+    }
+  ],
+  "total": {
+    "tests_run": 82,
+    "passed": 82,
+    "failed": 0,
+    "errors": 0
+  },
+  "full_dry_run": {
+    "status": "APROVADO",
+    "data_classification": "COORDENADAS_FICTICIAS_EXCLUSIVAMENTE_DE_TESTE",
+    "milestones_completed": [
+      "T-1",
+      "T0",
+      "T1",
+      "T1.5",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "site_count": 4,
+    "candidate_buffer_count": 12,
+    "sector_count": 288,
+    "two_blind_runs_scientifically_identical": true,
+    "ground_truth_hash_commitment_verified_at_t3": true,
+    "real_field_results_created": false,
+    "evidence_sha256": {
+      "t2_manifest": "c39a5fee583f225c43d6379639ed5a06d6037a6d2549f4398ccc2d74c81c3563",
+      "t4_manifest": "52b8652c80b725941d7e40e27a1e3eb95deabafad301f265133daee1c1c0d2d4",
+      "metrics_summary": "f61cc165d8d3b71ece5cbf80bc4d48f445b8d64f29e095119fbe53f0f575c542"
+    },
+    "scientific_file_pairs_compared": 9
+  },
+  "coverage": [
+    "integridade do FIELD-CAND e dos hashes por linha",
+    "firewall de ground truth",
+    "cardinalidade 4 x 3 x 24",
+    "determinismo de duas execucoes cegas",
+    "fronteira set-valued e caso fora do buffer",
+    "Top-k e MRR primario/conservador",
+    "area acumulada com grupo empatado integral",
+    "cobertura adaptativa, baseline fixo e completude GEO",
+    "intervalo de Wilson",
+    "compromisso SHA-256 entre T0 e T3",
+    "execucao integral T1 a T4 com dados ficticios"
+  ]
+}

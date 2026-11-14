@@ -1,0 +1,6 @@
+{
+  "lock_version": "LOC-ENGINE-LOCK-v1",
+  "profile_engine_id": "PERFIL-V3-QUANT-RANKER-v1.1",
+  "profile_engine_artifact_sha256": "773f572c3dd637fd6bca6fc1f7695e2c9a77aa73797d8dcb351dcd45a934ff29",
+  "profile_engine_config_file_sha256": "df4cd64cc1e7c371af203c26c191442658574c7820b340dd59117a809fc9b451"
+}

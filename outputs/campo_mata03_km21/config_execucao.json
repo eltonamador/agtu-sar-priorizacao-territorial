@@ -1,0 +1,574 @@
+{
+  "protocol_id": "MATA03-KM21-INPUT-AUDIT-v1.0",
+  "protocol_name": "Processamento territorial cego do cenario controlado MATA-03/KM21",
+  "version": "2.0",
+  "engine_version": "EXT-ESP-SET-v1.1; configuracao_de_entrada_auditada_v2",
+  "status": "ENTRADA_CONGELADA_PARA_EXECUCAO",
+  "phase": "CAMPO_MATA03_KM21_CEGO",
+  "language": "pt-BR",
+  "scope": {
+    "module": "EXT-ESPACIAL",
+    "component": "SETORIZACAO_E_PRIORIZACAO_ESPACIAL",
+    "execution_unit": "candidate_buffer",
+    "ranking_unit": "sector_within_candidate_buffer",
+    "classification": "CASO_UNICO_CEGO_DIAGNOSTICO_NAO_CONFIRMATORIO",
+    "description": "Entrada do ensaio complementar MATA-03: domínio informado de 7000 m; sem ranking executado."
+  },
+  "dependencies": {
+    "upstream_buffer_protocol": "MATA03-KM21-SOURCE-RADIUS-v1.0",
+    "upstream_geo_protocols": [
+      "GEO-02-v1",
+      "GEO-03-v1",
+      "GEO-04-v1",
+      "GEO-05-v1",
+      "GEO-06-v1"
+    ],
+    "geo_taxonomy": {
+      "GEO-02": "vias_e_trilhas",
+      "GEO-03": "hidrografia",
+      "GEO-04": "relevo_e_declividade",
+      "GEO-05": "cobertura_e_uso_do_solo",
+      "GEO-06": "sintese_territorial"
+    },
+    "ground_truth_dependency": false
+  },
+  "spatial_reference": {
+    "input_crs": "EPSG:4326",
+    "output_crs": "EPSG:4326",
+    "earth_model": "SPHERE_WITH_WGS84_MEAN_EARTH_RADIUS",
+    "earth_radius_m": 6371008.8,
+    "distance_unit": "m",
+    "area_unit": "m2",
+    "bearing_origin": "TRUE_NORTH",
+    "bearing_direction": "CLOCKWISE",
+    "planar_degrees_for_metric_calculation_forbidden": true
+  },
+  "geometry": {
+    "strategy": "AUTHORITATIVE_BUFFER_HOMOTHETIC_EQUAL_AREA_RADIAL_SECTORS",
+    "construction_method": "LOCAL_AEQD_HOMOTHETIC_PARTITION",
+    "authoritative_parent_geometry": "INPUT_BUFFER_GEOJSON",
+    "parent_geometry_must_be_star_shaped_about_candidate": true,
+    "parent_geometry_must_be_convex_about_candidate": true,
+    "outer_boundary_reused_exactly": true,
+    "inner_ring_boundaries": "HOMOTHETIC_SCALES_OF_AUTHORITATIVE_PARENT",
+    "buffers_processed_independently": true,
+    "rings": 3,
+    "directions": 8,
+    "sectors_per_buffer": 24,
+    "ring_boundary_formula": "r_i = R * sqrt(i / 3), i in {0,1,2,3}",
+    "ring_boundaries_as_radius_fraction": [
+      0.0,
+      0.5773502692,
+      0.8164965809,
+      1.0
+    ],
+    "ring_labels": [
+      "R1_INTERNO",
+      "R2_INTERMEDIARIO",
+      "R3_EXTERNO"
+    ],
+    "direction_width_deg": 45.0,
+    "direction_centers_deg": {
+      "N": 0.0,
+      "NE": 45.0,
+      "E": 90.0,
+      "SE": 135.0,
+      "S": 180.0,
+      "SW": 225.0,
+      "W": 270.0,
+      "NW": 315.0
+    },
+    "orientation_offset_deg": -22.5,
+    "expected_sector_area_formula": "authoritative_buffer_planar_area_m2 / 24",
+    "sector_id_template": "{scenario_id}::{candidate_id}::R{ring_index_2d}::{direction_label}",
+    "geometry_type": "Polygon",
+    "ring_must_be_closed": true,
+    "minimum_unique_vertices": 4,
+    "coordinate_order": "longitude_latitude",
+    "area_equality_relative_tolerance": 0.01,
+    "partition_area_conservation_relative_tolerance": 1e-06,
+    "internal_overlap_relative_tolerance": 1e-08,
+    "boundary_assignment": "LOWEST_SECTOR_INDEX",
+    "boundary_policy_before_ground_truth_opening": "GEOMETRY_ONLY_NO_REFERENCE_ACCESS",
+    "future_evaluation_boundary_rule": "INTERSECTS; multiplos setores contam apenas para cobertura, com criterio conservador pre-especificado para Top-1",
+    "sensitivity_geometries": [
+      {
+        "label": "S12",
+        "rings": 3,
+        "directions": 4,
+        "sectors_per_buffer": 12,
+        "purpose": "sensibilidade_de_resolucao_angular"
+      },
+      {
+        "label": "S36",
+        "rings": 3,
+        "directions": 12,
+        "sectors_per_buffer": 36,
+        "purpose": "sensibilidade_de_resolucao_angular"
+      },
+      {
+        "label": "ROTATED_HALF_WEDGE",
+        "rotation": "half_direction_width",
+        "purpose": "sensibilidade_a_orientacao"
+      }
+    ]
+  },
+  "input_schema": {
+    "buffer_results_required_fields": [
+      "protocol_id",
+      "scenario_id",
+      "candidate_id",
+      "estimated_lat",
+      "estimated_lon",
+      "adaptive_radius_m",
+      "buffer_area_m2",
+      "review_status",
+      "execution_classification",
+      "confirmatory_eligible",
+      "ground_truth_used",
+      "source_row_hash"
+    ],
+    "buffer_geometry_required": {
+      "format": "GeoJSON",
+      "geometry_type": "Polygon",
+      "join_key": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "one_geometry_per_join_key": true
+    },
+    "sector_feature_required_fields": [
+      "scenario_id",
+      "candidate_id",
+      "sector_id",
+      "road_trail_access_score",
+      "hydro_access_score",
+      "terrain_access_score",
+      "landcover_access_score",
+      "geo_completeness",
+      "source_provenance"
+    ],
+    "score_constraints": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "closed_interval": true
+    },
+    "uniqueness_keys": {
+      "buffer": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "sector": [
+        "scenario_id",
+        "candidate_id",
+        "sector_id"
+      ]
+    },
+    "identifier_contract": {
+      "separator": "::",
+      "components_must_be_nonempty": true,
+      "components_may_contain_separator": false,
+      "buffer_key": [
+        "scenario_id",
+        "candidate_id"
+      ],
+      "sector_id_template": "{scenario_id}::{candidate_id}::R{ring_index_2d}::{direction_label}",
+      "direction_labels": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ]
+    }
+  },
+  "feature_extraction": {
+    "scope": "SECTOR_POLYGON",
+    "spatial_index_cell_deg": 0.02,
+    "line_chunk_m": 50.0,
+    "nearest_search_limit_m": 10000.0,
+    "raster_sampling": {
+      "method": "DETERMINISTIC_EQUAL_AREA_POLAR_STRATIFIED",
+      "radial_samples": 60,
+      "angular_samples": 60,
+      "samples_per_sector": 3600,
+      "nominal_cell_area_m2": 1308.996939,
+      "nominal_linear_support_m": 36.180061
+    },
+    "minimum_valid_raster_sample_fraction": 1.0,
+    "geo02_method": "Distância do ponto representativo e alocação aproximada do comprimento OSM por subsegmentos de 50 m cujo ponto médio pertence ao setor.",
+    "geo03_method": "Distância do ponto representativo, severidade da feição OSM e densidade de subsegmentos hidrográficos no setor.",
+    "geo04_method": "Media de 3.600 amostras deterministicas estratificadas por setor; em cada amostra, declividade Horn 3 x 3 e elevacao SRTMGL1/Mapzen.",
+    "geo05_method": "Media ponderada das classes em 3.600 amostras deterministicas estratificadas por setor do ESA WorldCover 2021 v200.",
+    "line_allocation_is_exact": false,
+    "raster_aggregation_is_full_census": false,
+    "field_confirmation": "PENDENTE",
+    "limitations": [
+      "A alocacao linear por subsegmentos e uma aproximacao deterministica de desenvolvimento.",
+      "As 3.600 amostras raster por setor representam amostragem areal estratificada, nao censo de todos os pixels.",
+      "As fontes publicas nao comprovam transitabilidade nem condicao territorial atual."
+    ]
+  },
+  "scoring": {
+    "method": "WEIGHTED_LINEAR_COMBINATION",
+    "symbolic": "P_j = M_j * sum_k(w_k * x_jk) * product_m(1 - p_jm)",
+    "score_range": [
+      0.0,
+      1.0
+    ],
+    "criterion_direction": "HIGHER_IS_MORE_FAVORABLE",
+    "criteria": [
+      {
+        "field": "road_trail_access_score",
+        "module": "GEO-02",
+        "role": "benefit"
+      },
+      {
+        "field": "hydro_access_score",
+        "module": "GEO-03",
+        "role": "benefit_after_barrier_transformation"
+      },
+      {
+        "field": "terrain_access_score",
+        "module": "GEO-04",
+        "role": "benefit_after_cost_transformation"
+      },
+      {
+        "field": "landcover_access_score",
+        "module": "GEO-05",
+        "role": "benefit_after_cost_transformation"
+      }
+    ],
+    "weight_sets": [
+      {
+        "weight_set": "BASE",
+        "road_trail_weight": 0.3,
+        "hydro_weight": 0.25,
+        "terrain_weight": 0.2,
+        "landcover_weight": 0.25,
+        "status": "HERDADO_GEO06_DEV",
+        "purpose": "composicao_principal_de_desenvolvimento"
+      },
+      {
+        "weight_set": "IGUAIS",
+        "road_trail_weight": 0.25,
+        "hydro_weight": 0.25,
+        "terrain_weight": 0.25,
+        "landcover_weight": 0.25,
+        "status": "SENSIBILIDADE",
+        "purpose": "controle_sem_preferencia_entre_modulos"
+      },
+      {
+        "weight_set": "SEM_BARREIRAS",
+        "road_trail_weight": 0.6,
+        "hydro_weight": 0.0,
+        "terrain_weight": 0.4,
+        "landcover_weight": 0.0,
+        "status": "ABLACAO",
+        "purpose": "remove_GEO03_e_GEO05"
+      },
+      {
+        "weight_set": "APENAS_ACESSO",
+        "road_trail_weight": 1.0,
+        "hydro_weight": 0.0,
+        "terrain_weight": 0.0,
+        "landcover_weight": 0.0,
+        "status": "ABLACAO",
+        "purpose": "mantem_somente_GEO02"
+      },
+      {
+        "weight_set": "ENFASE_BARREIRAS",
+        "road_trail_weight": 0.2,
+        "hydro_weight": 0.35,
+        "terrain_weight": 0.15,
+        "landcover_weight": 0.3,
+        "status": "SENSIBILIDADE",
+        "purpose": "aumenta_influencia_de_GEO03_e_GEO05"
+      }
+    ],
+    "weight_sum_required": 1.0,
+    "weight_sum_tolerance": 1e-12,
+    "additional_barrier_penalty": 0.0,
+    "additional_barrier_penalty_reason": "GEO-03 e GEO-05 ja transformam barreiras potenciais em escores de acesso; penalizacao adicional produziria dupla contagem.",
+    "viability_mask_default": 1,
+    "absolute_veto_from_public_cartography": false,
+    "absolute_veto_policy": "PROIBIDO_NO_DEV_V1_SEM_EVIDENCIA_OPERACIONAL_INDEPENDENTE_E_REGRA_PRE_ESPECIFICADA",
+    "confidence_conditioned_weights_enabled": false,
+    "confidence_conditioned_weights_note": "A funcao w_k(C_loc) ainda nao foi congelada; detection_quality nao pode substituir C_loc."
+  },
+  "ranking": {
+    "scope": "WITHIN_CANDIDATE_BUFFER_ONLY",
+    "cross_candidate_ranking": false,
+    "cross_buffer_ranking": false,
+    "scenario_global_sector_ranking": false,
+    "primary_weight_set": "BASE",
+    "score_comparison_decimals": 9,
+    "rank_method": "COMPETITION_RANK",
+    "sort_order": [
+      "priority_score_desc",
+      "sector_id_asc"
+    ],
+    "tie_policy": "SHARED_COMPETITION_RANK_AND_NO_SUBSTANTIVE_ID_PREFERENCE",
+    "tie_break_is_substantive_preference": false,
+    "base_top_tie_policy": "NO_SELECTION_AND_REVISAR",
+    "sensitivity_top_tie_policy": "FRACTIONAL_SUPPORT_AND_EXPLICIT_FLAG",
+    "top1_support_formula": "sum_w(I(sector_in_top_set_w)/size(top_set_w))/number_of_weight_sets",
+    "margin_formula": "top1_score - top2_score",
+    "low_margin_threshold": 0.05,
+    "low_margin_status": "REVISAR",
+    "top1_stability_formula": "sum_w(I(sector_in_top_set_w)/size(top_set_w))/number_of_weight_sets",
+    "robust_stability_threshold": 0.8,
+    "robust_stability_minimum_top1_wins": 4,
+    "instability_status": "REVISAR",
+    "no_viable_sector_status": "REVISAR",
+    "output_labels": {
+      "rank_1": "SETOR_PRIORITARIO_ANALITICO",
+      "rank_2": "SETOR_SECUNDARIO_ANALITICO",
+      "rank_3": "SETOR_TERCIARIO_ANALITICO"
+    },
+    "operational_command_claim_forbidden": true
+  },
+  "missing_data_policy": {
+    "never_invent": true,
+    "missing_required_geo_score": "SET_SCORE_AND_RANK_TO_NULL_AND_MARK_REVISAR",
+    "renormalize_weights_when_missing": false,
+    "missing_as_favorable_forbidden": true,
+    "required_geo_completeness": 1.0,
+    "incomplete_geo_status": "REVISAR",
+    "missing_source_provenance_status": "REVISAR",
+    "invalid_or_out_of_range_score_policy": "REJECT_ROW",
+    "missing_sector_geometry_policy": "REJECT_BUFFER",
+    "missing_optional_context_policy": "KEEP_BLANK_AND_RECORD_WARNING"
+  },
+  "ground_truth_firewall": {
+    "enabled": true,
+    "ground_truth_may_enter_sectorization": false,
+    "ground_truth_may_enter_feature_extraction": false,
+    "ground_truth_may_enter_scoring_or_ranking": false,
+    "open_reference_only_after_output_freeze": true,
+    "match_mode": "NORMALIZED_KEY_SUBSTRING",
+    "case_insensitive": true,
+    "recursive": true,
+    "allowed_control_field": {
+      "field": "ground_truth_used",
+      "required_value": false
+    },
+    "forbidden_columns_or_fragments": [
+      "ground_truth",
+      "ground_truth_lat",
+      "ground_truth_lon",
+      "ground_truth_longitude",
+      "ground_truth_sector",
+      "truth_",
+      "reference_lat",
+      "reference_lon",
+      "true_lat",
+      "true_lon",
+      "real_lat",
+      "real_lon",
+      "victim_lat",
+      "victim_lon",
+      "target_lat",
+      "target_lon",
+      "base_lat",
+      "base_lon",
+      "generator_distance",
+      "distance_to_truth",
+      "distance_to_ground_truth",
+      "distance_to_reference",
+      "inside_buffer",
+      "sector_contains_truth",
+      "reference_sector",
+      "correct_sector",
+      "relevant_candidate"
+    ],
+    "forbidden_field_policy": "ABORT_EXECUTION",
+    "ground_truth_used_true_policy": "ABORT_EXECUTION"
+  },
+  "output_policy": {
+    "deterministic_order": [
+      "scenario_id",
+      "candidate_id",
+      "ring_index",
+      "direction_index"
+    ],
+    "files": [
+      {
+        "name": "sector_polygons_dev.geojson",
+        "role": "geometrias_dos_setores"
+      },
+      {
+        "name": "sector_features_dev.csv",
+        "role": "atributos_GEO_por_setor"
+      },
+      {
+        "name": "sector_ranking_dev.csv",
+        "role": "escores_contribuicoes_rankings_e_status"
+      },
+      {
+        "name": "buffer_decisions_dev.csv",
+        "role": "decisao_supervisionada_por_buffer"
+      },
+      {
+        "name": "sector_results_dev.json",
+        "role": "resultado_estruturado"
+      },
+      {
+        "name": "warnings_dev.log",
+        "role": "alertas_de_revisao"
+      },
+      {
+        "name": "manifest_setorizacao_dev.json",
+        "role": "proveniencia_hashes_e_controles"
+      }
+    ],
+    "include_all_weight_sets": true,
+    "include_normalized_criteria": true,
+    "include_weighted_contributions": true,
+    "include_margin_and_stability": true,
+    "include_warning_codes": true,
+    "include_review_status": true,
+    "include_ground_truth_payload": false,
+    "include_ground_truth_control_field": true,
+    "manifest_filename": "manifest_setorizacao_dev.json",
+    "manifest_sha256_required_for_inputs_config_engine_and_outputs": true
+  },
+  "guardrails": {
+    "development_only": true,
+    "results_may_be_called_confirmatory": false,
+    "weights_may_be_called_validated": false,
+    "sector_priority_may_be_called_victim_location": false,
+    "sector_priority_may_command_field_operation": false,
+    "candidate_and_sector_rankings_must_remain_distinct": true,
+    "point_level_geo_features_may_be_relabelled_as_sector_features": false,
+    "photos_used_as_numeric_input": false,
+    "configuration_change_policy": "Qualquer alteracao exige novo identificador de versao, justificativa, repeticao integral dos testes e novo congelamento antes de REP-S."
+  },
+  "status_taxonomy": {
+    "feature_status": [
+      "DISPONIVEL",
+      "PARCIAL",
+      "NAO_DISPONIVEL"
+    ],
+    "decision_status": [
+      "PRIORIZADO",
+      "REVISAR"
+    ],
+    "processing_error_policy": "ABORT_EXECUTION",
+    "warning_codes": [
+      "UPSTREAM_REVIEW_REQUIRED",
+      "INCOMPLETE_GEO",
+      "NO_COMPLETE_SECTOR",
+      "LOW_MARGIN",
+      "BASE_TOP_TIE",
+      "NO_UNIQUE_TOP1",
+      "SENSITIVITY_TOP_TIE",
+      "RANKING_UNSTABLE",
+      "POTENTIAL_BARRIER",
+      "MISSING_REQUIRED_GEO_SCORE",
+      "MISSING_SOURCE_PROVENANCE"
+    ]
+  },
+  "acceptance_gates": {
+    "configuration_parses_as_json": true,
+    "all_weight_sets_sum_to_one": true,
+    "exactly_24_primary_sectors_per_valid_buffer": true,
+    "all_sector_geometries_valid_and_closed": true,
+    "sector_areas_equal_within_tolerance": true,
+    "sector_area_sum_matches_authoritative_parent_within_tolerance": true,
+    "sector_vertices_contained_by_authoritative_parent": true,
+    "no_overlap_between_primary_sectors_beyond_boundary_tolerance": true,
+    "all_required_geo_scores_in_range": true,
+    "no_forbidden_ground_truth_field_or_protected_reference_input": true,
+    "ground_truth_used_is_exactly_false": true,
+    "deterministic_repeat_matches": true,
+    "ranking_is_within_buffer_only": true,
+    "manifest_contains_sha256_hashes": true
+  },
+  "limitations": [
+    "A configuracao e destinada exclusivamente ao DEV-S e nao constitui validacao confirmatoria ou operacional.",
+    "Os pesos foram herdados do GEO06-v1 aplicado a candidatos pontuais e sao hipoteses de desenvolvimento; nao foram validados para setores.",
+    "Os atributos GEO precisam ser recalculados sobre cada poligono setorial; atributos pontuais ou de janelas antigas nao podem ser apenas copiados e apresentados como atributos de setor.",
+    "A setorizacao radial regular favorece comparabilidade e reprodutibilidade, mas nao substitui zonas operacionais baseadas em feicoes reais do terreno.",
+    "O ranking e restrito aos 24 setores do mesmo buffer; nao resolve a consolidacao de buffers sobrepostos nem produz ranking territorial global entre candidatos.",
+    "Vias, hidrografia, relevo e cobertura derivados de fontes publicas nao confirmam transitabilidade, barreiras atuais ou condicoes observadas em campo.",
+    "A estabilidade de 0,80 e a margem de 0,05 sao parametros herdados para diagnostico e exigem analise de sensibilidade antes de qualquer uso confirmatorio.",
+    "A posicao real permanece protegida e somente podera ser usada em avaliacao posterior, apos congelamento das saidas.",
+    "MATA-03 usa um unico ponto e o dominio direto de 6 km informado pelo pesquisador; o motor nao estimou esse raio.",
+    "A qualidade de deteccao nao estava disponivel e nenhum valor foi imputado.",
+    "OSM e instantaneo de cartografia voluntaria; WorldCover representa 2021; nenhuma camada comprova condicao atual ou transitabilidade sob o dossel.",
+    "AP1, AP2 e AP3 sao areas analiticas para revisao humana, nao probabilidades, deteccoes ou ordens operacionais.",
+    "Direção do relato e geometria da trilha não informadas; 357 graus é orientação do aparelho, não da pessoa. Perfil e imagens não alimentam BASE."
+  ],
+  "mata02_mzg2_source_input": {
+    "protocol_id": "MATA03-KM21-SOURCE-RADIUS-v2.0",
+    "scenario_id": "MATA-03",
+    "site_id": "KM21",
+    "candidate_id": "MATA-03-E0",
+    "estimated_lat": -0.15916666666666665,
+    "estimated_lon": -51.394999999999996,
+    "source_radius_m": 6000.0,
+    "event_timestamp_local": null,
+    "hypothetical_elapsed_hours": 17.0,
+    "coordinate_capture_timestamp_local": "2026-10-22T15:59:53",
+    "coordinate_capture_time_display_local": "15:59",
+    "source_record_origin": "CENARIO_FORNECIDO_PELO_USUARIO_E_CAPTURA_KM21_PNG; AUDITORIA_V2",
+    "point_semantics": "PONTO_INICIAL_DE_PLANEJAMENTO",
+    "source_metadata_verification": "COORDENADA_LIDA_NA_TELA; EXIF_CAPTURA_2026_10_22_15_59_53_SEM_FUSO; SEM_GPS_EXIF_NA_TELA; ACURACIA_DESCONHECIDA",
+    "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+    "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+    "r0_semantics": "source_declared_operational_domain",
+    "additional_factors_applied_by_engine": false,
+    "detection_quality_available": false,
+    "radius_rationale": "DOMINIO_DE_6_KM_INFORMADO_PARA_O_ENSAIO; NAO_DERIVADO_NESTA_EXECUCAO",
+    "review_status": "REVISAR",
+    "execution_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+    "confirmatory_eligible": false,
+    "ground_truth_available": false,
+    "ground_truth_used": false
+  },
+  "mata02_mzg2_context_boundary": {
+    "territory_is_real": true,
+    "scenario_event_is_hypothetical": true,
+    "hypothetical_elapsed_hours_used_in_base_ranking": false,
+    "profile_used_in_quantitative_ranking": false,
+    "directional_clue_used_in_quantitative_ranking": false,
+    "photographs_used_in_quantitative_ranking": false,
+    "drone_camera_coordinates_used_in_quantitative_ranking": false,
+    "target_coordinate_available": false,
+    "reason": "O BASE usa apenas E0, raio informado e camadas GEO-02 a GEO-05. Fotografias, perfil, pistas, relogio hipotetico e qualquer referencia do alvo permanecem segregados."
+  },
+  "mata02_mzg2_source_snapshot": {
+    "osm_base_timestamp": null,
+    "osm_snapshot_status": "PENDENTE_EXECUCAO",
+    "worldcover_product": "ESA WorldCover 2021 v200",
+    "dem_product": "SRTM HGT local",
+    "source_hashes_status": "PENDENTE_EXECUCAO",
+    "temporal_caveat": "As camadas nao comprovam condicoes atuais, transitabilidade sob o dossel nem obstaculos de pequena escala."
+  },
+  "mata02_mzg2_interpretation": {
+    "score_meaning": "PRIORIDADE_ANALITICA_TERRITORIAL_NAO_PROBABILIDADE_DE_PRESENCA",
+    "top3_label_meaning": "AREAS_ANALITICAS_PARA_REVISAO_HUMANA",
+    "operational_command": false,
+    "field_confirmation_required": true,
+    "confirmatory_eligible": false,
+    "ground_truth_available": false,
+    "ground_truth_used": false
+  },
+  "execution_control": {
+    "direct_source_radius_used": true,
+    "adaptive_buffer_engine_used": false,
+    "missing_detection_quality_imputed": false,
+    "profile_used_in_quantitative_ranking": false,
+    "directional_preference_applied": false,
+    "ring_penalty_applied": false,
+    "photographs_used_in_quantitative_ranking": false,
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  },
+  "name": "Processamento territorial do cenário controlado MATA-03/KM21",
+  "ground_truth_used": false
+}

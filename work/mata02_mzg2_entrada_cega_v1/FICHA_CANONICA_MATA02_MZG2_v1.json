@@ -1,0 +1,127 @@
+{
+  "schema_id": "AGTU-MATA02-MZG2-CANONICAL-v1.0",
+  "record_version": "1.0",
+  "scenario_id": "MATA-02",
+  "site_id": "MZG2",
+  "record_status": "CONGELADO_PARA_PROCESSAMENTO_CEGO",
+  "study_design": {
+    "classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+    "real_components": [
+      "territorio observado em campo",
+      "coordenada inicial de planejamento registrada no local",
+      "fotografias de solo e de drone como documentacao contextual"
+    ],
+    "simulated_components": [
+      "ocorrencia hipotetica de desaparecimento",
+      "tempo decorrido hipotetico de 17 horas",
+      "perfil hipotetico da pessoa",
+      "condicoes de saude e vestuario hipoteticos",
+      "pistas comportamentais e direcionais hipoteticas"
+    ],
+    "interpretation_limit": "O registro nao descreve uma ocorrencia real de pessoa desaparecida e nao constitui validacao de eficacia operacional."
+  },
+  "planning_reference": {
+    "candidate_id": "MATA-02-E0",
+    "latitude": -0.1591666667,
+    "longitude": -51.395,
+    "coordinate_reference_system": "EPSG:4326",
+    "dms_declared": "0°9'33\" S, 51°23'42\" O",
+    "source": "BUSSOLA_DE_IPHONE_CAPTURA_DE_TELA",
+    "point_semantics": "PONTO_INICIAL_DE_PLANEJAMENTO",
+    "is_target_location": false,
+    "horizontal_accuracy_m": null,
+    "coordinate_capture_date": null,
+    "coordinate_capture_time_display_local": "15:59",
+    "timezone": "America/Belem",
+    "device_display_elevation_m": 12.0,
+    "device_display_elevation_used_by_base": false,
+    "device_orientation_used_as_person_direction": false,
+    "verification_status": "COORDENADA_E_DADOS_DE_TELA_DECLARADOS; DATA_E_ACURACIA_HORIZONTAL_NAO_DISPONIVEIS"
+  },
+  "spatial_domain": {
+    "source_radius_m": 6000.0,
+    "radius_origin": "INFORMADO_PELO_PESQUISADOR",
+    "radius_method": "DOMINIO_OPERACIONAL_DIRETO_SEM_BUFFER_ADAPTATIVO",
+    "additional_factors_applied": false,
+    "domain_area_km2": 113.097336,
+    "ground_truth_used_to_define_radius": false
+  },
+  "temporal_partition": {
+    "real_field_capture": {
+      "coordinate_screen_time_display": "15:59",
+      "coordinate_screen_date": null,
+      "photograph_timestamps_role": "METADADOS_DE_CAPTURA_DAS_IMAGENS",
+      "photograph_timestamps_are_event_time": false,
+      "exif_inventory_status": "CONCLUIDO_PARA_OS_34_ARQUIVOS_ANEXADOS",
+      "exif_inventory_file": "INVENTARIO_IMAGENS_ANEXADAS_MATA02_v1.json"
+    },
+    "hypothetical_scenario_clock": {
+      "elapsed_hours": 17.0,
+      "event_timestamp_local_declared": "2026-10-22T15:30:00",
+      "evaluation_timestamp_local_declared": "2026-10-23T08:30:00",
+      "timezone": "America/Belem",
+      "timestamps_are_hypothetical": true,
+      "use_restriction": "O VALOR DE 17 HORAS PERTENCE SOMENTE AO CENARIO HIPOTETICO E NAO PODE SER INFERIDO A PARTIR DOS HORARIOS DAS FOTOGRAFIAS."
+    }
+  },
+  "base_input_contract": {
+    "authorized_inputs": [
+      "coordenada MATA-02-E0",
+      "raio informado de 6000 m",
+      "camada viaria GEO-02",
+      "camada hidrografica GEO-03",
+      "modelo de declividade GEO-04",
+      "cobertura do solo GEO-05"
+    ],
+    "excluded_inputs": [
+      "fotografias de solo",
+      "fotografias de drone",
+      "coordenadas da camera do drone",
+      "perfil da pessoa",
+      "pistas comportamentais ou direcionais",
+      "coordenada do alvo",
+      "qualquer referencia posterior de encontro"
+    ],
+    "samples_per_sector": 3600,
+    "fixed_weights": {
+      "GEO02": 0.3,
+      "GEO03": 0.25,
+      "GEO04": 0.2,
+      "GEO05": 0.25
+    }
+  },
+  "photographic_evidence": {
+    "available": true,
+    "attached_subset_count": 34,
+    "inventory_file": "INVENTARIO_IMAGENS_ANEXADAS_MATA02_v1.json",
+    "role": "DOCUMENTACAO_CONTEXTUAL_E_AUDITORIA_POSTERIOR",
+    "used_in_base_ranking": false,
+    "drone_coordinates_semantics": "POSICAO_DA_CAMERA_NO_INSTANTE_DA_CAPTURA",
+    "drone_coordinates_are_target_coordinates": false,
+    "drone_coordinates_are_planning_reference": false
+  },
+  "declared_absences": {
+    "target_coordinate": null,
+    "real_missing_person_event": null,
+    "real_person_health_information": null,
+    "real_person_clothing_information": null,
+    "real_directional_clue": null,
+    "real_confirmed_person_profile": null,
+    "real_event_timestamp": null,
+    "horizontal_accuracy": null
+  },
+  "hypothetical_scenario_inputs": {
+    "profile_provided": true,
+    "health_and_clothing_provided": true,
+    "behavioral_and_directional_clues_provided": true,
+    "used_in_base_ranking": false,
+    "interpretation": "Sao elementos do cenario hipotetico, nao observacoes confirmadas de uma pessoa real."
+  },
+  "blindness_and_governance": {
+    "ground_truth_available_at_freeze": false,
+    "ground_truth_used": false,
+    "later_target_disclosure_policy": "ARMAZENAR_EM_ARTEFATO_SEPARADO_SE_E_QUANDO_EXISTIR; NAO_REESCREVER_ENTRADA_NEM_SAIDA_CONGELADA",
+    "base_execution_may_access_context_photos": false,
+    "base_execution_may_access_profile_or_clues": false
+  }
+}

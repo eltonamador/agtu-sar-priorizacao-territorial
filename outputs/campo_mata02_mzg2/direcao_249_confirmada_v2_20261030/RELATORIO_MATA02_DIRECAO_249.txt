@@ -1,0 +1,37 @@
+MATA-02 / MZG2 — CONCLUSÃO DE UM ÚNICO PEDIDO
+Atualização: direção relatada de 249° a partir do norte.
+
+1. O QUE FOI FEITO
+Registrou-se a confirmação de que 249° se refere à direção informada do desaparecido. O relato permanece RELATADO: sua confiabilidade, tolerância angular, origem exata e referência de norte não foram medidas. Os 11 envios repetidos não foram tratados como 11 casos. Preservaram-se o BASE, os demais casos, o motor e a dissertação.
+Reexecutou-se somente o componente PERFIL: nove combinações de confiança/tolerância e um controle sem confiança avaliada. Foram reutilizados os geodados, a geometria, a cartografia orbital e o movimento já calculados. Os números coincidem com a análise anterior de sensibilidade, que já usava 249°: a novidade desta entrega é a confirmação do significado e sua proveniência, não um resultado numérico artificialmente diferente.
+
+2. ÁREAS CANDIDATAS — BASE PRESERVADO, STATUS REVISAR
+AP1 — R01-SW: sudoeste, de 0 a 3,46 km de E0; escore 0,644159.
+AP2 — R03-SW: sudoeste, de 4,90 a 6 km de E0; escore 0,634348.
+AP3 — R03-E: leste, de 4,90 a 6 km de E0; escore 0,630079.
+São setores de aproximadamente 4,71 km² cada, não pontos previstos de encontro. O raio informado de 6 km delimita cerca de 113 km². A faixa radial não é distância percorrida por uma trilha.
+
+3. POR QUE ESSAS ÁREAS
+No BASE, a soma usa 0,30·GEO-02 (vias/acesso), 0,25·GEO-03 (hidrografia), 0,20·GEO-04 (relevo) e 0,25·GEO-05 (cobertura), com as transformações já existentes. Escores maiores expressam o índice territorial do modelo, não probabilidade de a pessoa estar ali.
+AP1: componentes 0,542529 / 0,971831 / 0,684036 / 0,406542; melhor combinação BASE. Declividade amostrada média de 4,15° e proporção florestal de 83,2%; há alerta de vegetação densa.
+AP2: componentes 0,511751 / 0,989851 / 0,680756 / 0,388833; combinação próxima da primeira, com declividade amostrada média de 4,20° e proporção florestal de 87,6%; há alerta de vegetação densa.
+AP3: componentes 0,491216 / 0,973693 / 0,710398 / 0,388847; favorabilidade relativa no relevo e demais componentes mantém sua posição BASE. Está a leste e NÃO recebe apoio da direção de 249°. Ausência de alerta específico não comprova passagem segura.
+Os componentes e proporções foram lidos dos resultados congelados, não novamente estimados nesta atualização. Boa pontuação hidrográfica não deve ser interpretada como água ausente. Cobertura vista de cima não mede diretamente a dificuldade no sub-bosque. O custo MOV não integra este ranking.
+
+4. EFEITO DA DIREÇÃO
+249° cai na faixa Oeste (W: 247,5°–292,5°), a apenas 1,5° da fronteira com Sudoeste (SW: 202,5°–247,5°). O modelo compara sobreposição angular por setor, não simula uma trajetória. Por isso, compatibilidade direcional e favorabilidade territorial não produzem necessariamente um vencedor Oeste.
+Tolerâncias testadas, NÃO informadas pelo usuário: ±5°, ±22,5° e ±45°. Confianças testadas: baixa, média e alta. Peso nominal do perfil: 0,10; peso efetivo 0,033333 (baixa) ou 0,066667 (média/alta), pois a natureza RELATADO limita a força da evidência. Média e alta coincidem por construção; não são replicações independentes.
+AP1 e AP2 continuam em primeiro e segundo nas nove combinações. AP3 permanece em terceiro em sete delas. Apenas com ±45° e confiança média/alta assumida, R02-SW (sudoeste intermediário, 3,46–4,90 km) passa do 7º posto BASE para o 3º, com escore de perfil 0,619672. Esse setor aparece no mapa como C1, alternativa condicionada, NÃO quarta prioridade.
+No controle sem confiança avaliada, o perfil se abstém e não altera o BASE. Nenhuma confiança ou tolerância foi escolhida como fato. Logo, não há um ranking PERFIL definitivo. As contagens 9/9 e 7/9 descrevem apenas essa grade limitada de testes, não chances de localização nem robustez universal.
+
+5. COMO INTERPRETAR PARA O EXERCÍCIO
+AP1 e AP2 são as primeiras candidatas analíticas mais estáveis nas hipóteses testadas. AP3 e C1 representam a divergência a discutir: favorabilidade territorial a leste versus maior influência de uma direção ampla a oeste/sudoeste. Não se excluem outros setores nem se transforma a seta em corredor de busca já confirmado. Antes de emprego real, o comando precisa conferir a pista, acessos, barreiras e capacidade das equipes e subdividir áreas analíticas grandes.
+O estado continua REVISAR: margem BASE de aproximadamente 0,009812, estabilidade de 0,60 e três vitórias em cinco configurações de pesos, além dos alertas de revisão da entrada/vegetação. Confirmar o significado da direção não resolve essas limitações nem autoriza elevar o estado a PRIORIZADO.
+
+6. LIMITES E PRÓXIMO USO
+Este é um ensaio de ocorrência hipotética sobre território documentado em campo, sem comprovação de eficácia de busca. O ponto do iPhone é referência adotada no exercício. A seta parte de E0 e usa norte geográfico por convenção cartográfica; origem efetiva e norte magnético/verdadeiro do relato continuam não confirmados. Seu comprimento não estima deslocamento.
+A imagem de fundo é composição histórica Sentinel-2/ESA WorldCover 2021, não Google Earth nem fotografia de outubro de 2026. As fotos próprias de 2026 complementam o contexto, mas não são um ortomosaico georreferenciado de todo o raio. Pessoas visíveis nas fotos não foram usadas como alvo para calibrar a saída.
+A explicação aos especialistas deve mostrar o resultado com essas ressalvas e avaliar clareza, utilidade percebida e limitações. Não foi alterado o formulário, nem aplicada avaliação por especialistas, nem incorporada esta entrega ao texto da dissertação.
+
+7. VERIFICAÇÃO REALIZADA NESTA ENTREGA
+Reexecução do PERFIL, repetibilidade dos escores, igualdade com a sensibilidade anterior, 24 setores e Top-3 BASE, contagem das alternativas, integridade dos arquivos preservados e limites da cartografia. Não foi executada novamente toda a suíte de testes nem feita validação externa/operacional. A situação da inspeção visual está registrada em QA_ENTREGA.json.

@@ -1,0 +1,54 @@
+{
+  "data_registro": "2026-10-30",
+  "caso": "MATA-02/MZG2",
+  "escopo": "Conclusão e conferência do material existente de um único ensaio complementar; sem reprocessamento ou alteração da dissertação.",
+  "natureza": "Território e fotografias reais; ocorrência, perfil e pistas do exercício hipotéticos. Não é avaliação de eficácia operacional.",
+  "deduplicacao": {
+    "textos_recebidos": 11,
+    "pedidos_distintos": 1,
+    "verificacao": "Dez arquivos têm conteúdo idêntico byte a byte; o décimo primeiro difere apenas pela substituição dos marcadores de lista '-' por '*'.",
+    "hash_dez_arquivos": "021a7a23b033f8ee2ba685beceb917d7dfa0934a03366b1a1acf1bea87330641",
+    "hash_decimo_primeiro": "b97f1472e822fe60fa658055b4512e575db612fee0c8b78f4969338279d6c9fe",
+    "causa_demora_anterior": "Não determinada nesta conferência; a duplicação não comprova a causa da duração anterior."
+  },
+  "verificacoes_realizadas_nesta_etapa": {
+    "manifesto_saidas_base": "14/14 hashes conferidos",
+    "manifesto_fontes_base": "13/13 hashes conferidos",
+    "setores_atributos_geometrias": "24 em cada conjunto; identificadores únicos e posições 1–24 completas",
+    "escores_base": "24 escores recalculados com pesos 0,30/0,25/0,20/0,25; resíduo máximo de 5e-10, compatível com arredondamento",
+    "amostras_registradas": "3.600 válidas por setor para relevo e cobertura; contagens de classes de cobertura somam 3.600 em cada setor",
+    "mapa": "Inspeção visual do mapa existente concluída; fundo Sentinel-2 de 2021 explicitamente identificado, sem atribuição às condições de outubro de 2026",
+    "extracao_geoespacial_repetida": false,
+    "validacao_operacional": false
+  },
+  "resultado_base_preservado": {
+    "status": "REVISAR",
+    "raio_exploratorio_m": 6000,
+    "top3": [
+      {"setor": "R01-SW", "escore": 0.644159158},
+      {"setor": "R03-SW", "escore": 0.634347572},
+      {"setor": "R03-E", "escore": 0.630079426}
+    ],
+    "margem_top1_top2": 0.009811586,
+    "interpretacao": "Ordenação exploratória para revisão humana; não representa probabilidade de presença, localização prevista de uma pessoa ou autorização de emprego operacional."
+  },
+  "ressalva_proveniencia": {
+    "arquivos": ["ensaio_complementar_v2_249/atributos_setores.csv", "ensaio_complementar_v2_249/ranking_BASE.csv"],
+    "campo": "feature_method",
+    "rotulo_legado": "OSM_LINE_CHUNKS_PLUS_9_POINT_AREA_STRATIFIED_RASTER_SAMPLE",
+    "esclarecimento": "O rótulo conserva 9_POINT, mas código, contagens e QA da execução indicam 3.600 amostras por setor. Não foi demonstrado erro aritmético; a extração não foi repetida nesta auditoria. Não se trata de censo de todos os pixels.",
+    "tratamento": "Nota complementar explícita; arquivos e hashes históricos preservados. Não reproduzir o rótulo antigo como descrição do método desta execução."
+  },
+  "analises_complementares": {
+    "perfil_249": "Dez configurações exploratórias do mesmo caso, não dez novos casos. QA PASS consultado no registro existente, não reproduzido. Norte de referência, confiança e tolerância não confirmados; direção 249 graus não consta dos textos originais duplicados e aparece em artefato posterior como relato. Não utilizada no ranking BASE. Não tratar como pista confirmada ou parâmetro validado.",
+    "movimento": "Seis cenários de resistência e 48 corredores; QA PASS consultado no registro existente, não reproduzido. Custo relativo complementar, sem alterar o ranking BASE, prever trajetórias ou converter 17 horas em distância/isócrona."
+  },
+  "entregas_existentes": {
+    "mapa": "mapa_priorizacao_v1/Mapa_MATA02_E0_AP1_AP2_AP3_249.png",
+    "resultado": "ensaio_complementar_v2_249/RESULTADO_ENSAIO.json",
+    "ranking": "ensaio_complementar_v2_249/ranking_BASE.csv",
+    "relatorio_execucao_original": "ensaio_complementar_v2_249/RELATORIO_ENSAIO.txt"
+  },
+  "preservacao": "Nenhum arquivo anterior, fonte, fotografia, resultado congelado, caso anterior ou versão da dissertação foi modificado nesta etapa. Somente este registro de conclusão foi acrescentado.",
+  "estado_entrega": "Concluído como pedido único de ensaio complementar, com as ressalvas documentadas. Avaliação por especialistas e eficácia operacional não realizadas por esta conferência."
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "protocol_id": "MATA03-KM21-INPUT-AUDIT-v1.0",
+    "scenario_id": "MATA-03",
+    "candidate_id": "MATA-03-E0",
+    "top1_sector_id": "MATA-03::MATA-03-E0::R01::E",
+    "top1_sector_ids_base": "[\"MATA-03::MATA-03-E0::R01::E\"]",
+    "top1_unique": true,
+    "top1_score_base": 0.737195475,
+    "base_margin": 0.001180969,
+    "top1_stability": 0.6,
+    "top1_unique_win_count": 3,
+    "top1_membership_count": 3,
+    "top1_support_points": 3.0,
+    "top1_by_weight_set": "{\"APENAS_ACESSO\": [\"MATA-03::MATA-03-E0::R03::NE\"], \"BASE\": [\"MATA-03::MATA-03-E0::R01::E\"], \"ENFASE_BARREIRAS\": [\"MATA-03::MATA-03-E0::R01::E\"], \"IGUAIS\": [\"MATA-03::MATA-03-E0::R01::E\"], \"SEM_BARREIRAS\": [\"MATA-03::MATA-03-E0::R03::NE\"]}",
+    "weight_sets_with_top_tie": "[]",
+    "decision_status": "REVISAR",
+    "warning_codes": "UPSTREAM_REVIEW_REQUIRED;LOW_MARGIN;RANKING_UNSTABLE",
+    "source_execution_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+    "confirmatory_eligible": false,
+    "supervision_required": true,
+    "ground_truth_used": false
+  }
+]

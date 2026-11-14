@@ -1,0 +1,252 @@
+{
+  "checks": [
+    {
+      "description": "Todos os arquivos necessários existem e são legíveis.",
+      "detail": "Entradas e saídas foram abertas sem erro de sintaxe ou codificação.",
+      "id": "FILES_PRESENT_AND_PARSE",
+      "metrics": {
+        "files_loaded": 10
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "A configuração preserva 3×8, pesos válidos, firewall e ranking intrabuffer.",
+      "detail": "Contrato v1.1 confirma geometria autoritativa, 3 anéis × 8 direções, competition rank e ranking intrabuffer.",
+      "id": "CONFIG_CONTRACT",
+      "metrics": {
+        "directions": 8,
+        "protocol_id": "EXT-ESP-SET-v1.1",
+        "rank_method": "COMPETITION_RANK",
+        "rings": 3,
+        "sectors_per_buffer": 24,
+        "weight_sets": [
+          "BASE",
+          "IGUAIS",
+          "SEM_BARREIRAS",
+          "APENAS_ACESSO",
+          "ENFASE_BARREIRAS"
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Hashes SHA-256 e tamanhos de todos os arquivos do manifesto conferem.",
+      "detail": "Todos os 21 arquivos registrados têm tamanho e SHA-256 íntegros.",
+      "id": "MANIFEST_HASHES",
+      "metrics": {
+        "files_checked": 21,
+        "files_declared": 21,
+        "output_files": 6
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "O hash canônico do resultado científico coincide com o manifesto.",
+      "detail": "Hash científico canônico coincide com o manifesto.",
+      "id": "SCIENTIFIC_HASH",
+      "metrics": {
+        "scientific_projection_sha256": "bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc"
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "O hash canônico dos seis outputs científicos coincide com o manifesto.",
+      "detail": "Hash canônico do conjunto dos seis outputs científicos coincide com o manifesto.",
+      "id": "SCIENTIFIC_BUNDLE_HASH",
+      "metrics": {
+        "output_count": 6,
+        "scientific_bundle_sha256": "0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837"
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "As cardinalidades das saídas coincidem com os buffers de entrada e a configuração.",
+      "detail": "Cardinalidades derivadas coerentes: 90 buffers, 2160 setores e 90 decisões.",
+      "id": "CARDINALITIES",
+      "metrics": {
+        "buffers": 90,
+        "decisions": 90,
+        "expected_buffers": 90,
+        "expected_sectors": 2160,
+        "sectors": 2160,
+        "sectors_per_buffer": 24
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Cada buffer tem o produto cartesiano de 3 anéis e 8 direções.",
+      "detail": "Cada um dos 90 buffers contém exatamente 3 anéis × 8 direções.",
+      "id": "PARTITION_3X8",
+      "metrics": {
+        "buffer_groups": 90,
+        "candidate_counts_by_scenario": {
+          "DV2-001": 3,
+          "DV2-002": 3,
+          "DV2-003": 3,
+          "DV2-004": 3,
+          "DV2-005": 3,
+          "DV2-006": 3,
+          "DV2-007": 3,
+          "DV2-008": 3,
+          "DV2-009": 3,
+          "DV2-010": 3,
+          "DV2-011": 3,
+          "DV2-012": 3,
+          "DV2-013": 3,
+          "DV2-014": 3,
+          "DV2-015": 3,
+          "DV2-016": 3,
+          "DV2-017": 3,
+          "DV2-018": 3,
+          "DV2-019": 3,
+          "DV2-020": 3,
+          "DV2-021": 3,
+          "DV2-022": 3,
+          "DV2-023": 3,
+          "DV2-024": 3,
+          "DV2-025": 3,
+          "DV2-026": 3,
+          "DV2-027": 3,
+          "DV2-028": 3,
+          "DV2-029": 3,
+          "DV2-030": 3
+        },
+        "scenarios": 30,
+        "sectors_per_group": 24
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Os IDs setoriais são únicos e obedecem ao template congelado.",
+      "detail": "Os 2160 IDs são únicos, seguem o template e coincidem no GeoJSON.",
+      "id": "UNIQUE_IDENTIFIERS",
+      "metrics": {
+        "unique_feature_ids": 2160,
+        "unique_sector_ids": 2160
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Áreas individuais e somadas respeitam a tolerância e o buffer pai.",
+      "detail": "A soma, a contenção e a ausência de sobreposição dos setores coincidem com cada GeoJSON autoritativo.",
+      "id": "AREA_CONSERVATION",
+      "metrics": {
+        "area_equality_relative_tolerance": 0.01,
+        "buffers_checked": 90,
+        "max_pairwise_overlap_m2": 6e-09,
+        "max_partition_relative_error": 5.11e-10,
+        "max_reported_area_delta": 1.8e-11,
+        "max_sector_equal_area_relative_error": 6.4508e-08,
+        "outside_sector_count": 0,
+        "overlap_pair_count": 0,
+        "partition_relative_tolerance": 1e-06,
+        "uncovered_parent_edge_count": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Todas as geometrias são polígonos fechados com coordenadas válidas.",
+      "detail": "As 2160 geometrias são polígonos fechados, finitos e com vértices suficientes.",
+      "id": "CLOSED_GEOMETRIES",
+      "metrics": {
+        "geometries_checked": 2160,
+        "max_unique_vertices": 22,
+        "min_unique_vertices": 12
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Escores, nulos, contribuições e completude GEO seguem a política sem renormalização.",
+      "detail": "Escores disponíveis estão em [0,1]; setores incompletos permanecem com escore nulo e sem renormalização.",
+      "id": "SCORES_AND_COMPLETENESS",
+      "metrics": {
+        "maximum_score": 0.999960165,
+        "minimum_geo_completeness": 1.0,
+        "minimum_score": 0.0,
+        "required_completeness": 1.0,
+        "sectors_complete": 2160,
+        "sectors_incomplete": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Os competition ranks e os ranks nulos foram recalculados dentro de cada buffer.",
+      "detail": "Os ranks de competição foram recalculados por buffer; empates compartilham rank e setores sem escore ficam sem rank.",
+      "id": "WITHIN_BUFFER_RANKS",
+      "metrics": {
+        "buffer_groups": 90,
+        "incomplete_sectors": 0,
+        "ranking_sets_checked": 450,
+        "score_comparison_decimals": 9,
+        "top_ties_found": 15,
+        "weight_sets": 5
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Seleção ou abstenção, co-vencedores, margem e suporte fracionário são coerentes.",
+      "detail": "Seleção, empates, margem, suporte fracionário, vitórias únicas, alertas e decisões são coerentes.",
+      "id": "SELECTION_AND_DECISIONS",
+      "metrics": {
+        "base_top_ties": 0,
+        "buffers_with_sensitivity_ties": 15,
+        "decisions_prioritized": 2,
+        "decisions_review": 88,
+        "low_margin_threshold": 0.05,
+        "minimum_unique_wins": 4,
+        "selected_sectors": 90,
+        "stability_threshold": 0.8
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "JSON, GeoJSON e CSVs representam as mesmas entidades e resultados essenciais.",
+      "detail": "JSON, GeoJSON e três CSVs têm as mesmas chaves e valores científicos essenciais.",
+      "id": "CROSS_OUTPUT_CONSISTENCY",
+      "metrics": {
+        "decision_keys_compared": 90,
+        "sector_ids_compared": 2160
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "O ground truth não aparece nas entradas/saídas científicas e o controle permanece false.",
+      "detail": "Nenhum campo de referência real aparece; todo ground_truth_used é booleano false.",
+      "id": "GROUND_TRUTH_FIREWALL",
+      "metrics": {
+        "csv_documents_checked": 3,
+        "external_input_load_errors": 0,
+        "forbidden_fragments": 27,
+        "ground_truth_control_fields_checked": 4599,
+        "json_documents_checked": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "description": "Não existe ranking global, entre candidatos ou entre buffers.",
+      "detail": "O ranking é estritamente intrabuffer e não há campo de ordenação entre buffers/candidatos.",
+      "id": "NO_CROSS_BUFFER_RANKING",
+      "metrics": {
+        "buffer_groups_checked": 90,
+        "unexpected_cross_buffer_fields": []
+      },
+      "status": "PASS"
+    }
+  ],
+  "generated_at_utc": "2026-10-15T00:17:16+00:00",
+  "inputs": {
+    "buffer_geojson": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/results/buffer_polygons_dev.geojson",
+    "buffer_json": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/results/buffer_results_dev.json",
+    "config": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json",
+    "report": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results/verification_report.json",
+    "results_dir": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/results"
+  },
+  "status": "PASS",
+  "summary": {
+    "checks_failed": 0,
+    "checks_passed": 16,
+    "checks_total": 16,
+    "exit_code": 0
+  },
+  "verifier_id": "EXT-ESP-SET-VERIFY-v1.1"
+}

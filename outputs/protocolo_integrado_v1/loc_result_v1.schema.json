@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agtupesquisa.local/schemas/loc_result_v1.schema.json",
+  "title": "Envelope de resultados LOC prospectivos cegos v1.1",
+  "description": "Reúne, sem ranking entre candidatos, cada entrada congelada e a saída correspondente do PERFIL V3; deriva os setores exclusivamente de operational_rows.",
+  "type": "object",
+  "required": [
+    "loc_result_contract_version",
+    "envelope_engine_id",
+    "profile_engine_id",
+    "profile_engine_artifact_sha256",
+    "profile_engine_config_file_sha256",
+    "scenario_id",
+    "case_revision",
+    "loc_input_sha256",
+    "ground_truth_used",
+    "blind_processing",
+    "cross_candidate_ranking",
+    "profile_runs"
+  ],
+  "properties": {
+    "loc_result_contract_version": {"const": "LOC-RESULT-v1.1"},
+    "envelope_engine_id": {"const": "LOC-PERFIL-V3-ENVELOPE-v1.0"},
+    "profile_engine_id": {"const": "PERFIL-V3-QUANT-RANKER-v1.1"},
+    "profile_engine_artifact_sha256": {"$ref": "#/$defs/sha256"},
+    "profile_engine_config_file_sha256": {"$ref": "#/$defs/sha256"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "case_revision": {"type": "integer", "minimum": 1},
+    "loc_input_sha256": {"$ref": "#/$defs/sha256"},
+    "ground_truth_used": {"const": false},
+    "blind_processing": {"const": true},
+    "cross_candidate_ranking": {"const": false},
+    "profile_runs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {"$ref": "#/$defs/profileRun"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "nullableSha256": {
+      "oneOf": [
+        {"$ref": "#/$defs/sha256"},
+        {"type": "null"}
+      ]
+    },
+    "coordinate": {
+      "type": "array",
+      "prefixItems": [
+        {"type": "number", "minimum": -180, "maximum": 180},
+        {"type": "number", "minimum": -90, "maximum": 90}
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "profileInputSector": {
+      "type": "object",
+      "required": [
+        "sector_id",
+        "territorial_score",
+        "bearing_start_deg",
+        "bearing_end_deg",
+        "polygon"
+      ],
+      "properties": {
+        "sector_id": {"$ref": "#/$defs/identifier"},
+        "territorial_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "bearing_start_deg": {"type": "number", "minimum": 0, "maximum": 360},
+        "bearing_end_deg": {"type": "number", "minimum": 0, "maximum": 360},
+        "polygon": {
+          "type": "array",
+          "minItems": 4,
+          "items": {"$ref": "#/$defs/coordinate"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "profileFreezeMetadata": {
+      "type": "object",
+      "required": ["frozen_at", "projection_id", "payload_sha256"],
+      "properties": {
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "projection_id": {"const": "PERFIL-V3-INPUT-FREEZE-PROJECTION-v1"},
+        "payload_sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "additionalProperties": false
+    },
+    "profileInput": {
+      "type": "object",
+      "required": [
+        "protocol_version",
+        "scenario_id",
+        "candidate_id",
+        "record_status",
+        "created_at",
+        "ground_truth_absent",
+        "source_loc_input_sha256",
+        "source_case_revision",
+        "source_profile_compiled_sha256",
+        "source_territorial_manifest_sha256",
+        "source_spatial_review_sha256",
+        "sectors",
+        "hypotheses",
+        "freeze_metadata"
+      ],
+      "properties": {
+        "protocol_version": {"const": "PERFIL-V3-QUANT-v1.0"},
+        "scenario_id": {"$ref": "#/$defs/identifier"},
+        "candidate_id": {"$ref": "#/$defs/identifier"},
+        "record_status": {"const": "CONGELADO"},
+        "created_at": {"type": "string", "format": "date-time"},
+        "ground_truth_absent": {"const": true},
+        "source_loc_input_sha256": {"$ref": "#/$defs/sha256"},
+        "source_case_revision": {"type": "integer", "minimum": 1},
+        "source_profile_compiled_sha256": {"$ref": "#/$defs/sha256"},
+        "source_territorial_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "source_spatial_review_sha256": {"$ref": "#/$defs/nullableSha256"},
+        "sectors": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 1000,
+          "items": {"$ref": "#/$defs/profileInputSector"}
+        },
+        "hypotheses": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {"type": "object"}
+        },
+        "freeze_metadata": {"$ref": "#/$defs/profileFreezeMetadata"}
+      },
+      "additionalProperties": false
+    },
+    "profileRun": {
+      "type": "object",
+      "required": ["candidate_id", "profile_input", "profile_result"],
+      "properties": {
+        "candidate_id": {"$ref": "#/$defs/identifier"},
+        "profile_input": {"$ref": "#/$defs/profileInput"},
+        "profile_result": {"$ref": "#/$defs/profileResult"}
+      },
+      "additionalProperties": false
+    },
+    "rankedSectorRow": {
+      "type": "object",
+      "required": [
+        "sector_id",
+        "territorial_score",
+        "profile_compatibility",
+        "evidence_strength",
+        "effective_lambda",
+        "profile_score",
+        "profile_delta",
+        "territorial_rank",
+        "profile_rank"
+      ],
+      "properties": {
+        "sector_id": {"$ref": "#/$defs/identifier"},
+        "territorial_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "profile_compatibility": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence_strength": {"type": "number", "minimum": 0, "maximum": 1},
+        "effective_lambda": {"type": "number", "minimum": 0, "maximum": 1},
+        "profile_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "profile_delta": {"type": "number", "minimum": -1, "maximum": 1},
+        "territorial_rank": {"type": "integer", "minimum": 1},
+        "profile_rank": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "profileResult": {
+      "type": "object",
+      "required": [
+        "engine_id",
+        "protocol_id",
+        "config_status",
+        "scenario_id",
+        "candidate_id",
+        "mode",
+        "ground_truth_absent",
+        "source_loc_input_sha256",
+        "source_case_revision",
+        "input_sha256",
+        "config_sha256",
+        "source_profile_compiled_sha256",
+        "source_territorial_manifest_sha256",
+        "source_spatial_review_sha256",
+        "abstained",
+        "abstention_reason",
+        "warnings",
+        "evidence_quality_policy",
+        "aggregation_policy",
+        "group_records",
+        "family_records",
+        "excluded_hypotheses",
+        "lambda_results",
+        "primary_lambda",
+        "primary_rows",
+        "operational_effect_applied",
+        "operational_status",
+        "operational_rows",
+        "sector_order",
+        "stability",
+        "scope_guards",
+        "firewall_manifest",
+        "output_sha256"
+      ],
+      "properties": {
+        "engine_id": {"const": "PERFIL-V3-QUANT-RANKER-v1.1"},
+        "protocol_id": {"const": "PERFIL-V3-QUANT-v1.0"},
+        "config_status": {"type": "string", "minLength": 1},
+        "scenario_id": {"$ref": "#/$defs/identifier"},
+        "candidate_id": {"$ref": "#/$defs/identifier"},
+        "mode": {"const": "QUANTITATIVO_PROSPECTIVO_LIMITADO"},
+        "ground_truth_absent": {"const": true},
+        "source_loc_input_sha256": {"$ref": "#/$defs/sha256"},
+        "source_case_revision": {"type": "integer", "minimum": 1},
+        "input_sha256": {"$ref": "#/$defs/sha256"},
+        "config_sha256": {"$ref": "#/$defs/sha256"},
+        "source_profile_compiled_sha256": {"$ref": "#/$defs/sha256"},
+        "source_territorial_manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "source_spatial_review_sha256": {"$ref": "#/$defs/nullableSha256"},
+        "abstained": {"type": "boolean"},
+        "abstention_reason": {"type": ["string", "null"]},
+        "warnings": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "evidence_quality_policy": {"type": "string"},
+        "aggregation_policy": {"type": "string"},
+        "group_records": {"type": "array", "items": {"type": "object"}},
+        "family_records": {"type": "array", "items": {"type": "object"}},
+        "excluded_hypotheses": {"type": "array", "items": {"type": "object"}},
+        "lambda_results": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+        "primary_lambda": {"type": "number", "minimum": 0, "maximum": 1},
+        "primary_rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/rankedSectorRow"}
+        },
+        "operational_effect_applied": {"type": "boolean"},
+        "operational_status": {
+          "enum": ["ABSTENCAO_PERFIL", "REVISAR_INSTABILIDADE", "EFEITO_PERFIL_APLICADO"]
+        },
+        "operational_rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/rankedSectorRow"}
+        },
+        "sector_order": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/identifier"}
+        },
+        "stability": {"type": "object"},
+        "scope_guards": {"type": "object"},
+        "firewall_manifest": {"type": "object"},
+        "output_sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

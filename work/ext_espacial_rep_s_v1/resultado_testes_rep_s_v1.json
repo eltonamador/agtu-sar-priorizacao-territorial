@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "tests_run": 80,
+  "failures": 0,
+  "errors": 0,
+  "scope": "firewall REP-S e motor congelado EXT-ESP-BUF-v1.0",
+  "suites": [
+    {
+      "name": "test_export_rep_s_firewall.py",
+      "tests_run": 52,
+      "status": "PASS"
+    },
+    {
+      "name": "test_motor_buffer_adaptativo.py",
+      "tests_run": 28,
+      "status": "PASS"
+    }
+  ],
+  "note": "Evidência gerada após execução integral das duas suítes, sem falhas ou erros; nenhum dado de campo integra os fixtures."
+}

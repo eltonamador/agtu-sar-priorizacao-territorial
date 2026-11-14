@@ -1,0 +1,16 @@
+{
+  "osm_query_bbox": [
+    -0.25,
+    -51.95,
+    0.45,
+    -50.7
+  ],
+  "domain_and_10km_radius_within_query": true,
+  "roads_segments_intersecting_domain": 479,
+  "hydro_segments_intersecting_domain": 28,
+  "roads_snapshot": "2026-08-17T17:01:35Z",
+  "hydro_snapshot": "2026-08-17T17:01:35Z",
+  "dem_tile_required": "S01W052",
+  "worldcover_tile_required": "S03W054",
+  "caveat": "Extensão da consulta não comprova completude do mapeamento. Fontes históricas não comprovam transitabilidade atual."
+}

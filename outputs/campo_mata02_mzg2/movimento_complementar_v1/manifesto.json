@@ -1,0 +1,15 @@
+{
+  "work/completar_mata02.py": "8044885b211e8f179c96203a4b482b2b4a00028141e2ecf01a75af5acc1c0a20",
+  "work/rural01_mov_v2/motor_movimento_v2.py": "5cc0606afe345d77373dc40f657d0e89173f4c32bfe5176e4b2baa7241676b40",
+  "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519",
+  "outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/setores_BASE.geojson": "8b54646f352c2b2118dd2475fa88a528fc494b7ace43a96581263f82a27aab0a",
+  "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20",
+  "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14",
+  "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/config_movimento.json": "142edc1392a2269e296c9f76e1565506d47073a7b93bbf78a0472510f353f93e",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/resumo_setores.csv": "f0155c2a24ff6d8ca2296432fb2fc08a807dbac03a43952bd84e6ce8809d3181",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/QA.json": "df91527de30a9a120257983406aa76ff844a997147d8359b57f502bf82f2e095",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/custos_seis_cenarios.csv": "caa15311ad12326c07c37ac928221873b6f7c0ac340940fe9f54f06c6bcf3d02",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/corredores.geojson": "cdcb62077f73a477737fd3d319de3047349994bf6cf7fdd795ad716cf5a9779b",
+  "outputs/campo_mata02_mzg2/movimento_complementar_v1/grade_movimento.csv": "0905f476baec3217239e817a4a06ce211e7c4ae4b089c67a0d9f68730a81fafd"
+}

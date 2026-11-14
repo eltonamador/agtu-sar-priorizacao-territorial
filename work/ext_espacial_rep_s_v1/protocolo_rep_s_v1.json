@@ -1,0 +1,240 @@
+{
+  "protocol_id": "EXT-ESP-REP-S-v1.0",
+  "status": "PREPARADO_NAO_EXECUTADO",
+  "scope": "validacao_independente_do_buffer_adaptativo",
+  "engine_protocol_id": "EXT-ESP-BUF-v1.0",
+  "execution_unit": "candidate",
+  "partition_unit": "site_id",
+  "phases": [
+    "DEV-S",
+    "REP-S"
+  ],
+  "modalities": {
+    "REP-S-FIELD-PILOT": "ground truth real de campo e entrada produzida por gerador pre-especificado; valida o componente e o fluxo, nao o sistema aerotransportado",
+    "REP-S-OP": "ground truth real de campo e entrada independente produzida pelo sistema aerotransportado; modalidade necessaria para alegacoes operacionais futuras"
+  },
+  "state_machine": [
+    {
+      "milestone": "T−1",
+      "state": "PREPARACAO",
+      "action": "Cadastrar sites, modalidade, fase, origem e elegibilidade; congelar o plano prospectivo.",
+      "motor_access": "Plano e modelo em branco",
+      "ground_truth_access": "Somente custodiante",
+      "evidence": "Plano de sites congelado",
+      "engine_change": "Sim, somente no DEV-S",
+      "result": "Partição registrada"
+    },
+    {
+      "milestone": "T0",
+      "state": "GROUND_TRUTH_FECHADO",
+      "action": "Registrar a referência, preservar os originais, gerar hash e encerrar a coleta.",
+      "motor_access": "Nenhum dado verdadeiro",
+      "ground_truth_access": "Reservado",
+      "evidence": "Arquivo reservado e hash",
+      "engine_change": "Não na REP-S",
+      "result": "Custódia iniciada"
+    },
+    {
+      "milestone": "T1",
+      "state": "ENTRADA_CEGA_CONGELADA",
+      "action": "Validar esquema, chaves, r0 e ausência de campos proibidos; congelar a entrada cega.",
+      "motor_access": "Entrada cega congelada",
+      "ground_truth_access": "Inacessível ao motor",
+      "evidence": "Manifesto de entrada",
+      "engine_change": "Não",
+      "result": "Entrada congelada"
+    },
+    {
+      "milestone": "T1.5",
+      "state": "MOTOR_VERIFICADO",
+      "action": "Conferir hashes de configuração e código; executar integralmente a suíte de testes.",
+      "motor_access": "Entrada cega e configuração",
+      "ground_truth_access": "Inacessível ao motor",
+      "evidence": "Hashes e relatório de testes",
+      "engine_change": "Não",
+      "result": "Motor verificado"
+    },
+    {
+      "milestone": "T2",
+      "state": "SAIDA_DO_MODELO_CONGELADA",
+      "action": "Executar duas vezes, verificar determinismo e congelar todas as saídas e manifestos.",
+      "motor_access": "Entrada, configuração e motor",
+      "ground_truth_access": "Ainda reservado",
+      "evidence": "CSV, JSON, GeoJSON, logs e manifesto",
+      "engine_change": "Não",
+      "result": "Saída imutável"
+    },
+    {
+      "milestone": "T3",
+      "state": "GROUND_TRUTH_ABERTO",
+      "action": "Após aprovação de G08, registrar a abertura e unir por scenario_id e site_id.",
+      "motor_access": "Saída já congelada",
+      "ground_truth_access": "Liberado somente à avaliação",
+      "evidence": "Log de abertura vinculado a G09",
+      "engine_change": "Não",
+      "result": "Base de avaliação"
+    },
+    {
+      "milestone": "T4",
+      "state": "AVALIACAO_CONCLUIDA",
+      "action": "Calcular as métricas predefinidas e registrar desvios sem retuning retrospectivo.",
+      "motor_access": "Artefatos congelados",
+      "ground_truth_access": "Usado somente na avaliação",
+      "evidence": "Métricas e registro de desvios",
+      "engine_change": "Não",
+      "result": "Relato completo"
+    }
+  ],
+  "blind_input": {
+    "sheet": "ENTRADA_CEGA",
+    "required_fields": [
+      "scenario_id",
+      "candidate_id",
+      "site_id",
+      "estimated_lat",
+      "estimated_lon",
+      "base_radius_m",
+      "detection_quality",
+      "r0_semantics",
+      "execution_phase",
+      "r0_provenance",
+      "data_origin"
+    ],
+    "optional_fields": [
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min",
+      "source_timestamp",
+      "notes"
+    ],
+    "forbidden_tokens": [
+      "ground_truth",
+      "true_lat",
+      "true_lon",
+      "victim_lat",
+      "victim_lon",
+      "target_lat",
+      "target_lon",
+      "distance_to_truth",
+      "hit_truth",
+      "inside_buffer"
+    ]
+  },
+  "ground_truth": {
+    "sheet": "GROUND_TRUTH_LOCKED",
+    "required_fields": [
+      "site_id",
+      "scenario_id",
+      "ground_truth_lat",
+      "ground_truth_lon",
+      "collection_method",
+      "ground_truth_status",
+      "custody_status"
+    ],
+    "optional_fields": [
+      "capture_timestamp",
+      "horizontal_precision_m",
+      "equipment",
+      "evidence_reference",
+      "environment_type",
+      "collector_id",
+      "notes"
+    ],
+    "pre_open_visibility": "RESERVED"
+  },
+  "gates": [
+    {
+      "gate_id": "G01",
+      "checkpoint": "T−1 → T0",
+      "criterion": "Plano prospectivo e partição por site definidos e congelados antes de qualquer resultado.",
+      "required_evidence": "Plano de sites congelado",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G02",
+      "checkpoint": "T0 → T1",
+      "criterion": "Entrada cega e ground truth estão em arquivos fisicamente separados e com hashes distintos.",
+      "required_evidence": "Arquivos separados e hashes distintos",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G03",
+      "checkpoint": "T0 → T1",
+      "criterion": "IDs e chaves são únicos; todos os candidatos do mesmo site permanecem na mesma fase.",
+      "required_evidence": "Relatório do exportador",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G04",
+      "checkpoint": "T0 → T1",
+      "criterion": "A entrada cega não contém campos, valores, anexos ou metadados derivados do ground truth.",
+      "required_evidence": "Varredura de firewall",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G05",
+      "checkpoint": "T0 → T1",
+      "criterion": "Semântica e proveniência de r0 são compatíveis com REP-S; factors_applied está documentado quando exigido.",
+      "required_evidence": "Validação semântica de r0",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G06",
+      "checkpoint": "T1 → T1.5",
+      "criterion": "Hashes de configuração e motor conferem; a suíte de testes foi integralmente aprovada.",
+      "required_evidence": "Hashes e relatório de testes",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G07",
+      "checkpoint": "T1.5 → T2",
+      "criterion": "Execuções repetidas são determinísticas; geometrias e raios produzidos são válidos.",
+      "required_evidence": "Manifesto de execução",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G08",
+      "checkpoint": "T2, antes de T3",
+      "criterion": "Todas as saídas do modelo, logs e manifestos estão congelados e com hashes registrados antes da abertura do ground truth.",
+      "required_evidence": "Manifesto de saída congelada",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G09",
+      "checkpoint": "T3",
+      "criterion": "A abertura do ground truth foi registrada somente depois da aprovação de G08.",
+      "required_evidence": "FREEZE_LOG com G08 aprovado e evento de abertura",
+      "blocking_if_fail": true
+    },
+    {
+      "gate_id": "G10",
+      "checkpoint": "T4",
+      "criterion": "A avaliação utiliza somente artefatos congelados, sem retuning retrospectivo, e relata todos os desvios.",
+      "required_evidence": "Relatório de avaliação e registro de desvios",
+      "blocking_if_fail": true
+    }
+  ],
+  "comparison": {
+    "baseline_fixed_m": 2000,
+    "primary_metrics": [
+      "adaptive_buffer_coverage",
+      "fixed_buffer_coverage",
+      "adaptive_area_m2",
+      "fixed_area_m2",
+      "area_ratio_adaptive_to_fixed"
+    ],
+    "secondary_metrics": [
+      "distance_estimate_to_truth_m",
+      "coverage_difference_pp",
+      "coverage_by_environment_if_supported"
+    ],
+    "uncertainty": "wilson_95_for_coverage_when_applicable",
+    "decision_rule": "JOINT_COVERAGE_AREA_INTERPRETATION_NO_RETROSPECTIVE_TUNING"
+  },
+  "missing_data_policy": {
+    "never_invent": true,
+    "blank_optional_fields_are_allowed": true,
+    "required_fields_block_export": true,
+    "legacy_or_previously_seen_sites": "DEV-S_OR_LEGACY_NOT_REP-S"
+  }
+}

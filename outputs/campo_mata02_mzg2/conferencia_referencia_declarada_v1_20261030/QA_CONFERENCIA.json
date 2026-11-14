@@ -1,0 +1,26 @@
+{
+  "geometry_verified": true,
+  "ranks_verified_against_frozen_outputs": true,
+  "independent_review": true,
+  "spherical_sanity_distance_m": 4111.433379268878,
+  "preserved_files": 64,
+  "originals_unchanged": true,
+  "engine_not_reexecuted": true,
+  "map": {
+    "bounds_lonlat": [
+      -51.45570435878468,
+      -0.219870791218073,
+      -51.33429564121533,
+      -0.09846254211526037
+    ],
+    "reference_pixel": [
+      355,
+      1002
+    ],
+    "dimensions": [
+      2380,
+      2110
+    ],
+  "visual_inspection": "CONCLUIDA"
+  }
+}

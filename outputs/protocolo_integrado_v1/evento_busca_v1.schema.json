@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:evento-busca:v1.0",
+  "title": "Registro versionado de evento de busca",
+  "description": "Registra nova pista, atualização ambiental ou busca executada sem sobrescrever o estado anterior.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version", "scenario_id", "event_id", "event_sequence", "record_status",
+    "event_type", "started_at", "ended_at", "recorded_at", "source_type",
+    "source_code", "authorized_for_model", "coverage_geometry_sha256", "track_sha256",
+    "sector_ids", "modality", "effort_minutes", "coverage_status", "coverage_method_id",
+    "coverage_fraction", "visibility_recorded", "visibility_class",
+    "limitations_recorded", "limitations", "pod", "result", "clue_coordinate", "prior_run_sha256",
+    "previous_event_sha256", "source_event_sha256",
+    "ground_truth_absent", "freeze_metadata"
+  ],
+  "properties": {
+    "protocol_version": {"const": "EVENTO-BUSCA-v1.0"},
+    "scenario_id": {"$ref": "#/$defs/identifier"},
+    "event_id": {"$ref": "#/$defs/identifier"},
+    "event_sequence": {"type": "integer", "minimum": 1},
+    "record_status": {"type": "string", "enum": ["RASCUNHO", "CONGELADO"]},
+    "event_type": {
+      "type": "string",
+      "enum": ["BUSCA_EXECUTADA", "VESTIGIO_ENCONTRADO", "ATUALIZACAO_AMBIENTAL", "NOVO_PONTO_CONHECIDO", "OUTRO"]
+    },
+    "started_at": {"type": "string", "format": "date-time"},
+    "ended_at": {"type": "string", "format": "date-time"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "source_type": {
+      "type": "string",
+      "enum": ["EQUIPE_TERRESTRE", "EQUIPE_AEREA", "EQUIPE_FLUVIAL", "TESTEMUNHA", "SENSOR", "OUTRA"]
+    },
+    "source_code": {"$ref": "#/$defs/identifier"},
+    "authorized_for_model": {"type": "boolean"},
+    "coverage_geometry_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+    "track_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+    "sector_ids": {"type": "array", "maxItems": 1000, "items": {"$ref": "#/$defs/identifier"}},
+    "modality": {
+      "type": ["string", "null"],
+      "enum": ["BUSCA_TERRESTRE", "OBSERVACAO_AEREA_RGB", "CAMERA_TERMICA", "BUSCA_FLUVIAL", null]
+    },
+    "effort_minutes": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "coverage_status": {
+      "type": "string",
+      "enum": ["MEDIDA", "DERIVADA", "RELATADA", "NAO_DISPONIVEL"]
+    },
+    "coverage_method_id": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/identifier"}]},
+    "coverage_fraction": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Zero pode ser registrado, mas não caracteriza busca completa nem torna resultado negativo elegível para revisão."
+    },
+    "visibility_recorded": {"type": "boolean"},
+    "visibility_class": {
+      "type": "string",
+      "enum": ["BOA", "MODERADA", "RESTRITA", "NAO_DISPONIVEL"]
+    },
+    "limitations_recorded": {"type": "boolean"},
+    "limitations": {"type": "array", "maxItems": 50, "items": {"type": "string", "minLength": 1, "maxLength": 240}},
+    "pod": {"type": "null"},
+    "result": {"type": "string", "enum": ["POSITIVO", "NAO_LOCALIZADO", "INCONCLUSIVO", "NAO_APLICAVEL"]},
+    "clue_coordinate": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["latitude", "longitude"],
+          "properties": {
+            "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+            "longitude": {"type": "number", "minimum": -180, "maximum": 180}
+          }
+        }
+      ]
+    },
+    "prior_run_sha256": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}],
+      "description": "Hash do resultado anterior; só é tratado como verificado após leitura do artefato correspondente."
+    },
+    "previous_event_sha256": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}],
+      "description": "Hash do evento imediatamente anterior na cadeia do cenário; nulo apenas na sequência 1."
+    },
+    "source_event_sha256": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}],
+      "description": "Hash imutável do evento positivo que originou a pista ou o novo ponto; não é substituído pelo hash do próprio evento."
+    },
+    "ground_truth_absent": {"const": true},
+    "freeze_metadata": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/freezeMetadata"}]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"record_status": {"const": "CONGELADO"}}, "required": ["record_status"]},
+      "then": {"properties": {"freeze_metadata": {"$ref": "#/$defs/freezeMetadata"}}},
+      "else": {"properties": {"freeze_metadata": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"event_sequence": {"const": 1}}, "required": ["event_sequence"]},
+      "then": {"properties": {"previous_event_sha256": {"type": "null"}}},
+      "else": {"properties": {"previous_event_sha256": {"$ref": "#/$defs/sha256"}}}
+    },
+    {
+      "if": {"properties": {"event_type": {"const": "NOVO_PONTO_CONHECIDO"}}, "required": ["event_type"]},
+      "then": {
+        "properties": {
+          "result": {"const": "POSITIVO"},
+          "authorized_for_model": {"const": true},
+          "clue_coordinate": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["latitude", "longitude"],
+            "properties": {
+              "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+              "longitude": {"type": "number", "minimum": -180, "maximum": 180}
+            }
+          },
+          "source_event_sha256": {"$ref": "#/$defs/sha256"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"event_type": {"const": "VESTIGIO_ENCONTRADO"}}, "required": ["event_type"]},
+      "then": {
+        "properties": {
+          "result": {"const": "POSITIVO"},
+          "clue_coordinate": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["latitude", "longitude"],
+            "properties": {
+              "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+              "longitude": {"type": "number", "minimum": -180, "maximum": 180}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "freezeMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frozen_at", "projection_id", "payload_sha256"],
+      "properties": {
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "projection_id": {"const": "EVENTO-BUSCA-FREEZE-PROJECTION-v1"},
+        "payload_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

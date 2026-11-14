@@ -1,0 +1,42 @@
+{
+  "case": "MATA-03",
+  "created_at": "2026-10-31T19:17:32.118181+00:00",
+  "base_status": "REVISAR",
+  "top3": [
+    {
+      "sector": "R01-E",
+      "score": 0.737195475
+    },
+    {
+      "sector": "R03-NE",
+      "score": 0.736014506
+    },
+    {
+      "sector": "R01-SE",
+      "score": 0.73568867
+    }
+  ],
+  "margin": 0.0011809690000000872,
+  "direction": {
+    "azimuth_deg": 285,
+    "label": "ONO",
+    "nature": "RELATADO",
+    "confidence": "NAO_AVALIADA",
+    "tolerance_informed_deg": null,
+    "north_reference": "NAO_INFORMADO",
+    "assumed_schema_tolerance_deg": 22.5,
+    "assumption_does_not_activate_main_score": true
+  },
+  "profile_status": "ABSTENCAO_PERFIL",
+  "sensitivity_is_assumption_analysis_not_new_cases": true,
+  "target_used": false,
+  "mata02_target_used": false,
+  "dissertation_changed": false,
+  "satellite_status": "AVAILABLE",
+  "errata": [
+    "O campo top3 vazio de resultado_BASE.json decorre da serialização. O Top-3 desta conclusão é lido diretamente de ranking_BASE.json.",
+    "A descrição antiga de nove amostras por setor não representa esta execução: foram 3.600 amostras estratificadas por setor, não estatística zonal de todos os pixels.",
+    "A área nominal de amostragem em config_execucao.json conserva valores de raio 6 km. Para 7 km, a área ideal por amostra é 1.781,690278 m² e a escala linear nominal 42,210073 m. Essa informação descritiva não participa da soma ponderada conferida.",
+    "manifesto_BASE.json precede resultado_BASE.json. Este fechamento registra os hashes de todos os 15 arquivos BASE sem reescrevê-los."
+  ]
+}

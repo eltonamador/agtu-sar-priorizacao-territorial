@@ -1,0 +1,43 @@
+MATA-03 — REVISÃO DA REFERÊNCIA DECLARADA — V2
+
+Resultado: a referência revista está dentro do domínio de 7 km, a aproximadamente 6,10 km de E0, no setor R03-NE, segundo entre 24 no ranking BASE original. O status REVISAR permanece.
+
+ESCOPO DA REVISÃO
+Coordenada atual adotada por solicitação do pesquisador: 0.255247, -51.092333. A comparação anterior está preservada em comparacao_referencia_v1; não é caracterizada como erro. A revisão ocorreu após conhecimento da saída. Não corresponde a nova aplicação cega, recalibração ou melhora do modelo.
+
+REFERÊNCIAS
+E0: 0.218333333, -51.133055556.
+Ponto declarado: 0.255247, -51.092333.
+Fonte do ponto: informação posterior do pesquisador na conversa. Precisão de posicionamento não informada; casas decimais não demonstram acurácia.
+
+COMPARAÇÃO
+Distância geodésica WGS84: 6099.998178 m (aproximadamente 6,10 km).
+Azimute geográfico inicial: 47.999827279°.
+Diferença angular para 285°: 122.999827279°.
+Domínio informado: 7.000 m. Margem radial restante: 900.001822 m.
+Setor único contendo a referência: MATA-03::MATA-03-E0::R03::NE (R03-NE).
+Limites radiais do setor: 5715.476066–7000.000000 m.
+Limites angulares do setor: 22.5°–67.5°.
+Posição no ranking BASE: 2 de 24.
+Escore BASE: 0.736014506. Não é probabilidade.
+Top-3 original: R01-E (0,737195475), R03-NE (0,736014506), R01-SE (0,735688670).
+Status original: REVISAR. PERFIL principal: ABSTENCAO_PERFIL.
+
+INTERPRETAÇÃO E LIMITES
+1. A referência revista coincide com o segundo setor do ranking BASE original, sem alteração de pesos ou escores. Isso descreve a relação geométrica com esta referência e não demonstra eficácia operacional ou melhora do motor.
+2. O azimute geográfico E0–referência é aproximadamente 48°, com diferença de aproximadamente 123° para a pista de 285°. O norte da pista não foi especificado como verdadeiro ou magnético; a comparação pressupõe referências compatíveis. A linha no mapa é uma ligação geométrica, não o percurso realizado. Mudanças de rumo permanecem hipótese, não explicação demonstrada.
+3. O raio de 7 km é um domínio informado para o ensaio, não uma probabilidade de contenção calibrada. Estar dentro dele não demonstra que a prioridade foi adequada.
+4. Trata-se de território e imagens reais com pessoa e cronologia simuladas. A localização declarada é referência descritiva do ensaio, não prova de resgate real nem base para calcular uma taxa geral de acerto.
+5. O ponto inicial corresponde à referência de chegada; não há posição confirmada do contato das 12h. As 19h30 desde esse contato não representam caminhada contínua.
+6. A pista de 285° tinha confiança não avaliada e não alterou o ranking BASE. Mantém-se ABSTENCAO_PERFIL, sem aumento retrospectivo de confiança. Nos conjuntos de pesos congelados, R03-NE ocupa BASE 2º, IGUAIS 4º, SEM_BARREIRAS 1º, APENAS_ACESSO 1º e ENFASE_BARREIRAS 4º: a inclusão no Top-3 não é invariável. Mantêm-se os alertas de margem baixa e instabilidade.
+7. O fundo Sentinel-2/ESA WorldCover é de 2021, apenas contextual. Não representa aquisição de 2026 e não participou do ranking. Não é Google Earth.
+
+PRESERVAÇÃO
+Foram conferidos 42 arquivos contra o manifesto de conclusão antes e depois da geração. Nenhum resultado congelado ou parâmetro foi alterado. Os arquivos da comparação anterior também foram conferidos e preservados. Este pacote gera uma comparação nova; atualizações editoriais dependentes são realizadas em versões separadas.
+O ranking_BASE.json é a fonte da ordenação, conforme a errata documental já existente no pacote; não se utilizou a lista Top-3 vazia do resultado_BASE.json.
+Históricos de ausência da referência permanecem intactos; esta comparação é um registro posterior separado.
+
+FONTES LOCAIS
+premissas_congeladas.json; ranking_BASE.json; setores_BASE.geojson; conclusao_direcao285_v1/resumo_conclusao.json; conclusao_direcao285_v1/manifesto_conclusao.json; conclusao_direcao285_v1/proveniencia_fundo.json.
+
+Registro de geração: 2026-11-03T23:00:35.404280+00:00

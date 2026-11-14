@@ -1,0 +1,102 @@
+{
+  "artifact": "EXT-ESP-BUF-v1.0 — entrada cega DEV",
+  "checks": {
+    "blind_hashes_match": true,
+    "candidate_coordinates_match_across_blind_sheets": true,
+    "expected_90_rows": true,
+    "forbidden_fields_in_output": [],
+    "keys_complete_across_sheets": true,
+    "keys_unique": true,
+    "output_contains_reference_coordinates": false,
+    "output_schema_exact": true
+  },
+  "counts": {
+    "candidate_rows": 90,
+    "geo_rows": 90,
+    "joined_rows": 90,
+    "matching_coordinates": 90,
+    "matching_hashes": 90,
+    "unique_keys": 90
+  },
+  "interpretation_boundary": "Entrada destinada exclusivamente ao ensaio de desenvolvimento do motor. O raio-base legado é semissintético e não sustenta inferência confirmatória; a dispersão posicional permanece ausente e não foi inventada.",
+  "output": {
+    "columns": [
+      "scenario_id",
+      "candidate_id",
+      "estimated_lat",
+      "estimated_lon",
+      "base_radius_m",
+      "detection_quality",
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min",
+      "r0_semantics",
+      "factors_applied",
+      "r0_provenance",
+      "data_origin",
+      "source_row_hash",
+      "execution_phase"
+    ],
+    "csv": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_buffer_v1/input_dev_blind.csv",
+    "csv_sha256": "ff1fd5887a418aa765222c50c76676dfd2fd88d6c62e5c573c1309175313ec1b",
+    "execution_phase": "DEV_DRY_RUN",
+    "r0_provenance": "SEMI_SINTETICO_DERIVADO_DO_GERADOR_DEV_V2",
+    "r0_semantics": "diagnostic_legacy"
+  },
+  "source": {
+    "read_policy": "Somente abas cegas; nenhuma outra aba foi lida.",
+    "selected_candidate_fields": [
+      "blind_row_sha256",
+      "candidate_id",
+      "confidence_score",
+      "data_origin",
+      "estimated_lat",
+      "estimated_lon",
+      "information_age_min",
+      "scenario_id",
+      "uncertainty_radius_m"
+    ],
+    "selected_geo_fields": [
+      "blind_row_sha256",
+      "candidate_id",
+      "environment_class",
+      "estimated_lat",
+      "estimated_lon",
+      "scenario_id"
+    ],
+    "sheets_read": [
+      "6_CANDIDATOS_CEGOS",
+      "8_GEO_FEATURES"
+    ],
+    "workbook": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/outputs/sprint2_s2_35_dev_v2_implementacao/DEV_V2_Implementacao_Controlada_S2_35_v1.xlsx",
+    "workbook_sha256": "dc6eacad6a7381cf691f1a35dd60ca79bdd524e76db31465ff3598963df85c9c"
+  },
+  "statistics": {
+    "base_radius_m": {
+      "max": 4977.445027,
+      "mean": 1881.5229157222223,
+      "median": 1488.9842955,
+      "min": 374.251152
+    },
+    "detection_quality": {
+      "max": 0.881285,
+      "mean": 0.6411096555555555,
+      "median": 0.6396115,
+      "min": 0.316386
+    },
+    "environment_class_counts": {
+      "MATA": 62,
+      "MISTO": 6,
+      "RURAL/ABERTO": 9,
+      "ÁREA ALAGADA": 13
+    },
+    "information_age_min": {
+      "max": 166.0,
+      "mean": 64.63333333333334,
+      "median": 53.5,
+      "min": 5.0
+    },
+    "pearson_r_base_radius_vs_information_age": 0.8797157039289837,
+    "position_dispersion_missing_count": 90
+  }
+}

@@ -1,0 +1,42 @@
+MATA-02 / MZG2 — CONFERÊNCIA POSTERIOR DA REFERÊNCIA DECLARADA
+
+1. OBJETO E LIMITES
+Referência recebida: -0.172250, -51.429583. Trata-se da localização declarada pelo pesquisador para o cenário hipotético, não de desfecho de ocorrência real verificado. Fonte instrumental e precisão não informadas. Comparação descritiva com o BASE congelado e as dez saídas PERFIL existentes. Não se alteraram entradas anteriores, geodados, pesos, raio, setores, motor, mapas anteriores ou dissertação.
+
+2. RESULTADO
+E0: -0.15916666666666668, -51.395. Raio informado: 6.000 m.
+Distância geodésica WGS84: 4112.594 m. Azimute geográfico inicial: 249.404439°.
+Diferença para a pista 249°: 0.404439°. A comparação pressupõe a origem E0 e norte geográfico, como na representação anterior; a origem exata e a referência verdadeiro/magnético não foram confirmadas.
+Dentro do domínio: sim. Margem radial: 1887.406 m. Razão distância/raio: 0.685432.
+Inclusão conferida nos polígonos originais: R02-W (oeste; segundo anel, aproximadamente 3,46–4,90 km).
+BASE: 22º de 24, escore 0.502631369. Não está no Top-3.
+AP1 R01-SW, AP2 R03-SW, AP3 R03-E permanecem preservados. A posição da referência não foi usada para escolher parâmetros.
+
+3. VARIAÇÕES PERFIL JÁ EXISTENTES
+Confiança/tolerância assumidas: ±5° / ±22,5° / ±45°.
+BAIXA: 21º / 19º / 17º.
+MÉDIA: 20º / 16º / 12º.
+ALTA: 20º / 16º / 12º.
+NÃO AVALIADA: 22º (controle ±22,5°, efeito quantitativo abstido).
+Nenhuma configuração contém a referência no Top-3. MÉDIA e ALTA coincidem pelo limite de evidência RELATADO; não são replicações independentes. Os extremos 12º e 21º não são intervalo de confiança. Não há ranking PERFIL principal eleito nem probabilidade de encontro calculada.
+
+4. O QUE EXPLICA A CLASSIFICAÇÃO, SEM REINTERPRETAR O RESULTADO
+A decomposição original de R02-W é:
+GEO-02 acesso: 0.130212583; contribuição ponderada 0.039063775.
+GEO-03 hidrografia: 0.996283422; contribuição 0.249070855.
+GEO-04 relevo: 0.660365639; contribuição 0.132073128.
+GEO-05 cobertura: 0.329694444; contribuição 0.082423611.
+A soma ponderada é 0.502631369. Acesso mapeado e cobertura têm valores baixos na convenção do BASE. Isso descreve o cálculo, não demonstra que a pessoa não poderia estar ali, nem que o setor seja desprovido de trilhas ou água. A pista direcional eleva a posição de R02-W em algumas hipóteses, mas não supera o ordenamento territorial a ponto de colocá-lo no Top-3. MOV não foi incorporado retrospectivamente ao ranking. Não se pode atribuir uma causa comportamental à localização com este ensaio.
+
+5. INTERPRETAÇÃO PARA A DISSERTAÇÃO
+O domínio contém a referência e a direção é coerente com ela sob as convenções adotadas. O ranking, porém, não a priorizou entre os três primeiros. As duas constatações devem ser apresentadas juntas. Manter o estado REVISAR e o resultado desfavorável, sem chamar o ensaio de validação de eficácia. Conforme decisão metodológica anterior, a localização declarada tem função descritiva, não de critério único de qualidade nem de alvo de otimização.
+Recomendação para MATA-03: usar versão e regras registradas antes de conhecer sua referência. Qualquer alteração motivada por esta conferência deve constituir nova versão de desenvolvimento e não substituir o resultado original de MATA-02. Um caso hipotético isolado não calibra a distribuição real de pessoas desaparecidas.
+
+6. ALERTAS DE PROVENIÊNCIA
+A coordenada recebida está a aproximadamente 77.4 m do E0 previamente informado para MATA-01 (-0.172222, -51.430278). Não se assume erro de identificação: foi mantida como referência do MATA-02 conforme a conversa. Registrar possível sobreposição territorial; os casos não devem ser tratados automaticamente como amostras espaciais independentes.
+Há metadado legado em R02-W que menciona nove pontos, enquanto o pacote registra 3.600 amostras por setor. Essa inconsistência descritiva já existente foi apenas anotada; não se modificou o original e ela não muda a inclusão geométrica nem os postos lidos nesta conferência.
+A cartografia reutiliza a composição orbital histórica de 2021, não imagem de outubro de 2026. As fontes geoespaciais e a precisão da referência têm limitações próprias. Os valores métricos com casas decimais indicam precisão de cálculo, não acurácia do ponto informado.
+
+7. VERIFICAÇÃO E ARQUIVOS
+WGS84 conferido independentemente por um segundo agente e por cálculo esférico de sanidade (4111.433 m; diferença esperada de método). Inclusão conferida no GeoJSON original. Os dez postos foram lidos de saídas preservadas, sem nova execução do modelo. Hashes antes e depois registram preservação dos pacotes consultados. O mapa deve ser inspecionado visualmente; o estado final dessa inspeção consta de QA_CONFERENCIA.json.
+Fontes principais: ensaio_complementar_v2_249/ranking_BASE_completo.json e setores_BASE.geojson; direcao_249_confirmada_v2_20261030/resultado_*.json; entrada_auditada_v2/entrada_raio_fonte_mata02_mzg2.geojson. Nenhum resultado novo de eficácia, teste de campo ou avaliação por especialistas foi produzido.

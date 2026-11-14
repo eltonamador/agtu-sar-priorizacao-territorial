@@ -1,0 +1,233 @@
+{
+  "protocol_id": "EXT-ESP-BUF-v1.0",
+  "protocol_name": "Protocolo congelado do motor de buffer adaptativo",
+  "version": "1.0",
+  "status": "CONGELADO_PARA_DESENVOLVIMENTO",
+  "freeze_date": "2026-10-14",
+  "language": "pt-BR",
+  "execution_scope": {
+    "module": "EXT-ESPACIAL",
+    "component": "BUFFER_ADAPTATIVO",
+    "development_run_label": "DEV_DRY_RUN",
+    "development_run_classification": "DIAGNOSTICO_LEGADO_NAO_CONFIRMATORIO",
+    "independent_validation_label": "REP_S_INDEPENDENTE",
+    "description": "Configuração pré-especificada do cálculo do raio adaptativo. A execução DEV serve apenas à verificação de engenharia, reprodutibilidade e comportamento do motor."
+  },
+  "equation": {
+    "symbolic": "r_a = min(r_max, max(r_min, r0 * f_q(Qdet) * f_e(Amb) * f_s(sigma_pos) * f_t(I_dado)))",
+    "application_order": [
+      "validate_inputs",
+      "resolve_r0_semantics",
+      "compute_quality_factor",
+      "compute_environment_factor",
+      "compute_position_dispersion_factor",
+      "compute_information_age_factor",
+      "multiply_unbounded_radius",
+      "apply_minimum_and_maximum_limits",
+      "assign_review_status_and_warnings",
+      "generate_geometry"
+    ]
+  },
+  "spatial_reference": {
+    "input_crs": "EPSG:4326",
+    "output_crs": "EPSG:4326",
+    "earth_model": "SPHERE_WITH_WGS84_MEAN_EARTH_RADIUS",
+    "earth_radius_m": 6371008.8,
+    "polygon_vertices": 72,
+    "ring_must_be_closed": true,
+    "area_estimator": "PI_TIMES_RADIUS_SQUARED",
+    "distance_unit": "m"
+  },
+  "radius": {
+    "input_field": "base_radius_m",
+    "r_min_m": 250.0,
+    "r_max_m": 7500.0,
+    "baseline_fixed_m": 2000.0,
+    "invalid_policy": "REJECT_ROW",
+    "minimum_clamp_flag": "RADIUS_CLAMPED_TO_MINIMUM",
+    "maximum_clamp_flag": "RADIUS_CLAMPED_TO_MAXIMUM"
+  },
+  "r0_semantics": {
+    "input_field": "r0_semantics",
+    "required": true,
+    "allowed_values": {
+      "nominal_base": {
+        "definition": "Raio nominal fixado pelo protocolo, sem ajuste individual pela origem.",
+        "expected_base_radius_m": 2000.0,
+        "confirmatory_eligible": true,
+        "requirements": "Deve ter sido congelado antes da abertura da posição de referência."
+      },
+      "source_adjusted": {
+        "definition": "Raio de incerteza informado ou calculado pela própria fonte operacional, sem uso da posição de referência. Os fatores já incorporados devem ser declarados em factors_applied e são neutralizados pelo motor para evitar dupla contagem.",
+        "confirmatory_eligible": true,
+        "requirements": "A origem e o método de obtenção do raio devem ser registrados e independentes do ground truth; factors_applied é obrigatório e aceita quality, environment, position_dispersion e information_age."
+      },
+      "diagnostic_legacy": {
+        "definition": "Raio legado oriundo do gerador semissintético DEV e potencialmente dependente do erro em relação à referência.",
+        "confirmatory_eligible": false,
+        "forced_execution_classification": "DIAGNOSTICO_LEGADO_NAO_CONFIRMATORIO",
+        "forced_warning": "R0_ENTANGLED_WITH_GENERATOR_AND_INFORMATION_AGE"
+      }
+    },
+    "missing_policy": "REJECT_ROW",
+    "unknown_policy": "REJECT_ROW"
+  },
+  "factors": {
+    "quality": {
+      "symbol": "f_q",
+      "input_field": "detection_quality",
+      "required": true,
+      "accepted_range": {
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "closed_interval": true
+      },
+      "alpha": 0.5,
+      "formula": "1 + alpha * (1 - q)",
+      "invalid_policy": "REJECT_ROW",
+      "missing_policy": "REJECT_ROW"
+    },
+    "environment": {
+      "symbol": "f_e",
+      "input_field": "environment_class",
+      "required": false,
+      "normalization": {
+        "trim_whitespace": true,
+        "case": "UPPER",
+        "unicode_accents_preserved": true
+      },
+      "multipliers": {
+        "RURAL/ABERTO": 1.0,
+        "MISTO": 1.1,
+        "URBANO": 1.2,
+        "MATA": 1.25,
+        "ÁREA ALAGADA": 1.15,
+        "DESCONHECIDO": 1.15
+      },
+      "explicit_unknown_value": "DESCONHECIDO",
+      "explicit_unknown_warning": "ENVIRONMENT_DESCONHECIDO",
+      "explicit_unknown_status": "REVISAR",
+      "missing_factor": 1.15,
+      "missing_warning": "ENVIRONMENT_MISSING_DEFAULT_APPLIED",
+      "missing_status": "REVISAR",
+      "unrecognized_policy": "REJECT_ROW"
+    },
+    "position_dispersion": {
+      "symbol": "f_s",
+      "input_field": "position_dispersion_m",
+      "required": false,
+      "accepted_minimum": 0.0,
+      "reference_m": 50.0,
+      "alpha": 0.5,
+      "formula": "1 + alpha * min(sigma_pos / reference_m, 1)",
+      "missing_factor": 1.0,
+      "missing_warning": "POSITION_DISPERSION_MISSING_NEUTRAL_APPLIED",
+      "invalid_policy": "REJECT_ROW"
+    },
+    "information_age": {
+      "symbol": "f_t",
+      "input_field": "information_age_min",
+      "required": false,
+      "accepted_minimum": 0.0,
+      "reference_min": 180.0,
+      "alpha": 0.5,
+      "formula": "1 + alpha * min(information_age_min / reference_min, 1)",
+      "missing_factor": 1.0,
+      "missing_warning": "INFORMATION_AGE_MISSING_NEUTRAL_APPLIED",
+      "invalid_policy": "REJECT_ROW"
+    }
+  },
+  "missing_data_policy": {
+    "optional_fields_counted": [
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min"
+    ],
+    "review_threshold": 2,
+    "threshold_operator": "GREATER_THAN_OR_EQUAL",
+    "status_when_threshold_reached": "REVISAR",
+    "warning_when_threshold_reached": "MULTIPLE_OPTIONAL_INPUTS_MISSING",
+    "default_status_when_no_review_rule_is_triggered": "CALCULADO"
+  },
+  "input_schema": {
+    "required_columns": [
+      "scenario_id",
+      "candidate_id",
+      "estimated_lat",
+      "estimated_lon",
+      "base_radius_m",
+      "r0_semantics",
+      "detection_quality"
+    ],
+    "optional_columns": [
+      "environment_class",
+      "position_dispersion_m",
+      "information_age_min",
+      "factors_applied",
+      "r0_provenance",
+      "data_origin",
+      "source_row_hash",
+      "execution_phase"
+    ],
+    "coordinate_constraints": {
+      "estimated_lat_min": -90.0,
+      "estimated_lat_max": 90.0,
+      "estimated_lon_min": -180.0,
+      "estimated_lon_max": 180.0
+    },
+    "forbidden_columns_or_fragments": [
+      "ground_truth",
+      "reference_lat",
+      "reference_lon",
+      "true_lat",
+      "true_lon",
+      "base_lat",
+      "base_lon",
+      "distance_to_reference",
+      "generator_distance",
+      "relevant_candidate"
+    ],
+    "forbidden_field_policy": "ABORT_EXECUTION"
+  },
+  "output_policy": {
+    "include_input_identifiers": true,
+    "include_factor_values": true,
+    "include_unbounded_radius": true,
+    "include_adaptive_radius": true,
+    "include_baseline_comparison": true,
+    "include_warning_codes": true,
+    "include_review_status": true,
+    "include_execution_classification": true,
+    "include_confirmatory_eligibility": true,
+    "exclude_ground_truth": true,
+    "deterministic_order": [
+      "scenario_id",
+      "candidate_id"
+    ]
+  },
+  "execution_guardrails": {
+    "photos_used_as_numeric_input": false,
+    "photos_policy": "Fotografias podem documentar o contexto e apoiar validação externa futura, mas não integram numericamente o motor v1.",
+    "ground_truth_firewall": true,
+    "open_reference_only_after_output_freeze": true,
+    "configuration_change_policy": "Qualquer mudança após o congelamento exige novo identificador de versão, justificativa e repetição integral dos testes.",
+    "development_dataset_warning": "O r0 do ensaio DEV legado deriva do gerador semissintético e apresenta correlação com a idade da informação; por isso, seus resultados não sustentam inferência confirmatória de cobertura ou benefício operacional.",
+    "independent_validation_requirements": [
+      "Usar r0 nominal ou proveniente do sistema-fonte sem derivação da posição verdadeira.",
+      "Congelar configuração, entradas e plano de análise antes de abrir a referência.",
+      "Preservar separação entre arquivo cego de entrada e arquivo protegido de ground truth.",
+      "Registrar proveniência, hashes e versão do motor.",
+      "Avaliar cobertura e comparação com o baseline somente após o congelamento das saídas."
+    ]
+  },
+  "acceptance_gates": {
+    "configuration_parses_as_json": true,
+    "all_unit_tests_pass": true,
+    "deterministic_repeat_matches": true,
+    "no_forbidden_ground_truth_field_in_input_or_output": true,
+    "all_geometries_are_valid_closed_rings": true,
+    "all_adaptive_radii_within_limits": true,
+    "manifest_contains_sha256_hashes": true,
+    "diagnostic_legacy_never_marked_confirmatory": true
+  }
+}

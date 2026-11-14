@@ -1,0 +1,21 @@
+{
+  "protocol_id": "EXT-ESP-SET-v1.1",
+  "status": "PASS",
+  "summary": {
+    "total": 34,
+    "passed": 34,
+    "failed": 0,
+    "errors": 0
+  },
+  "coverage": [
+    "contrato e firewall de ground truth",
+    "geometria autoritativa e conservação de área",
+    "ausência de sobreposição interna",
+    "ranking de competição e empates",
+    "suporte fracionário e vitórias únicas",
+    "invariância à ordem e aos identificadores",
+    "dados ausentes sem renormalização",
+    "determinismo das funções puras"
+  ],
+  "command": "python3 test_motor_setorizacao_priorizacao.py"
+}

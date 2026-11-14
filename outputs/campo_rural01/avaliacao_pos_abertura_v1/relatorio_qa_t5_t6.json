@@ -1,0 +1,29 @@
+{
+  "check_count": 17,
+  "checks": {
+    "four_ablations_present": true,
+    "grid_has_7845_valid_cells": true,
+    "inside_domain_has_sector": true,
+    "mov_v_has_48_base_corridors": true,
+    "no_aggregate_hit_error": true,
+    "no_recomputation_or_retuning": true,
+    "outside_domain_has_no_spatial_assignments": true,
+    "reference_schema_valid": true,
+    "six_sensitivity_scenarios_present": true,
+    "snap_respects_half_diagonal": true,
+    "spherical_aeqd_manifested": true,
+    "t45_opening_gate_valid_or_unit_api": true,
+    "t4_ledger_valid": true,
+    "three_corridor_scopes_present_or_outside": true,
+    "two_base_hypotheses_present": true,
+    "v1_has_24_sectors": true,
+    "v1_manifest_valid": true
+  },
+  "passed_check_count": 17,
+  "protocol_id": "RURAL01-EVAL-T45-T6-v1.0",
+  "review_flags": [
+    "REFERENCE_OUTSIDE_1500M_DOMAIN",
+    "REFERENCE_PRECISION_NOT_INFORMED"
+  ],
+  "status": "PASS"
+}

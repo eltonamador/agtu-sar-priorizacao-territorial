@@ -1,0 +1,23 @@
+{
+  "policy_id": "VISUAL-SPATIAL-POLICY-v1",
+  "footprint_method": "NADIR_CONSERVATIVE_CIRCULAR_FOOTPRINT-v1",
+  "automatic_platforms": [
+    "DRONE_RGB",
+    "DRONE_TERMICO"
+  ],
+  "required_lens_direction": "NADIR",
+  "operator_nadir_allows_approximate_footprint": true,
+  "metadata_gimbal_pitch_required": false,
+  "metadata_gimbal_pitch_is_discriminant": false,
+  "gps_consistency_tolerance_m": 15.0,
+  "agl_minimum_m": 1.0,
+  "agl_maximum_m": 500.0,
+  "agl_absolute_tolerance_m": 3.0,
+  "agl_relative_tolerance_fraction": 0.15,
+  "capture_time_tolerance_seconds": 300.0,
+  "focal_35mm_minimum_mm": 5.0,
+  "focal_35mm_maximum_mm": 300.0,
+  "maximum_footprint_radius_m": 1000.0,
+  "footprint_vertices": 32,
+  "calibrated_camera_profiles": []
+}

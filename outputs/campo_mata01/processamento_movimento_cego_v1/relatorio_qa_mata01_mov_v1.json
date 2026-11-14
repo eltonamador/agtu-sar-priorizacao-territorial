@@ -1,0 +1,45 @@
+{
+  "diagnostics": {
+    "base_hypotheses_identical": false,
+    "cell_count": 87253,
+    "field_obstacle_factor": 1.0,
+    "field_obstacle_records_available": false,
+    "network_cell_count": 1013,
+    "network_segments_near_domain": 264,
+    "osm_hydro_numeric_cell_count": 0,
+    "osm_hydro_segments_near_domain": 0,
+    "scenario_count": 6,
+    "worldcover_water_wet_proxy_cell_count": 10265
+  },
+  "gate_count": 19,
+  "gates": {
+    "T26_T49_not_converted": true,
+    "all_cells_field_factor_one": true,
+    "all_cells_have_srtm_worldcover": true,
+    "all_costs_finite_nonnegative": true,
+    "blind_coordinate_firewall_scanned": true,
+    "configuration_valid": true,
+    "corridors_are_nonprobabilistic": true,
+    "deterministic_repeat": true,
+    "exactly_24_sector_summaries_per_base_hypothesis": true,
+    "exactly_48_prespecified_corridors": true,
+    "grid_nonempty": true,
+    "network_hypothesis_changes_cost_when_network_present": true,
+    "network_layer_consistent_with_rasterization": true,
+    "osm_hydro_absence_not_promoted_to_favorable": true,
+    "osm_hydro_not_used_numerically": true,
+    "parallel_base_hypotheses_exist": true,
+    "parallel_base_hypotheses_identical_when_network_absent": true,
+    "test_receipt_bound_and_passed": true,
+    "water_wet_proxy_explicitly_counted": true
+  },
+  "ground_truth_used": false,
+  "passed_gate_count": 19,
+  "protocol_id": "MATA01-BLIND-MOV-V-v1.0",
+  "status": "PASS",
+  "temporal_interpretation": {
+    "T26": "CONTEXTO_SEM_CONVERSAO_EM_DISTANCIA",
+    "T49": "CONTEXTO_SEM_CONVERSAO_EM_DISTANCIA",
+    "same_physical_cost_surface": true
+  }
+}

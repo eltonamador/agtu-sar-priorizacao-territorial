@@ -1,0 +1,325 @@
+{
+  "base_hypothesis_top3": {
+    "H_FORA_REDE": [
+      {
+        "accessibility_index": 0.406500852,
+        "mobility_rank": 1,
+        "reachable_fraction": 0.459876543,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::W",
+        "v1_rank": 10
+      },
+      {
+        "accessibility_index": 0.373791394,
+        "mobility_rank": 2,
+        "reachable_fraction": 0.416666667,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::N",
+        "v1_rank": 14
+      },
+      {
+        "accessibility_index": 0.36113662,
+        "mobility_rank": 3,
+        "reachable_fraction": 0.399390244,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NE",
+        "v1_rank": 6
+      }
+    ],
+    "H_REDE_DISPONIVEL": [
+      {
+        "accessibility_index": 0.538787391,
+        "mobility_rank": 1,
+        "reachable_fraction": 0.833333333,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::W",
+        "v1_rank": 10
+      },
+      {
+        "accessibility_index": 0.491700535,
+        "mobility_rank": 2,
+        "reachable_fraction": 0.88,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::E",
+        "v1_rank": 1
+      },
+      {
+        "accessibility_index": 0.42892752,
+        "mobility_rank": 3,
+        "reachable_fraction": 0.698170732,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NE",
+        "v1_rank": 6
+      }
+    ]
+  },
+  "candidate_id": "RURAL-01-E0",
+  "confirmatory_eligible": false,
+  "cost_semantics": "METROS_EQUIVALENTES_DE_ESFORCO_NAO_TEMPO_NAO_PROBABILIDADE",
+  "development_status": "HEURISTICA_DESENVOLVIMENTO_SUJEITA_A_SENSIBILIDADE",
+  "elapsed_hours_role": "CONTEXTO_NAO_CONVERTIDO_AUTOMATICAMENTE_EM_DISTANCIA_OU_TEMPO_ATIVO",
+  "engine_version": "2.0.3-rural01-mov-v-t4",
+  "execution_classification": "DESENVOLVIMENTO_CEGO_NAO_CONFIRMATORIO",
+  "field_obstacle_count": 0,
+  "field_obstacle_used": false,
+  "grid": {
+    "analysis_crs_definition": "+proj=aeqd +lat_0=0.188611 +lon_0=-51.155556 +R=6371008.8 +units=m +no_defs",
+    "analysis_crs_method": "LOCAL_AEQD_CENTERED_ON_SOURCE_POINT",
+    "cell_count": 7845,
+    "extent_limited_to_source_radius": true,
+    "movement_budget_cost_m": 1500.0,
+    "resolution_m": 30.0
+  },
+  "ground_truth_used": false,
+  "hypothesis_selection_status": "NENHUMA_HIPOTESE_SELECIONADA_REGIME_DESCONHECIDO",
+  "interpretation": {
+    "corridors": "CAMINHOS_DIAGNOSTICOS_DE_MENOR_CUSTO_NAO_ROTAS_CONFIRMADAS",
+    "cost": "RESISTENCIA_RELATIVA_ACUMULADA_NAO_PROBABILIDADE_NAO_TEMPO",
+    "operational_command": false,
+    "reachable": "ALCANCAVEL_SOB_ORCAMENTO_HEURISTICO_DE_ESFORCO_DENTRO_DO_RAIO_FONTE",
+    "sector_rank": "COMPARACAO_DE_ACESSIBILIDADE_FISICA_NAO_LOCALIZACAO_DA_PESSOA"
+  },
+  "limitations": [
+    "SEM_OBSERVACAO_SISTEMATICA_DO_SUB_BOSQUE",
+    "DEM_30M_SUAVIZA_FEICOES_ESTREITAS",
+    "WORLD_COVER_NAO_MEDE_TRANSITABILIDADE",
+    "OSM_PODE_SER_INCOMPLETO_OU_DESATUALIZADO",
+    "SEM_MAPA_COMPLETO_DE_CERCAS_LINHAS_BARRANCOS_GROTAS_PONTES_E_VAUS",
+    "MULTIPLICADORES_HEURISTICOS_NAO_CALIBRADOS",
+    "14H_NAO_EQUIVALEM_A_TEMPO_CONTINUO_DE_MARCHA",
+    "CONDICAO_CLINICA_NAO_CONVERTIDA_EM_VELOCIDADE",
+    "ANISOTROPIA_DIRECIONAL_NAO_ATIVADA_SEM_CALIBRACAO_AUDITADA"
+  ],
+  "overlap_controls": {
+    "counterfactual_cells_with_higher_accumulated_cost": 1028,
+    "counterfactual_cost_scenario_id": "SENS__COM_DUPLICACAO_HIDRO_COBERTURA",
+    "counterfactual_is_promoted": false,
+    "counterfactual_median_cost_delta_m_equivalent": 21.270583,
+    "counterfactual_top3_jaccard": 1.0,
+    "hydro_factor_neutralized_in_reference_on_overlap": true,
+    "hydro_landcover_overlap_cell_count": 132,
+    "hydro_landcover_overlap_fraction": 0.016826004,
+    "hydro_landcover_policy": "NO_MULTIPLY_OSM_HYDRO_ON_WORLDCOVER_WATER_WETLAND",
+    "network_landcover_policy": "MULTIPLICATIVE_DISCOUNT_WITH_SCALE_CONFLICT_DIAGNOSTIC",
+    "network_landcover_scale_conflict_cell_count": 87,
+    "network_landcover_scale_conflict_fraction": 0.011089866
+  },
+  "protocol_id": "RURAL01-BLIND-MOV-V-v2.0",
+  "reference_cost_scenario": {
+    "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+    "purpose": "CONTROLES_DE_DEDUPLICACAO_CONTRAFACTUAL_E_REPETIBILIDADE",
+    "role": "REFERENCIAL_NAO_SELECIONADO",
+    "selected": false
+  },
+  "relationship_to_prior_geo_modules": "ALTERNATIVE_PATH_BASED_REPRESENTATION_NOT_ADDITIVE_FIFTH_COMPONENT",
+  "review_status": "REVISAR",
+  "scenario_id": "RURAL-01",
+  "scenario_summary": [
+    {
+      "cost_scenario_id": "H_REDE_DISPONIVEL__SUAVE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 1923.465127,
+      "p90_cost_m_equivalent": 3026.936867,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 2621,
+      "reachable_cell_fraction": 0.334098152,
+      "sensitivity_profile": "SUAVE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 2484.350028,
+      "p90_cost_m_equivalent": 3957.980415,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 1515,
+      "reachable_cell_fraction": 0.193116635,
+      "sensitivity_profile": "BASE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "H_REDE_DISPONIVEL__FORTE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 3272.42706,
+      "p90_cost_m_equivalent": 5356.147343,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 789,
+      "reachable_cell_fraction": 0.100573614,
+      "sensitivity_profile": "FORTE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "H_FORA_REDE__SUAVE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_FORA_REDE",
+      "median_cost_m_equivalent": 2350.239555,
+      "p90_cost_m_equivalent": 3254.898732,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 1605,
+      "reachable_cell_fraction": 0.20458891,
+      "sensitivity_profile": "SUAVE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::N",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "H_FORA_REDE__BASE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_FORA_REDE",
+      "median_cost_m_equivalent": 3003.365644,
+      "p90_cost_m_equivalent": 4277.339922,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 916,
+      "reachable_cell_fraction": 0.116762269,
+      "sensitivity_profile": "BASE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::N",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "H_FORA_REDE__FORTE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_FORA_REDE",
+      "median_cost_m_equivalent": 3914.463991,
+      "p90_cost_m_equivalent": 5823.273605,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 440,
+      "reachable_cell_fraction": 0.056086679,
+      "sensitivity_profile": "FORTE",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::N",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "ABL__SEM_HIDRO",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 2442.342556,
+      "p90_cost_m_equivalent": 3877.78068,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 1515,
+      "reachable_cell_fraction": 0.193116635,
+      "sensitivity_profile": "ABLATION",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "ABL__SEM_COBERTURA",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 1079.417596,
+      "p90_cost_m_equivalent": 1591.815868,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 6567,
+      "reachable_cell_fraction": 0.83709369,
+      "sensitivity_profile": "ABLATION",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::SE"
+      ]
+    },
+    {
+      "cost_scenario_id": "ABL__SEM_RELEVO",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 2056.027358,
+      "p90_cost_m_equivalent": 3374.213906,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 2394,
+      "reachable_cell_fraction": 0.305162524,
+      "sensitivity_profile": "ABLATION",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "ABL__SEM_DESCONTO_REDE",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 3003.365644,
+      "p90_cost_m_equivalent": 4277.339922,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 916,
+      "reachable_cell_fraction": 0.116762269,
+      "sensitivity_profile": "ABLATION",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::N",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    },
+    {
+      "cost_scenario_id": "SENS__COM_DUPLICACAO_HIDRO_COBERTURA",
+      "ground_truth_used": false,
+      "hypothesis_id": "H_REDE_DISPONIVEL",
+      "median_cost_m_equivalent": 2505.620611,
+      "p90_cost_m_equivalent": 4106.930598,
+      "rank_band_member_count": 3,
+      "rank_cutoff": 3,
+      "reachable_cell_count": 1515,
+      "reachable_cell_fraction": 0.193116635,
+      "sensitivity_profile": "CONTRAFACTUAL_NAO_PROMOVIDO",
+      "top3_rank_band_sectors": [
+        "RURAL-01::RURAL-01-E0::R01::W",
+        "RURAL-01::RURAL-01-E0::R01::E",
+        "RURAL-01::RURAL-01-E0::R01::NE"
+      ]
+    }
+  ],
+  "source": {
+    "candidate_id": "RURAL-01-E0",
+    "elapsed_hours": 14.0,
+    "elapsed_minutes_context": 840,
+    "elapsed_time_role": "CONTEXTO_SEM_CONVERSAO_AUTOMATICA_EM_DISTANCIA_OU_CUSTO",
+    "ground_truth_available_to_engine": false,
+    "point": {
+      "current_presence_assertion": false,
+      "input_crs": "EPSG:4326",
+      "latitude": 0.188611,
+      "longitude": -51.155556,
+      "semantic_role": "PONTO_INICIAL_PLANEJAMENTO",
+      "timestamp_interpretation": "REGISTRO_DO_PONTO_OU_ERB_NAO_HORARIO_DO_DESAPARECIMENTO",
+      "timestamp_local": "2026-10-21T14:20:00-03:00"
+    },
+    "radius_m": 1500.0,
+    "radius_semantics": "DOMINIO_COMPARAVEL_AO_V1_E_ORCAMENTO_DE_CUSTO_METRICO_EQUIVALENTE",
+    "scenario_id": "RURAL-01",
+    "temporal_anchor_status": "REVISAR"
+  },
+  "source_timestamps": {
+    "osm_hydro_timestamp": "2026-08-17T17:01:35Z",
+    "osm_road_timestamp": "2026-08-17T17:01:35Z"
+  },
+  "top3_rank_band_policy": "INCLUDE_ALL_SECTORS_WITH_MOBILITY_RANK_LE_3_INCLUDING_TIES"
+}

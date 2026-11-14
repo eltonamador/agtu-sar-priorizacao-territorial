@@ -1,0 +1,22 @@
+{
+  "gate_count": 13,
+  "gates": {
+    "all_control_flags_false": true,
+    "all_geo_complete": true,
+    "all_scores_in_unit_interval": true,
+    "base_rank_count_is_24": true,
+    "deterministic_repeat_matches": true,
+    "feature_count_is_24": true,
+    "no_directional_preference": true,
+    "no_ring_penalty": true,
+    "profile_rank_count_is_24": true,
+    "scientific_files_present": true,
+    "sector_count_is_24": true,
+    "top3_base_count_is_3": true,
+    "top3_profile_count_is_3": true
+  },
+  "ground_truth_used": false,
+  "passed_gate_count": 13,
+  "protocol_id": "URBE-BLIND-SET-v1.0",
+  "status": "PASS"
+}

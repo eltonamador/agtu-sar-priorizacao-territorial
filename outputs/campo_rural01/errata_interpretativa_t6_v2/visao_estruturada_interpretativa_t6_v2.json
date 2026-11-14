@@ -1,0 +1,69 @@
+{
+  "created_at_local": "2026-10-23T14:46:38-03:00",
+  "interpretive_overlay_id": "RURAL01-T6-OVERLAY-v2.0",
+  "scenario_id": "RURAL-01",
+  "status": "PUBLICADA_SEM_RECALCULO",
+  "applies_to": {
+    "original_manifest_path": "outputs/campo_rural01/avaliacao_pos_abertura_v1/manifesto_avaliacao_t5_t6.json",
+    "original_manifest_sha256": "05bba785481fa094aafa8e99971824c8d178fd72cd8e31970c6520475b30d7a2",
+    "original_result_path": "outputs/campo_rural01/avaliacao_pos_abertura_v1/resultado_avaliacao_t5_t6.json",
+    "original_result_sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705"
+  },
+  "reference": {
+    "role": "POSICAO_DECLARADA_ALVO_SIMULADO",
+    "verification_status": "DECLARADA_NAO_AFERIDA_INDEPENDENTEMENTE",
+    "latitude": 0.15333333333333332,
+    "longitude": -51.14888888888889
+  },
+  "spatial_result": {
+    "distance_from_source_m": 3992.141465188,
+    "azimuth_deg": 169.297955825,
+    "frozen_domain_radius_m": 1500.0,
+    "distance_beyond_domain_m": 2492.141465188,
+    "domain": "FORA_ESCOPO_DOMINIO",
+    "grid": "NAO_AVALIAVEL_GRADE",
+    "sector": "NAO_AVALIAVEL_SETOR",
+    "cost": "NAO_AVALIAVEL_CUSTO",
+    "ranking": "NAO_AVALIAVEL_RANKING",
+    "corridor": "NAO_AVALIAVEL_CORREDOR"
+  },
+  "sensitivity_summary": {
+    "prespecified_scenario_count": 6,
+    "evaluable_budget_scenario_count": 0,
+    "evaluable_ranking_scenario_count": 0,
+    "non_evaluable_budget_scenario_count": 6,
+    "non_evaluable_ranking_scenario_count": 6,
+    "count_within_budget": null,
+    "count_top3": null,
+    "missing_values_counted_as_success_or_failure": false
+  },
+  "interpretation_scope": {
+    "tested": [
+      "COBERTURA_ESPACIAL_DO_DOMINIO_FIXO_DE_1500M"
+    ],
+    "not_tested": [
+      "QUALIDADE_RELATIVA_DAS_SUPERFICIES_DE_CUSTO_INTERNAS",
+      "QUALIDADE_RELATIVA_DOS_RANKINGS_SETORIAIS_INTERNOS",
+      "QUALIDADE_RELATIVA_DOS_CORREDORES_INTERNOS"
+    ],
+    "prospective_implication": "AVALIAR_BUFFER_ADAPTATIVO_PREVIAMENTE_PARAMETRIZADO_EM_NOVOS_CASOS"
+  },
+  "forbidden_changes_confirmed": {
+    "domain_radius_changed": false,
+    "coordinates_changed": false,
+    "cost_surfaces_changed": false,
+    "sectors_changed": false,
+    "candidates_changed": false,
+    "rankings_changed": false,
+    "corridors_changed": false,
+    "hypotheses_changed_or_selected": false,
+    "original_t6_overwritten": false
+  },
+  "publication_rules": [
+    "NAO_PUBLICAR_0_DE_6_COMO_FRACASSO_OU_SUCESSO",
+    "NAO_PUBLICAR_SEM_SETOR_COMO_TENTATIVA_NEGATIVA",
+    "NAO_PUBLICAR_CSV_VAZIO_COMO_DISTANCIA_ZERO",
+    "NAO_RECALIBRAR_O_RURAL01_APOS_A_ABERTURA"
+  ],
+  "payload_sha256": "6a9dce05723bf3c3d0d5a4d07f0fed16138805e870778550ca7a07e5c3a00f09"
+}

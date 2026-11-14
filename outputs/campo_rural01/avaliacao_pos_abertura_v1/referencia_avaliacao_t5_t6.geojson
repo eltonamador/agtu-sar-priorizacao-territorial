@@ -1,0 +1,43 @@
+{
+  "crs": {
+    "properties": {
+      "name": "EPSG:4326"
+    },
+    "type": "name"
+  },
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -51.155556,
+          0.188611
+        ],
+        "type": "Point"
+      },
+      "id": "RURAL-01::E0",
+      "properties": {
+        "label": "E0",
+        "role": "PONTO_INICIAL_PLANEJAMENTO"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -51.14888888888889,
+          0.15333333333333332
+        ],
+        "type": "Point"
+      },
+      "id": "RURAL-01::REFERENCIA_T5",
+      "properties": {
+        "domain_status": "EXTERIOR",
+        "role": "POSICAO_DECLARADA_ALVO_SIMULADO",
+        "verification_status": "DECLARADA_NAO_AFERIDA_INDEPENDENTEMENTE"
+      },
+      "type": "Feature"
+    }
+  ],
+  "name": "RURAL01_AVALIACAO_T5_T6_v1",
+  "type": "FeatureCollection"
+}

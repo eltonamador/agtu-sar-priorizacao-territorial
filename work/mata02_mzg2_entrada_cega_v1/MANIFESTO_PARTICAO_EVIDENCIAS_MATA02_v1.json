@@ -1,0 +1,106 @@
+{
+  "manifest_id": "MATA02-MZG2-EVIDENCE-PARTITION-v1.0",
+  "scenario_id": "MATA-02",
+  "site_id": "MZG2",
+  "status": "CONGELADO_ANTES_DO_PROCESSAMENTO",
+  "study_classification": "CENARIO_CONTROLADO_SEMISSINTETICO_EM_TERRITORIO_REAL",
+  "partitions": [
+    {
+      "partition_id": "P1_REAL_BASE",
+      "description": "Dados reais ou declarados do territorio autorizados para construir o dominio e consultar camadas geograficas.",
+      "items": [
+        "coordenada MATA-02-E0",
+        "raio informado de 6000 m",
+        "GEO-02 vias",
+        "GEO-03 hidrografia",
+        "GEO-04 declividade",
+        "GEO-05 cobertura do solo"
+      ],
+      "base_access": "PERMITIDO"
+    },
+    {
+      "partition_id": "P2_SEMISSINTETICO_CENARIO",
+      "description": "Elementos criados para o ensaio controlado e nao apresentados como fatos de uma ocorrencia real.",
+      "items": [
+        "ocorrencia hipotetica de desaparecimento",
+        "tempo decorrido hipotetico de 17 horas",
+        "perfil hipotetico da pessoa",
+        "condicoes de saude e vestuario hipoteticos",
+        "pistas comportamentais e direcionais hipoteticas"
+      ],
+      "base_access": "NEGADO",
+      "allowed_use": "DESCRICAO_DO_CENARIO_E_MODULOS_POSTERIORES_EXPLICITAMENTE_SEPARADOS"
+    },
+    {
+      "partition_id": "P3_CONTEXTO_VISUAL_REAL",
+      "description": "Fotografias reais do local para documentar ambiente, visibilidade e limites das camadas remotas.",
+      "attached_subset_count": 34,
+      "local_corpus_count": 98,
+      "scope_rule": "Somente os 34 arquivos explicitamente anexados integram este ensaio; os outros 64 arquivos do acervo local nao foram incorporados automaticamente.",
+      "inventory_file": "INVENTARIO_IMAGENS_ANEXADAS_MATA02_v1.json",
+      "base_access": "NEGADO",
+      "allowed_use": "AUDITORIA_POSTERIOR_E_APRESENTACAO_CONTEXTUAL",
+      "coordinate_rule": "Toda coordenada impressa ou armazenada em fotografia de drone representa a camera no instante da captura, nao o alvo nem o ponto inicial do modelo.",
+      "hash_inventory_status": "CONCLUIDO_PARA_OS_34_ARQUIVOS_ANEXADOS",
+      "blind_partition_summary": {
+        "contexto_ambiental": 14,
+        "evidencia_reveladora_excluida": 18,
+        "potencialmente_reveladora_excluida": 1,
+        "evidencia_documental": 1
+      }
+    },
+    {
+      "partition_id": "P4_PERFIL_E_PISTAS",
+      "description": "Perfil, saude, vestuario e pistas foram fornecidos apenas como elementos hipoteticos do cenario e foram excluidos da entrada BASE.",
+      "items": [
+        "perfil hipotetico",
+        "condicoes de saude hipoteticas",
+        "vestuario hipotetico",
+        "pistas comportamentais e direcionais hipoteticas"
+      ],
+      "availability": "FORNECIDO_APENAS_NO_CENARIO_HIPOTETICO_E_EXCLUIDO_DO_BASE",
+      "base_access": "NEGADO",
+      "interpretation_limit": "Nao representam fatos confirmados de uma ocorrencia real."
+    },
+    {
+      "partition_id": "P5_REFERENCIA_DO_ALVO",
+      "description": "Coordenada do alvo ou referencia posterior de encontro.",
+      "availability": "NAO_FORNECIDA",
+      "value": null,
+      "base_access": "PROIBIDO",
+      "future_disclosure_rule": "Se vier a existir, registrar em arquivo separado com data de abertura; nunca alterar a entrada, a configuracao ou a saida congeladas."
+    }
+  ],
+  "temporal_separation": {
+    "real_timestamps": "Horarios de tela e metadados das imagens descrevem apenas capturas de campo.",
+    "simulated_timestamps": "O intervalo de 17 horas pertence exclusivamente ao cenario hipotetico.",
+    "forbidden_inference": "Nao calcular o horario hipotetico do desaparecimento a partir do horario real das fotografias."
+  },
+  "base_whitelist": [
+    "MATA-02-E0",
+    "source_radius_m",
+    "GEO02",
+    "GEO03",
+    "GEO04",
+    "GEO05",
+    "setorizacao 3x8",
+    "pesos fixos congelados",
+    "3600 amostras por setor"
+  ],
+  "base_blacklist": [
+    "fotografias",
+    "coordenadas de camera",
+    "perfil",
+    "pistas",
+    "saude",
+    "vestuario",
+    "coordenada do alvo",
+    "referencia posterior"
+  ],
+  "audit_assertions": [
+    "O motor BASE deve produzir a mesma saida com ou sem os arquivos fotograficos presentes no diretorio de trabalho.",
+    "Nenhuma coordenada extraida de fotografia de drone pode substituir MATA-02-E0.",
+    "Nenhum horario real de fotografia pode substituir ou gerar o intervalo hipotetico de 17 horas.",
+    "A ausencia de uma coordenada do alvo deve ser preservada como ausencia, sem imputacao."
+  ]
+}

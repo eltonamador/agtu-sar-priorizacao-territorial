@@ -1,0 +1,21 @@
+{
+  "reported_azimuth_deg": 249,
+  "reported_confidence": null,
+  "reported_tolerance_deg": null,
+  "north_reference_reported": null,
+  "assumed_for_cartography": "NORTE_GEOGRAFICO; ORIGEM_E0",
+  "execution": "SENSIBILIDADE_EXPLORATORIA_NAO_EVIDENCIA_NOVA",
+  "tolerance_tests_deg": [
+    5,
+    22.5,
+    45
+  ],
+  "confidence_tests": [
+    "BAIXA",
+    "MEDIA",
+    "ALTA"
+  ],
+  "no_primary_scenario_selected": true,
+  "original_BASE_status": "REVISAR",
+  "warning": "Resultados internos do ranker não constituem liberação operacional; parâmetros faltantes não foram confirmados."
+}

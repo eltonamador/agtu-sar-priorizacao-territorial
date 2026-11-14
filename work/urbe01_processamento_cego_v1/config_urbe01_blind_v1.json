@@ -1,0 +1,88 @@
+{
+  "protocol_id": "URBE-BLIND-SET-v1.0",
+  "protocol_name": "Processamento cego diagnóstico do cenário URBE-01",
+  "version": "1.0",
+  "status": "CONGELADO_PROSPECTIVO_ANTES_DA_ABERTURA_DA_REFERENCIA",
+  "upstream": {
+    "protocol_id": "URBE-SOURCE-RADIUS-v1.0",
+    "scenario_id": "URBE-01",
+    "candidate_id": "URBE-01-E0",
+    "estimated_lat": 0.015833,
+    "estimated_lon": -51.068056,
+    "source_radius_m": 2500.0,
+    "source_timestamp_local": "2026-10-20T18:17:00-03:00",
+    "source_record_origin": "FICHA_3_DECLARADA_PELO_PESQUISADOR",
+    "source_metadata_verification": "NAO_VERIFICADA_EM_ARTEFATO_EXTERNO",
+    "review_status": "REVISAR",
+    "execution_classification": "CAMPO_CEGO_DIAGNOSTICO_RAIO_DA_FONTE",
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  },
+  "sectorization": {
+    "rings": 3,
+    "directions": 8,
+    "sectors_per_buffer": 24,
+    "directional_preference_applied": false,
+    "ring_penalty_applied": false,
+    "ranking_scope": "WITHIN_RECEIVED_SOURCE_RADIUS_ONLY"
+  },
+  "baseline": {
+    "name": "BASE_ORIGINAL",
+    "weights": {
+      "GEO02": 0.30,
+      "GEO03": 0.25,
+      "GEO04": 0.20,
+      "GEO05": 0.25
+    },
+    "implementation": "Função rank_sector_records do motor EXT-ESP-SET-v1.1, sem alteração"
+  },
+  "profile": {
+    "name": "PERFIL_URBE01_v1",
+    "base_weights": {
+      "GEO02": 0.35,
+      "GEO03": 0.20,
+      "GEO04": 0.25,
+      "GEO05": 0.20
+    },
+    "dwater_decay_m": 750.0,
+    "road_density_saturation_km_km2": 4.0,
+    "context_weights": {
+      "Awater": 0.60,
+      "Aisolation": 0.40
+    },
+    "final_weights": {
+      "profile_base": 0.90,
+      "context": 0.10
+    },
+    "formulas": {
+      "profile_base": "0.35*GEO02 + 0.20*GEO03 + 0.25*GEO04 + 0.20*GEO05",
+      "Awater": "exp(-dwater/750)*GEO03*(1-water_wetland_prop)",
+      "Aisolation": "GEO02*(1-min(road_density/4,1))",
+      "context": "0.60*Awater + 0.40*Aisolation",
+      "final": "0.90*profile_base + 0.10*context"
+    },
+    "context_component_weight_in_final_score": 0.10,
+    "directional_preference_applied": false,
+    "ring_penalty_applied": false
+  },
+  "profile_facts": {
+    "age_years": 60,
+    "sex": "masculino",
+    "mobility": "a_pe",
+    "maximum_displacement_time_minutes": 60,
+    "known_direction": "NAO_DISPONIVEL",
+    "fishing_history": true,
+    "possible_disorientation_or_memory_impairment": true,
+    "alzheimer_diagnosis_confirmed": false,
+    "islands_fishing_isolation_statement": "PISTA_CONTEXTUAL_NAO_DIRECIONAL",
+    "use_boundary": "O ranking PERFIL recalcula o componente territorial com pesos GEO02/GEO03/GEO04/GEO05 de 35/20/25/20, responsável por 90% do escore final. Somente o componente contextual C, associado às pistas de pesca e isolamento, recebe peso de 10%. Nenhum componente define azimute ou anel preferencial."
+  },
+  "interpretation": {
+    "score_meaning": "PRIORIDADE_ANALITICA_TERRITORIAL_NAO_PROBABILIDADE_DE_PRESENCA",
+    "top3_label_meaning": "AREAS_ANALITICAS_PARA_REVISAO_HUMANA",
+    "operational_command": false,
+    "field_confirmation_required": true,
+    "confirmatory_eligible": false,
+    "ground_truth_used": false
+  }
+}

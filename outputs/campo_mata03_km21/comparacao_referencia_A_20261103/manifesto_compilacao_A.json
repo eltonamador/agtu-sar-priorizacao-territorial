@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-03T23:38:21.779902+00:00",
+  "source_comparison_sha256": "8ade4b34a1fe94fbfe803e1cc48b37b33892a0ef6e7248150ce249be46ab97aa",
+  "frozen_files_verified": 42,
+  "frozen_files_unchanged": true,
+  "engines_rerun": false,
+  "ranking_changed": false,
+  "reference_post_output": true,
+  "script_sha256": "9b4fa054bee10253f0526871a6e427c5809cc11ee1da6fc98f5ecb1f76b0d5f8",
+  "files_sha256": {
+    "comparacao_referencia_A.json": "560a06a78b3953c8cbfb8f6e8c9525c66db6c8a02269eccafd5c363bbeb8db4c",
+    "mapa_comparacao_MATA03_A.png": "3db2b626be3818cf635f2e4d55e51c1850c4a32e203b2363bcbe3c9dec401563"
+  }
+}

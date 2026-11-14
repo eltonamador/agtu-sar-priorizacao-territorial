@@ -1,0 +1,61 @@
+{
+  "all_equal": true,
+  "file_count": 9,
+  "files": [
+    {
+      "equal": true,
+      "file": "registro_abertura_referencia.json",
+      "run1_sha256": "4c114128b2a855ad699be6017acca3f8b1020657b0adef8d2fd5e9595b94ddeb",
+      "run2_sha256": "4c114128b2a855ad699be6017acca3f8b1020657b0adef8d2fd5e9595b94ddeb"
+    },
+    {
+      "equal": true,
+      "file": "resultado_avaliacao_pos_abertura.json",
+      "run1_sha256": "b1e32e186adc84154166aecec5f55858664906961f14497b08a946b6d89516cb",
+      "run2_sha256": "b1e32e186adc84154166aecec5f55858664906961f14497b08a946b6d89516cb"
+    },
+    {
+      "equal": true,
+      "file": "avaliacao_rankings.csv",
+      "run1_sha256": "0a2fe735bb1c995547718572d93a4c99bd84a4ebb17acc3a16b4e6f951b7c1f6",
+      "run2_sha256": "0a2fe735bb1c995547718572d93a4c99bd84a4ebb17acc3a16b4e6f951b7c1f6"
+    },
+    {
+      "equal": true,
+      "file": "distancias_top3.csv",
+      "run1_sha256": "116d5c495407c36c29225f87f1ee7dda6028db08555e2d522d08f0aded493797",
+      "run2_sha256": "116d5c495407c36c29225f87f1ee7dda6028db08555e2d522d08f0aded493797"
+    },
+    {
+      "equal": true,
+      "file": "referencia_setores_e_top3.geojson",
+      "run1_sha256": "429b465e055a4bb89bb500daf9c41edd7aef41a803d591dd6a8e146ab43999a6",
+      "run2_sha256": "429b465e055a4bb89bb500daf9c41edd7aef41a803d591dd6a8e146ab43999a6"
+    },
+    {
+      "equal": true,
+      "file": "verificacao_independente.json",
+      "run1_sha256": "be61b3e3e7e7cca3302dbc296914fa5b4b6534c44a2bf959ed0bb677435149c9",
+      "run2_sha256": "be61b3e3e7e7cca3302dbc296914fa5b4b6534c44a2bf959ed0bb677435149c9"
+    },
+    {
+      "equal": true,
+      "file": "relatorio_avaliacao_pos_abertura.md",
+      "run1_sha256": "41e2149f64c4e8c7d6d9d7d6c20733e79a1a9f25fe1de334d70b19fb529f4645",
+      "run2_sha256": "41e2149f64c4e8c7d6d9d7d6c20733e79a1a9f25fe1de334d70b19fb529f4645"
+    },
+    {
+      "equal": true,
+      "file": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.png",
+      "run1_sha256": "31ced4dbb75264d65382c606291e46cb3377fa2d0dff8ce274f4327eed1d151d",
+      "run2_sha256": "31ced4dbb75264d65382c606291e46cb3377fa2d0dff8ce274f4327eed1d151d"
+    },
+    {
+      "equal": true,
+      "file": "Mapa_URBE01_Avaliacao_Pos_Abertura_v1.pdf",
+      "run1_sha256": "1a4e1c5dd377060c38ad039bbd8e94bd087df98e5b3d879dff11bc11fd78767e",
+      "run2_sha256": "1a4e1c5dd377060c38ad039bbd8e94bd087df98e5b3d879dff11bc11fd78767e"
+    }
+  ],
+  "status": "PASS"
+}

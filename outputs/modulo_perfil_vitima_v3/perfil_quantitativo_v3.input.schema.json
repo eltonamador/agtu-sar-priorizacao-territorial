@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agtu:sar:perfil-quantitativo:v3-input-1.0",
+  "title": "Entrada congelada do rankeador PERFIL V3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_version",
+    "scenario_id",
+    "candidate_id",
+    "record_status",
+    "created_at",
+    "ground_truth_absent",
+    "source_loc_input_sha256",
+    "source_case_revision",
+    "source_profile_compiled_sha256",
+    "source_territorial_manifest_sha256",
+    "source_spatial_review_sha256",
+    "sectors",
+    "hypotheses",
+    "freeze_metadata"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": "PERFIL-V3-QUANT-v1.0"
+    },
+    "scenario_id": {
+      "$ref": "#/$defs/identifier"
+    },
+    "candidate_id": {
+      "$ref": "#/$defs/identifier"
+    },
+    "record_status": {
+      "const": "CONGELADO"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ground_truth_absent": {
+      "const": true
+    },
+    "source_loc_input_sha256": {
+      "$ref": "#/$defs/sha256",
+      "description": "Hash da projeção LOC do caso calculado antes do congelamento desta entrada."
+    },
+    "source_case_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_profile_compiled_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "source_territorial_manifest_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "source_spatial_review_sha256": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/sha256"}
+      ],
+      "description": "SHA-256 dos bytes da revisão espacial congelada; null somente quando nenhuma hipótese de perfil é incluída."
+    },
+    "sectors": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/sector"
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/directionHypothesis"
+          },
+          {
+            "$ref": "#/$defs/destinationHypothesis"
+          }
+        ]
+      }
+    },
+    "freeze_metadata": {
+      "$ref": "#/$defs/freezeMetadata"
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "coordinate": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "sector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sector_id",
+        "territorial_score",
+        "bearing_start_deg",
+        "bearing_end_deg",
+        "polygon"
+      ],
+      "properties": {
+        "sector_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "territorial_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "bearing_start_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 360,
+          "description": "O motor rejeita igualdade modular com bearing_end_deg."
+        },
+        "bearing_end_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 360,
+          "description": "O motor rejeita igualdade modular com bearing_start_deg."
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 4,
+          "description": "Deve estar fechado e possuir área não nula; a área é validada no motor.",
+          "items": {
+            "$ref": "#/$defs/coordinate"
+          }
+        }
+      }
+    },
+    "nature": {
+      "type": "string",
+      "enum": [
+        "CONFIRMADO",
+        "OBSERVADO",
+        "RELATADO",
+        "SUSPEITO",
+        "INFERIDO",
+        "NAO_DISPONIVEL"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "ALTA",
+        "MEDIA",
+        "BAIXA",
+        "NAO_AVALIADA"
+      ]
+    },
+    "directionHypothesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hypothesis_id",
+        "evidence_group_id",
+        "family",
+        "hypothesis_type",
+        "spatialized",
+        "authorized_for_model",
+        "nature",
+        "confidence",
+        "direction"
+      ],
+      "properties": {
+        "hypothesis_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "evidence_group_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "family": {
+          "const": "DIRECAO"
+        },
+        "hypothesis_type": {
+          "const": "DIRECAO_OBSERVADA"
+        },
+        "spatialized": {
+          "type": "boolean"
+        },
+        "authorized_for_model": {
+          "type": "boolean"
+        },
+        "nature": {
+          "$ref": "#/$defs/nature"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "direction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "origin_candidate_id",
+            "azimuth_deg",
+            "tolerance_deg"
+          ],
+          "properties": {
+            "origin_candidate_id": {
+              "$ref": "#/$defs/identifier",
+              "description": "Deve coincidir exatamente com candidate_id; restrição cruzada validada no motor."
+            },
+            "azimuth_deg": {
+              "type": "number",
+              "minimum": 0,
+              "exclusiveMaximum": 360
+            },
+            "tolerance_deg": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 180
+            }
+          }
+        }
+      }
+    },
+    "destinationHypothesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hypothesis_id",
+        "evidence_group_id",
+        "family",
+        "hypothesis_type",
+        "spatialized",
+        "authorized_for_model",
+        "nature",
+        "confidence",
+        "destination"
+      ],
+      "properties": {
+        "hypothesis_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "evidence_group_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "family": {
+          "const": "DESTINO"
+        },
+        "hypothesis_type": {
+          "type": "string",
+          "enum": [
+            "DESTINO_DECLARADO",
+            "LUGAR_FAMILIAR"
+          ]
+        },
+        "spatialized": {
+          "type": "boolean"
+        },
+        "authorized_for_model": {
+          "type": "boolean"
+        },
+        "nature": {
+          "$ref": "#/$defs/nature"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "destination": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "latitude",
+            "longitude",
+            "location_uncertainty_m",
+            "spatial_source"
+          ],
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "exclusiveMinimum": -90,
+              "exclusiveMaximum": 90
+            },
+            "longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "location_uncertainty_m": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Raio geométrico em metros usado na interseção binária círculo-setor; não é peso nem decaimento."
+            },
+            "spatial_source": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          }
+        }
+      }
+    },
+    "freezeMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frozen_at",
+        "projection_id",
+        "payload_sha256"
+      ],
+      "properties": {
+        "frozen_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "projection_id": {
+          "const": "PERFIL-V3-INPUT-FREEZE-PROJECTION-v1"
+        },
+        "payload_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "engine_version": "1.0.0-mata01-mov-v",
+  "execution_classification": "DESENVOLVIMENTO_CEGO_NAO_CONFIRMATORIO",
+  "files": [
+    {
+      "bytes": 8199,
+      "path": "work/mata01_mov_v1/config_mata01_mov_v1.json",
+      "role": "config",
+      "sha256": "504c8e5bb62fbe0503384b357f6855d2cfff2526873e457b75bd42352a2ac69a"
+    },
+    {
+      "bytes": 4363,
+      "path": "work/mata01_mov_v1/PROTOCOLO_MATA01_MOVIMENTO_CEGO_v1.md",
+      "role": "protocol",
+      "sha256": "47b719ba5147e1cfdf047aa8ad4ab2ed7bd5750dcd4b20b797e1971e1fd59521"
+    },
+    {
+      "bytes": 32489,
+      "path": "work/mata01_mov_v1/motor_movimento_mata01_v1.py",
+      "role": "engine",
+      "sha256": "86c0b6019f2c0e3b1121a01eca71ac297c745f4bcc7e72bb1e78bc348218efb9"
+    },
+    {
+      "bytes": 4752,
+      "path": "work/mata01_mov_v1/test_motor_movimento_mata01_v1.py",
+      "role": "test_suite",
+      "sha256": "e3de77ed7f3cfa47d138e2dc1e2cf2e4d3861174421c5aa44af6b58228607141"
+    },
+    {
+      "bytes": 2006,
+      "path": "work/mata01_mov_v1/run_tests_with_receipt.py",
+      "role": "test_runner",
+      "sha256": "7ea47c0fec5360f3a82d33d3853187641b98c5daea428cfab139bfde3c5b3b06"
+    },
+    {
+      "bytes": 568,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/relatorio_testes_mata01_mov_v1.json",
+      "role": "test_receipt",
+      "sha256": "d872faf9922cd43b8d33f7bed54dfb8bf70b19f5d23435b41197ebe01e31eb3b"
+    },
+    {
+      "bytes": 89740,
+      "path": "work/rural01_mov_v2/motor_movimento_v2.py",
+      "role": "reused_mov_core",
+      "sha256": "5cc0606afe345d77373dc40f657d0e89173f4c32bfe5176e4b2baa7241676b40"
+    },
+    {
+      "bytes": 77111,
+      "path": "work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+      "role": "reused_geo_core",
+      "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+    },
+    {
+      "bytes": 7081961,
+      "path": "outputs/sprint2_s2_06_geo05_v33/S01W052.hgt.gz",
+      "role": "srtm_tile",
+      "sha256": "07f5e50cd363e9e5bc2852d35558f1c1c1693f47bb32ee3fd4f115603144ed14"
+    },
+    {
+      "bytes": 29215289,
+      "path": "outputs/sprint2_s2_06_geo05_v33/worldcover_tiles/ESA_WorldCover_10m_2021_v200_S03W054_Map.tif",
+      "role": "worldcover_tile",
+      "sha256": "c913c1a3e9f9a9eb4505333eced234f24f6d2768da14b8b31eaee5f9a0ea99b2"
+    },
+    {
+      "bytes": 6198892,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json",
+      "role": "osm_roads_snapshot",
+      "sha256": "a57bff45b51175b7287a044ac8c57cdb457c3bbf7629a4d683ff94be989c4a20"
+    },
+    {
+      "bytes": 5748363,
+      "path": "outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json",
+      "role": "osm_hydro_snapshot",
+      "sha256": "0e3b3732140ec3d0197224687e00173bd771e9ae2d2175c974d4b01d7fcc6346"
+    },
+    {
+      "bytes": 16078018,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/grade_custo_relativo_mata01.csv",
+      "role": "full_cost_grid",
+      "sha256": "64e859918e8aea52e7a345f4ba01a7e6b3b705dddd2850e7cdfa0079981f66b5"
+    },
+    {
+      "bytes": 11469,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/sumario_setorial_mata01.csv",
+      "role": "sector_summary",
+      "sha256": "f792dcd603e6a099a027a7e3a95fe3a477857f4ce7ff7a41deed6b2ec265c423"
+    },
+    {
+      "bytes": 354311,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/corredores_planejamento_mata01.geojson",
+      "role": "planning_corridors",
+      "sha256": "007d3a8dcb5b254f299131411825f3c674159a79507e482df707126983cb3deb"
+    },
+    {
+      "bytes": 1616,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/relatorio_qa_mata01_mov_v1.json",
+      "role": "qa_report",
+      "sha256": "346fd3c07ffbf601668699e4bf5dd6f04b2d7262d0f2852274d73769ea62e28c"
+    },
+    {
+      "bytes": 40325,
+      "path": "outputs/campo_mata01/processamento_movimento_cego_v1/resultado_mata01_mov_v1.json",
+      "role": "result",
+      "sha256": "f26b433c8d898572b1684ab4ad2ad56edf095a38a61bf8938107026f5e795230"
+    }
+  ],
+  "ground_truth_used": false,
+  "payload_sha256": "53cfa3e67d6e0378a12b90b798b206d7c6f6a126335b8b23b1cf35c64ba4cda3",
+  "protocol_id": "MATA01-BLIND-MOV-V-v1.0",
+  "python_version": "3.12.14",
+  "target_position_accepted": false
+}

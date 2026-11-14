@@ -1,0 +1,422 @@
+[
+  {
+    "confidence_assumption": "NAO_AVALIADA",
+    "tolerance_assumption_deg": 22.5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.0,
+        "effective_lambda": 0.0,
+        "profile_score": 0.644159158,
+        "profile_delta": 0.0,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.0,
+        "effective_lambda": 0.0,
+        "profile_score": 0.634347572,
+        "profile_delta": 0.0,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.0,
+        "effective_lambda": 0.0,
+        "profile_score": 0.630079426,
+        "profile_delta": 0.0,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "ABSTENCAO_PERFIL",
+    "abstained": true,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "BAIXA",
+    "tolerance_assumption_deg": 5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6252797786592593,
+        "profile_delta": -0.018879379340740687,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6157952455259259,
+        "profile_delta": -0.01855232647407412,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6090767784666666,
+        "profile_delta": -0.021002647533333363,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "BAIXA",
+    "tolerance_assumption_deg": 22.5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6382427416222223,
+        "profile_delta": -0.0059164163777777334,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6287582084888889,
+        "profile_delta": -0.005589363511111167,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6090767784666666,
+        "profile_delta": -0.021002647533333363,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "BAIXA",
+    "tolerance_assumption_deg": 45,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.654909408288889,
+        "profile_delta": 0.010750250288888985,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6454248751555556,
+        "profile_delta": 0.011077303155555551,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.3333333333333333,
+        "effective_lambda": 0.03333333333333333,
+        "profile_score": 0.6090767784666666,
+        "profile_delta": -0.021002647533333363,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "MEDIA",
+    "tolerance_assumption_deg": 5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6064003993185185,
+        "profile_delta": -0.037758758681481486,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5972429190518519,
+        "profile_delta": -0.03710465294814813,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5880741309333334,
+        "profile_delta": -0.042005295066666615,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "MEDIA",
+    "tolerance_assumption_deg": 22.5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6323263252444444,
+        "profile_delta": -0.011832832755555578,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6231688449777778,
+        "profile_delta": -0.011178727022222223,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5880741309333334,
+        "profile_delta": -0.042005295066666615,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "MEDIA",
+    "tolerance_assumption_deg": 45,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6656596585777778,
+        "profile_delta": 0.021500500577777748,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6565021783111111,
+        "profile_delta": 0.022154606311111102,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R02::SW",
+        "territorial_score": 0.594886148,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.619671515911111,
+        "profile_delta": 0.024785367911111078,
+        "territorial_rank": 7,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "ALTA",
+    "tolerance_assumption_deg": 5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6064003993185185,
+        "profile_delta": -0.037758758681481486,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.07777777777777778,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5972429190518519,
+        "profile_delta": -0.03710465294814813,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5880741309333334,
+        "profile_delta": -0.042005295066666615,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "ALTA",
+    "tolerance_assumption_deg": 22.5,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6323263252444444,
+        "profile_delta": -0.011832832755555578,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.4666666666666667,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6231688449777778,
+        "profile_delta": -0.011178727022222223,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::E",
+        "territorial_score": 0.630079426,
+        "profile_compatibility": 0.0,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.5880741309333334,
+        "profile_delta": -0.042005295066666615,
+        "territorial_rank": 3,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  },
+  {
+    "confidence_assumption": "ALTA",
+    "tolerance_assumption_deg": 45,
+    "top3_primary_lambda": [
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R01::SW",
+        "territorial_score": 0.644159158,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6656596585777778,
+        "profile_delta": 0.021500500577777748,
+        "territorial_rank": 1,
+        "profile_rank": 1
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R03::SW",
+        "territorial_score": 0.634347572,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.6565021783111111,
+        "profile_delta": 0.022154606311111102,
+        "territorial_rank": 2,
+        "profile_rank": 2
+      },
+      {
+        "sector_id": "MATA-02::MATA-02-E0::R02::SW",
+        "territorial_score": 0.594886148,
+        "profile_compatibility": 0.9666666666666666,
+        "evidence_strength": 0.6666666666666666,
+        "effective_lambda": 0.06666666666666667,
+        "profile_score": 0.619671515911111,
+        "profile_delta": 0.024785367911111078,
+        "territorial_rank": 7,
+        "profile_rank": 3
+      }
+    ],
+    "engine_status": "EFEITO_PERFIL_APLICADO",
+    "abstained": false,
+    "external_status": "EXPLORATORIO_REVISAR_NAO_OPERACIONAL"
+  }
+]

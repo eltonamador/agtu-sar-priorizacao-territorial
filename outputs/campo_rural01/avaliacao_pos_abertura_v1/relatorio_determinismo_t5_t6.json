@@ -1,0 +1,55 @@
+{
+  "all_equal": true,
+  "file_count": 8,
+  "files": [
+    {
+      "equal": true,
+      "path": "registro_abertura_referencia.json",
+      "run1_sha256": "6097bbc86f391ad6f4e0610e2fb86ca87acd15f18e63ac631473a1200b1f3016",
+      "run2_sha256": "6097bbc86f391ad6f4e0610e2fb86ca87acd15f18e63ac631473a1200b1f3016"
+    },
+    {
+      "equal": true,
+      "path": "resultado_avaliacao_t5_t6.json",
+      "run1_sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705",
+      "run2_sha256": "044e4a9219bee3c4667a2b84ce579feb443aa1000784bb3fa99fcd9d7b651705"
+    },
+    {
+      "equal": true,
+      "path": "metricas_cenarios.csv",
+      "run1_sha256": "6d508d0fb08b31afed9440d47bbb9581468e5d90776bec026d256e4ca746459b",
+      "run2_sha256": "6d508d0fb08b31afed9440d47bbb9581468e5d90776bec026d256e4ca746459b"
+    },
+    {
+      "equal": true,
+      "path": "areas_bandas_custo.csv",
+      "run1_sha256": "f72b4e6e24ee6e17086c01da5eb14997f500347703e7b81f8330b84e73ba7a5d",
+      "run2_sha256": "f72b4e6e24ee6e17086c01da5eb14997f500347703e7b81f8330b84e73ba7a5d"
+    },
+    {
+      "equal": true,
+      "path": "metricas_corredores.csv",
+      "run1_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "run2_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "equal": true,
+      "path": "referencia_avaliacao_t5_t6.geojson",
+      "run1_sha256": "0a103ba57feef36bfd2b5010cbdfe0b4755d5b3eb21f06c8a475964b70ddc508",
+      "run2_sha256": "0a103ba57feef36bfd2b5010cbdfe0b4755d5b3eb21f06c8a475964b70ddc508"
+    },
+    {
+      "equal": true,
+      "path": "relatorio_qa_t5_t6.json",
+      "run1_sha256": "f2a8b210cd31a29293c46aeebad2e84f445212f2e0e3f1fb0a4b9f89aed48754",
+      "run2_sha256": "f2a8b210cd31a29293c46aeebad2e84f445212f2e0e3f1fb0a4b9f89aed48754"
+    },
+    {
+      "equal": true,
+      "path": "RELATORIO_AVALIACAO_RURAL01_T6.md",
+      "run1_sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273",
+      "run2_sha256": "ca1ce8f6657263658133583ffd4a2d893e64f9ba6f7c346c1131078071103273"
+    }
+  ],
+  "status": "PASS"
+}

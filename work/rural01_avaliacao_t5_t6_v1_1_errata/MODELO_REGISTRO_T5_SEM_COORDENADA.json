@@ -1,0 +1,25 @@
+{
+  "$schema": "schema_referencia_t5_v1.json",
+  "schema_version": "1.0",
+  "record_id": "RURAL-01-T5-AGUARDANDO-REVELACAO",
+  "scenario_id": "RURAL-01",
+  "stage": "T5_REFERENCE_OPENING",
+  "status": "AGUARDANDO_REVELACAO",
+  "reference_received": false,
+  "missing_fields": [
+    "position",
+    "reference_role",
+    "verification_status",
+    "collection_method",
+    "equipment",
+    "horizontal_accuracy_m",
+    "position_observed_at",
+    "source_artifact",
+    "source_artifact_sha256",
+    "opened_at",
+    "opened_by",
+    "opening_method",
+    "evaluator_freeze_manifest_sha256"
+  ],
+  "notes": "Modelo pré-revelação. Não contém coordenada da posição declarada do alvo, horário de abertura, precisão, método ou equipamento. Preencher somente em T5 com dados efetivamente fornecidos, após o congelamento T4.5 do avaliador."
+}

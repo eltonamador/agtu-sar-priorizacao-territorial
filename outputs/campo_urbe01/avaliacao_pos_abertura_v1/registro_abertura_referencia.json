@@ -1,0 +1,15 @@
+{
+  "coordinate": {
+    "latitude_text_as_received": "0.0024809355844815323",
+    "longitude_text_as_received": "-51.07092698392779",
+    "sha256": "c3fa784096eb4cdcbb82aa25df864c6a8efd5fd6df11cff2b09ba78b48731b63"
+  },
+  "event": "ABERTURA_DA_REFERENCIA",
+  "frozen_manifest_sha256": "7cf0a17486c869b0b1bb9af98cc43f911166b75f1486ec2e06c08f3baef6bdad",
+  "opened_at_local": "2026-10-21T14:07:14-03:00",
+  "protocol_id": "URBE-POSTOPEN-EVAL-v1.0",
+  "scenario_id": "URBE-01",
+  "source": "DECLARADA_PELO_USUARIO_APOS_CONGELAMENTO",
+  "timezone": "America/Belem",
+  "verification_status": "DECLARADA_NAO_VERIFICADA_INDEPENDENTEMENTE"
+}

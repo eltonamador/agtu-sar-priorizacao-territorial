@@ -1,0 +1,34 @@
+{
+  "manifest_id": "PERFIL-V3-CANDIDATE-MANIFEST-v2",
+  "status": "CANDIDATO_A_CONGELAMENTO",
+  "generated_date": "2026-10-21",
+  "ground_truth_used": false,
+  "urbe01_ground_truth_used_for_parameter_selection": false,
+  "new_case_ground_truths_used_for_parameter_selection": false,
+  "files": [
+    {"path": "work/perfil_vitima_v3/profile_ranker.py", "sha256": "122b5d4f1b91c3e045b6d65f47bd06f295629089b6d78f07cd90c09862ba7f32"},
+    {"path": "work/perfil_vitima_v3/test_profile_ranker.py", "sha256": "98e2f0f15daf4756fc9b0b1286b08f45f96b35c67711081e4d7837a525c56879"},
+    {"path": "work/perfil_vitima_v3/profile_integration.py", "sha256": "8a4696054cbc02465de9cc16a9f0bb91c317f2339d53265a69d9f35e1eb5fa71"},
+    {"path": "work/perfil_vitima_v3/test_profile_integration.py", "sha256": "d2a17d05ac689bdad9b047fa06aafba02e2c5a020457412a8cb9095de9ac26ee"},
+    {"path": "work/perfil_vitima_v3/README.md", "sha256": "2289916ab93d55845a0a1c916ac330971f09445c3fbccd926dcf580e7575d8fc"},
+    {"path": "outputs/modulo_perfil_vitima_v3/config_perfil_quantitativo_v3.json", "sha256": "df4cd64cc1e7c371af203c26c191442658574c7820b340dd59117a809fc9b451"},
+    {"path": "outputs/modulo_perfil_vitima_v3/perfil_quantitativo_v3.input.schema.json", "sha256": "7ec95f096ee31061a10506832f97d16e933d821b55e7742a1c84155de6710621"},
+    {"path": "outputs/modulo_perfil_vitima_v3/perfil_v3_revisao_espacial.schema.json", "sha256": "56cd415e2d7021283315c33fc8f63397c918b3356a636d1b456ce019f4d02abe"},
+    {"path": "outputs/modulo_perfil_vitima_v3/Especificacao_PERFIL_V3_Quantitativo.md", "sha256": "bd227e983d4a7d841609ec5ec8d4c093946e65f4a8aebc30fac8fb31fd5c4ac1"},
+    {"path": "outputs/modulo_perfil_vitima_v3/Matriz_Hierarquia_Transferibilidade_Fontes_v3.md", "sha256": "1d2c034b6ef14f275d40d1412190a24ecece4917c4de94b126b75b37b6e50102"},
+    {"path": "outputs/modulo_perfil_vitima_v3/Relatorio_Revisao_Amazonia_Mata_v3.md", "sha256": "a9d875e9dd9cbc7271ef1ec9412a2498b23209f24f18bafed02c2b7bd36e461b"},
+    {"path": "outputs/modulo_perfil_vitima_v3/Relatorio_Integracao_PERFIL_V3.md", "sha256": "93f766dc3ddbf85804b1a74e262fc8295278f87de4d0a508d8b8b0963bb839f4"}
+  ],
+  "verification": {
+    "unit_tests_passed": 57,
+    "core_tests_passed": 38,
+    "integration_tests_passed": 19,
+    "syntax_check_passed": true,
+    "json_parse_check_passed": true,
+    "manifest_hashes_passed": true,
+    "independent_core_audit": "APTO_PARA_INTEGRACAO",
+    "independent_integration_audit_pending": false,
+    "independent_integration_audit": "APTO_PARA_PACOTE_INTEGRADO_CEGO",
+    "real_v2_compiled_artifact_pending": true
+  }
+}

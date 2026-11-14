@@ -1,0 +1,24 @@
+{
+  "serializer": {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/mata02_mzg2_processamento_cego_v1/run_mata02_mzg2_blind.py",
+    "sha256": "fd5cce179145247ba2585b2c9c7b868de56b168c3eaf51d87f78038bc80b1acf"
+  },
+  "motor": {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py",
+    "sha256": "938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519"
+  },
+  "preparation_script": {
+    "path": "/Users/elton.amador/.codex/.chatgpt-projects/g-p-6a00e0b676e4819194bbd64d6acdabee/work/preparar_mata02_metadados_v2.py",
+    "sha256": "9f8f6e0428a09a218a9e2c3119004d8c16e5cde6251832f210aa6f4131e32ee0"
+  },
+  "functions_used": [
+    "build_effective_config (descrições herdadas corrigidas apenas na saída v2)",
+    "build_source_radius_inputs",
+    "validate_buffer_contract"
+  ],
+  "not_called": [
+    "main",
+    "ranking",
+    "consultas de camadas ou rede"
+  ]
+}

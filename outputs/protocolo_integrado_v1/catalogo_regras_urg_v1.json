@@ -1,0 +1,56 @@
+{
+  "catalog_version": "URG-RULES-v1.0",
+  "status": "CANDIDATO_PROSPECTIVO",
+  "description": "Regras não probabilísticas de precedência. Não constituem classificação clínica nem estimativa de sobrevivência.",
+  "rules": [
+    {
+      "rule_id": "URG-R01-RISCO-DIRETO",
+      "rule_version": "1.0",
+      "status": "ATIVA",
+      "activation_scope": "TESTE_PROSPECTIVO_CANDIDATO",
+      "precedence": 1,
+      "required_availability": "PRESENTE",
+      "required_operational_significance": "DIRETA_A_VIDA",
+      "result": "REVISAO_IMEDIATA",
+      "requires_authorized_current_evidence": true,
+      "basis_type": "ENCAMINHAMENTO_DE_CLASSIFICACAO_EXPLICITA",
+      "justification": "A regra não infere risco clínico; apenas encaminha como imediata uma evidência que já foi classificada e autorizada como risco direto à vida."
+    },
+    {
+      "rule_id": "URG-R02-VULNERABILIDADE",
+      "rule_version": "1.0",
+      "status": "ATIVA",
+      "activation_scope": "TESTE_PROSPECTIVO_CANDIDATO",
+      "precedence": 2,
+      "required_availability": "PRESENTE",
+      "required_operational_significance": "AUMENTA_VULNERABILIDADE",
+      "result": "REVISAO_PRIORITARIA",
+      "requires_authorized_current_evidence": true,
+      "basis_type": "ENCAMINHAMENTO_DE_CLASSIFICACAO_EXPLICITA",
+      "justification": "A regra não estima sobrevivência; apenas encaminha como prioritária uma evidência já classificada e autorizada como aumento de vulnerabilidade."
+    },
+    {
+      "rule_id": "URG-R03-COBERTURA-MINIMA",
+      "rule_version": "1.0",
+      "status": "ATIVA",
+      "activation_scope": "TESTE_PROSPECTIVO_CANDIDATO",
+      "precedence": 3,
+      "result": "REVISAO_PADRAO",
+      "requires_all_critical_domains_resolved": true,
+      "basis_type": "GUARDA_DE_COMPLETUDE",
+      "justification": "A saída padrão só é admitida quando os domínios críticos foram resolvidos; informação ausente ou contraditória produz abstenção."
+    }
+  ],
+  "critical_domains": [
+    "TEMPO", "CONDICAO_CLINICA", "COGNICAO_ORIENTACAO", "MOBILIDADE",
+    "MEDICACAO", "EXPOSICAO", "COMUNICACAO"
+  ],
+  "guards": {
+    "unknown_never_means_low_urgency": true,
+    "conflict_forces_abstention": true,
+    "duplicate_evidence_does_not_accumulate": true,
+    "expired_evidence_does_not_trigger": true,
+    "urgency_never_changes_loc": true,
+    "ground_truth_prohibited": true
+  }
+}

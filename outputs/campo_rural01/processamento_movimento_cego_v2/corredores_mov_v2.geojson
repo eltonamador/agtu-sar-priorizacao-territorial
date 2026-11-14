@@ -1,0 +1,8269 @@
+{
+  "crs": {
+    "properties": {
+      "name": "EPSG:4326"
+    },
+    "type": "name"
+  },
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600483,
+            0.1894203875
+          ],
+          [
+            -51.1498902508,
+            0.1891505913
+          ],
+          [
+            -51.1498902509,
+            0.1888807952
+          ],
+          [
+            -51.1501600486,
+            0.1886109992
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::E::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP1",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C070",
+        "field_confirmation_required": true,
+        "geometric_length_m": 904.264069,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1220.52556,
+        "path_node_count": 27,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 1,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1552862024,
+            0.188611
+          ],
+          [
+            -51.1550164049,
+            0.188611
+          ],
+          [
+            -51.1547466073,
+            0.188611
+          ],
+          [
+            -51.1544768097,
+            0.1888807961
+          ],
+          [
+            -51.1542070121,
+            0.1891505922
+          ],
+          [
+            -51.1539372145,
+            0.1894203883
+          ],
+          [
+            -51.1536674169,
+            0.1896901843
+          ],
+          [
+            -51.1533976193,
+            0.1896901843
+          ],
+          [
+            -51.1531278217,
+            0.1896901843
+          ],
+          [
+            -51.1528580241,
+            0.1896901842
+          ],
+          [
+            -51.1525882265,
+            0.1896901842
+          ],
+          [
+            -51.1523184289,
+            0.1896901841
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.1894203879
+          ],
+          [
+            -51.1515090363,
+            0.1891505917
+          ],
+          [
+            -51.1512392387,
+            0.1891505917
+          ],
+          [
+            -51.1509694412,
+            0.1891505916
+          ],
+          [
+            -51.1506996436,
+            0.1888807954
+          ],
+          [
+            -51.1504298461,
+            0.1888807954
+          ],
+          [
+            -51.1501600486,
+            0.1886109992
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::E::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP1",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C070",
+        "field_confirmation_required": true,
+        "geometric_length_m": 699.411255,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1889.290588,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 1,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.155556,
+            0.191039165
+          ],
+          [
+            -51.155556,
+            0.1913089611
+          ],
+          [
+            -51.155556,
+            0.1915787572
+          ],
+          [
+            -51.1552862024,
+            0.1918485533
+          ],
+          [
+            -51.1552862024,
+            0.1921183494
+          ],
+          [
+            -51.1552862024,
+            0.1923881455
+          ],
+          [
+            -51.1550164047,
+            0.1926579416
+          ],
+          [
+            -51.1550164047,
+            0.1929277377
+          ],
+          [
+            -51.1550164047,
+            0.1931975338
+          ],
+          [
+            -51.1550164047,
+            0.19346733
+          ],
+          [
+            -51.1552862023,
+            0.1937371261
+          ],
+          [
+            -51.155556,
+            0.1940069222
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::N::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R030C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 692.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1544.826303,
+        "path_node_count": 22,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 14,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.155556,
+            0.191039165
+          ],
+          [
+            -51.155556,
+            0.1913089611
+          ],
+          [
+            -51.155556,
+            0.1915787572
+          ],
+          [
+            -51.1552862024,
+            0.1918485533
+          ],
+          [
+            -51.1552862024,
+            0.1921183494
+          ],
+          [
+            -51.1552862024,
+            0.1923881455
+          ],
+          [
+            -51.1550164047,
+            0.1926579416
+          ],
+          [
+            -51.1550164047,
+            0.1929277377
+          ],
+          [
+            -51.1550164047,
+            0.1931975338
+          ],
+          [
+            -51.1550164047,
+            0.19346733
+          ],
+          [
+            -51.1552862023,
+            0.1937371261
+          ],
+          [
+            -51.155556,
+            0.1940069222
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::N::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R030C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 692.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1544.826303,
+        "path_node_count": 22,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 14,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1520486313,
+            0.1899599802
+          ],
+          [
+            -51.1520486313,
+            0.1902297763
+          ],
+          [
+            -51.1520486312,
+            0.1904995724
+          ],
+          [
+            -51.1520486311,
+            0.1907693685
+          ],
+          [
+            -51.1520486311,
+            0.1910391646
+          ],
+          [
+            -51.152048631,
+            0.1913089607
+          ],
+          [
+            -51.152048631,
+            0.1915787568
+          ],
+          [
+            -51.1520486309,
+            0.191848553
+          ],
+          [
+            -51.1520486309,
+            0.1921183491
+          ],
+          [
+            -51.1520486308,
+            0.1923881452
+          ],
+          [
+            -51.1517788332,
+            0.1923881451
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::NE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R036C064",
+        "field_confirmation_required": true,
+        "geometric_length_m": 896.984848,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1288.601438,
+        "path_node_count": 28,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 6,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.1552862024,
+            0.191039165
+          ],
+          [
+            -51.1552862024,
+            0.1913089611
+          ],
+          [
+            -51.1550164048,
+            0.1915787572
+          ],
+          [
+            -51.1547466071,
+            0.1918485533
+          ],
+          [
+            -51.1544768095,
+            0.1921183494
+          ],
+          [
+            -51.1542070119,
+            0.1921183494
+          ],
+          [
+            -51.1539372142,
+            0.1923881455
+          ],
+          [
+            -51.1536674166,
+            0.1923881454
+          ],
+          [
+            -51.153397619,
+            0.1923881454
+          ],
+          [
+            -51.1531278213,
+            0.1923881454
+          ],
+          [
+            -51.1528580237,
+            0.1923881453
+          ],
+          [
+            -51.1525882261,
+            0.1923881453
+          ],
+          [
+            -51.1523184284,
+            0.1923881452
+          ],
+          [
+            -51.1520486308,
+            0.1923881452
+          ],
+          [
+            -51.1517788332,
+            0.1923881451
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::NE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R036C064",
+        "field_confirmation_required": true,
+        "geometric_length_m": 794.558441,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1639.502862,
+        "path_node_count": 25,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 6,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.188880796
+          ],
+          [
+            -51.1577143806,
+            0.1891505921
+          ],
+          [
+            -51.1577143807,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1587935715,
+            0.191848553
+          ],
+          [
+            -51.1590633691,
+            0.1921183491
+          ],
+          [
+            -51.1593331668,
+            0.1923881451
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::NW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R036C036",
+        "field_confirmation_required": true,
+        "geometric_length_m": 724.264069,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1628.406831,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 24,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1888807961
+          ],
+          [
+            -51.1571747855,
+            0.1891505921
+          ],
+          [
+            -51.1574445831,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1587935715,
+            0.191848553
+          ],
+          [
+            -51.1590633691,
+            0.1921183491
+          ],
+          [
+            -51.1593331668,
+            0.1923881451
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::NW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R036C036",
+        "field_confirmation_required": true,
+        "geometric_length_m": 664.264069,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1754.633385,
+        "path_node_count": 19,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 24,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1558257976,
+            0.1880714078
+          ],
+          [
+            -51.1558257976,
+            0.1878016117
+          ],
+          [
+            -51.1558257976,
+            0.1875318156
+          ],
+          [
+            -51.1558257976,
+            0.1872620195
+          ],
+          [
+            -51.1558257975,
+            0.1869922233
+          ],
+          [
+            -51.1558257975,
+            0.1867224272
+          ],
+          [
+            -51.1558257975,
+            0.1864526311
+          ],
+          [
+            -51.155556,
+            0.186182835
+          ],
+          [
+            -51.155556,
+            0.1859130389
+          ],
+          [
+            -51.155556,
+            0.1856432428
+          ],
+          [
+            -51.155556,
+            0.1853734467
+          ],
+          [
+            -51.155556,
+            0.1851036506
+          ],
+          [
+            -51.155556,
+            0.1848338545
+          ],
+          [
+            -51.155556,
+            0.1845640584
+          ],
+          [
+            -51.155556,
+            0.1842942623
+          ],
+          [
+            -51.155556,
+            0.1840244661
+          ],
+          [
+            -51.155556,
+            0.18375467
+          ],
+          [
+            -51.155556,
+            0.1834848739
+          ],
+          [
+            -51.155556,
+            0.1832150778
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::S::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R070C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 624.852814,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2002.930088,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 11,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1558257976,
+            0.1880714078
+          ],
+          [
+            -51.1558257976,
+            0.1878016117
+          ],
+          [
+            -51.1558257976,
+            0.1875318156
+          ],
+          [
+            -51.1558257976,
+            0.1872620195
+          ],
+          [
+            -51.1558257975,
+            0.1869922233
+          ],
+          [
+            -51.1558257975,
+            0.1867224272
+          ],
+          [
+            -51.1558257975,
+            0.1864526311
+          ],
+          [
+            -51.155556,
+            0.186182835
+          ],
+          [
+            -51.155556,
+            0.1859130389
+          ],
+          [
+            -51.155556,
+            0.1856432428
+          ],
+          [
+            -51.155556,
+            0.1853734467
+          ],
+          [
+            -51.155556,
+            0.1851036506
+          ],
+          [
+            -51.155556,
+            0.1848338545
+          ],
+          [
+            -51.155556,
+            0.1845640584
+          ],
+          [
+            -51.155556,
+            0.1842942623
+          ],
+          [
+            -51.155556,
+            0.1840244661
+          ],
+          [
+            -51.155556,
+            0.18375467
+          ],
+          [
+            -51.155556,
+            0.1834848739
+          ],
+          [
+            -51.155556,
+            0.1832150778
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::S::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R070C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 624.852814,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2032.329536,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 11,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1878016117
+          ],
+          [
+            -51.1547466073,
+            0.1875318155
+          ],
+          [
+            -51.1544768098,
+            0.1875318155
+          ],
+          [
+            -51.1542070122,
+            0.1872620194
+          ],
+          [
+            -51.1539372147,
+            0.1869922233
+          ],
+          [
+            -51.1536674172,
+            0.1867224271
+          ],
+          [
+            -51.1533976197,
+            0.186452631
+          ],
+          [
+            -51.1531278222,
+            0.1861828348
+          ],
+          [
+            -51.1528580247,
+            0.1859130387
+          ],
+          [
+            -51.1525882272,
+            0.1856432425
+          ],
+          [
+            -51.1523184297,
+            0.1853734464
+          ],
+          [
+            -51.1520486323,
+            0.1851036502
+          ],
+          [
+            -51.1517788348,
+            0.1848338541
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::SE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R064C064",
+        "field_confirmation_required": true,
+        "geometric_length_m": 611.543289,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1866.828587,
+        "path_node_count": 16,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 5,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1878016117
+          ],
+          [
+            -51.1547466073,
+            0.1875318155
+          ],
+          [
+            -51.1544768098,
+            0.1872620194
+          ],
+          [
+            -51.1542070123,
+            0.1869922233
+          ],
+          [
+            -51.1539372147,
+            0.1867224272
+          ],
+          [
+            -51.1536674172,
+            0.186452631
+          ],
+          [
+            -51.1533976197,
+            0.1861828349
+          ],
+          [
+            -51.1531278222,
+            0.1861828348
+          ],
+          [
+            -51.1528580247,
+            0.1859130387
+          ],
+          [
+            -51.1525882272,
+            0.1856432425
+          ],
+          [
+            -51.1523184297,
+            0.1853734464
+          ],
+          [
+            -51.1520486323,
+            0.1851036502
+          ],
+          [
+            -51.1517788348,
+            0.1848338541
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::SE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R064C064",
+        "field_confirmation_required": true,
+        "geometric_length_m": 611.543289,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2214.207554,
+        "path_node_count": 16,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 5,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1585237732,
+            0.1883412036
+          ],
+          [
+            -51.1585237732,
+            0.1880714075
+          ],
+          [
+            -51.1587935707,
+            0.1878016114
+          ],
+          [
+            -51.1590633682,
+            0.1875318152
+          ],
+          [
+            -51.1590633682,
+            0.1872620191
+          ],
+          [
+            -51.1590633681,
+            0.186992223
+          ],
+          [
+            -51.159063368,
+            0.1867224269
+          ],
+          [
+            -51.159063368,
+            0.1864526308
+          ],
+          [
+            -51.1590633679,
+            0.1861828347
+          ],
+          [
+            -51.1590633679,
+            0.1859130386
+          ],
+          [
+            -51.1590633678,
+            0.1856432424
+          ],
+          [
+            -51.1593331653,
+            0.1853734463
+          ],
+          [
+            -51.1593331652,
+            0.1851036502
+          ],
+          [
+            -51.1593331652,
+            0.1848338541
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::SW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R064C036",
+        "field_confirmation_required": true,
+        "geometric_length_m": 812.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1714.35778,
+        "path_node_count": 26,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 16,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.1883412039
+          ],
+          [
+            -51.1566351903,
+            0.1883412039
+          ],
+          [
+            -51.1569049878,
+            0.1883412038
+          ],
+          [
+            -51.1571747854,
+            0.1880714077
+          ],
+          [
+            -51.1574445829,
+            0.1878016116
+          ],
+          [
+            -51.1574445829,
+            0.1875318155
+          ],
+          [
+            -51.1577143804,
+            0.1872620193
+          ],
+          [
+            -51.1579841779,
+            0.1869922232
+          ],
+          [
+            -51.1579841779,
+            0.1867224271
+          ],
+          [
+            -51.1582539754,
+            0.1864526309
+          ],
+          [
+            -51.1585237729,
+            0.1861828348
+          ],
+          [
+            -51.1587935704,
+            0.1859130386
+          ],
+          [
+            -51.1590633678,
+            0.1856432424
+          ],
+          [
+            -51.1593331653,
+            0.1853734463
+          ],
+          [
+            -51.1593331652,
+            0.1851036502
+          ],
+          [
+            -51.1593331652,
+            0.1848338541
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::SW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R064C036",
+        "field_confirmation_required": true,
+        "geometric_length_m": 664.264069,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1843.910326,
+        "path_node_count": 19,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 16,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1888807959
+          ],
+          [
+            -51.1587935709,
+            0.1888807958
+          ],
+          [
+            -51.1590633685,
+            0.1888807958
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425587,
+            0.1886109994
+          ],
+          [
+            -51.1604123563,
+            0.1886109993
+          ],
+          [
+            -51.1606821538,
+            0.1886109992
+          ],
+          [
+            -51.1609519514,
+            0.1886109992
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::W::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C030",
+        "field_confirmation_required": true,
+        "geometric_length_m": 649.705627,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 766.467427,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 10,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1587935709,
+            0.1886109997
+          ],
+          [
+            -51.1590633684,
+            0.1886109996
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425587,
+            0.1886109994
+          ],
+          [
+            -51.1604123563,
+            0.1886109993
+          ],
+          [
+            -51.1606821538,
+            0.1886109992
+          ],
+          [
+            -51.1609519514,
+            0.1886109992
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R01::W::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C030",
+        "field_confirmation_required": true,
+        "geometric_length_m": 600.0,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1547.69748,
+        "path_node_count": 21,
+        "sector_id": "RURAL-01::RURAL-01-E0::R01::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 10,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600483,
+            0.1894203875
+          ],
+          [
+            -51.1498902507,
+            0.1894203874
+          ],
+          [
+            -51.1496204531,
+            0.1896901834
+          ],
+          [
+            -51.1493506555,
+            0.1896901833
+          ],
+          [
+            -51.1490808579,
+            0.1896901832
+          ],
+          [
+            -51.1488110603,
+            0.1896901831
+          ],
+          [
+            -51.1485412627,
+            0.189690183
+          ],
+          [
+            -51.1482714651,
+            0.1896901829
+          ],
+          [
+            -51.1480016677,
+            0.1894203867
+          ],
+          [
+            -51.1477318702,
+            0.1891505905
+          ],
+          [
+            -51.1474620726,
+            0.1891505903
+          ],
+          [
+            -51.147192275,
+            0.1891505902
+          ],
+          [
+            -51.1469224775,
+            0.1891505901
+          ],
+          [
+            -51.1466526799,
+            0.1891505899
+          ],
+          [
+            -51.1463828824,
+            0.1888807937
+          ],
+          [
+            -51.146113085,
+            0.1886109974
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::E::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C085",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1301.543289,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1973.207702,
+        "path_node_count": 39,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 4,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1552862024,
+            0.188611
+          ],
+          [
+            -51.1550164049,
+            0.188611
+          ],
+          [
+            -51.1547466073,
+            0.188611
+          ],
+          [
+            -51.1544768097,
+            0.1888807961
+          ],
+          [
+            -51.1542070121,
+            0.1891505922
+          ],
+          [
+            -51.1539372145,
+            0.1894203883
+          ],
+          [
+            -51.1536674169,
+            0.1896901843
+          ],
+          [
+            -51.1533976193,
+            0.1896901843
+          ],
+          [
+            -51.1531278217,
+            0.1896901843
+          ],
+          [
+            -51.1528580241,
+            0.1896901842
+          ],
+          [
+            -51.1525882265,
+            0.1896901842
+          ],
+          [
+            -51.1523184289,
+            0.1896901841
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600482,
+            0.1896901836
+          ],
+          [
+            -51.1498902507,
+            0.1896901835
+          ],
+          [
+            -51.1496204531,
+            0.1896901834
+          ],
+          [
+            -51.1493506555,
+            0.1896901833
+          ],
+          [
+            -51.1490808579,
+            0.1896901832
+          ],
+          [
+            -51.1488110603,
+            0.1896901831
+          ],
+          [
+            -51.1485412627,
+            0.189690183
+          ],
+          [
+            -51.1482714651,
+            0.1896901829
+          ],
+          [
+            -51.1480016677,
+            0.1894203867
+          ],
+          [
+            -51.1477318702,
+            0.1891505905
+          ],
+          [
+            -51.1474620726,
+            0.1891505903
+          ],
+          [
+            -51.147192275,
+            0.1891505902
+          ],
+          [
+            -51.1469224775,
+            0.1891505901
+          ],
+          [
+            -51.1466526799,
+            0.1891505899
+          ],
+          [
+            -51.1463828824,
+            0.1888807937
+          ],
+          [
+            -51.146113085,
+            0.1886109974
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::E::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C085",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1149.411255,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2632.385292,
+        "path_node_count": 36,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 4,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.1552862024,
+            0.191039165
+          ],
+          [
+            -51.1552862024,
+            0.1913089611
+          ],
+          [
+            -51.1552862024,
+            0.1915787572
+          ],
+          [
+            -51.1550164048,
+            0.1918485533
+          ],
+          [
+            -51.1547466071,
+            0.1921183494
+          ],
+          [
+            -51.1544768095,
+            0.1923881455
+          ],
+          [
+            -51.1542070118,
+            0.1926579416
+          ],
+          [
+            -51.1542070118,
+            0.1929277377
+          ],
+          [
+            -51.1542070118,
+            0.1931975338
+          ],
+          [
+            -51.1542070118,
+            0.1934673299
+          ],
+          [
+            -51.1542070117,
+            0.193737126
+          ],
+          [
+            -51.1542070117,
+            0.1940069221
+          ],
+          [
+            -51.1544768094,
+            0.1942767183
+          ],
+          [
+            -51.1544768093,
+            0.1945465144
+          ],
+          [
+            -51.1544768093,
+            0.1948163105
+          ],
+          [
+            -51.154746607,
+            0.1950861066
+          ],
+          [
+            -51.154746607,
+            0.1953559027
+          ],
+          [
+            -51.1550164046,
+            0.1956256988
+          ],
+          [
+            -51.1552862023,
+            0.1958954949
+          ],
+          [
+            -51.155556,
+            0.1961652911
+          ],
+          [
+            -51.155556,
+            0.1964350872
+          ],
+          [
+            -51.155556,
+            0.1967048833
+          ],
+          [
+            -51.155556,
+            0.1969746794
+          ],
+          [
+            -51.155556,
+            0.1972444755
+          ],
+          [
+            -51.155556,
+            0.1975142716
+          ],
+          [
+            -51.155556,
+            0.1977840677
+          ],
+          [
+            -51.155556,
+            0.1980538638
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::N::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R015C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1216.690476,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2883.932104,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 17,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.1552862024,
+            0.191039165
+          ],
+          [
+            -51.1552862024,
+            0.1913089611
+          ],
+          [
+            -51.1552862024,
+            0.1915787572
+          ],
+          [
+            -51.1550164048,
+            0.1918485533
+          ],
+          [
+            -51.1547466071,
+            0.1921183494
+          ],
+          [
+            -51.1544768095,
+            0.1923881455
+          ],
+          [
+            -51.1542070118,
+            0.1926579416
+          ],
+          [
+            -51.1542070118,
+            0.1929277377
+          ],
+          [
+            -51.1542070118,
+            0.1931975338
+          ],
+          [
+            -51.1542070118,
+            0.1934673299
+          ],
+          [
+            -51.1542070117,
+            0.193737126
+          ],
+          [
+            -51.1542070117,
+            0.1940069221
+          ],
+          [
+            -51.1544768094,
+            0.1942767183
+          ],
+          [
+            -51.1544768093,
+            0.1945465144
+          ],
+          [
+            -51.1544768093,
+            0.1948163105
+          ],
+          [
+            -51.154746607,
+            0.1950861066
+          ],
+          [
+            -51.154746607,
+            0.1953559027
+          ],
+          [
+            -51.1550164046,
+            0.1956256988
+          ],
+          [
+            -51.1552862023,
+            0.1958954949
+          ],
+          [
+            -51.155556,
+            0.1961652911
+          ],
+          [
+            -51.155556,
+            0.1964350872
+          ],
+          [
+            -51.155556,
+            0.1967048833
+          ],
+          [
+            -51.155556,
+            0.1969746794
+          ],
+          [
+            -51.155556,
+            0.1972444755
+          ],
+          [
+            -51.155556,
+            0.1975142716
+          ],
+          [
+            -51.155556,
+            0.1977840677
+          ],
+          [
+            -51.155556,
+            0.1980538638
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::N::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R015C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1216.690476,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2883.932104,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 17,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1899599798
+          ],
+          [
+            -51.1501600481,
+            0.1902297758
+          ],
+          [
+            -51.1498902504,
+            0.1904995718
+          ],
+          [
+            -51.1496204527,
+            0.1907693679
+          ],
+          [
+            -51.149350655,
+            0.1910391639
+          ],
+          [
+            -51.1490808573,
+            0.1913089599
+          ],
+          [
+            -51.1490808572,
+            0.191578756
+          ],
+          [
+            -51.1488110595,
+            0.191848552
+          ],
+          [
+            -51.1488110594,
+            0.1921183481
+          ],
+          [
+            -51.1488110593,
+            0.1923881442
+          ],
+          [
+            -51.1488110591,
+            0.1926579403
+          ],
+          [
+            -51.148811059,
+            0.1929277364
+          ],
+          [
+            -51.1488110589,
+            0.1931975325
+          ],
+          [
+            -51.1488110588,
+            0.1934673286
+          ],
+          [
+            -51.1488110587,
+            0.1937371248
+          ],
+          [
+            -51.1488110586,
+            0.1940069209
+          ],
+          [
+            -51.1488110585,
+            0.194276717
+          ],
+          [
+            -51.1488110584,
+            0.1945465131
+          ],
+          [
+            -51.1488110583,
+            0.1948163092
+          ],
+          [
+            -51.1488110582,
+            0.1950861053
+          ],
+          [
+            -51.1488110581,
+            0.1953559014
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::NE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R025C075",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1433.969696,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2329.054957,
+        "path_node_count": 43,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 8,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.1552862024,
+            0.191039165
+          ],
+          [
+            -51.1552862024,
+            0.1913089611
+          ],
+          [
+            -51.1552862024,
+            0.1915787572
+          ],
+          [
+            -51.1550164048,
+            0.1918485533
+          ],
+          [
+            -51.1547466071,
+            0.1921183494
+          ],
+          [
+            -51.1544768095,
+            0.1923881455
+          ],
+          [
+            -51.1542070118,
+            0.1926579416
+          ],
+          [
+            -51.1542070118,
+            0.1929277377
+          ],
+          [
+            -51.1539372141,
+            0.1931975338
+          ],
+          [
+            -51.1536674165,
+            0.1934673299
+          ],
+          [
+            -51.1533976188,
+            0.1937371259
+          ],
+          [
+            -51.1531278211,
+            0.194006922
+          ],
+          [
+            -51.1528580234,
+            0.1942767181
+          ],
+          [
+            -51.1525882257,
+            0.194276718
+          ],
+          [
+            -51.1523184281,
+            0.194276718
+          ],
+          [
+            -51.152318428,
+            0.1945465141
+          ],
+          [
+            -51.1520486303,
+            0.1948163102
+          ],
+          [
+            -51.1517788326,
+            0.1950861062
+          ],
+          [
+            -51.1515090349,
+            0.1950861061
+          ],
+          [
+            -51.1512392372,
+            0.1953559022
+          ],
+          [
+            -51.1509694395,
+            0.1953559021
+          ],
+          [
+            -51.1506996418,
+            0.195355902
+          ],
+          [
+            -51.1504298441,
+            0.195355902
+          ],
+          [
+            -51.1501600465,
+            0.1953559019
+          ],
+          [
+            -51.1498902488,
+            0.1953559018
+          ],
+          [
+            -51.1496204511,
+            0.1953559017
+          ],
+          [
+            -51.1493506534,
+            0.1953559016
+          ],
+          [
+            -51.1490808558,
+            0.1953559015
+          ],
+          [
+            -51.1488110581,
+            0.1953559014
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::NE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R025C075",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1313.969696,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2747.7012,
+        "path_node_count": 39,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 8,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.188880796
+          ],
+          [
+            -51.1577143806,
+            0.1891505921
+          ],
+          [
+            -51.1577143807,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1590633691,
+            0.191848553
+          ],
+          [
+            -51.1593331668,
+            0.192118349
+          ],
+          [
+            -51.1596029644,
+            0.1923881451
+          ],
+          [
+            -51.1598727621,
+            0.1926579411
+          ],
+          [
+            -51.1601425599,
+            0.1929277371
+          ],
+          [
+            -51.1601425599,
+            0.1931975332
+          ],
+          [
+            -51.1604123576,
+            0.1931975332
+          ],
+          [
+            -51.1606821553,
+            0.1934673292
+          ],
+          [
+            -51.160951953,
+            0.1937371252
+          ],
+          [
+            -51.1612217507,
+            0.1937371251
+          ],
+          [
+            -51.1614915484,
+            0.1940069212
+          ],
+          [
+            -51.1617613462,
+            0.1942767172
+          ],
+          [
+            -51.1617613463,
+            0.1945465133
+          ],
+          [
+            -51.162031144,
+            0.1948163093
+          ],
+          [
+            -51.1623009418,
+            0.1950861053
+          ],
+          [
+            -51.1623009419,
+            0.1953559014
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::NW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R025C025",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1226.101731,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3343.402681,
+        "path_node_count": 34,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 19,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1888807961
+          ],
+          [
+            -51.1571747855,
+            0.1891505921
+          ],
+          [
+            -51.1574445831,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1590633691,
+            0.191848553
+          ],
+          [
+            -51.1593331668,
+            0.192118349
+          ],
+          [
+            -51.1596029644,
+            0.1923881451
+          ],
+          [
+            -51.1598727621,
+            0.1926579411
+          ],
+          [
+            -51.1601425599,
+            0.1929277371
+          ],
+          [
+            -51.1601425599,
+            0.1931975332
+          ],
+          [
+            -51.1604123576,
+            0.1931975332
+          ],
+          [
+            -51.1606821553,
+            0.1934673292
+          ],
+          [
+            -51.160951953,
+            0.1937371252
+          ],
+          [
+            -51.1612217507,
+            0.1937371251
+          ],
+          [
+            -51.1614915484,
+            0.1940069212
+          ],
+          [
+            -51.1617613462,
+            0.1942767172
+          ],
+          [
+            -51.1617613463,
+            0.1945465133
+          ],
+          [
+            -51.162031144,
+            0.1948163093
+          ],
+          [
+            -51.1623009418,
+            0.1950861053
+          ],
+          [
+            -51.1623009419,
+            0.1953559014
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::NW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R025C025",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1166.101731,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3469.629235,
+        "path_node_count": 32,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 19,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1880714078
+          ],
+          [
+            -51.1560955951,
+            0.1878016117
+          ],
+          [
+            -51.1560955951,
+            0.1875318156
+          ],
+          [
+            -51.1560955951,
+            0.1872620194
+          ],
+          [
+            -51.1560955951,
+            0.1869922233
+          ],
+          [
+            -51.1563653926,
+            0.1867224272
+          ],
+          [
+            -51.1563653926,
+            0.1864526311
+          ],
+          [
+            -51.1563653926,
+            0.186182835
+          ],
+          [
+            -51.1563653926,
+            0.1859130389
+          ],
+          [
+            -51.1563653926,
+            0.1856432428
+          ],
+          [
+            -51.1563653926,
+            0.1853734467
+          ],
+          [
+            -51.1563653926,
+            0.1851036506
+          ],
+          [
+            -51.1563653925,
+            0.1848338545
+          ],
+          [
+            -51.1563653925,
+            0.1845640583
+          ],
+          [
+            -51.1563653925,
+            0.1842942622
+          ],
+          [
+            -51.1563653925,
+            0.1840244661
+          ],
+          [
+            -51.1563653925,
+            0.18375467
+          ],
+          [
+            -51.1563653925,
+            0.1834848739
+          ],
+          [
+            -51.1563653925,
+            0.1832150778
+          ],
+          [
+            -51.1563653925,
+            0.1829452817
+          ],
+          [
+            -51.1563653924,
+            0.1826754856
+          ],
+          [
+            -51.1563653924,
+            0.1824056895
+          ],
+          [
+            -51.1563653924,
+            0.1821358934
+          ],
+          [
+            -51.1563653924,
+            0.1818660973
+          ],
+          [
+            -51.1563653924,
+            0.1815963011
+          ],
+          [
+            -51.1563653924,
+            0.181326505
+          ],
+          [
+            -51.1563653924,
+            0.1810567089
+          ],
+          [
+            -51.1563653924,
+            0.1807869128
+          ],
+          [
+            -51.1563653923,
+            0.1805171167
+          ],
+          [
+            -51.1560955949,
+            0.1802473206
+          ],
+          [
+            -51.1558257974,
+            0.1799775245
+          ],
+          [
+            -51.155556,
+            0.1797077284
+          ],
+          [
+            -51.155556,
+            0.1794379323
+          ],
+          [
+            -51.155556,
+            0.1791681362
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::S::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R085C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1142.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3377.567772,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 9,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1880714078
+          ],
+          [
+            -51.1560955951,
+            0.1878016117
+          ],
+          [
+            -51.1560955951,
+            0.1875318156
+          ],
+          [
+            -51.1560955951,
+            0.1872620194
+          ],
+          [
+            -51.1560955951,
+            0.1869922233
+          ],
+          [
+            -51.1563653926,
+            0.1867224272
+          ],
+          [
+            -51.1563653926,
+            0.1864526311
+          ],
+          [
+            -51.1563653926,
+            0.186182835
+          ],
+          [
+            -51.1563653926,
+            0.1859130389
+          ],
+          [
+            -51.1563653926,
+            0.1856432428
+          ],
+          [
+            -51.1563653926,
+            0.1853734467
+          ],
+          [
+            -51.1563653926,
+            0.1851036506
+          ],
+          [
+            -51.1563653925,
+            0.1848338545
+          ],
+          [
+            -51.1563653925,
+            0.1845640583
+          ],
+          [
+            -51.1563653925,
+            0.1842942622
+          ],
+          [
+            -51.1563653925,
+            0.1840244661
+          ],
+          [
+            -51.1563653925,
+            0.18375467
+          ],
+          [
+            -51.1563653925,
+            0.1834848739
+          ],
+          [
+            -51.1563653925,
+            0.1832150778
+          ],
+          [
+            -51.1563653925,
+            0.1829452817
+          ],
+          [
+            -51.1563653924,
+            0.1826754856
+          ],
+          [
+            -51.1563653924,
+            0.1824056895
+          ],
+          [
+            -51.1563653924,
+            0.1821358934
+          ],
+          [
+            -51.1563653924,
+            0.1818660973
+          ],
+          [
+            -51.1563653924,
+            0.1815963011
+          ],
+          [
+            -51.1563653924,
+            0.181326505
+          ],
+          [
+            -51.1563653924,
+            0.1810567089
+          ],
+          [
+            -51.1563653924,
+            0.1807869128
+          ],
+          [
+            -51.1563653923,
+            0.1805171167
+          ],
+          [
+            -51.1560955949,
+            0.1802473206
+          ],
+          [
+            -51.1558257974,
+            0.1799775245
+          ],
+          [
+            -51.155556,
+            0.1797077284
+          ],
+          [
+            -51.155556,
+            0.1794379323
+          ],
+          [
+            -51.155556,
+            0.1791681362
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::S::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R085C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1142.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3432.649962,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 9,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1525882268,
+            0.1883412036
+          ],
+          [
+            -51.1523184292,
+            0.1880714075
+          ],
+          [
+            -51.1520486317,
+            0.1878016113
+          ],
+          [
+            -51.1517788342,
+            0.1875318152
+          ],
+          [
+            -51.1515090367,
+            0.187262019
+          ],
+          [
+            -51.1512392393,
+            0.1869922228
+          ],
+          [
+            -51.1509694418,
+            0.1867224266
+          ],
+          [
+            -51.1506996443,
+            0.1864526305
+          ],
+          [
+            -51.1504298469,
+            0.1861828343
+          ],
+          [
+            -51.1504298469,
+            0.1859130382
+          ],
+          [
+            -51.150429847,
+            0.185643242
+          ],
+          [
+            -51.1504298471,
+            0.1853734459
+          ],
+          [
+            -51.1504298472,
+            0.1851036498
+          ],
+          [
+            -51.1504298473,
+            0.1848338537
+          ],
+          [
+            -51.1501600498,
+            0.1845640575
+          ],
+          [
+            -51.1498902524,
+            0.1842942613
+          ],
+          [
+            -51.1498902525,
+            0.1840244652
+          ],
+          [
+            -51.1498902526,
+            0.1837546691
+          ],
+          [
+            -51.1498902527,
+            0.183484873
+          ],
+          [
+            -51.1498902527,
+            0.1832150769
+          ],
+          [
+            -51.1498902528,
+            0.1829452808
+          ],
+          [
+            -51.1496204554,
+            0.1826754846
+          ],
+          [
+            -51.1493506581,
+            0.1824056884
+          ],
+          [
+            -51.1490808607,
+            0.1821358922
+          ],
+          [
+            -51.1488110633,
+            0.181866096
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::SE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R075C075",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1303.675324,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2689.606676,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 7,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1883412039
+          ],
+          [
+            -51.1550164049,
+            0.1883412039
+          ],
+          [
+            -51.1547466073,
+            0.1883412039
+          ],
+          [
+            -51.1544768097,
+            0.1883412039
+          ],
+          [
+            -51.1542070122,
+            0.1883412038
+          ],
+          [
+            -51.1539372146,
+            0.1883412038
+          ],
+          [
+            -51.153667417,
+            0.1883412038
+          ],
+          [
+            -51.1533976195,
+            0.1883412038
+          ],
+          [
+            -51.1531278219,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1525882268,
+            0.1883412036
+          ],
+          [
+            -51.1523184292,
+            0.1880714075
+          ],
+          [
+            -51.1520486317,
+            0.1878016113
+          ],
+          [
+            -51.1517788342,
+            0.1875318152
+          ],
+          [
+            -51.1515090367,
+            0.187262019
+          ],
+          [
+            -51.1512392393,
+            0.1869922228
+          ],
+          [
+            -51.1509694418,
+            0.1867224266
+          ],
+          [
+            -51.1506996443,
+            0.1864526305
+          ],
+          [
+            -51.1504298469,
+            0.1861828343
+          ],
+          [
+            -51.1504298469,
+            0.1859130382
+          ],
+          [
+            -51.150429847,
+            0.185643242
+          ],
+          [
+            -51.1504298471,
+            0.1853734459
+          ],
+          [
+            -51.1504298472,
+            0.1851036498
+          ],
+          [
+            -51.1504298473,
+            0.1848338537
+          ],
+          [
+            -51.1501600498,
+            0.1845640575
+          ],
+          [
+            -51.1498902524,
+            0.1842942613
+          ],
+          [
+            -51.1498902525,
+            0.1840244652
+          ],
+          [
+            -51.1498902526,
+            0.1837546691
+          ],
+          [
+            -51.1498902527,
+            0.183484873
+          ],
+          [
+            -51.1498902527,
+            0.1832150769
+          ],
+          [
+            -51.1498902528,
+            0.1829452808
+          ],
+          [
+            -51.1496204554,
+            0.1826754846
+          ],
+          [
+            -51.1493506581,
+            0.1824056884
+          ],
+          [
+            -51.1490808607,
+            0.1821358922
+          ],
+          [
+            -51.1488110633,
+            0.181866096
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::SE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R075C075",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1253.969696,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3173.468103,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 7,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1585237732,
+            0.1883412036
+          ],
+          [
+            -51.1587935708,
+            0.1880714075
+          ],
+          [
+            -51.1590633683,
+            0.1878016113
+          ],
+          [
+            -51.1593331658,
+            0.1875318152
+          ],
+          [
+            -51.1596029633,
+            0.187262019
+          ],
+          [
+            -51.1598727607,
+            0.1869922228
+          ],
+          [
+            -51.1601425582,
+            0.1867224266
+          ],
+          [
+            -51.1604123557,
+            0.1864526305
+          ],
+          [
+            -51.1604123556,
+            0.1861828343
+          ],
+          [
+            -51.1604123555,
+            0.1859130382
+          ],
+          [
+            -51.1604123555,
+            0.1856432421
+          ],
+          [
+            -51.1604123554,
+            0.185373446
+          ],
+          [
+            -51.1606821528,
+            0.1851036498
+          ],
+          [
+            -51.1609519503,
+            0.1848338536
+          ],
+          [
+            -51.1609519502,
+            0.1845640575
+          ],
+          [
+            -51.1612217476,
+            0.1842942613
+          ],
+          [
+            -51.161491545,
+            0.1840244651
+          ],
+          [
+            -51.1614915449,
+            0.183754669
+          ],
+          [
+            -51.1614915448,
+            0.1834848729
+          ],
+          [
+            -51.1614915447,
+            0.1832150768
+          ],
+          [
+            -51.1614915446,
+            0.1829452807
+          ],
+          [
+            -51.1614915446,
+            0.1826754846
+          ],
+          [
+            -51.1617613419,
+            0.1824056884
+          ],
+          [
+            -51.1620311393,
+            0.1821358922
+          ],
+          [
+            -51.1623009367,
+            0.181866096
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::SW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R075C025",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1278.82251,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3153.51297,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 21,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.1883412039
+          ],
+          [
+            -51.1566351903,
+            0.1883412039
+          ],
+          [
+            -51.1569049878,
+            0.1883412038
+          ],
+          [
+            -51.1571747854,
+            0.1883412038
+          ],
+          [
+            -51.157444583,
+            0.1883412038
+          ],
+          [
+            -51.1577143805,
+            0.1883412038
+          ],
+          [
+            -51.1579841781,
+            0.1880714076
+          ],
+          [
+            -51.1582539756,
+            0.1878016115
+          ],
+          [
+            -51.1585237731,
+            0.1875318153
+          ],
+          [
+            -51.1587935706,
+            0.1872620192
+          ],
+          [
+            -51.1587935706,
+            0.186992223
+          ],
+          [
+            -51.159063368,
+            0.1867224269
+          ],
+          [
+            -51.159063368,
+            0.1864526308
+          ],
+          [
+            -51.1593331655,
+            0.1861828346
+          ],
+          [
+            -51.1596029629,
+            0.1859130384
+          ],
+          [
+            -51.1598727604,
+            0.1856432423
+          ],
+          [
+            -51.1601425579,
+            0.1853734461
+          ],
+          [
+            -51.1604123553,
+            0.1851036499
+          ],
+          [
+            -51.1606821527,
+            0.1848338537
+          ],
+          [
+            -51.1609519502,
+            0.1845640575
+          ],
+          [
+            -51.1612217476,
+            0.1842942613
+          ],
+          [
+            -51.161491545,
+            0.1840244651
+          ],
+          [
+            -51.1614915449,
+            0.183754669
+          ],
+          [
+            -51.1614915448,
+            0.1834848729
+          ],
+          [
+            -51.1614915447,
+            0.1832150768
+          ],
+          [
+            -51.1614915446,
+            0.1829452807
+          ],
+          [
+            -51.1614915446,
+            0.1826754846
+          ],
+          [
+            -51.1617613419,
+            0.1824056884
+          ],
+          [
+            -51.1620311393,
+            0.1821358922
+          ],
+          [
+            -51.1623009367,
+            0.181866096
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::SW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R075C025",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1183.675324,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3325.801109,
+        "path_node_count": 33,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 21,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1888807959
+          ],
+          [
+            -51.1587935709,
+            0.1888807958
+          ],
+          [
+            -51.1590633685,
+            0.1888807958
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425587,
+            0.1886109994
+          ],
+          [
+            -51.1604123563,
+            0.1886109993
+          ],
+          [
+            -51.1606821538,
+            0.1886109992
+          ],
+          [
+            -51.1609519514,
+            0.1886109992
+          ],
+          [
+            -51.161221749,
+            0.1886109991
+          ],
+          [
+            -51.1614915466,
+            0.188610999
+          ],
+          [
+            -51.1617613441,
+            0.1886109989
+          ],
+          [
+            -51.1620311417,
+            0.1886109988
+          ],
+          [
+            -51.1623009393,
+            0.1886109987
+          ],
+          [
+            -51.1625707368,
+            0.1886109986
+          ],
+          [
+            -51.1628405344,
+            0.1886109985
+          ],
+          [
+            -51.163110332,
+            0.1886109984
+          ],
+          [
+            -51.1633801296,
+            0.1886109982
+          ],
+          [
+            -51.163649927,
+            0.188341202
+          ],
+          [
+            -51.1639197244,
+            0.1880714058
+          ],
+          [
+            -51.1641895219,
+            0.1878016095
+          ],
+          [
+            -51.1644593194,
+            0.1878016094
+          ],
+          [
+            -51.1647291171,
+            0.1880714054
+          ],
+          [
+            -51.1649989148,
+            0.1883412013
+          ],
+          [
+            -51.164998915,
+            0.1886109974
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::W::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C015",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1191.837662,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 1523.364671,
+        "path_node_count": 37,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 15,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1587935709,
+            0.1886109997
+          ],
+          [
+            -51.1590633684,
+            0.1886109996
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425587,
+            0.1886109994
+          ],
+          [
+            -51.1604123563,
+            0.1886109993
+          ],
+          [
+            -51.1606821538,
+            0.1886109992
+          ],
+          [
+            -51.1609519514,
+            0.1886109992
+          ],
+          [
+            -51.161221749,
+            0.1886109991
+          ],
+          [
+            -51.1614915466,
+            0.188610999
+          ],
+          [
+            -51.1617613441,
+            0.1886109989
+          ],
+          [
+            -51.1620311417,
+            0.1886109988
+          ],
+          [
+            -51.1623009393,
+            0.1886109987
+          ],
+          [
+            -51.1625707368,
+            0.1886109986
+          ],
+          [
+            -51.1628405344,
+            0.1886109985
+          ],
+          [
+            -51.163110332,
+            0.1886109984
+          ],
+          [
+            -51.1633801296,
+            0.1886109982
+          ],
+          [
+            -51.1636499271,
+            0.1886109981
+          ],
+          [
+            -51.1639197247,
+            0.188610998
+          ],
+          [
+            -51.1641895223,
+            0.1886109979
+          ],
+          [
+            -51.1644593198,
+            0.1886109977
+          ],
+          [
+            -51.1647291174,
+            0.1886109976
+          ],
+          [
+            -51.164998915,
+            0.1886109974
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R02::W::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C015",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1050.0,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3080.86816,
+        "path_node_count": 36,
+        "sector_id": "RURAL-01::RURAL-01-E0::R02::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 15,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600483,
+            0.1894203875
+          ],
+          [
+            -51.1498902507,
+            0.1894203874
+          ],
+          [
+            -51.1496204533,
+            0.1891505912
+          ],
+          [
+            -51.1493506558,
+            0.188880795
+          ],
+          [
+            -51.1490808583,
+            0.1886109988
+          ],
+          [
+            -51.1488110608,
+            0.1883412026
+          ],
+          [
+            -51.1488110609,
+            0.1880714065
+          ],
+          [
+            -51.1485412635,
+            0.1878016103
+          ],
+          [
+            -51.1485412636,
+            0.1875318142
+          ],
+          [
+            -51.1482714661,
+            0.1872620179
+          ],
+          [
+            -51.1480016686,
+            0.1872620178
+          ],
+          [
+            -51.1477318712,
+            0.1869922216
+          ],
+          [
+            -51.1474620737,
+            0.1867224254
+          ],
+          [
+            -51.1471922762,
+            0.1867224252
+          ],
+          [
+            -51.1469224788,
+            0.186452629
+          ],
+          [
+            -51.1466526814,
+            0.1861828328
+          ],
+          [
+            -51.1463828839,
+            0.1861828326
+          ],
+          [
+            -51.1461130863,
+            0.1861828325
+          ],
+          [
+            -51.1458432889,
+            0.1859130362
+          ],
+          [
+            -51.1455734916,
+            0.18564324
+          ],
+          [
+            -51.145303694,
+            0.1856432398
+          ],
+          [
+            -51.1450338965,
+            0.1856432396
+          ],
+          [
+            -51.144764099,
+            0.1856432395
+          ],
+          [
+            -51.1444943015,
+            0.1856432393
+          ],
+          [
+            -51.1442245039,
+            0.1856432391
+          ],
+          [
+            -51.1439547064,
+            0.185643239
+          ],
+          [
+            -51.1436849087,
+            0.1859130349
+          ],
+          [
+            -51.143415111,
+            0.1861828308
+          ],
+          [
+            -51.1431453133,
+            0.1864526267
+          ],
+          [
+            -51.1431453131,
+            0.1867224228
+          ],
+          [
+            -51.1428755153,
+            0.1869922187
+          ],
+          [
+            -51.1431453127,
+            0.187262015
+          ],
+          [
+            -51.1431453125,
+            0.1875318111
+          ],
+          [
+            -51.1431453123,
+            0.1878016073
+          ],
+          [
+            -51.1431453121,
+            0.1880714034
+          ],
+          [
+            -51.1431453119,
+            0.1883411995
+          ],
+          [
+            -51.1431453117,
+            0.1886109956
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::E::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP3",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C096",
+        "field_confirmation_required": true,
+        "geometric_length_m": 2080.660172,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2311.706537,
+        "path_node_count": 60,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 3,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1552862024,
+            0.188611
+          ],
+          [
+            -51.1550164049,
+            0.188611
+          ],
+          [
+            -51.1547466073,
+            0.188611
+          ],
+          [
+            -51.1544768097,
+            0.1888807961
+          ],
+          [
+            -51.1542070121,
+            0.1891505922
+          ],
+          [
+            -51.1539372145,
+            0.1894203883
+          ],
+          [
+            -51.1536674169,
+            0.1896901843
+          ],
+          [
+            -51.1533976193,
+            0.1896901843
+          ],
+          [
+            -51.1531278217,
+            0.1896901843
+          ],
+          [
+            -51.1528580241,
+            0.1896901842
+          ],
+          [
+            -51.1525882265,
+            0.1896901842
+          ],
+          [
+            -51.1523184289,
+            0.1896901841
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600482,
+            0.1896901836
+          ],
+          [
+            -51.1498902507,
+            0.1896901835
+          ],
+          [
+            -51.1496204531,
+            0.1896901834
+          ],
+          [
+            -51.1493506555,
+            0.1896901833
+          ],
+          [
+            -51.1490808579,
+            0.1896901832
+          ],
+          [
+            -51.1488110603,
+            0.1896901831
+          ],
+          [
+            -51.1485412627,
+            0.189690183
+          ],
+          [
+            -51.1482714652,
+            0.1894203868
+          ],
+          [
+            -51.1480016678,
+            0.1891505906
+          ],
+          [
+            -51.1477318703,
+            0.1888807943
+          ],
+          [
+            -51.1477318704,
+            0.1886109982
+          ],
+          [
+            -51.1477318706,
+            0.1883412021
+          ],
+          [
+            -51.1474620731,
+            0.1880714059
+          ],
+          [
+            -51.1471922757,
+            0.1878016097
+          ],
+          [
+            -51.1469224783,
+            0.1875318134
+          ],
+          [
+            -51.1466526808,
+            0.1872620172
+          ],
+          [
+            -51.1463828833,
+            0.187262017
+          ],
+          [
+            -51.1461130857,
+            0.1872620169
+          ],
+          [
+            -51.1458432882,
+            0.1872620168
+          ],
+          [
+            -51.1455734906,
+            0.1872620166
+          ],
+          [
+            -51.1453036929,
+            0.1875318125
+          ],
+          [
+            -51.1450338952,
+            0.1878016085
+          ],
+          [
+            -51.1447640975,
+            0.1880714044
+          ],
+          [
+            -51.1444942999,
+            0.1880714043
+          ],
+          [
+            -51.1442245024,
+            0.1880714041
+          ],
+          [
+            -51.1439547048,
+            0.1880714039
+          ],
+          [
+            -51.1436849072,
+            0.1880714037
+          ],
+          [
+            -51.1434151095,
+            0.1883411997
+          ],
+          [
+            -51.1431453117,
+            0.1886109956
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::E::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP3",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C096",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1638.82251,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3278.208125,
+        "path_node_count": 49,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::E",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 3,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.155556,
+            0.191039165
+          ],
+          [
+            -51.155556,
+            0.1913089611
+          ],
+          [
+            -51.155556,
+            0.1915787572
+          ],
+          [
+            -51.1552862024,
+            0.1918485533
+          ],
+          [
+            -51.1552862024,
+            0.1921183494
+          ],
+          [
+            -51.1552862024,
+            0.1923881455
+          ],
+          [
+            -51.1550164047,
+            0.1926579416
+          ],
+          [
+            -51.1550164047,
+            0.1929277377
+          ],
+          [
+            -51.1550164047,
+            0.1931975338
+          ],
+          [
+            -51.1550164047,
+            0.19346733
+          ],
+          [
+            -51.1552862023,
+            0.1937371261
+          ],
+          [
+            -51.155556,
+            0.1940069222
+          ],
+          [
+            -51.1558257977,
+            0.1942767183
+          ],
+          [
+            -51.1560955953,
+            0.1945465144
+          ],
+          [
+            -51.156365393,
+            0.1948163105
+          ],
+          [
+            -51.156365393,
+            0.1950861066
+          ],
+          [
+            -51.156365393,
+            0.1953559027
+          ],
+          [
+            -51.156365393,
+            0.1956256988
+          ],
+          [
+            -51.1563653931,
+            0.1958954949
+          ],
+          [
+            -51.1563653931,
+            0.196165291
+          ],
+          [
+            -51.1563653931,
+            0.1964350871
+          ],
+          [
+            -51.1563653931,
+            0.1967048833
+          ],
+          [
+            -51.1563653931,
+            0.1969746794
+          ],
+          [
+            -51.1563653931,
+            0.1972444755
+          ],
+          [
+            -51.1563653931,
+            0.1975142716
+          ],
+          [
+            -51.1566351909,
+            0.1977840677
+          ],
+          [
+            -51.1566351909,
+            0.1980538638
+          ],
+          [
+            -51.1566351909,
+            0.1983236599
+          ],
+          [
+            -51.1563653932,
+            0.198593456
+          ],
+          [
+            -51.1563653932,
+            0.1988632521
+          ],
+          [
+            -51.1563653932,
+            0.1991330482
+          ],
+          [
+            -51.1563653932,
+            0.1994028443
+          ],
+          [
+            -51.1563653932,
+            0.1996726405
+          ],
+          [
+            -51.1560955955,
+            0.1999424366
+          ],
+          [
+            -51.1560955955,
+            0.2002122327
+          ],
+          [
+            -51.1558257978,
+            0.2004820288
+          ],
+          [
+            -51.155556,
+            0.2007518249
+          ],
+          [
+            -51.155556,
+            0.201021621
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::N::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R004C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1571.543289,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3843.851922,
+        "path_node_count": 48,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 20,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.155556,
+            0.191039165
+          ],
+          [
+            -51.155556,
+            0.1913089611
+          ],
+          [
+            -51.155556,
+            0.1915787572
+          ],
+          [
+            -51.1552862024,
+            0.1918485533
+          ],
+          [
+            -51.1552862024,
+            0.1921183494
+          ],
+          [
+            -51.1552862024,
+            0.1923881455
+          ],
+          [
+            -51.1550164047,
+            0.1926579416
+          ],
+          [
+            -51.1550164047,
+            0.1929277377
+          ],
+          [
+            -51.1550164047,
+            0.1931975338
+          ],
+          [
+            -51.1550164047,
+            0.19346733
+          ],
+          [
+            -51.1552862023,
+            0.1937371261
+          ],
+          [
+            -51.155556,
+            0.1940069222
+          ],
+          [
+            -51.1558257977,
+            0.1942767183
+          ],
+          [
+            -51.1560955953,
+            0.1945465144
+          ],
+          [
+            -51.156365393,
+            0.1948163105
+          ],
+          [
+            -51.156365393,
+            0.1950861066
+          ],
+          [
+            -51.156365393,
+            0.1953559027
+          ],
+          [
+            -51.156365393,
+            0.1956256988
+          ],
+          [
+            -51.1563653931,
+            0.1958954949
+          ],
+          [
+            -51.1563653931,
+            0.196165291
+          ],
+          [
+            -51.1563653931,
+            0.1964350871
+          ],
+          [
+            -51.1563653931,
+            0.1967048833
+          ],
+          [
+            -51.1563653931,
+            0.1969746794
+          ],
+          [
+            -51.1563653931,
+            0.1972444755
+          ],
+          [
+            -51.1563653931,
+            0.1975142716
+          ],
+          [
+            -51.1566351909,
+            0.1977840677
+          ],
+          [
+            -51.1566351909,
+            0.1980538638
+          ],
+          [
+            -51.1566351909,
+            0.1983236599
+          ],
+          [
+            -51.1563653932,
+            0.198593456
+          ],
+          [
+            -51.1563653932,
+            0.1988632521
+          ],
+          [
+            -51.1563653932,
+            0.1991330482
+          ],
+          [
+            -51.1563653932,
+            0.1994028443
+          ],
+          [
+            -51.1563653932,
+            0.1996726405
+          ],
+          [
+            -51.1560955955,
+            0.1999424366
+          ],
+          [
+            -51.1560955955,
+            0.2002122327
+          ],
+          [
+            -51.1558257978,
+            0.2004820288
+          ],
+          [
+            -51.155556,
+            0.2007518249
+          ],
+          [
+            -51.155556,
+            0.201021621
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::N::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R004C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1571.543289,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3843.851922,
+        "path_node_count": 48,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::N",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 20,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1899599798
+          ],
+          [
+            -51.1501600481,
+            0.1902297758
+          ],
+          [
+            -51.1498902504,
+            0.1904995718
+          ],
+          [
+            -51.1496204527,
+            0.1907693679
+          ],
+          [
+            -51.149350655,
+            0.1910391639
+          ],
+          [
+            -51.1490808573,
+            0.1913089599
+          ],
+          [
+            -51.1490808572,
+            0.191578756
+          ],
+          [
+            -51.1488110595,
+            0.191848552
+          ],
+          [
+            -51.1488110594,
+            0.1921183481
+          ],
+          [
+            -51.1485412616,
+            0.1923881441
+          ],
+          [
+            -51.1485412615,
+            0.1926579402
+          ],
+          [
+            -51.1482714638,
+            0.1929277362
+          ],
+          [
+            -51.148001666,
+            0.1931975322
+          ],
+          [
+            -51.1480016659,
+            0.1934673283
+          ],
+          [
+            -51.1480016658,
+            0.1937371244
+          ],
+          [
+            -51.1480016656,
+            0.1940069205
+          ],
+          [
+            -51.1480016655,
+            0.1942767166
+          ],
+          [
+            -51.1480016654,
+            0.1945465127
+          ],
+          [
+            -51.1477318676,
+            0.1948163087
+          ],
+          [
+            -51.1474620698,
+            0.1950861047
+          ],
+          [
+            -51.1474620697,
+            0.1953559008
+          ],
+          [
+            -51.1474620696,
+            0.1956256969
+          ],
+          [
+            -51.1474620694,
+            0.195895493
+          ],
+          [
+            -51.1471922716,
+            0.196165289
+          ],
+          [
+            -51.1471922715,
+            0.1964350851
+          ],
+          [
+            -51.1471922714,
+            0.1967048812
+          ],
+          [
+            -51.1469224735,
+            0.1969746772
+          ],
+          [
+            -51.1469224734,
+            0.1972444733
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::NE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R018C082",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1730.954544,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3138.513682,
+        "path_node_count": 50,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 13,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1888807961
+          ],
+          [
+            -51.1558257976,
+            0.1891505922
+          ],
+          [
+            -51.1558257976,
+            0.1894203883
+          ],
+          [
+            -51.1558257976,
+            0.1896901844
+          ],
+          [
+            -51.1558257976,
+            0.1899599805
+          ],
+          [
+            -51.1558257976,
+            0.1902297767
+          ],
+          [
+            -51.1558257976,
+            0.1904995728
+          ],
+          [
+            -51.155556,
+            0.1907693689
+          ],
+          [
+            -51.1552862024,
+            0.191039165
+          ],
+          [
+            -51.1552862024,
+            0.1913089611
+          ],
+          [
+            -51.1552862024,
+            0.1915787572
+          ],
+          [
+            -51.1550164048,
+            0.1918485533
+          ],
+          [
+            -51.1547466071,
+            0.1921183494
+          ],
+          [
+            -51.1544768095,
+            0.1923881455
+          ],
+          [
+            -51.1542070118,
+            0.1926579416
+          ],
+          [
+            -51.1542070118,
+            0.1929277377
+          ],
+          [
+            -51.1539372141,
+            0.1931975338
+          ],
+          [
+            -51.1536674165,
+            0.1934673299
+          ],
+          [
+            -51.1533976188,
+            0.1937371259
+          ],
+          [
+            -51.1531278211,
+            0.194006922
+          ],
+          [
+            -51.1528580234,
+            0.1942767181
+          ],
+          [
+            -51.1525882257,
+            0.194276718
+          ],
+          [
+            -51.1523184281,
+            0.194276718
+          ],
+          [
+            -51.152318428,
+            0.1945465141
+          ],
+          [
+            -51.1520486303,
+            0.1948163102
+          ],
+          [
+            -51.1517788326,
+            0.1950861062
+          ],
+          [
+            -51.1515090349,
+            0.1950861061
+          ],
+          [
+            -51.1512392372,
+            0.1953559022
+          ],
+          [
+            -51.1509694395,
+            0.1953559021
+          ],
+          [
+            -51.1506996418,
+            0.195355902
+          ],
+          [
+            -51.1504298441,
+            0.1956256981
+          ],
+          [
+            -51.1501600463,
+            0.1958954941
+          ],
+          [
+            -51.1498902485,
+            0.1961652901
+          ],
+          [
+            -51.1496204507,
+            0.1964350861
+          ],
+          [
+            -51.1493506529,
+            0.1967048822
+          ],
+          [
+            -51.1490808551,
+            0.1969746782
+          ],
+          [
+            -51.1488110574,
+            0.1969746781
+          ],
+          [
+            -51.1485412597,
+            0.1969746779
+          ],
+          [
+            -51.148271462,
+            0.1969746778
+          ],
+          [
+            -51.1480016643,
+            0.1969746777
+          ],
+          [
+            -51.1477318666,
+            0.1969746776
+          ],
+          [
+            -51.1474620689,
+            0.1969746775
+          ],
+          [
+            -51.1471922712,
+            0.1969746773
+          ],
+          [
+            -51.1469224734,
+            0.1972444733
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::NE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R018C082",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1610.954544,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3630.632281,
+        "path_node_count": 46,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::NE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 13,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.188880796
+          ],
+          [
+            -51.1577143806,
+            0.1891505921
+          ],
+          [
+            -51.1577143807,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1590633691,
+            0.191848553
+          ],
+          [
+            -51.1593331668,
+            0.192118349
+          ],
+          [
+            -51.1596029644,
+            0.1923881451
+          ],
+          [
+            -51.1598727621,
+            0.1926579411
+          ],
+          [
+            -51.1601425599,
+            0.1929277371
+          ],
+          [
+            -51.1601425599,
+            0.1931975332
+          ],
+          [
+            -51.1604123576,
+            0.1931975332
+          ],
+          [
+            -51.1606821553,
+            0.1934673292
+          ],
+          [
+            -51.1606821554,
+            0.1937371253
+          ],
+          [
+            -51.1606821555,
+            0.1940069214
+          ],
+          [
+            -51.1606821555,
+            0.1942767175
+          ],
+          [
+            -51.1609519533,
+            0.1945465136
+          ],
+          [
+            -51.161221751,
+            0.1948163096
+          ],
+          [
+            -51.1614915488,
+            0.1950861056
+          ],
+          [
+            -51.1617613466,
+            0.1953559016
+          ],
+          [
+            -51.1620311443,
+            0.1956256976
+          ],
+          [
+            -51.1623009421,
+            0.1958954936
+          ],
+          [
+            -51.1625707399,
+            0.1961652896
+          ],
+          [
+            -51.1628405377,
+            0.1964350856
+          ],
+          [
+            -51.1631103355,
+            0.1967048816
+          ],
+          [
+            -51.1633801334,
+            0.1969746776
+          ],
+          [
+            -51.1633801335,
+            0.1972444737
+          ],
+          [
+            -51.1636499313,
+            0.1975142697
+          ],
+          [
+            -51.163919729,
+            0.1975142696
+          ],
+          [
+            -51.1641895266,
+            0.1972444733
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::NW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R018C018",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1583.086579,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3935.89694,
+        "path_node_count": 43,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 22,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1888807961
+          ],
+          [
+            -51.1571747855,
+            0.1891505921
+          ],
+          [
+            -51.1574445831,
+            0.1894203882
+          ],
+          [
+            -51.1577143807,
+            0.1896901843
+          ],
+          [
+            -51.1579841783,
+            0.1899599804
+          ],
+          [
+            -51.158253976,
+            0.1902297764
+          ],
+          [
+            -51.1585237736,
+            0.1904995725
+          ],
+          [
+            -51.1587935713,
+            0.1907693686
+          ],
+          [
+            -51.1587935713,
+            0.1910391647
+          ],
+          [
+            -51.1587935714,
+            0.1913089608
+          ],
+          [
+            -51.1587935714,
+            0.1915787569
+          ],
+          [
+            -51.1590633691,
+            0.191848553
+          ],
+          [
+            -51.1593331668,
+            0.192118349
+          ],
+          [
+            -51.1596029644,
+            0.1923881451
+          ],
+          [
+            -51.1598727621,
+            0.1926579411
+          ],
+          [
+            -51.1601425599,
+            0.1929277371
+          ],
+          [
+            -51.1601425599,
+            0.1931975332
+          ],
+          [
+            -51.1604123576,
+            0.1931975332
+          ],
+          [
+            -51.1606821553,
+            0.1934673292
+          ],
+          [
+            -51.1606821554,
+            0.1937371253
+          ],
+          [
+            -51.1606821555,
+            0.1940069214
+          ],
+          [
+            -51.1606821555,
+            0.1942767175
+          ],
+          [
+            -51.1609519533,
+            0.1945465136
+          ],
+          [
+            -51.161221751,
+            0.1948163096
+          ],
+          [
+            -51.1614915488,
+            0.1950861056
+          ],
+          [
+            -51.1617613466,
+            0.1953559016
+          ],
+          [
+            -51.1620311443,
+            0.1956256976
+          ],
+          [
+            -51.1623009421,
+            0.1958954936
+          ],
+          [
+            -51.1625707399,
+            0.1961652896
+          ],
+          [
+            -51.1628405377,
+            0.1964350856
+          ],
+          [
+            -51.1631103355,
+            0.1967048816
+          ],
+          [
+            -51.1633801334,
+            0.1969746776
+          ],
+          [
+            -51.1633801335,
+            0.1972444737
+          ],
+          [
+            -51.1636499313,
+            0.1975142697
+          ],
+          [
+            -51.163919729,
+            0.1975142696
+          ],
+          [
+            -51.1641895266,
+            0.1972444733
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::NW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R018C018",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1523.086579,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 4062.123494,
+        "path_node_count": 41,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::NW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 22,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1880714078
+          ],
+          [
+            -51.1560955951,
+            0.1878016117
+          ],
+          [
+            -51.1560955951,
+            0.1875318156
+          ],
+          [
+            -51.1560955951,
+            0.1872620194
+          ],
+          [
+            -51.1560955951,
+            0.1869922233
+          ],
+          [
+            -51.1563653926,
+            0.1867224272
+          ],
+          [
+            -51.1563653926,
+            0.1864526311
+          ],
+          [
+            -51.1563653926,
+            0.186182835
+          ],
+          [
+            -51.1563653926,
+            0.1859130389
+          ],
+          [
+            -51.1563653926,
+            0.1856432428
+          ],
+          [
+            -51.1563653926,
+            0.1853734467
+          ],
+          [
+            -51.1563653926,
+            0.1851036506
+          ],
+          [
+            -51.1563653925,
+            0.1848338545
+          ],
+          [
+            -51.1563653925,
+            0.1845640583
+          ],
+          [
+            -51.1563653925,
+            0.1842942622
+          ],
+          [
+            -51.1563653925,
+            0.1840244661
+          ],
+          [
+            -51.1563653925,
+            0.18375467
+          ],
+          [
+            -51.1563653925,
+            0.1834848739
+          ],
+          [
+            -51.1563653925,
+            0.1832150778
+          ],
+          [
+            -51.1563653925,
+            0.1829452817
+          ],
+          [
+            -51.1563653924,
+            0.1826754856
+          ],
+          [
+            -51.1563653924,
+            0.1824056895
+          ],
+          [
+            -51.1563653924,
+            0.1821358934
+          ],
+          [
+            -51.1563653924,
+            0.1818660973
+          ],
+          [
+            -51.1563653924,
+            0.1815963011
+          ],
+          [
+            -51.1563653924,
+            0.181326505
+          ],
+          [
+            -51.1563653924,
+            0.1810567089
+          ],
+          [
+            -51.1563653924,
+            0.1807869128
+          ],
+          [
+            -51.1563653923,
+            0.1805171167
+          ],
+          [
+            -51.1560955949,
+            0.1802473206
+          ],
+          [
+            -51.1558257974,
+            0.1799775245
+          ],
+          [
+            -51.1558257974,
+            0.1797077284
+          ],
+          [
+            -51.1558257974,
+            0.1794379323
+          ],
+          [
+            -51.1558257974,
+            0.1791681362
+          ],
+          [
+            -51.1558257974,
+            0.1788983401
+          ],
+          [
+            -51.1558257974,
+            0.178628544
+          ],
+          [
+            -51.1558257974,
+            0.1783587479
+          ],
+          [
+            -51.155556,
+            0.1780889517
+          ],
+          [
+            -51.155556,
+            0.1778191556
+          ],
+          [
+            -51.155556,
+            0.1775493595
+          ],
+          [
+            -51.155556,
+            0.1772795634
+          ],
+          [
+            -51.155556,
+            0.1770097673
+          ],
+          [
+            -51.155556,
+            0.1767399712
+          ],
+          [
+            -51.155556,
+            0.1764701751
+          ],
+          [
+            -51.155556,
+            0.176200379
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::S::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R096C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1472.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 4500.649181,
+        "path_node_count": 48,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 12,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1880714078
+          ],
+          [
+            -51.1560955951,
+            0.1878016117
+          ],
+          [
+            -51.1560955951,
+            0.1875318156
+          ],
+          [
+            -51.1560955951,
+            0.1872620194
+          ],
+          [
+            -51.1560955951,
+            0.1869922233
+          ],
+          [
+            -51.1563653926,
+            0.1867224272
+          ],
+          [
+            -51.1563653926,
+            0.1864526311
+          ],
+          [
+            -51.1563653926,
+            0.186182835
+          ],
+          [
+            -51.1563653926,
+            0.1859130389
+          ],
+          [
+            -51.1563653926,
+            0.1856432428
+          ],
+          [
+            -51.1563653926,
+            0.1853734467
+          ],
+          [
+            -51.1563653926,
+            0.1851036506
+          ],
+          [
+            -51.1563653925,
+            0.1848338545
+          ],
+          [
+            -51.1563653925,
+            0.1845640583
+          ],
+          [
+            -51.1563653925,
+            0.1842942622
+          ],
+          [
+            -51.1563653925,
+            0.1840244661
+          ],
+          [
+            -51.1563653925,
+            0.18375467
+          ],
+          [
+            -51.1563653925,
+            0.1834848739
+          ],
+          [
+            -51.1563653925,
+            0.1832150778
+          ],
+          [
+            -51.1563653925,
+            0.1829452817
+          ],
+          [
+            -51.1563653924,
+            0.1826754856
+          ],
+          [
+            -51.1563653924,
+            0.1824056895
+          ],
+          [
+            -51.1563653924,
+            0.1821358934
+          ],
+          [
+            -51.1563653924,
+            0.1818660973
+          ],
+          [
+            -51.1563653924,
+            0.1815963011
+          ],
+          [
+            -51.1563653924,
+            0.181326505
+          ],
+          [
+            -51.1563653924,
+            0.1810567089
+          ],
+          [
+            -51.1563653924,
+            0.1807869128
+          ],
+          [
+            -51.1563653923,
+            0.1805171167
+          ],
+          [
+            -51.1560955949,
+            0.1802473206
+          ],
+          [
+            -51.1558257974,
+            0.1799775245
+          ],
+          [
+            -51.1558257974,
+            0.1797077284
+          ],
+          [
+            -51.1558257974,
+            0.1794379323
+          ],
+          [
+            -51.1558257974,
+            0.1791681362
+          ],
+          [
+            -51.1558257974,
+            0.1788983401
+          ],
+          [
+            -51.1558257974,
+            0.178628544
+          ],
+          [
+            -51.1558257974,
+            0.1783587479
+          ],
+          [
+            -51.155556,
+            0.1780889517
+          ],
+          [
+            -51.155556,
+            0.1778191556
+          ],
+          [
+            -51.155556,
+            0.1775493595
+          ],
+          [
+            -51.155556,
+            0.1772795634
+          ],
+          [
+            -51.155556,
+            0.1770097673
+          ],
+          [
+            -51.155556,
+            0.1767399712
+          ],
+          [
+            -51.155556,
+            0.1764701751
+          ],
+          [
+            -51.155556,
+            0.176200379
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::S::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R096C050",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1472.132034,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 4555.731371,
+        "path_node_count": 48,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::S",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 12,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1880714078
+          ],
+          [
+            -51.1550164049,
+            0.1880714078
+          ],
+          [
+            -51.1547466073,
+            0.1878016117
+          ],
+          [
+            -51.1544768098,
+            0.1878016116
+          ],
+          [
+            -51.1542070122,
+            0.1878016116
+          ],
+          [
+            -51.1539372146,
+            0.1878016116
+          ],
+          [
+            -51.1536674171,
+            0.1880714077
+          ],
+          [
+            -51.1533976195,
+            0.1880714076
+          ],
+          [
+            -51.1531278219,
+            0.1880714076
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1886109998
+          ],
+          [
+            -51.1528580242,
+            0.1888807959
+          ],
+          [
+            -51.1525882266,
+            0.189150592
+          ],
+          [
+            -51.152318429,
+            0.189420388
+          ],
+          [
+            -51.1520486314,
+            0.1896901841
+          ],
+          [
+            -51.1517788338,
+            0.189690184
+          ],
+          [
+            -51.1515090362,
+            0.189690184
+          ],
+          [
+            -51.1512392386,
+            0.1896901839
+          ],
+          [
+            -51.150969441,
+            0.1896901838
+          ],
+          [
+            -51.1506996434,
+            0.1896901838
+          ],
+          [
+            -51.1504298458,
+            0.1896901837
+          ],
+          [
+            -51.1501600483,
+            0.1894203875
+          ],
+          [
+            -51.1498902507,
+            0.1894203874
+          ],
+          [
+            -51.1496204533,
+            0.1891505912
+          ],
+          [
+            -51.1493506558,
+            0.188880795
+          ],
+          [
+            -51.1490808583,
+            0.1886109988
+          ],
+          [
+            -51.1488110608,
+            0.1883412026
+          ],
+          [
+            -51.1488110609,
+            0.1880714065
+          ],
+          [
+            -51.1485412635,
+            0.1878016103
+          ],
+          [
+            -51.1485412636,
+            0.1875318142
+          ],
+          [
+            -51.1482714661,
+            0.1872620179
+          ],
+          [
+            -51.1480016686,
+            0.1872620178
+          ],
+          [
+            -51.1477318712,
+            0.1869922216
+          ],
+          [
+            -51.1474620737,
+            0.1867224254
+          ],
+          [
+            -51.1471922762,
+            0.1867224252
+          ],
+          [
+            -51.1469224788,
+            0.186452629
+          ],
+          [
+            -51.1466526814,
+            0.1861828328
+          ],
+          [
+            -51.1466526815,
+            0.1859130366
+          ],
+          [
+            -51.1466526817,
+            0.1856432405
+          ],
+          [
+            -51.1466526818,
+            0.1853734444
+          ],
+          [
+            -51.1466526819,
+            0.1851036483
+          ],
+          [
+            -51.1466526821,
+            0.1848338522
+          ],
+          [
+            -51.1466526822,
+            0.1845640561
+          ],
+          [
+            -51.1466526824,
+            0.18429426
+          ],
+          [
+            -51.1466526825,
+            0.1840244639
+          ],
+          [
+            -51.1466526826,
+            0.1837546678
+          ],
+          [
+            -51.1466526828,
+            0.1834848717
+          ],
+          [
+            -51.1466526829,
+            0.1832150756
+          ],
+          [
+            -51.146652683,
+            0.1829452795
+          ],
+          [
+            -51.1466526832,
+            0.1826754833
+          ],
+          [
+            -51.1466526833,
+            0.1824056872
+          ],
+          [
+            -51.1466526834,
+            0.1821358911
+          ],
+          [
+            -51.1466526836,
+            0.181866095
+          ],
+          [
+            -51.1466526837,
+            0.1815962989
+          ],
+          [
+            -51.1466526838,
+            0.1813265028
+          ],
+          [
+            -51.146652684,
+            0.1810567067
+          ],
+          [
+            -51.1466526841,
+            0.1807869106
+          ],
+          [
+            -51.1466526842,
+            0.1805171145
+          ],
+          [
+            -51.1466526844,
+            0.1802473184
+          ],
+          [
+            -51.1469224819,
+            0.1799775224
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::SE::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP2",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R082C082",
+        "field_confirmation_required": true,
+        "geometric_length_m": 2066.101731,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2515.540941,
+        "path_node_count": 62,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 2,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.155556,
+            0.1883412039
+          ],
+          [
+            -51.1552862024,
+            0.1883412039
+          ],
+          [
+            -51.1550164049,
+            0.1883412039
+          ],
+          [
+            -51.1547466073,
+            0.1883412039
+          ],
+          [
+            -51.1544768097,
+            0.1883412039
+          ],
+          [
+            -51.1542070122,
+            0.1883412038
+          ],
+          [
+            -51.1539372146,
+            0.1883412038
+          ],
+          [
+            -51.153667417,
+            0.1883412038
+          ],
+          [
+            -51.1533976195,
+            0.1883412038
+          ],
+          [
+            -51.1531278219,
+            0.1883412037
+          ],
+          [
+            -51.1528580243,
+            0.1883412037
+          ],
+          [
+            -51.1525882268,
+            0.1883412036
+          ],
+          [
+            -51.1523184292,
+            0.1880714075
+          ],
+          [
+            -51.1520486317,
+            0.1878016113
+          ],
+          [
+            -51.1517788342,
+            0.1875318152
+          ],
+          [
+            -51.1515090367,
+            0.187262019
+          ],
+          [
+            -51.1512392393,
+            0.1869922228
+          ],
+          [
+            -51.1509694418,
+            0.1867224266
+          ],
+          [
+            -51.1506996442,
+            0.1867224266
+          ],
+          [
+            -51.1504298468,
+            0.1864526304
+          ],
+          [
+            -51.1501600493,
+            0.1861828342
+          ],
+          [
+            -51.1498902519,
+            0.185913038
+          ],
+          [
+            -51.1496204544,
+            0.1856432418
+          ],
+          [
+            -51.149350657,
+            0.1853734456
+          ],
+          [
+            -51.1490808595,
+            0.1853734455
+          ],
+          [
+            -51.1488110621,
+            0.1851036493
+          ],
+          [
+            -51.1485412646,
+            0.1851036492
+          ],
+          [
+            -51.148271467,
+            0.1851036491
+          ],
+          [
+            -51.1480016696,
+            0.1848338528
+          ],
+          [
+            -51.1477318721,
+            0.1848338527
+          ],
+          [
+            -51.1474620746,
+            0.1848338526
+          ],
+          [
+            -51.1471922771,
+            0.1848338525
+          ],
+          [
+            -51.1469224797,
+            0.1845640562
+          ],
+          [
+            -51.1466526824,
+            0.18429426
+          ],
+          [
+            -51.1466526825,
+            0.1840244639
+          ],
+          [
+            -51.1466526826,
+            0.1837546678
+          ],
+          [
+            -51.1466526828,
+            0.1834848717
+          ],
+          [
+            -51.1466526829,
+            0.1832150756
+          ],
+          [
+            -51.146652683,
+            0.1829452795
+          ],
+          [
+            -51.1466526832,
+            0.1826754833
+          ],
+          [
+            -51.1466526833,
+            0.1824056872
+          ],
+          [
+            -51.1466526834,
+            0.1821358911
+          ],
+          [
+            -51.1466526836,
+            0.181866095
+          ],
+          [
+            -51.1466526837,
+            0.1815962989
+          ],
+          [
+            -51.1466526838,
+            0.1813265028
+          ],
+          [
+            -51.146652684,
+            0.1810567067
+          ],
+          [
+            -51.1466526841,
+            0.1807869106
+          ],
+          [
+            -51.1466526842,
+            0.1805171145
+          ],
+          [
+            -51.1466526844,
+            0.1802473184
+          ],
+          [
+            -51.1469224819,
+            0.1799775224
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::SE::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": "AP2",
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R082C082",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1698.82251,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3392.988349,
+        "path_node_count": 51,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::SE",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 2,
+        "v1_top3_member": true
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1585237732,
+            0.1883412036
+          ],
+          [
+            -51.1587935708,
+            0.1880714075
+          ],
+          [
+            -51.1590633683,
+            0.1878016113
+          ],
+          [
+            -51.1593331658,
+            0.1875318152
+          ],
+          [
+            -51.1596029633,
+            0.187262019
+          ],
+          [
+            -51.1598727607,
+            0.1869922228
+          ],
+          [
+            -51.1601425582,
+            0.1867224266
+          ],
+          [
+            -51.1604123557,
+            0.1864526305
+          ],
+          [
+            -51.1604123556,
+            0.1861828343
+          ],
+          [
+            -51.1604123555,
+            0.1859130382
+          ],
+          [
+            -51.1604123555,
+            0.1856432421
+          ],
+          [
+            -51.1604123554,
+            0.185373446
+          ],
+          [
+            -51.1604123553,
+            0.1851036499
+          ],
+          [
+            -51.1604123552,
+            0.1848338538
+          ],
+          [
+            -51.1604123552,
+            0.1845640577
+          ],
+          [
+            -51.1604123551,
+            0.1842942616
+          ],
+          [
+            -51.160412355,
+            0.1840244655
+          ],
+          [
+            -51.1604123549,
+            0.1837546694
+          ],
+          [
+            -51.1604123549,
+            0.1834848733
+          ],
+          [
+            -51.1604123548,
+            0.1832150771
+          ],
+          [
+            -51.1604123547,
+            0.182945281
+          ],
+          [
+            -51.1604123546,
+            0.1826754849
+          ],
+          [
+            -51.160682152,
+            0.1824056887
+          ],
+          [
+            -51.160682152,
+            0.1821358926
+          ],
+          [
+            -51.1609519494,
+            0.1818660964
+          ],
+          [
+            -51.1612217467,
+            0.1815963003
+          ],
+          [
+            -51.1614915441,
+            0.1813265041
+          ],
+          [
+            -51.1617613415,
+            0.1810567079
+          ],
+          [
+            -51.1620311388,
+            0.1807869116
+          ],
+          [
+            -51.1623009362,
+            0.1805171154
+          ],
+          [
+            -51.1625707335,
+            0.1802473192
+          ],
+          [
+            -51.162840531,
+            0.1802473191
+          ],
+          [
+            -51.1631103283,
+            0.1799775229
+          ],
+          [
+            -51.1633801257,
+            0.1799775228
+          ],
+          [
+            -51.1636499232,
+            0.1799775227
+          ],
+          [
+            -51.1639197206,
+            0.1799775225
+          ],
+          [
+            -51.1641895181,
+            0.1799775224
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::SW::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R082C018",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1663.675324,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 4264.172137,
+        "path_node_count": 49,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 18,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1880714078
+          ],
+          [
+            -51.1560955951,
+            0.1878016117
+          ],
+          [
+            -51.1560955951,
+            0.1875318156
+          ],
+          [
+            -51.1560955951,
+            0.1872620194
+          ],
+          [
+            -51.1563653926,
+            0.1869922233
+          ],
+          [
+            -51.1566351902,
+            0.1867224272
+          ],
+          [
+            -51.1566351902,
+            0.1864526311
+          ],
+          [
+            -51.1569049877,
+            0.186182835
+          ],
+          [
+            -51.1569049876,
+            0.1859130389
+          ],
+          [
+            -51.1571747852,
+            0.1856432427
+          ],
+          [
+            -51.1574445826,
+            0.1853734466
+          ],
+          [
+            -51.1577143801,
+            0.1851036504
+          ],
+          [
+            -51.1579841776,
+            0.1848338543
+          ],
+          [
+            -51.1582539751,
+            0.1845640582
+          ],
+          [
+            -51.1585237725,
+            0.184294262
+          ],
+          [
+            -51.15879357,
+            0.1840244658
+          ],
+          [
+            -51.1590633675,
+            0.1837546697
+          ],
+          [
+            -51.1593331649,
+            0.1834848735
+          ],
+          [
+            -51.1596029623,
+            0.1832150774
+          ],
+          [
+            -51.1598727597,
+            0.1829452812
+          ],
+          [
+            -51.1601425572,
+            0.182675485
+          ],
+          [
+            -51.1604123546,
+            0.1824056888
+          ],
+          [
+            -51.160682152,
+            0.1821358926
+          ],
+          [
+            -51.1609519494,
+            0.1818660964
+          ],
+          [
+            -51.1612217467,
+            0.1815963003
+          ],
+          [
+            -51.1614915441,
+            0.1813265041
+          ],
+          [
+            -51.1617613415,
+            0.1810567079
+          ],
+          [
+            -51.1620311388,
+            0.1807869116
+          ],
+          [
+            -51.1623009362,
+            0.1805171154
+          ],
+          [
+            -51.1625707335,
+            0.1802473192
+          ],
+          [
+            -51.162840531,
+            0.1802473191
+          ],
+          [
+            -51.1631103283,
+            0.1799775229
+          ],
+          [
+            -51.1633801257,
+            0.1799775228
+          ],
+          [
+            -51.1636499232,
+            0.1799775227
+          ],
+          [
+            -51.1639197206,
+            0.1799775225
+          ],
+          [
+            -51.1641895181,
+            0.1799775224
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::SW::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R082C018",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1463.086579,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 4364.526419,
+        "path_node_count": 39,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::SW",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 18,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.1883412039
+          ],
+          [
+            -51.1560955951,
+            0.1883412039
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1888807959
+          ],
+          [
+            -51.1587935709,
+            0.1888807958
+          ],
+          [
+            -51.1590633685,
+            0.1888807958
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425587,
+            0.1886109994
+          ],
+          [
+            -51.1604123563,
+            0.1886109993
+          ],
+          [
+            -51.1606821538,
+            0.1886109992
+          ],
+          [
+            -51.1609519514,
+            0.1886109992
+          ],
+          [
+            -51.161221749,
+            0.1886109991
+          ],
+          [
+            -51.1614915466,
+            0.188610999
+          ],
+          [
+            -51.1617613441,
+            0.1886109989
+          ],
+          [
+            -51.1620311417,
+            0.1886109988
+          ],
+          [
+            -51.1623009393,
+            0.1886109987
+          ],
+          [
+            -51.1625707368,
+            0.1886109986
+          ],
+          [
+            -51.1628405344,
+            0.1886109985
+          ],
+          [
+            -51.163110332,
+            0.1886109984
+          ],
+          [
+            -51.1633801296,
+            0.1886109982
+          ],
+          [
+            -51.163649927,
+            0.188341202
+          ],
+          [
+            -51.1639197244,
+            0.1880714058
+          ],
+          [
+            -51.1641895219,
+            0.1878016095
+          ],
+          [
+            -51.1644593194,
+            0.1878016094
+          ],
+          [
+            -51.164729117,
+            0.1878016093
+          ],
+          [
+            -51.1649989145,
+            0.1878016091
+          ],
+          [
+            -51.1652687121,
+            0.187801609
+          ],
+          [
+            -51.1655385097,
+            0.1878016088
+          ],
+          [
+            -51.1658083072,
+            0.1878016087
+          ],
+          [
+            -51.1660781048,
+            0.1878016085
+          ],
+          [
+            -51.1663479022,
+            0.1875318122
+          ],
+          [
+            -51.1666176997,
+            0.1875318121
+          ],
+          [
+            -51.1668874973,
+            0.1875318119
+          ],
+          [
+            -51.1671572948,
+            0.1875318117
+          ],
+          [
+            -51.1674270924,
+            0.1875318115
+          ],
+          [
+            -51.1676968899,
+            0.1875318113
+          ],
+          [
+            -51.1679666877,
+            0.1878016073
+          ],
+          [
+            -51.1679666879,
+            0.1880714034
+          ],
+          [
+            -51.1679666881,
+            0.1883411995
+          ],
+          [
+            -51.1679666883,
+            0.1886109956
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::W::H_REDE_DISPONIVEL__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_REDE_DISPONIVEL__BASE",
+        "end_cell_id": "R050C004",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1581.837662,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_REDE_DISPONIVEL",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 2243.446913,
+        "path_node_count": 50,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 23,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            -51.155556,
+            0.188611
+          ],
+          [
+            -51.1558257976,
+            0.188611
+          ],
+          [
+            -51.1560955951,
+            0.188611
+          ],
+          [
+            -51.1563653927,
+            0.188611
+          ],
+          [
+            -51.1566351903,
+            0.188611
+          ],
+          [
+            -51.1569049879,
+            0.1886109999
+          ],
+          [
+            -51.1571747854,
+            0.1886109999
+          ],
+          [
+            -51.157444583,
+            0.1886109999
+          ],
+          [
+            -51.1577143806,
+            0.1886109999
+          ],
+          [
+            -51.1579841781,
+            0.1886109998
+          ],
+          [
+            -51.1582539757,
+            0.1886109998
+          ],
+          [
+            -51.1585237733,
+            0.1886109997
+          ],
+          [
+            -51.1587935709,
+            0.1886109997
+          ],
+          [
+            -51.1590633684,
+            0.1886109996
+          ],
+          [
+            -51.159333166,
+            0.1886109996
+          ],
+          [
+            -51.1596029636,
+            0.1886109995
+          ],
+          [
+            -51.1598727611,
+            0.1886109995
+          ],
+          [
+            -51.1601425586,
+            0.1883412033
+          ],
+          [
+            -51.1604123561,
+            0.1880714071
+          ],
+          [
+            -51.1606821537,
+            0.188071407
+          ],
+          [
+            -51.1609519513,
+            0.1880714069
+          ],
+          [
+            -51.1612217488,
+            0.1880714069
+          ],
+          [
+            -51.1614915464,
+            0.1880714068
+          ],
+          [
+            -51.1617613439,
+            0.1880714067
+          ],
+          [
+            -51.1620311415,
+            0.1880714066
+          ],
+          [
+            -51.1623009391,
+            0.1880714065
+          ],
+          [
+            -51.1625707366,
+            0.1880714064
+          ],
+          [
+            -51.1628405342,
+            0.1880714063
+          ],
+          [
+            -51.1631103316,
+            0.18780161
+          ],
+          [
+            -51.1633801291,
+            0.1875318138
+          ],
+          [
+            -51.1636499266,
+            0.1875318137
+          ],
+          [
+            -51.1639197242,
+            0.1875318136
+          ],
+          [
+            -51.1641895217,
+            0.1875318134
+          ],
+          [
+            -51.1644593193,
+            0.1875318133
+          ],
+          [
+            -51.1647291168,
+            0.1875318132
+          ],
+          [
+            -51.1649989144,
+            0.187531813
+          ],
+          [
+            -51.1652687121,
+            0.187801609
+          ],
+          [
+            -51.1655385097,
+            0.1878016088
+          ],
+          [
+            -51.1658083072,
+            0.1878016087
+          ],
+          [
+            -51.1660781048,
+            0.1878016085
+          ],
+          [
+            -51.1663479022,
+            0.1875318122
+          ],
+          [
+            -51.1666176997,
+            0.1875318121
+          ],
+          [
+            -51.1668874973,
+            0.1875318119
+          ],
+          [
+            -51.1671572948,
+            0.1875318117
+          ],
+          [
+            -51.1674270924,
+            0.1875318115
+          ],
+          [
+            -51.1676968899,
+            0.1875318113
+          ],
+          [
+            -51.1679666877,
+            0.1878016073
+          ],
+          [
+            -51.1679666879,
+            0.1880714034
+          ],
+          [
+            -51.1679666881,
+            0.1883411995
+          ],
+          [
+            -51.1679666883,
+            0.1886109956
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "RURAL-01::RURAL-01-E0::R03::W::H_FORA_REDE__BASE",
+      "properties": {
+        "algorithm": "DIJKSTRA_PREDECESSOR_PATH",
+        "area_label": null,
+        "configuration_sha256": "8dc2c09224273eca930f461617ad8c29df7c807f0d9eec4adbb332f0c58aad27",
+        "cost_scenario_id": "H_FORA_REDE__BASE",
+        "end_cell_id": "R050C004",
+        "field_confirmation_required": true,
+        "geometric_length_m": 1556.984848,
+        "ground_truth_used": false,
+        "hypothesis_id": "H_FORA_REDE",
+        "interpretation": "CORREDOR_DIAGNOSTICO_DE_MENOR_CUSTO_ATE_REPRESENTANTE_V1",
+        "operational_route": false,
+        "path_cost_m_equivalent": 3779.191714,
+        "path_node_count": 50,
+        "sector_id": "RURAL-01::RURAL-01-E0::R03::W",
+        "sensitivity_profile": "BASE",
+        "start_cell_id": "R050C050",
+        "v1_rank": 23,
+        "v1_top3_member": false
+      },
+      "type": "Feature"
+    }
+  ],
+  "ground_truth_used": false,
+  "name": "RURAL01_MOV_V2_DIAGNOSTIC_CORRIDORS",
+  "type": "FeatureCollection"
+}

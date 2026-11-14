@@ -1,0 +1,23 @@
+{
+  "analytic_method": {
+    "bearing_e0_reference_deg": 192.13507,
+    "distance_e0_reference_m": 1518.618,
+    "method": "HAVERSINE_DISTANCE_PLUS_INITIAL_BEARING_AND_FROZEN_RING_LIMITS",
+    "sector_id": "URBE-01::URBE-01-E0::R02::S"
+  },
+  "frozen_outputs_modified": false,
+  "geometry_method": {
+    "distance_to_nearest_sector_boundary_m": 75.404,
+    "matched_sectors": [
+      {
+        "relation": "INSIDE",
+        "sector_id": "URBE-01::URBE-01-E0::R02::S"
+      }
+    ],
+    "method": "LOCAL_EQUIRECTANGULAR_POINT_IN_POLYGON_WITH_0_05_M_BOUNDARY_TOLERANCE",
+    "primary_sector_conservative": "URBE-01::URBE-01-E0::R02::S"
+  },
+  "methods_agree": true,
+  "protocol_id": "URBE-POSTOPEN-EVAL-v1.0",
+  "reference_inside_source_radius": true
+}

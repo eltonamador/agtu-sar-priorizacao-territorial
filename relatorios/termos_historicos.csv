@@ -1,0 +1,426 @@
+arquivo,classe,destino,"ocorrencias: primeiras linhas ou nome (referências numéricas são candidatas, não erros confirmados)"
+work/comparar_mata03_referencia.py,código,preservado no pacote,"BUFFER:93,109,110,141; E0:129,213,233,248; ENSAIO:100,149,150,177; UTC:97"
+work/comparar_mata03_referencia_v2.py,código,preservado no pacote,"BUFFER:96,115,116,158; E0:140,146,165,230; ENSAIO:103,166,167,194; UTC:100"
+work/compilar_mata03_ponto_A.py,código,preservado no pacote,"E0:79,89,97,100; ENSAIO:51; UTC:35"
+work/completar_mata02.py,código,preservado no pacote,"E0:21,75,82; ENSAIO:7; LOC:82; MOV:17,18,19,20; OSM:26,43,69; UTC:74"
+work/concluir_mata02_direcao249_v2.py,código,preservado no pacote,"AP:95,132; BUFFER:197; E0:100,127,133,137; ENSAIO:20,119,263; MOV:170,228,250; OSM:57; UPV:128; UTC:162,164,279"
+work/concluir_mata03_km21.py,código,preservado no pacote,"AP:172,193; BUFFER:25; DET:267; E0:38,53,174,207; ENSAIO:127; ENSAIOS:270; LOC:41; MOV:267; URG:267; UTC:28"
+work/conferir_referencia_mata02_20261030.py,código,preservado no pacote,"AP:126,165; BUFFER:185,190; E0:17,128,130,156; ENSAIO:13,244,247,257; MOV:244; OSM:98; UTC:206,207,262"
+work/executar_mata02_complementar_v2.py,código,preservado no pacote,"BUFFER:37,72; E0:27,88; ENSAIO:1,7,24,89; OSM:43,48,49,52"
+work/executar_mata03_km21.py,código,preservado no pacote,"BUFFER:54,101,109,118; E0:69,76,99,127; ENSAIO:1,73,111; OSM:142,143,147,210; UTC:11"
+work/ext_espacial_buffer_v1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:nome,1,5,83; ENSAIO:11,86,113; EXT-ESP-BUF:3"
+work/ext_espacial_buffer_v1/config_buffer_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,3,10; ENSAIO:214; EXT-ESP-BUF:2"
+work/ext_espacial_buffer_v1/input_dev_blind.csv,dados/configuração/manifesto,preservado no pacote,BUFFER:nome
+work/ext_espacial_buffer_v1/motor_buffer_adaptativo.py,código,preservado no pacote,"BUFFER:nome,2,175,768; BUFFERS:1048; DET:87; EXT-ESP-BUF:2,33,1042; UTC:955"
+work/ext_espacial_buffer_v1/prepare_dev_input.py,código,preservado no pacote,"BUFFER:nome,2; ENSAIO:2,379; EXT-ESP-BUF:333"
+work/ext_espacial_buffer_v1/results/buffer_polygons_dev.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,3,335,678; EXT-ESP-BUF:5,311,654,997"
+work/ext_espacial_buffer_v1/results/buffer_results_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,1; EXT-ESP-BUF:2,3,4,5"
+work/ext_espacial_buffer_v1/results/buffer_results_dev.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,34,76,118; EXT-ESP-BUF:2,8,50,92"
+work/ext_espacial_buffer_v1/results/manifest_execucao_dev.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,24,30,36; EXT-ESP-BUF:2; UTC:4"
+work/ext_espacial_buffer_v1/results/test_results.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,15; EXT-ESP-BUF:2"
+work/ext_espacial_buffer_v1/source_audit.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome,40; ENSAIO:21; EXT-ESP-BUF:2"
+work/ext_espacial_buffer_v1/test_motor_buffer_adaptativo.py,código,preservado no pacote,"BUFFER:nome,16,278,287; EXT-ESP-BUF:2"
+work/ext_espacial_rep_s_v1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:1,25,51; EXT-ESP-BUF:4"
+work/ext_espacial_rep_s_v1/export_rep_s_firewall.py,código,preservado no pacote,"BUFFER:20,111,138; EXT-ESP:53; EXT-ESP-BUF:1255; UTC:286,298,299,960"
+work/ext_espacial_rep_s_v1/protocolo_rep_s_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:4,120,220,221; EXT-ESP:2; EXT-ESP-BUF:5"
+work/ext_espacial_rep_s_v1/resultado_testes_rep_s_v1.json,dados/configuração/manifesto,preservado no pacote,BUFFER:14; EXT-ESP-BUF:6
+work/ext_espacial_rep_s_v1/test_export_rep_s_firewall.py,código,preservado no pacote,"BUFFER:752,755,759,761; EXT-ESP-BUF:254,874; UTC:256"
+work/ext_espacial_setores_v1/ESPECIFICACAO_METODOLOGICA_SETOR_v1.md,documentação/relatório histórico,preservado no pacote,"BUFFER:21,25,37,44; BUFFERS:3,13,36,72; EXT-ESP-BUF:10,21,36,536; EXT-ESP-SET:5; OSM:47,48,628"
+work/ext_espacial_setores_v1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:25,33,35,39; BUFFERS:4,14,164,229; EXT-ESP-BUF:5; EXT-ESP-SET:1; OSM:197,198,226"
+work/ext_espacial_setores_v1/config_setorizacao_priorizacao_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:12,13,15,18; BUFFERS:48,411; EXT-ESP-BUF:18; EXT-ESP-SET:2; LOC:269; OSM:171,172"
+work/ext_espacial_setores_v1/motor_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:6,8,52,126; BUFFERS:4,5,227,231; EXT-ESP-SET:2,1065; OSM:437,478,800,801; UTC:1193"
+work/ext_espacial_setores_v1/test_motor_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:7,8,15,43; EXT-ESP:2; EXT-ESP-BUF:48,98,137; EXT-ESP-SET:153,657"
+work/ext_espacial_setores_v1/test_results.json,dados/configuração/manifesto,preservado no pacote,BUFFER:55; EXT-ESP-SET:2
+work/ext_espacial_setores_v1/verify_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:27,28,29,37; BUFFERS:5,415,419,441; EXT-ESP-SET:26; UTC:1126"
+work/ext_espacial_setores_v1_1/ESPECIFICACAO_METODOLOGICA_SETOR_v1_1.md,documentação/relatório histórico,preservado no pacote,"BUFFER:18,20,24,42; BUFFERS:3,58,104,448; EXT-ESP-BUF:11,58; EXT-ESP-SET:5; OSM:450,585"
+work/ext_espacial_setores_v1_1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:15,31,50,51; BUFFERS:4,181,244; EXT-ESP-BUF:4,56; EXT-ESP-SET:1; OSM:183,213,214"
+work/ext_espacial_setores_v1_1/config_setorizacao_priorizacao_v1_1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:12,13,15,18; BUFFERS:54,494; EXT-ESP-BUF:18; EXT-ESP-SET:2; LOC:298; OSM:200,201"
+work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:6,8,55,159; BUFFERS:4,5,178,302; EXT-ESP-SET:2; OSM:705,747,1107,1108; UTC:1585"
+work/ext_espacial_setores_v1_1/results/RESUMO_EXECUCAO_DEV_S.md,documentação/relatório histórico,preservado no pacote,"BUFFER:6,10,19,52; BUFFERS:5,11,18,28; EXT-ESP-SET:1"
+work/ext_espacial_setores_v1_1/results/buffer_decisions_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome; EXT-ESP-SET:2,3,4,5"
+work/ext_espacial_setores_v1_1/results/determinism_report.json,dados/configuração/manifesto,preservado no pacote,BUFFER:11; EXT-ESP-SET:2
+work/ext_espacial_setores_v1_1/results/manifest_setorizacao_dev.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,11,12,17; EXT-ESP-SET:139; OSM:41,42,47,48; UTC:137"
+work/ext_espacial_setores_v1_1/results/sector_features_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+work/ext_espacial_setores_v1_1/results/sector_ranking_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+work/ext_espacial_setores_v1_1/results/test_results.json,dados/configuração/manifesto,preservado no pacote,EXT-ESP-SET:2
+work/ext_espacial_setores_v1_1/results/verification_report.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:21,72,77,81; BUFFERS:63,64,67,69; EXT-ESP-SET:18,251; UTC:236"
+work/ext_espacial_setores_v1_1/test_motor_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:38,39,69,85; EXT-ESP-BUF:43,93,139; EXT-ESP-SET:2,157,812"
+work/ext_espacial_setores_v1_1/verify_setorizacao_priorizacao.py,código,preservado no pacote,"BUFFER:35,90,97,102; BUFFERS:5,772,777,780; EXT-ESP-SET:27,529,530; UTC:1878"
+work/gerar_mapa_mata02_base_v1.py,código,preservado no pacote,"AP:165,199; BUFFER:110,151,152; E0:170,194,197,204; ENSAIO:17,108,189; OSM:117; UTC:97"
+work/mata01_entrada_cega_v1/build_mata01_entry.py,código,preservado no pacote,"BUFFER:7,198,200,354; E0:180,233; LOC:239,249,260,360; URG:260"
+work/mata01_mov_v1/PROTOCOLO_MATA01_MOVIMENTO_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,"D8:21; MOV:nome,1,70; OSM:13,35,41,44"
+work/mata01_mov_v1/README.md,documentação/relatório histórico,preservado no pacote,"MOV:nome,1,11,12"
+work/mata01_mov_v1/config_mata01_mov_v1.json,dados/configuração/manifesto,preservado no pacote,"D8:60; E0:7; MOV:nome,2,3,41; OSM:118,128,226,227; UTC:119"
+work/mata01_mov_v1/motor_movimento_mata01_v1.py,código,preservado no pacote,"D8:5; E0:131,236,318; MOV:nome,4,28,30; OSM:178,390,391,392"
+work/mata01_mov_v1/run_tests_with_receipt.py,código,preservado no pacote,"MOV:nome,2,17,18"
+work/mata01_mov_v1/test_motor_movimento_mata01_v1.py,código,preservado no pacote,"MOV:nome,2,17,26; OSM:68"
+work/mata01_perfil_v3/build_mata01_profile_v3.py,código,preservado no pacote,"DET:223,233,248,488; E0:38; LOC:207,212,217,222; OSM:156,597; URG:228,248,488,619"
+work/mata01_processamento_cego_v1/PROTOCOLO_MATA01_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:19; E0:10; EXT-ESP-SET:24; OSM:25
+work/mata01_processamento_cego_v1/README.md,documentação/relatório histórico,preservado no pacote,BUFFER:3; EXT-ESP-SET:3; OSM:19
+work/mata01_processamento_cego_v1/config_mata01_blind_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:19,32; E0:9; EXT-ESP-SET:55; OSM:66"
+work/mata01_processamento_cego_v1/run_mata01_blind.py,código,preservado no pacote,"AP:298; BUFFER:6,113,115,149; E0:682,825; ENSAIO:863; EXT-ESP-SET:4,107; OSM:162,353,360,363; UPV:687; UTC:918; WRAPPER:107"
+work/mata01_processamento_cego_v1/test_mata01_blind.py,código,preservado no pacote,"BUFFER:35,42,66,74; E0:31,64,65"
+work/mata02_mzg2_entrada_cega_v1/FICHA_CANONICA_MATA02_MZG2_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:44; E0:24,69"
+work/mata02_mzg2_entrada_cega_v1/INVENTARIO_IMAGENS_ANEXADAS_MATA02_v1.json,dados/configuração/manifesto,preservado no pacote,ENSAIO:5
+work/mata02_mzg2_entrada_cega_v1/MANIFESTO_PARTICAO_EVIDENCIAS_MATA02_v1.json,dados/configuração/manifesto,preservado no pacote,"E0:12,80,102; ENSAIO:23,39"
+work/mata02_mzg2_processamento_cego_v1/PROTOCOLO_MATA02_MZG2_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,"BUFFER:18; E0:13,24,42,54; ENSAIO:5,7,77"
+work/mata02_mzg2_processamento_cego_v1/README.md,documentação/relatório histórico,preservado no pacote,ENSAIO:3
+work/mata02_mzg2_processamento_cego_v1/RELATORIO_RASCUNHO_SEM_RESULTADOS.md,documentação/relatório histórico,preservado no pacote,"BUFFER:12,47,164,208; E0:9,43; ENSAIO:42,133,254; OSM:262,267"
+work/mata02_mzg2_processamento_cego_v1/config_mata02_mzg2_blind_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:22,36; E0:10,96; ENSAIO:26; EXT-ESP-SET:85; OSM:99,100"
+work/mata02_mzg2_processamento_cego_v1/run_mata02_mzg2_blind.py,código,preservado no pacote,"AP:298; BUFFER:6,113,115,149; E0:682,825; ENSAIO:863; EXT-ESP-SET:4,107; OSM:162,353,360,363; UPV:687; UTC:918; WRAPPER:107"
+work/mata02_mzg2_processamento_cego_v1/verify_mata02_mzg2.py,código,preservado no pacote,"BUFFER:264,402,455,613"
+work/perfil_vitima_v3/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:74,93; BUFFERS:8,93; ENSAIO:101"
+work/perfil_vitima_v3/profile_integration.py,código,preservado no pacote,"BUFFER:414,445,446,451; BUFFERS:391,411,414,419; ENSAIO:834,970; LOC:794,803,804,887; UTC:405"
+work/perfil_vitima_v3/profile_ranker.py,código,preservado no pacote,"LOC:261,286,964"
+work/perfil_vitima_v3/test_profile_integration.py,código,preservado no pacote,"BUFFER:118,130,147,160; BUFFERS:118,147,220,252; LOC:26,256; UTC:215"
+work/perfil_vitima_v3/test_profile_ranker.py,código,preservado no pacote,"LOC:65,197"
+work/preparar_mata02_metadados_v2.py,código,preservado no pacote,"BUFFER:84,105,107; E0:45,57,99; ENSAIO:77,87; EXT-ESP-SET:80; UTC:56; WRAPPER:64,65,76,83"
+work/protocolo_integrado_v1/README.md,documentação/relatório histórico,preservado no pacote,"DET:10,48,50; LOC:8,11,20,27; URG:9,52"
+work/protocolo_integrado_v1/build_release.py,código,preservado no pacote,"DET:95,104,105,114; LOC:61,62,95,97; URG:63,94,95,99"
+work/protocolo_integrado_v1/integrated_protocol.py,código,preservado no pacote,"DET:2,46,83,87; LOC:2,32,33,34; UPV:1333; URG:2,29,46,155"
+work/protocolo_integrado_v1/test_integrated_protocol.py,código,preservado no pacote,"DET:178,436,439,441; LOC:16,19,187,245; UPV:483; URG:66,70,401,404"
+work/protocolo_integrado_v1/test_protocol_adversarial.py,código,preservado no pacote,"DET:138,148,166,289; LOC:11,206,211,212; URG:66,83,84"
+work/protocolo_integrado_v1/test_protocol_cross_module_guards.py,código,preservado no pacote,"DET:156,163,164,168; LOC:260,266,267"
+work/protocolo_integrado_v1/test_schema_contracts.py,código,preservado no pacote,"LOC:13,151,152,168"
+work/protocolo_integrado_v1/test_visual_spatial_binding.py,código,preservado no pacote,"DET:114; LOC:69,70,72,78"
+work/protocolo_integrado_v1/visual_spatial_binding.py,código,preservado no pacote,"LOC:2,5,8,659; UTC:411"
+work/rep_s_field_pilot_v1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:5,12,51,106"
+work/rep_s_field_pilot_v1/config_field_candidates_v1.json,dados/configuração/manifesto,preservado no pacote,BUFFER:76
+work/rep_s_field_pilot_v1/generate_field_candidates.py,código,preservado no pacote,"BUFFER:6,151,152,154"
+work/rep_s_field_pilot_v1/test_generate_field_candidates.py,código,preservado no pacote,BUFFER:99
+work/rep_s_spatial_eval_v1/README.md,documentação/relatório histórico,preservado no pacote,"BUFFER:4,17,29,34; BUFFERS:36,61,111,115; ENSAIO:199; EXT-ESP-BUF:4; EXT-ESP-SET:5,35; OSM:156,157"
+work/rep_s_spatial_eval_v1/common.py,código,preservado no pacote,"UTC:28,29"
+work/rep_s_spatial_eval_v1/config_rep_s_spatial_eval_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:3,13,24,39; BUFFERS:12,224,231,232; EXT-ESP:26; EXT-ESP-BUF:24; EXT-ESP-SET:25,240"
+work/rep_s_spatial_eval_v1/evaluate_post_t3.py,código,preservado no pacote,"BUFFER:79,133,136,186; BUFFERS:123,126,129,367; UTC:32,610,616,626"
+work/rep_s_spatial_eval_v1/manifesto_congelamento_pre_campo_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:70,74; BUFFERS:96; UTC:5"
+work/rep_s_spatial_eval_v1/prepare_and_run_blind.py,código,preservado no pacote,"BUFFER:86,191,220,272; BUFFERS:82,106,408,414; EXT-ESP-BUF:311; EXT-ESP-SET:317; UTC:33,210,518"
+work/rep_s_spatial_eval_v1/resultado_testes_rep_s_spatial_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:29,59,76; EXT-ESP-BUF:24; EXT-ESP-SET:32; UTC:3"
+work/rep_s_spatial_eval_v1/test_rep_s_spatial_eval.py,código,preservado no pacote,"BUFFER:102,127,183,189; EXT-ESP-BUF:296,358"
+work/rural01_avaliacao_t5_t6_v1/PROTOCOLO_AVALIACAO_RURAL01_T45_T6_v1_CONGELADO.md,documentação/relatório histórico,preservado no pacote,"BUFFER:155; ERB:227; MOV:9,37,49,50"
+work/rural01_avaliacao_t5_t6_v1/config_avaliacao_t5_t6_v1.json,dados/configuração/manifesto,preservado no pacote,"MOV:19,23,34,39"
+work/rural01_avaliacao_t5_t6_v1/congelar_avaliador_t45.py,código,preservado no pacote,"MOV:6,37,401,491"
+work/rural01_avaliacao_t5_t6_v1/evaluate_rural01_reference.py,código,preservado no pacote,"API:611,614,766,1466; BUFFER:465,885,1092,1397; E0:1367,1368; MOV:35,38,39,42"
+work/rural01_avaliacao_t5_t6_v1/test_evaluate_rural01_reference.py,código,preservado no pacote,"API:464; BUFFER:183,192; MOV:36,593,639,640"
+work/rural01_avaliacao_t5_t6_v1_1_errata/PROTOCOLO_AVALIACAO_RURAL01_T45_T6_v1_CONGELADO.md,documentação/relatório histórico,preservado no pacote,"BUFFER:155; ERB:227; MOV:9,37,49,50"
+work/rural01_avaliacao_t5_t6_v1_1_errata/config_avaliacao_t5_t6_v1.json,dados/configuração/manifesto,preservado no pacote,"MOV:19,23,34,39"
+work/rural01_avaliacao_t5_t6_v1_1_errata/evaluate_rural01_reference.py,código,preservado no pacote,"API:637,640,792,1501; BUFFER:491,911,1119,1432; E0:1402,1403; MOV:35,38,39,42"
+work/rural01_avaliacao_t5_t6_v1_1_errata/test_evaluate_rural01_reference.py,código,preservado no pacote,"API:464; BUFFER:183,192; MOV:36,608,658,659"
+work/rural01_mov_v2/AUDITORIA_PARAMETROS_E_SOBREPOSICAO_v2.md,documentação/relatório histórico,preservado no pacote,"D8:137,254; DET:19,73,315; MOV:nome,1,7,19; OSM:3,23,72,99"
+work/rural01_mov_v2/INVENTARIO_FONTES_RURAL01_MOB_v2.md,documentação/relatório histórico,preservado no pacote,"BUFFER:57,78,139,194; MOV:nome; OSM:182,187,206,214; SNIRH:323; UTC:53,128"
+work/rural01_mov_v2/PARECER_REAUDITORIA_T4.md,documentação/relatório histórico,preservado no pacote,"MOV:nome,1"
+work/rural01_mov_v2/PROTOCOLO_RURAL01_MOVIMENTO_CEGO_v2_CONGELADO.md,documentação/relatório histórico,preservado no pacote,"BUFFER:348; D8:126; DET:48,50,52,393; ERB:70; MOV:nome,1,11,40; OSM:105,135,167,174; UTC:67,70"
+work/rural01_mov_v2/README.md,documentação/relatório histórico,preservado no pacote,"D8:33; MOV:nome,1,13,19"
+work/rural01_mov_v2/config_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"D8:58; DET:49,50,334; E0:17; ERB:25; MOV:nome,2,5,36; OSM:131,146,149,435"
+work/rural01_mov_v2/criar_ledger_t4.py,código,preservado no pacote,"MOV:nome,2,17,69"
+work/rural01_mov_v2/gerar_mapa_mov_v2.py,código,preservado no pacote,"D8:363,579,614,712; E0:747,751,752; MOV:nome,2,37,38; OSM:299,300,332,362; UTC:743"
+work/rural01_mov_v2/gerar_pdf_mapa_mov_v2.py,código,preservado no pacote,"MOV:nome,2,13,14"
+work/rural01_mov_v2/motor_movimento_v2.py,código,preservado no pacote,"BUFFER:699,871,873,947; D8:86,806,1543; DET:1576; E0:372; MOV:nome,43,50,98; OSM:17,100,1680,1738"
+work/rural01_mov_v2/run_tests_with_receipt.py,código,preservado no pacote,"MOV:nome,2,20,23"
+work/rural01_mov_v2/test_motor_movimento_v2.py,código,preservado no pacote,"BUFFER:350,351,352,353; E0:46,152; MOV:nome,2,27"
+work/rural01_mov_v2/verificar_determinismo_e_preservacao.py,código,preservado no pacote,"MOV:nome,22,23,25"
+work/rural01_processamento_cego_v1/PROTOCOLO_RURAL01_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:19; E0:10; ERB:19; EXT-ESP-SET:24
+work/rural01_processamento_cego_v1/README.md,documentação/relatório histórico,preservado no pacote,"DET:21,40,65; EXT-ESP-SET:3; LOC:21,40,42,64; URG:21,65"
+work/rural01_processamento_cego_v1/build_profile_protocol.py,código,preservado no pacote,"AP:755; BUFFER:649; DET:2,396,543,546; ERB:171,596; LOC:628,630,857,886; URG:2,10,467,470"
+work/rural01_processamento_cego_v1/build_visual_manifest.py,código,preservado no pacote,"API:191; DET:310,311,375,386; LOC:7,309,374,385; UTC:293,342,354,361"
+work/rural01_processamento_cego_v1/config_rural01_blind_v1.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:17,29; E0:9; ERB:20; EXT-ESP-SET:42"
+work/rural01_processamento_cego_v1/extract_visual_metadata.swift,código,preservado no pacote,UTC:79
+work/rural01_processamento_cego_v1/freeze_t2_package.py,código,preservado no pacote,"DET:5,35,36,37; E0:249,274; LOC:5,38,175,180; URG:5,35,36,37"
+work/rural01_processamento_cego_v1/gerar_mapa_rural01_cego.py,código,preservado no pacote,"BUFFER:159; E0:151,211; OSM:32,33,72,73"
+work/rural01_processamento_cego_v1/gerar_mapa_rural01_real_vegetacao.py,código,preservado no pacote,"AP:75,345,351,377; BUFFER:35,300,301,526; E0:563,716,739; OSM:39,40,261,282; UTC:731,734"
+work/rural01_processamento_cego_v1/gerar_mapa_rural01_realista_v2.py,código,preservado no pacote,"AP:195,201,226,430; BUFFER:459,569,607; E0:296,594; OSM:134,135,136,318; UTC:579,586"
+work/rural01_processamento_cego_v1/run_rural01_blind.py,código,preservado no pacote,"AP:264; BUFFER:115,122,173,175; E0:378,435,530; ERB:185,239,385,618; EXT-ESP-SET:4,107; EXT_ESP_SET:400; OSM:589,590,742,743; UTC:610; WRAPPER:107"
+work/rural01_processamento_cego_v1/test_build_profile_protocol.py,código,preservado no pacote,"BUFFER:38,51; DET:2,107,147; E0:35,36,48,49; LOC:107,126,127; URG:2,147"
+work/rural01_processamento_cego_v1/test_rural01_blind.py,código,preservado no pacote,"BUFFER:35,41,55,63; E0:31,53,54"
+work/urbe01_auditoria_visual_v1/build_urbe01_visual_closure.py,código,preservado no pacote,"DET:414,460,633,685; LOC:412,460,478,593; URG:413,460,632,684"
+work/urbe01_auditoria_visual_v1/test_build_urbe01_visual_closure.py,código,preservado no pacote,LOC:22
+work/urbe01_avaliacao_pos_abertura_v1/evaluate_urbe01_reference.py,código,preservado no pacote,"BUFFER:234,266,267,297; E0:234,235,238,239"
+work/urbe01_avaliacao_pos_abertura_v1/test_evaluate_urbe01_reference.py,código,preservado no pacote,E0:25
+work/urbe01_processamento_cego_v1/PROTOCOLO_URBE01_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,"E0:10; EXT-ESP-SET:25,29"
+work/urbe01_processamento_cego_v1/config_urbe01_blind_v1.json,dados/configuração/manifesto,preservado no pacote,BUFFER:24; E0:9; EXT-ESP-SET:37
+work/urbe01_processamento_cego_v1/gerar_mapa_urbe01_cego.py,código,preservado no pacote,"AP:229,232,239,242; E0:272,371,421; ENSAIO:379; OSM:28,29,95,315"
+work/urbe01_processamento_cego_v1/run_urbe01_blind.py,código,preservado no pacote,"AP:342; BUFFER:118,167,169,185; E0:467,518,624; EXT-ESP-SET:110; EXT_ESP_SET:482; OSM:695,696,833,834; UTC:712; WRAPPER:110"
+work/urbe01_processamento_cego_v1/test_urbe01_blind.py,código,preservado no pacote,"BUFFER:51,53,78,79; E0:32,59,73,74"
+outputs/campo_mata01/RELATORIO_EXECUTIVO_MATA01_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,"BUFFER:23; LOC:76; UTC:20,25,26"
+outputs/campo_mata01/entrada_cega_v1/RELATORIO_ENTRADA_CEGA_MATA01_v1.md,documentação/relatório histórico,preservado no pacote,"BUFFER:18; DET:59; LOC:26,34,76; URG:59; UTC:11,12,24,32"
+outputs/campo_mata01/entrada_cega_v1/registro_cenario_mata01_revisao1.json,dados/configuração/manifesto,preservado no pacote,BUFFER:1; E0:1; LOC:1
+outputs/campo_mata01/entrada_cega_v1/registro_cenario_mata01_revisao2.json,dados/configuração/manifesto,preservado no pacote,BUFFER:1; E0:1; LOC:1; URG:1
+outputs/campo_mata01/entrada_cega_v1/relatorio_qa_entrada_mata01.json,dados/configuração/manifesto,preservado no pacote,BUFFER:1; LOC:1
+outputs/campo_mata01/perfil_cego_v3/PROTOCOLO_PERFIL_V3_MATA01_CONGELADO.md,documentação/relatório histórico,preservado no pacote,DET:11; LOC:11; URG:11
+outputs/campo_mata01/perfil_cego_v3/RELATORIO_PERFIL_V3_MATA01.md,documentação/relatório histórico,preservado no pacote,"E0:11,12,13,22; LOC:28,30; OSM:38"
+outputs/campo_mata01/perfil_cego_v3/comparacao_top3_territorial_perfil.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_mata01/perfil_cego_v3/comparacao_top3_territorial_perfil.json,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_mata01/perfil_cego_v3/efeito_pista_norte.json,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_mata01/perfil_cego_v3/entrada_perfil_v3_mata01_congelada.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_mata01/perfil_cego_v3/perfil_fonte_mata01_sidecar_congelado.json,dados/configuração/manifesto,preservado no pacote,DET:1; E0:1; LOC:1; URG:1
+outputs/campo_mata01/perfil_cego_v3/protocolo_perfil_v3_mata01_congelado.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_mata01/perfil_cego_v3/ranking_diagnostico_lambda010.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_mata01/perfil_cego_v3/ranking_sensibilidade_lambda005.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_mata01/perfil_cego_v3/resultado_perfil_v3_mata01.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_mata01/perfil_cego_v3/revisao_espacial_mata01_congelada.json,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_mata01/processamento_cego_v1/atributos_geo_setores_mata01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_mata01/processamento_cego_v1/config_efetiva_mata01_blind.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:8,13,27,38; BUFFERS:80,279; E0:307; EXT-ESP-SET:36; LOC:443; OSM:50,51,286,330; WRAPPER:36"
+outputs/campo_mata01/processamento_cego_v1/entrada_raio_fonte_mata01.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:606; E0:597,600"
+outputs/campo_mata01/processamento_cego_v1/entrada_raio_fonte_mata01.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,13,21,35; E0:22"
+outputs/campo_mata01/processamento_cego_v1/manifesto_entrada_raio_fonte_mata01.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,23"
+outputs/campo_mata01/processamento_cego_v1/manifesto_processamento_cego.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,199; EXT-ESP-SET:9; OSM:38,39,44,45; UTC:193; WRAPPER:9"
+outputs/campo_mata01/processamento_cego_v1/protocolo_mata01_cego_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:19; E0:10; EXT-ESP-SET:24; OSM:25
+outputs/campo_mata01/processamento_cego_v1/ranking_base_disponiveis_mata01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_mata01/processamento_cego_v1/ranking_base_original_abstido_mata01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_mata01/processamento_cego_v1/relatorio_execucao_mata01.md,documentação/relatório histórico,preservado no pacote,"BUFFER:10; E0:7,25,26,27; ENSAIO:37; OSM:17,37"
+outputs/campo_mata01/processamento_cego_v1/relatorio_qa.json,dados/configuração/manifesto,preservado no pacote,BUFFER:4
+outputs/campo_mata01/processamento_cego_v1/resultado_mata01_cego.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,10,16,17; E0:18,82,118,182; EXT-ESP-SET:31,131,231,331; OSM:14,34,39,59; WRAPPER:31,131,231,331"
+outputs/campo_mata01/processamento_cego_v1/setores_mata01.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:112,119,120,134; E0:109,121,152,262; EXT-ESP-SET:125,278,431,580; OSM:116,129,269,282; WRAPPER:125,278,431,580"
+outputs/campo_mata01/processamento_cego_v1/top3_base_disponiveis_mata01.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4; OSM:2,3,4"
+outputs/campo_mata01/processamento_cego_v1/top3_base_disponiveis_mata01.json,dados/configuração/manifesto,preservado no pacote,"E0:7,34,40,67; OSM:6,39,72"
+outputs/campo_mata01/processamento_movimento_cego_v1/corredores_planejamento_mata01.geojson,dados/configuração/manifesto,preservado no pacote,"E0:125,136,263,274"
+outputs/campo_mata01/processamento_movimento_cego_v1/manifesto_mata01_mov_v1.json,dados/configuração/manifesto,preservado no pacote,"MOV:nome,2,7,13; OSM:67,68,73,74"
+outputs/campo_mata01/processamento_movimento_cego_v1/relatorio_qa_mata01_mov_v1.json,dados/configuração/manifesto,preservado no pacote,"MOV:nome,38; OSM:9,10,29,30"
+outputs/campo_mata01/processamento_movimento_cego_v1/relatorio_testes_mata01_mov_v1.json,dados/configuração/manifesto,preservado no pacote,"MOV:nome,7"
+outputs/campo_mata01/processamento_movimento_cego_v1/resultado_mata01_mov_v1.json,dados/configuração/manifesto,preservado no pacote,"E0:60,79,98,117; MOV:nome,6,22,39; OSM:19,27,28,972"
+outputs/campo_mata01/processamento_movimento_cego_v1/sumario_setorial_mata01.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_mata02_mzg2/CONCLUSAO_PEDIDO_UNICO_20261030.json,dados/configuração/manifesto,preservado no pacote,"E0:47; ENSAIO:4,36,48,49; OSM:38"
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/COMPARACAO_RESULTADOS.json,dados/configuração/manifesto,preservado no pacote,E0:19
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/DECOMPOSICAO_SETOR_ORIGINAL.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:22,26,28,29; E0:5,6,140,143; EXT-ESP-SET:3; OSM:72,73,74"
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/MANIFESTO_PRESERVACAO.json,dados/configuração/manifesto,preservado no pacote,"E0:59,125; ENSAIO:6,7,8,9; UTC:2"
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/REFERENCIA_DECLARADA.json,dados/configuração/manifesto,preservado no pacote,UTC:8
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/REFERENCIA_E_SETOR.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:42,46,48,49; E0:20,25,26; EXT-ESP-SET:23"
+outputs/campo_mata02_mzg2/conferencia_referencia_declarada_v1_20261030/RELATORIO_CONFERENCIA_MATA02.txt,documentação/relatório histórico,preservado no pacote,"E0:7,9,36; ENSAIO:29,32,42; MOV:29"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/MANIFESTO.json,dados/configuração/manifesto,preservado no pacote,"E0:54; ENSAIO:4,5,6,7; UTC:2"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/PREMISSAS_E_CONFIRMACAO.json,dados/configuração/manifesto,preservado no pacote,E0:6; MOV:32; UTC:23
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/QA_ENTREGA.json,dados/configuração/manifesto,preservado no pacote,E0:56; UTC:33
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/RELATORIO_MATA02_DIRECAO_249.txt,documentação/relatório histórico,preservado no pacote,"E0:9,10,11,32; ENSAIO:32; MOV:19"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/RESULTADOS_CONSOLIDADOS.json,dados/configuração/manifesto,preservado no pacote,E0:295; MOV:298
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_ALTA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_ALTA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_ALTA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_BAIXA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_BAIXA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_BAIXA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_MEDIA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_MEDIA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_MEDIA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/entrada_NAO_AVALIADA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_ALTA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_ALTA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_ALTA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_BAIXA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_BAIXA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_BAIXA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_MEDIA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_MEDIA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_MEDIA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/direcao_249_confirmada_v2_20261030/resultado_NAO_AVALIADA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,38,44,55; LOC:9"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/COBERTURA_FONTES.json,dados/configuração/manifesto,preservado no pacote,ENSAIO:nome; OSM:2
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/FICHA_CENARIO_MATA02_v2_1.json,dados/configuração/manifesto,preservado no pacote,"E0:99; ENSAIO:nome,4"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/MANIFESTO_FONTES.json,dados/configuração/manifesto,preservado no pacote,"ENSAIO:nome; OSM:39,43"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/MANIFESTO_SAIDAS.json,dados/configuração/manifesto,preservado no pacote,"ENSAIO:nome,27,31"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/PISTA_DIRECIONAL_249.json,dados/configuração/manifesto,preservado no pacote,E0:10; ENSAIO:nome
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/QA_AMOSTRAS.json,dados/configuração/manifesto,preservado no pacote,"E0:3,10,17,24; ENSAIO:nome"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/QA_EXECUCAO.json,dados/configuração/manifesto,preservado no pacote,ENSAIO:nome
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/RELATORIO_ENSAIO.txt,documentação/relatório histórico,preservado no pacote,"E0:4,22,26; ENSAIO:nome,1; EXT-ESP-SET:4; OSM:6,26; UTC:26"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/RESULTADO_ENSAIO.json,dados/configuração/manifesto,preservado no pacote,"E0:9,10,11,19; ENSAIO:nome,4"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/atributos_setores.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; ENSAIO:nome; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/config_execucao.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:12,13,18,47; BUFFERS:54,496; E0:510,542; ENSAIO:nome,15,526; EXT-ESP-SET:5; LOC:300; OSM:202,203,502,545"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/ranking_BASE.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; ENSAIO:nome; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/ranking_BASE_completo.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:23,27,29,30; E0:6,7,141,144; ENSAIO:nome; EXT-ESP-SET:4,166,328,490; OSM:73,74,75,235"
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/referencia_249_contextual.geojson,dados/configuração/manifesto,preservado no pacote,E0:13; ENSAIO:nome
+outputs/campo_mata02_mzg2/ensaio_complementar_v2_249/setores_BASE.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:36,40,42,43; E0:14,19,20,164; ENSAIO:nome; EXT-ESP-SET:17,167,309,459"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/FICHA_CENARIO_MATA02_v2.json,dados/configuração/manifesto,preservado no pacote,E0:98; ENSAIO:4
+outputs/campo_mata02_mzg2/entrada_auditada_v2/INVENTARIO_METADADOS.csv,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_mata02_mzg2/entrada_auditada_v2/INVENTARIO_METADADOS.json,dados/configuração/manifesto,preservado no pacote,"E0:28,67,106,145; UTC:4"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/LEIA_ME_CONFERENCIA.txt,documentação/relatório histórico,preservado no pacote,"BUFFER:25,27; E0:11,17,18,19; ENSAIO:45; EXT-ESP-SET:27"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/PROVENIENCIA_CODIGO.json,dados/configuração/manifesto,preservado no pacote,BUFFER:17
+outputs/campo_mata02_mzg2/entrada_auditada_v2/QA_PREPARACAO.json,dados/configuração/manifesto,preservado no pacote,BUFFER:2
+outputs/campo_mata02_mzg2/entrada_auditada_v2/config_entrada_mata02_v2.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:12,13,18,47; BUFFERS:54,496; E0:510,542; ENSAIO:15,526; EXT-ESP-SET:5; LOC:300; OSM:202,203,502,545"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/entrada_raio_fonte_mata02_mzg2.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:606; E0:597,600"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/entrada_raio_fonte_mata02_mzg2.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,13,21,35; E0:22; ENSAIO:37"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/manifesto_entrada_raio_fonte_mata02_mzg2.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,23"
+outputs/campo_mata02_mzg2/entrada_auditada_v2/overlay_entrada_mata02_v2.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:22,36; E0:10,96; ENSAIO:26; EXT-ESP-SET:85; OSM:99,100"
+outputs/campo_mata02_mzg2/mapa_priorizacao_v1/QA_CARTOGRAFIA.json,dados/configuração/manifesto,preservado no pacote,"E0:5,17,25,33; ENSAIO:9,10,11,12; UTC:67"
+outputs/campo_mata02_mzg2/mapa_priorizacao_v1/fontes/ESA_WorldCover_S2_TCC_2021_MATA02.metadata.json,dados/configuração/manifesto,preservado no pacote,UTC:12
+outputs/campo_mata02_mzg2/movimento_complementar_v1/config_movimento.json,dados/configuração/manifesto,preservado no pacote,"D8:45; E0:7; MOV:2,3,26,58; OSM:106,120,232,233; UTC:107"
+outputs/campo_mata02_mzg2/movimento_complementar_v1/corredores.geojson,dados/configuração/manifesto,preservado no pacote,"E0:7,11,361,365"
+outputs/campo_mata02_mzg2/movimento_complementar_v1/manifesto.json,dados/configuração/manifesto,preservado no pacote,ENSAIO:5; MOV:3; OSM:6
+outputs/campo_mata02_mzg2/movimento_complementar_v1/resumo_setores.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/comparacao.json,dados/configuração/manifesto,preservado no pacote,"E0:7,18,29,49"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_ALTA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_ALTA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_ALTA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_BAIXA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_BAIXA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_BAIXA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_MEDIA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_MEDIA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_MEDIA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/entrada_NAO_AVALIADA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,207; LOC:8"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/premissas.json,dados/configuração/manifesto,preservado no pacote,E0:6
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_ALTA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_ALTA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_ALTA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_BAIXA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_BAIXA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_BAIXA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_MEDIA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_MEDIA_45.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_MEDIA_5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata02_mzg2/perfil_249_sensibilidade_v1/resultado_NAO_AVALIADA_22.5.json,dados/configuração/manifesto,preservado no pacote,"E0:6,38,44,55; LOC:9"
+outputs/campo_mata03_km21/atributos_setores.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/campo_mata03_km21/comparacao_referencia_A_20261103/comparacao_referencia_A.json,dados/configuração/manifesto,preservado no pacote,E0:26; ENSAIO:4
+outputs/campo_mata03_km21/comparacao_referencia_v1/comparacao_referencia.json,dados/configuração/manifesto,preservado no pacote,E0:24; ENSAIO:4
+outputs/campo_mata03_km21/comparacao_referencia_v1/relatorio_comparacao.txt,documentação/relatório histórico,preservado no pacote,"E0:6,15; ENSAIO:26,27"
+outputs/campo_mata03_km21/comparacao_referencia_v2_20261103/comparacao_referencia.json,dados/configuração/manifesto,preservado no pacote,E0:32; ENSAIO:4
+outputs/campo_mata03_km21/comparacao_referencia_v2_20261103/relatorio_comparacao.txt,documentação/relatório histórico,preservado no pacote,"E0:3,9,18,28; ENSAIO:29,30"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/entrada_PERFIL_285_nao_avaliada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/nota_execucao.txt,documentação/relatório histórico,preservado no pacote,DET:43; E0:35; ENSAIOS:52; MOV:43; URG:43
+outputs/campo_mata03_km21/conclusao_direcao285_v1/resultado_PERFIL_285_nao_avaliada.json,dados/configuração/manifesto,preservado no pacote,"E0:6,38,44,55; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_285_resumo.json,dados/configuração/manifesto,preservado no pacote,"E0:9,15,21,28"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_22p5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_22p5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_45_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_45_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_ALTA_5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_22p5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_22p5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_45_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_45_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_BAIXA_5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_22p5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_22p5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_45_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_45_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_5_entrada.json,dados/configuração/manifesto,preservado no pacote,"E0:4,15,115,279; LOC:8"
+outputs/campo_mata03_km21/conclusao_direcao285_v1/sensibilidade_MEDIA_5_resultado.json,dados/configuração/manifesto,preservado no pacote,"E0:6,102,108,119; LOC:9"
+outputs/campo_mata03_km21/config_execucao.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:12,13,18,47; BUFFERS:54,496; E0:510,542; ENSAIO:15,526; EXT-ESP-SET:5; LOC:300; OSM:202,203,502,545"
+outputs/campo_mata03_km21/decisoes_BASE.json,dados/configuração/manifesto,preservado no pacote,"E0:5,6,7,15"
+outputs/campo_mata03_km21/entrada_raio_fonte_mata03_km21.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:14,27; E0:6,10; ENSAIO:29"
+outputs/campo_mata03_km21/entrada_raio_fonte_mata03_km21.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:7,16,26,39; E0:22; ENSAIO:41"
+outputs/campo_mata03_km21/manifesto_BASE.json,dados/configuração/manifesto,preservado no pacote,"OSM:32,37"
+outputs/campo_mata03_km21/manifesto_entrada.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:7,16"
+outputs/campo_mata03_km21/premissas_congeladas.json,dados/configuração/manifesto,preservado no pacote,"E0:23,41; ENSAIO:31"
+outputs/campo_mata03_km21/qa_calculos.json,dados/configuração/manifesto,preservado no pacote,"E0:4,11,18,25"
+outputs/campo_mata03_km21/ranking_BASE.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/campo_mata03_km21/ranking_BASE.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:23,27,29,30; E0:6,7,141,144; EXT-ESP-SET:4,166,328,490; OSM:73,74,75,235"
+outputs/campo_mata03_km21/resultado_BASE.json,dados/configuração/manifesto,preservado no pacote,"E0:11,12,13,21"
+outputs/campo_mata03_km21/setores_BASE.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:36,40,42,43; E0:14,19,20,164; EXT-ESP-SET:17,167,309,459"
+outputs/campo_mata03_km21/verificacao_espacial.json,dados/configuração/manifesto,preservado no pacote,OSM:4
+outputs/campo_rural01/adendo_temporal_pos_t2_v1/adendo_temporal_pos_t2_rural01_v1.json,dados/configuração/manifesto,preservado no pacote,ERB:25; LOC:36
+outputs/campo_rural01/adendo_temporal_pos_t2_v1/adendo_temporal_pos_t2_rural01_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:18; ERB:9; UTC:7
+outputs/campo_rural01/avaliacao_pos_abertura_v1/RELATORIO_AVALIACAO_RURAL01_T6.md,documentação/relatório histórico,preservado no pacote,"MOV:22,23"
+outputs/campo_rural01/avaliacao_pos_abertura_v1/referencia_avaliacao_t5_t6.geojson,dados/configuração/manifesto,preservado no pacote,"E0:17,19"
+outputs/campo_rural01/avaliacao_pos_abertura_v1/relatorio_qa_t5_t6.json,dados/configuração/manifesto,preservado no pacote,API:15; MOV:7
+outputs/campo_rural01/avaliacao_pos_abertura_v1/resultado_avaliacao_t5_t6.json,dados/configuração/manifesto,preservado no pacote,"E0:1623,1624,1625; MOV:164,165,172,173"
+outputs/campo_rural01/avaliador_t45_congelado_v1/RESUMO_CONGELAMENTO_T45.md,documentação/relatório histórico,preservado no pacote,MOV:8
+outputs/campo_rural01/avaliador_t45_congelado_v1/relatorio_qa_avaliador_t45_v1.json,dados/configuração/manifesto,preservado no pacote,"DET:63,81,90; LOC:72; MOV:17,184,193,202; OSM:494,503; URG:63,81,90"
+outputs/campo_rural01/avaliador_t45_congelado_v1/relatorio_testes_avaliador_t45_v1.json,dados/configuração/manifesto,preservado no pacote,API:12
+outputs/campo_rural01/entrada_cega_v1/manifesto_metadados_visuais.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; UTC:1
+outputs/campo_rural01/entrada_cega_v1/manifesto_sha256_conjunto_a.json,dados/configuração/manifesto,preservado no pacote,API:1
+outputs/campo_rural01/errata_interpretativa_t6_v1/NOTA_INTERPRETATIVA_RURAL01_T6_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:35
+outputs/campo_rural01/errata_interpretativa_t6_v2/NOTA_INTERPRETATIVA_RURAL01_T6_v2.md,documentação/relatório histórico,preservado no pacote,BUFFER:47
+outputs/campo_rural01/errata_interpretativa_t6_v2/visao_estruturada_interpretativa_t6_v2.json,dados/configuração/manifesto,preservado no pacote,BUFFER:49
+outputs/campo_rural01/perfil_v2_v3/loc_result_v1.json,dados/configuração/manifesto,preservado no pacote,"E0:1; LOC:nome,1"
+outputs/campo_rural01/perfil_v2_v3/manifesto_perfil_urg_det_rural01.json,dados/configuração/manifesto,preservado no pacote,"DET:nome,1; LOC:1; URG:nome,1"
+outputs/campo_rural01/perfil_v2_v3/manifesto_territorial_para_perfil_rural01.json,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v2_rural01_compilado.json,dados/configuração/manifesto,preservado no pacote,ERB:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v2_rural01_congelado.json,dados/configuração/manifesto,preservado no pacote,ERB:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v2_rural01_rascunho.json,dados/configuração/manifesto,preservado no pacote,ERB:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v3_rural01_entrada_congelada.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v3_rural01_entrada_rascunho.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_rural01/perfil_v2_v3/perfil_v3_rural01_resultado.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_rural01/perfil_v2_v3/protocolo_integrado_rural01_congelado.json,dados/configuração/manifesto,preservado no pacote,DET:1; E0:1; ERB:1; LOC:1; URG:1
+outputs/campo_rural01/perfil_v2_v3/protocolo_integrado_rural01_rascunho.json,dados/configuração/manifesto,preservado no pacote,DET:1; E0:1; ERB:1; LOC:1; URG:1
+outputs/campo_rural01/perfil_v2_v3/ranking_perfil_v3_rural01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_rural01/perfil_v2_v3/relatorio_perfil_urg_det_rural01.json,dados/configuração/manifesto,preservado no pacote,"DET:nome,1; E0:1; LOC:1; URG:nome,1"
+outputs/campo_rural01/perfil_v2_v3/resultado_urg_det_rural01.json,dados/configuração/manifesto,preservado no pacote,"DET:nome,1; E0:1; LOC:1; URG:nome,1"
+outputs/campo_rural01/perfil_v2_v3/top3_perfil_v3_rural01.json,dados/configuração/manifesto,preservado no pacote,E0:1
+outputs/campo_rural01/processamento_cego_v1/README_MAPA_RURAL01_PREVISAO_CEGA_v1.md,documentação/relatório histórico,preservado no pacote,E0:11
+outputs/campo_rural01/processamento_cego_v1/atributos_geo_setores.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_rural01/processamento_cego_v1/config_efetiva_rural01_blind.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:8,13,27,38; BUFFERS:77,276; E0:396; ERB:406; EXT-ESP-SET:36; LOC:428; OSM:49,50; WRAPPER:36"
+outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:606; E0:597,600"
+outputs/campo_rural01/processamento_cego_v1/entrada_raio_fonte.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:18,28; E0:19; ERB:4,30"
+outputs/campo_rural01/processamento_cego_v1/manifesto_entrada_raio_fonte.json,dados/configuração/manifesto,preservado no pacote,ERB:3
+outputs/campo_rural01/processamento_cego_v1/manifesto_mapa_rural01_previsao_v1.json,dados/configuração/manifesto,preservado no pacote,BUFFER:18
+outputs/campo_rural01/processamento_cego_v1/manifesto_processamento_cego.json,dados/configuração/manifesto,preservado no pacote,"ERB:8; EXT-ESP-SET:7; OSM:37,38,43,44; UTC:186; WRAPPER:7"
+outputs/campo_rural01/processamento_cego_v1/protocolo_rural01_cego_v1.md,documentação/relatório histórico,preservado no pacote,BUFFER:19; E0:10; ERB:19; EXT-ESP-SET:24
+outputs/campo_rural01/processamento_cego_v1/ranking_base_rural01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_rural01/processamento_cego_v1/relatorio_execucao_rural01.md,documentação/relatório histórico,preservado no pacote,"BUFFER:9; E0:7,19,20,21"
+outputs/campo_rural01/processamento_cego_v1/resultado_rural01_cego.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:30,37,43,44; E0:3,46,145,164; ERB:7; EXT-ESP-SET:6,84,246,408; EXT_ESP_SET:22; OSM:86,110,111,248; WRAPPER:6,84,246,408"
+outputs/campo_rural01/processamento_cego_v1/setores_rural01.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:104,110,111,123; E0:101,112,137,251; EXT-ESP-SET:116,266,412,554; WRAPPER:116,266,412,554"
+outputs/campo_rural01/processamento_cego_v1/top3_rural01.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4"
+outputs/campo_rural01/processamento_cego_v1/top3_rural01.json,dados/configuração/manifesto,preservado no pacote,"E0:7,28,34,55"
+outputs/campo_rural01/processamento_movimento_cego_v2/README_MAPA_RURAL01_MOV_V_v2.md,documentação/relatório histórico,preservado no pacote,"D8:21; MOV:nome,1,5,6; OSM:22,33"
+outputs/campo_rural01/processamento_movimento_cego_v2/RELATORIO_FECHAMENTO_T4_RURAL01_MOV_V2.md,documentação/relatório histórico,preservado no pacote,"DET:23; MOV:nome,1,5,23; OSM:24,39"
+outputs/campo_rural01/processamento_movimento_cego_v2/areas_alcancaveis_mov_v2.geojson,dados/configuração/manifesto,preservado no pacote,MOV:nome
+outputs/campo_rural01/processamento_movimento_cego_v2/corredores_mov_v2.geojson,dados/configuração/manifesto,preservado no pacote,"E0:123,138,236,251; MOV:nome,8267"
+outputs/campo_rural01/processamento_movimento_cego_v2/grade_resistencia.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5; OSM:2,3,4,5"
+outputs/campo_rural01/processamento_movimento_cego_v2/ledger_congelamento_T4_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"MOV:nome,18,23,28"
+outputs/campo_rural01/processamento_movimento_cego_v2/manifesto_cartografico_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"D8:31,100; E0:7,16,17; MOV:nome,2,111,112; OSM:96,177,178,183; UTC:3"
+outputs/campo_rural01/processamento_movimento_cego_v2/manifesto_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"MOV:nome,5,10,22; OSM:52,53,58,59"
+outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_determinismo_e_preservacao_v2.json,dados/configuração/manifesto,preservado no pacote,"MOV:8,13,23,28; OSM:83,89"
+outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_qa_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"DET:54; MOV:nome,53,54,73"
+outputs/campo_rural01/processamento_movimento_cego_v2/relatorio_testes_mov_v2.json,dados/configuração/manifesto,preservado no pacote,MOV:nome
+outputs/campo_rural01/processamento_movimento_cego_v2/resultado_mov_v2.json,dados/configuração/manifesto,preservado no pacote,"E0:8,15,22,31; ERB:312; MOV:nome,55,101; OSM:80,96,321,322"
+outputs/campo_rural01/processamento_movimento_cego_v2/setores_mov_v2.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1; E0:2,3,4,5; MOV:nome,2,3,4"
+outputs/campo_rural01/t2_congelado/manifesto_t2_rural01.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_rural01/t2_congelado/relatorio_qa_t2_rural01.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_rural01/t2_congelado/resumo_t2_rural01.md,documentação/relatório histórico,preservado no pacote,"E0:17,18,19; LOC:10"
+outputs/campo_rural01/t2_congelado_final/manifesto_t2_rural01.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_rural01/t2_congelado_final/relatorio_qa_t2_rural01.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_rural01/t2_congelado_final/resumo_t2_rural01.md,documentação/relatório histórico,preservado no pacote,"E0:18,19,20; LOC:11"
+outputs/campo_urbe01/auditoria_visual_pos_abertura_v1/manifesto_auditoria_visual_urbe01_v1.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_urbe01/auditoria_visual_pos_abertura_v1/relatorio_auditoria_visual_urbe01_v1.md,documentação/relatório histórico,preservado no pacote,"DET:5; E0:21; LOC:5,23; URG:5"
+outputs/campo_urbe01/auditoria_visual_pos_abertura_v1/relatorio_qa_visual_urbe01_v1.json,dados/configuração/manifesto,preservado no pacote,E0:1; LOC:1
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/avaliacao_rankings.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3"
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/distancias_top3.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4,5"
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/referencia_setores_e_top3.geojson,dados/configuração/manifesto,preservado no pacote,"E0:17,19,139,144"
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/relatorio_avaliacao_pos_abertura.md,documentação/relatório histórico,preservado no pacote,"E0:16,17,18,34"
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/resultado_avaliacao_pos_abertura.json,dados/configuração/manifesto,preservado no pacote,"E0:19,30,41,52"
+outputs/campo_urbe01/avaliacao_pos_abertura_v1/verificacao_independente.json,dados/configuração/manifesto,preservado no pacote,"E0:3,4,6,14"
+outputs/campo_urbe01/fechamento_formal_v1/README_FECHAMENTO_URBE01_v1.md,documentação/relatório histórico,preservado no pacote,DET:5; LOC:5; URG:5
+outputs/campo_urbe01/fechamento_formal_v1/matriz_rastreabilidade_urbe01_v1.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/campo_urbe01/fechamento_formal_v1/relatorio_fechamento_urbe01_v1.md,documentação/relatório histórico,preservado no pacote,"DET:19; LOC:19,25; URG:19"
+outputs/campo_urbe01/processamento_cego_v1/README_MAPA_URBE01_CEGO_v1.md,documentação/relatório histórico,preservado no pacote,E0:19
+outputs/campo_urbe01/processamento_cego_v1/atributos_geo_setores.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_urbe01/processamento_cego_v1/config_efetiva_urbe01_blind.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:8,13,27,70; BUFFERS:73,272; EXT-ESP-SET:36; LOC:390; OSM:45,46; WRAPPER:36"
+outputs/campo_urbe01/processamento_cego_v1/entrada_raio_fonte.geojson,dados/configuração/manifesto,preservado no pacote,"E0:597,599"
+outputs/campo_urbe01/processamento_cego_v1/entrada_raio_fonte.json,dados/configuração/manifesto,preservado no pacote,BUFFER:11; E0:12
+outputs/campo_urbe01/processamento_cego_v1/manifesto_processamento_cego.json,dados/configuração/manifesto,preservado no pacote,"EXT-ESP-SET:6; OSM:35,36,41,42; UTC:220; WRAPPER:6"
+outputs/campo_urbe01/processamento_cego_v1/protocolo_urbe01_cego_v1.md,documentação/relatório histórico,preservado no pacote,"E0:10; EXT-ESP-SET:25,29"
+outputs/campo_urbe01/processamento_cego_v1/ranking_base_original.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_urbe01/processamento_cego_v1/ranking_perfil_urbe01.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; E0:2,3,4,5; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4; WRAPPER:2,3,4,5"
+outputs/campo_urbe01/processamento_cego_v1/relatorio_execucao_urbe01.md,documentação/relatório histórico,preservado no pacote,"E0:7,18,19,20"
+outputs/campo_urbe01/processamento_cego_v1/resultado_urbe01_cego.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:6,12,13,14; E0:15,114,133,136; EXT-ESP-SET:53,215,377,539; EXT_ESP_SET:2; OSM:55,79,80,217; WRAPPER:53,215,377,539"
+outputs/campo_urbe01/processamento_cego_v1/setores_urbe01.geojson,dados/configuração/manifesto,preservado no pacote,"BUFFER:104,110,111,123; E0:101,112,146,260; EXT-ESP-SET:116,275,426,585; WRAPPER:116,275,426,585"
+outputs/campo_urbe01/processamento_cego_v1/top3_base_original.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4"
+outputs/campo_urbe01/processamento_cego_v1/top3_base_original.json,dados/configuração/manifesto,preservado no pacote,"E0:7,27,33,53"
+outputs/campo_urbe01/processamento_cego_v1/top3_perfil_urbe01.csv,dados/configuração/manifesto,preservado no pacote,"E0:2,3,4"
+outputs/campo_urbe01/processamento_cego_v1/top3_perfil_urbe01.json,dados/configuração/manifesto,preservado no pacote,"E0:7,27,33,53"
+outputs/consolidacao_cinco_casos_v3_20261103/SINTESE_CINCO_CASOS.md,documentação/relatório histórico,preservado no pacote,"E0:9,18,21,23"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/RESUMO_EXECUCAO_DEV_S.md,documentação/relatório histórico,preservado no pacote,"BUFFER:6,10,19,52; BUFFERS:5,11,18,28; EXT-ESP-SET:1"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/buffer_decisions_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:nome; EXT-ESP-SET:2,3,4,5"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/determinism_report.json,dados/configuração/manifesto,preservado no pacote,BUFFER:11; EXT-ESP-SET:2
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/manifest_setorizacao_dev.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:2,11,12,17; EXT-ESP-SET:139; OSM:41,42,47,48; UTC:137"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/sector_features_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/sector_ranking_dev.csv,dados/configuração/manifesto,preservado no pacote,"BUFFER:1,2,3,4; EXT-ESP-SET:2,3,4,5; OSM:1,2,3,4"
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/test_results.json,dados/configuração/manifesto,preservado no pacote,EXT-ESP-SET:2
+outputs/ext_espacial_s3_setorizacao_priorizacao_v1_1/results/verification_report.json,dados/configuração/manifesto,preservado no pacote,"BUFFER:21,72,77,81; BUFFERS:63,64,67,69; EXT-ESP-SET:18,251; UTC:236"
+outputs/modulo_perfil_vitima_v2/Especificacao_Modulo_Leitura_Perfil_Vitima_v2.md,documentação/relatório histórico,preservado no pacote,"CBM:34,36"
+outputs/modulo_perfil_vitima_v2/Registro_Fontes_Modulo_Perfil_V2.md,documentação/relatório histórico,preservado no pacote,"CBM:23,27"
+outputs/modulo_perfil_vitima_v3/Especificacao_PERFIL_V3_Quantitativo.md,documentação/relatório histórico,preservado no pacote,"BUFFER:34,205,210; BUFFERS:83"
+outputs/modulo_perfil_vitima_v3/Matriz_Hierarquia_Transferibilidade_Fontes_v3.md,documentação/relatório histórico,preservado no pacote,BUFFER:62
+outputs/modulo_perfil_vitima_v3/Relatorio_Integracao_PERFIL_V3.md,documentação/relatório histórico,preservado no pacote,"BUFFER:12; BUFFERS:9,24; ENSAIO:20"
+outputs/modulo_perfil_vitima_v3/Relatorio_Revisao_Amazonia_Mata_v3.md,documentação/relatório histórico,preservado no pacote,"CBM:47,49"
+outputs/modulo_perfil_vitima_v3/config_perfil_quantitativo_v3.json,dados/configuração/manifesto,preservado no pacote,BUFFER:6
+outputs/modulo_perfil_vitima_v3/perfil_quantitativo_v3.input.schema.json,dados/configuração/manifesto,preservado no pacote,"LOC:14,43,45"
+outputs/protocolo_integrado_v1/Especificacao_Protocolo_Integrado_LOC_URG_DET_v1.md,documentação/relatório histórico,preservado no pacote,"DET:nome,1,11,13; LOC:nome,1,9,13; SEÇÃO 4.1:192; UPV:19,21,78; URG:nome,1,10,13"
+outputs/protocolo_integrado_v1/Guia_Preenchimento_Proximos_Casos_v1.md,documentação/relatório histórico,preservado no pacote,"DET:29,56,60,70; LOC:29,56,60,62; UPV:17,23; URG:27,29,69"
+outputs/protocolo_integrado_v1/catalogo_regras_urg_v1.json,dados/configuração/manifesto,preservado no pacote,"LOC:53; URG:nome,2,7,20"
+outputs/protocolo_integrado_v1/entrada_integrada_v1.schema.json,dados/configuração/manifesto,preservado no pacote,"DET:4,5,363,370; LOC:4,5,189,526; URG:4,5"
+outputs/protocolo_integrado_v1/loc_engine_lock_v1.json,dados/configuração/manifesto,preservado no pacote,"LOC:nome,2"
+outputs/protocolo_integrado_v1/loc_result_v1.schema.json,dados/configuração/manifesto,preservado no pacote,"LOC:nome,3,4,8"
+outputs/protocolo_integrado_v1/manifesto_candidato_protocolo_integrado_v1.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/protocolo_integrado_v1/resultado_testes_protocolo_integrado_v1.json,dados/configuração/manifesto,preservado no pacote,DET:1; LOC:1; URG:1
+outputs/protocolo_integrado_v1/visual_sector_binding_v1.schema.json,dados/configuração/manifesto,preservado no pacote,"LOC:4,5,16,17"
+outputs/sprint2_s2_06_geo05_v33/osm_highways_raw.json,dados/configuração/manifesto,preservado no pacote,"AP:41,145,171,206; API:3; OSM:nome,5"
+outputs/sprint2_s2_06_geo05_v33/osm_hydrography_raw.json,dados/configuração/manifesto,preservado no pacote,"API:3; OSM:nome,5"

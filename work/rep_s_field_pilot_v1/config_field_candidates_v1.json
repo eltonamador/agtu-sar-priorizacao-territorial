@@ -1,0 +1,177 @@
+{
+  "protocol_id": "FIELD-CAND-v1.0",
+  "protocol_name": "Gerador congelado de candidatos semissinteticos para o piloto de campo REP-S",
+  "status": "CONGELADO_PARA_PILOTO_DE_CAMPO",
+  "freeze_date": "2026-10-15",
+  "validation_modality": "REP-S-FIELD-PILOT",
+  "execution_phase": "REP_S_FIELD_PILOT",
+  "site_count": 4,
+  "candidates_per_site": 3,
+  "input_crs": "EPSG:4326",
+  "earth_radius_m": 6371008.8,
+  "site_order": "scenario_id ASC, site_id ASC",
+  "seed": {
+    "material_utf8": "FIELD-CAND-v1.0|REP-S-FIELD-PILOT|AGTU|2026-10-15",
+    "derivation": "SHA-256 do material UTF-8; estado uint32 = primeiros 8 digitos hexadecimais",
+    "sha256": "f41da30635e383266f3739cf025e4b9f030a5e2db91fc14559cb30de847f1b5f",
+    "uint32": 4095582982
+  },
+  "prng": {
+    "algorithm": "xorshift32",
+    "float_conversion": "state_uint32 / 2^32, intervalo [0,1)",
+    "draw_order_per_site": [
+      "permutation_i2",
+      "permutation_i1",
+      "slot_1_distance",
+      "slot_1_bearing",
+      "slot_1_detection_quality",
+      "slot_1_information_age",
+      "slot_2_distance",
+      "slot_2_bearing",
+      "slot_2_detection_quality",
+      "slot_2_information_age",
+      "slot_3_distance",
+      "slot_3_bearing",
+      "slot_3_detection_quality",
+      "slot_3_information_age"
+    ],
+    "draws_per_site": 14,
+    "expected_total_draws": 56,
+    "slot_permutation": "Fisher-Yates descendente sobre a ordem PROXIMO, INTERMEDIARIO, DISTANTE"
+  },
+  "distance_bands_m": [
+    {
+      "id": "PROXIMO",
+      "minimum": 250.0,
+      "maximum_exclusive": 800.0
+    },
+    {
+      "id": "INTERMEDIARIO",
+      "minimum": 800.0,
+      "maximum_exclusive": 2000.0
+    },
+    {
+      "id": "DISTANTE",
+      "minimum": 2000.0,
+      "maximum_exclusive": 4500.0
+    }
+  ],
+  "bearing_degrees": {
+    "minimum": 0.0,
+    "maximum_exclusive": 360.0,
+    "distribution": "UNIFORME_CONTINUA"
+  },
+  "detection_quality": {
+    "minimum": 0.35,
+    "maximum_exclusive": 0.95,
+    "distribution": "UNIFORME_CONTINUA",
+    "independence_rule": "Sorteio proprio; nao deriva da faixa, da distancia ou da posicao protegida"
+  },
+  "information_age_min": {
+    "minimum": 5,
+    "maximum_inclusive": 180,
+    "distribution": "UNIFORME_DISCRETA",
+    "independence_rule": "Sorteio proprio; nao deriva da faixa, da distancia ou da posicao protegida"
+  },
+  "buffer_inputs": {
+    "base_radius_m": 2000.0,
+    "r0_semantics": "nominal_base",
+    "factors_applied": "",
+    "position_dispersion_m": "",
+    "r0_provenance": "BASELINE_NOMINAL_CONGELADO_FIELD_CAND_v1_0",
+    "data_origin": "SIMULACAO_CONTROLADA_FIELD_CAND_v1_0"
+  },
+  "environment_mapping": {
+    "Urbano": "URBANO",
+    "Semirrural": "MISTO",
+    "Rural": "RURAL/ABERTO",
+    "Mata": "MATA"
+  },
+  "require_each_planned_environment_once": true,
+  "input_required_columns": [
+    "site_id",
+    "scenario_id",
+    "ground_truth_lat",
+    "ground_truth_lon",
+    "planned_environment"
+  ],
+  "blind_output_schema": [
+    "site_id",
+    "scenario_id",
+    "candidate_id",
+    "candidate_slot",
+    "partition",
+    "estimated_lat",
+    "estimated_lon",
+    "base_radius_m",
+    "r0_semantics",
+    "detection_quality",
+    "environment_class",
+    "position_dispersion_m",
+    "information_age_min",
+    "factors_applied",
+    "r0_provenance",
+    "data_origin",
+    "source_row_hash",
+    "execution_phase",
+    "freeze_status",
+    "blind_row_sha256",
+    "protocol_id",
+    "interpretation_boundary"
+  ],
+  "secure_output_schema": [
+    "site_id",
+    "scenario_id",
+    "ground_truth_lat",
+    "ground_truth_lon",
+    "planned_environment",
+    "environment_class",
+    "candidate_id",
+    "candidate_slot",
+    "distance_band_generator_only",
+    "distance_m_generator_only",
+    "bearing_deg_generator_only",
+    "permutation_draw_indices_generator_only",
+    "distance_draw_index_generator_only",
+    "bearing_draw_index_generator_only",
+    "quality_draw_index_generator_only",
+    "age_draw_index_generator_only",
+    "estimated_lat",
+    "estimated_lon",
+    "base_radius_m",
+    "r0_semantics",
+    "detection_quality",
+    "position_dispersion_m",
+    "information_age_min",
+    "factors_applied",
+    "r0_provenance",
+    "data_origin",
+    "source_row_hash",
+    "execution_phase",
+    "freeze_status",
+    "blind_row_sha256",
+    "secure_row_sha256",
+    "protocol_id"
+  ],
+  "blind_forbidden_column_fragments": [
+    "ground_truth",
+    "truth",
+    "reference",
+    "anchor",
+    "distance",
+    "bearing",
+    "offset",
+    "range",
+    "band",
+    "faixa",
+    "rank",
+    "relevant_candidate"
+  ],
+  "partition": "REP_S_FIELD_PILOT_BLIND",
+  "freeze_status": "CONGELADO_FIELD_CAND_v1_0",
+  "interpretation_boundary": "Candidatos semissinteticos produzidos por protocolo congelado. A saida cega contem apenas entradas admissiveis ao processamento e nao constitui deteccao operacional independente.",
+  "rounding": {
+    "coordinates_decimal_places": 8,
+    "generated_numeric_decimal_places": 6
+  }
+}

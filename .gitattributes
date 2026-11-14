@@ -1,0 +1,5 @@
+# Estes objetos devem manter seus bytes em qualquer plataforma de consulta.
+work/** -text
+outputs/** -text
+*.mp4 -text
+*.csv -text

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "executions": 10,
+  "repeat_deterministic": true,
+  "freeze_and_input_validation": "ranker original",
+  "operational_validation": false,
+  "confirmed_confidence_or_tolerance": false
+}

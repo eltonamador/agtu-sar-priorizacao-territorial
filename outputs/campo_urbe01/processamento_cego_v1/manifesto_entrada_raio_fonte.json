@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "bytes": 1105,
+      "path": "entrada_raio_fonte.json",
+      "role": "output",
+      "sha256": "9b9e16ecfa79c5e65c1594f125ce237d3048d074ed4c07fc614abe706d7447bd"
+    },
+    {
+      "bytes": 12872,
+      "path": "entrada_raio_fonte.geojson",
+      "role": "output",
+      "sha256": "48e0b440210e8c7acd28cddd19891b0bdbae3e801adf86e727743972567d4621"
+    }
+  ],
+  "ground_truth_used": false,
+  "protocol_id": "URBE-SOURCE-RADIUS-v1.0",
+  "record_count": 1
+}
