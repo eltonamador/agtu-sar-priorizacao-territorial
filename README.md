@@ -2,7 +2,7 @@
 
 Repositório da dissertação 'Modelo de inteligência artificial explicável para priorização territorial em busca e salvamento por análise multicritério geoespacial e regras de conhecimento', de Francielton Araujo Amador (AGTU University, Mestrado em Inteligência Artificial, 2026).
 
-Este pacote acompanha a versão para qualificação de 14/11/2026 (V12). **É uma prova de conceito, sem validação operacional.** A partir de uma referência inicial e de um raio informado, o modelo divide o domínio em 24 setores de igual área, atribui escores territoriais e indica se há condições para interpretar a ordenação. O escore não é probabilidade de encontrar a pessoa. Os cinco desaparecimentos são hipotéticos, em ambientes documentados em campo; a decisão de empregar equipes continua com o profissional. Esta preparação é **local e privada**: não afirma publicação, licença de redistribuição ou disponibilidade pública de todos os originais.
+Este pacote acompanha a versão para qualificação de 14/11/2026 (V12). **É uma prova de conceito, sem validação operacional.** A partir de uma referência inicial e de um raio informado, o modelo divide o domínio em 24 setores de igual área, atribui escores territoriais e indica se há condições para interpretar a ordenação. O escore não é probabilidade de encontrar a pessoa. Os cinco desaparecimentos são hipotéticos, em ambientes documentados em campo; a decisão de empregar equipes continua com o profissional. O repositório é público. A publicação não inclui os originais sob custódia nem concede licença geral de redistribuição.
 
 ## Como consultar
 
@@ -12,7 +12,7 @@ Os pesos do BASE (0,30; 0,25; 0,20; 0,25 para GEO-02 a GEO-05) são parâmetros 
 |---|---|
 | [work](work/) | Motores, parâmetros, testes e executores históricos dos casos. Há versões anteriores necessárias para interpretar resultados, especialmente o perfil usado no URBE-01. |
 | [outputs](outputs/) | Insumos geoespaciais, configurações efetivas, atributos por setor, rankings, decisões, registros de comparação posterior e manifestos. **Estes arquivos são a evidência preservada: não gravar uma nova execução sobre eles.** |
-| [casos](casos/) | Documentação fotográfica por caso. Os originais e seus índices detalhados são materiais de custódia privada e não devem ser distribuídos automaticamente. A lista de figuras do texto não é inventário de todas as fotos. |
+| [casos](casos/) | Notas sobre as fotografias dos cinco casos. Os originais (cerca de 1,5 GB) não são publicados porque o acervo contém placas de veículos e fachadas identificáveis. Permanecem sob custódia do autor e podem ser disponibilizados ao orientador e à banca mediante solicitação. |
 | [avaliacao](avaliacao/) | [Questionário sem respostas](avaliacao/instrumento.md), [frequências agregadas](avaliacao/frequencias.csv) e [vídeo demonstrativo](avaliacao/Apresentacao_narrada_especialistas_PTBR.mp4). A avaliação é de utilidade e clareza percebidas, não de eficácia. Nenhum registro individual ou horário de envio integra a tabela. |
 | [scripts](scripts/) e [relatorios](relatorios/) | Conferência independente dos sete hashes, relação dos arquivos científicos e evidências para conferir testes, regras e resultados. |
 
@@ -45,7 +45,9 @@ COM_CUSTODIA=1 PYTHON="$PWD/.venv/bin/python" bash relatorios/reexecutar_tabela8
 
 O modo de custódia também requer o registro reservado do operador visual em `work/urbe01_auditoria_visual_v1/registro_operador_visual_urbe01_v1.json`. Ele não acompanha o checkout.
 
-A Tabela 8 registra a contagem histórica de **329**. Na árvore preservada atual há **272 testes nos seis diretórios**, com 28 de domínio, 34 de setorização, 21 de movimento rural, 11 de movimento em mata, 58 de perfil e 120 de protocolo integrado. A linha histórica de perfil registra 57. O agrupamento de 178 repete os 58 de perfil ao somá-los aos 120 do integrado: não se deve contar duas vezes nem interpretar 178 como testes exclusivos de urgência/detectabilidade. Testes de engenharia, comparações dos casos e opiniões dos profissionais são evidências distintas.
+A Tabela 8 da V12 final conta **272 testes distintos**: 28 de domínio, 34 de setorização, 21 de movimento rural, 11 de movimento em mata, 58 de perfil e 120 do protocolo integrado. O pacote de 178 já inclui os 58 do perfil e não constitui um sétimo grupo.
+
+Na [reexecução independente em Linux de 14/11/2026](relatorios/reexecucao_independente_linux_2026-11-14.txt), **271 passaram e um foi ignorado**, sem falhas na Tabela 8. O teste de leitura de imagem do protocolo integrado (`test_real_imageio_pixel_decode_returns_dimensions`) só roda com Swift/ImageIO do macOS e aparece como ignorado nos demais sistemas. As verificações DEV-S (16/16) são separadas da Tabela 8. Fora dela, a suíte complementar `urbe01_avaliacao_pos_abertura_v1` exige uma instalação completa do Pillow no Linux: nessa execução, a ausência da biblioteca nativa libtiff impediu a importação e explica o código de saída 1 do roteiro completo.
 
 ## Como ler e, quando autorizado, repetir um caso
 
@@ -102,6 +104,6 @@ Os nomes de arquivos, chaves, códigos e horários originais foram preservados p
 
 ## Fontes e citação
 
-Para citar o trabalho em preparação: Amador, F. A. (2026). *Modelo de inteligência artificial explicável para priorização territorial em busca e salvamento por análise multicritério geoespacial e regras de conhecimento* [Dissertação de mestrado, versão para qualificação]. AGTU University. Ao citar um resultado computacional, acrescentar o **caso, configuração e SHA-256** correspondentes; não inventar DOI ou endereço público para esta cópia.
+Para citar o trabalho em preparação: Amador, F. A. (2026). *Modelo de inteligência artificial explicável para priorização territorial em busca e salvamento por análise multicritério geoespacial e regras de conhecimento* [Dissertação de mestrado, versão para qualificação]. AGTU University. Ao citar um resultado computacional, acrescentar o **caso, configuração e SHA-256** correspondentes; indicar a revisão consultada do [repositório público](https://github.com/eltonamador/agtu-sar-priorizacao-territorial).
 
 Referências selecionadas da dissertação: [Malczewski (2006), análise multicritério em SIG](https://doi.org/10.1080/13658810600661508); [Russell e Norvig (2020), inteligência artificial](https://aima.cs.berkeley.edu/); [OpenStreetMap contributors, dados cartográficos](https://www.openstreetmap.org/); [Zanaga et al. (2022), ESA WorldCover 2021 v200](https://doi.org/10.5281/zenodo.7254221). São créditos das fontes, não licença geral para redistribuir fotos, registros de campo, vídeo ou insumos de terceiros.

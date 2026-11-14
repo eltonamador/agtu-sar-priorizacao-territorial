@@ -1,0 +1,824 @@
+Sat Nov 14 20:50:43 UTC 2026
+Linux 6.8.0-138-generic aarch64
+Python 3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]
+pip 22.0.2 from <SESSAO_LINUX>/tmp/tmp.dK1aR8m6Rk/venv/lib/python3.10/site-packages/pip (python 3.10)
+pip freeze (nenhuma linha = nenhum pacote adicional)
+pip freeze --all
+pip==22.0.2
+setuptools==59.6.0
+Cópia de execução: <SESSAO_LINUX>/tmp/tmp.dK1aR8m6Rk
+MÓDULO ext_espacial_buffer_v1
+test_age_monotonicity_and_saturation (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_analytical_buffer_area_and_four_factor_case (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_circle_ring_is_closed_and_has_72_segments (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_circle_ring_supports_southern_hemisphere (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_diagnostic_legacy_applies_all_factors_and_is_not_confirmatory (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_dispersion_monotonicity_and_saturation (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_duplicate_candidate_key_is_rejected (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_environment_aliases_are_normalized (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_environment_factors (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_explicit_unknown_environment_forces_review (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_geojson_contains_safe_closed_polygons (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_ground_truth_and_derived_fields_are_rejected (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_input_and_output_paths_must_be_distinct (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_maximum_clamp (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_minimum_clamp (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_missing_optional_values_use_frozen_policies (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_nominal_formula_exact (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_nominal_semantics_require_frozen_radius_and_no_prior_factors (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_numeric_domains_are_enforced (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_pipeline_writes_hashes_and_no_ground_truth (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_processing_order_and_content_are_deterministic (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_quality_is_mandatory (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_quality_monotonicity (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_repeat_pipeline_has_identical_data_outputs (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_rich_normative_config_loads_and_tampering_is_rejected (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_source_adjusted_neutralizes_only_declared_factors (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_source_adjusted_without_factors_is_rejected (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+test_unrecognized_environment_is_rejected (test_motor_buffer_adaptativo.BufferEngineTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.009s
+
+OK
+MÓDULO ext_espacial_setores_v1_1
+test_authoritative_geometry_is_attached_to_normalized_record (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_firewall_allows_only_the_false_control_field (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_firewall_also_scans_authoritative_geojson (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_firewall_rejects_case_insensitive_compound_fragments_recursively (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_frozen_firewall_configuration_is_valid (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_identifiers_cannot_embed_the_contract_separator (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_invalid_coordinates_radius_hash_and_numbers_are_rejected (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_load_json_and_sha256_file (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_record_count_and_duplicate_candidate_are_rejected (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_root_and_record_ground_truth_flag_must_be_boolean_false (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_valid_contract_normalizes_input_order (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_destination_uses_meters_and_returns_lat_lon (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_deterministic_interior_samples_do_not_overlap_other_sectors (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_each_sector_has_one_twenty_four_of_authoritative_area (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_exactly_24_sectors_are_created_per_candidate (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_outer_boundary_reuses_the_authoritative_72_vertex_buffer (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_area_sum_matches_authoritative_parent_within_one_ppm (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_geometry_is_closed_finite_and_serializable (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_ids_are_unique_stable_and_ordered (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_outputs_preserve_firewall_and_lineage (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_three_equal_area_bands_and_eight_directions (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_all_frozen_weight_sets_sum_to_one (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_base_tie_has_no_selection_and_requires_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_competition_ranking_is_1_2_2_4 (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_invalid_geo_score_or_completeness_is_rejected (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_margin_is_top_minus_second_and_low_margin_forces_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_missing_provenance_forces_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_missing_required_score_nulls_every_weight_set_without_renormalization (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_ranking_is_deterministic_firewalled_and_json_serializable (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_scores_are_quantized_to_nine_decimals_before_tie_comparison (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_sensitivity_tie_uses_fractional_support_and_unique_wins (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_tie_outcome_is_invariant_to_input_order_and_identifier_lexicon (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_upstream_review_forces_downstream_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_weighted_score_and_unique_selection (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.121s
+
+OK
+MÓDULO rural01_mov_v2
+test_config_contract (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_config_rejects_disabled_safety_controls (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_dijkstra_prefers_low_resistance_detour (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_firewall_rejects_aliases_in_keys_nested_strings_and_paths (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_firewall_rejects_broad_scan_exclusion (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_firewall_rejects_invalid_blind_flags (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_firewall_rejects_protected_coordinate (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_hydro_increases_cost_without_absolute_veto (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_hydro_is_not_multiplied_twice_on_worldcover_water (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_legacy_primary_scenario_is_rejected (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_manifest_integrity_positive_and_tamper_detection (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_missing_dem_is_not_treated_as_favorable (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_missing_worldcover_is_invalid_and_requires_review (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_network_corridor_is_preferred_only_when_hypothesis_enables_it (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_network_hypothesis_reduces_road_resistance (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_reconstruct_path_reaches_origin (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_slope_is_symmetric_until_directional_calibration_exists (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_strong_profile_cell_resistance_not_below_soft (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_top3_rank_band_includes_all_ties_at_cutoff (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_transverse_barrier_with_gap_forces_path_through_opening (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+test_uniform_surface_distance_is_proportional (test_motor_movimento_v2.MovementV2UnitTest) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.007s
+
+OK
+MÓDULO mata01_mov_v1
+test_behavioral_clues_do_not_change_physical_cost (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_domain_is_not_a_movement_budget (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_field_obstacles_remain_unspatialized (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_forbidden_evaluation_coordinate_fails_recursively (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_hypotheses_remain_separate_and_unselected (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_osm_hydro_absence_is_not_favorable (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_representative_targets_cover_24_units (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_sector_assignment_is_clockwise_from_north (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_time_cannot_be_converted_to_distance (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_valid_configuration_passes (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+test_water_and_wetland_are_labeled_as_proxy (test_motor_movimento_mata01_v1.MataMovementTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.353s
+
+OK
+MÓDULO perfil_vitima_v3
+test_composite_ground_truth_alias_is_rejected_in_all_sources (test_profile_integration.IntegrationTest) ... ok
+test_destination_uses_v2_coordinates_and_reviewed_metadata (test_profile_integration.IntegrationTest) ... ok
+test_deterministic_bytes_and_hashes (test_profile_integration.IntegrationTest) ... ok
+test_direction_origin_exactly_equal_is_included (test_profile_integration.IntegrationTest) ... ok
+test_direction_origin_mismatch_is_excluded (test_profile_integration.IntegrationTest) ... ok
+test_ground_truth_control_values_are_checked_in_unselected_records (test_profile_integration.IntegrationTest) ... ok
+test_hidden_ground_truth_alias_in_geojson_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_json_string_false_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_manifest_file_hash_mismatch_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_no_review_excludes_spatial_hypothesis_without_invention (test_profile_integration.IntegrationTest) ... ok
+test_nonconfirmatory_requires_explicit_flag_and_is_reported (test_profile_integration.IntegrationTest) ... ok
+test_review_must_bind_exact_source_hashes (test_profile_integration.IntegrationTest) ... ok
+test_review_runtime_matches_reason_length_and_chronology_schema (test_profile_integration.IntegrationTest) ... ok
+test_review_tampering_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_self_intersecting_polygon_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_sidecar_cannot_supply_coordinates_or_evidence_group (test_profile_integration.IntegrationTest) ... ok
+test_tampered_v2_internal_hash_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_unknown_english_classification_cannot_bypass_positive_policy (test_profile_integration.IntegrationTest) ... ok
+test_v2_declared_firewall_and_qualitative_guards_are_enforced (test_profile_integration.IntegrationTest) ... ok
+test_deterministic_output_and_hash (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_freeze_cannot_precede_creation (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_frozen_config_status_is_accepted_and_reported (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_ground_truth_absent_control_must_be_true_at_every_depth (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_hypothesis_requires_spatial_review_hash (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_composite_ground_truth_alias (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_ground_truth_nested (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_textual_truth_marker (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_enforces_spatial_source_string_contract (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_rejects_changed_ranking_governance (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_rejects_identifier_outside_schema_pattern (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_requires_source_hashes_as_strings (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_source_case_revision_must_be_positive_integer (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_tampering_after_freeze_is_rejected (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_unknown_extra_field_is_rejected (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_boundary_destination_can_match_multiple_sectors (test_profile_ranker.GeometryTest) ... ok
+test_destination_at_pole_is_rejected_by_local_projection_contract (test_profile_ranker.GeometryTest) ... ok
+test_destination_geometry_handles_antimeridian (test_profile_ranker.GeometryTest) ... ok
+test_direction_wrap_around (test_profile_ranker.GeometryTest) ... ok
+test_positive_uncertainty_intersects_sector_edge (test_profile_ranker.GeometryTest) ... ok
+test_zero_area_sector_polygon_is_rejected (test_profile_ranker.GeometryTest) ... ok
+test_zero_width_sector_is_rejected (test_profile_ranker.GeometryTest) ... ok
+test_conflicting_directions_are_flagged (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_destination_inside_sector_is_spatialized (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_destination_outside_domain_abstains_without_edge_projection (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_direction_origin_must_match_candidate (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_disallowed_family_is_rejected (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_duplicate_evidence_group_does_not_stack (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_ineligible_directions_do_not_create_conflict_warning (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_lambda_zero_is_exact_territorial_ablation (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_large_destination_uncertainty_abstains_when_all_sectors_overlap (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_low_quality_evidence_has_smaller_effect (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_no_profile_abstains_and_returns_territorial_exactly (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_non_spatialized_hypothesis_abstains (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_observed_direction_favors_overlapping_sector (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_primary_lambda_and_operational_ceiling_are_ten_percent (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_same_evidence_group_cannot_stack_across_families (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_unknown_evidence_has_no_effect (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_unstable_top1_returns_exact_territorial_operational_rows (test_profile_ranker.QuantitativeRulesTest) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 0.049s
+
+OK
+MÓDULO protocolo_integrado_v1
+test_artifact_bindings_are_verified_against_files (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_conflict_forces_abstention (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_declared_loc_hash_is_not_called_verified_without_files (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_detectability_rejects_nonexistent_evidence_reference (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_direct_risk_triggers_immediate_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_disabled_rule_is_not_executed (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_duplicate_evidence_does_not_accumulate (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_expired_evidence_does_not_trigger (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_forged_verification_mapping_cannot_mark_files_verified (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_case_cannot_be_silently_refrozen (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_event_cannot_be_silently_refrozen (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_event_tamper_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_future_evidence_does_not_trigger_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_ground_truth_key_is_rejected_recursively (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_incomplete_negative_search_is_only_warning (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_known_location_disables_loc_ranking (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_enforces_same_hundred_run_limit_as_contract (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_duplicate_candidates_and_sector_ids (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_execution_after_case_cutoff (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_input_changed_after_ranking (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_run_from_another_loc_context (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_tampered_profile_output_and_scope (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_sorts_candidates_but_never_ranks_them (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_uses_real_profile_output_and_accepts_competition_ties (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_result_contract_is_semantically_validated (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_negative_search_never_changes_loc (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_new_known_point_cannot_come_from_negative_event (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_new_known_point_requires_and_preserves_source_event (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_numeric_pod_is_rejected_in_v1 (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_public_layer_alone_requires_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_restricted_rgb_does_not_change_loc (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_revision_after_first_requires_parent_hash (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_rule_semantic_drift_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_suspected_evidence_does_not_trigger_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_tamper_after_freeze_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_unknown_does_not_become_low_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_upv_requires_time_and_observed_evidence (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_valid_case_freezes_and_compiles_deterministically (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_allows_incidental_people_with_target_absent (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_rejects_numeric_input (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_rejects_visible_target (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_vulnerability_triggers_priority_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_adverse_visual_annotations_cannot_support_favorable_det (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_arbitrary_bytes_do_not_make_negative_search_documentarily_complete (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_broken_ancestral_event_chain_cannot_disable_loc (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_det_sector_must_exist_in_validated_loc_result (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_disconnected_gpx_segments_are_not_joined_artificially (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_empty_critical_domain_catalog_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_environment_evidence_cannot_support_unrelated_det_dimension (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_future_planning_point_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_future_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_geospatial_artifact_with_ground_truth_marker_is_blocked (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_gpx_ground_truth_marker_is_blocked (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_ground_truth_scope_cannot_hide_reserved_coordinates (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_incomplete_declared_loc_contract_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_contract_rejects_unauthorized_engine_and_extra_payload (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_logical_hash_is_invariant_to_det (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_result_from_previous_case_revision_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_result_with_ground_truth_payload_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_malformed_geospatial_artifacts_are_not_semantically_validated (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_nan_in_free_value_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_new_point_chain_preserves_own_previous_and_origin_hashes (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_null_search_event_hash_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_post_assessment_detectability_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_present_and_absent_in_same_domain_force_abstention (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_public_layer_cannot_claim_favorable_observed (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_rule_precedence_drift_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_sequence_two_rejects_unverified_predecessor_hash (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_single_terrain_annotation_cannot_support_all_det_dimensions (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_tiny_jpeg_magic_bytes_are_not_operational_validation (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_track_inside_polygon_hole_is_not_coverage (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_track_must_intersect_declared_coverage (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unannotated_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_field_evidence_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_planning_point_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_urgency_is_order_independent_with_shared_evidence (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_verified_negative_event_cannot_disable_loc (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_verified_positive_chain_can_switch_to_access_and_rescue (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_zero_coverage_is_never_eligible_negative_evidence (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_zero_duration_search_is_never_complete (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_approximate_operator_time_is_preserved_without_inventing_metadata (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_approximate_visual_sector_binding_caps_det_with_restrictions (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_cardinal_direction_and_azimuth_must_agree (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_compatible_structured_profile_risk_is_reconciled (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_confirmed_structured_profile_risk_cannot_coexist_with_absent_urgency (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_conflicting_specific_mobility_requires_safe_reconciliation (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_coordinate_cannot_leak_through_evidence_source_code (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_environment_without_authenticated_sector_scope_never_makes_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_invalid_jpeg_signature_is_not_accepted_as_verified_visual (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_loc_input_ignores_non_loc_profile_facts_and_search_events (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_maximum_travel_time_cannot_exceed_elapsed_time (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_mixed_travel_mode_requires_supporting_evidence (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_only_calibrated_visual_sector_binding_can_reach_full_det_aptitude (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_rgb_annotation_cannot_qualify_unrelated_search_modality (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_run_id_is_bound_to_rules_catalog_hash (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_runtime_enforces_schema_text_limits (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_sequence_one_cannot_claim_an_orphan_known_location_source (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_travel_mode_cannot_contradict_eligible_mobility_fact (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_unassessed_significance_in_critical_domain_forces_abstention (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_unauthorized_positive_source_cannot_create_known_point (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_sector_binding_cannot_cross_search_modalities (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_without_authenticated_sector_scope_never_makes_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_without_capture_time_is_archivable_but_cannot_make_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_profile_run_requires_pre_ranking_case_binding (test_schema_contracts.SchemaContractParityTests) ... ok
+test_retired_case_source_field_is_rejected_by_runtime_and_schema (test_schema_contracts.SchemaContractParityTests) ... ok
+test_retired_loc_profile_results_field_is_rejected_by_schema (test_schema_contracts.SchemaContractParityTests) ... ok
+test_runtime_valid_artifacts_also_match_published_schemas (test_schema_contracts.SchemaContractParityTests) ... ok
+test_approximate_binding_and_full_revalidation (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_contract_files_are_parseable_and_pitch_policy_is_conservative (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_ground_and_oblique_images_never_receive_automatic_footprint (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_insufficient_metadata_is_contextual (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_invalid_image_has_explicit_nondecoded_fallback (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_loc_tampering_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_manifest_and_binding_are_deterministic (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_manifest_cannot_inject_a_manual_sector_list (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_real_imageio_pixel_decode_returns_dimensions (test_visual_spatial_binding.VisualSpatialBindingTests) ... skipped 'Swift/ImageIO indisponível'
+test_reserved_ground_truth_key_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_tampered_sector_list_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_verified_package_is_consumed_by_det_without_changing_loc (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 120 tests in 0.351s
+
+OK (skipped=1)
+PACOTE INTEGRADO: execução adicional tal como build_release.py combina as suítes; NÃO somar aos testes distintos.
+test_artifact_bindings_are_verified_against_files (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_conflict_forces_abstention (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_declared_loc_hash_is_not_called_verified_without_files (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_detectability_rejects_nonexistent_evidence_reference (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_direct_risk_triggers_immediate_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_disabled_rule_is_not_executed (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_duplicate_evidence_does_not_accumulate (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_expired_evidence_does_not_trigger (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_forged_verification_mapping_cannot_mark_files_verified (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_case_cannot_be_silently_refrozen (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_event_cannot_be_silently_refrozen (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_frozen_event_tamper_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_future_evidence_does_not_trigger_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_ground_truth_key_is_rejected_recursively (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_incomplete_negative_search_is_only_warning (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_known_location_disables_loc_ranking (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_enforces_same_hundred_run_limit_as_contract (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_duplicate_candidates_and_sector_ids (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_execution_after_case_cutoff (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_input_changed_after_ranking (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_profile_run_from_another_loc_context (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_rejects_tampered_profile_output_and_scope (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_sorts_candidates_but_never_ranks_them (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_envelope_uses_real_profile_output_and_accepts_competition_ties (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_loc_result_contract_is_semantically_validated (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_negative_search_never_changes_loc (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_new_known_point_cannot_come_from_negative_event (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_new_known_point_requires_and_preserves_source_event (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_numeric_pod_is_rejected_in_v1 (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_public_layer_alone_requires_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_restricted_rgb_does_not_change_loc (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_revision_after_first_requires_parent_hash (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_rule_semantic_drift_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_suspected_evidence_does_not_trigger_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_tamper_after_freeze_is_rejected (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_unknown_does_not_become_low_urgency (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_upv_requires_time_and_observed_evidence (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_valid_case_freezes_and_compiles_deterministically (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_allows_incidental_people_with_target_absent (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_rejects_numeric_input (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_visual_set_a_rejects_visible_target (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_vulnerability_triggers_priority_review (test_integrated_protocol.IntegratedProtocolTests) ... ok
+test_adverse_visual_annotations_cannot_support_favorable_det (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_arbitrary_bytes_do_not_make_negative_search_documentarily_complete (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_broken_ancestral_event_chain_cannot_disable_loc (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_det_sector_must_exist_in_validated_loc_result (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_disconnected_gpx_segments_are_not_joined_artificially (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_empty_critical_domain_catalog_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_environment_evidence_cannot_support_unrelated_det_dimension (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_future_planning_point_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_future_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_geospatial_artifact_with_ground_truth_marker_is_blocked (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_gpx_ground_truth_marker_is_blocked (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_ground_truth_scope_cannot_hide_reserved_coordinates (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_incomplete_declared_loc_contract_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_contract_rejects_unauthorized_engine_and_extra_payload (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_logical_hash_is_invariant_to_det (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_result_from_previous_case_revision_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_loc_result_with_ground_truth_payload_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_malformed_geospatial_artifacts_are_not_semantically_validated (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_nan_in_free_value_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_new_point_chain_preserves_own_previous_and_origin_hashes (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_null_search_event_hash_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_post_assessment_detectability_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_present_and_absent_in_same_domain_force_abstention (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_public_layer_cannot_claim_favorable_observed (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_rule_precedence_drift_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_sequence_two_rejects_unverified_predecessor_hash (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_single_terrain_annotation_cannot_support_all_det_dimensions (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_tiny_jpeg_magic_bytes_are_not_operational_validation (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_track_inside_polygon_hole_is_not_coverage (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_track_must_intersect_declared_coverage (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unannotated_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_field_evidence_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_planning_point_is_rejected (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_unauthorized_visual_never_yields_apt (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_urgency_is_order_independent_with_shared_evidence (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_verified_negative_event_cannot_disable_loc (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_verified_positive_chain_can_switch_to_access_and_rescue (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_zero_coverage_is_never_eligible_negative_evidence (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_zero_duration_search_is_never_complete (test_protocol_adversarial.ProtocolAdversarialTests) ... ok
+test_approximate_operator_time_is_preserved_without_inventing_metadata (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_approximate_visual_sector_binding_caps_det_with_restrictions (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_cardinal_direction_and_azimuth_must_agree (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_compatible_structured_profile_risk_is_reconciled (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_confirmed_structured_profile_risk_cannot_coexist_with_absent_urgency (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_conflicting_specific_mobility_requires_safe_reconciliation (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_coordinate_cannot_leak_through_evidence_source_code (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_environment_without_authenticated_sector_scope_never_makes_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_invalid_jpeg_signature_is_not_accepted_as_verified_visual (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_loc_input_ignores_non_loc_profile_facts_and_search_events (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_maximum_travel_time_cannot_exceed_elapsed_time (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_mixed_travel_mode_requires_supporting_evidence (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_only_calibrated_visual_sector_binding_can_reach_full_det_aptitude (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_rgb_annotation_cannot_qualify_unrelated_search_modality (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_run_id_is_bound_to_rules_catalog_hash (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_runtime_enforces_schema_text_limits (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_sequence_one_cannot_claim_an_orphan_known_location_source (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_travel_mode_cannot_contradict_eligible_mobility_fact (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_unassessed_significance_in_critical_domain_forces_abstention (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_unauthorized_positive_source_cannot_create_known_point (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_sector_binding_cannot_cross_search_modalities (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_without_authenticated_sector_scope_never_makes_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_visual_without_capture_time_is_archivable_but_cannot_make_det_apt (test_protocol_cross_module_guards.CrossModuleGuardTests) ... ok
+test_profile_run_requires_pre_ranking_case_binding (test_schema_contracts.SchemaContractParityTests) ... ok
+test_retired_case_source_field_is_rejected_by_runtime_and_schema (test_schema_contracts.SchemaContractParityTests) ... ok
+test_retired_loc_profile_results_field_is_rejected_by_schema (test_schema_contracts.SchemaContractParityTests) ... ok
+test_runtime_valid_artifacts_also_match_published_schemas (test_schema_contracts.SchemaContractParityTests) ... ok
+test_approximate_binding_and_full_revalidation (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_contract_files_are_parseable_and_pitch_policy_is_conservative (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_ground_and_oblique_images_never_receive_automatic_footprint (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_insufficient_metadata_is_contextual (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_invalid_image_has_explicit_nondecoded_fallback (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_loc_tampering_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_manifest_and_binding_are_deterministic (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_manifest_cannot_inject_a_manual_sector_list (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_real_imageio_pixel_decode_returns_dimensions (test_visual_spatial_binding.VisualSpatialBindingTests) ... skipped 'Swift/ImageIO indisponível'
+test_reserved_ground_truth_key_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_tampered_sector_list_is_rejected (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_verified_package_is_consumed_by_det_without_changing_loc (test_visual_spatial_binding.VisualSpatialBindingTests) ... ok
+test_composite_ground_truth_alias_is_rejected_in_all_sources (test_profile_integration.IntegrationTest) ... ok
+test_destination_uses_v2_coordinates_and_reviewed_metadata (test_profile_integration.IntegrationTest) ... ok
+test_deterministic_bytes_and_hashes (test_profile_integration.IntegrationTest) ... ok
+test_direction_origin_exactly_equal_is_included (test_profile_integration.IntegrationTest) ... ok
+test_direction_origin_mismatch_is_excluded (test_profile_integration.IntegrationTest) ... ok
+test_ground_truth_control_values_are_checked_in_unselected_records (test_profile_integration.IntegrationTest) ... ok
+test_hidden_ground_truth_alias_in_geojson_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_json_string_false_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_manifest_file_hash_mismatch_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_no_review_excludes_spatial_hypothesis_without_invention (test_profile_integration.IntegrationTest) ... ok
+test_nonconfirmatory_requires_explicit_flag_and_is_reported (test_profile_integration.IntegrationTest) ... ok
+test_review_must_bind_exact_source_hashes (test_profile_integration.IntegrationTest) ... ok
+test_review_runtime_matches_reason_length_and_chronology_schema (test_profile_integration.IntegrationTest) ... ok
+test_review_tampering_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_self_intersecting_polygon_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_sidecar_cannot_supply_coordinates_or_evidence_group (test_profile_integration.IntegrationTest) ... ok
+test_tampered_v2_internal_hash_is_rejected (test_profile_integration.IntegrationTest) ... ok
+test_unknown_english_classification_cannot_bypass_positive_policy (test_profile_integration.IntegrationTest) ... ok
+test_v2_declared_firewall_and_qualitative_guards_are_enforced (test_profile_integration.IntegrationTest) ... ok
+test_deterministic_output_and_hash (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_freeze_cannot_precede_creation (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_frozen_config_status_is_accepted_and_reported (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_ground_truth_absent_control_must_be_true_at_every_depth (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_hypothesis_requires_spatial_review_hash (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_composite_ground_truth_alias (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_ground_truth_nested (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_rejects_textual_truth_marker (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_enforces_spatial_source_string_contract (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_rejects_changed_ranking_governance (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_rejects_identifier_outside_schema_pattern (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_runtime_requires_source_hashes_as_strings (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_source_case_revision_must_be_positive_integer (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_tampering_after_freeze_is_rejected (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_unknown_extra_field_is_rejected (test_profile_ranker.FirewallAndFreezeTest) ... ok
+test_boundary_destination_can_match_multiple_sectors (test_profile_ranker.GeometryTest) ... ok
+test_destination_at_pole_is_rejected_by_local_projection_contract (test_profile_ranker.GeometryTest) ... ok
+test_destination_geometry_handles_antimeridian (test_profile_ranker.GeometryTest) ... ok
+test_direction_wrap_around (test_profile_ranker.GeometryTest) ... ok
+test_positive_uncertainty_intersects_sector_edge (test_profile_ranker.GeometryTest) ... ok
+test_zero_area_sector_polygon_is_rejected (test_profile_ranker.GeometryTest) ... ok
+test_zero_width_sector_is_rejected (test_profile_ranker.GeometryTest) ... ok
+test_conflicting_directions_are_flagged (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_destination_inside_sector_is_spatialized (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_destination_outside_domain_abstains_without_edge_projection (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_direction_origin_must_match_candidate (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_disallowed_family_is_rejected (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_duplicate_evidence_group_does_not_stack (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_ineligible_directions_do_not_create_conflict_warning (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_lambda_zero_is_exact_territorial_ablation (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_large_destination_uncertainty_abstains_when_all_sectors_overlap (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_low_quality_evidence_has_smaller_effect (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_no_profile_abstains_and_returns_territorial_exactly (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_non_spatialized_hypothesis_abstains (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_observed_direction_favors_overlapping_sector (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_primary_lambda_and_operational_ceiling_are_ten_percent (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_same_evidence_group_cannot_stack_across_families (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_unknown_evidence_has_no_effect (test_profile_ranker.QuantitativeRulesTest) ... ok
+test_unstable_top1_returns_exact_territorial_operational_rows (test_profile_ranker.QuantitativeRulesTest) ... ok
+
+----------------------------------------------------------------------
+Ran 178 tests in 0.406s
+
+OK (skipped=1)
+CONFERÊNCIA DEV-S (separada dos testes unitários)
+{"checks_total": 16, "checks_passed": 16, "checks_failed": 0, "exit_code": 0}
+SUÍTES COMPLEMENTARES E HISTÓRICAS EM WORK: isoladas da Tabela 8, sem testes de dependências de terceiros nem cópias de distribuição.
+pip freeze complementar (somente suítes extras)
+charset-normalizer==3.5.2
+et_xmlfile==2.0.0
+openpyxl==3.1.5
+pillow==12.3.0
+reportlab==5.0.1
+EXTRA ext_espacial_rep_s_v1
+test_blank_rows_are_ignored (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_candidate_output_columns_are_rejected_from_ground_truth (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_cli_reports_controlled_error_code (test_export_rep_s_firewall.RepSFirewallTestCase) ... ERRO: Aba ENTRADA_CEGA: colunas proibidas pelo firewall: true_lat.
+ok
+test_custody_status_enum_is_enforced (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_duplicate_candidate_key_is_rejected (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_engine_manifest_config_and_engine_hashes_must_match_files (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_engine_manifest_must_match_prepared_input_hash (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_engine_manifest_requires_boolean_false_ground_truth_flag (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_every_blind_scenario_requires_matching_locked_ground_truth (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_existing_outputs_require_explicit_overwrite (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_field_pilot_requires_frozen_generator_origin (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_formula_in_critical_data_is_rejected (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_accepts_recursive_csv_json_geojson_bundle (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_inspects_nested_json_fields (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_never_reads_locked_ground_truth_as_bundle (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_records_hash_without_reading_or_disclosing_gt (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_rejects_empty_artifact (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_rejects_failing_test_evidence (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_rejects_nested_contamination_in_directory (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_rejects_non_deterministic_second_run (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_rejects_output_that_contains_ground_truth (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_freeze_output_requires_all_reproducibility_evidence (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_cannot_be_open_during_preparation (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_column_in_blind_sheet_is_rejected_even_if_blank (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_status_enum_is_enforced (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_used_boolean_false_is_allowed_in_csv_json_and_geojson (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_used_csv_rejects_true_zero_and_blank (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_ground_truth_used_json_rejects_true_and_non_boolean_false (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_human_facing_header_on_row_four_is_detected (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_invalid_ground_truth_error_does_not_echo_coordinate_value (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_manifest_and_log_differences_do_not_break_scientific_determinism (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_operational_modality_accepts_airborne_origin (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_operational_modality_rejects_generator_origin (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_plan_partition_must_be_assigned_before_outcomes (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_plan_phase_must_match_blind_input (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_plan_rejects_unknown_acquisition_status (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_plan_rejects_unknown_modality (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_planned_site_cannot_enter_execution_package (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_prepare_exports_physically_separated_files_and_hash_only_manifest (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_present_plan_sheet_cannot_be_empty (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_real_buffer_engine_manifest_contract_is_accepted (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_rep_s_nominal_base_requires_frozen_two_kilometres (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_rep_s_rejects_diagnostic_legacy_r0 (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_rep_s_requires_origin_and_r0_provenance (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_rep_s_requires_plan_sheet (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_rep_s_source_must_be_new (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_same_site_cannot_be_split_between_development_and_rep_s (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_scenario_cannot_map_to_multiple_sites (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_source_adjusted_requires_factor_history_and_provenance (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_source_row_hash_is_generated_by_exporter (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_template_row_status_formula_is_ignored (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+test_test_evidence_accepts_real_motor_result_schema (test_export_rep_s_firewall.RepSFirewallTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.393s
+
+OK
+EXTRA ext_espacial_setores_v1
+test_duplicate_candidate_key_is_rejected (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_forbidden_ground_truth_or_derived_fields_are_rejected_recursively (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_invalid_coordinates_radius_hash_and_numbers_are_rejected (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_load_json_and_sha256_file (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_nondeterministic_input_order_is_normalized_without_content_change (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_record_count_mismatch_is_rejected (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_record_ground_truth_flag_must_be_boolean_false (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_root_ground_truth_flag_must_be_boolean_false (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_valid_contract_preserves_deterministic_order (test_motor_setorizacao_priorizacao.BufferContractTestCase) ... ok
+test_destination_uses_meters_and_returns_lat_lon (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_exactly_24_sectors_are_created_per_candidate (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_areas_are_equal_and_sum_to_buffer_area (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_geometry_is_closed_finite_polygon_in_lon_lat_order (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_ids_are_unique_stable_and_ordered (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_sector_outputs_preserve_firewall_and_lineage (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_three_equal_area_radial_bands_and_eight_directions (test_motor_setorizacao_priorizacao.SectorGeometryTestCase) ... ok
+test_all_frozen_weight_sets_sum_to_one (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_instability_across_weight_sets_forces_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_invalid_geo_score_or_completeness_is_rejected (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_margin_is_top_minus_second_and_controls_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_missing_criterion_never_creates_silent_automatic_priority (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_ranking_is_deterministic_and_preserves_firewall (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_tie_break_is_sector_id_and_zero_margin_forces_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_upstream_review_status_forces_downstream_review (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+test_weighted_score_rank_and_selected_sector (test_motor_setorizacao_priorizacao.SectorRankingTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.016s
+
+OK
+EXTRA mata01_perfil_v3
+test_build_is_blind_auditable_and_deterministic (test_mata01_profile_v3.Mata01ProfileV3Test) ... ok
+test_north_clue_changes_only_north_compatibility (test_mata01_profile_v3.Mata01ProfileV3Test) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.054s
+
+OK
+EXTRA mata01_processamento_cego_v1
+test_available_weights_are_exact_renormalization (test_mata01_blind.Mata01ContractTest) ... ok
+test_expected_local_tiles (test_mata01_blind.Mata01ContractTest) ... ok
+test_frozen_input (test_mata01_blind.Mata01ContractTest) ... ok
+test_no_contextual_or_missing_data_leakage (test_mata01_blind.Mata01ContractTest) ... ok
+test_sampling_override_is_dense_and_deterministic (test_mata01_blind.Mata01ContractTest) ... ok
+test_source_area_uses_declared_domain (test_mata01_blind.Mata01ContractTest) ... ok
+test_top3_preserves_base_score (test_mata01_blind.Mata01ContractTest) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.039s
+
+OK
+EXTRA perfil_vitima_v2
+test_calculated_elapsed_minutes_accept_exact_interval (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_calculated_elapsed_minutes_must_match_timestamps (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_freeze_cannot_precede_collection (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_informed_elapsed_must_match_an_exact_point_with_minute_tolerance (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_known_authorized_value_requires_identified_source (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_planning_point_cannot_be_after_collection (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_unavailable_value_cannot_be_authorized (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_unavailable_value_cannot_have_high_confidence (test_compile_profile.EvidenceAndTemporalCoherenceTest) ... ok
+test_rejects_explicit_ground_truth_marker_in_clue_text (test_compile_profile.GroundTruthFirewallTest) ... ok
+test_rejects_ground_truth_even_when_nested (test_compile_profile.GroundTruthFirewallTest) ... ok
+test_requires_explicit_ground_truth_absence (test_compile_profile.GroundTruthFirewallTest) ... ok
+test_cli_prepares_separate_frozen_package (test_compile_profile.QualitativeCompilationTest) ... ok
+test_determinism (test_compile_profile.QualitativeCompilationTest) ... ok
+test_duplicate_fact_or_clue_id_is_rejected (test_compile_profile.QualitativeCompilationTest) ... ok
+test_freeze_hash_projection_omits_only_its_own_digest (test_compile_profile.QualitativeCompilationTest) ... ok
+test_frozen_record_preserves_verified_freeze_metadata (test_compile_profile.QualitativeCompilationTest) ... ok
+test_generic_water_clue_is_not_directional (test_compile_profile.QualitativeCompilationTest) ... ok
+test_georeferenced_destination_is_spatializable (test_compile_profile.QualitativeCompilationTest) ... ok
+test_structured_observed_direction_is_preserved (test_compile_profile.QualitativeCompilationTest) ... ok
+test_suspicion_is_not_upgraded (test_compile_profile.QualitativeCompilationTest) ... ok
+test_tampering_after_freeze_is_rejected (test_compile_profile.QualitativeCompilationTest) ... ok
+test_unknown_values_have_no_effect (test_compile_profile.QualitativeCompilationTest) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.020s
+
+OK
+EXTRA rep_s_field_pilot_v1
+test_all_generated_coordinates_are_valid (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_blind_schema_has_no_reserved_or_derived_columns (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_config_path_cannot_be_used_as_output_even_with_overwrite (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_determinism_and_manifest_hashes (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_execution_rejects_tampered_config_by_integrity_hash (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_quality_and_age_use_draws_independent_from_distance_draws (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_same_blind_and_secure_path_is_rejected (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_schema_guard_directly_rejects_forbidden_column (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+test_three_candidates_and_one_distance_band_per_site (test_generate_field_candidates.FieldCandidateGeneratorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.073s
+
+OK
+EXTRA rep_s_spatial_eval_v1
+test_boundary_metrics_report_primary_and_conservative_rank (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_closed_polygon_boundary_is_set_valued (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_forbidden_header_fragments_block_ground_truth_and_rank (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_frozen_config_and_dependencies (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_outside_buffer_gets_zero_rr_and_no_accumulated_area (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_point_outside_closed_polygon_is_not_member (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_post_t3_end_to_end_uses_only_committed_ground_truth (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_post_t3_rejects_a_different_ground_truth_file (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_prepare_t1_accepts_untampered_field_candidate_package (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_prepare_t1_rejects_changed_blind_file (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+test_wilson_interval_and_empty_denominator (test_rep_s_spatial_eval.RepSSpatialEvaluationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.099s
+
+OK
+EXTRA rural01_avaliacao_t5_t6_v1
+test_cost_bands_use_frozen_inclusive_upper_limits (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_inclusive_ecdf_preserves_ties (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_linestring_distance_and_frozen_support_tolerance (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_build_is_deterministic (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_corridor_scopes_follow_frozen_three_level_contract (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_evaluation_does_not_modify_frozen_upstream (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_invalid_reference_and_missing_required_field_are_rejected (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_no_real_reference_identifiers_leak_into_test_fixture (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_optional_metadata_may_remain_absent (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_outside_domain_has_no_cell_sector_or_cost (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_scientific_package_and_narrative_are_complete_and_deterministic (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_sensitivity_and_ablations_are_complete_and_separated (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_two_primary_hypotheses_are_reported_without_selection (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_missing_file_is_rejected (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_real_frozen_ledgers_are_intact (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_tampered_ledger_is_rejected (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_empty_or_incomplete_freeze_package_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_opening_equal_to_or_before_freeze_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_publication_must_invoke_t45_opening_gate (test_evaluate_rural01_reference.OpeningGateTests)
+Evita regressão em que validar o helper não protege run_and_publish. ... ok
+test_publication_rejects_flat_reference_before_creating_output (test_evaluate_rural01_reference.OpeningGateTests)
+A API de publicação não pode aceitar o atalho plano da API unitária. ... ok
+test_real_ledger_hash_and_post_freeze_timestamp_are_required (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_wrong_freeze_hash_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_aeqd_roundtrip_at_center_and_offsets (test_evaluate_rural01_reference.ProjectionAndDomainTests) ... ok
+test_domain_inside_exact_boundary_and_outside (test_evaluate_rural01_reference.ProjectionAndDomainTests) ... ok
+test_flat_reference_is_rejected_for_publication (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_nullable_source_metadata_must_not_be_invented (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_required_nullable_source_key_cannot_silently_disappear (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_structured_revealed_record_is_the_publication_contract (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_unrevealed_record_is_rejected (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_grid_support_boundary_and_outside_have_no_fabricated_snap (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+test_nearest_cell_tie_is_lexicographic (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+test_radial_and_angular_boundary_returns_all_and_worst_v1_rank (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.672s
+
+OK
+EXTRA rural01_avaliacao_t5_t6_v1_1_errata
+test_cost_bands_use_frozen_inclusive_upper_limits (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_inclusive_ecdf_preserves_ties (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_linestring_distance_and_frozen_support_tolerance (test_evaluate_rural01_reference.CostAndCorridorTests) ... ok
+test_build_is_deterministic (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_corridor_scopes_follow_frozen_three_level_contract (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_evaluation_does_not_modify_frozen_upstream (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_invalid_reference_and_missing_required_field_are_rejected (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_no_real_reference_identifiers_leak_into_test_fixture (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_optional_metadata_may_remain_absent (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_outside_domain_has_no_cell_sector_or_cost (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_scientific_package_and_narrative_are_complete_and_deterministic (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_sensitivity_and_ablations_are_complete_and_separated (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_two_primary_hypotheses_are_reported_without_selection (test_evaluate_rural01_reference.EvaluationContractTests) ... ok
+test_missing_file_is_rejected (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_real_frozen_ledgers_are_intact (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_tampered_ledger_is_rejected (test_evaluate_rural01_reference.IntegrityTests) ... ok
+test_empty_or_incomplete_freeze_package_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_opening_equal_to_or_before_freeze_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_publication_must_invoke_t45_opening_gate (test_evaluate_rural01_reference.OpeningGateTests)
+Evita regressão em que validar o helper não protege run_and_publish. ... ok
+test_publication_rejects_flat_reference_before_creating_output (test_evaluate_rural01_reference.OpeningGateTests)
+A API de publicação não pode aceitar o atalho plano da API unitária. ... ok
+test_real_ledger_hash_and_post_freeze_timestamp_are_required (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_wrong_freeze_hash_is_rejected (test_evaluate_rural01_reference.OpeningGateTests) ... ok
+test_aeqd_roundtrip_at_center_and_offsets (test_evaluate_rural01_reference.ProjectionAndDomainTests) ... ok
+test_domain_inside_exact_boundary_and_outside (test_evaluate_rural01_reference.ProjectionAndDomainTests) ... ok
+test_flat_reference_is_rejected_for_publication (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_nullable_source_metadata_must_not_be_invented (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_required_nullable_source_key_cannot_silently_disappear (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_structured_revealed_record_is_the_publication_contract (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_unrevealed_record_is_rejected (test_evaluate_rural01_reference.ReferenceSchemaTests) ... ok
+test_grid_support_boundary_and_outside_have_no_fabricated_snap (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+test_nearest_cell_tie_is_lexicographic (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+test_radial_and_angular_boundary_returns_all_and_worst_v1_rank (test_evaluate_rural01_reference.SectorAndGridTests) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.572s
+
+OK
+EXTRA rural01_processamento_cego_v1
+test_contextual_profile_abstains_and_urgency_is_priority (test_build_profile_protocol.Rural01ProfileProtocolTest) ... ok
+test_frozen_input (test_rural01_blind.Rural01ContractTest) ... ok
+test_no_contextual_leakage (test_rural01_blind.Rural01ContractTest) ... ok
+test_source_area_uses_declared_radius (test_rural01_blind.Rural01ContractTest) ... ok
+test_top3_preserves_base_score (test_rural01_blind.Rural01ContractTest) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.099s
+
+OK
+FORA DO MODO PÚBLICO: urbe01_auditoria_visual_v1 (3 testes de fotografias sob custódia).
+EXTRA urbe01_avaliacao_pos_abertura_v1
+test_evaluate_urbe01_reference (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_evaluate_urbe01_reference (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_evaluate_urbe01_reference
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "<SESSAO_LINUX>/tmp/tmp.dK1aR8m6Rk/work/urbe01_avaliacao_pos_abertura_v1/test_evaluate_urbe01_reference.py", line 16, in <module>
+    SPEC.loader.exec_module(MODULE)
+  File "<SESSAO_LINUX>/tmp/tmp.dK1aR8m6Rk/work/urbe01_avaliacao_pos_abertura_v1/evaluate_urbe01_reference.py", line 24, in <module>
+    from PIL import Image, ImageDraw, ImageFont
+  File "<SESSAO_LINUX>/tmp/tmp.dK1aR8m6Rk/venv/lib/python3.10/site-packages/PIL/Image.py", line 95, in <module>
+    from . import _imaging as core
+ImportError: libtiff-fb36a6b9.so.6.2.0: cannot open shared object file: No such file or directory
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+EXTRA urbe01_processamento_cego_v1
+test_formula_is_literal (test_urbe01_blind.ProfileFormulaTest) ... ok
+test_profile_context_is_bounded (test_urbe01_blind.ProfileFormulaTest) ... ok
+test_ring_and_direction_do_not_change_score (test_urbe01_blind.ProfileFormulaTest) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.019s
+
+OK
+
+real	0m15.993s
+user	0m15.019s
+sys	0m0.563s
+EXIT 1
+
+--- Nota pré-envio, separada da execução Linux transcrita acima ---
+Tabela 8 no Linux: 272 distintos; 271 aprovados, 1 ignorado (Swift/ImageIO do macOS), 0 falhos. DEV-S: 16/16.
+Comando de integridade executado separadamente na cópia local: python3 scripts/verificar_hashes_apendice_c.py
+CONFERE | urbe01: 15 arquivos | 490663d2459b1aa5fac151b425ff474c0dacdb44891ee8530b2dd9960dbdcb23
+CONFERE | rural01: 12 arquivos | d51dd9e3252f50bd1d756b4b9ee914aca0b7300eda6e2b2f751e5f6fa587301e
+CONFERE | mata01: 13 arquivos | 7ba1186d90aaf5ef6b92dd7095727e151c948880163b3c81d0c4cd7ff02df29b
+CONFERE | campo_mata02_mzg2/ensaio_complementar_v2_249/ranking_BASE_completo.json | 8236e5244a8f6fef501d4aea9492c56bf75d34a87109eecfc94da03e681f31fb
+CONFERE | campo_mata03_km21/ranking_BASE.json | 1ba965b3d69f07e06607771036d8246dc6023886929d2a6ca3c6340d5094e11a
+CONFERE | DEV-S: projeção de 2160 setores | bff2deb9cf329096d7191b86381d5570c2df6905ba51499242d51c07531053dc
+CONFERE | DEV-S: pacote de 6 saídas | 0d90933c35117cf6abc62346ec790e38328c65fa9af9f94752a8554286cbc837
+7/7 identificadores conferem

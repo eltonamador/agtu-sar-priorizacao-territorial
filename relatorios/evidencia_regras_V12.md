@@ -34,3 +34,16 @@ Entradas artificiais: vetores em ordem GEO-02, GEO-03, GEO-04, GEO-05. N, NE, E 
 | `test_ranking_is_deterministic_firewalled_and_json_serializable` (742) | E=(0,2;0,9;0,4;0,5); N=(0,9;0,8;0,7;0,6); NE=0,7×4, e ordem inversa | Verifica determinismo, serialização e isolamento da posição de conferência. PRIORIZADO incidental nas duas chamadas, margem 0,06. |
 
 Nenhum resultado desses testes autoriza alegar que um dos cinco casos do estudo terminou em PRIORIZADO, nem que esse estado prediz localização. Para identificar de forma estável o código auditado, SHA-256: núcleo `938f98a0cf52751aeaa9f17369ef86c4d7afd96965d574f79898cebd3799c519`; configuração `192bedaaddc8e72388307eb51a2eff43ec121071d742d0cf6ea3dfe9472331c6`; testes SET v1.1 `ac18e7a2a33a33661083f39b4cfa8fb78f50d8a2221882aa4975206b5a493d8d`; controle MATA-01 `9fe8016d21bf6ff66ecddad14a66cf11d0a13ab627ba1ecff134361573627ab3`. Nenhum desses quatro identificadores substitui os do Apêndice C.
+
+## Situação na V12 final
+
+O Quadro 7 foi corrigido. Nos pontos abaixo, a redação final corresponde à decisão do [núcleo de setorização](../work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py), linhas 1221–1232 e 1253–1289:
+
+| Regra | Condição na V12 final |
+|---|---|
+| 5 | Entre os empates no primeiro lugar, só o empate no BASE bloqueia diretamente a priorização. |
+| 7 | Estabilidade do líder inferior a 0,80 **ou** liderança isolada em menos de quatro das cinco configurações (incluindo o BASE). Qualquer das duas condições exige revisão. |
+| 8 | A barreira potencial que bloqueia é a sinalizada no setor líder único do BASE. |
+| 9 | Sem nenhuma condição bloqueante (regras 1 a 8), o estado é PRIORIZADO; avisos informativos podem coexistir com esse estado. |
+
+A nota distingue o aviso `SENSITIVITY_TOP_TIE` de um bloqueio: o empate em uma configuração alternativa divide o crédito entre os líderes no cálculo da estabilidade e não conta como vitória isolada. A última linha da Tabela 8 passou a **“Protocolo integrado (urgência e detectabilidade)”**, com nota sobre o teste que depende do macOS. Na [execução em Linux](reexecucao_independente_linux_2026-11-14.txt), esse teste foi ignorado. Mantêm-se acima o histórico da auditoria, a distinção entre incompletude do setor e abstenção pela rotina de controle e a ressalva sobre a margem exibida.
