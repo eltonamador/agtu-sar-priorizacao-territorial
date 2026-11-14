@@ -37,13 +37,18 @@ Nenhum resultado desses testes autoriza alegar que um dos cinco casos do estudo 
 
 ## Situação na V12 final
 
-O Quadro 7 foi corrigido. Nos pontos abaixo, a redação final corresponde à decisão do [núcleo de setorização](../work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py), linhas 1221–1232 e 1253–1289:
+O Quadro 7 distingue a decisão do [núcleo de setorização](../work/ext_espacial_setores_v1_1/motor_setorizacao_priorizacao.py) da abstenção registrada pela [rotina de controle do MATA-01](../work/mata01_processamento_cego_v1/run_mata01_blind.py):
 
 | Regra | Condição na V12 final |
 |---|---|
+| 1 | Se um setor fica sem escore e há outros completos, o núcleo registra REVISAR. Se um componente obrigatório do BASE não é calculável em todo o domínio, a rotina de controle registra ABSTIDO para o BASE completo, como no MATA-01. |
 | 5 | Entre os empates no primeiro lugar, só o empate no BASE bloqueia diretamente a priorização. |
 | 7 | Estabilidade do líder inferior a 0,80 **ou** liderança isolada em menos de quatro das cinco configurações (incluindo o BASE). Qualquer das duas condições exige revisão. |
 | 8 | A barreira potencial que bloqueia é a sinalizada no setor líder único do BASE. |
 | 9 | Sem nenhuma condição bloqueante (regras 1 a 8), o estado é PRIORIZADO; avisos informativos podem coexistir com esse estado. |
 
-A nota distingue o aviso `SENSITIVITY_TOP_TIE` de um bloqueio: o empate em uma configuração alternativa divide o crédito entre os líderes no cálculo da estabilidade e não conta como vitória isolada. A última linha da Tabela 8 passou a **“Protocolo integrado (urgência e detectabilidade)”**, com nota sobre o teste que depende do macOS. Na [execução em Linux](reexecucao_independente_linux_2026-11-14.txt), esse teste foi ignorado. Mantêm-se acima o histórico da auditoria, a distinção entre incompletude do setor e abstenção pela rotina de controle e a ressalva sobre a margem exibida.
+A nota do Quadro 7 esclarece que `SENSITIVITY_TOP_TIE`, por si só, **não bloqueia a priorização**. O empate em uma configuração alternativa divide o crédito entre os líderes no cálculo da estabilidade e não conta como vitória isolada.
+
+Na Tabela 8, a última linha se chama **“Protocolo integrado”**. A evidência descrita é: “Contratos de dados, urgência, detectabilidade, integração entre módulos e vínculo entre imagens e setores”.
+
+Nota da Tabela 8: “Um teste do protocolo integrado depende de Swift/ImageIO; foi aprovado na execução em macOS e é ignorado quando esses recursos estão ausentes.” O mesmo teste aparece como aprovado no [registro em macOS](testes_modo_publico.txt) e como ignorado no [registro em Linux](reexecucao_independente_linux_2026-11-14.txt).
